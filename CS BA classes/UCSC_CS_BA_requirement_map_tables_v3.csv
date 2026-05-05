@@ -1,0 +1,97 @@
+section,course_code,units,division,requirement_status,requirement_bucket,satisfies_pools,requires_cse101,can_satisfy_capstone,can_satisfy_dc,is_mandatory_for_major,notes
+Lower Division — Required CS Core,CSE 12,7,Lower Division,REQUIRED,CS_LD_CORE,REQ_LD,False,False,False,True,
+Lower Division — Required CS Core,CSE 16,5,Lower Division,REQUIRED,CS_LD_CORE,REQ_LD,False,False,False,True,
+Lower Division — Required CS Core,CSE 20,5,Lower Division,REQUIRED,CS_LD_CORE,REQ_LD,False,False,False,True,
+Lower Division — Required CS Core,CSE 30,7,Lower Division,REQUIRED,CS_LD_CORE,REQ_LD,False,False,False,True,
+Lower Division — Required CS Core,CSE 40,5,Lower Division,REQUIRED,CS_LD_CORE,REQ_LD,False,False,False,True,
+Math — Calculus Sequence (Choice Group),MATH 19A,5,Lower Division,CHOICE,MATH_CALC_SEQUENCE,REQ_MATH,False,False,False,False,Calc sequence: choose (MATH 19A+19B) OR (MATH 20A+20B)
+Math — Calculus Sequence (Choice Group),MATH 19B,5,Lower Division,CHOICE,MATH_CALC_SEQUENCE,REQ_MATH,False,False,False,False,Calc sequence: choose (MATH 19A+19B) OR (MATH 20A+20B)
+Math — Calculus Sequence (Choice Group),MATH 20A,5,Lower Division,CHOICE,MATH_CALC_SEQUENCE,REQ_MATH,False,False,False,False,Calc sequence: choose (MATH 19A+19B) OR (MATH 20A+20B)
+Math — Calculus Sequence (Choice Group),MATH 20B,5,Lower Division,CHOICE,MATH_CALC_SEQUENCE,REQ_MATH,False,False,False,False,Calc sequence: choose (MATH 19A+19B) OR (MATH 20A+20B)
+Math — Linear Algebra (Choice Group),AM 10,5,Lower Division,CHOICE,MATH_LINEAR_ALG,REQ_MATH,False,False,False,False,Linear algebra: choose AM 10 OR MATH 21
+Math — Linear Algebra (Choice Group),MATH 21,5,Lower Division,CHOICE,MATH_LINEAR_ALG,REQ_MATH,False,False,False,False,Linear algebra: choose AM 10 OR MATH 21
+Upper Division Core (Choice Group),CSE 101,5,Upper Division,CHOICE,UD_CORE_ALGORITHMS,UD_CORE,False,False,False,False,Choose ONE: CSE 101 or CSE 101P
+Upper Division Core (Choice Group),CSE 101P,5,Upper Division,CHOICE,UD_CORE_ALGORITHMS,UD_CORE,False,False,False,False,Choose ONE: CSE 101 or CSE 101P
+Breadth List A (Pick 3 total across A/B),CSE 101M,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 102,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 103,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 112,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 114A,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 118,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 120,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 140,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 142,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 143,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 144,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 150,7,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 183,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List A (Pick 3 total across A/B),CSE 184,5,Upper Division,LIST,BREADTH_A,BREADTH,False,False,False,False,Breadth List A option
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 110A,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 130,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 132,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 134,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 138,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 160,7,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 180,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Breadth List B (Pick 3 total across A/B) — Requires CSE 101,CSE 186,5,Upper Division,LIST,BREADTH_B,BREADTH,True,False,False,False,Breadth List B option (requires CSE 101)
+Disciplinary Communication (Pick 1),CSE 115A,5,Upper Division,LIST,DC,DC,False,False,True,False,DC option. DC course cannot also count as an upper-division elective. CSE 195 has additional restrictions.
+Disciplinary Communication (Pick 1),CSE 185E,5,Upper Division,LIST,DC,DC,False,False,True,False,DC option. DC course cannot also count as an upper-division elective. CSE 195 has additional restrictions.
+Disciplinary Communication (Pick 1),CSE 185S,5,Upper Division,LIST,DC,DC,False,False,True,False,DC option. DC course cannot also count as an upper-division elective. CSE 195 has additional restrictions.
+Disciplinary Communication (Pick 1),CSE 195,5,Upper Division,LIST,DC,DC,False,False,True,False,DC option. DC course cannot also count as an upper-division elective. CSE 195 has additional restrictions.
+Capstone / Exit Requirement Options,CMPM 172,7,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 110A,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 115C,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 115D,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 134,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 138,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 140,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 143,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 144,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 145,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 156,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 156L,2,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 157,7,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 160,7,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 161,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 161L,2,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 162,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 162L,2,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 163,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 168,7,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 181,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 183,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 184,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Capstone / Exit Requirement Options,CSE 187,5,Upper Division,LIST,CAPSTONE_EXIT,EXIT,False,True,False,False,Capstone option for Exit Requirement (Exit A).
+Electives — Explicit Allowed List (E4),ARTG 118,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),CSE 109,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),EART 124,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),EART 125,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),EART 172,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),ECON 100M,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),ECON 100N,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),ECON 101,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),ENVS 115A,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),ENVS 115L,2,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),FILM 170A,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),LING 112,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),LING 113,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),LING 118,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),LING 125,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 110,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 115,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 116,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 117,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 118,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 134,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 140,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 145,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 145L,1,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 148,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 160,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MATH 161,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MUSC 123A,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MUSC 123B,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),MUSC 123C,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),OCEA 172,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),PHYS 115,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).
+Electives — Explicit Allowed List (E4),PHYS 150,5,Upper Division,LIST,ELECTIVE_EXPLICIT_LIST,ELECTIVES,False,False,False,False,Allowed elective via explicit list (E4).

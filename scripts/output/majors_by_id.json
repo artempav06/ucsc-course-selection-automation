@@ -1,0 +1,1785 @@
+{
+  "AM_BS": {
+    "id": "AM_BS",
+    "name": "Applied Mathematics B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Applied-Math-Major_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "19-series",
+            "courses": [
+              "MATH 19A",
+              "MATH 19B"
+            ]
+          },
+          {
+            "label": "20-series (Honors)",
+            "courses": [
+              "MATH 20A",
+              "MATH 20B"
+            ]
+          }
+        ],
+        "description": "Choose one calculus sequence: 19-series or 20-series."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "pick_one",
+        "courses": [
+          "AM 10",
+          "MATH 21"
+        ],
+        "description": "Choose one linear algebra course."
+      },
+      {
+        "id": "MATH_MULTIVAR",
+        "name": "Multivariable Calculus",
+        "type": "pick_one",
+        "courses": [
+          "AM 30",
+          "MATH 23A",
+          "MATH 23B",
+          "MATH 22"
+        ],
+        "description": "Choose one multivariable calculus course/sequence."
+      },
+      {
+        "id": "MATH_DIFFEQ",
+        "name": "Differential Equations",
+        "type": "pick_one",
+        "courses": [
+          "AM 20",
+          "MATH 24"
+        ],
+        "description": "Choose one differential equations course."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 13S",
+          "ECE 13"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "UD_CORE",
+        "name": "Upper Division Core",
+        "type": "all_required",
+        "courses": [
+          "ECON 22P",
+          "AM 100",
+          "AM 112",
+          "AM 114",
+          "AM 129",
+          "STAT 131",
+          "AM 10"
+        ],
+        "description": "All upper-division core courses are required."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 3,
+        "courses": [
+          "AM 129",
+          "AM 209",
+          "AM 112",
+          "AM 147",
+          "AM 195",
+          "AM 170A"
+        ],
+        "description": "Choose 3 upper-division elective courses."
+      },
+      {
+        "id": "LD_ELECTIVE",
+        "name": "Lower Division Electives",
+        "type": "pick_n",
+        "n": 2,
+        "courses": [
+          "AM 30",
+          "CSE 20",
+          "CSE 13S",
+          "MATH 23B",
+          "ECE 13",
+          "ASTR 19",
+          "ECON 22P"
+        ],
+        "description": "Choose lower-division elective courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "AM 170A"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "AM 195"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "CSE 16",
+      "MATH 19A",
+      "MATH 19B",
+      "AM 10",
+      "AM 20",
+      "MATH 100",
+      "MATH 20A",
+      "MATH 20B",
+      "MATH 21",
+      "MATH 24",
+      "AM 30",
+      "CSE 20",
+      "CSE 13S",
+      "MATH 23B",
+      "ECE 13",
+      "ASTR 19",
+      "ECON 22P",
+      "AM 100",
+      "AM 112",
+      "AM 114",
+      "AM 129",
+      "STAT 131",
+      "AM 147",
+      "MATH 23A",
+      "MATH 22",
+      "PHYS 116A",
+      "AM 170A",
+      "CSE 107",
+      "AM 214",
+      "CSE 101",
+      "AM 170B",
+      "AM 209",
+      "AM 195"
+    ],
+    "uncategorizedCodes": [
+      "MATH 100",
+      "PHYS 116A",
+      "CSE 107",
+      "AM 214",
+      "CSE 101",
+      "AM 170B"
+    ],
+    "_raw_text": "Applied Math Major 2025-2026 Curriculum Chart\nCalculus Discrete Math\nComplete one sequence Linear Algebra & Differential Equations Complete One\nCSE 16\nMATH 19A MATH 19B AM 10 AM 20 Applied Discrete\nCalculus for Calculus for Sci., (Strongly Preferred) (Strongly Preferred) Mathematics\nP o r S e r r c M e i q a . M , u t h i E s a P i n t t l e a h g s c : r e . M m & a e t n h t 3 & E P 1 n re 9 g r A e r q . o u r & i M s i M t a e t s h a : t 2 M h 0 a A th Ma P t E h r n e r M g e i q e n u t e i h s e i o t r e d s s: s I for f M or a P t E r h e n r e M g q i u n e is e t i h t e e o s r : s d s II Pre o r r e 1 q 9 u B is o O it r e R M s: a M th a t 1 h 1 1 B 9A\nOR Math Placement or Math 3 Math 19B 10 o o r r M M at a h th 2 2 0 1 B and AM MATH 100*\nMATH 20A MATH 20B AND Introduction to Proof and\nHonors Calculus & Honors Calculus OR OR Problem Solving\nPrerequisites:\nPrerequisites: Math Prerequisites: Math MATH 21 MATH 24 Math 11A or 19A or 20A, and Math 21\nPlacement Score of 20A Linear Algebra Differential Equations or AM 10\n500+ P o la r c A e P m /I e B n t Score Math P P la re c r e e m qu e i n s t i t o e r s M : ath 3 Math 22 P o r r e M re a q t u h i s 2 i 3 te A s o : r AM 30 *No u te p : p M er A di T vis H io n 1 0 m 0 a t i h s p el r e e c f t e i r v r e e s d . for\nMultivariable Calculus Programming\nComplete one sequence\nComplete One\nAM 30 CSE 20\nMath 23A\n(Strongly Lower Division Electives Beginning Programming in\nVector Calculus Preferred) Python\nPrerequisites: Math OR\n19A or Math 20A or OR Multivariate CSE 13S\nAP Calc BC Score of Calculus for ELECTIVE ELECTIVE Computer Systems and C\n4 or 5\nEngineers Programming\n& Prerequisites: _________________ _________________ OR\nMATH 23B Am 10 or Math ECE 13\n21, and Math\nVector Calculus 19B or Math Computer Systems and C\nPrerequisites: 20B Programming\nOR\nMath 23A A list of the lower division electives can be found on the BE ASTR 19\nUndergraduate Advising website.\nPractical Programming\nfor the Sciences\nOR\nUpper-Division Courses ECON 22P\nIntro to Python for Data\nAM 100 AM 112 AM 114 AM 129 STAT 131 Science\nM P a re t r h e f q e o u m r is E i a te n t s i g c : i A a n M l e M 2 e 0 r e s o t r h M o a d th s Pa In rt t E i r a q o l u d D a u i t f c i f o t e i n o re s n n t t o ial Dy I n n a t m ro i d ca u l c S ti y o s n t e to ms Fou S n c d ie a n ti t o if n ic s of Pr I o n b t a ro b d il u it c y t i T o h n e t o o ry\nPrerequisites: AM 10 or Comprehensive\n24, and AM 30 or Math 23B Computing for Prerequisites:\nPrerequisite: MATH 21, AM 20 or\nAM 100 or Permission MATH 24, and AM 30 or Scientists and Math 19B or Math 20B. Requirement\nAM 147 of Instructor MATH 23A or MATH 22, Engineers (AM 30 or Math 23B\nComputational Methods or PHYS 116A. Prerequisites: Recommended) AM 170A (D C)\nAM 10 or Math 21,\n& Applications and Math 11A or OR Mathematical Modeling 1\nPrerequisites: AM 10 or Math 19A or 20A. CSE 107 Prerequisites: AM 30, AM 114 or\n21\nor Probability & AM 214, Stat 131 or CSE 107,\nBasic programming Statistics for and completion of the Writing\nMath 148 experience is Engineers and Composition requirements\nassumed.\nComputational Methods\nPrerequisites: AND\n& Applications CSE 16 and AM 30 or\nPrerequisites: Math 22 or 23A, Math 22 or Math 23A Choose One\nMath 21 or AM 10, Math 24 or\nAM 20, and Math 103A or 105A\nor 152 or AM 147 or CSE 101\nAM 170B\nMathematical Modeling 2\nPrerequisites: AM 129 or AM\n209, AM 112, AM 147, and AM\nUpper-Division Electives\u2665 170A\nOR\nELECTIVE ELECTIVE ELECTIVE\nAM 195\n__________________ __________________ __________________\nSenior Thesis Research\nPrerequisites: AM 129 or AM\n209, AM 112, AM 147, and AM\n170A\nA list of the upper division electives can be found on the BE Undergraduate Advising website.\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/09/2025\n\nApplied Math Major 2025-2026 Curriculum Chart\nFall _______ Winter _______ Spring _______ Summer _______\nFall _______ Winter _______ Spring _______ Summer _______\nFall _______ Winter _______ Spring _______ Summer _______\nFall _______ Winter _______ Spring _______ Summer _______\nKey Legend\n\u2665 Students are required to take three upper-division elective courses. Up to one of these electives can be replaced by a 5-credit\nindependent study to do research with one of the program faculty. Note that many of these electives have lower-division\nprerequisites. Students should plan carefully which ones to take to ensure they are prepared for their selected upper-division\nelectives. Also note that enrollment in the graduate courses is by permission of the instructor, who will verify adequate\npreparation.\nPlease review the Applied Math Career Electives document as you select upper division electives that align with your professional\ngoals: https://docs.google.com/document/d/1dhLayvCKhc4PsO87nT5-apR5h-yIkyfWjYRWSNe2hOE/edit?usp=sharing\nNote:\nThe prerequisites listed on this curriculum chart are accurate as of July 21, 2025 according to UCSC\u2019s general catalog.\nPrerequisites listed on this chart are subject to change and students should refer to the catalog for the most up to date\nrequirements.\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/09/2025",
+    "_flags": [
+      "uncategorized_courses: 6"
+    ]
+  },
+  "BMEB_BM": {
+    "id": "BMEB_BM",
+    "name": "Biomolecular Engineering and Bioinformatics (Biomolecular)",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-Biomoleular-25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "all_required",
+        "courses": [
+          "AM 10"
+        ],
+        "description": "Linear algebra is required."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "PHYS_CORE",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 5A/L",
+          "PHYS 15A",
+          "PHYS 5M",
+          "PHYS 5B/M"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "CHEM_CORE",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 3A",
+          "CHEM 4A",
+          "CHEM 3B/BL",
+          "CHEM 3C/CL",
+          "CHEM 4B/BL",
+          "CHEM 4A/AL",
+          "CHEM 8B",
+          "CHEM 3C",
+          "CHEM 8A",
+          "CHEM 103"
+        ],
+        "description": "Required chemistry courses.",
+        "note": "Some majors allow choosing between CHEM 3-series and CHEM 4-series."
+      },
+      {
+        "id": "BIO_CORE",
+        "name": "Biology & Bioengineering",
+        "type": "all_required",
+        "courses": [
+          "BIOL 20A",
+          "BME 105",
+          "BIOE 20B",
+          "BIOL 105",
+          "BME 101",
+          "BIOC 100A",
+          "BIOL 100",
+          "BME 80G",
+          "BME 160",
+          "BME 185",
+          "BME 177",
+          "BME 128",
+          "BME 130",
+          "BIOL 115",
+          "BME 118",
+          "BME 122H",
+          "BME 123L",
+          "BME 22L",
+          "BME 132",
+          "BME 140",
+          "BME 175",
+          "BME 177L",
+          "BME 178",
+          "BME 201",
+          "BME 128L",
+          "BME 205",
+          "BME 129A",
+          "BME 180",
+          "BME 195",
+          "BME 188A",
+          "BME 230A",
+          "BME 129B",
+          "BME 188B",
+          "BME 129C",
+          "BME 188C"
+        ],
+        "description": "Required biology and bioengineering courses.",
+        "note": "Some courses may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "BME 185",
+          "CSE 185E"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "BME 160",
+          "STAT 131",
+          "CSE 185E",
+          "BME 205",
+          "BME 129A",
+          "BME 180",
+          "BME 175",
+          "BME 195"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "BIOL 20A",
+      "MATH 3",
+      "CHEM 3A",
+      "CHEM 4A",
+      "BME 105",
+      "MATH 19A",
+      "CHEM 3B/BL",
+      "CHEM 3C/CL",
+      "BIOE 20B",
+      "MATH 19B",
+      "BIOL 105",
+      "CHEM 4B/BL",
+      "CHEM 4A/AL",
+      "AM 10",
+      "CHEM 8B",
+      "BME 101",
+      "BIOC 100A",
+      "STAT 131",
+      "BIOL 100",
+      "PHYS 5A/L",
+      "BME 80G",
+      "BME 160",
+      "CHEM 3C",
+      "CHEM 8A",
+      "PHYS 15A",
+      "BME 185",
+      "PHYS 5M",
+      "PHYS 5B/M",
+      "BME 177",
+      "CHEM 103",
+      "BME 128",
+      "BME 130",
+      "AM 115",
+      "AM 147",
+      "BIOL 115",
+      "METX 100",
+      "METX 140",
+      "BME 118",
+      "BME 122H",
+      "BME 123L",
+      "BME 22L",
+      "BME 132",
+      "BME 140",
+      "BME 175",
+      "BME 177L",
+      "BME 178",
+      "ECE 104",
+      "BME 201",
+      "BME 128L",
+      "CSE 185E",
+      "BME 205",
+      "BME 129A",
+      "BME 180",
+      "BME 195",
+      "BME 188A",
+      "BME 230A",
+      "BME 129B",
+      "BME 188B",
+      "BME 129C",
+      "BME 188C",
+      "CSE 20"
+    ],
+    "uncategorizedCodes": [
+      "MATH 3",
+      "AM 115",
+      "AM 147",
+      "METX 100",
+      "METX 140",
+      "ECE 104"
+    ],
+    "_raw_text": "2025-2026 Biomolecular Engineering and Bioinformatics: Biomolecular\nMathematics Chemistry Biology, and Biochemistry\nSelect one of the following General Chemistry series: \u2022BIOL 20A\n\u2022MATH 3 or Math Placement \u2022 CHEM 3A, or CHEM 4A BME 105\nMATH 19A BIOL 20A (Strongly Recommended)\nCell and Molecular\nCalculus I \u2022Math 2 or math Genetics in the\n[F/W/Sp] placement of 200 or \u2022Chem 3A \u2022Chem 3B Biology Genomics Era\nhigher\nCHEM 3A CHEM 3B/BL CHEM 3C/CL [F/W/Sp] OR [W/Sp]\nGeneral General General\n\u2022MATH 19A\nChemistry Chemistry Chemistry \u2022BIOL 20A and BIOE 20B\nMATH 19B\nCalculus II [F/W/Sp] [F/W/Sp] [F/W/Sp] BIOL 105\nOR Genetics [F/W/Sp]\n[F/W/Sp]\n\u2022Chem 4 Prep ALEKS module. \u2022Chem 4A\n\u2022MATH 3 or Math Placement Math 3 or Math Placement. CHEM 4B/BL Select one of the following Biochemistry series:\nCHEM 4A/AL\nAM 10 or Math 21 Advanced General Advanced General\nLinear Algebra Chemistry Chemistry\n[F/W/Sp] Not offered 2025-26 Not offered 2025-26 \u2022CHEM 8B and BIOL 20A \u2022BIOL 20A \u2022BIOL 20A\nBME 101 BME 101\nBIOC 100A Molecular Biology Molecular Biology\n\u2022MATH 19B Biochemistry and for Biomolecular for Biomolecular\n(AM re c 3 o 0 m o m r M en a d th e d 2 ) 3B Laboratory Courses Molecular Biology [F] Engineers [F] Engineers [F]\nSTAT 131 & & &\nIntro t T o h P eo ro ry b ability \u2022CH B E M M or E 1 4 M B 2 L 1 o r L 3 BL B \u2022 M BM E E 2 21 2 L L B \u2022 I B O IO C C 1 10 0 0 0 A B CH \u2022C E he M m 1 8B 0 3 \u2022 2 B 0 I B O , L a 2 n 0 d A C a H n E d M B I 8 O B E\n[F/W/Sp] Intro. To Basic Fo D u e n s d ig a n ti o a n n s d of Biochemistry and Biochemistry BIOL 100\nLaboratory Experimentation in Molecular Biology [S] Biochemistry\nPhysics Techniques Molecular Biology [W] [F/WSp]\n[F/W]\n\u2022MATH 19A, corequisite of [W/Sp]\nPhys 5L AND Math 19B Bioinformatics and Bioethics\nPHYS 5A/L\nIntroduction to Physics I Organic Chemistry BME 80G \u2022BME 105 or BIOL 105 or BIOC \u2022BME 160 or\nOR [F /W/Sp] \u2022CHEM 3C or \u2022CHEM 8A B C io e e n th tu ic ry s : in S c th ie e n 2 ce 1 , st 100A or B C M HE E M B m 10 a 3 jo o rs r declared B B M M E E 2 1 0 6 5 3\nPHYS 15A/ 5L C C H H E E M M 4 8 B A CHEM 8B Business, and Society Compu B ta M t E io n 1 a 1 l 0 B iology Applied\nHonors Introduction to Organic [Sp] Tools Visualization and\nPhysics I [F] Organic Chemistry [F/W /Sp] Analysis of\nChemistry\n\u2022BIOL 20A Scientific Data\n\u2022PHYS 5A/L and MATH BME 160 (6 units)\u03a9 \u2022ELWR and BIOL 20A\n19B; concurrent enrollment [F/W] [W/Sp] Research Programming BME 185 (DC)\nin PHYS 5M\nPHYS 5B/M\nin the Life Sciences Technical Writing for\nIntroduction to [F/W] Biomolecular Engineers [Sp]\nPhysics II [F/W/Sp]\n[W/Sp]\nModeling & Design Sequence\nChoose one of the following sequences\nElective: One of the following (course used as\n\u2022BIOL 20A \u2022 BIOL 100 or BIOC 100A or \u2022BIOL 105 or BME 105 or METX an Elective cannot be used to satisfy other major\nBME 177 CHEM 103 140 requirements)\nEngineering Stem Cells BME 128\nBME 130 AM 115, AM 147, BIOL 115*, METX 100, METX 140, BIOC\nProtein Engineering\n& [Sp] [W] Genomes [F] 100C, BME 118, BME 122H, BME 123L, BME 128, BME\n\u2022BME 22L & & 128L, BME 130, BME 132, BME 140, BME 175, BME 177,\nBME 177L, BME 178*, ECE 104, or any 5-credit\nBME 177L (2 units)\n\u2022BME 22L \u2022BME 22L\nEngineering Stem Cell biomolecular engineering graduate course (BME 201-279)\nBME 128L (2 units) BME 123L (2 units)\n*Courses have additional prerequisites not covered by the\nLab [Sp] Protein Engineering Lab Long Read Sequencing major requirements\n[W] [F]\nBiomolecular Capstone: Students must complete one of the following:\nBioinformatics Capstone# iGEM Senior Design Senior Thesis\u03b1\n\u2022BME 160, STAT 131, and prev. or \u2022prev or conc. B en M ro E llm 1 e 8 nt 0 in (2 B M u E n i 1 t 8 s 5 ) or CSE 185E \u2022 B B M M E E 1 2 0 2 1 L ; ; P B r I e O v L io u 1 s 0 0 o r o c r o B n IO cu C rr e 1 n 0 t 0 e A n o ro r l C lm H e E n M t i n 1 0 B 3 M o E r Senior T B h M es E i s 1 9 R 5 esear ch\nconc. enrollment in Biochemistry Professional Practice in Bioengineering 185 [F]\nBME 205 [W] BME 129A\nBioinformatics Models and Biomolecular Engineering Project I\nAlgorithms \u2022BME 180 and instructor permission [F] BME 195\n\u2022BME 205 [F] BME 188A(2 units) \u2022BME 129A Senior Thesis Research\nBME 230A Synthetic Biology \u2013 Mentored Research A BME 129B [W]\nIntroduction to Computational [Sp] Biomolecular Engineering Project II\nGenomics and Systems \u2022BME 188A and instructor permission [W] BME 195\nBiology [W]\nBME 188B \u2022BME 129B or BME 230A Senior Thesis Research\n\u2022BME 129A and BME 129B Synthetic Biology \u2013 Mentored Research B BME 129C [Sp]\nBME 129C [Su] Biomolecular Engineering Project III\n\u2022BME 188B and instructor permission [Sp]\nBiomolecular Engineering BME 188C\nProject III\n[Sp]\nSynthetic Biology \u2013 Mentored Research C\n[Su]\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/11/2025\n\n2025-2026 Biomolecular Engineering and Bioinformatics: Biomolecular\nSpring\nFall Winter Summer\nSpring\nFall Winter Summer\nSpring\nFall Winter Summer\nSpring\nFall Winter Summer\nLegend\n\u03a9 Students with no prior programming experience are advised to take CSE 20 prior to BME 160\n# The Bioinformatics capstone is programming heavy. Students interested in this capstone are advised to take additional programming\nclasses.\n\u03b1 The thesis option consists of 15 credits of Senior Thesis Research (BME 195) in Biomolecular Engineering. Students pursuing the\nsenior thesis option must write a two-page thesis proposal and seek approval of their project from the undergraduate director in the\nquarter preceding the independent study courses, typically spring quarter of the third year. Students spend three or more quarters\nworking on their thesis projects. Students should plan on 15 units of BME 195 split over 3 quarters.\nDue to course overlap between the biomolecular engineering and bioinformatics (BMEB) B.S., and the bioinformatics minor,\nnone of these double major or major/minor combinations will be considered. Other major/minor combinations are permitted\nand encouraged. Double majors with the biotechnology B.A. and majors in the Humanities. Social Sciences, and Arts\nDivisions are specifically encouraged.\nExit Requirements\nStudents are required to submit a portfolio, exit survey, and attend an exit interview. The portfolios must be turned in by the last day of the\nquarter of graduation, and will be reviewed quarterly by the undergraduate director. Exit interviews are scheduled during the last week of the\nquarter by Baskin Engineering advising office, generally as small group interviews. Additional information can be found in the program\ncatalog statement.\n1. Portfolio\n2. Exit Survey\n3. Exit Interview\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/11/2025",
+    "_flags": [
+      "uncategorized_courses: 6"
+    ]
+  },
+  "BMEB_BI": {
+    "id": "BMEB_BI",
+    "name": "Biomolecular Engineering and Bioinformatics (Bioinformatics)",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-BINF-25-26-1.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "all_required",
+        "courses": [
+          "AM 10"
+        ],
+        "description": "Linear algebra is required."
+      },
+      {
+        "id": "MATH_MULTIVAR",
+        "name": "Multivariable Calculus",
+        "type": "all_required",
+        "courses": [
+          "AM 30"
+        ],
+        "description": "Required multivariable calculus courses."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131",
+          "STAT 132"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 13S",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "CHEM_CORE",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 3A",
+          "CHEM 4A",
+          "CHEM 3C",
+          "CHEM 4B",
+          "CHEM 8A",
+          "CHEM 3B/BL",
+          "CHEM 3C/CL",
+          "CHEM 4B/BL",
+          "CHEM 103",
+          "CHEM 8B"
+        ],
+        "description": "Required chemistry courses.",
+        "note": "Some majors allow choosing between CHEM 3-series and CHEM 4-series."
+      },
+      {
+        "id": "BIO_CORE",
+        "name": "Biology & Bioengineering",
+        "type": "all_required",
+        "courses": [
+          "BIOL 20A",
+          "BME 101",
+          "BME 80G",
+          "BME 105",
+          "BIOL 105",
+          "BIOC 100A",
+          "BIOL 100",
+          "BME 110",
+          "BME 185",
+          "BME 118",
+          "BME 122H",
+          "BME 128L",
+          "BME 130",
+          "BME 132",
+          "BME 140",
+          "BME 175",
+          "BME 177",
+          "BME 177L",
+          "BME 178",
+          "BME 160",
+          "BME 205",
+          "BME 163",
+          "BME 129B",
+          "BME 230A",
+          "BME 129C",
+          "BME 195"
+        ],
+        "description": "Required biology and bioengineering courses.",
+        "note": "Some courses may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "BME 185"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "BME 175",
+          "BME 195"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "MATH 3",
+      "MATH 19A",
+      "CHEM 3A",
+      "CHEM 4A",
+      "CHEM 3C",
+      "CHEM 4B",
+      "BIOL 20A",
+      "CHEM 8A",
+      "CHEM 3B/BL",
+      "CHEM 3C/CL",
+      "MATH 19B",
+      "AM 10",
+      "CHEM 4B/BL",
+      "BME 101",
+      "CSE 16",
+      "BME 80G",
+      "BME 105",
+      "BIOL 105",
+      "BIOC 100A",
+      "BIOL 100",
+      "CHEM 103",
+      "CHEM 8B",
+      "AM 30",
+      "BME 110",
+      "STAT 131",
+      "BME 185",
+      "STAT 132",
+      "BIO 8",
+      "AM 115",
+      "AM 147",
+      "BME 118",
+      "BME 122H",
+      "CSE 30",
+      "BME 128L",
+      "BME 130",
+      "BME 132",
+      "BME 140",
+      "BME 175",
+      "BME 177",
+      "BME 177L",
+      "BME 178",
+      "CSE 40",
+      "CSE 142",
+      "CSE 144",
+      "CSE 182",
+      "METX 100",
+      "METX 140",
+      "BME 160",
+      "BME 205",
+      "CSE 20",
+      "BME 163",
+      "CSOER 142",
+      "CSE 12",
+      "CSE 101",
+      "CSE 13S",
+      "CSE 107",
+      "BME 129B",
+      "BME 230A",
+      "BME 129C",
+      "BME 195"
+    ],
+    "uncategorizedCodes": [
+      "MATH 3",
+      "BIO 8",
+      "AM 115",
+      "AM 147",
+      "CSE 40",
+      "CSE 142",
+      "CSE 144",
+      "CSE 182",
+      "METX 100",
+      "METX 140",
+      "CSOER 142",
+      "CSE 101",
+      "CSE 107"
+    ],
+    "_raw_text": "2025 \u2013 2026 Biomolecular Engineering and Bioinformatics:\nBioinformatics\nMath & Statistics\nChemistry Biology, Organic Chemistry, and Biochemistry\nSelect one of the following General Chemistry series:\n\u2022MATH 3 or Math Placement\nMATH 19A \u2022CHEM 3A, or CHEM 4A \u2022CHEM 3C or CHEM 4B\nBIOL 20A CHEM 8A\nCalculus I \u2022Math 2 or math Cell and Molecular Organic Chemistry\n[F/W/Sp] placement \u2022Chem 3A \u2022Chem 3B Biology\nCHEM 3A CHEM 3B/BL CHEM 3C/CL [F/W/Sp] [F/W]\n\u2022MATH 19A General General General\nMATH 19B Chemistry Chemistry Chemistry\nCalculus II [F/W/Sp] [F/W/Sp] [F/W/Sp] \u2022BIOL 20A \u2022BIOL 20A and\n[F/W/Sp]\nOR\n(Strongl\nB\ny\nM\nRe\nE\nc o\n1\nm\n05\nm ended) OR B\nB\nIO\nIO\nL\nE 2\n1\n0\n0\nB\n5\n\u2022MATH 3 or Math Placement \u2022Chem 4 Prep ALEKS module. \u2022Chem 4A Genetics in the Genetics\nAM 10 or Math 21 Math C 3 H o E r m M a t 4 h A pla /A ce L m ent. CHEM 4B/BL Genomics Era[W/Sp] [F/W/Sp]\nMathematical Methods Advanced General Advanced General\nfor Engineers I Chemistry Chemistry Select one of the following\n[F/W/Sp]\nBME 101\nNot offered 2025-26 Not offered 2025-26\nMolecular Biology for\n\u2022MATH 19A, or Math 19B; prior\nprogramming recommended Biomolecular Engineers [F]\nCSE 16 Bioinformatics & Elective\nDiscrete Math OR\n[F/W/Sp] BME 80G \u2022BME 105 or BIOL 105 or\nBioethics in the BIOC 100A or BIOL 100 or \u2022CHEM 8A\n\u2022MATH 19B 21st Century [Sp] CHEM 103 or declared CHEM 8B\n(AM 30 or Math 23B or Math 22 BMEB major\nOrganic\nrecommended) \u2022ELWR and BIOL 20A BME 110\nChemistry\nSTAT 131 BME 185 Computational [W/Sp]\nIntro to Probability Theory\n[F/W/Sp] Technical Writing for Biomolecular Biology Tools AND one of the following\nEngineers [F/W/Sp] [F/W/Sp]\n\u2022STAT 131 \u2022CHEM 8B and \u2022BIOL 20A and\nSTAT 132 One of the foll E ow le in c g t ( i c v o e u rse used as an C \u2022 H C E HE M M 1 8B 03 BI B O IO C L 1 20 0 A 0 A BIO 8 E B 2 o 0 r B C ; H C E H M EM\nClassical and Bayesian Elective cannot be used to satisfy other Biochemistry 112A\nInference [F/W/Sp] major requirements): Biochemistry BIOL 100\nand\nOORR AM 115, AM 147, BME 118, BME 122H, BME Molecular Biochemistry\n\u2022Math 19B and CSE 30 128, BME 128L, BME 130, BME 132, BME 140, Biology\nBME 175, BME 177, BME 177L, BME 178, BIOC\nCSE 40\n100B, CSE 142, CSE 144, CSE 182, METX 100,\nMachine Learning METX 140, or 5-unit BME grad course (BME\nBasics 201-279).\n[F/W/Sp] [Sp] [F] [F/W/Sp]\n\u2022Math 19B and AM 10 Programming\nAM 30 OR Math 23A\nMultivariate Calculus for \u2022BIOL 20A \u2022BME 160 or BME 205 \u2022CSE 20 or BME 160; and\nEngineers BME 160 (6 units)\u03a9 BME 163 Math 3 or Math 19A\n& Research CSE 30 (7 units)\nApplied Visualization\nProgramming in the Programming\n\u2022CSE 40 or STAT 132; CSE Life Sciences and Analysis of Abstractions: Python\n101; AM 30 or Math 23A; and Scientific Data\nSTAT 131 [F/W] [Sp] [F/W/Sp]\nCSOER 142\nMachine Learning\nOR \u2022CSE 16, CSE 20 or BME 160, \u2022CSE 12 or BME 160 and 13S\n\u2022CSE 40 or STAT 132, and CSE C 3 S 0 E an d 1 M 0 a 1 t P h 1 9B \u2022CSE 12 or BME 160 and CSE M 16 a t a h n 1 d 9 C B S E 30 and\nCSE 101 CSE 13S (7 units) CSE 101\nCSE 144 Introduction to Data OR Computer Systems AND\nIntroduction to Data\nApplied Machine Structures and and C Programming Structures and\nLearning Algorithms in Python [F/W/Sp] Algorithms\n[Sp] [F/W/Sp]\nBioinformatics Capstone\nChoose one sequence\n\u2022BME 160 or CSE 30; STAT 131 or CSE 107; \u2022BME 205 \u2022BME 129B or BME 230A\nprev. or concurrent enrollment in Biochemistry BME 230A BME 129C BME 195\nBME 205 Introduction to Computational Project Design and Senior Thesis\nBioinformatics Models and Genomics and Systems Biology Implementation in Biomolecular (15 units over 3 quarters)\nAlgorithms Engineering III [F/W/Sp]\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu\u2022 07/19/2025\n\n2025 \u2013 2026 Biomolecular Engineering and Bioinformatics:\nBioinformatics\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nExit Requirements\nStudents a required to submit a portfolio, exit survey, and attend an exit interview. The portfolios must be turned in by the last day of the quarter of\ngraduation re , and will be reviewed quarterly by the undergraduate director. Exit interviews are scheduled during the last week of the quarter by Baskin\nEngineering advising office, generally as small group interviews. Additional information can be found in the program catalog statement.\n1. Portfolio\n2. Exit Survey\n3. Exit Interview\nStudent name:\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu\u2022 07/11/2025",
+    "_flags": [
+      "uncategorized_courses: 13"
+    ]
+  },
+  "BIOTECH_BS": {
+    "id": "BIOTECH_BS",
+    "name": "Biotechnology B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Biotechnology-25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Required",
+        "type": "all_required",
+        "courses": [
+          "BME 5",
+          "BME 80H",
+          "MATH 2",
+          "AM 3",
+          "STAT 7/L",
+          "CHEM 3A",
+          "ECE 80B",
+          "STAT 5",
+          "BME 18",
+          "CHEM 4A/L",
+          "BIOL 20A",
+          "BME 80G"
+        ],
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 7/L",
+          "STAT 5"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "CHEM_CORE",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 3A",
+          "CHEM 4A/L"
+        ],
+        "description": "Required chemistry courses.",
+        "note": "Some majors allow choosing between CHEM 3-series and CHEM 4-series."
+      },
+      {
+        "id": "BIO_CORE",
+        "name": "Biology & Bioengineering",
+        "type": "all_required",
+        "courses": [
+          "BME 5",
+          "BME 80H",
+          "BME 18",
+          "BIOL 20A",
+          "BME 80G",
+          "BME 122H",
+          "BME 128",
+          "BME 130",
+          "BME 132",
+          "BME 140",
+          "BME 105",
+          "BME 177",
+          "BME 178",
+          "BME 110",
+          "BME 160",
+          "BME 185",
+          "BME 175"
+        ],
+        "description": "Required biology and bioengineering courses.",
+        "note": "Some courses may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "UD_CORE",
+        "name": "Upper Division Core",
+        "type": "all_required",
+        "courses": [
+          "BME 122H",
+          "BME 128",
+          "BME 130",
+          "BME 132",
+          "BME 140",
+          "BME 105",
+          "BME 177",
+          "BME 178",
+          "ECE 104",
+          "FMST 124",
+          "METX 100",
+          "SOCY 121",
+          "SOCY 123",
+          "SOCY 127P",
+          "BME 110"
+        ],
+        "description": "All upper-division core courses are required."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "BME 185"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "BME 175"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "BME 5",
+      "BME 80H",
+      "MATH 2",
+      "AM 3",
+      "STAT 7/L",
+      "CHEM 3A",
+      "ECE 80B",
+      "STAT 5",
+      "BME 18",
+      "CHEM 4A/L",
+      "BIOL 20A",
+      "BME 80G",
+      "BME 122H",
+      "BME 128",
+      "BME 130",
+      "BME 132",
+      "BME 140",
+      "BME 105",
+      "BME 177",
+      "BME 178",
+      "ECE 104",
+      "FMST 124",
+      "METX 100",
+      "SOCY 121",
+      "SOCY 123",
+      "SOCY 127P",
+      "BME 110",
+      "BME 160",
+      "CSE 20",
+      "BME 185",
+      "BME 175"
+    ],
+    "uncategorizedCodes": [],
+    "_raw_text": "2025-2026 Biotechnology B.A.\nLower Division Courses\nAll of the following lower division courses are required for the major.\nChemistry Introductory Biotechnology and Society Statistics\n\u2022Previous or concurrent BME 5 BME 80H \u2022Math placement score or Math 3\nenrollment in MATH 2 or math Introduction to The Human Genome or AM 3\nplacement Biotechnology (Not offered 2025-26) STAT 7/L\nCHEM 3A [F/W] OR (Strongly Preferred)\n(recommended)\nStatistical Methods for\nGeneral Chemistry ECE 80B\nBiological Sciences\n[F/W/Sp] CS E 20\u03a9 Me E d n ic g i i n n e e e a r n in d g N In a n tu o r v a a l t S io c n ie s n f c o e r s [F/W/Sp]\nOR\nOR Beginning Programming [Sp]\n\u2022C\nM\nh\na\ne\nt\nm\nh 3\n4\no\nP\nr\nr e\nM\np\na\nA\nth\nL\nP\nE\nl\nK\na\nS\nce\nm\nm\no\ne\nd\nn\nu\nt.\nl e. in Python OR STAT 5\n[F/W/Sp]\nStatistics\nBME 18 [F/W/Sp]\nCHEM 4A/L\nScientific Principles of Life\nAdvanced General\n[F]\nChemistry \u2022CHEM 3A\n(Not offered 2025-26) BIOL 20A\nCell and Molecular BME 80G\nBiology Bioethics in the 21st Century:\n[F/W/Sp] Science, Business, and Society\n[Sp]\nElectives\nUpper Division Courses\nThree of the following courses must be taken.\nComplete all of the following We recommend that two or more of the three\ncourses. are BME courses\n\u2022BIOL20A BME 122H, BME 128*, BME 130, BME 132, BME 140,\nBME 105\nBME 177, BME 178*, ECE 104, FMST 124, FMST\nGenetics in the Genomics Era\n133*, METX 100, SOCY 121, SOCY 123, SOCY 127P\n[W/Sp]\n*Classes have additional prerequisites not covered by\nthe major requirements\n\u2666Students may petition to have one upper-division\n\u2022BME105\nbiology course count as an elective, but most such\nBME 110\ncourses have prerequisites that are not required for\nComputational Biology Tools\nthe major.\n[F/W/Sp]\n1. _______________________\n\u2022BIOL20A\nBME 160 (6units)\u03a9\nResearch Programming in the\nLife Sciences 2. _______________________\n[F/W]\n\u03a9 CSE 20 is waived for students who 3. _______________________\nhave already passed BME 160\nDisciplinary\n\u2022ELWR and BIOL 20A Comprehensive\nCommunication (DC) BME 185 BME 175\nRequirement\nRequirement Technical Writing for Entrepreneurship in\nBiomolecular Complete the Biotechnology\nComplete the following Engineers following course [W]\ncourse.\n[F/W/Sp]\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\n\n2025-2026 Biotechnology B.A.\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nThe Bachelor of Arts in Biotechnology is intended for students who plan to be involved in the biotechnology industry as\nwriters, artists, ethicists, executives, sales force, regulators, lawyers, politicians, and other roles that require an\nunderstanding of the technology, but not the intensive training needed for technicians, research scientists, engineers,\nand bioinformaticians. This major is designed to be suitable as a double major or minor for students in the humanities or\nsocial sciences.\nDue to course overlap between the biomolecular engineering and bioinformatics (BMEB) B.S., the biotechnology B.A.,\nand the bioinformatics minor, none of these double major or major/minor combinations will be considered. Other\nmajor/minor combinations are permitted and encouraged. Double majors with the biotechnology B.A. and majors in the\nHumanities, Social Sciences or Arts Divisions are specifically encouraged. Students considering double majoring with\nbiology-related majors should consider a minor in bioinformatics.\n:\nNote\nThe prerequisites listed on this curriculum chart are accurate as of July 22, 2025 according to UCSC\u2019s general\ncatalog. Prerequisites listed on this chart are subject to change and students should refer to the catalog for the\nmost up to date requirements.\n\u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\nhttp://undergrad.engineering.ucsc.edu",
+    "_flags": []
+  },
+  "CE_BS": {
+    "id": "CE_BS",
+    "name": "Computer Engineering B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CE_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "pick_one",
+        "courses": [
+          "AM 10",
+          "MATH 21"
+        ],
+        "description": "Choose one linear algebra course."
+      },
+      {
+        "id": "MATH_DIFFEQ",
+        "name": "Differential Equations",
+        "type": "pick_one",
+        "courses": [
+          "AM 20",
+          "MATH 24"
+        ],
+        "description": "Choose one differential equations course."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 13S",
+          "ECE 13",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "CORE",
+        "name": "Core Courses",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 30",
+          "CSE 12",
+          "CSE 13S",
+          "ECE 13",
+          "CSE 100/L",
+          "CSE 101",
+          "CSE 120",
+          "CSE 121",
+          "ECE 101/L"
+        ],
+        "description": "All core courses are required."
+      },
+      {
+        "id": "PHYS_CORE",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 5A/L",
+          "PHYS 5C/N",
+          "PHYS 5B/M"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "CONCENTRATION",
+        "name": "Concentration Courses",
+        "type": "pick_n",
+        "n": 4,
+        "courses": [
+          "CSE 125",
+          "CSE 130",
+          "CSE 225",
+          "ECE 171/L",
+          "CSE 150",
+          "CSE 111",
+          "CSE 122",
+          "CSE 134",
+          "CSE 222A",
+          "CSE 156/L",
+          "CSE 220",
+          "CSE 228A",
+          "CSE 113",
+          "ECE 173",
+          "ECE 174",
+          "CSE 110A",
+          "CSE 123A",
+          "CSE 127A",
+          "ECE 118",
+          "CSE 195",
+          "CSE 121",
+          "CSE 185E",
+          "CSE 100/L",
+          "ECE 13"
+        ],
+        "description": "Choose one concentration track and complete its courses.",
+        "note": "Concentration-specific \u2014 see PDF for track details."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 185E",
+          "CSE 195"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 123A",
+          "CSE 127A",
+          "ECE 118",
+          "CSE 195",
+          "CSE 121",
+          "CSE 125",
+          "CSE 185E",
+          "CSE 100/L",
+          "ECE 13"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "PHYS 5A/L",
+      "MATH 19A",
+      "AM 10",
+      "MATH 21",
+      "PHYS 5C/N",
+      "MATH 19B",
+      "AM 20",
+      "MATH 24",
+      "PHYS 5B/M",
+      "CSE 185E",
+      "ECE 9",
+      "ECE 103/L",
+      "CSE 107",
+      "STAT 131",
+      "CSE 195",
+      "CSE 20",
+      "CSE 30",
+      "CSE 12",
+      "CSE 13S",
+      "ECE 13",
+      "CSE 100/L",
+      "CSE 101",
+      "CSE 120",
+      "CSE 121",
+      "ECE 101/L",
+      "CSE 125",
+      "CSE 130",
+      "CSE 225",
+      "ECE 171/L",
+      "CSE 150",
+      "CSE 111",
+      "CSE 122",
+      "CSE 134",
+      "CSE 222A",
+      "CSE 156/L",
+      "CSE 220",
+      "CSE 228A",
+      "CSE 113",
+      "ECE 173",
+      "ECE 174",
+      "CSE 110A",
+      "CSE 123A",
+      "CSE 127A",
+      "ECE 118"
+    ],
+    "uncategorizedCodes": [
+      "ECE 9",
+      "ECE 103/L",
+      "CSE 107"
+    ],
+    "_raw_text": "Computer Engineering B.S. Degree\n2025-2026 Curriculum Chart\nMath Courses Science Courses Major Qualification Policy\nPHYS 5A/L Complete 36 units of the highlighted\nMATH 19A AM 10 or MATH 21 Mechanics courses by the end of 5th quarter with\nCalculus I Engr. Math Linear Algebra at least a 2.8 GPA and no more than\nMethods I\nPHYS 5C/N seven credits of non-passing grades in\nElectricity & those courses. You do not need to\nMATH 19B AM 20 MATH 24 Magnetism complete all highlighted classes for\nCalculus II Engr. Math or Ordinary Differential major declaration.\nMethods ll Equations PHYS 5B/M\nDC Requirement\nWaves & Optics\nDis C cr S e E te 1 M 6 a th Multiv a A ri M at e 3 C 0 a lculus or MA V T e H ct 2 or 3A or CSE 185E\nfor Engineers Calculus Technical Writing\nECE 9\nStatics and or\nECE 103/L CSE 107 STAT 131 Mechanics of\nSignals & Systems Probability & or Introduction to Materials CSE 195**\nStatistics Probability Theory Senior Thesis\nCore Courses\nCSE 20 CSE 30 CSE 12 CSE 13S* ECE 13\nBeginning Programming Computer Systems Computer or Computer\nProgramming in Abstractions: Systems & C Systems & C\n& Assembly Lang.\nPython Python Programming Programming\nCSE 100/L CSE 101 CSE 120 CSE 121 ECE 101/L\nIntro to Data Computer Embedded Electronic Circuits\nLogic Design Structures and Architecture System Design\nAlgorithms\n*CSE 13s is strongly recommended, with exception to those pursuing a Digital Hardware Concentration\nConcentrations (choose one)\nSystem Programming Computer Systems Networks Digital Hardware\nCSE 125\nCSE 130 CSE 130 CSE 130 CSE 225 can be substituted with\ndepartment approval.\nECE 171/L\nCSE 150 CSE 111 CSE 150\nor\nor\nCSE 122\nCSE 134\nCSE 222A may be substituted\nCSE 111 for CSE 122 with department\nor CSE 156/L approval\nCSE 125\nCSE 134 One of the following:\nCSE 225 can be substituted\nwith department approval. CSE 122 (if not satisfied above)\nElective\nCSE 220\nor Can be chosen from the\nOne of the following: CSE 228A\nComputer Engineering\nECE 171/L (if not satisfied above)\n\u2022CSE 113 CSE 122 Elective list on the UA\n\u2022CSE 156/L CSE 222A can be substituted website. ECE 173 (Prerequisite: ECE 174)\nwith department approval\n\u2022CSE 110A\nElective\nElective\nCan be chosen from the Computer Can be chosen from the Computer Engineering\nElective Elective list or the approved Digital Hardware\nCan be chosen from the Engineering Elective list on the UA Grad- Level Course List\nwebsite.\nComputer Engineering Elective\nlist on the UA website. Elective course options can be found on the Undergrad Advising website at: https://undergrad.engineering.ucsc.edu/curriculum-charts/\nCapstone (choose one option)\nPlease see catalog for full list of approved\nCSE 123A, 123B CSE 127A, 127B ECE 118 * CSE 195**\nEng. Design, I & II Chip Design, I & II Intro to capstones. Capstones not listed on this\nSenior Thesis\nPrerequisites: Prerequisites: Mechatronics\nCSE 121 and previous or CSE 125 or 225, and previous Satisfies the DC requirement curriculum chart have additional enrollment\nconcurrent enrollment in or concurrent enrollment in Prerequisites: ECE\nCSE 185E CSE 185E, and previous or 101/L, CSE 100/L, Special approval needed,\nconcurrent enrollment in CSE and ECE 13 see capstone note below restrictions or are not consistently offered.\n122 or 222A.\n*ECE 118 can NOT be used as elective and capstone. **CSE 195 also requires the submission of an approved senior thesis.\nhttps://undergrad.engineering.ucsc.edu/ \u2022 bsoeadvising@ucsc.edu \u2022 07/19/2025\n\nComputer Engineering B.S. Degree\n2025-2026 Curriculum Chart\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nUpper Division Electives\nPlease refer to the Undergraduate Advising website for the list of approved electives:\nhttps://undergrad.engineering.ucsc.edu/curriculum-charts/\nThe prerequisites listed on this curriculum chart are accurate as of July 22, 2025 according to UCSC\u2019s general catalog. Prerequisites listed\non this chart are subject to change and students should refer to the catalog for the most up to date requirements.\nhttps://undergrad.engineering.ucsc.edu/ \u2022 bsoeadvising@ucsc.edu \u2022 07/11/2025",
+    "_flags": [
+      "uncategorized_courses: 3"
+    ]
+  },
+  "CS_BS": {
+    "id": "CS_BS",
+    "name": "Computer Science B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BS_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Required",
+        "type": "all_required",
+        "courses": [
+          "MATH 19B",
+          "MATH 19A",
+          "CSE 16",
+          "CSE 20",
+          "MATH 20A",
+          "MATH 20B",
+          "CSE 12",
+          "AM 30",
+          "CSE 40",
+          "CSE 30",
+          "CSE 13S",
+          "AM 10",
+          "MATH 23A",
+          "ECE 30",
+          "MATH 21",
+          "CSE 101"
+        ],
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "19-series",
+            "courses": [
+              "MATH 19A",
+              "MATH 19B"
+            ]
+          },
+          {
+            "label": "20-series (Honors)",
+            "courses": [
+              "MATH 20A",
+              "MATH 20B"
+            ]
+          }
+        ],
+        "description": "Choose one calculus sequence: 19-series or 20-series."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "pick_one",
+        "courses": [
+          "AM 10",
+          "MATH 21"
+        ],
+        "description": "Choose one linear algebra course."
+      },
+      {
+        "id": "MATH_MULTIVAR",
+        "name": "Multivariable Calculus",
+        "type": "pick_one",
+        "courses": [
+          "AM 30",
+          "MATH 23A"
+        ],
+        "description": "Choose one multivariable calculus course/sequence."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131",
+          "STAT 132"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 13S",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 2,
+        "courses": [
+          "CSE 101M",
+          "AM 30",
+          "CSE 195",
+          "CSE 115A",
+          "CSE 185S",
+          "CSE 185E",
+          "CSE 110B",
+          "CSE 115C",
+          "CSE 115D",
+          "CSE 121",
+          "CSE 134",
+          "CSE 138",
+          "CSE 140"
+        ],
+        "description": "Choose 2 upper-division elective courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
+          "CSE 115",
+          "CSE 185E",
+          "CSE 185S",
+          "CSE 195"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
+          "CSE 185S",
+          "CSE 185E",
+          "CSE 110B",
+          "CSE 115C",
+          "CSE 115D",
+          "CSE 121",
+          "CSE 134",
+          "CSE 138",
+          "CSE 140",
+          "CSE 143",
+          "CSE 144",
+          "CSE 145",
+          "CSE 156/L",
+          "CSE 157",
+          "AM 114",
+          "CSE 195"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "MATH 19B",
+      "MATH 19A",
+      "CSE 16",
+      "CSE 20",
+      "MATH 20A",
+      "MATH 20B",
+      "CSE 12",
+      "AM 30",
+      "CSE 40",
+      "CSE 30",
+      "CSE 13S",
+      "AM 10",
+      "MATH 23A",
+      "ECE 30",
+      "MATH 21",
+      "CSE 101",
+      "CSE 120",
+      "CSE 114A",
+      "CSE 130",
+      "CSE 101M",
+      "CSE 107",
+      "CSE 102",
+      "STAT 131",
+      "CSE 195",
+      "CSE 103",
+      "CSE 115A",
+      "CSE 185S",
+      "CSE 185E",
+      "CSE 110B",
+      "CSE 115C",
+      "CSE 115D",
+      "CSE 121",
+      "CSE 134",
+      "CSE 138",
+      "CSE 140",
+      "CSE 143",
+      "CSE 144",
+      "CSE 145",
+      "CSE 156/L",
+      "CSE 157",
+      "CSE 160",
+      "CSE 161/L",
+      "CSE 162/L",
+      "CSE 163",
+      "CSE 168",
+      "CSE 181",
+      "CSE 183",
+      "CSE 184",
+      "CSE 187",
+      "CMPM 172",
+      "AM 114",
+      "CMPM 120",
+      "AM 147",
+      "CMPM 131",
+      "AM 148",
+      "CMPM 146",
+      "AM 160",
+      "MATH 110",
+      "CMPM 163",
+      "MATH 115",
+      "CMPM 164/L",
+      "MATH 116",
+      "CMPM 171",
+      "MATH 117",
+      "MATH 118",
+      "MATH 134",
+      "MATH 145/L",
+      "MATH 148",
+      "MATH 160",
+      "MATH 161",
+      "STAT 132",
+      "PHYS 5A",
+      "PHYS 5B",
+      "PHYS 5C",
+      "PHYS 6A",
+      "PHYS 6B",
+      "PHYS 6C"
+    ],
+    "uncategorizedCodes": [
+      "CSE 120",
+      "CSE 114A",
+      "CSE 130",
+      "CSE 107",
+      "CSE 102",
+      "CSE 103",
+      "CSE 160",
+      "CSE 161/L",
+      "CSE 162/L",
+      "CSE 163",
+      "CSE 168",
+      "CSE 181",
+      "CSE 183",
+      "CSE 184",
+      "CSE 187",
+      "CMPM 172",
+      "CMPM 120",
+      "AM 147",
+      "CMPM 131",
+      "AM 148",
+      "CMPM 146",
+      "AM 160",
+      "MATH 110",
+      "CMPM 163",
+      "MATH 115",
+      "CMPM 164/L",
+      "MATH 116",
+      "CMPM 171",
+      "MATH 117",
+      "MATH 118",
+      "MATH 134",
+      "MATH 145/L",
+      "MATH 148",
+      "MATH 160",
+      "MATH 161",
+      "PHYS 5A",
+      "PHYS 5B",
+      "PHYS 5C",
+      "PHYS 6A",
+      "PHYS 6B",
+      "PHYS 6C"
+    ],
+    "_raw_text": "Computer Science B.S. Degree 2025-2026 Curriculum Chart\nMath Courses\nLower Division Programming Courses\nMATH 19B or\nMATH 19A or CSE 16 CSE 20\nMATH 20A MATH 20B Applied Beginning CSE 12\nCalculus I Calculus II Discrete Programming Python C A o s m se p m u b te ly r S La ys n t g e u m ag s e &\nPrerequisites: Math Prerequisites: Math 19A Mathematics\nPlacement score of 400 Prerequisites: Math 19A or Prerequisites: CSE 20 or CSE\nor more or Math 3 Math 19B 30\nAM 30\nMultivariate Calculus for CSE 40 CSE 30 CSE 13S\nAM 10 Engineers Programming\nPrerequisites: AM 10 or Math 21; Machine Learning Computer\nEngr Math Methods I Math 19B Basics Abstractions: Systems and C\nPrerequisites: Math or Prerequisites: Math 19B or 20B and Python Programming\nPlacement or Math 3 MATH 23A CSE 30 P M re a re th q u p i l s a it c e e s m : C en S t E s c 2 o 0 r ; e a o n f d 4 M 00 a t o h t 1 m 9A or e or Prerequisites: CSE 12\nor Vector Calculus ECE 30\nMATH 21 Prerequisites: Math 19B or 20B Engineering Principles of\nCSE 101\nLinear Algebra Electronics\nIntro to Data Structures & Algorithms\nPrerequisites: Math Prerequisites: Math 19B Prerequisites: CSE 12, CSE 16, CSE\nPlacement or Math 3\n13S, and CSE 30; Math 19B or 20B\nElective Courses Upper Division CSE Courses\nCSE 120 CSE 114A CSE 130\nUpper Division Upper Division\n**ELECTIVE **ELECTIVE Computer Foundations of Principles of Computer\nArchitecture Programming Systems Design\n____________________ ____________________ Prerequisites: CSE 12 and Languages Prerequisites: CSE 12 and CSE 101\nCSE 13S Prerequisites: CSE 101\nCSE 101M CSE 107\nUpper Division Upper Division CSE 102 Probability and Statistics\n**ELECTIVE **ELECTIVE M fo a r t h C e o m m a p t u ic te a r l T S h c i i n e k n i c n e g Analysis of Algorithms Prerequisites:\nPrerequisites: CSE 101M CSE 16 and Math 23A or AM 30\n____________________ ____________________ Prerequisites: CSE 101 or\nor\nSTAT 131\n\u03a8 CSE 195 can satisfy the DC requirement OR an Upper Division CSE 103 Intro to Probability Theory\nElective, but NOT both. Computational Models Prerequisites:\n**Upper Division Electives: 5 credit (or more than 5 credit) upper- Prerequisites: CSE 101M Math 19B or Math 20B. (AM 30 or\ndivision computer science or computer engineering (CSE) courses Math 23B recommended)\nwith a course number between 100-189, or CSE 195, or courses\nfrom the Computational Media electives on the back of this Many upper division Computer Science courses are restricted to enrollment\nchart. Up to two of these electives may be replaced by upper by declared Computer Science majors during first-pass or priority enrollment.\ndivision mathematics electives listed on the back.\nCapstone Courses\nCSE 115A, CSE 185S, or CSE 185E cannot be used to\nsatisfy one of the four upper-division elective Many Capstone course options require additional prerequisites not already\nrequirements. required in major requirements. Advance planning is crucial.\nThe capstone course can count toward 1 CSE 110B Fundamentals of Compiler Design II\nof the 4 required upper division electives. CSE 115C Software Design Project II\nCSE 115D Software Design Project - Accelerated\nCSE 121 Embedded System Design\nCSE 134 Embedded Operating Systems\nCSE 138 Distributed Systems\nDC Requirement CSE 140 Artificial Intelligence\n(See List Below) CSE 143 Introduction to Natural Language Processing\nCSE 144 Applied Machine Learning\n____________________\nCSE 145 Introduction to Data Mining\nCSE 156/L Network Programming / Lab\nCSE 157 Internet of Things\nDisciplinary Communication Requirement (DC) CSE 160 Introduction to Computer Graphics / Lab\nCSE 161/L Introduction to Data Visualization / Lab\nStudents of every major must satisfy that major's upper-division Disciplinary\nCSE 162/L Advanced Computer Graphics and Animation / Lab\nCommunication (DC) Requirement. The DC Requirement for the Computer Science B.S.\nis satisfied by completing one of the following courses: CSE 163 Data Programming for Visualization\nCSE 168 Introduction to Augmented Reality and Virtual Reality\nCSE 115A Introduction to Software Engineering CSE 181 Database Systems II\nCSE 185E/185S Technical Writing for Computer Science and Engineering CSE 183 Web Applications\n\u03a8 CSE 195 Senior Thesis CSE 184 Data Wrangling and Web Scraping\nCSE 187 Full Stack Web Development II\nCMPM 172 Game Production Studio\nDC courses cannot be used to satisfy any of the 4 Upper\nThese courses can be used to satisfy Upper Division\nDivision Electives with the exception of CSE 195.\nElectives.\nComprehensive Requirement - Students have two options to fulfill the Computer Science exit requirement:\n1. Pass one of the Capstone Courses____________________\n2. Successfully complete a Senior Thesis.\nDisciplinary Communication Requirement - Students have two options to fulfill the DC requirement:\n1. Pass one of the Disciplinary Communication Courses ____________________\n2. Successfully complete a Senior Thesis.\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\n\nComputer Science B.S. Degree 2025-2026 Curriculum Chart\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nMathematics Electives List Computational Media Electives List\nAM 114 Introduction to Dynamical Systems\nCMPM 120 Game Development Experience\nAM 147 Computational Methods and Applications\nCMPM 131 User Experience for Interactive Media\nAM 148 GPU Programming for Scientific Computations\nCMPM 146 Game AI\nAM 160 Introduction to Scientific Machine Learning\nMATH 110 Introduction to Number Theory CMPM 163 Game Graphics and Real Time Rendering\nMATH 115 Graph Theory CMPM 164/L Game Engines / Lab\nMATH 116 Combinatorics CMPM 171 Game Design Studio\nMATH 117 Advanced Linear Algebra CMPM 172 Game Production Studio\nMATH 118 Advanced Number Theory\nMATH 134 Cryptography\nMATH 145/L Introductory Chaos Theory / Lab\nMATH 148 Numerical Analysis\nMATH 160 Mathematical Logic I\nMATH 161 Mathematical Logic II\nSTAT 132 Classical and Bayesian Inference\nOne of the following combinations: [PHYS 5A and PHYS 5B] OR\n[PHYS 5A and PHYS 5C] OR [PHYS 6A and PHYS 6B] OR [PHYS 6A\nand PHYS 6C]***\nAll courses being applied to requirements for the Computer Science major must be taken for a letter grade. Grades of P will not count\ntoward major requirements.\nCourses in which you receive a grade of C-, D+, D, or D- earn credit toward graduation, but cannot be used to satisfy a major requirement or a\ngeneral education requirement, and cannot satisfy a prerequisite for another course.\nShaded boxes represent major qualification courses.\nMany graduate courses can also be used to satisfy electives; however, students will need instructor and department approval.\n*** Physics courses have co-requisite labs required for enrollment. These associated labs are not part of the Computer Science B.S. major\nrequirements.\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/25",
+    "_flags": [
+      "uncategorized_courses: 41"
+    ]
+  },
+  "CSGD_BS": {
+    "id": "CSGD_BS",
+    "name": "Computer Science: Computer Game Design B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CSGD_BS_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 13S",
+          "ECE 13",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CMPM 170",
+          "CMPM 171"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "CMPM 170",
+          "CMPM 171",
+          "CMPM 120",
+          "CMPM 121",
+          "CMPM 176",
+          "CMPM 130"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "AM 1",
+      "CSE 2",
+      "CSE 12",
+      "MATH 19A",
+      "MATH 2",
+      "CSE 13S",
+      "MATH 19B",
+      "CSE 16",
+      "CSE 3",
+      "ECE 13",
+      "CSE 101",
+      "CMPM 80J",
+      "FILM 80V",
+      "CMPM 80K",
+      "CSE 30",
+      "CMPM 120",
+      "CMPM 176",
+      "CMPM 121",
+      "CMPM 130",
+      "CMPM 170",
+      "CMPM 171"
+    ],
+    "uncategorizedCodes": [
+      "AM 1",
+      "CSE 2",
+      "MATH 2",
+      "CSE 3",
+      "CSE 101",
+      "CMPM 80J",
+      "FILM 80V",
+      "CMPM 80K"
+    ],
+    "_raw_text": "Computer Game Design B.S. Degree\n2025-2026 Curriculum Chart\nAM 1 0 CSE 2 0 CSE 12\nMATH 19A or 20A Engr Math Methods I Beginning Computer Systems &\nCalculus I or Programming Assembly Language\nPython\nMATH 2 1\nLinear Algebra\nCSE 13S\nMATH 19B or 20B CSE 16 CSE 3 0 or\nCalculus II Discrete Math Programming ECE 13\nAbstractions: Python\nComputer Systems and C\nProgramming\nGames and Playable Media\nCSE 101\nFoundations\nIntro to Data\nStructures and\nCMPM 80J\nAlgorithms\nGames as Technical Culture\nFILM 80V\nVideo Games asVisual\nCult ure\nGame Design and Development\nComputer Game Engineering Electives \u25ba\nCMPM 80K \u2022CMPM 80K; and FILM 80V; CGE ELECTIVE CGE ELECTIVE\nand CSE 30\nFoundations of\nCMPM 120\nVideo Game Design\nGame Development __________________ __________________\nExperience\nCGE ELECTIVE CGE ELECTIVE\nCMPM 176 CMPM 121 __________________ __________________\nGame Systems Game Development\nPatterns\n\u25ba A list of Computer Game\nCGE ELECTIVE\nCMPM 130 Engineering Elective courses\n(DC Requirement) can be found on the BE\nUser Interface and __________________ undergraduate advising\nUser Experience\nwebsite.\nDesign\nComprehensive Requirement\nCMPM 170\u2663 CMPM 171\u2666 (7 units)\nRapid Prototyping Game Design Studio\n\u2666Students must complete CMPM 120 and CMPM 121 prior to enrolling in CMPM 170\n\u2663Students must complete CMPM 170, CMPM 176, CMPM 130, and CMPM 121 prior to enrolling in CMPM 171\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\n\nComputer Game Design B.S. Degree\n2025-2026 Curriculum Chart\nFall _______ Winter_______ Spring_______ Summer_______\nFall _______ Winter_______ Spring_______ Summer_______\nFall _______ Winter_______ Spring_______ Summer_______\nFall _______ Winter_______ Spring_______ Summer_______\nThe prerequisites listed on this curriculum chart are accurate as of July 22, 2025 according to UCSC\u2019s\ngeneral catalog. Prerequisites listed on this chart are subject to change and students should refer to the\ncatalog for the most up to date requirements.\nhttp://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025",
+    "_flags": [
+      "uncategorized_courses: 8"
+    ]
+  },
+  "EE_BS": {
+    "id": "EE_BS",
+    "name": "Electrical Engineering B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/EE_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "pick_one",
+        "courses": [
+          "AM 10",
+          "MATH 21"
+        ],
+        "description": "Choose one linear algebra course."
+      },
+      {
+        "id": "MATH_MULTIVAR",
+        "name": "Multivariable Calculus",
+        "type": "pick_one",
+        "courses": [
+          "AM 30",
+          "MATH 23A",
+          "MATH 23B"
+        ],
+        "description": "Choose one multivariable calculus course/sequence."
+      },
+      {
+        "id": "MATH_DIFFEQ",
+        "name": "Differential Equations",
+        "type": "pick_one",
+        "courses": [
+          "AM 20",
+          "MATH 24"
+        ],
+        "description": "Choose one differential equations course."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "STAT",
+        "name": "Statistics / Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 131"
+        ],
+        "description": "Required statistics/probability courses."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "ECE 13",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "PHYS_CORE",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 5B/M",
+          "PHYS 5A/L",
+          "PHYS 5C/N",
+          "PHYS 5D"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "ECE 129A",
+          "ECE 195",
+          "CSE 100/L",
+          "ECE 129B",
+          "ECE 118"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "MATH 19A",
+      "PHYS 5B/M",
+      "AM 30",
+      "MATH 23A",
+      "PHYS 5A/L",
+      "AM 10",
+      "AM 100",
+      "PHYS 5C/N",
+      "PHYS 5D",
+      "MATH 19B",
+      "MATH 23B",
+      "AM 20",
+      "STAT 131",
+      "CSE 30",
+      "MATH 21",
+      "MATH 24",
+      "CSE 107",
+      "CSE 12",
+      "ECE 13",
+      "CSE 16",
+      "CSE 20",
+      "ECE 80T",
+      "ECE 102/L",
+      "ECE 103/L",
+      "ECE 101/L",
+      "ECE 135/L",
+      "ECE 151",
+      "CSE 100/L",
+      "ECE 171/L",
+      "ECE 103",
+      "ECE 118",
+      "ECE 121",
+      "ECE 157/L",
+      "ECE 167",
+      "ECE 173",
+      "ECE 129A",
+      "ECE 195",
+      "ECE 129B",
+      "ECE 129C"
+    ],
+    "uncategorizedCodes": [
+      "AM 100",
+      "CSE 107",
+      "ECE 80T",
+      "ECE 102/L",
+      "ECE 103/L",
+      "ECE 101/L",
+      "ECE 135/L",
+      "ECE 151",
+      "ECE 171/L",
+      "ECE 103",
+      "ECE 121",
+      "ECE 157/L",
+      "ECE 167",
+      "ECE 173",
+      "ECE 129C"
+    ],
+    "_raw_text": "Electrical Engineering B.S. Degree 2025-2026 Curriculum\nMath Courses Physics Courses\nMATH 19A PHYS 5B/M\nAM 30 MATH 23A PHYS 5A/L or 15A\nCalculus I Mechanics Waves & Optics\nMultivariate Calculus for Vector Calculus I Prerequisites: Prerequisites:\nPrerequisites: Math Engineers Prerequisites: Math Math 19A or 20A, and concurrent Phys 5A/L and Math 19B\nPlacement score of Prerequisites: AM 10 or Math 21; 19B or 20B enrollment in Math 19B\n400 or more or Math Math 19B\n3\nAND OR AND\nAM 100 PHYS 5C/N or 15C PHYS 5D\nMATH 19B Mathematical Methods for MATH 23B\nEngineers Vector Calculus II Electricity & Heat &\nCalculus II Prerequisites: AM 20 or Math 24, Prerequisites: Magnetism Thermodynamics\nPrerequisites: Math 19A and AM 30 or MATH 23B Math 23A Phys P 5 r A er / e L qu , M isit a e th s: 19A, Phys 5A/ P L r , e P re h q y u s i s 5 i B te , s : M ath 19B\nCorequisite Math 19B\nAM 10* AM 20*\nSTAT 131 Computer Engineering Courses\nMath Methods I Math Methods II\nIntroduction to Prerequisites: Math Prerequisites: Math CSE 30\nP P r r e o re b q a ui b si i t l e i s t : y M T a h th e 1 o 9 r B y . Place h m ig e h n e t r s o c r o r M e a o t f h 4 3 00 or 19B and AM 10 Beginni C ng S P E r o 2 g 0 ramming OR Abs P tr r a o c g t r io am ns m : P in y g thon\n(AM 30 re o c r o m M m at e h n 2 d 3 e A d) or 23B OR AND OR in Python P o r r e 1 re 9 q A u i o s r it M es: a t C h S p E l a 2 c 0 e m an e d n t M sc A o T re H o 3 f\nOR 400 or more\nMATH 21 MATH 24\nCSE 107 Linear Algebra Ordinary\nProbability and Prerequisites: Math Differential CSE 12 ECE 13\nP S re t r a eq t u is isi t t i e c s: s M C a S f t E o h r 1 2 6 3 E ; A a n n g d i A n M e e 30 r s or 19A Prere E qu q is u it a es t : i o M n at s h 23A As C s o e m m p b u ly te L r a S n y g s u te ag m e s a & nd Comp P u ro te g r r a S m ys m te in m g s & C\nNOTE: CSE 16 is not a major Lab Prerequisites: CSE 12 and\nrequirement for EE *Note: AM 10 and AM 20 are preferred. Prerequisites: CSE 20 CSE 20\nCSE 30 is recommended\nElectrical Engineering Courses Electronics Courses\nECE 80T^ ECE 102/L ECE 103/L\nECE 101/L\nProperties of Signals and Systems\nModern Technology Materials Prerequisites: ECE 101/L Electronic Circuits\nPrerequisites: and AM 20 or Math 24 Prerequisites:\n^This course is waived Phys 5A/L, 5B/M & 5C/N\nfor transfer students. Phys 5C/N and Math 24 or\nPhys 116A or concurrent or\nprevious enrollment in AM 20\nECE 135/L ECE 151\nElectromagnetic Fields Communications CSE 100/L ECE 171/L\nand Waves Systems Logic Design Analog Electronics\nPrerequisites: ECE 101/L, Prerequisites: ECE 101/L, Prerequisites: CSE 12 Prerequisites:\nand Math 24 or AM 20 or ECE 103, and STAT 131 or\nPhys 116A CSE 107 Requires declared major ECE 101/L\nstatus\nElective Requirements: In addition to the above, Electrical Engineering majors must complete 4 additional upper-division courses (minimum of 3 courses\nfrom one track). Unlisted graduate-level courses may be used to fulfill an elective requirement with prior department approval. Most elective courses have\nadditional prerequisites. They are subject to change frequently. Please visit https://catalog.ucsc.edu/current/General-Catalog/Courses/ECE-\nElectrical and-Computer-Engineering to ensure you have met them.\nDesign Elective: One of the four concentration courses chosen must include at least one of the following design electives: ECE 118, ECE 121,\nECE 157/L, ECE 167, or ECE 173. The design elective must be taken before ECE 129A.\nConcentration Elective Concentration Elective Concentration Elective\nDesign Elective:\n#1: #2: #3:\n_____________\n_____________ _____________ _____________\nComprehensive Requirement (ECE129ABC or ECE 129A & ECE 195): Exit Requirements:\nECE 129A Capstone Project I\nPrerequisites: ECE171/L, CSE 100/L, and at least one design elective. 1. Exit Survey\n2. Exit Interview\nECE 129B Capstone Project II ECE 195* (10 units) 3. Maintain a 2.5 cumulative GPA in all required and elective courses\nPrerequisites: ECE 129A Senior Thesis for the major, OR submit a portfolio for department review, OR\nECE 129C Capstone Project III Prerequisites: ECE 129A submit a senior thesis with department approval.\n*Requires department approval. Ask BE Advising\nPrerequisites: ECE 129B\nfor more information\nhttps://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\n\nElectrical Engineering B.S. Degree 2025-2026 Curriculum\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nNote:\nThe Electrical Engineering Major Qualification requirements require all courses in the darker shaded boxes\nand at least one of the courses in the lighter shaded boxes. All courses on this chart are required for the\nElectrical Engineering B.S. degree. Major Qualification requirements can be found on the Prepare to Declare\ncharts on the BE Undergraduate Advising website.\nThe prerequisites listed on this curriculum chart are accurate as of July 21, 2025 according to UCSC\u2019s general catalog.\nPrerequisites listed on this chart are subject to change and students should refer to the catalog for the most up to date\nrequirements.\nStudents interested in Honors Physics (Physics 15A, 15C) should speak with BE undergraduate advising.\nhttps://undergrad.engineering.ucsc.edu \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025",
+    "_flags": [
+      "uncategorized_courses: 15"
+    ]
+  },
+  "NDT_BS": {
+    "id": "NDT_BS",
+    "name": "Network and Digital Technology B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Network-Digital-Technology_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_CALC",
+        "name": "Calculus",
+        "type": "all_required",
+        "courses": [
+          "MATH 19A",
+          "MATH 19B"
+        ],
+        "description": "Required calculus courses."
+      },
+      {
+        "id": "MATH_LIN_ALG",
+        "name": "Linear Algebra",
+        "type": "pick_one",
+        "courses": [
+          "AM 10",
+          "MATH 21"
+        ],
+        "description": "Choose one linear algebra course."
+      },
+      {
+        "id": "MATH_MULTIVAR",
+        "name": "Multivariable Calculus",
+        "type": "pick_one",
+        "courses": [
+          "AM 30",
+          "MATH 23A"
+        ],
+        "description": "Choose one multivariable calculus course/sequence."
+      },
+      {
+        "id": "MATH_DIFFEQ",
+        "name": "Differential Equations",
+        "type": "pick_one",
+        "courses": [
+          "AM 20",
+          "MATH 24"
+        ],
+        "description": "Choose one differential equations course."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "all_required",
+        "courses": [
+          "CSE 16"
+        ],
+        "description": "Discrete mathematics is required."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "CSE 20",
+          "CSE 13S",
+          "ECE 13",
+          "CSE 30",
+          "CSE 12"
+        ],
+        "description": "Required programming courses.",
+        "note": "Some may be pick-one alternatives \u2014 see PDF."
+      },
+      {
+        "id": "PHYS_CORE",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 5A/L",
+          "PHYS 5C/N"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 2,
+        "courses": [
+          "CSE 20",
+          "CSE 12",
+          "CSE 30",
+          "CSE 13S",
+          "ECE 13",
+          "MATH 3",
+          "MATH 19A",
+          "CSE 101",
+          "CSE 150",
+          "CSE 12/L",
+          "CSE 16",
+          "CSE 185E",
+          "CSE 115A",
+          "CSE 156/L",
+          "CSE 157",
+          "CSE 181",
+          "CSE 183",
+          "CSE 187"
+        ],
+        "description": "Choose 2 upper-division elective courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
+          "CSE 185E"
+        ],
+        "description": "Complete one DC course. Cannot double-count as elective."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Comprehensive Requirement (Capstone)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
+          "CSE 156/L",
+          "CSE 157",
+          "CSE 181",
+          "CSE 183",
+          "CSE 187",
+          "CSE 101",
+          "CSE 150",
+          "CSE 121",
+          "CSE 180",
+          "CSE 186"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "MATH 19A",
+      "AM 10",
+      "MATH 21",
+      "AM 20",
+      "MATH 24",
+      "MATH 19B",
+      "PHYS 5A/L",
+      "AM 30",
+      "CSE 16",
+      "MATH 23A",
+      "PHYS 5C/N",
+      "CSE 20",
+      "CSE 12",
+      "CSE 30",
+      "CSE 13S",
+      "ECE 13",
+      "MATH 3",
+      "CSE 101",
+      "CSE 150",
+      "CSE 12/L",
+      "CSE 185E",
+      "CSE 115A",
+      "CSE 156/L",
+      "CSE 157",
+      "CSE 181",
+      "CSE 183",
+      "CSE 187",
+      "CSE 121",
+      "CSE 180",
+      "CSE 186"
+    ],
+    "uncategorizedCodes": [],
+    "_raw_text": "Network & Digital Technology B.A. Degree\n2025-2026 Curriculum Chart\nMath Courses Major Qualification Policy\nComplete 36 units of the highlighted\nMATH 19A AM 10 MATH 21 courses by the end of 5th quarter with at\nCalculus I Engr. Math Methods Linear Algebra\nleast a 2.3 GPA. You do not need to\nPrerequisites: I OR Prerequisites: Math\nMath Placement or Prerequisites: Math Placement or Math complete all highlighted classes for major\nMath 3 Placement or Math 3 3 declaration.\nScience Courses\nAM 20 MATH 24\nMATH 19B PHYS 5A/L or 6A/L\nCalculus II Engr. Math OR Differential Mechanics\nMethods II Equations\nPrerequisites: Prerequisites:\nPrerequisites: Math 19B Prerequisites: Math\nMath 19A Math 19A, and concurrent or\nand AM 10 23A or AM 30\nprevious enrollment in Math\n19B\nCSE 16 AM 30 MATH 23A PHYS 5C/N or 6C/N\nMultivariate Calculus\nDiscrete Math OR Vector Calculus Electricity & Magnetism\nPrerequisites: Math 19A or for Engineers Prerequisites: Math Prerequisites:\nMath 19B Prerequisites: AM 10 or 19B Phys 5A/L, Math 19A,\nMath 21; Math 19B Corequisite Math 19B\nLower Division Core Courses Electives\nChoose from Approved List of Upper Division Electives\nCSE 20 CSE 12\nthat can be found on the Undergraduate Engineering\nIntro to Prog. Python Computer Systems & website:\nAssembly Language https://undergrad.engineering.ucsc.edu/curriculum-charts/\nPrerequisites:\nCSE 20\nCSE 30\n1.__________________\nProg. Abstractions:\nCSE 13S or ECE 13\nPython\nComputer Systems & C\nPrerequisites: CSE 20; and\nMATH 3 or MATH 19A or Programming\nMath Placement Prerequisites:\nCSE 12\n2.__________________\nUpper Division Core Courses\nCSE 101 CSE 150\nIntroduction to Data Intro to Computer\nStructures & Algorithms Networks 3.__________________\nPrerequisites: CSE 12/L, CSE 16, Prerequisites:\nCSE 13s or ECE 13, and CSE 30; CSE 12 and CSE 16 and CSE\nMath 19B or 20B 30\nCSE 185E\nTechnical Writing for Computer 4.__________________\nScience and Engineering\nSatisfies the DC requirement.\nCapstone (Choose one)\nYour capstone can not count for both a capstone and an elective\nCSE 115A CSE 156/L CSE 157 CSE 181 CSE 183 CSE 187\nEn S g o i f n tw ee a r r i e ng Pro N gr e a t m w m or i k ng + Internet of Things Database II Systems App W lic e a b tions D F e u v ll e S lo ta p c m k e W nt e I b I\nLab\nPrerequisites: Prerequisites: Prerequisites: Prerequisites:\nPrerequisites: Prerequisites:\nCSE 101 + CSE CSE 150 + CSE CSE 121 + CSE CSE 180 + CSE\nCSE 101 CSE 186\n130 101 150 130\nhttps://undergrad.engineering.ucsc.edu/ \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025\n\nNetwork & Digital Technology B.A. Degree\n2025-2026 Curriculum Chart\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nFall Winter Spring Summer\nNote: The prerequisites listed on this curriculum chart are accurate as of July 22, 2025 according to UCSC\u2019s general catalog. Prerequisites\nlisted on this chart are subject to change and students should refer to the catalog for the most up to date requirements.\nhttps://undergrad.engineering.ucsc.edu/ \u2022 bsoeadvising@ucsc.edu \u2022 07/10/2025",
+    "_flags": []
+  }
+}

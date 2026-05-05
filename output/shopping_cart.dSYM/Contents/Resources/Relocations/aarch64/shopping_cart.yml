@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/artempavlov/Desktop/UCSC Course Selection Automation/output/shopping_cart'
+relocations:     []
+...

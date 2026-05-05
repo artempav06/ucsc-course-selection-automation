@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "prototype",
+      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeArgs": ["/tmp/ucsc_serve.py"],
+      "port": 8080,
+      "url": "http://localhost:8080/"
+    }
+  ]
+}
