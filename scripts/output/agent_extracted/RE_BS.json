@@ -1,0 +1,124 @@
+{
+  "id": "RE_BS",
+  "name": "Robotics Engineering B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/RE_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Required calculus sequence."
+    },
+    {
+      "id": "LINEAR_ALG_DIFF_EQ",
+      "name": "Linear Algebra & Differential Equations",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Applied Math (AM 10 + AM 20)", "courses": ["AM 10", "AM 20"] },
+        { "label": "Pure Math (MATH 21 + MATH 24)", "courses": ["MATH 21", "MATH 24"] }
+      ],
+      "description": "Choose one linear algebra and differential equations sequence. AM 10 is Engineering Math Methods I; AM 20 is Engineering Math Methods II. MATH 21 is Linear Algebra; MATH 24 is Ordinary Differential Equations."
+    },
+    {
+      "id": "MULTIVARIATE_CALC",
+      "name": "Multivariate Calculus",
+      "type": "pick_one",
+      "courses": ["AM 30", "MATH 23A"],
+      "description": "Choose one multivariate/vector calculus course. AM 30 is Multivariate Calculus for Engineers; MATH 23A is Vector Calculus."
+    },
+    {
+      "id": "STATS",
+      "name": "Probability & Statistics",
+      "type": "pick_one",
+      "courses": ["CSE 107", "STAT 131"],
+      "description": "Choose one probability and statistics course."
+    },
+    {
+      "id": "PHYSICS",
+      "name": "Physics",
+      "type": "all_required",
+      "courses": ["PHYS 5A/L", "PHYS 5C/N"],
+      "description": "Required physics courses. PHYS 5A/L is Mechanics; PHYS 5C/N is Electricity & Magnetism. Honors alternatives PHYS 15A and PHYS 15C may substitute (consult BE advising)."
+    },
+    {
+      "id": "ENGINEERING_MECHANICS",
+      "name": "Engineering Mechanics",
+      "type": "all_required",
+      "courses": ["ECE 9"],
+      "description": "ECE 9: Statics and Mechanics of Materials. Prerequisites: PHYS 5A/L and MATH 21 or AM 10."
+    },
+    {
+      "id": "DISCRETE_MATH",
+      "name": "Discrete Mathematics",
+      "type": "all_required",
+      "courses": ["CSE 16"],
+      "description": "CSE 16: Discrete Mathematics. Prerequisite: MATH 19A or 19B."
+    },
+    {
+      "id": "LD_PROGRAMMING",
+      "name": "Lower Division Programming",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 30", "CSE 12", "ECE 13"],
+      "description": "Required lower-division programming and computer systems courses. CSE 20 is Beginning Programming in Python. CSE 30 is Programming Abstractions: Python & C. CSE 12 is Computer Systems and Assembly Language. ECE 13 is Computer Systems and C Programming. CSE 20 can be bypassed via the CSE 20 testout."
+    },
+    {
+      "id": "LOGIC_DESIGN",
+      "name": "Logic Design",
+      "type": "all_required",
+      "courses": ["CSE 100/L"],
+      "description": "CSE 100/L: Logic Design. Prerequisite: CSE 12. Requires declared major status."
+    },
+    {
+      "id": "DATA_STRUCTURES",
+      "name": "Data Structures & Algorithms",
+      "type": "all_required",
+      "courses": ["CSE 101"],
+      "description": "CSE 101: Introduction to Data Structures and Algorithms. Prerequisites: CSE 12, ECE 13, CSE 16, CSE 30, and MATH 19B."
+    },
+    {
+      "id": "ELECTRONICS",
+      "name": "Electronics",
+      "type": "all_required",
+      "courses": ["ECE 101/L"],
+      "description": "ECE 101/L: Electronic Circuits. Prerequisites: PHYS 5C/N and MATH 24 or PHYS 116A, or previous or concurrent enrollment in AM 20."
+    },
+    {
+      "id": "ROBOTICS_CORE",
+      "name": "Robotics Core",
+      "type": "all_required",
+      "courses": ["ECE 10", "ECE 118", "ECE 121", "ECE 103/L", "ECE 167"],
+      "description": "Required upper-division robotics courses. ECE 10: Fundamentals of Robotics (Kinematics & Dynamics). ECE 118: Intro to Mechatronics. ECE 121: Microcontroller System Design. ECE 103/L: Signals & Systems. ECE 167: Sensing & Sensor Technologies."
+    },
+    {
+      "id": "ADV_ROBOTICS_ELECTIVE",
+      "name": "Advanced Robotics Elective",
+      "type": "pick_n",
+      "n": 1,
+      "courses": ["ECE 215", "ECE 216", "ECE 240", "ECE 242", "ECE 243", "ECE 244", "ECE 245", "ECE 246", "ECE 249"],
+      "description": "Choose 1 advanced robotics elective. ECE 141 (Adv. Feedback Control Systems) and ECE 167 are highly recommended but not required for this slot. A second advanced elective may also be used to satisfy the Robotics Elective requirement."
+    },
+    {
+      "id": "ROBOTICS_ELECTIVE",
+      "name": "Robotics Elective",
+      "type": "pick_n",
+      "n": 1,
+      "courses": ["AM 114", "AM 147", "CMPM 146", "CSE 118", "CSE 131", "CSE 140", "CSE 142", "CSE 156/L", "CSE 276", "ECE 102/L", "ECE 110", "ECE 130/L", "ECE 135/L", "ECE 141", "ECE 145", "ECE 149", "ECE 151", "ECE 152", "ECE 153", "ECE 163", "ECE 169", "ECE 171/L", "ECE 172", "ECE 173", "ECE 175/L", "ECE 193", "ECE 198", "ECE 222A", "ECE 215", "ECE 216", "ECE 240", "ECE 242", "ECE 243", "ECE 244", "ECE 245", "ECE 246", "ECE 249"],
+      "description": "Choose 1 robotics elective from the approved list. A second advanced elective course may also satisfy this requirement. See https://undergrad.engineering.ucsc.edu/curriculum-charts/2025-2026/robotics-engineering-electives-2025-2026/ for the full list."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Capstone (DC)",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Capstone Project I, II, & III (10 credits)", "courses": ["ECE 129A", "ECE 129B", "ECE 129C"] },
+        { "label": "Senior Thesis Research", "courses": ["ECE 195"] }
+      ],
+      "description": "Choose one capstone option. Both options satisfy the Disciplinary Communication (DC) requirement. Prerequisites for both: CSE 100/L, ECE 118, ECE 121, and completion of the Entry Level Writing and Composition requirements. Students interested in ECE 195 should consult BE undergrad advising for additional requirements."
+    }
+  ]
+}

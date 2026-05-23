@@ -1,0 +1,230 @@
+====================================================================================================
+AM_BS (am_computational) — 40 courses, 200u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok DISCRETE_MATH: 1/2 → CSE 16
+    ok PROGRAMMING: 1/5 → CSE 20
+    ok UD_ANALYSIS: 1/2 → AM 147
+    ok UD_STATS: 1/2 → STAT 131
+    ok COMPREHENSIVE: 1/2 → AM 170B
+
+  Choose-group categories:
+    ok CALCULUS: 1 group → "MATH 19A + MATH 19B"
+    ok LINEAR_ALGEBRA_DIFF_EQ: 1 group → "AM 10 + AM 20 (Strongly Preferred)"
+    ok MULTIVARIABLE_CALCULUS: 1 group → "MATH 23A + MATH 23B"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+BIOTECH_BS (bt_molecular) — 41 courses, 200u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LD_BIOTECH_SOCIETY_CHOICE: 1/3 → BME 80H
+
+  Choose-group categories:
+    ok LD_CHEMISTRY: 1 group → "CHEM 3A"
+    ok LD_STATISTICS: 1 group → "STAT 7 + STAT 7L"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+BMEB_BI (bi_computational) — 42 courses, 203u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok STATS_ML: 1/2 → STAT 132
+    ok MULTIVARIATE: 1/2 → AM 30
+    ok ML_ADVANCED: 1/2 → CSE 142
+    ok GENETICS: 1/2 → BME 105
+    ok ORGANIC_CHEM: 1/2 → BME 101
+    ok BIOCHEMISTRY: 1/3 → CHEM 103
+
+  Choose-group categories:
+    ok CHEMISTRY: 1 group → "CHEM 3-series"
+    ok PROGRAMMING_CHOICE: 1 group → "CSE 101P"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+BMEB_BM (bm_molecular_eng) — 46 courses, 206u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok MATH_LINEAR_ALGEBRA: 1/2 → AM 10
+    ok PHYSICS_INTRO: 1/4 → PHYS 5A
+    ok GENETICS: 1/2 → BME 105
+
+  Choose-group categories:
+    ok CHEMISTRY: 1 group → "General Chemistry: CHEM 3A + CHEM 3B/BL + CHEM 3C/CL"
+    ok BIOCHEMISTRY: 1 group → "BIOC 100A + BIOC 100B"
+    ok MODELING_DESIGN: 1 group → "Engineering Stem Cells: BME 177 + BME 177L"
+    SHARED-OK CAPSTONE: 2 groups present
+      "Bioinformatics Capstone": BME 205, BME 230A, BME 129C (selected)
+      "Senior Design": BME 129C (shared only)
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+CE_BS (ce_system_prog) — 43 courses, 206u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DIFF_EQ: 1/2 → AM 20
+    ok MULTIVAR: 1/2 → AM 30
+    ok PROB_STATS: 1/2 → CSE 107
+    ok CORE_SYSTEMS: 1/2 → CSE 13S
+    ok DC: 1/2 → CSE 185E
+
+  Choose-group categories:
+    ok PHYSICS_CHOICE: 1 group → "PHYS 5B + PHYS 5M"
+    SHARED-OK CONCENTRATION: 3 groups present
+      "System Programming": CSE 130, CSE 150, CSE 111, CSE 113 (selected)
+      "Computer Systems": CSE 130, CSE 111 (shared only)
+      "Networks": CSE 130, CSE 150 (shared only)
+    ok CAPSTONE: 1 group → "Engineering Design"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+CSGD_BS (gd_game_ai) — 36 courses, 188u, 4 years
+====================================================================================================
+
+  Pick-one categories:
+    ok CALC_A: 1/2 → MATH 19A
+    ok CALC_B: 1/2 → MATH 19B
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok SYSTEMS: 1/2 → CSE 13S
+
+  Choose-group categories:
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+CS_BA (cs_ai_ml) — 36 courses, 188u, 4 years
+====================================================================================================
+
+  Pick-one categories:
+    ok CALC_A: 1/2 → MATH 19A
+    ok CALC_B: 1/2 → MATH 19B
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DC: 1/4 → CSE 115A
+    ok CAPSTONE: 1/16 → CSE 110A
+
+  Choose-group categories:
+    ok PROGRAMMING_SEQ: 1 group → "CSE 13S + CSE 101"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+CS_BS (cs_ai_ml) — 36 courses, 188u, 4 years
+====================================================================================================
+
+  Pick-one categories:
+    ok CALC_A: 1/2 → MATH 19A
+    ok CALC_B: 1/2 → MATH 19B
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok MULTIVAR: 1/2 → AM 30
+    ok UD_THEORY: 1/2 → CSE 102
+    ok PROB_STATS: 1/2 → CSE 107
+    ok CAPSTONE: 1/23 → CSE 110B
+    ok DC: 1/4 → CSE 115A
+
+  Choose-group categories:
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+EE_BS (ee_signals_comm) — 51 courses, 230u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DIFF_EQ: 1/2 → AM 20
+    ok PROB_STATS: 1/2 → STAT 131
+    ok COMP_ENG_CHOICE: 1/2 → CSE 20
+    ok DESIGN_ELECTIVE: 1/5 → ECE 118
+
+  Choose-group categories:
+    ok MULTIVAR: 1 group → "AM 30 + AM 100"
+    ok PHYSICS_A: 1 group → "PHYS 5A + PHYS 5L"
+    ok PHYSICS_C: 1 group → "PHYS 5C + PHYS 5N"
+    SHARED-OK CAPSTONE: 2 groups present
+      "ECE 129A + 129B + 129C": ECE 129A, ECE 129B, ECE 129C (selected)
+      "ECE 129A + ECE 195": ECE 129A (shared only)
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+NDT_BS (ndt_networks) — 43 courses, 212u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DIFF_EQ: 1/2 → AM 20
+    ok MULTIVAR: 1/2 → AM 30
+    ok LD_SYSTEMS: 1/2 → CSE 13S
+    ok CAPSTONE: 1/6 → CSE 115A
+
+  Choose-group categories:
+    ok PHYSICS_MECH: 1 group → "PHYS 5A + PHYS 5L"
+    ok PHYSICS_EM: 1 group → "PHYS 5C + PHYS 5N"
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+RE_BS (re_autonomous) — 46 courses, 230u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DIFF_EQ: 1/2 → AM 20
+    ok MULTIVAR: 1/2 → AM 30
+    ok PROB_STATS: 1/2 → CSE 107
+
+  Choose-group categories:
+    ok PHYSICS_A: 1 group → "PHYS 5A + PHYS 5L"
+    ok PHYSICS_C: 1 group → "PHYS 5C + PHYS 5N"
+    SHARED-OK CAPSTONE: 2 groups present
+      "ECE 129A + 129B + 129C": ECE 129A, ECE 129B, ECE 129C (selected)
+      "ECE 129A + ECE 195": ECE 129A (shared only)
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+====================================================================================================
+TIM_BS (tim_entrepreneurship) — 41 courses, 203u, 5 years
+====================================================================================================
+
+  Pick-one categories:
+    ok MULTIVAR: 1/3 → MATH 22
+    ok LINEAR_ALGEBRA: 1/2 → AM 10
+    ok DIFF_EQ: 1/2 → AM 20
+
+  Choose-group categories:
+
+  Redundant courses (multi-coverage missed):
+    (none detected)
+
+
+========================================================================================================================
+SUMMARY TABLE
+========================================================================================================================
+Major       Concentration            PO_Viol  CG_Viol  Redundant  ExtraU  Placed  Units  Years
+------------------------------------------------------------------------------------------------------------------------
+AM_BS       am_computational         0        0        0          0       40      200    5
+BIOTECH_BS  bt_molecular             0        0        0          0       41      200    5
+BMEB_BI     bi_computational         0        0        0          0       42      203    5
+BMEB_BM     bm_molecular_eng         0        0        0          0       46      206    5
+CE_BS       ce_system_prog           0        0        0          0       43      206    5
+CSGD_BS     gd_game_ai               0        0        0          0       36      188    4
+CS_BA       cs_ai_ml                 0        0        0          0       36      188    4
+CS_BS       cs_ai_ml                 0        0        0          0       36      188    4
+EE_BS       ee_signals_comm          0        0        0          0       51      230    5
+NDT_BS      ndt_networks             0        0        0          0       43      212    5
+RE_BS       re_autonomous            0        0        0          0       46      230    5
+TIM_BS      tim_entrepreneurship     0        0        0          0       41      203    5
+
+Totals: 0 pick_one violations, 0 choose_group violations, 0 redundant courses

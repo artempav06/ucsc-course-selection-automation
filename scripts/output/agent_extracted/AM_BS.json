@@ -1,0 +1,124 @@
+{
+  "id": "AM_BS",
+  "name": "Applied Mathematics B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Applied-Math-Major_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.0,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "MATH 19A + MATH 19B",
+          "courses": ["MATH 19A", "MATH 19B"]
+        },
+        {
+          "label": "MATH 20A + MATH 20B",
+          "courses": ["MATH 20A", "MATH 20B"]
+        }
+      ],
+      "description": "Complete one calculus sequence."
+    },
+    {
+      "id": "LINEAR_ALGEBRA_DIFF_EQ",
+      "name": "Linear Algebra & Differential Equations",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "AM 10 + AM 20 (Strongly Preferred)",
+          "courses": ["AM 10", "AM 20"]
+        },
+        {
+          "label": "MATH 21 + MATH 24",
+          "courses": ["MATH 21", "MATH 24"]
+        }
+      ],
+      "description": "Complete one sequence. AM 10 + AM 20 is strongly preferred."
+    },
+    {
+      "id": "MULTIVARIABLE_CALCULUS",
+      "name": "Multivariable Calculus",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "MATH 23A + MATH 23B",
+          "courses": ["MATH 23A", "MATH 23B"]
+        },
+        {
+          "label": "AM 30 (Strongly Preferred)",
+          "courses": ["AM 30"]
+        }
+      ],
+      "description": "Complete one sequence. AM 30 is strongly preferred."
+    },
+    {
+      "id": "DISCRETE_MATH",
+      "name": "Discrete Math",
+      "type": "pick_one",
+      "courses": ["CSE 16", "MATH 100"],
+      "description": "Complete one. MATH 100 is preferred for upper division math electives."
+    },
+    {
+      "id": "PROGRAMMING",
+      "name": "Programming",
+      "type": "pick_one",
+      "courses": ["CSE 20", "CSE 13S", "ECE 13", "ASTR 19", "ECON 22P"],
+      "description": "Complete one programming course."
+    },
+    {
+      "id": "LD_ELECTIVES",
+      "name": "Lower Division Electives",
+      "type": "pick_n",
+      "n": 2,
+      "courses": [],
+      "description": "Complete 2 lower division electives. A list of the lower division electives can be found on the BE Undergraduate Advising website."
+    },
+    {
+      "id": "UD_REQUIRED",
+      "name": "Upper-Division Required Courses",
+      "type": "all_required",
+      "courses": ["AM 100", "AM 112", "AM 114", "AM 129"],
+      "description": "All four upper-division core courses are required: AM 100 (Mathematical Methods for Engineers), AM 112 (Introduction to Partial Differential Equations), AM 114 (Introduction to Dynamical Systems), AM 129 (Foundations of Scientific Computing for Scientists and Engineers)."
+    },
+    {
+      "id": "UD_ANALYSIS",
+      "name": "Upper-Division Analysis",
+      "type": "pick_one",
+      "courses": ["AM 147", "MATH 148"],
+      "description": "Choose one: AM 147 (Computational Methods & Applications) or MATH 148 (Computational Methods & Applications)."
+    },
+    {
+      "id": "UD_STATS",
+      "name": "Upper-Division Statistics",
+      "type": "pick_one",
+      "courses": ["STAT 131", "CSE 107"],
+      "description": "Choose one: STAT 131 (Introduction to Probability Theory) or CSE 107 (Probability & Statistics for Engineers)."
+    },
+    {
+      "id": "UD_ELECTIVES",
+      "name": "Upper-Division Electives",
+      "type": "pick_n",
+      "n": 3,
+      "courses": [],
+      "description": "Complete 3 upper-division elective courses. Up to one elective can be replaced by a 5-credit independent study with a program faculty member. A list of the upper division electives can be found on the BE Undergraduate Advising website."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication",
+      "type": "all_required",
+      "courses": ["AM 170A"],
+      "description": "AM 170A (Mathematical Modeling 1) serves as the Disciplinary Communication (DC) requirement."
+    },
+    {
+      "id": "COMPREHENSIVE",
+      "name": "Comprehensive Requirement",
+      "type": "pick_one",
+      "courses": ["AM 170B", "AM 195"],
+      "description": "Choose one: AM 170B (Mathematical Modeling 2) or AM 195 (Senior Thesis Research)."
+    }
+  ]
+}

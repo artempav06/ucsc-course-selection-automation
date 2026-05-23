@@ -1,0 +1,158 @@
+{
+  "id": "CE_BS",
+  "name": "Computer Engineering B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CE_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Required calculus sequence."
+    },
+    {
+      "id": "LINEAR_ALGEBRA",
+      "name": "Linear Algebra",
+      "type": "pick_one",
+      "courses": ["AM 10", "MATH 21"],
+      "description": "Choose one linear algebra course. AM 10 is Engineering Math Methods I."
+    },
+    {
+      "id": "DIFFERENTIAL_EQUATIONS",
+      "name": "Differential Equations",
+      "type": "pick_one",
+      "courses": ["AM 20", "MATH 24"],
+      "description": "Choose one differential equations course. AM 20 is Engineering Math Methods II."
+    },
+    {
+      "id": "MULTIVARIABLE_CALCULUS",
+      "name": "Multivariable Calculus",
+      "type": "pick_one",
+      "courses": ["AM 30", "MATH 23A"],
+      "description": "Choose one multivariable/vector calculus course. AM 30 is Multivariate Calculus for Engineers."
+    },
+    {
+      "id": "DISCRETE_MATH",
+      "name": "Discrete Mathematics",
+      "type": "all_required",
+      "courses": ["CSE 16"],
+      "description": "Required discrete mathematics course."
+    },
+    {
+      "id": "STATISTICS",
+      "name": "Statistics/Probability",
+      "type": "pick_one",
+      "courses": ["CSE 107", "STAT 131"],
+      "description": "Choose one probability/statistics course."
+    },
+    {
+      "id": "PHYSICS",
+      "name": "Physics",
+      "type": "all_required",
+      "courses": ["PHYS 5A/L", "PHYS 5B/M", "PHYS 5C/N"],
+      "description": "Required physics sequence: Mechanics, Waves & Optics, Electricity & Magnetism."
+    },
+    {
+      "id": "STATICS",
+      "name": "Statics and Mechanics of Materials",
+      "type": "all_required",
+      "courses": ["ECE 9"],
+      "description": "Required statics and mechanics of materials course."
+    },
+    {
+      "id": "SIGNALS",
+      "name": "Signals & Systems",
+      "type": "all_required",
+      "courses": ["ECE 103/L"],
+      "description": "Required signals and systems course with lab."
+    },
+    {
+      "id": "LD_PROGRAMMING",
+      "name": "Lower Division Programming Core",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 30", "CSE 12"],
+      "description": "Required lower-division programming and computer systems courses."
+    },
+    {
+      "id": "LD_SYSTEMS_C",
+      "name": "Systems & C Programming",
+      "type": "pick_one",
+      "courses": ["CSE 13S", "ECE 13"],
+      "description": "Choose one systems and C programming course. CSE 13S is strongly recommended, with exception to those pursuing a Digital Hardware Concentration."
+    },
+    {
+      "id": "UD_CORE",
+      "name": "Upper Division Core",
+      "type": "all_required",
+      "courses": ["CSE 100/L", "CSE 101", "CSE 120", "CSE 121", "ECE 101/L"],
+      "description": "Required upper-division core courses: Logic Design, Data Structures & Algorithms, Computer Architecture, Embedded System Design, Electronic Circuits."
+    },
+    {
+      "id": "CONCENTRATION",
+      "name": "Concentration (choose one)",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "System Programming",
+          "courses": ["CSE 130", "CSE 150", "CSE 111", "CSE 134", "CSE 125", "CSE 113"]
+        },
+        {
+          "label": "Computer Systems",
+          "courses": ["CSE 130", "CSE 111", "CSE 122", "CSE 220"]
+        },
+        {
+          "label": "Networks",
+          "courses": ["CSE 130", "CSE 150", "CSE 156/L", "CSE 122"]
+        },
+        {
+          "label": "Digital Hardware",
+          "courses": ["CSE 125", "ECE 171/L", "CSE 122", "ECE 173"]
+        }
+      ],
+      "description": "Choose one concentration. System Programming: CSE 130, CSE 150, CSE 111 or CSE 134, CSE 125 (CSE 225 substitutable), plus one of CSE 113/CSE 156L/CSE 110A. Computer Systems: CSE 130, CSE 111 or CSE 134, CSE 122 (CSE 222A substitutable), CSE 220. Networks: CSE 130, CSE 150, CSE 156/L, CSE 122 (CSE 222A substitutable), plus CSE 122 or CSE 228A. Digital Hardware: CSE 125 (CSE 225 substitutable), ECE 171/L or CSE 122, plus one of CSE 122/CSE 220/CSE 228A/ECE 173."
+    },
+    {
+      "id": "DC_REQUIREMENT",
+      "name": "Disciplinary Communication (DC)",
+      "type": "pick_one",
+      "courses": ["CSE 185E", "CSE 195"],
+      "description": "DC requirement. CSE 185E is Technical Writing. CSE 195 is Senior Thesis (also satisfies capstone)."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Capstone",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "Engineering Design I & II",
+          "courses": ["CSE 123A", "CSE 123B"]
+        },
+        {
+          "label": "Chip Design I & II",
+          "courses": ["CSE 127A", "CSE 127B"]
+        },
+        {
+          "label": "Intro to Mechatronics",
+          "courses": ["ECE 118"]
+        },
+        {
+          "label": "Senior Thesis",
+          "courses": ["CSE 195"]
+        }
+      ],
+      "description": "Choose one capstone option. CSE 123A/B requires CSE 121 and prior/concurrent CSE 185E. CSE 127A/B requires CSE 125 or 225, prior/concurrent CSE 185E, and prior/concurrent CSE 122 or 222A. ECE 118 requires ECE 101/L, CSE 100/L, and ECE 13; satisfies DC requirement. ECE 118 cannot be used as both elective and capstone. CSE 195 requires submission of an approved senior thesis and also satisfies DC."
+    },
+    {
+      "id": "UD_ELECTIVE",
+      "name": "Upper Division Electives",
+      "type": "pick_n",
+      "n": 2,
+      "courses": [],
+      "description": "Choose elective courses from the Computer Engineering Elective list on the Undergraduate Advising website. Each concentration requires 1-2 electives from the approved list. Digital Hardware concentration may also choose from the approved Digital Hardware Grad-Level Course List. See: https://undergrad.engineering.ucsc.edu/curriculum-charts/"
+    }
+  ]
+}

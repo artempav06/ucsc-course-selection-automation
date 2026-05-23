@@ -1,0 +1,177 @@
+{
+  "id": "BMEB_BI",
+  "name": "Biomolecular Engineering and Bioinformatics (Bioinformatics)",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-BINF-25-26-1.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.0,
+  "categories": [
+    {
+      "id": "MATH_CALCULUS",
+      "name": "Mathematics (Calculus)",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Calculus I and Calculus II are required."
+    },
+    {
+      "id": "MATH_LINEAR_ALGEBRA",
+      "name": "Mathematics (Linear Algebra)",
+      "type": "pick_one",
+      "courses": ["AM 10", "MATH 21"],
+      "description": "Choose one: AM 10 (Mathematical Methods for Engineers I) or MATH 21."
+    },
+    {
+      "id": "MATH_MULTIVARIATE",
+      "name": "Mathematics (Multivariate Calculus)",
+      "type": "pick_one",
+      "courses": ["AM 30", "MATH 23A"],
+      "description": "Choose one: AM 30 (Multivariate Calculus for Engineers) or MATH 23A."
+    },
+    {
+      "id": "DISCRETE_MATH",
+      "name": "Discrete Mathematics",
+      "type": "all_required",
+      "courses": ["CSE 16"],
+      "description": "CSE 16 (Discrete Mathematics) is required."
+    },
+    {
+      "id": "STATISTICS",
+      "name": "Statistics",
+      "type": "all_required",
+      "courses": ["STAT 131", "STAT 132"],
+      "description": "STAT 131 (Introduction to Probability Theory) and STAT 132 (Classical and Bayesian Inference) are both required."
+    },
+    {
+      "id": "MACHINE_LEARNING_BASICS",
+      "name": "Machine Learning Basics",
+      "type": "all_required",
+      "courses": ["CSE 40"],
+      "description": "CSE 40 (Machine Learning Basics) is required."
+    },
+    {
+      "id": "CHEMISTRY",
+      "name": "General Chemistry",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "General Chemistry 3-series: CHEM 3A + CHEM 3B/BL + CHEM 3C/CL",
+          "courses": ["CHEM 3A", "CHEM 3B/BL", "CHEM 3C/CL"]
+        },
+        {
+          "label": "Advanced General Chemistry 4-series: CHEM 4A/AL + CHEM 4B/BL",
+          "courses": ["CHEM 4A/AL", "CHEM 4B/BL"]
+        }
+      ],
+      "description": "Select one of the following General Chemistry series."
+    },
+    {
+      "id": "ORGANIC_CHEMISTRY",
+      "name": "Organic Chemistry",
+      "type": "all_required",
+      "courses": ["CHEM 8A", "CHEM 8B"],
+      "description": "Complete both Organic Chemistry courses (CHEM 8A and CHEM 8B)."
+    },
+    {
+      "id": "BIOLOGY_REQUIRED",
+      "name": "Biology (Required)",
+      "type": "all_required",
+      "courses": ["BIOL 20A"],
+      "description": "Cell and Molecular Biology (BIOL 20A) is required."
+    },
+    {
+      "id": "GENETICS",
+      "name": "Genetics",
+      "type": "pick_one",
+      "courses": ["BME 105", "BIOL 105"],
+      "description": "Choose one: BME 105 (Genetics in the Genomics Era, strongly recommended) or BIOL 105 (Genetics)."
+    },
+    {
+      "id": "MOLECULAR_BIOLOGY",
+      "name": "Molecular Biology",
+      "type": "all_required",
+      "courses": ["BME 101"],
+      "description": "BME 101 (Molecular Biology for Biomolecular Engineers) is required. Select one of the following for molecular biology coverage."
+    },
+    {
+      "id": "BIOCHEMISTRY",
+      "name": "Biochemistry",
+      "type": "pick_one",
+      "courses": ["CHEM 103", "BIOC 100A", "BIOL 100"],
+      "description": "Choose one biochemistry course: CHEM 103 (Biochemistry, prereq CHEM 8B), BIOC 100A (Biochemistry and Molecular Biology, prereq BIOL 20A), or BIOL 100 (Biochemistry, prereq BIOE 20B and CHEM 8B or CHEM 112A)."
+    },
+    {
+      "id": "PROGRAMMING_CORE",
+      "name": "Programming (Core)",
+      "type": "pick_one",
+      "courses": ["BME 160", "CSE 30"],
+      "description": "Choose one primary programming course: BME 160 (Research Programming in the Life Sciences, 6 units) or CSE 30 (Programming Abstractions: Python, 7 units)."
+    },
+    {
+      "id": "PROGRAMMING_DATA_STRUCTURES",
+      "name": "Programming (Data Structures)",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "CSE 13S + CSE 101",
+          "courses": ["CSE 13S", "CSE 101"]
+        },
+        {
+          "label": "CSE 101P + CSE 101",
+          "courses": ["CSE 101P", "CSE 101"]
+        }
+      ],
+      "description": "Choose one data structures path: CSE 13S (Computer Systems and C Programming, 7 units) OR CSE 101P (Introduction to Data Structures and Algorithms in Python), AND CSE 101 (Introduction to Data Structures and Algorithms)."
+    },
+    {
+      "id": "MACHINE_LEARNING_ADVANCED",
+      "name": "Machine Learning (Advanced)",
+      "type": "pick_one",
+      "courses": ["CSE 142", "CSE 144"],
+      "description": "Choose one: CSE 142 (Machine Learning, also listed as CSOER 142) or CSE 144 (Applied Machine Learning)."
+    },
+    {
+      "id": "BIOINFORMATICS_CORE",
+      "name": "Bioinformatics Core",
+      "type": "all_required",
+      "courses": ["BME 80G", "BME 110", "BME 185", "BME 163"],
+      "description": "Complete all bioinformatics core courses: BME 80G (Bioethics in the 21st Century), BME 110 (Computational Biology Tools), BME 185 (Technical Writing for Biomolecular Engineers, also satisfies DC requirement), BME 163 (Applied Visualization and Analysis of Scientific Data)."
+    },
+    {
+      "id": "ELECTIVE",
+      "name": "Elective",
+      "type": "pick_n",
+      "n": 1,
+      "courses": [
+        "AM 115", "AM 147", "BME 118", "BME 122H", "BME 128",
+        "BME 128L", "BME 130", "BME 132", "BME 140", "BME 175",
+        "BME 177", "BME 177L", "BME 178", "BIOC 100B", "CSE 142",
+        "CSE 144", "CSE 182", "METX 100", "METX 140"
+      ],
+      "description": "Choose one elective. Course used as an Elective cannot be used to satisfy other major requirements. Any 5-credit biomolecular engineering graduate course (BME 201-279) may also be used."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Bioinformatics Capstone",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "Bioinformatics Capstone: BME 205 + BME 230A + BME 129C",
+          "courses": ["BME 205", "BME 230A", "BME 129C"]
+        },
+        {
+          "label": "Senior Thesis: BME 195 (15 units over 3 quarters)",
+          "courses": ["BME 195", "BME 195", "BME 195"]
+        }
+      ],
+      "description": "Choose one capstone sequence. The Bioinformatics Capstone includes BME 205 (Bioinformatics), BME 230A (Introduction to Computational Genomics and Systems Biology), and BME 129C (Project Design and Implementation in Biomolecular Engineering III). The Senior Thesis option is 15 units of BME 195 over 3 quarters."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication (DC)",
+      "type": "all_required",
+      "courses": ["BME 185"],
+      "description": "BME 185 (Technical Writing for Biomolecular Engineers) satisfies the DC requirement. Also counted in Bioinformatics Core."
+    }
+  ]
+}

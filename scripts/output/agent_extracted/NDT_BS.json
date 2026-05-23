@@ -1,0 +1,157 @@
+{
+  "id": "NDT_BS",
+  "name": "Network and Digital Technology B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Network-Digital-Technology_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.0,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Required calculus sequence."
+    },
+    {
+      "id": "MATH_SEQUENCE",
+      "name": "Mathematics Sequence",
+      "type": "choose_group",
+      "groups": [
+        { "label": "AM Sequence", "courses": ["AM 10", "AM 20", "AM 30"] },
+        { "label": "MATH Sequence", "courses": ["MATH 21", "MATH 24", "MATH 23A"] }
+      ],
+      "description": "Choose one mathematics sequence: AM (Engineering Math Methods I, II, Multivariate Calculus for Engineers) or MATH (Linear Algebra, Differential Equations, Vector Calculus)."
+    },
+    {
+      "id": "DISCRETE_MATH",
+      "name": "Discrete Mathematics",
+      "type": "all_required",
+      "courses": ["CSE 16"],
+      "description": "Required discrete mathematics course."
+    },
+    {
+      "id": "PHYSICS_MECHANICS",
+      "name": "Physics: Mechanics",
+      "type": "pick_one",
+      "courses": ["PHYS 5A/L", "PHYS 6A/L"],
+      "description": "Choose one mechanics physics course with lab."
+    },
+    {
+      "id": "PHYSICS_EM",
+      "name": "Physics: Electricity & Magnetism",
+      "type": "pick_one",
+      "courses": ["PHYS 5C/N", "PHYS 6C/N"],
+      "description": "Choose one electricity and magnetism physics course with lab."
+    },
+    {
+      "id": "LD_CORE",
+      "name": "Lower Division Core",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 12", "CSE 30"],
+      "description": "Required lower-division programming and computer systems courses."
+    },
+    {
+      "id": "LD_PROGRAMMING",
+      "name": "Lower Division Programming Choice",
+      "type": "pick_one",
+      "courses": ["CSE 13S", "ECE 13"],
+      "description": "Choose one systems programming course: Computer Systems and C Programming (CSE 13S) or Computer Systems and C Programming (ECE 13)."
+    },
+    {
+      "id": "UD_CORE",
+      "name": "Upper Division Core",
+      "type": "all_required",
+      "courses": ["CSE 101", "CSE 150"],
+      "description": "Required upper-division core courses: Introduction to Data Structures & Algorithms, and Introduction to Computer Networks."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication (DC)",
+      "type": "all_required",
+      "courses": ["CSE 185E"],
+      "description": "Technical Writing for Computer Science and Engineering. Satisfies the DC requirement."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Capstone",
+      "type": "pick_one",
+      "courses": ["CSE 115A", "CSE 156/L", "CSE 157", "CSE 181", "CSE 183", "CSE 187"],
+      "description": "Choose one capstone course. Your capstone cannot count for both a capstone and an elective."
+    },
+    {
+      "id": "UD_ELECTIVES",
+      "name": "Upper Division Electives",
+      "type": "pick_n",
+      "n": 4,
+      "courses": [
+        "AM 114",
+        "AM 147",
+        "AM 231",
+        "CMPM 146",
+        "CSE 100/L",
+        "CSE 101M",
+        "CSE 102",
+        "CSE 103",
+        "CSE 107",
+        "CSE 110A",
+        "CSE 110B",
+        "CSE 111",
+        "CSE 112",
+        "CSE 113",
+        "CSE 115A",
+        "CSE 117",
+        "CSE 118",
+        "CSE 119",
+        "CSE 120",
+        "CSE 121",
+        "CSE 125",
+        "CSE 130",
+        "CSE 132",
+        "CSE 138",
+        "CSE 140",
+        "CSE 142",
+        "CSE 144",
+        "CSE 151/L",
+        "CSE 156/L",
+        "CSE 157",
+        "CSE 160",
+        "CSE 161/L",
+        "CSE 165",
+        "CSE 166A",
+        "CSE 167",
+        "CSE 180",
+        "CSE 181",
+        "CSE 182",
+        "CSE 183",
+        "CSE 186",
+        "CSE 187",
+        "CSE 193",
+        "CSE 198",
+        "CSE 276",
+        "ECE 101/L",
+        "ECE 102/L",
+        "ECE 103/L",
+        "ECE 115",
+        "ECE 118",
+        "ECE 130/L",
+        "ECE 135/L",
+        "ECE 136",
+        "ECE 141",
+        "ECE 151",
+        "ECE 152",
+        "ECE 153",
+        "ECE 167",
+        "ECE 171/L",
+        "ECE 172",
+        "ECE 173",
+        "ECE 175/L",
+        "ECE 180J",
+        "STAT 131",
+        "STAT 132"
+      ],
+      "description": "Choose 4 upper-division elective courses from the approved list. Capstone course cannot also count as an elective."
+    }
+  ]
+}

@@ -169,8 +169,7 @@ function initWizard() {
     AppState.profile.targetGradYear = parseInt(document.getElementById("select-grad-year").value, 10);
     AppState.profile.includeSummer = document.getElementById("check-summer").checked;
 
-    const mu = parseInt(document.getElementById("input-max-units").value, 10);
-    AppState.profile.maxUnits = isNaN(mu) || mu < 1 ? 15 : mu;
+    AppState.profile.maxUnits = 15;
 
     AppState.profile.profImportance = document.getElementById("select-prof-importance").value;
 
@@ -258,8 +257,6 @@ function populateMajorDropdown() {
     sel.appendChild(opt);
   }
 
-  // Sync degree dropdown to match the initially-selected major.
-  syncDegreeFromMajor();
 }
 
 // Populate year dropdowns for current-year and grad-year selectors

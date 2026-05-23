@@ -1,0 +1,75 @@
+{
+  "id": "BIOTECH_BS",
+  "name": "Biotechnology B.A.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/Biotechnology-25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.0,
+  "categories": [
+    {
+      "id": "LD_CHEMISTRY",
+      "name": "Chemistry",
+      "type": "all_required",
+      "courses": ["CHEM 3A", "CHEM 4A/L"],
+      "description": "Required chemistry sequence. CHEM 3A requires previous or concurrent enrollment in MATH 2 or math placement. CHEM 4A/L requires CHEM 3A."
+    },
+    {
+      "id": "LD_INTRO_BIOTECH",
+      "name": "Introductory Biotechnology",
+      "type": "all_required",
+      "courses": ["BME 5"],
+      "description": "Introduction to Biotechnology."
+    },
+    {
+      "id": "LD_BIOTECH_SOCIETY",
+      "name": "Biotechnology and Society",
+      "type": "all_required",
+      "courses": ["BME 80H", "BME 18", "BIOL 20A", "BME 80G"],
+      "description": "Required biotechnology and society courses. BME 80H: The Human Genome (Not offered 2025-26). BME 18: Scientific Principles of Life. BIOL 20A: Cell and Molecular Biology. BME 80G: Bioethics in the 21st Century."
+    },
+    {
+      "id": "LD_STATISTICS",
+      "name": "Statistics",
+      "type": "pick_one",
+      "courses": ["STAT 7/L", "STAT 5"],
+      "description": "Choose one statistics course. STAT 7/L (Statistical Methods for Biological Sciences) is strongly preferred. Requires math placement score or MATH 3 or AM 3."
+    },
+    {
+      "id": "LD_PROGRAMMING",
+      "name": "Programming",
+      "type": "pick_one",
+      "courses": ["CSE 20", "ECE 80B"],
+      "description": "Choose one programming course. CSE 20: Beginning Programming in Python. ECE 80B: Engineering Innovations for Medicine and Natural Sciences. CSE 20 is waived for students who have already passed BME 160."
+    },
+    {
+      "id": "UD_CORE",
+      "name": "Upper Division Core",
+      "type": "all_required",
+      "courses": ["BME 105", "BME 110", "BME 160"],
+      "description": "Complete all upper division core courses. BME 105: Genetics in the Genomics Era (prereq: BIOL 20A). BME 110: Computational Biology Tools (prereq: BME 105). BME 160: Research Programming in the Life Sciences (6 units, prereq: BIOL 20A)."
+    },
+    {
+      "id": "UD_ELECTIVES",
+      "name": "Upper Division Electives",
+      "type": "pick_n",
+      "n": 3,
+      "courses": ["BME 122H", "BME 128", "BME 130", "BME 132", "BME 140", "BME 177", "BME 178", "ECE 104", "FMST 124", "FMST 133", "METX 100", "SOCY 121", "SOCY 123", "SOCY 127P"],
+      "description": "Three of the following courses must be taken. We recommend that two or more of the three are BME courses. BME 128, BME 178, and FMST 133 have additional prerequisites not covered by the major requirements. Students may petition to have one upper-division biology course count as an elective."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication (DC)",
+      "type": "all_required",
+      "courses": ["BME 185"],
+      "description": "Complete the DC requirement. BME 185: Technical Writing for Biomolecular Engineers. Prereqs: ELWR and BIOL 20A."
+    },
+    {
+      "id": "COMPREHENSIVE",
+      "name": "Comprehensive Requirement",
+      "type": "all_required",
+      "courses": ["BME 175"],
+      "description": "Complete the comprehensive requirement. BME 175: Entrepreneurship in Biotechnology."
+    }
+  ]
+}

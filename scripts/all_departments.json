@@ -1,0 +1,524 @@
+[
+  {
+    "code": "AM",
+    "name": "AM - Applied Mathematics",
+    "slug": "am-applied-mathematics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics"
+  },
+  {
+    "code": "ANCS",
+    "name": "ANCS-Ancient Studies",
+    "slug": "ancs-ancient-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ancs-ancient-studies"
+  },
+  {
+    "code": "ANTH",
+    "name": "ANTH - Anthropology",
+    "slug": "anth-anthropology",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology"
+  },
+  {
+    "code": "APLX",
+    "name": "APLX - Applied Linguistics",
+    "slug": "aplx-applied-linguistics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/aplx-applied-linguistics"
+  },
+  {
+    "code": "ARBC",
+    "name": "ARBC - Arabic",
+    "slug": "arbc-arabic",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/arbc-arabic"
+  },
+  {
+    "code": "ART",
+    "name": "ART - Art",
+    "slug": "art-art",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art"
+  },
+  {
+    "code": "ARTG",
+    "name": "ARTG - Art & Design: Games + Playable Media",
+    "slug": "artg-art-and-design-games-and-playable-media",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media"
+  },
+  {
+    "code": "ASTR",
+    "name": "ASTR - Astronomy and Astrophysics",
+    "slug": "astr-astronomy-and-astrophysics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics"
+  },
+  {
+    "code": "BIOC",
+    "name": "BIOC - Biochemistry and Molecular Biology",
+    "slug": "bioc-biochemistry-and-molecular-biology",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioc-biochemistry-and-molecular-biology"
+  },
+  {
+    "code": "BIOE",
+    "name": "BIOE - Biology Ecology and Evolutionary",
+    "slug": "bioe-biology-ecology-and-evolutionary",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary"
+  },
+  {
+    "code": "BIOL",
+    "name": "BIOL - Biology Molecular Cell and Developmental",
+    "slug": "biol-biology-molecular-cell-and-developmental",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental"
+  },
+  {
+    "code": "BME",
+    "name": "BME - Biomolecular Engineering",
+    "slug": "bme-biomolecular-engineering",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering"
+  },
+  {
+    "code": "CHEM",
+    "name": "CHEM - Chemistry and Biochemistry",
+    "slug": "chem-chemistry-and-biochemistry",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry"
+  },
+  {
+    "code": "CHIN",
+    "name": "CHIN - Chinese",
+    "slug": "chin-chinese",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese"
+  },
+  {
+    "code": "CLNI",
+    "name": "CLNI - College Nine",
+    "slug": "clni-college-nine",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clni-college-nine"
+  },
+  {
+    "code": "CLST",
+    "name": "CLST - Classical Studies",
+    "slug": "clst-classical-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clst-classical-studies"
+  },
+  {
+    "code": "CMMU",
+    "name": "CMMU - Community Studies",
+    "slug": "cmmu-community-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmmu-community-studies"
+  },
+  {
+    "code": "CMPM",
+    "name": "CMPM - Computational Media",
+    "slug": "cmpm-computational-media",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media"
+  },
+  {
+    "code": "COWL",
+    "name": "COWL - Cowell College",
+    "slug": "cowl-cowell-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cowl-cowell-college"
+  },
+  {
+    "code": "CRES",
+    "name": "CRES - Critical Race and Ethnic Studies",
+    "slug": "cres-critical-race-and-ethnic-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies"
+  },
+  {
+    "code": "CRSN",
+    "name": "CRSN - Carson College",
+    "slug": "crsn-carson-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college"
+  },
+  {
+    "code": "CT",
+    "name": "CT - Creative Technologies",
+    "slug": "ct-creative-technologies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies"
+  },
+  {
+    "code": "CRWN",
+    "name": "CRWN - Crown College",
+    "slug": "crwn-crown-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college"
+  },
+  {
+    "code": "CSE",
+    "name": "CSE - Computer Science and Engineering",
+    "slug": "cse-computer-science-and-engineering",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering"
+  },
+  {
+    "code": "CSP",
+    "name": "CSP - Coastal Science and Policy",
+    "slug": "csp-coastal-science-and-policy",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy"
+  },
+  {
+    "code": "DANM",
+    "name": "DANM - Digital Arts and New Media",
+    "slug": "danm-digital-arts-and-new-media",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media"
+  },
+  {
+    "code": "EART",
+    "name": "EART - Earth Sciences",
+    "slug": "eart-earth-sciences",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences"
+  },
+  {
+    "code": "ECE",
+    "name": "ECE - Electrical and Computer Engineering",
+    "slug": "ece-electrical-and-computer-engineering",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering"
+  },
+  {
+    "code": "ECON",
+    "name": "ECON - Economics",
+    "slug": "econ-economics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics"
+  },
+  {
+    "code": "EDUC",
+    "name": "EDUC - Education",
+    "slug": "educ-education",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education"
+  },
+  {
+    "code": "ENVS",
+    "name": "ENVS - Environmental Studies",
+    "slug": "envs-environmental-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies"
+  },
+  {
+    "code": "ESCI",
+    "name": "ESCI - Environmental Sciences",
+    "slug": "esci-environmental-sciences",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences"
+  },
+  {
+    "code": "FIL",
+    "name": "FIL-Filipino",
+    "slug": "fil-filipino",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fil-filipino"
+  },
+  {
+    "code": "FILM",
+    "name": "FILM - Film and Digital Media",
+    "slug": "film-film-and-digital-media",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media"
+  },
+  {
+    "code": "FMST",
+    "name": "FMST - Feminist Studies",
+    "slug": "fmst-feminist-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies"
+  },
+  {
+    "code": "FREN",
+    "name": "FREN - French",
+    "slug": "fren-french",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fren-french"
+  },
+  {
+    "code": "GAME",
+    "name": "GAME - Games and Playable Media",
+    "slug": "game-games-and-playable-media",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media"
+  },
+  {
+    "code": "GCH",
+    "name": "GCH-Global and Community Health",
+    "slug": "gch-global-community-health",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health"
+  },
+  {
+    "code": "GIST",
+    "name": "GIST-Geographic Info Systems, Science, & Technologies",
+    "slug": "gist-geographic-info-systems-science-and-technologies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies"
+  },
+  {
+    "code": "GRAD",
+    "name": "GRAD-Graduate",
+    "slug": "grad-graduate",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate"
+  },
+  {
+    "code": "GREE",
+    "name": "GREE - Greek",
+    "slug": "gree-greek",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gree-greek"
+  },
+  {
+    "code": "HAVC",
+    "name": "HAVC - History of Art and Visual Culture",
+    "slug": "havc-history-of-art-and-visual-culture",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture"
+  },
+  {
+    "code": "HEBR",
+    "name": "HEBR - Hebrew",
+    "slug": "hebr-hebrew",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hebr-hebrew"
+  },
+  {
+    "code": "HISC",
+    "name": "HISC - History of Consciousness",
+    "slug": "hisc-history-of-consciousness",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness"
+  },
+  {
+    "code": "HIS",
+    "name": "HIS - History",
+    "slug": "his-history",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history"
+  },
+  {
+    "code": "HCI",
+    "name": "HCI-Human Computer Interaction",
+    "slug": "hci-human-computer-interaction",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction"
+  },
+  {
+    "code": "HUMN",
+    "name": "HUMN-Humanities",
+    "slug": "humn-humanities",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/humn-humanities"
+  },
+  {
+    "code": "ITAL",
+    "name": "ITAL - Italian",
+    "slug": "ital-italian",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ital-italian"
+  },
+  {
+    "code": "JAPN",
+    "name": "JAPN - Japanese",
+    "slug": "japn-japanese",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/japn-japanese"
+  },
+  {
+    "code": "JRLC",
+    "name": "JRLC-John R Lewis College",
+    "slug": "jrlc-john-r-lewis-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jrlc-john-r-lewis-college"
+  },
+  {
+    "code": "JWST",
+    "name": "JWST - Jewish Studies",
+    "slug": "jwst-jewish-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jwst-jewish-studies"
+  },
+  {
+    "code": "KRSG",
+    "name": "KRSG - Kresge College",
+    "slug": "krsg-kresge-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college"
+  },
+  {
+    "code": "LAAD",
+    "name": "LAAD - Languages",
+    "slug": "laad-languages",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/laad-languages"
+  },
+  {
+    "code": "LALS",
+    "name": "LALS - Latin American and Latino Studies",
+    "slug": "lals-latin-american-and-latino-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies"
+  },
+  {
+    "code": "LATN",
+    "name": "LATN - Latin",
+    "slug": "latn-latin",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/latn-latin"
+  },
+  {
+    "code": "LGST",
+    "name": "LGST - Legal Studies",
+    "slug": "lgst-legal-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lgst-legal-studies"
+  },
+  {
+    "code": "LING",
+    "name": "LING - Linguistics",
+    "slug": "ling-linguistics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics"
+  },
+  {
+    "code": "LIT",
+    "name": "LIT - Literature",
+    "slug": "lit-literature",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature"
+  },
+  {
+    "code": "MATH",
+    "name": "MATH - Mathematics",
+    "slug": "math-mathematics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics"
+  },
+  {
+    "code": "MERR",
+    "name": "MERR - Merrill College",
+    "slug": "merr-merrill-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/merr-merrill-college"
+  },
+  {
+    "code": "METX",
+    "name": "METX - Microbiology and Environmental Toxicology",
+    "slug": "metx-microbiology-and-environmental-toxicology",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology"
+  },
+  {
+    "code": "MSE",
+    "name": "MSE-Materials Science and Engineering",
+    "slug": "mse-materials-science-and-engineering",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering"
+  },
+  {
+    "code": "MUSC",
+    "name": "MUSC - Music",
+    "slug": "musc-music",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music"
+  },
+  {
+    "code": "NLP",
+    "name": "NLP-Natural Language Processing",
+    "slug": "nlp-natural-language-processing",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing"
+  },
+  {
+    "code": "OAKS",
+    "name": "OAKS - Oakes College",
+    "slug": "oaks-oakes-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college"
+  },
+  {
+    "code": "OCEA",
+    "name": "OCEA - Ocean Sciences",
+    "slug": "ocea-ocean-sciences",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences"
+  },
+  {
+    "code": "PBS",
+    "name": "PBS - Physical Biological Sciences",
+    "slug": "pbs-physical-biological-sciences",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/pbs-physical-biological-sciences"
+  },
+  {
+    "code": "PHIL",
+    "name": "PHIL - Philosophy",
+    "slug": "phil-philosophy",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy"
+  },
+  {
+    "code": "PHYE",
+    "name": "PHYE - Physical Education",
+    "slug": "phye-physical-education",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education"
+  },
+  {
+    "code": "PHYS",
+    "name": "PHYS - Physics",
+    "slug": "phys-physics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics"
+  },
+  {
+    "code": "POLI",
+    "name": "POLI - Politics",
+    "slug": "poli-politics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics"
+  },
+  {
+    "code": "PRTR",
+    "name": "PRTR - Porter College",
+    "slug": "prtr-porter-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college"
+  },
+  {
+    "code": "PSYC",
+    "name": "PSYC - Psychology",
+    "slug": "psyc-psychology",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology"
+  },
+  {
+    "code": "PUNJ",
+    "name": "PUNJ - Punjabi",
+    "slug": "punj-punjabi",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/punj-punjabi"
+  },
+  {
+    "code": "SCIC",
+    "name": "SCIC - Science Communication",
+    "slug": "scic-science-communication",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication"
+  },
+  {
+    "code": "SOCD",
+    "name": "SOCD - Social Documentation",
+    "slug": "socd-social-documentation",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation"
+  },
+  {
+    "code": "SOCY",
+    "name": "SOCY - Sociology",
+    "slug": "socy-sociology",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology"
+  },
+  {
+    "code": "SPAN",
+    "name": "SPAN - Spanish",
+    "slug": "span-spanish",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/span-spanish"
+  },
+  {
+    "code": "SPHS",
+    "name": "SPHS - Spanish for Heritage Speakers",
+    "slug": "sphs-spanish-for-heritage-speakers",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/sphs-spanish-for-heritage-speakers"
+  },
+  {
+    "code": "STAT",
+    "name": "STAT - Statistics",
+    "slug": "stat-statistics",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics"
+  },
+  {
+    "code": "STEV",
+    "name": "STEV - Stevenson College",
+    "slug": "stev-stevenson-college",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college"
+  },
+  {
+    "code": "THEA",
+    "name": "THEA - Theater Arts",
+    "slug": "thea-theater-arts",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts"
+  },
+  {
+    "code": "TIM",
+    "name": "TIM-Technology Information Management",
+    "slug": "tim-technology-information-management",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/tim-technology-information-management"
+  },
+  {
+    "code": "UCDC",
+    "name": "UCDC - UCDC",
+    "slug": "ucdc-ucdc",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ucdc-ucdc"
+  },
+  {
+    "code": "VAST",
+    "name": "VAST-Visualizing Abolition Studies",
+    "slug": "vast-visualizing-abolition-studies",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/vast-visualizing-abolition-studies"
+  },
+  {
+    "code": "WRIT",
+    "name": "WRIT - Writing",
+    "slug": "writ-writing",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing"
+  },
+  {
+    "code": "YIDD",
+    "name": "YIDD - Yiddish",
+    "slug": "yidd-yiddish",
+    "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/yidd-yiddish"
+  }
+]

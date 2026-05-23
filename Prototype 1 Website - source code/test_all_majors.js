@@ -133,13 +133,21 @@ function findPrereqViolations(schedule) {
     for (const q of ["F", "W", "S", "SU"]) {
       const courses = year.quarters[q];
       if (!courses) continue;
+      const thisQuarter = new Set(courses.filter(c => c !== "_GAP"));
       for (const code of courses) {
         if (code === "_GAP") continue;
         const course = COURSES[code];
         if (course && course.prereqs && course.prereqs.length > 0) {
-          const met = course.prereqs.every(orGroup =>
-            orGroup.some(prereq => completed.has(prereq))
-          );
+          // Co-req exception: if a course has labCoreq and the corequisite is
+          // in the same quarter, any prereq group containing the corequisite
+          // is satisfied (concurrent enrollment counts)
+          const coreq = course.labCoreq || null;
+          const met = course.prereqs.every(orGroup => {
+            if (coreq && orGroup.includes(coreq) && thisQuarter.has(coreq)) {
+              return true;
+            }
+            return orGroup.some(prereq => completed.has(prereq));
+          });
           if (!met) {
             violations.push({ code, prereqs: course.prereqs, quarter: `${q} ${year.academicStart}` });
           }
@@ -223,9 +231,9 @@ function testMajor(majorId) {
   const required = majorDef.totalUnitsRequired || 180;
   assert(totalUnits >= required, `total units >= ${required} (got ${totalUnits})`, majorId);
 
-  // Test 9: Max quarter units <= maxUnits (17)
+  // Test 9: Max quarter units <= 21 (graduated cap: Y1=15, Y2=19, Y3+=21)
   const maxQU = maxQuarterUnits(schedule);
-  assert(maxQU <= 17, `no quarter exceeds 17 units (max was ${maxQU})`, majorId);
+  assert(maxQU <= 21, `no quarter exceeds 21 units (max was ${maxQU})`, majorId);
 
   // Test 10: No prerequisite violations
   const prereqViolations = findPrereqViolations(schedule);

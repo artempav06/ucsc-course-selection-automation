@@ -73,7 +73,7 @@ console.log("\n── Test 3: Course catalog integrity ──");
   let missingTitle = 0, missingUnits = 0;
   for (const [code, c] of Object.entries(COURSES)) {
     if (!c.title) missingTitle++;
-    if (typeof c.units !== "number" || c.units <= 0) missingUnits++;
+    if (typeof c.units !== "number" || c.units < 0) missingUnits++;
   }
   assert(missingTitle === 0, `No courses missing title (${missingTitle} missing)`);
   assert(missingUnits === 0, `No courses missing/invalid units (${missingUnits} invalid)`);

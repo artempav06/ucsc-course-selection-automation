@@ -1,0 +1,134 @@
+====================================================================================================
+INVESTIGATION DUMP: AM_BS + am_computational
+Profile: Freshman, F2024→S2028, maxUnits=19, minUnits=12, no summer, no completed
+====================================================================================================
+
+── PHASE BREAKDOWN ──
+Phase 1 (Major walk):     16 courses, 80 units (40 UD)
+  Types: {"major_core":16}
+  Courses: AM 100, AM 112, AM 114, AM 129, AM 170A, MATH 19A, MATH 19B, AM 10, AM 20, MATH 23A, MATH 23B, CSE 16, CSE 20, AM 147, STAT 131, AM 170B
+Phase 2 (GE):             7 courses, 35 units
+  Courses: PHIL 22, CRES 10, MUSC 11, PHIL 9, PHIL 28, THEA 10, WRIT 2
+Phase 3 (UC):             3 courses, 15 units
+  Courses: WRIT 1, HIS 10B, HIS 80A
+Phase 4 (Prereq expand):  1 courses, 5 units
+  Courses: AM 30
+
+── THE BUG: supplementUpperDiv ──
+Before Phase 5: 27 courses, 135 units total, 40 UD units
+Phase 5 (UD supplement):  4 courses, 20 units (20 UD)
+  supplementUpperDiv saw curUD=0 (bug: counted from empty udAdded[], not selected[])
+  Actually had 40 UD units already → only needed 20 more
+  EXCESS: 0 units added unnecessarily
+  Courses: AM 130, AM 107, AM 115, AM 148
+After Phase 5: 155 units total, 60 UD units
+
+── PHASES 6-8 ──
+Phase 6 (FREE pad):       5 courses, 25 units (target was 180)
+Phase 7 (Filler pool):    60 candidates built
+Phase 8 (Placement):      36 courses, 180 units to place
+  Fillers added during placement: 0 courses, 0 units
+
+── TOTALS ──
+Total placed: 36 courses, 180 units
+totalUnitsRequired: 180
+EXCESS: 0 units over target
+Schedule spans: 4 years
+
+── DUPLICATES ──
+None found.
+
+── SCHEDULE (quarter by quarter) ──
+
+Year 1 (Freshman) (2024–2025)
+  F: 15 units
+    MATH 19A        5u  lower  [major_core    ]  Calculus for Science, Engineering, and Mathematics
+    CSE 20          5u  lower  [major_core    ]  Beginning Programming in Python
+    WRIT 1          5u  lower  [uc            ]  Introduction to Academic Writing
+  W: 15 units
+    MATH 19B        5u  lower  [major_core    ]  Calculus for Science, Engineering, and Mathematics
+    AM 10           5u  lower  [major_core    ]  Mathematical Methods for Engineers I
+    FREE 1          5u  lower  [filler        ]  Free Elective
+  S: 15 units
+    CSE 16          5u  lower  [major_core    ]  Applied Discrete Mathematics
+    AM 20           5u  lower  [major_core    ]  Ordinary Differential Equations for Engineers
+    FREE 2          5u  lower  [filler        ]  Free Elective
+
+Year 2 (Sophomore) (2025–2026)
+  F: 15 units
+    MATH 23A        5u  lower  [major_core    ]  Vector Calculus
+    STAT 131        5u  upper  [major_core    ]  Introduction to Probability Theory
+    FREE 3          5u  lower  [filler        ]  Free Elective
+  W: 15 units
+    AM 129          5u  upper  [major_core    ]  Foundations of Scientific Computing for Scientists and Engineers
+    AM 147          5u  upper  [major_core    ]  Computational Methods and Applications
+    FREE 4          5u  lower  [filler        ]  Free Elective
+  S: 15 units
+    AM 30           5u  lower  [prereq        ]  Multivariate Calculus for Engineers
+    AM 100          5u  upper  [major_core    ]  Mathematical Methods for Engineers
+    FREE 5          5u  lower  [filler        ]  Free Elective
+
+Year 3 (Junior) (2026–2027)
+  F: 15 units
+    MATH 23B        5u  lower  [major_core    ]  Vector Calculus
+    AM 170A         5u  upper  [major_core    ]  Mathematical Modeling 1
+    PHIL 9          5u  lower  [ge            ]  Reasoning and Critical Thinking
+  W: 15 units
+    AM 114          5u  upper  [major_core    ]  Introduction to Dynamical Systems
+    AM 112          5u  upper  [major_core    ]  Introduction to Partial Differential Equations
+    CRES 10         5u  lower  [ge            ]  Introduction to Critical Race and Ethnic Studies
+  S: 15 units
+    AM 170B         5u  upper  [major_core    ]  Mathematical Modeling 2
+    PHIL 22         5u  lower  [ge            ]  Introduction to Ethical Theory
+    PHIL 28         5u  lower  [ge            ]  Environmental Ethics
+
+Year 4 (Senior) (2027–2028)
+  F: 15 units
+    THEA 10         5u  lower  [ge            ]  Introduction to Performance
+    HIS 10B         5u  lower  [uc            ]  United States History, 1877 to the Present
+    MUSC 11         5u  lower  [ge            ]  Musics of the World
+  W: 15 units
+    WRIT 2          5u  lower  [ge            ]  Rhetoric and Inquiry
+    AM 115          5u  upper  [filler        ]  Stochastic Modeling in Biology
+    AM 148          5u  upper  [filler        ]  GPU Programming for Scientific Computations
+  S: 15 units
+    HIS 80A         5u  lower  [uc            ]  United States Social History
+    AM 130          5u  upper  [filler        ]  Advanced Topics in Applied Mathematics
+    AM 107          5u  upper  [filler        ]  Introduction to Fluid Dynamics
+
+── REQUIREMENT SATISFACTION ──
+allMet: false
+  Major: false  GE: true  UC: true
+  totalUnits: 180 (need 180)  upperDiv: 60 (need 60)
+
+Major categories:
+  ✓ CALCULUS             1/1  courses: MATH 19A, MATH 19B
+  ✓ LINEAR_ALGEBRA_DIFF_EQ 1/1  courses: AM 10, AM 20
+  ✓ MULTIVARIABLE_CALCULUS 1/1  courses: MATH 23A, MATH 23B
+  ✓ DISCRETE_MATH        1/1  courses: CSE 16
+  ✓ PROGRAMMING          1/1  courses: CSE 20
+  ✗ LD_ELECTIVES         0/2  courses: 
+  ✓ UD_REQUIRED          4/4  courses: AM 100, AM 112, AM 114, AM 129
+  ✓ UD_ANALYSIS          1/1  courses: AM 147
+  ✓ UD_STATS             1/1  courses: STAT 131
+  ✗ UD_ELECTIVES         0/3  courses: 
+  ✓ DC                   1/1  courses: AM 170A
+  ✓ COMPREHENSIVE        1/1  courses: AM 170B
+
+GE categories:
+  ✓ CC    Cross-Cultural Analysis             courses: PHIL 22
+  ✓ ER    Ethnicity and Race                  courses: CRES 10, HIS 10B
+  ✓ IM    Interpreting Arts and Media         courses: MUSC 11
+  ✓ MF    Mathematical and Formal Reasoning   courses: MATH 19A, CSE 20, MATH 19B, AM 10, CSE 16, AM 20, MATH 23A, AM 147, MATH 23B, AM 114
+  ✓ SI    Scientific Inquiry                  courses: AM 170B
+  ✓ SR    Statistical Reasoning               courses: STAT 131
+  ✓ TA    Textual Analysis                    courses: WRIT 1, PHIL 9
+  ✓ PE    Perspectives                        courses: PHIL 28
+  ✓ PR    Practice                            courses: THEA 10
+  ✓ C     Composition                         courses: WRIT 2
+  ✓ DC    Disciplinary Communication          courses: AM 170A
+
+UC requirements:
+  ✓ ELWR   Entry Level Writing       courses: WRIT 1
+  ✓ AH     American History          courses: HIS 10B, HIS 80A
+  ✓ AI     American Institutions     courses: HIS 10B, HIS 80A

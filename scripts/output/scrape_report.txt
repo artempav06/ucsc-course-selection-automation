@@ -1,0 +1,12 @@
+Scrape Report — full
+Subjects: 62
+Total courses: 3864
+Quarters real: 516
+Quarters defaulted: 3348
+With labCoreq: 203
+With enrollmentRestrictions: 752
+With repeatable: 704
+With crossListed: 2
+
+Warnings:
+  (none)

@@ -51,30 +51,85 @@ def escape_js_string(s):
     )
 
 
+def strip_coreq_from_prereqs(prereqs, lab_coreq):
+    """Remove the labCoreq from prereq OR-groups where it's the sole member.
+
+    When a corequisite is the only option in an OR-group (e.g. [["CSE 100L"]]),
+    keeping it creates an unsatisfiable circular dependency. Strip it.
+
+    When the corequisite is one of several alternatives (e.g. [["PHYS 5A", "PHYS 15A"]]),
+    keep it — the prereq is satisfiable and the corequisite is also a valid
+    prior-quarter prereq ("previous or concurrent enrollment").
+    """
+    if not lab_coreq or not prereqs:
+        return prereqs
+    cleaned = []
+    for or_group in prereqs:
+        if or_group == [lab_coreq]:
+            continue
+        cleaned.append(or_group)
+    return cleaned
+
+
 def format_course_entry(course):
     """Produce the JS snippet for a single course, matching courses.js style."""
     code = course["code"]
     title = escape_js_string(course["title"])
     desc = escape_js_string(course["desc"])
-    prereqs = json.dumps(course["prereqs"])
+    lab_coreq = course.get("labCoreq")
+    prereqs_clean = strip_coreq_from_prereqs(course["prereqs"], lab_coreq)
+    # Strip self-references (course listing itself as its own prereq)
+    prereqs_clean = [
+        [p for p in grp if p != code] for grp in prereqs_clean
+    ]
+    prereqs_clean = [grp for grp in prereqs_clean if grp]
+    prereqs = json.dumps(prereqs_clean)
     quarters = json.dumps(course["quarters"])
     ge = f'"{course["ge"]}"' if course["ge"] else "null"
-    return (
-        f'  "{code}": {{\n'
-        f'    title: "{title}",\n'
-        f'    units: {course["units"]}, division: "{course["division"]}",\n'
-        f'    prereqs: {prereqs},\n'
-        f'    ge: {ge}, quarters: {quarters},\n'
-        f'    desc: "{desc}",\n'
-        f'    section: ["FREE"], rmpScore: 0\n'
-        f'  }},'
-    )
+
+    lines = [
+        f'  "{code}": {{',
+        f'    title: "{title}",',
+        f'    units: {course["units"]}, division: "{course["division"]}",',
+        f'    prereqs: {prereqs},',
+        f'    ge: {ge}, quarters: {quarters},',
+    ]
+
+    # New fields — only emit when they have meaningful values
+    ge_all = course.get("geAll", [])
+    if ge_all and len(ge_all) > 1:
+        lines.append(f'    geAll: {json.dumps(ge_all)},')
+
+    lab_coreq = course.get("labCoreq")
+    if lab_coreq:
+        lines.append(f'    labCoreq: "{escape_js_string(lab_coreq)}",')
+
+    if course.get("repeatable"):
+        lines.append(f'    repeatable: true,')
+
+    max_units = course.get("maxUnits")
+    if max_units is not None:
+        lines.append(f'    maxUnits: {max_units},')
+
+    restrictions = course.get("enrollmentRestrictions")
+    if restrictions:
+        lines.append(f'    enrollmentRestrictions: "{escape_js_string(restrictions)}",')
+
+    catalog_url = course.get("catalogUrl", "")
+    if catalog_url:
+        lines.append(f'    catalogUrl: "{escape_js_string(catalog_url)}",')
+
+    lines.append(f'    desc: "{desc}",')
+    lines.append(f'    section: ["FREE"], rmpScore: 0')
+    lines.append(f'  }},')
+
+    return "\n".join(lines)
 
 
 def extract_existing_codes(courses_js_text):
     """Find every course key currently declared inside the COURSES object."""
-    # Course keys look like:   "CSE 12": {    or    "MATH 19A": {
-    pattern = re.compile(r'"([A-Z]{2,5}\s\d+[A-Z]?)"\s*:\s*\{')
+    # Handles: "CSE 12", "MATH 19A", "CSE 101P", "CHEM 3BL", "LIT 61F"
+    pattern = re.compile(r'"([A-Z]{2,5}\s\d+[A-Z]{0,2})"\s*:\s*\{')
     return set(pattern.findall(courses_js_text))
 
 
@@ -214,7 +269,23 @@ def main():
     if dry_run:
         print()
         print("--- DRY RUN (no files written) ---")
-        print(f"Would add {len(to_add)} courses")
+        print(f"Would add/update: {len(to_add)} auto-generated courses")
+        print(f"Would skip: {len(skipped)} hand-tuned courses")
+        # Stats on new fields
+        with_quarters = sum(1 for c in to_add if not c.get("_flags", {}).get("quarters_defaulted", True))
+        with_coreq = sum(1 for c in to_add if c.get("labCoreq"))
+        with_restrict = sum(1 for c in to_add if c.get("enrollmentRestrictions"))
+        with_repeat = sum(1 for c in to_add if c.get("repeatable"))
+        with_url = sum(1 for c in to_add if c.get("catalogUrl"))
+        print(f"  Courses with real quarters: {with_quarters}")
+        print(f"  Courses with labCoreq: {with_coreq}")
+        print(f"  Courses with enrollmentRestrictions: {with_restrict}")
+        print(f"  Courses with repeatable=true: {with_repeat}")
+        print(f"  Courses with catalogUrl: {with_url}")
+        if skipped:
+            print(f"\nHand-tuned courses preserved: {', '.join(sorted(skipped)[:20])}")
+            if len(skipped) > 20:
+                print(f"  ... and {len(skipped) - 20} more")
         print()
         print("First 3 new entries preview:")
         for e in entries[:3]:

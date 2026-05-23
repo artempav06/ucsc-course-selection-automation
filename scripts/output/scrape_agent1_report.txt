@@ -1,0 +1,12 @@
+Scrape Report — scrape_agent1
+Subjects: 5
+Total courses: 286
+Quarters real: 0
+Quarters defaulted: 286
+With labCoreq: 39
+With enrollmentRestrictions: 36
+With repeatable: 32
+With crossListed: 2
+
+Warnings:
+  (none)

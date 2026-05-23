@@ -1,0 +1,98 @@
+{
+  "id": "CSGD_BS",
+  "name": "Computer Science: Computer Game Design B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CSGD_BS_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "MATH_CALCULUS",
+      "name": "Calculus Sequence",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Option A (19-series)", "courses": ["MATH 19A", "MATH 19B"] },
+        { "label": "Option B (20-series)", "courses": ["MATH 20A", "MATH 20B"] }
+      ],
+      "description": "Choose one calculus sequence: MATH 19A/19B or MATH 20A/20B."
+    },
+    {
+      "id": "MATH_LINEAR_ALGEBRA",
+      "name": "Linear Algebra",
+      "type": "pick_one",
+      "courses": ["MATH 21", "AM 10"],
+      "description": "Choose one linear algebra course."
+    },
+    {
+      "id": "MATH_DISCRETE",
+      "name": "Discrete Mathematics",
+      "type": "all_required",
+      "courses": ["CSE 16"],
+      "description": "Required discrete mathematics course."
+    },
+    {
+      "id": "LD_CSE_CORE",
+      "name": "Computational Foundations",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 12", "CSE 30", "CSE 101"],
+      "description": "Required lower-division and foundational CSE courses. CSE 101 is upper-division but part of the computational foundations sequence."
+    },
+    {
+      "id": "LD_SYSTEMS",
+      "name": "Systems Programming",
+      "type": "pick_one",
+      "courses": ["CSE 13S", "ECE 13"],
+      "description": "Choose one systems programming course: CSE 13S or ECE 13."
+    },
+    {
+      "id": "GAMES_FOUNDATIONS",
+      "name": "Games and Playable Media Foundations",
+      "type": "all_required",
+      "courses": ["FILM 80V", "CMPM 80J"],
+      "description": "Required games and playable media foundation courses."
+    },
+    {
+      "id": "GAME_DESIGN_DEVELOPMENT",
+      "name": "Game Design and Development",
+      "type": "all_required",
+      "courses": ["CMPM 80K", "CMPM 120", "CMPM 121", "CMPM 130", "CMPM 176"],
+      "description": "Required game design and development courses. CMPM 130 also satisfies the DC requirement."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication (DC)",
+      "type": "all_required",
+      "courses": ["CMPM 130"],
+      "description": "DC requirement satisfied by CMPM 130 (User Interface and User Experience Design), which is also counted in Game Design and Development."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Comprehensive Requirement (Capstone)",
+      "type": "all_required",
+      "courses": ["CMPM 170", "CMPM 171"],
+      "description": "Both CMPM 170 (Rapid Prototyping) and CMPM 171 (Game Design Studio) are required for the comprehensive requirement. 7 units total."
+    },
+    {
+      "id": "CGE_ELECTIVES",
+      "name": "Computer Game Engineering Electives",
+      "type": "pick_n",
+      "n": 5,
+      "courses": [
+        "CMPM 110", "CMPM 122", "CMPM 123", "CMPM 125", "CMPM 131",
+        "CMPM 132", "CMPM 146", "CMPM 147", "CMPM 148", "CMPM 150",
+        "CMPM 151", "CMPM 152", "CMPM 163", "CMPM 164", "CMPM 169",
+        "CMPM 172", "CMPM 177", "CMPM 178", "CMPM 179", "CMPM 180",
+        "CSE 102", "CSE 103", "CSE 104", "CSE 110A", "CSE 110B",
+        "CSE 112", "CSE 113", "CSE 115A", "CSE 115B", "CSE 115C",
+        "CSE 117", "CSE 118", "CSE 120", "CSE 130", "CSE 132",
+        "CSE 138", "CSE 140", "CSE 142", "CSE 144", "CSE 145",
+        "CSE 146", "CSE 150", "CSE 156", "CSE 157", "CSE 160",
+        "CSE 161", "CSE 162", "CSE 163", "CSE 180", "CSE 181",
+        "CSE 183", "CSE 184", "CSE 186", "CSE 187",
+        "ECON 166A", "ECE 118"
+      ],
+      "description": "Choose 5 courses from the approved Computer Game Engineering elective list. No more than 2 may be from the restricted subset: CMPM 110, CMPM 122, CMPM 131, CMPM 132, CMPM 150, CMPM 177, CSE 103, CSE 104, ECON 166A."
+    }
+  ]
+}

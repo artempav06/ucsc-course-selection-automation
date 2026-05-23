@@ -1,0 +1,115 @@
+{
+  "id": "CS_BA",
+  "name": "Computer Science B.A.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BA_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "LD_CORE",
+      "name": "Lower Division CS Core",
+      "type": "all_required",
+      "courses": ["CSE 12", "CSE 16", "CSE 20", "CSE 30", "CSE 40"],
+      "description": "All five lower-division CS core courses are required."
+    },
+    {
+      "id": "MATH_CALC",
+      "name": "Calculus Sequence",
+      "type": "choose_group",
+      "groups": [
+        { "label": "19-series", "courses": ["MATH 19A", "MATH 19B"] },
+        { "label": "20-series (Honors)", "courses": ["MATH 20A", "MATH 20B"] }
+      ],
+      "description": "Choose one calculus sequence: MATH 19A+19B or MATH 20A+20B."
+    },
+    {
+      "id": "MATH_LIN_ALG",
+      "name": "Linear Algebra",
+      "type": "pick_one",
+      "courses": ["AM 10", "MATH 21"],
+      "description": "Choose one linear algebra course: AM 10 (Engr. Math Methods I) or MATH 21 (Linear Algebra)."
+    },
+    {
+      "id": "UD_CORE",
+      "name": "Upper Division Core (Algorithms)",
+      "type": "pick_one",
+      "courses": ["CSE 101", "CSE 101P"],
+      "description": "Choose CSE 101 (Intro to Data Structures & Algorithms) or CSE 101P (Python-based). CSE 101 requires CSE 13S; CSE 101P does not."
+    },
+    {
+      "id": "BREADTH",
+      "name": "Breadth Courses",
+      "type": "pick_n",
+      "n": 3,
+      "coursesA": [
+        "CSE 101M", "CSE 102", "CSE 103", "CSE 112", "CSE 114A",
+        "CSE 118", "CSE 120", "CSE 140", "CSE 142", "CSE 143",
+        "CSE 144", "CSE 150", "CSE 183", "CSE 184"
+      ],
+      "coursesB": [
+        "CSE 110A", "CSE 130", "CSE 132", "CSE 134",
+        "CSE 138", "CSE 160", "CSE 180", "CSE 186"
+      ],
+      "courses": [
+        "CSE 101M", "CSE 102", "CSE 103", "CSE 112", "CSE 114A",
+        "CSE 118", "CSE 120", "CSE 140", "CSE 142", "CSE 143",
+        "CSE 144", "CSE 150", "CSE 183", "CSE 184",
+        "CSE 110A", "CSE 130", "CSE 132", "CSE 134",
+        "CSE 138", "CSE 160", "CSE 180", "CSE 186"
+      ],
+      "description": "Pick 3 courses total from Breadth Lists A (not requiring CSE 101) and B (requiring CSE 101) combined."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication",
+      "type": "pick_one",
+      "courses": ["CSE 115A", "CSE 185E", "CSE 185S", "CSE 195"],
+      "description": "Pick one DC course. DC courses cannot be used to satisfy any Upper Division Elective requirement.",
+      "note": "CSE 185S/CSE 185E is listed as a single option on the chart. CSE 195 (Senior Thesis) cannot count as both DC and capstone."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Comprehensive Requirement (Capstone/Exit)",
+      "type": "pick_one",
+      "courses": [
+        "CSE 110A", "CSE 115C", "CSE 115D", "CSE 134", "CSE 138",
+        "CSE 140", "CSE 143", "CSE 144", "CSE 145", "CSE 156",
+        "CSE 157", "CSE 160", "CSE 161", "CSE 162", "CSE 163",
+        "CSE 168", "CSE 181", "CSE 183", "CSE 184", "CSE 187",
+        "CMPM 172", "CSE 195"
+      ],
+      "description": "Pass one Capstone Course or complete a Senior Thesis (CSE 195). The capstone course can also satisfy a Breadth or Upper Division Elective requirement.",
+      "note": "CSE 195 cannot count as both DC and capstone. Many capstone courses require additional prerequisites beyond major requirements."
+    },
+    {
+      "id": "ELECTIVE",
+      "name": "Upper Division Electives",
+      "type": "pick_n",
+      "n": 2,
+      "courses": [
+        "CSE 109", "CSE 101M", "CSE 102", "CSE 103", "CSE 110A", "CSE 112",
+        "CSE 114A", "CSE 115C", "CSE 115D", "CSE 118", "CSE 120",
+        "CSE 130", "CSE 132", "CSE 134", "CSE 138", "CSE 140",
+        "CSE 142", "CSE 143", "CSE 144", "CSE 145", "CSE 150",
+        "CSE 156", "CSE 157", "CSE 160", "CSE 161", "CSE 162",
+        "CSE 163", "CSE 168", "CSE 180", "CSE 181", "CSE 183",
+        "CSE 184", "CSE 186", "CSE 187",
+        "ARTG 118",
+        "EART 124", "EART 125", "EART 172",
+        "ECON 100M", "ECON 100N", "ECON 101",
+        "ENVS 115A",
+        "FILM 170A",
+        "LING 112", "LING 113", "LING 118", "LING 125",
+        "MATH 110", "MATH 115", "MATH 116", "MATH 117", "MATH 118",
+        "MATH 134", "MATH 140", "MATH 145", "MATH 160", "MATH 161",
+        "MUSC 123A", "MUSC 123B", "MUSC 123C",
+        "PHYS 115", "PHYS 150",
+        "CMPM 172"
+      ],
+      "description": "Three additional 5-credit (or more) upper division CSE elective courses (100-189), with at least 1 satisfying the Comprehensive Requirement. Students may substitute up to two CSE electives with approved non-CSE courses from the elective list. DC courses (CSE 115A, CSE 185E, CSE 185S) cannot count here. The chart specifies 3 elective slots, but 1 must be a capstone, leaving 2 additional electives.",
+      "note": "The full elective pool includes any 5-credit UD Baskin Engineering course (100-189, excluding 191-194, 196-199, CSE 115A, CSE 185E, CSE 185S) plus the listed non-engineering courses. Capstone courses CAN double-count as electives."
+    }
+  ]
+}

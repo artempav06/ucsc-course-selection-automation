@@ -16,113 +16,138 @@ const ALL_MAJORS = [
         "type": "choose_group",
         "groups": [
           {
-            "label": "19-series",
+            "label": "Option A",
             "courses": [
               "MATH 19A",
               "MATH 19B"
             ]
           },
           {
-            "label": "20-series (Honors)",
+            "label": "Option B",
             "courses": [
               "MATH 20A",
               "MATH 20B"
             ]
           }
         ],
-        "description": "Choose one calculus sequence: 19-series or 20-series."
+        "description": "Choose one sequence/group."
       },
       {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
-        "type": "pick_one",
-        "courses": [
-          "AM 10",
-          "MATH 21"
+        "id": "LIN_ALG_DIFFEQ",
+        "name": "Linear Algebra & Differential Equations",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A (Preferred)",
+            "courses": [
+              "AM 10",
+              "AM 20"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "MATH 21",
+              "MATH 24"
+            ]
+          }
         ],
-        "description": "Choose one linear algebra course."
+        "description": "Choose one sequence/group."
       },
       {
         "id": "MATH_MULTIVAR",
         "name": "Multivariable Calculus",
-        "type": "pick_one",
-        "courses": [
-          "AM 30",
-          "MATH 23A",
-          "MATH 23B",
-          "MATH 22"
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "MATH 23A",
+              "MATH 23B"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "AM 30"
+            ]
+          }
         ],
-        "description": "Choose one multivariable calculus course/sequence."
-      },
-      {
-        "id": "MATH_DIFFEQ",
-        "name": "Differential Equations",
-        "type": "pick_one",
-        "courses": [
-          "AM 20",
-          "MATH 24"
-        ],
-        "description": "Choose one differential equations course."
-      },
-      {
-        "id": "MATH_DISCRETE",
-        "name": "Discrete Mathematics",
-        "type": "all_required",
-        "courses": [
-          "CSE 16"
-        ],
-        "description": "Discrete mathematics is required."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131"
-        ],
-        "description": "Required statistics/probability courses."
+        "description": "Choose one sequence/group."
       },
       {
         "id": "PROGRAMMING",
         "name": "Programming",
-        "type": "all_required",
+        "type": "pick_one",
         "courses": [
           "CSE 20",
           "CSE 13S",
-          "ECE 13"
+          "ECE 13",
+          "ASTR 19",
+          "ECON 22P"
         ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
+        "description": "Choose one course."
       },
       {
-        "id": "UD_CORE",
-        "name": "Upper Division Core",
+        "id": "COMPREHENSIVE",
+        "name": "Comprehensive Requirement",
+        "type": "pick_one",
+        "courses": [
+          "AM 195",
+          "AM 170B"
+        ],
+        "description": "Complete one of the listed courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
         "type": "all_required",
         "courses": [
-          "ECON 22P",
-          "AM 100",
-          "AM 112",
+          "AM 170A"
+        ],
+        "description": "Complete the DC course."
+      },
+      {
+        "id": "MATH_DISCRETE",
+        "name": "Discrete Mathematics",
+        "type": "pick_one",
+        "courses": [
+          "MATH 100",
+          "CSE 16"
+        ],
+        "description": "Choose one discrete mathematics course."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
           "AM 114",
           "AM 129",
-          "STAT 131",
-          "AM 10"
+          "AM 112",
+          "AM 100"
         ],
         "description": "All upper-division core courses are required."
       },
       {
-        "id": "UD_ELECTIVE",
-        "name": "Upper Division Electives",
-        "type": "pick_n",
-        "n": 3,
+        "id": "UD_STATS",
+        "name": "Statistics/Probability (Choose One)",
+        "type": "pick_one",
         "courses": [
-          "AM 129",
-          "AM 209",
-          "AM 112",
-          "AM 147",
-          "AM 195",
-          "AM 170A"
+          "STAT 131",
+          "CSE 107"
         ],
-        "description": "Choose 3 upper-division elective courses."
+        "description": "Choose one course."
+      },
+      {
+        "id": "UD_ANALYSIS",
+        "name": "Analysis (Choose One)",
+        "type": "pick_one",
+        "courses": [
+          "AM 147",
+          "MATH 148"
+        ],
+        "description": "Choose one course."
       },
       {
         "id": "LD_ELECTIVE",
@@ -130,80 +155,263 @@ const ALL_MAJORS = [
         "type": "pick_n",
         "n": 2,
         "courses": [
-          "AM 30",
-          "CSE 20",
-          "CSE 13S",
-          "MATH 23B",
-          "ECE 13",
-          "ASTR 19",
-          "ECON 22P"
+          "PHYS 5A",
+          "PHYS 5B",
+          "PHYS 5C",
+          "ASTR 21",
+          "CSE 30",
+          "ECE 9",
+          "ECON 1",
+          "ECON 2",
+          "STAT 7/L",
+          "STAT 17/L",
+          "BIOL 20A",
+          "BIOE 20C"
         ],
-        "description": "Choose lower-division elective courses."
+        "description": "Choose 2 lower-division elective courses."
       },
       {
-        "id": "DC",
-        "name": "Disciplinary Communication (DC)",
-        "type": "pick_one",
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 3,
         "courses": [
-          "AM 170A"
+          "AM 198",
+          "ASTR 112",
+          "ASTR 113",
+          "ASTR 119",
+          "BME 118",
+          "BME 160",
+          "CSE 101",
+          "CSE 102",
+          "CSE 104",
+          "CSE 106",
+          "CSE 108",
+          "CSE 113",
+          "CSE 140",
+          "CSE 142",
+          "CSE 144",
+          "CSE 160",
+          "CSE 161/L",
+          "CSE 162/L",
+          "EART 112",
+          "EART 118",
+          "EART 119A",
+          "EART 121",
+          "EART 124",
+          "EART 160",
+          "EART 162",
+          "EART 163",
+          "EART 164",
+          "EART 125",
+          "EART 225",
+          "EART 172/OCEA",
+          "EART 272/OCEA",
+          "ECE 101/L",
+          "ECE 103",
+          "ECE 115",
+          "ECE 135/L",
+          "ECE 136",
+          "ECE 141",
+          "ECE 145",
+          "ECE 149",
+          "ECE 151",
+          "ECE 153",
+          "ECE 163",
+          "ECE 179",
+          "ECON 100A",
+          "ECON 100B",
+          "ECON 100M",
+          "ECON 100N",
+          "ECON 101",
+          "ECON 113",
+          "ECON 114",
+          "ECON 115",
+          "ECON 124",
+          "ECON 166A/CSE",
+          "MATH 105A",
+          "MATH 105B",
+          "MATH 105C",
+          "MATH 110",
+          "MATH 111A",
+          "MATH 111T",
+          "MATH 114",
+          "MATH 115",
+          "MATH 116",
+          "MATH 117",
+          "MATH 118",
+          "MATH 120",
+          "MATH 121A",
+          "MATH 121B",
+          "MATH 124",
+          "MATH 130",
+          "MATH 134",
+          "MATH 140",
+          "MATH 152",
+          "MATH 160",
+          "OCEA 260/EART",
+          "OCEA 267",
+          "OCEA 286",
+          "OCEA 100",
+          "OCEA 200",
+          "OCEA 111",
+          "OCEA 211",
+          "PHYS 105",
+          "PHYS 110A",
+          "PHYS 110B",
+          "PHYS 139A",
+          "PHYS 139B",
+          "PHYS 150",
+          "CSE 109",
+          "PHYS 171/ASTR",
+          "STAT 108",
+          "STAT 132",
+          "STAT 205",
+          "TIM 147",
+          "TIM 150"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
-      },
-      {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
-        "courses": [
-          "AM 195"
-        ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Choose 3 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "CSE 16",
       "MATH 19A",
       "MATH 19B",
-      "AM 10",
-      "AM 20",
-      "MATH 100",
       "MATH 20A",
       "MATH 20B",
+      "AM 10",
+      "AM 20",
       "MATH 21",
       "MATH 24",
+      "MATH 23A",
+      "MATH 23B",
       "AM 30",
       "CSE 20",
       "CSE 13S",
-      "MATH 23B",
       "ECE 13",
       "ASTR 19",
       "ECON 22P",
-      "AM 100",
-      "AM 112",
+      "AM 195",
+      "AM 170B",
+      "AM 170A",
+      "MATH 100",
+      "CSE 16",
       "AM 114",
       "AM 129",
+      "AM 112",
+      "AM 100",
       "STAT 131",
+      "CSE 107",
       "AM 147",
-      "MATH 23A",
-      "MATH 22",
-      "PHYS 116A",
-      "AM 170A",
-      "CSE 107",
-      "AM 214",
+      "MATH 148",
+      "PHYS 5A",
+      "PHYS 5B",
+      "PHYS 5C",
+      "ASTR 21",
+      "CSE 30",
+      "ECE 9",
+      "ECON 1",
+      "ECON 2",
+      "STAT 7/L",
+      "STAT 17/L",
+      "BIOL 20A",
+      "BIOE 20C",
+      "AM 198",
+      "ASTR 112",
+      "ASTR 113",
+      "ASTR 119",
+      "BME 118",
+      "BME 160",
       "CSE 101",
-      "AM 170B",
-      "AM 209",
-      "AM 195"
+      "CSE 102",
+      "CSE 104",
+      "CSE 106",
+      "CSE 108",
+      "CSE 113",
+      "CSE 140",
+      "CSE 142",
+      "CSE 144",
+      "CSE 160",
+      "CSE 161/L",
+      "CSE 162/L",
+      "EART 112",
+      "EART 118",
+      "EART 119A",
+      "EART 121",
+      "EART 124",
+      "EART 160",
+      "EART 162",
+      "EART 163",
+      "EART 164",
+      "EART 125",
+      "EART 225",
+      "EART 172/OCEA",
+      "EART 272/OCEA",
+      "ECE 101/L",
+      "ECE 103",
+      "ECE 115",
+      "ECE 135/L",
+      "ECE 136",
+      "ECE 141",
+      "ECE 145",
+      "ECE 149",
+      "ECE 151",
+      "ECE 153",
+      "ECE 163",
+      "ECE 179",
+      "ECON 100A",
+      "ECON 100B",
+      "ECON 100M",
+      "ECON 100N",
+      "ECON 101",
+      "ECON 113",
+      "ECON 114",
+      "ECON 115",
+      "ECON 124",
+      "ECON 166A/CSE",
+      "MATH 105A",
+      "MATH 105B",
+      "MATH 105C",
+      "MATH 110",
+      "MATH 111A",
+      "MATH 111T",
+      "MATH 114",
+      "MATH 115",
+      "MATH 116",
+      "MATH 117",
+      "MATH 118",
+      "MATH 120",
+      "MATH 121A",
+      "MATH 121B",
+      "MATH 124",
+      "MATH 130",
+      "MATH 134",
+      "MATH 140",
+      "MATH 152",
+      "MATH 160",
+      "OCEA 260/EART",
+      "OCEA 267",
+      "OCEA 286",
+      "OCEA 100",
+      "OCEA 200",
+      "OCEA 111",
+      "OCEA 211",
+      "PHYS 105",
+      "PHYS 110A",
+      "PHYS 110B",
+      "PHYS 139A",
+      "PHYS 139B",
+      "PHYS 150",
+      "CSE 109",
+      "PHYS 171/ASTR",
+      "STAT 108",
+      "STAT 132",
+      "STAT 205",
+      "TIM 147",
+      "TIM 150"
     ],
-    "uncategorizedCodes": [
-      "MATH 100",
-      "PHYS 116A",
-      "CSE 107",
-      "AM 214",
-      "CSE 101",
-      "AM 170B"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 6"
+      "method: spatial"
     ]
   },
   {
@@ -217,104 +425,13 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
-        "type": "all_required",
+        "id": "CAPSTONE",
+        "name": "Capstone/Comprehensive",
+        "type": "pick_one",
         "courses": [
-          "MATH 19A",
-          "MATH 19B"
-        ],
-        "description": "Required calculus courses."
-      },
-      {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
-        "type": "all_required",
-        "courses": [
-          "AM 10"
-        ],
-        "description": "Linear algebra is required."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131"
-        ],
-        "description": "Required statistics/probability courses."
-      },
-      {
-        "id": "PROGRAMMING",
-        "name": "Programming",
-        "type": "all_required",
-        "courses": [
-          "CSE 20"
-        ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
-      },
-      {
-        "id": "PHYS_CORE",
-        "name": "Physics",
-        "type": "all_required",
-        "courses": [
-          "PHYS 5A/L",
-          "PHYS 15A",
-          "PHYS 5M",
-          "PHYS 5B/M"
-        ],
-        "description": "Required physics courses."
-      },
-      {
-        "id": "CHEM_CORE",
-        "name": "Chemistry",
-        "type": "all_required",
-        "courses": [
-          "CHEM 3A",
-          "CHEM 4A",
-          "CHEM 3B/BL",
-          "CHEM 3C/CL",
-          "CHEM 4B/BL",
-          "CHEM 4A/AL",
-          "CHEM 8B",
-          "CHEM 3C",
-          "CHEM 8A",
-          "CHEM 103"
-        ],
-        "description": "Required chemistry courses.",
-        "note": "Some majors allow choosing between CHEM 3-series and CHEM 4-series."
-      },
-      {
-        "id": "BIO_CORE",
-        "name": "Biology & Bioengineering",
-        "type": "all_required",
-        "courses": [
-          "BIOL 20A",
-          "BME 105",
-          "BIOE 20B",
-          "BIOL 105",
-          "BME 101",
-          "BIOC 100A",
-          "BIOL 100",
-          "BME 80G",
           "BME 160",
-          "BME 185",
-          "BME 177",
-          "BME 128",
-          "BME 130",
-          "BIOL 115",
-          "BME 118",
-          "BME 122H",
-          "BME 123L",
-          "BME 22L",
-          "BME 132",
-          "BME 140",
-          "BME 175",
-          "BME 177L",
-          "BME 178",
-          "BME 201",
-          "BME 128L",
+          "STAT 131",
+          "CSE 185E",
           "BME 205",
           "BME 129A",
           "BME 180",
@@ -326,86 +443,143 @@ const ALL_MAJORS = [
           "BME 129C",
           "BME 188C"
         ],
-        "description": "Required biology and bioengineering courses.",
-        "note": "Some courses may be pick-one alternatives \u2014 see PDF."
+        "description": "Complete the capstone requirement."
+      },
+      {
+        "id": "BIOLOGY",
+        "name": "Biology",
+        "type": "all_required",
+        "courses": [
+          "BIOL 20A",
+          "BME 105",
+          "BIOE 20B",
+          "BIOL 105"
+        ],
+        "description": "Required biology courses."
+      },
+      {
+        "id": "CHEMISTRY",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 3A",
+          "CHEM 4A",
+          "BIOL 20A"
+        ],
+        "description": "Required chemistry courses."
+      },
+      {
+        "id": "BIO_CHOICE",
+        "name": "Biology/Chemistry Choice",
+        "type": "pick_one",
+        "courses": [
+          "BIOL 20A",
+          "CHEM 8B",
+          "BME 101",
+          "BIOC 100A",
+          "BIOC 100B",
+          "CHEM 103",
+          "BIOL 100"
+        ],
+        "description": "Choose one course."
+      },
+      {
+        "id": "PROGRAMMING",
+        "name": "Programming",
+        "type": "all_required",
+        "courses": [
+          "BME 80G"
+        ],
+        "description": "Required programming courses."
+      },
+      {
+        "id": "CHEMISTRY",
+        "name": "Chemistry Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "CHEM 4",
+              "MATH 3",
+              "CHEM 4A/AL"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "CHEM 4A",
+              "CHEM 4B/BL"
+            ]
+          },
+          {
+            "label": "Option C",
+            "courses": [
+              "MATH 2",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "label": "Option D",
+            "courses": [
+              "CHEM 3A",
+              "CHEM 3B/BL"
+            ]
+          },
+          {
+            "label": "Option E",
+            "courses": [
+              "CHEM 3B",
+              "CHEM 3C/CL"
+            ]
+          }
+        ],
+        "description": "Choose one chemistry sequence."
+      },
+      {
+        "id": "CHEMISTRY",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 3C",
+          "CHEM 4B",
+          "CHEM 8A"
+        ],
+        "description": "Required chemistry courses."
+      },
+      {
+        "id": "BIOLOGY",
+        "name": "Biology",
+        "type": "all_required",
+        "courses": [
+          "BME 21L",
+          "BME 22L"
+        ],
+        "description": "Required biology courses."
+      },
+      {
+        "id": "CHEMISTRY",
+        "name": "Chemistry",
+        "type": "all_required",
+        "courses": [
+          "CHEM 1M",
+          "BME 21L"
+        ],
+        "description": "Required chemistry courses."
       },
       {
         "id": "DC",
         "name": "Disciplinary Communication (DC)",
-        "type": "pick_one",
+        "type": "all_required",
         "courses": [
-          "BME 185",
-          "CSE 185E"
+          "BME 185"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
-      },
-      {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
-        "courses": [
-          "BME 160",
-          "STAT 131",
-          "CSE 185E",
-          "BME 205",
-          "BME 129A",
-          "BME 180",
-          "BME 175",
-          "BME 195"
-        ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Complete the DC requirement."
       }
     ],
     "allCourseCodes": [
-      "BIOL 20A",
-      "MATH 3",
-      "CHEM 3A",
-      "CHEM 4A",
-      "BME 105",
-      "MATH 19A",
-      "CHEM 3B/BL",
-      "CHEM 3C/CL",
-      "BIOE 20B",
-      "MATH 19B",
-      "BIOL 105",
-      "CHEM 4B/BL",
-      "CHEM 4A/AL",
-      "AM 10",
-      "CHEM 8B",
-      "BME 101",
-      "BIOC 100A",
-      "STAT 131",
-      "BIOL 100",
-      "PHYS 5A/L",
-      "BME 80G",
       "BME 160",
-      "CHEM 3C",
-      "CHEM 8A",
-      "PHYS 15A",
-      "BME 185",
-      "PHYS 5M",
-      "PHYS 5B/M",
-      "BME 177",
-      "CHEM 103",
-      "BME 128",
-      "BME 130",
-      "AM 115",
-      "AM 147",
-      "BIOL 115",
-      "METX 100",
-      "METX 140",
-      "BME 118",
-      "BME 122H",
-      "BME 123L",
-      "BME 22L",
-      "BME 132",
-      "BME 140",
-      "BME 175",
-      "BME 177L",
-      "BME 178",
-      "ECE 104",
-      "BME 201",
-      "BME 128L",
+      "STAT 131",
       "CSE 185E",
       "BME 205",
       "BME 129A",
@@ -417,18 +591,38 @@ const ALL_MAJORS = [
       "BME 188B",
       "BME 129C",
       "BME 188C",
-      "CSE 20"
-    ],
-    "uncategorizedCodes": [
+      "BIOL 20A",
+      "BME 105",
+      "BIOE 20B",
+      "BIOL 105",
+      "CHEM 3A",
+      "CHEM 4A",
+      "CHEM 8B",
+      "BME 101",
+      "BIOC 100A",
+      "BIOC 100B",
+      "CHEM 103",
+      "BIOL 100",
+      "BME 80G",
+      "CHEM 4",
       "MATH 3",
-      "AM 115",
-      "AM 147",
-      "METX 100",
-      "METX 140",
-      "ECE 104"
+      "CHEM 4A/AL",
+      "CHEM 4B/BL",
+      "MATH 2",
+      "CHEM 3B/BL",
+      "CHEM 3B",
+      "CHEM 3C/CL",
+      "CHEM 3C",
+      "CHEM 4B",
+      "CHEM 8A",
+      "BME 21L",
+      "BME 22L",
+      "CHEM 1M",
+      "BME 185"
     ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 6"
+      "method: spatial"
     ]
   },
   {
@@ -442,100 +636,100 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
+        "id": "BIOLOGY",
+        "name": "Biology",
         "type": "all_required",
         "courses": [
-          "MATH 19A",
-          "MATH 19B"
+          "BIOL 20A",
+          "BME 105",
+          "BIOE 20B",
+          "BIOL 105",
+          "BME 101",
+          "CHEM 8B",
+          "CHEM 112A",
+          "BIOL 100"
         ],
-        "description": "Required calculus courses."
+        "description": "Required biology courses."
       },
       {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
+        "id": "CHEMISTRY",
+        "name": "Chemistry",
         "type": "all_required",
         "courses": [
-          "AM 10"
+          "CHEM 8A",
+          "CHEM 8B",
+          "CHEM 103",
+          "BIOL 20A",
+          "BIOC 100A",
+          "CHEM 3A",
+          "CHEM 4A",
+          "CHEM 3C",
+          "CHEM 4B"
         ],
-        "description": "Linear algebra is required."
+        "description": "Required chemistry courses."
       },
       {
-        "id": "MATH_MULTIVAR",
-        "name": "Multivariable Calculus",
-        "type": "all_required",
+        "id": "BIO_CHOICE",
+        "name": "Biology/Chemistry Choice",
+        "type": "pick_one",
         "courses": [
-          "AM 30"
+          "BME 101",
+          "CHEM 8A",
+          "CHEM 8B",
+          "BIOL 20A",
+          "BIOE 20B",
+          "CHEM 103",
+          "BIOC 100A",
+          "CHEM 112A",
+          "BIOL 100"
         ],
-        "description": "Required multivariable calculus courses."
-      },
-      {
-        "id": "MATH_DISCRETE",
-        "name": "Discrete Mathematics",
-        "type": "all_required",
-        "courses": [
-          "CSE 16"
-        ],
-        "description": "Discrete mathematics is required."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131",
-          "STAT 132"
-        ],
-        "description": "Required statistics/probability courses."
+        "description": "Choose one course."
       },
       {
         "id": "PROGRAMMING",
         "name": "Programming",
         "type": "all_required",
         "courses": [
-          "CSE 20",
-          "CSE 13S",
-          "CSE 30",
-          "CSE 12"
+          "CSE 12",
+          "CSE 16",
+          "BME 160",
+          "CSE 20"
         ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
+        "description": "Required programming courses."
       },
       {
-        "id": "CHEM_CORE",
-        "name": "Chemistry",
+        "id": "PROGRAMMING",
+        "name": "Programming",
         "type": "all_required",
         "courses": [
-          "CHEM 3A",
-          "CHEM 4A",
-          "CHEM 3C",
-          "CHEM 4B",
-          "CHEM 8A",
-          "CHEM 3B/BL",
-          "CHEM 3C/CL",
-          "CHEM 4B/BL",
-          "CHEM 103",
-          "CHEM 8B"
+          "MATH 19B",
+          "STAT 131",
+          "MATH 3",
+          "MATH 19A"
         ],
-        "description": "Required chemistry courses.",
-        "note": "Some majors allow choosing between CHEM 3-series and CHEM 4-series."
+        "description": "Required programming courses."
       },
       {
-        "id": "BIO_CORE",
-        "name": "Biology & Bioengineering",
+        "id": "CAPSTONE",
+        "name": "Capstone/Comprehensive",
+        "type": "pick_one",
+        "courses": [
+          "BME 205",
+          "BME 129B",
+          "BME 195"
+        ],
+        "description": "Complete the capstone requirement."
+      },
+      {
+        "id": "BIOLOGY",
+        "name": "Biology",
         "type": "all_required",
         "courses": [
-          "BIOL 20A",
-          "BME 101",
-          "BME 80G",
-          "BME 105",
-          "BIOL 105",
-          "BIOC 100A",
-          "BIOL 100",
-          "BME 110",
-          "BME 185",
+          "AM 115",
+          "AM 147",
           "BME 118",
           "BME 122H",
+          "BME 128",
           "BME 128L",
           "BME 130",
           "BME 132",
@@ -544,71 +738,105 @@ const ALL_MAJORS = [
           "BME 177",
           "BME 177L",
           "BME 178",
-          "BME 160",
-          "BME 205",
-          "BME 163",
-          "BME 129B",
-          "BME 230A",
-          "BME 129C",
-          "BME 195"
+          "BIOC 100B",
+          "CSE 142",
+          "CSE 144",
+          "CSE 182",
+          "METX 100",
+          "METX 140",
+          "BME 201",
+          "BME 110",
+          "BME 185",
+          "BME 80G"
         ],
-        "description": "Required biology and bioengineering courses.",
-        "note": "Some courses may be pick-one alternatives \u2014 see PDF."
+        "description": "Required biology courses."
+      },
+      {
+        "id": "CHEMISTRY",
+        "name": "Chemistry Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "CHEM 4",
+              "MATH 3",
+              "CHEM 4A/AL"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "CHEM 4A",
+              "CHEM 4B/BL"
+            ]
+          },
+          {
+            "label": "Option C",
+            "courses": [
+              "CHEM 3A",
+              "CHEM 3B/BL"
+            ]
+          },
+          {
+            "label": "Option D",
+            "courses": [
+              "MATH 2",
+              "CHEM 3A"
+            ]
+          },
+          {
+            "label": "Option E",
+            "courses": [
+              "CHEM 3B",
+              "CHEM 3C/CL"
+            ]
+          }
+        ],
+        "description": "Choose one chemistry sequence."
       },
       {
         "id": "DC",
         "name": "Disciplinary Communication (DC)",
-        "type": "pick_one",
+        "type": "all_required",
         "courses": [
           "BME 185"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
-      },
-      {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
-        "courses": [
-          "BME 175",
-          "BME 195"
-        ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Complete the DC requirement."
       }
     ],
     "allCourseCodes": [
-      "MATH 3",
-      "MATH 19A",
+      "BIOL 20A",
+      "BME 105",
+      "BIOE 20B",
+      "BIOL 105",
+      "BME 101",
+      "CHEM 8B",
+      "CHEM 112A",
+      "BIOL 100",
+      "CHEM 8A",
+      "CHEM 103",
+      "BIOC 100A",
       "CHEM 3A",
       "CHEM 4A",
       "CHEM 3C",
       "CHEM 4B",
-      "BIOL 20A",
-      "CHEM 8A",
-      "CHEM 3B/BL",
-      "CHEM 3C/CL",
-      "MATH 19B",
-      "AM 10",
-      "CHEM 4B/BL",
-      "BME 101",
+      "CSE 12",
       "CSE 16",
-      "BME 80G",
-      "BME 105",
-      "BIOL 105",
-      "BIOC 100A",
-      "BIOL 100",
-      "CHEM 103",
-      "CHEM 8B",
-      "AM 30",
-      "BME 110",
+      "BME 160",
+      "CSE 20",
+      "MATH 19B",
       "STAT 131",
-      "BME 185",
-      "STAT 132",
-      "BIO 8",
+      "MATH 3",
+      "MATH 19A",
+      "BME 205",
+      "BME 129B",
+      "BME 195",
       "AM 115",
       "AM 147",
       "BME 118",
       "BME 122H",
-      "CSE 30",
+      "BME 128",
       "BME 128L",
       "BME 130",
       "BME 132",
@@ -617,43 +845,27 @@ const ALL_MAJORS = [
       "BME 177",
       "BME 177L",
       "BME 178",
-      "CSE 40",
+      "BIOC 100B",
       "CSE 142",
       "CSE 144",
       "CSE 182",
       "METX 100",
       "METX 140",
-      "BME 160",
-      "BME 205",
-      "CSE 20",
-      "BME 163",
-      "CSOER 142",
-      "CSE 12",
-      "CSE 101",
-      "CSE 13S",
-      "CSE 107",
-      "BME 129B",
-      "BME 230A",
-      "BME 129C",
-      "BME 195"
+      "BME 201",
+      "BME 110",
+      "BME 185",
+      "BME 80G",
+      "CHEM 4",
+      "CHEM 4A/AL",
+      "CHEM 4B/BL",
+      "CHEM 3B/BL",
+      "MATH 2",
+      "CHEM 3B",
+      "CHEM 3C/CL"
     ],
-    "uncategorizedCodes": [
-      "MATH 3",
-      "BIO 8",
-      "AM 115",
-      "AM 147",
-      "CSE 40",
-      "CSE 142",
-      "CSE 144",
-      "CSE 182",
-      "METX 100",
-      "METX 140",
-      "CSOER 142",
-      "CSE 101",
-      "CSE 107"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 13"
+      "method: spatial"
     ]
   },
   {
@@ -819,7 +1031,9 @@ const ALL_MAJORS = [
       "BME 175"
     ],
     "uncategorizedCodes": [],
-    "_flags": []
+    "_flags": [
+      "method: text_fallback"
+    ]
   },
   {
     "id": "CE_BS",
@@ -832,208 +1046,282 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A (Engineering Math)",
+            "courses": [
+              "AM 10",
+              "AM 20",
+              "AM 30"
+            ]
+          },
+          {
+            "label": "Option B (Pure Math)",
+            "courses": [
+              "MATH 21",
+              "MATH 24",
+              "MATH 23A"
+            ]
+          }
+        ],
+        "description": "Choose one mathematics sequence."
+      },
+      {
+        "id": "STATS",
+        "name": "Statistics/Probability",
         "type": "all_required",
         "courses": [
-          "MATH 19A",
-          "MATH 19B"
+          "CSE 107"
         ],
-        "description": "Required calculus courses."
+        "description": "Required statistics course."
       },
       {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
-        "type": "pick_one",
-        "courses": [
-          "AM 10",
-          "MATH 21"
-        ],
-        "description": "Choose one linear algebra course."
-      },
-      {
-        "id": "MATH_DIFFEQ",
-        "name": "Differential Equations",
-        "type": "pick_one",
-        "courses": [
-          "AM 20",
-          "MATH 24"
-        ],
-        "description": "Choose one differential equations course."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131"
-        ],
-        "description": "Required statistics/probability courses."
-      },
-      {
-        "id": "PROGRAMMING",
-        "name": "Programming",
-        "type": "all_required",
-        "courses": [
-          "CSE 20",
-          "CSE 13S",
-          "ECE 13",
-          "CSE 30",
-          "CSE 12"
-        ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
-      },
-      {
-        "id": "CORE",
-        "name": "Core Courses",
-        "type": "all_required",
-        "courses": [
-          "CSE 20",
-          "CSE 30",
-          "CSE 12",
-          "CSE 13S",
-          "ECE 13",
-          "CSE 100/L",
-          "CSE 101",
-          "CSE 120",
-          "CSE 121",
-          "ECE 101/L"
-        ],
-        "description": "All core courses are required."
-      },
-      {
-        "id": "PHYS_CORE",
+        "id": "PHYSICS",
         "name": "Physics",
         "type": "all_required",
         "courses": [
-          "PHYS 5A/L",
-          "PHYS 5C/N",
-          "PHYS 5B/M"
+          "PHYS 5B/M",
+          "PHYS 5A/L"
         ],
         "description": "Required physics courses."
       },
       {
-        "id": "CONCENTRATION",
-        "name": "Concentration Courses",
-        "type": "pick_n",
-        "n": 4,
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
+        "type": "all_required",
         "courses": [
-          "CSE 125",
-          "CSE 130",
-          "CSE 225",
-          "ECE 171/L",
-          "CSE 150",
-          "CSE 111",
-          "CSE 122",
-          "CSE 134",
-          "CSE 222A",
-          "CSE 156/L",
-          "CSE 220",
-          "CSE 228A",
-          "CSE 113",
-          "ECE 173",
-          "ECE 174",
-          "CSE 110A",
-          "CSE 123A",
-          "CSE 127A",
-          "ECE 118",
-          "CSE 195",
-          "CSE 121",
-          "CSE 185E",
-          "CSE 100/L",
+          "CSE 12",
+          "CSE 30",
+          "CSE 20",
+          "PHYS 5C/N",
+          "CSE 16",
+          "MATH 19B",
+          "MATH 19A"
+        ],
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "LD_CHOICE_1",
+        "name": "Lower Division Choice 1",
+        "type": "pick_one",
+        "courses": [
+          "CSE 13S",
           "ECE 13"
         ],
-        "description": "Choose one concentration track and complete its courses.",
-        "note": "Concentration-specific \u2014 see PDF for track details."
+        "description": "Choose one course."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "CSE 122",
+          "ECE 171/L",
+          "CSE 125",
+          "CSE 113",
+          "ECE 118",
+          "CSE 100/L",
+          "CSE 120",
+          "CSE 121",
+          "ECE 101/L",
+          "CSE 101",
+          "CSE 130",
+          "CSE 150",
+          "CSE 156/L",
+          "CSE 185E",
+          "ECE 103/L",
+          "CSE 123A",
+          "CSE 127A"
+        ],
+        "description": "Required upper-division courses."
+      },
+      {
+        "id": "UD_CHOICE_1",
+        "name": "Upper Division Choice 1",
+        "type": "pick_one",
+        "courses": [
+          "CSE 111",
+          "CSE 134"
+        ],
+        "description": "Choose one course."
       },
       {
         "id": "DC",
         "name": "Disciplinary Communication (DC)",
         "type": "pick_one",
         "courses": [
+          "CSE 115A",
           "CSE 185E",
           "CSE 195"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
+        "description": "Complete the DC requirement."
       },
       {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 4,
         "courses": [
-          "CSE 123A",
-          "CSE 127A",
-          "ECE 118",
-          "CSE 195",
-          "CSE 121",
+          "AM 114",
+          "AM 147",
+          "CMPM 146",
+          "CSE 101M",
+          "CSE 102",
+          "CSE 103",
+          "CSE 106",
+          "CSE 108",
+          "CSE 110A",
+          "CSE 110B",
+          "CSE 111",
+          "CSE 112",
+          "CSE 113",
+          "CSE 114A",
+          "CSE 115A",
+          "CSE 118",
+          "CSE 122",
           "CSE 125",
-          "CSE 185E",
-          "CSE 100/L",
-          "ECE 13"
+          "CSE 130",
+          "CSE 132",
+          "CSE 134",
+          "CSE 138",
+          "CSE 140",
+          "CSE 142",
+          "CSE 144",
+          "CSE 150",
+          "CSE 151/L",
+          "CSE 156/L",
+          "CSE 157",
+          "CSE 160",
+          "CSE 161/L",
+          "CSE 165",
+          "CSE 167",
+          "CSE 180",
+          "CSE 181",
+          "CSE 183",
+          "CSE 186",
+          "CSE 193",
+          "CSE 198",
+          "CSE 220",
+          "CSE 222A",
+          "CSE 225",
+          "CSE 228A",
+          "CSE 276",
+          "ECE 102/L",
+          "ECE 115",
+          "ECE 118",
+          "ECE 130/L",
+          "ECE 135/L",
+          "ECE 141",
+          "ECE 151",
+          "ECE 152",
+          "ECE 153",
+          "ECE 171/L",
+          "ECE 172",
+          "ECE 173",
+          "ECE 175/L"
         ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Choose 4 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "PHYS 5A/L",
-      "MATH 19A",
       "AM 10",
-      "MATH 21",
-      "PHYS 5C/N",
-      "MATH 19B",
       "AM 20",
+      "AM 30",
+      "MATH 21",
       "MATH 24",
-      "PHYS 5B/M",
-      "CSE 185E",
-      "ECE 9",
-      "ECE 103/L",
+      "MATH 23A",
       "CSE 107",
-      "STAT 131",
-      "CSE 195",
-      "CSE 20",
-      "CSE 30",
+      "PHYS 5B/M",
+      "PHYS 5A/L",
       "CSE 12",
+      "CSE 30",
+      "CSE 20",
+      "PHYS 5C/N",
+      "CSE 16",
+      "MATH 19B",
+      "MATH 19A",
       "CSE 13S",
       "ECE 13",
+      "CSE 122",
+      "ECE 171/L",
+      "CSE 125",
+      "CSE 113",
+      "ECE 118",
       "CSE 100/L",
-      "CSE 101",
       "CSE 120",
       "CSE 121",
       "ECE 101/L",
-      "CSE 125",
+      "CSE 101",
       "CSE 130",
-      "CSE 225",
-      "ECE 171/L",
       "CSE 150",
-      "CSE 111",
-      "CSE 122",
-      "CSE 134",
-      "CSE 222A",
       "CSE 156/L",
-      "CSE 220",
-      "CSE 228A",
-      "CSE 113",
-      "ECE 173",
-      "ECE 174",
-      "CSE 110A",
+      "CSE 185E",
+      "ECE 103/L",
       "CSE 123A",
       "CSE 127A",
-      "ECE 118"
+      "CSE 111",
+      "CSE 134",
+      "CSE 115A",
+      "CSE 195",
+      "AM 114",
+      "AM 147",
+      "CMPM 146",
+      "CSE 101M",
+      "CSE 102",
+      "CSE 103",
+      "CSE 106",
+      "CSE 108",
+      "CSE 110A",
+      "CSE 110B",
+      "CSE 112",
+      "CSE 114A",
+      "CSE 118",
+      "CSE 132",
+      "CSE 138",
+      "CSE 140",
+      "CSE 142",
+      "CSE 144",
+      "CSE 151/L",
+      "CSE 157",
+      "CSE 160",
+      "CSE 161/L",
+      "CSE 165",
+      "CSE 167",
+      "CSE 180",
+      "CSE 181",
+      "CSE 183",
+      "CSE 186",
+      "CSE 193",
+      "CSE 198",
+      "CSE 220",
+      "CSE 222A",
+      "CSE 225",
+      "CSE 228A",
+      "CSE 276",
+      "ECE 102/L",
+      "ECE 115",
+      "ECE 130/L",
+      "ECE 135/L",
+      "ECE 141",
+      "ECE 151",
+      "ECE 152",
+      "ECE 153",
+      "ECE 172",
+      "ECE 173",
+      "ECE 175/L"
     ],
-    "uncategorizedCodes": [
-      "ECE 9",
-      "ECE 103/L",
-      "CSE 107"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 3"
+      "method: spatial"
     ]
   },
   {
-    "id": "CS_BS",
-    "name": "Computer Science B.S.",
-    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BS_25-26.pdf",
+    "id": "CS_BA",
+    "name": "Computer Science B.A.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BA_25-26.pdf",
     "catalogUrl": null,
     "totalUnitsRequired": 180,
     "minUpperDivUnits": 60,
@@ -1045,22 +1333,20 @@ const ALL_MAJORS = [
         "name": "Lower Division Required",
         "type": "all_required",
         "courses": [
-          "MATH 19B",
-          "MATH 19A",
-          "CSE 16",
           "CSE 20",
-          "MATH 20A",
-          "MATH 20B",
-          "CSE 12",
-          "AM 30",
+          "MATH 19A",
           "CSE 40",
+          "CSE 12",
+          "MATH 20A",
           "CSE 30",
-          "CSE 13S",
+          "CSE 16",
           "AM 10",
-          "MATH 23A",
-          "ECE 30",
           "MATH 21",
-          "CSE 101"
+          "CSE 101",
+          "CSE 101P",
+          "CSE 13S",
+          "CSE 101M",
+          "CSE 110A"
         ],
         "description": "Required lower-division courses."
       },
@@ -1072,15 +1358,13 @@ const ALL_MAJORS = [
           {
             "label": "19-series",
             "courses": [
-              "MATH 19A",
-              "MATH 19B"
+              "MATH 19A"
             ]
           },
           {
             "label": "20-series (Honors)",
             "courses": [
-              "MATH 20A",
-              "MATH 20B"
+              "MATH 20A"
             ]
           }
         ],
@@ -1097,16 +1381,6 @@ const ALL_MAJORS = [
         "description": "Choose one linear algebra course."
       },
       {
-        "id": "MATH_MULTIVAR",
-        "name": "Multivariable Calculus",
-        "type": "pick_one",
-        "courses": [
-          "AM 30",
-          "MATH 23A"
-        ],
-        "description": "Choose one multivariable calculus course/sequence."
-      },
-      {
         "id": "MATH_DISCRETE",
         "name": "Discrete Mathematics",
         "type": "all_required",
@@ -1114,16 +1388,6 @@ const ALL_MAJORS = [
           "CSE 16"
         ],
         "description": "Discrete mathematics is required."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131",
-          "STAT 132"
-        ],
-        "description": "Required statistics/probability courses."
       },
       {
         "id": "PROGRAMMING",
@@ -1139,24 +1403,60 @@ const ALL_MAJORS = [
         "note": "Some may be pick-one alternatives \u2014 see PDF."
       },
       {
+        "id": "PHYS_CORE",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 115",
+          "PHYS 150/CSE"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "BREADTH",
+        "name": "Breadth Courses",
+        "type": "pick_n",
+        "n": 3,
+        "courses": [
+          "CSE 12",
+          "CSE 16",
+          "CSE 13S",
+          "CSE 30",
+          "CSE 101",
+          "CSE 101M",
+          "CSE 110A",
+          "CSE 102",
+          "CSE 130",
+          "CSE 103",
+          "CSE 132",
+          "CSE 112",
+          "CSE 134",
+          "CSE 114A",
+          "CSE 138",
+          "CSE 118",
+          "CSE 160",
+          "CSE 120",
+          "CSE 180",
+          "CSE 140",
+          "CSE 186",
+          "CSE 142",
+          "CSE 143",
+          "CSE 144",
+          "CSE 150",
+          "CSE 183",
+          "CSE 184"
+        ],
+        "description": "Pick 3 courses from the breadth lists."
+      },
+      {
         "id": "UD_ELECTIVE",
         "name": "Upper Division Electives",
         "type": "pick_n",
         "n": 2,
         "courses": [
-          "CSE 101M",
-          "AM 30",
-          "CSE 195",
           "CSE 115A",
           "CSE 185S",
-          "CSE 185E",
-          "CSE 110B",
-          "CSE 115C",
-          "CSE 115D",
-          "CSE 121",
-          "CSE 134",
-          "CSE 138",
-          "CSE 140"
+          "CSE 195"
         ],
         "description": "Choose 2 upper-division elective courses."
       },
@@ -1166,8 +1466,6 @@ const ALL_MAJORS = [
         "type": "pick_one",
         "courses": [
           "CSE 115A",
-          "CSE 115",
-          "CSE 185E",
           "CSE 185S",
           "CSE 195"
         ],
@@ -1178,9 +1476,228 @@ const ALL_MAJORS = [
         "name": "Comprehensive Requirement (Capstone)",
         "type": "pick_one",
         "courses": [
-          "CSE 115A",
           "CSE 185S",
+          "CSE 195",
+          "CSE 110A",
+          "CSE 115C",
+          "ARTG 118",
+          "CSE 115D",
+          "EART 124",
+          "CSE 134",
+          "EART 125",
+          "CSE 138",
+          "EART 172/OCEA",
+          "CSE 140",
+          "CSE 115A"
+        ],
+        "description": "Complete one capstone course or senior thesis."
+      }
+    ],
+    "allCourseCodes": [
+      "CSE 20",
+      "MATH 19A",
+      "CSE 40",
+      "CSE 12",
+      "MATH 20A",
+      "CSE 30",
+      "CSE 16",
+      "AM 10",
+      "MATH 21",
+      "CSE 101",
+      "CSE 101P",
+      "CSE 13S",
+      "CSE 101M",
+      "CSE 110A",
+      "CSE 102",
+      "CSE 130",
+      "CSE 103",
+      "CSE 132",
+      "CSE 112",
+      "CSE 134",
+      "CSE 114A",
+      "CSE 138",
+      "CSE 118",
+      "CSE 160",
+      "CSE 120",
+      "CSE 180",
+      "CSE 140",
+      "CSE 186",
+      "CSE 142",
+      "CSE 143",
+      "CSE 144",
+      "CSE 150",
+      "CSE 183",
+      "CSE 184",
+      "CSE 115A",
+      "CSE 185S",
+      "CSE 195",
+      "CSE 115C",
+      "ARTG 118",
+      "CSE 115D",
+      "EART 124",
+      "EART 125",
+      "EART 172/OCEA",
+      "ECON 100M",
+      "ECON 100N",
+      "ECON 101",
+      "CSE 145",
+      "ENVS 115A/L",
+      "CSE 156/L",
+      "CSE 157",
+      "FILM 170A",
+      "LING 112",
+      "LING 113",
+      "CSE 161/L",
+      "LING 118",
+      "CSE 162/L",
+      "LING 125",
+      "CSE 163",
+      "MATH 110",
+      "CSE 168",
+      "MATH 115",
+      "CSE 181",
+      "MATH 116",
+      "MATH 117",
+      "MATH 118",
+      "CSE 187",
+      "MATH 134",
+      "CMPM 172",
+      "MATH 140",
+      "MATH 145/L",
+      "MATH 160",
+      "MATH 161",
+      "MUSC 123A",
+      "MUSC 123B",
+      "MUSC 123C",
+      "PHYS 115",
+      "PHYS 150/CSE"
+    ],
+    "uncategorizedCodes": [
+      "ECON 100M",
+      "ECON 100N",
+      "ECON 101",
+      "CSE 145",
+      "ENVS 115A/L",
+      "CSE 156/L",
+      "CSE 157",
+      "FILM 170A",
+      "LING 112",
+      "LING 113",
+      "CSE 161/L",
+      "LING 118",
+      "CSE 162/L",
+      "LING 125",
+      "CSE 163",
+      "MATH 110",
+      "CSE 168",
+      "MATH 115",
+      "CSE 181",
+      "MATH 116",
+      "MATH 117",
+      "MATH 118",
+      "CSE 187",
+      "MATH 134",
+      "CMPM 172",
+      "MATH 140",
+      "MATH 145/L",
+      "MATH 160",
+      "MATH 161",
+      "MUSC 123A",
+      "MUSC 123B",
+      "MUSC 123C"
+    ],
+    "_flags": [
+      "method: text_fallback",
+      "uncategorized_courses: 32"
+    ]
+  },
+  {
+    "id": "CS_BS",
+    "name": "Computer Science B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BS_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A (Engineering Math)",
+            "courses": [
+              "AM 10",
+              "AM 30"
+            ]
+          },
+          {
+            "label": "Option B (Pure Math)",
+            "courses": [
+              "MATH 21",
+              "MATH 23A"
+            ]
+          }
+        ],
+        "description": "Choose one mathematics sequence."
+      },
+      {
+        "id": "STATS",
+        "name": "Statistics/Probability",
+        "type": "pick_one",
+        "courses": [
+          "CSE 107",
+          "STAT 131"
+        ],
+        "description": "Choose one statistics course."
+      },
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
+        "type": "all_required",
+        "courses": [
+          "CSE 16",
+          "CSE 30",
+          "CSE 13S",
+          "CSE 40",
+          "CSE 20",
+          "ECE 30",
+          "CSE 12"
+        ],
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "CSE 101",
+          "CSE 102",
+          "CSE 130",
+          "CSE 120",
+          "CSE 114A",
+          "CSE 101M"
+        ],
+        "description": "Required upper-division courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
           "CSE 185E",
+          "CSE 195"
+        ],
+        "description": "Complete the DC requirement."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Capstone/Comprehensive Requirement",
+        "type": "pick_one",
+        "courses": [
           "CSE 110B",
           "CSE 115C",
           "CSE 115D",
@@ -1193,41 +1710,51 @@ const ALL_MAJORS = [
           "CSE 145",
           "CSE 156/L",
           "CSE 157",
-          "AM 114",
-          "CSE 195"
+          "CSE 160",
+          "CSE 161/L",
+          "CSE 162/L",
+          "CSE 163",
+          "CSE 168",
+          "CSE 181",
+          "CSE 183",
+          "CSE 184",
+          "CSE 187",
+          "CMPM 172"
         ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Complete the capstone requirement."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 4,
+        "courses": [],
+        "description": "Choose 4 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "MATH 19B",
-      "MATH 19A",
-      "CSE 16",
-      "CSE 20",
-      "MATH 20A",
-      "MATH 20B",
-      "CSE 12",
+      "AM 10",
       "AM 30",
-      "CSE 40",
+      "MATH 21",
+      "MATH 23A",
+      "CSE 107",
+      "STAT 131",
+      "CSE 16",
       "CSE 30",
       "CSE 13S",
-      "AM 10",
-      "MATH 23A",
+      "CSE 40",
+      "CSE 20",
       "ECE 30",
-      "MATH 21",
+      "CSE 12",
       "CSE 101",
+      "CSE 102",
+      "CSE 130",
       "CSE 120",
       "CSE 114A",
-      "CSE 130",
       "CSE 101M",
-      "CSE 107",
-      "CSE 102",
-      "STAT 131",
-      "CSE 195",
-      "CSE 103",
       "CSE 115A",
-      "CSE 185S",
       "CSE 185E",
+      "CSE 195",
       "CSE 110B",
       "CSE 115C",
       "CSE 115D",
@@ -1249,80 +1776,11 @@ const ALL_MAJORS = [
       "CSE 183",
       "CSE 184",
       "CSE 187",
-      "CMPM 172",
-      "AM 114",
-      "CMPM 120",
-      "AM 147",
-      "CMPM 131",
-      "AM 148",
-      "CMPM 146",
-      "AM 160",
-      "MATH 110",
-      "CMPM 163",
-      "MATH 115",
-      "CMPM 164/L",
-      "MATH 116",
-      "CMPM 171",
-      "MATH 117",
-      "MATH 118",
-      "MATH 134",
-      "MATH 145/L",
-      "MATH 148",
-      "MATH 160",
-      "MATH 161",
-      "STAT 132",
-      "PHYS 5A",
-      "PHYS 5B",
-      "PHYS 5C",
-      "PHYS 6A",
-      "PHYS 6B",
-      "PHYS 6C"
+      "CMPM 172"
     ],
-    "uncategorizedCodes": [
-      "CSE 120",
-      "CSE 114A",
-      "CSE 130",
-      "CSE 107",
-      "CSE 102",
-      "CSE 103",
-      "CSE 160",
-      "CSE 161/L",
-      "CSE 162/L",
-      "CSE 163",
-      "CSE 168",
-      "CSE 181",
-      "CSE 183",
-      "CSE 184",
-      "CSE 187",
-      "CMPM 172",
-      "CMPM 120",
-      "AM 147",
-      "CMPM 131",
-      "AM 148",
-      "CMPM 146",
-      "AM 160",
-      "MATH 110",
-      "CMPM 163",
-      "MATH 115",
-      "CMPM 164/L",
-      "MATH 116",
-      "CMPM 171",
-      "MATH 117",
-      "MATH 118",
-      "MATH 134",
-      "MATH 145/L",
-      "MATH 148",
-      "MATH 160",
-      "MATH 161",
-      "PHYS 5A",
-      "PHYS 5B",
-      "PHYS 5C",
-      "PHYS 6A",
-      "PHYS 6B",
-      "PHYS 6C"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 41"
+      "method: spatial"
     ]
   },
   {
@@ -1336,50 +1794,61 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
         "type": "all_required",
         "courses": [
-          "MATH 19A",
-          "MATH 19B"
+          "CMPM 80J",
+          "CSE 2",
+          "CSE 12",
+          "CSE 16",
+          "CSE 30"
         ],
-        "description": "Required calculus courses."
+        "description": "Required lower-division courses."
       },
       {
-        "id": "MATH_DISCRETE",
-        "name": "Discrete Mathematics",
-        "type": "all_required",
+        "id": "LD_CHOICE_1",
+        "name": "Lower Division Choice 1",
+        "type": "pick_one",
         "courses": [
-          "CSE 16"
+          "AM 1",
+          "MATH 2"
         ],
-        "description": "Discrete mathematics is required."
+        "description": "Choose one course."
       },
       {
-        "id": "PROGRAMMING",
-        "name": "Programming",
-        "type": "all_required",
+        "id": "LD_CHOICE_2",
+        "name": "Lower Division Choice 2",
+        "type": "pick_one",
         "courses": [
           "CSE 13S",
-          "ECE 13",
-          "CSE 30",
-          "CSE 12"
+          "ECE 13"
         ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
+        "description": "Choose one course."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "CSE 101"
+        ],
+        "description": "Required upper-division courses."
       },
       {
         "id": "DC",
         "name": "Disciplinary Communication (DC)",
         "type": "pick_one",
         "courses": [
-          "CMPM 170",
-          "CMPM 171"
+          "CSE 115A",
+          "CSE 185E",
+          "CSE 195"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
+        "description": "Complete the DC requirement."
       },
       {
         "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
+        "name": "Capstone/Comprehensive Requirement",
         "type": "pick_one",
         "courses": [
           "CMPM 170",
@@ -1389,44 +1858,41 @@ const ALL_MAJORS = [
           "CMPM 176",
           "CMPM 130"
         ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Complete the capstone requirement."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 1,
+        "courses": [],
+        "description": "Choose 1 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "AM 1",
+      "CMPM 80J",
       "CSE 2",
       "CSE 12",
-      "MATH 19A",
+      "CSE 16",
+      "CSE 30",
+      "AM 1",
       "MATH 2",
       "CSE 13S",
-      "MATH 19B",
-      "CSE 16",
-      "CSE 3",
       "ECE 13",
       "CSE 101",
-      "CMPM 80J",
-      "FILM 80V",
-      "CMPM 80K",
-      "CSE 30",
-      "CMPM 120",
-      "CMPM 176",
-      "CMPM 121",
-      "CMPM 130",
+      "CSE 115A",
+      "CSE 185E",
+      "CSE 195",
       "CMPM 170",
-      "CMPM 171"
+      "CMPM 171",
+      "CMPM 120",
+      "CMPM 121",
+      "CMPM 176",
+      "CMPM 130"
     ],
-    "uncategorizedCodes": [
-      "AM 1",
-      "CSE 2",
-      "MATH 2",
-      "CSE 3",
-      "CSE 101",
-      "CMPM 80J",
-      "FILM 80V",
-      "CMPM 80K"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 8"
+      "method: spatial"
     ]
   },
   {
@@ -1440,163 +1906,142 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
-        "type": "all_required",
-        "courses": [
-          "MATH 19A",
-          "MATH 19B"
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A (Engineering Math)",
+            "courses": [
+              "AM 10",
+              "AM 20",
+              "AM 30"
+            ]
+          },
+          {
+            "label": "Option B (Pure Math)",
+            "courses": [
+              "MATH 21",
+              "MATH 24",
+              "MATH 23A"
+            ]
+          }
         ],
-        "description": "Required calculus courses."
+        "description": "Choose one mathematics sequence."
       },
       {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
+        "id": "STATS",
+        "name": "Statistics/Probability",
         "type": "pick_one",
         "courses": [
-          "AM 10",
-          "MATH 21"
+          "STAT 131",
+          "CSE 107"
         ],
-        "description": "Choose one linear algebra course."
+        "description": "Choose one statistics course."
       },
       {
-        "id": "MATH_MULTIVAR",
-        "name": "Multivariable Calculus",
-        "type": "pick_one",
-        "courses": [
-          "AM 30",
-          "MATH 23A",
-          "MATH 23B"
-        ],
-        "description": "Choose one multivariable calculus course/sequence."
-      },
-      {
-        "id": "MATH_DIFFEQ",
-        "name": "Differential Equations",
-        "type": "pick_one",
-        "courses": [
-          "AM 20",
-          "MATH 24"
-        ],
-        "description": "Choose one differential equations course."
-      },
-      {
-        "id": "MATH_DISCRETE",
-        "name": "Discrete Mathematics",
-        "type": "all_required",
-        "courses": [
-          "CSE 16"
-        ],
-        "description": "Discrete mathematics is required."
-      },
-      {
-        "id": "STAT",
-        "name": "Statistics / Probability",
-        "type": "all_required",
-        "courses": [
-          "STAT 131"
-        ],
-        "description": "Required statistics/probability courses."
-      },
-      {
-        "id": "PROGRAMMING",
-        "name": "Programming",
-        "type": "all_required",
-        "courses": [
-          "CSE 20",
-          "ECE 13",
-          "CSE 30",
-          "CSE 12"
-        ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
-      },
-      {
-        "id": "PHYS_CORE",
+        "id": "PHYSICS",
         "name": "Physics",
         "type": "all_required",
         "courses": [
-          "PHYS 5B/M",
           "PHYS 5A/L",
           "PHYS 5C/N",
-          "PHYS 5D"
+          "PHYS 5D",
+          "PHYS 5B/M"
         ],
         "description": "Required physics courses."
       },
       {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
+        "type": "all_required",
         "courses": [
-          "ECE 129A",
-          "ECE 195",
-          "CSE 100/L",
-          "ECE 129B",
-          "ECE 118"
+          "CSE 12",
+          "MATH 19B",
+          "ECE 13",
+          "CSE 30",
+          "CSE 20",
+          "ECE 80T"
         ],
-        "description": "Complete one capstone course or senior thesis."
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "ECE 135/L",
+          "ECE 151",
+          "ECE 102/L",
+          "ECE 101/L",
+          "ECE 103/L",
+          "ECE 171/L",
+          "CSE 100/L"
+        ],
+        "description": "Required upper-division courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "all_required",
+        "courses": [
+          "ECE 185"
+        ],
+        "description": "Complete the DC requirement."
+      },
+      {
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 4,
+        "courses": [
+          "ECE 118",
+          "ECE 121",
+          "ECE 157/L",
+          "ECE 167",
+          "ECE 173",
+          "ECE 129A"
+        ],
+        "description": "Choose 4 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "MATH 19A",
-      "PHYS 5B/M",
-      "AM 30",
-      "MATH 23A",
-      "PHYS 5A/L",
       "AM 10",
-      "AM 100",
-      "PHYS 5C/N",
-      "PHYS 5D",
-      "MATH 19B",
-      "MATH 23B",
       "AM 20",
-      "STAT 131",
-      "CSE 30",
+      "AM 30",
       "MATH 21",
       "MATH 24",
+      "MATH 23A",
+      "STAT 131",
       "CSE 107",
+      "PHYS 5A/L",
+      "PHYS 5C/N",
+      "PHYS 5D",
+      "PHYS 5B/M",
       "CSE 12",
+      "MATH 19B",
       "ECE 13",
-      "CSE 16",
+      "CSE 30",
       "CSE 20",
       "ECE 80T",
-      "ECE 102/L",
-      "ECE 103/L",
-      "ECE 101/L",
       "ECE 135/L",
       "ECE 151",
-      "CSE 100/L",
+      "ECE 102/L",
+      "ECE 101/L",
+      "ECE 103/L",
       "ECE 171/L",
-      "ECE 103",
+      "CSE 100/L",
+      "ECE 185",
       "ECE 118",
       "ECE 121",
       "ECE 157/L",
       "ECE 167",
       "ECE 173",
-      "ECE 129A",
-      "ECE 195",
-      "ECE 129B",
-      "ECE 129C"
+      "ECE 129A"
     ],
-    "uncategorizedCodes": [
-      "AM 100",
-      "CSE 107",
-      "ECE 80T",
-      "ECE 102/L",
-      "ECE 103/L",
-      "ECE 101/L",
-      "ECE 135/L",
-      "ECE 151",
-      "ECE 171/L",
-      "ECE 103",
-      "ECE 121",
-      "ECE 157/L",
-      "ECE 167",
-      "ECE 173",
-      "ECE 129C"
-    ],
+    "uncategorizedCodes": [],
     "_flags": [
-      "uncategorized_courses: 15"
+      "method: spatial"
     ]
   },
   {
@@ -1610,104 +2055,340 @@ const ALL_MAJORS = [
     "majorGPA": 2.0,
     "categories": [
       {
-        "id": "MATH_CALC",
-        "name": "Calculus",
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "AM 10",
+              "AM 20",
+              "AM 30"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "MATH 21",
+              "MATH 24",
+              "MATH 23A"
+            ]
+          }
+        ],
+        "description": "Choose one mathematics sequence."
+      },
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
         "type": "all_required",
         "courses": [
-          "MATH 19A",
+          "CSE 30",
+          "PHYS 5A/L",
+          "CSE 12",
+          "PHYS 5C/N",
+          "CSE 20",
+          "CSE 16",
           "MATH 19B"
         ],
-        "description": "Required calculus courses."
+        "description": "Required lower-division courses."
       },
       {
-        "id": "MATH_LIN_ALG",
-        "name": "Linear Algebra",
+        "id": "LD_CHOICE_1",
+        "name": "Lower Division Choice 1",
         "type": "pick_one",
         "courses": [
-          "AM 10",
-          "MATH 21"
-        ],
-        "description": "Choose one linear algebra course."
-      },
-      {
-        "id": "MATH_MULTIVAR",
-        "name": "Multivariable Calculus",
-        "type": "pick_one",
-        "courses": [
-          "AM 30",
-          "MATH 23A"
-        ],
-        "description": "Choose one multivariable calculus course/sequence."
-      },
-      {
-        "id": "MATH_DIFFEQ",
-        "name": "Differential Equations",
-        "type": "pick_one",
-        "courses": [
-          "AM 20",
-          "MATH 24"
-        ],
-        "description": "Choose one differential equations course."
-      },
-      {
-        "id": "MATH_DISCRETE",
-        "name": "Discrete Mathematics",
-        "type": "all_required",
-        "courses": [
-          "CSE 16"
-        ],
-        "description": "Discrete mathematics is required."
-      },
-      {
-        "id": "PROGRAMMING",
-        "name": "Programming",
-        "type": "all_required",
-        "courses": [
-          "CSE 20",
           "CSE 13S",
-          "ECE 13",
-          "CSE 30",
-          "CSE 12"
+          "ECE 13"
         ],
-        "description": "Required programming courses.",
-        "note": "Some may be pick-one alternatives \u2014 see PDF."
+        "description": "Choose one course."
       },
       {
-        "id": "PHYS_CORE",
-        "name": "Physics",
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
         "type": "all_required",
         "courses": [
-          "PHYS 5A/L",
-          "PHYS 5C/N"
+          "CSE 101",
+          "CSE 150",
+          "CSE 157",
+          "CSE 183",
+          "CSE 187",
+          "CSE 115A",
+          "CSE 156/L",
+          "CSE 181"
         ],
-        "description": "Required physics courses."
+        "description": "Required upper-division courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "pick_one",
+        "courses": [
+          "CSE 115A",
+          "CSE 185E",
+          "CSE 195"
+        ],
+        "description": "Complete the DC requirement."
       },
       {
         "id": "UD_ELECTIVE",
         "name": "Upper Division Electives",
         "type": "pick_n",
-        "n": 2,
+        "n": 4,
+        "courses": [],
+        "description": "Choose 4 upper-division elective courses."
+      }
+    ],
+    "allCourseCodes": [
+      "AM 10",
+      "AM 20",
+      "AM 30",
+      "MATH 21",
+      "MATH 24",
+      "MATH 23A",
+      "CSE 30",
+      "PHYS 5A/L",
+      "CSE 12",
+      "PHYS 5C/N",
+      "CSE 20",
+      "CSE 16",
+      "MATH 19B",
+      "CSE 13S",
+      "ECE 13",
+      "CSE 101",
+      "CSE 150",
+      "CSE 157",
+      "CSE 183",
+      "CSE 187",
+      "CSE 115A",
+      "CSE 156/L",
+      "CSE 181",
+      "CSE 185E",
+      "CSE 195"
+    ],
+    "uncategorizedCodes": [],
+    "_flags": [
+      "method: spatial"
+    ]
+  },
+  {
+    "id": "RE_BS",
+    "name": "Robotics Engineering B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/RE_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "AM 10",
+              "AM 20",
+              "AM 30"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "MATH 21",
+              "MATH 24",
+              "MATH 23A"
+            ]
+          }
+        ],
+        "description": "Choose one mathematics sequence."
+      },
+      {
+        "id": "STATS",
+        "name": "Statistics/Probability",
+        "type": "pick_one",
         "courses": [
+          "CSE 107",
+          "STAT 131"
+        ],
+        "description": "Choose one statistics course."
+      },
+      {
+        "id": "PHYSICS",
+        "name": "Physics",
+        "type": "all_required",
+        "courses": [
+          "PHYS 5C/N",
+          "PHYS 5A/L"
+        ],
+        "description": "Required physics courses."
+      },
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
+        "type": "all_required",
+        "courses": [
+          "ECE 9",
+          "CSE 30",
+          "ECE 10",
+          "CSE 16",
+          "CSE 20",
+          "ECE 13",
+          "CSE 12",
+          "MATH 19B"
+        ],
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "CSE 101",
+          "ECE 101/L",
+          "ECE 103/L",
+          "ECE 121",
+          "ECE 167",
+          "ECE 141",
+          "ECE 118",
+          "CSE 100/L"
+        ],
+        "description": "Required upper-division courses."
+      },
+      {
+        "id": "DC",
+        "name": "Disciplinary Communication (DC)",
+        "type": "all_required",
+        "courses": [
+          "ECE 185"
+        ],
+        "description": "Complete the DC requirement."
+      },
+      {
+        "id": "CAPSTONE",
+        "name": "Capstone/Comprehensive Requirement",
+        "type": "pick_one",
+        "courses": [
+          "ECE 129A",
+          "ECE 195"
+        ],
+        "description": "Complete the capstone requirement."
+      }
+    ],
+    "allCourseCodes": [
+      "AM 10",
+      "AM 20",
+      "AM 30",
+      "MATH 21",
+      "MATH 24",
+      "MATH 23A",
+      "CSE 107",
+      "STAT 131",
+      "PHYS 5C/N",
+      "PHYS 5A/L",
+      "ECE 9",
+      "CSE 30",
+      "ECE 10",
+      "CSE 16",
+      "CSE 20",
+      "ECE 13",
+      "CSE 12",
+      "MATH 19B",
+      "CSE 101",
+      "ECE 101/L",
+      "ECE 103/L",
+      "ECE 121",
+      "ECE 167",
+      "ECE 141",
+      "ECE 118",
+      "CSE 100/L",
+      "ECE 185",
+      "ECE 129A",
+      "ECE 195"
+    ],
+    "uncategorizedCodes": [],
+    "_flags": [
+      "method: spatial"
+    ]
+  },
+  {
+    "id": "TIM_BS",
+    "name": "Technology and Information Management B.S.",
+    "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/TIM_25-26.pdf",
+    "catalogUrl": null,
+    "totalUnitsRequired": 180,
+    "minUpperDivUnits": 60,
+    "minGPA": 2.0,
+    "majorGPA": 2.0,
+    "categories": [
+      {
+        "id": "MATH_SEQUENCE",
+        "name": "Mathematics Sequence",
+        "type": "choose_group",
+        "groups": [
+          {
+            "label": "Option A",
+            "courses": [
+              "MATH 22",
+              "AM 10",
+              "AM 20"
+            ]
+          },
+          {
+            "label": "Option B",
+            "courses": [
+              "MATH 23A",
+              "MATH 21",
+              "MATH 24"
+            ]
+          }
+        ],
+        "description": "Choose one mathematics sequence."
+      },
+      {
+        "id": "STATS",
+        "name": "Statistics/Probability",
+        "type": "all_required",
+        "courses": [
+          "STAT 17/L"
+        ],
+        "description": "Required statistics course."
+      },
+      {
+        "id": "LD_CORE",
+        "name": "Lower Division Core",
+        "type": "all_required",
+        "courses": [
+          "CSE 16",
+          "CSE 13S",
+          "ECON 10A",
+          "TIM 58",
+          "CSE 30",
           "CSE 20",
           "CSE 12",
-          "CSE 30",
-          "CSE 13S",
-          "ECE 13",
-          "MATH 3",
-          "MATH 19A",
-          "CSE 101",
-          "CSE 150",
-          "CSE 12/L",
-          "CSE 16",
-          "CSE 185E",
-          "CSE 115A",
-          "CSE 156/L",
-          "CSE 157",
-          "CSE 181",
-          "CSE 183",
-          "CSE 187"
+          "ECON 1",
+          "ECON 2",
+          "MATH 19B",
+          "MATH 19A"
         ],
-        "description": "Choose 2 upper-division elective courses."
+        "description": "Required lower-division courses."
+      },
+      {
+        "id": "UD_REQUIRED",
+        "name": "Upper Division Required",
+        "type": "all_required",
+        "courses": [
+          "TIM 50",
+          "TIM 172B/Q",
+          "TIM 170",
+          "TIM 175",
+          "TIM 172A/P",
+          "ECON 113",
+          "ECON 100A"
+        ],
+        "description": "Required upper-division courses."
       },
       {
         "id": "DC",
@@ -1717,61 +2398,49 @@ const ALL_MAJORS = [
           "CSE 115A",
           "CSE 185E"
         ],
-        "description": "Complete one DC course. Cannot double-count as elective."
+        "description": "Complete the DC requirement."
       },
       {
-        "id": "CAPSTONE",
-        "name": "Comprehensive Requirement (Capstone)",
-        "type": "pick_one",
-        "courses": [
-          "CSE 115A",
-          "CSE 156/L",
-          "CSE 157",
-          "CSE 181",
-          "CSE 183",
-          "CSE 187",
-          "CSE 101",
-          "CSE 150",
-          "CSE 121",
-          "CSE 180",
-          "CSE 186"
-        ],
-        "description": "Complete one capstone course or senior thesis."
+        "id": "UD_ELECTIVE",
+        "name": "Upper Division Electives",
+        "type": "pick_n",
+        "n": 3,
+        "courses": [],
+        "description": "Choose 3 upper-division elective courses."
       }
     ],
     "allCourseCodes": [
-      "MATH 19A",
+      "MATH 22",
       "AM 10",
-      "MATH 21",
       "AM 20",
-      "MATH 24",
-      "MATH 19B",
-      "PHYS 5A/L",
-      "AM 30",
-      "CSE 16",
       "MATH 23A",
-      "PHYS 5C/N",
+      "MATH 21",
+      "MATH 24",
+      "STAT 17/L",
+      "CSE 16",
+      "CSE 13S",
+      "ECON 10A",
+      "TIM 58",
+      "CSE 30",
       "CSE 20",
       "CSE 12",
-      "CSE 30",
-      "CSE 13S",
-      "ECE 13",
-      "MATH 3",
-      "CSE 101",
-      "CSE 150",
-      "CSE 12/L",
-      "CSE 185E",
+      "ECON 1",
+      "ECON 2",
+      "MATH 19B",
+      "MATH 19A",
+      "TIM 50",
+      "TIM 172B/Q",
+      "TIM 170",
+      "TIM 175",
+      "TIM 172A/P",
+      "ECON 113",
+      "ECON 100A",
       "CSE 115A",
-      "CSE 156/L",
-      "CSE 157",
-      "CSE 181",
-      "CSE 183",
-      "CSE 187",
-      "CSE 121",
-      "CSE 180",
-      "CSE 186"
+      "CSE 185E"
     ],
     "uncategorizedCodes": [],
-    "_flags": []
+    "_flags": [
+      "method: spatial"
+    ]
   }
 ];

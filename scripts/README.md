@@ -17,13 +17,14 @@ python3 -m pip install beautifulsoup4
 # Step 1: fetch ALL configured subjects and save raw JSON
 python3 fetch_ucsc_courses.py
 
-# Step 2: merge new courses into the website's data.js
+# Step 2: merge new courses into the website's courses.js
 python3 merge_into_data_js.py
 
 # Step 3: open index.html in your browser — the new courses are now searchable
 ```
 
-That's it. The whole process takes about 15 seconds for 12 subjects.
+That's it. A full scrape of all 87 configured departments takes about
+3 minutes (rate-limited to 1 req/sec). Use parallel agents for faster runs.
 
 ---
 
@@ -49,16 +50,24 @@ Every course block on a subject page, including:
 | `division`   | URL segment (`lower-division`/`upper-division`) |
 | `prereqs`    | `<div class="extraFields">` → "Prerequisite(s):" sentence |
 | `ge`         | `<div class="genEd">` → code inside `<p>`   |
+| `geAll`      | All GE codes when a course satisfies multiple |
+| `quarters`   | `<div class="quarter">` (where available)   |
+| `labCoreq`   | Extracted from prereq text ("Concurrent enrollment in...") |
+| `repeatable` | `<div class="extraFields">` with "Repeatable for credit" label |
+| `maxUnits`   | Parsed from variable credit ranges (e.g. "2-5") |
+| `enrollmentRestrictions` | "Enrollment is restricted..." from prereq text |
+| `crossListed`| "Same as..." from description text          |
 | `desc`       | First `<div class="desc">` block            |
 | `catalogUrl` | The course's `<a href="...">`               |
 
 ### What's NOT scraped (yet)
 
-- **Typical quarters offered**: The catalog subject page does **not** list
-  when each course typically runs. Every course is defaulted to `["F","W","S"]`
-  with a `_flags.quarters_defaulted: true` marker so you know which ones need
-  review. The real offerings live on `courses.engineering.ucsc.edu` and a few
-  department sites, which have a completely different structure.
+- **Typical quarters offered**: Some department pages (e.g. LIT, ECON, ENVS)
+  include `<div class="quarter">` with quarter data (~16% of courses), but
+  most STEM departments (CSE, MATH, PHYS, ECE, AM, STAT, BME, CHEM) do not.
+  Courses without quarter data default to `["F","W","S","SU"]` with a
+  `_flags.quarters_defaulted: true` marker. Real per-quarter offerings could
+  come from `pisa.ucsc.edu` (class schedule API) — future work.
 - **Rate-My-Professor scores**: These are per-instructor, not per-course, and
   come from a third-party site. Left at `0`.
 - **Section/requirement bucket**: All merged courses are tagged
@@ -73,28 +82,36 @@ Every course block on a subject page, including:
 
 ```
 scripts/
-├── fetch_ucsc_courses.py    # scraper: catalog → JSON
-├── merge_into_data_js.py    # merger: JSON → data.js
-├── README.md                # this file
-└── output/                  # generated, gitignored if you want
-    ├── courses_raw.json          # flat list of all parsed courses
+├── fetch_ucsc_courses.py       # scraper: catalog → JSON
+├── merge_into_data_js.py       # merger: JSON → courses.js
+├── combine_scrape_outputs.py   # combine parallel scrape outputs
+├── extract_priority_courses.js # find courses referenced by majors
+├── survey_catalog.py           # survey all catalog departments
+├── inspect_html_structure.py   # diagnostic: print HTML classes
+├── README.md                   # this file
+├── scrape_plan.md              # Group A/B/C department split
+├── priority_courses.json       # courses referenced by 10 majors
+├── priority_departments.json   # departments those courses belong to
+└── output/                     # generated, gitignored if you want
+    ├── courses_raw.json          # combined flat list of all parsed courses
     ├── courses_by_subject.json   # same data grouped by subject
-    └── courses.data.js           # standalone JS view for inspection
+    ├── scrape_*_raw.json         # per-agent scrape outputs (parallel runs)
+    └── scrape_*_report.txt       # per-agent parse warnings
 ```
 
-After running the merger, `Prototype 1 Website - source code/js/data.js`
+After running the merger, `Prototype 1 Website - source code/js/courses.js`
 will have a clearly-marked block at the bottom of the `COURSES` object:
 
 ```js
 // === AUTO-GENERATED FROM UCSC CATALOG (do not hand-edit below) ===
-// 523 courses auto-merged from UCSC General Catalog
+// 4136 courses auto-merged from UCSC General Catalog
 "AM 3": { ... },
 "AM 6": { ... },
 ...
 ```
 
 Everything above that marker stays untouched. A backup is saved to
-`data.js.bak` on every merge.
+`courses.js.bak` on every merge.
 
 ---
 
@@ -106,59 +123,118 @@ Everything above that marker stays untouched. A backup is saved to
 python3 fetch_ucsc_courses.py                  # fetch all configured subjects
 python3 fetch_ucsc_courses.py am anth bme      # fetch specific ones by code
 python3 fetch_ucsc_courses.py --list           # show the configured subject list
+python3 fetch_ucsc_courses.py CSE MATH --output scrape_agent1  # parallel: write to scrape_agent1_raw.json
+python3 fetch_ucsc_courses.py --rate-limit 2   # 2-second delay between requests (default 1)
 ```
+
+The `--output <prefix>` flag writes to `output/<prefix>_raw.json` instead of
+`courses_raw.json`. Use this for parallel scraping — run multiple instances
+with different department lists and output prefixes, then combine with
+`combine_scrape_outputs.py`.
+
+The `--rate-limit <seconds>` flag controls the delay between HTTP requests.
+Default is 1 second. Use 2+ seconds when running multiple scrapers in parallel
+to be polite to UCSC's server.
 
 To add more subjects, edit the `SUBJECTS` list at the top of the script.
 Find the slug by visiting the subject page and copying the last segment
 of the URL, e.g. `chem-chemistry-and-biochemistry`.
 
+### `combine_scrape_outputs.py`
+
+```bash
+python3 combine_scrape_outputs.py              # combine all scrape_*_raw.json → courses_raw.json
+```
+
+Reads all `output/scrape_*_raw.json` files, deduplicates by course code
+(first occurrence wins), and writes the unified `output/courses_raw.json`.
+
 ### `merge_into_data_js.py`
 
 ```bash
-python3 merge_into_data_js.py                  # merge new courses into data.js
+python3 merge_into_data_js.py                  # merge new courses into courses.js
 python3 merge_into_data_js.py --dry-run        # preview only, no file writes
 python3 merge_into_data_js.py --force          # also overwrite existing entries
 ```
 
-By default the merger **never touches a course that's already in data.js**,
-so your hand-tuned CS courses (with proper `section: ["CS_LD_CORE"]` etc.)
-are safe. Use `--force` only if you want to wipe and re-import everything.
+By default the merger **never touches a course that's already in courses.js**
+above the auto-generated marker, so your hand-tuned CS courses (with proper
+`section: ["CS_LD_CORE"]` etc.) are safe. The auto-generated region is fully
+regenerated on each run. Use `--force` only if you want to also overwrite
+hand-tuned entries.
+
+### `extract_priority_courses.js`
+
+```bash
+node extract_priority_courses.js               # generate priority_courses.json + priority_departments.json
+```
+
+Loads courses.js, majors.js, and data.js, then walks all 12 major definitions
+plus GE/UC requirements to find every referenced course code. Expands prereq
+chains up to 4 levels deep. Outputs the list of priority courses and their
+department prefixes.
+
+### `survey_catalog.py`
+
+```bash
+python3 survey_catalog.py                      # fetch catalog index → all_departments.json + scrape_plan.md
+```
+
+Fetches the UCSC catalog index page, parses all department links, and splits
+them into Group A (priority departments), Group B (first alphabetical half of
+remaining), and Group C (second half, deferred).
 
 ---
 
 ## Parser accuracy
 
-Tested on AM through BME (650 courses):
+Tested across 79 departments (4,207 courses, 2026-05-12):
 
 | Metric | Result |
 |---|---|
-| Courses successfully parsed | 650 / 650 (100%) |
-| Prereqs detected | 286 (44% of courses) |
-| GE codes detected | 188 (all 13 GE categories present) |
-| Upper/lower split | 544 / 106 |
+| Courses successfully parsed | 4,207 / 4,207 (100%) |
+| Prereqs detected | 1,392 (33%) |
+| GE codes detected | 1,616 (38%, all 13 GE categories present) |
+| Lab corequisites detected | 205 |
+| Enrollment restrictions | 790 |
+| Repeatable courses | 862 |
+| Courses with real quarter data | 666 (16%, mostly humanities/social science depts) |
 
 ### Known edge cases
 
-1. **Complex prereq logic** — UCSC sometimes writes things like
-   `"A or B; C or D; or PHYS 116A"` where the trailing `"or PHYS 116A"` is an
-   alternative to the **entire** clause. The parser treats it as a separate
-   AND-group, which is slightly wrong. This affects ~5 courses across all 12
-   subjects.
-2. **Placement exam scores** — text like `"score of 400 on the MPE"` is
+1. **Corequisite-as-prereq** — When the catalog says "concurrent enrollment
+   in CSE 100L is required," the scraper correctly sets `labCoreq: "CSE 100L"`
+   but also adds CSE 100L to the `prereqs` array as a hard prerequisite. This
+   creates circular dependencies (CSE 100 → CSE 100L → CSE 100) that the
+   engine can't satisfy. Fix: manually remove the corequisite from `prereqs`,
+   or add corequisite support to the engine.
+2. **Mixed and/or prereqs** — Segments with both "and" and "or" (e.g.
+   "A and B or C") are treated as a single OR-group. This is correct for most
+   cases but may over-simplify complex expressions.
+3. **Placement exam scores** — text like `"score of 400 on the MPE"` is
    correctly ignored (the parser excludes MPE as a fake course code).
-3. **Permission-only prereqs** — text like `"permission of instructor"`
+4. **Permission-only prereqs** — text like `"permission of instructor"`
    produces an empty `prereqs: []`, which is the correct schema behavior.
-4. **Cross-listed courses** — if a course appears under two subjects
+5. **Cross-listed courses** — if a course appears under two subjects
    (e.g. CMPM 179 = ARTG 179), it gets parsed twice. The merger de-duplicates
    by code, keeping the first one seen.
 
-If you find a course with badly-parsed prereqs, just edit data.js by hand —
-the auto-generated block is human-readable and the merger won't overwrite
-your edits unless you pass `--force`.
+If you find a course with badly-parsed prereqs, edit courses.js by hand
+above the auto-generated marker — the merger won't overwrite your edits.
 
 ---
 
-## Expanding coverage
+## Department coverage
+
+All 87 UCSC catalog departments are configured (see `scrape_plan.md`):
+
+- **Group A** (34 depts): Priority departments referenced by the 12 supported
+  majors + GE/UC requirements. Includes CSE, MATH, PHYS, ECE, CHEM, BIOL, etc.
+- **Group B** (26 depts): First alphabetical half of remaining departments
+  (A through H). Includes ANCS, APLX, ARBC, CHIN, FREN, etc.
+- **Group C** (27 depts): Second alphabetical half (I through Z). All now scraped.
+- **Grad-only/empty** (8 depts): CLST, GAME, GIST, GRAD, HCI, MSE, NLP, SOCD —
+  these have only graduate courses or no courses listed.
 
 To add a new subject:
 
@@ -172,6 +248,9 @@ To add a new subject:
    ```
 
 5. Re-run `fetch_ucsc_courses.py` and `merge_into_data_js.py`.
+
+Or run `survey_catalog.py` to auto-discover all department slugs and generate
+an updated scrape plan.
 
 ---
 
@@ -281,7 +360,7 @@ After merging, the new `REQUIREMENTS` objects appear at the bottom of
 **"HTTP 404"** → The subject slug is wrong. Use `--list` to see what's configured,
 or visit the catalog page and copy the URL.
 
-**"Could not find const COURSES"** → Something modified `data.js` in a way
+**"Could not find const COURSES"** → Something modified `courses.js` in a way
 that removed the declaration. Restore from the `.bak` backup.
 
 **Script feels slow** → It's rate-limited to 1 request/second to be polite

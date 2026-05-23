@@ -1,0 +1,12 @@
+Scrape Report — scrape_cse_fix
+Subjects: 1
+Total courses: 109
+Quarters real: 0
+Quarters defaulted: 109
+With labCoreq: 12
+With enrollmentRestrictions: 15
+With repeatable: 11
+With crossListed: 2
+
+Warnings:
+  (none)

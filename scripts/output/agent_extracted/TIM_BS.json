@@ -1,0 +1,137 @@
+{
+  "id": "TIM_BS",
+  "name": "Technology and Information Management B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/TIM_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Complete both calculus courses."
+    },
+    {
+      "id": "MULTIVARIABLE_CALCULUS",
+      "name": "Multivariable Calculus",
+      "type": "pick_one",
+      "courses": ["MATH 22", "MATH 23A", "AM 30"],
+      "description": "Complete one multivariable/vector calculus course: MATH 22 (Calculus of Several Variables), MATH 23A (Vector Calculus), or AM 30 (Multivariate Calculus for Engineers)."
+    },
+    {
+      "id": "LINEAR_ALGEBRA",
+      "name": "Linear Algebra",
+      "type": "pick_one",
+      "courses": ["AM 10", "MATH 21"],
+      "description": "Complete one linear algebra course: AM 10 (Engineering Math Methods I) or MATH 21 (Linear Algebra)."
+    },
+    {
+      "id": "DIFFERENTIAL_EQUATIONS",
+      "name": "Differential Equations",
+      "type": "pick_one",
+      "courses": ["AM 20", "MATH 24"],
+      "description": "Complete one differential equations course: AM 20 (Engineering Math Methods II) or MATH 24 (Ordinary Differential Equations)."
+    },
+    {
+      "id": "STATISTICS",
+      "name": "Statistics",
+      "type": "all_required",
+      "courses": ["STAT 17", "STAT 17L"],
+      "description": "Complete STAT 17 and STAT 17L (Statistical Methods for Business and Economics)."
+    },
+    {
+      "id": "PROGRAMMING_LD",
+      "name": "Lower-Division Programming",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 30", "CSE 12", "CSE 16", "CSE 13S"],
+      "description": "Complete all lower-division CSE courses. CSE 20 or CSE 30 recommended prior to CSE 16."
+    },
+    {
+      "id": "UD_CSE_CORE",
+      "name": "Upper-Division CSE Core",
+      "type": "all_required",
+      "courses": ["CSE 182", "CSE 150"],
+      "description": "CSE 182 (Intro to Database Management Systems) and CSE 150 (Introduction to Computer Networks). Prereqs: CSE 16, CSE 12, and CSE 30."
+    },
+    {
+      "id": "ECONOMICS_LD",
+      "name": "Lower-Division Economics",
+      "type": "all_required",
+      "courses": ["ECON 1", "ECON 2"],
+      "description": "Complete ECON 1 (Microeconomics) and ECON 2 (Macroeconomics)."
+    },
+    {
+      "id": "ECONOMICS_UD_CORE",
+      "name": "Upper-Division Economics Core",
+      "type": "all_required",
+      "courses": ["ECON 100A", "ECON 113", "ECON 10A"],
+      "description": "Complete ECON 100A (Intermediate Microeconomics), ECON 113 (Econometrics), and ECON 10A (Economics of Accounting)."
+    },
+    {
+      "id": "TIM_LD_CORE",
+      "name": "TIM Lower-Division Core",
+      "type": "all_required",
+      "courses": ["TIM 50", "TIM 58"],
+      "description": "Complete TIM 50 (Business Information Systems) and TIM 58 (Systems Analysis & Design)."
+    },
+    {
+      "id": "TIM_UD_CORE",
+      "name": "TIM Upper-Division Core",
+      "type": "all_required",
+      "courses": ["TIM 170", "TIM 172A", "TIM 172P", "TIM 172B", "TIM 172Q", "TIM 175"],
+      "description": "Complete TIM 170 (Management of Technology Seminar, 2 units), TIM 172A + TIM 172P taken concurrently (8 units total), TIM 172B + TIM 172Q taken concurrently (8 units total), and TIM 175 (Business Strategy & Information Systems). TIM 175 satisfies the DC requirement. Completion of TIM 172A/P, TIM 172B/Q, and TIM 175 satisfies the comprehensive requirement."
+    },
+    {
+      "id": "BASKIN_ENGR_ELECTIVES",
+      "name": "Upper-Division Baskin Engineering Electives",
+      "type": "pick_n",
+      "n": 2,
+      "courses": [
+        "CSE 101", "CSE 102", "CSE 103", "CSE 104A", "CSE 105", "CSE 107",
+        "CSE 110A", "CSE 111", "CSE 112", "CSE 113", "CSE 114A",
+        "CSE 115A", "CSE 115B", "CSE 115C", "CSE 115D",
+        "CSE 116", "CSE 117", "CSE 118", "CSE 119",
+        "CSE 120", "CSE 121", "CSE 122", "CSE 123A", "CSE 123B",
+        "CSE 125", "CSE 130", "CSE 131", "CSE 132",
+        "CSE 138", "CSE 140", "CSE 142", "CSE 143",
+        "CSE 144", "CSE 145", "CSE 148", "CSE 151",
+        "CSE 156", "CSE 157", "CSE 160", "CSE 161",
+        "CSE 162", "CSE 163", "CSE 165", "CSE 168",
+        "CSE 180", "CSE 183", "CSE 184", "CSE 185",
+        "TIM 171", "TIM 174", "TIM 176", "TIM 177", "TIM 178",
+        "STAT 131", "AM 100", "AM 112", "AM 114",
+        "AM 115", "AM 129", "AM 130", "AM 147",
+        "ECE 101", "ECE 103", "ECE 118", "ECE 121",
+        "ECE 151", "ECE 153", "ECE 171"
+      ],
+      "description": "Choose any two 5-unit upper-division or graduate Baskin Engineering courses. Cannot take both STAT 131 and CSE 107. At most one independent study or field-study (with prior approval)."
+    },
+    {
+      "id": "ECON_ELECTIVE",
+      "name": "Upper-Division Economics Elective",
+      "type": "pick_n",
+      "n": 1,
+      "courses": [
+        "ECON 100B", "ECON 101", "ECON 102", "ECON 104",
+        "ECON 110A", "ECON 110B", "ECON 111A", "ECON 111B",
+        "ECON 114", "ECON 115",
+        "ECON 120", "ECON 122A", "ECON 128",
+        "ECON 129", "ECON 130", "ECON 131",
+        "ECON 133", "ECON 135", "ECON 136",
+        "ECON 137", "ECON 140", "ECON 141",
+        "ECON 150", "ECON 155", "ECON 160",
+        "ECON 161A", "ECON 161B", "ECON 166",
+        "ECON 170", "ECON 171", "ECON 172",
+        "ECON 173", "ECON 175", "ECON 176",
+        "ECON 177", "ECON 178", "ECON 180",
+        "ECON 181", "ECON 182", "ECON 183",
+        "ECON 185", "ECON 186", "ECON 187",
+        "ECON 188", "ECON 189", "ECON 190"
+      ],
+      "description": "Choose one 5-unit upper-division Economics course numbered 100-190 not already required for the major. Recommended: ECON 100B, ECON 101, ECON 115, ECON 130, ECON 131, ECON 133, ECON 135, ECON 136, ECON 161A."
+    }
+  ]
+}

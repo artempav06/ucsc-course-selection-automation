@@ -96,12 +96,11 @@ const Validator = {
 
         case "pick_n": {
           status.neededCount = cat.n;
-          const allOptions = cat.coursesA
-            ? [...cat.coursesA, ...cat.coursesB]
-            : cat.courses;
-          status.selectedCourses = (allOptions || []).filter(c => planned.has(c));
-          if (cat.id === "ELECTIVE") {
-            const dcCourses = requirements.categories.find(r => r.id === "DC")?.courses || [];
+          const allOptions = cat.courses || [];
+          status.selectedCourses = allOptions.filter(c => planned.has(c));
+          const dcCat = requirements.categories.find(r => r.id === "DC");
+          if (dcCat && cat.id !== "DC") {
+            const dcCourses = dcCat.courses || [];
             const usedDC = dcCourses.filter(c => planned.has(c));
             status.selectedCourses = status.selectedCourses.filter(c => !usedDC.includes(c));
           }
@@ -339,7 +338,9 @@ const Scheduler = {
 
         case "choose_group": {
           const groups = cat.groups || [];
-          const bestGroup = groups.find(g => g.courses.some(c => completedSet.has(c))) || groups[0];
+          const bestGroup = groups.find(g => g.courses.some(c => completedSet.has(c)))
+            || groups.find(g => g.courses.every(c => COURSES[c]))
+            || groups[0];
           if (bestGroup) bestGroup.courses.filter(c => COURSES[c] && !completedSet.has(c)).forEach(pushCore);
           break;
         }
@@ -442,7 +443,7 @@ const Scheduler = {
   expandWithPrereqs(planCodes, completedSet, usedSet) {
     const allKnown = new Set([...planCodes, ...usedSet, ...completedSet]);
     const toAdd = [];
-    const maxPasses = 4;
+    const maxPasses = 6;
 
     for (let pass = 0; pass < maxPasses; pass++) {
       let added = false;
@@ -452,13 +453,9 @@ const Scheduler = {
         for (const orGroup of course.prereqs) {
           const satisfied = orGroup.some(p => allKnown.has(p));
           if (satisfied) continue;
+          // Pick the first valid candidate from this OR-group (prefer lower-div)
           const candidate = orGroup
-            .filter(p => {
-              if (!COURSES[p] || allKnown.has(p)) return false;
-              const cc = COURSES[p];
-              if (!cc.prereqs || cc.prereqs.length === 0) return true;
-              return cc.prereqs.every(g => g.some(q => allKnown.has(q)));
-            })
+            .filter(p => COURSES[p] && !allKnown.has(p))
             .sort((a, b) => {
               const la = COURSES[a].division === "lower" ? 0 : 1;
               const lb = COURSES[b].division === "lower" ? 0 : 1;
@@ -473,7 +470,7 @@ const Scheduler = {
       }
       if (!added) break;
       if (pass === maxPasses - 1 && added) {
-        console.warn("expandWithPrereqs: prerequisite chain deeper than 4 levels; some prereqs may be missing");
+        console.warn("expandWithPrereqs: prerequisite chain deeper than 6 levels; some prereqs may be missing");
       }
     }
     return toAdd;
@@ -631,32 +628,56 @@ const Scheduler = {
     const coreR = [...coreQ];
     const fillR = [...fillQ];
 
-    // Heavy majors (BMEB, BIOTECH, EE, CE) have 30+ core courses —
-    // allow 3 core per quarter so they fit in 5–6 years instead of 8+.
-    // Threshold raised to 30 (from 22) to avoid squeezing fill slots on
-    // medium-size majors like AM_BS (~29 core) that still need fill for GE.
-    const maxCorePerQ = coreCourses.length > 30 ? 3 : 2;
+    // Co-requisite lab helper: if a course has labCoreq, place the corequisite
+    // in the same quarter (they must be taken concurrently).
+    const coReqLabUnits = (courseCode, queue, completed) => {
+      const course = COURSES[courseCode];
+      if (!course || !course.labCoreq) return 0;
+      const coreqCode = course.labCoreq;
+      if (!queue.includes(coreqCode)) return 0;
+      const coreq = COURSES[coreqCode];
+      if (!coreq) return 0;
+      if (coreq.prereqs && coreq.prereqs.length > 0 &&
+          !Validator.prereqsMet(coreq.prereqs, completed)) return 0;
+      return coreq.units;
+    };
+    const placeCoReqLab = (courseCode, queue, quarterArr, completed) => {
+      const course = COURSES[courseCode];
+      if (!course || !course.labCoreq) return 0;
+      const coreqCode = course.labCoreq;
+      if (!queue.includes(coreqCode)) return 0;
+      const coreq = COURSES[coreqCode];
+      if (!coreq) return 0;
+      if (coreq.prereqs && coreq.prereqs.length > 0 &&
+          !Validator.prereqsMet(coreq.prereqs, completed)) return 0;
+      quarterArr.push(coreqCode);
+      queue.splice(queue.indexOf(coreqCode), 1);
+      return coreq.units;
+    };
 
     for (const { yi, q } of allQuarters) {
       const quarterArr = schedule[yi].quarters[q];
-      let unitsLeft = maxUnits;
+      // Graduated unit cap: Freshman 15, Sophomore 19, Junior/Senior up to 21
+      const effectiveMax = yi === 0 ? 15 : yi <= 1 ? 19 : 21;
+      let unitsLeft = effectiveMax;
 
       // Prereqs must be completed in a PRIOR quarter, not the current one.
       // Snapshot what's completed before this quarter starts.
       const completedBefore = new Set(placed);
 
-      // ── Phase 1: place up to maxCorePerQ core courses (major requirements) ──
-      let corePlaced = 0;
-      for (let i = 0; i < coreR.length && corePlaced < maxCorePerQ && unitsLeft > 0;) {
+      // ── Phase 1: place all eligible core courses (prereqs + units permitting) ──
+      for (let i = 0; i < coreR.length && unitsLeft > 0;) {
         const code = coreR[i];
         const course = COURSES[code];
         if (!course) { coreR.splice(i, 1); continue; }
+        const withLab = course.units + coReqLabUnits(code, coreR, completedBefore);
         if (course.quarters.includes(q) &&
             Validator.prereqsMet(course.prereqs, completedBefore) &&
-            course.units <= unitsLeft) {
+            withLab <= unitsLeft) {
           quarterArr.push(code);
           unitsLeft -= course.units;
-          coreR.splice(i, 1); corePlaced++;
+          coreR.splice(i, 1);
+          unitsLeft -= placeCoReqLab(code, coreR, quarterArr, completedBefore);
         } else { i++; }
       }
 
@@ -671,21 +692,24 @@ const Scheduler = {
           quarterArr.push(code);
           unitsLeft -= course.units;
           fillR.splice(i, 1);
+          unitsLeft -= placeCoReqLab(code, fillR, quarterArr, completedBefore);
         } else { i++; }
       }
 
       // ── Phase 3: quarter still light? add more core ──
-      if (unitsLeft >= 5 && coreR.length > 0) {
+      if (unitsLeft >= 2 && coreR.length > 0) {
         for (let i = 0; i < coreR.length && unitsLeft > 0;) {
           const code = coreR[i];
           const course = COURSES[code];
           if (!course) { coreR.splice(i, 1); continue; }
+          const withLab = course.units + coReqLabUnits(code, coreR, completedBefore);
           if (course.quarters.includes(q) &&
               Validator.prereqsMet(course.prereqs, completedBefore) &&
-              course.units <= unitsLeft) {
+              withLab <= unitsLeft) {
             quarterArr.push(code);
             unitsLeft -= course.units;
             coreR.splice(i, 1);
+            unitsLeft -= placeCoReqLab(code, coreR, quarterArr, completedBefore);
           } else { i++; }
         }
       }
@@ -702,7 +726,21 @@ const Scheduler = {
             quarterArr.push(code);
             unitsLeft -= course.units;
             fillR.splice(i, 1);
+            unitsLeft -= placeCoReqLab(code, fillR, quarterArr, completedBefore);
           } else { i++; }
+        }
+      }
+
+      // ── Phase 5: top up with a 2-unit FREE pad if there's a small gap ──
+      if (unitsLeft >= 2 && yi > 0) {
+        for (let u = 1; u <= 9; u++) {
+          const code = `FREE 2U${u}`;
+          if (COURSES[code] && !placed.has(code)) {
+            quarterArr.push(code);
+            placed.add(code);
+            unitsLeft -= 2;
+            break;
+          }
         }
       }
 
@@ -718,6 +756,68 @@ const Scheduler = {
       typeof MAJOR_REQUIREMENTS !== "undefined" &&
       MAJOR_REQUIREMENTS[profile?.major]
     ) ? (MAJOR_REQUIREMENTS[profile.major].totalUnitsRequired || 180) : 180;
+
+    // Before resorting to a 5th-year overflow, try to swap fill courses out of
+    // Y1-Y4 quarters to make room for unplaced core courses. Core requirements
+    // always take priority over GE/elective fill.
+    const coreSet = new Set(coreCourses);
+    const unplacedCore = coreR.filter(c => !placed.has(c));
+    if (unplacedCore.length > 0) {
+      const completedByQ = [];
+      for (let yi = 0; yi < schedule.length; yi++) {
+        const snapshot = new Set();
+        for (let py = 0; py < yi; py++)
+          for (const cs of Object.values(schedule[py].quarters))
+            cs.forEach(c => { if (c !== "_GAP") snapshot.add(c); });
+        for (const q of ["F", "W", "S"]) {
+          const prior = new Set(snapshot);
+          completedByQ.push({ yi, q, prior });
+          const cs = schedule[yi].quarters[q];
+          if (cs) cs.forEach(c => { if (c !== "_GAP") snapshot.add(c); });
+        }
+      }
+
+      for (let ci = unplacedCore.length - 1; ci >= 0; ci--) {
+        const coreCode = unplacedCore[ci];
+        const coreCourse = COURSES[coreCode];
+        if (!coreCourse) continue;
+        let swapped = false;
+        for (const { yi, q, prior } of completedByQ) {
+          const quarterArr = schedule[yi].quarters[q];
+          if (!quarterArr || quarterArr[0] === "_GAP") continue;
+          if (!coreCourse.quarters.includes(q)) continue;
+          if (!Validator.prereqsMet(coreCourse.prereqs, prior)) continue;
+          const effectiveMax = yi === 0 ? 15 : yi <= 1 ? 19 : 21;
+          const qUnits = quarterArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+          if (qUnits + coreCourse.units <= effectiveMax) {
+            quarterArr.push(coreCode);
+            placed.add(coreCode);
+            coreR.splice(coreR.indexOf(coreCode), 1);
+            unplacedCore.splice(ci, 1);
+            swapped = true;
+            break;
+          }
+          for (let fi = quarterArr.length - 1; fi >= 0; fi--) {
+            const fillCode = quarterArr[fi];
+            if (!coreSet.has(fillCode)) {
+              const fillUnits = COURSES[fillCode]?.units || 0;
+              if (qUnits - fillUnits + coreCourse.units <= effectiveMax) {
+                quarterArr.splice(fi, 1);
+                placed.delete(fillCode);
+                fillR.push(fillCode);
+                quarterArr.push(coreCode);
+                placed.add(coreCode);
+                coreR.splice(coreR.indexOf(coreCode), 1);
+                unplacedCore.splice(ci, 1);
+                swapped = true;
+                break;
+              }
+            }
+          }
+          if (swapped) break;
+        }
+      }
+    }
 
     const coreOverflow = coreR.filter(c => !placed.has(c));
     const fillOverflow = fillR.filter(c => !placed.has(c));
@@ -751,6 +851,10 @@ const Scheduler = {
       const maxOverflowYears = 1;
       let overflowFull = false;
 
+      // Courses already in the starting quarter are in placedThisQ — they won't
+      // satisfy prereqs for overflow courses (enforcing the prior-quarter rule).
+      // Overflow courses that need those as prereqs will be deferred to the next quarter.
+
       const addNewYear = () => {
         const lastSched = schedule[schedule.length - 1];
         const nextAcad  = lastSched.academicStart + 1;
@@ -765,35 +869,82 @@ const Scheduler = {
         oUnits    = 0;
       };
 
+      const overflowMax = 21;
+      // Track courses placed in the current overflow quarter (prereqs must be PRIOR).
+      // Seed with courses already in the starting quarter from the main loop.
+      let placedThisQ = new Set(
+        (overflowY.quarters[lastQ] || []).filter(c => c !== "_GAP")
+      );
+
+      const advanceQ = () => {
+        const ok = advanceQuarter();
+        if (ok) placedThisQ = new Set();
+        return ok;
+      };
+      const addYear = () => {
+        addNewYear();
+        placedThisQ = new Set();
+      };
+
       const placeOne = (code, checkPrereqs) => {
         if (overflowFull) return false;
         if (!COURSES[code] || placed.has(code)) return false;
-        if (checkPrereqs && !Validator.prereqsMet(COURSES[code].prereqs, placed)) return false;
+        if (checkPrereqs) {
+          const priorPlaced = new Set([...placed].filter(c => !placedThisQ.has(c)));
+          if (!Validator.prereqsMet(COURSES[code].prereqs, priorPlaced)) return false;
+        }
         const cu = COURSES[code].units;
-        if (oUnits + cu > maxUnits) {
-          if (!advanceQuarter()) addNewYear();
+        const labCode = code + "L";
+        const hasCoReqLab = !placed.has(labCode) && COURSES[labCode] && COURSES[labCode].units <= 2 &&
+            (coreOverflow.includes(labCode) || fillOverflow.includes(labCode)) &&
+            (COURSES[labCode].prereqs || []).some(g => g.length === 1 && g[0] === code);
+        const totalNeeded = cu + (hasCoReqLab ? COURSES[labCode].units : 0);
+        if (oUnits + totalNeeded > overflowMax) {
+          if (!advanceQ()) addYear();
         }
         if (overflowFull) return false;
-        if (oUnits + cu > maxUnits) {
-          if (!advanceQuarter()) addNewYear();
+        if (oUnits + totalNeeded > overflowMax) {
+          if (!advanceQ()) addYear();
         }
         if (overflowFull) return false;
         overflowY.quarters[lastQ].push(code);
         placed.add(code);
+        placedThisQ.add(code);
         oUnits += cu;
         placedUnits += cu;
+        if (hasCoReqLab) {
+          overflowY.quarters[lastQ].push(labCode);
+          placed.add(labCode);
+          placedThisQ.add(labCode);
+          oUnits += COURSES[labCode].units;
+          placedUnits += COURSES[labCode].units;
+        }
         return true;
       };
 
-      // Place remaining mandatory core courses, deferring those with unmet prereqs
+      // Place remaining mandatory core courses, deferring those with unmet prereqs.
+      // Multi-pass retry with quarter advances handles cascading prereq chains.
       const deferred = [];
       for (const code of coreOverflow) {
-        if (!placeOne(code, true)) deferred.push(code);
+        if (!placed.has(code) && !placeOne(code, true)) deferred.push(code);
       }
-      // Retry deferred courses (prereqs may now be satisfied after earlier placements)
-      for (const code of deferred) placeOne(code, true);
+      // Retry deferred courses — advance quarter between passes so newly placed
+      // courses count as "prior" for the next round of deferred courses.
+      let prevLen = -1;
+      while (deferred.length > 0 && deferred.length !== prevLen && !overflowFull) {
+        prevLen = deferred.length;
+        if (!advanceQ()) addYear();
+        if (overflowFull) break;
+        for (let i = deferred.length - 1; i >= 0; i--) {
+          if (placed.has(deferred[i]) || placeOne(deferred[i], true)) {
+            deferred.splice(i, 1);
+          }
+        }
+      }
       // Final pass without prereq check so mandatory courses are never dropped
-      for (const code of deferred) placeOne(code, false);
+      for (const code of deferred) {
+        if (!placed.has(code)) placeOne(code, false);
+      }
 
       // Place fill overflow: always place upper-div courses until minUpperDivUnits
       // is satisfied (even past the total-unit target), but skip lower-div fill
@@ -903,7 +1054,7 @@ const Scheduler = {
   pickBreadth(interests, used, count) {
     const breadthCat = CS_BA_REQUIREMENTS.categories.find(c => c.id === "BREADTH");
     if (!breadthCat) return [];
-    const allBreadth = [...(breadthCat.coursesA || []), ...(breadthCat.coursesB || [])];
+    const allBreadth = breadthCat.courses || [...(breadthCat.coursesA || []), ...(breadthCat.coursesB || [])];
     const scored = allBreadth
       .filter(c => !used.has(c) && COURSES[c])
       .map(c => {
@@ -969,7 +1120,10 @@ const Scheduler = {
     for (const code of courseCodes) {
       const course = COURSES[code];
       if (!course || !course.prereqs) continue;
+      const coreqOf = course.labCoreq || null;
       for (const orGroup of course.prereqs) {
+        // Skip the edge to a labCoreq partner (they're co-requisites, taken together)
+        if (coreqOf && orGroup.length === 1 && orGroup[0] === coreqOf) continue;
         const relevantPrereqs = orGroup.filter(p => courseCodes.includes(p) && !completed.has(p));
         if (relevantPrereqs.length > 0) {
           const prereq = relevantPrereqs[0];
@@ -981,12 +1135,34 @@ const Scheduler = {
       }
     }
 
+    // Compute downstream depth: longest chain of dependents from each node.
+    // Courses that unlock longer chains are scheduled earlier (tiebreaker).
+    const downDepth = new Map();
+    const computeDepth = (code, visited) => {
+      if (downDepth.has(code)) return downDepth.get(code);
+      if (visited.has(code)) return 0;
+      visited.add(code);
+      let max = 0;
+      for (const n of (graph.get(code) || [])) {
+        max = Math.max(max, 1 + computeDepth(n, visited));
+      }
+      downDepth.set(code, max);
+      return max;
+    };
+    for (const code of courseCodes) computeDepth(code, new Set());
+
+    const sortKey = (a, b) => {
+      const pa = this.coursePriority(a), pb = this.coursePriority(b);
+      if (pa !== pb) return pa - pb;
+      return (downDepth.get(b) || 0) - (downDepth.get(a) || 0);
+    };
+
     const queue  = [];
     const result = [];
     for (const [code, degree] of inDegree) {
       if (degree === 0) queue.push(code);
     }
-    queue.sort((a, b) => this.coursePriority(a) - this.coursePriority(b));
+    queue.sort(sortKey);
 
     while (queue.length > 0) {
       const code = queue.shift();
@@ -995,7 +1171,7 @@ const Scheduler = {
         inDegree.set(neighbor, inDegree.get(neighbor) - 1);
         if (inDegree.get(neighbor) === 0) {
           queue.push(neighbor);
-          queue.sort((a, b) => this.coursePriority(a) - this.coursePriority(b));
+          queue.sort(sortKey);
         }
       }
     }

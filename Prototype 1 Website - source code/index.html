@@ -236,24 +236,7 @@
           <p class="form-hint" id="grad-duration-hint">Pick the term you'd ideally walk the stage.</p>
         </div>
 
-        <div class="form-group">
-          <label for="input-max-units">Preferred Max Units Per Quarter</label>
-          <div class="input-with-unit">
-            <input type="number" id="input-max-units" min="12" max="25" value="15" step="1">
-            <span class="input-unit">units</span>
-          </div>
-          <div class="unit-presets">
-            <button type="button" class="unit-preset" data-units="12">12 — Minimum Full-Time</button>
-            <button type="button" class="unit-preset active" data-units="15">15 — Standard</button>
-            <button type="button" class="unit-preset" data-units="17">17 — Heavy</button>
-            <button type="button" class="unit-preset" data-units="19">19 — Heavier</button>
-            <button type="button" class="unit-preset" data-units="22">22 — Max</button>
-          </div>
-          <p class="form-hint">
-            Type any number or pick a preset. GE courses vary in credit (2–5 units), so you can
-            fine-tune if you have an odd target (e.g. 16 or 18).
-          </p>
-        </div>
+        <input type="hidden" id="input-max-units" value="15">
 
         <div class="form-group">
           <div class="checkbox-row">

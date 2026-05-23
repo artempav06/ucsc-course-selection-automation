@@ -1,0 +1,167 @@
+{
+  "id": "BMEB_BM",
+  "name": "Biomolecular Engineering and Bioinformatics (Biomolecular)",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-Biomoleular-25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.0,
+  "categories": [
+    {
+      "id": "MATH_REQUIRED",
+      "name": "Mathematics (Required)",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B", "STAT 131"],
+      "description": "Calculus I, Calculus II, and Introduction to Probability Theory are all required."
+    },
+    {
+      "id": "MATH_LINEAR_ALGEBRA",
+      "name": "Mathematics (Linear Algebra)",
+      "type": "pick_one",
+      "courses": ["AM 10", "MATH 21"],
+      "description": "Choose one: AM 10 or MATH 21 for the linear algebra requirement."
+    },
+    {
+      "id": "CHEMISTRY",
+      "name": "Chemistry",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "General Chemistry: CHEM 3A + CHEM 3B/BL + CHEM 3C/CL",
+          "courses": ["CHEM 3A", "CHEM 3B/BL", "CHEM 3C/CL"]
+        },
+        {
+          "label": "Advanced General Chemistry: CHEM 4A/AL + CHEM 4B/BL",
+          "courses": ["CHEM 4A/AL", "CHEM 4B/BL"]
+        }
+      ],
+      "description": "Select one of the following General Chemistry series."
+    },
+    {
+      "id": "LABORATORY",
+      "name": "Laboratory Courses",
+      "type": "all_required",
+      "courses": ["BME 21L", "BME 22L"],
+      "description": "Complete both laboratory courses: Introduction to Basic Laboratory Techniques (BME 21L) and Foundations of Design and Experimentation in Molecular Biology (BME 22L)."
+    },
+    {
+      "id": "PHYSICS_INTRO",
+      "name": "Physics (Introductory)",
+      "type": "pick_one",
+      "courses": ["PHYS 5A/L", "PHYS 15A/5L"],
+      "description": "Choose one: PHYS 5A/L (Introduction to Physics I) or PHYS 15A/5L (Honors Introduction to Physics I)."
+    },
+    {
+      "id": "PHYSICS_REQUIRED",
+      "name": "Physics (Required)",
+      "type": "all_required",
+      "courses": ["PHYS 5B/M"],
+      "description": "Introduction to Physics II is required."
+    },
+    {
+      "id": "ORGANIC_CHEMISTRY",
+      "name": "Organic Chemistry",
+      "type": "all_required",
+      "courses": ["CHEM 8A", "CHEM 8B"],
+      "description": "Complete both Organic Chemistry courses."
+    },
+    {
+      "id": "BIOLOGY_REQUIRED",
+      "name": "Biology (Required)",
+      "type": "all_required",
+      "courses": ["BIOL 20A"],
+      "description": "Cell and Molecular Biology (BIOL 20A) is required."
+    },
+    {
+      "id": "GENETICS",
+      "name": "Genetics",
+      "type": "pick_one",
+      "courses": ["BME 105", "BIOL 105"],
+      "description": "Choose one: BME 105 (Genetics in the Genomics Era, strongly recommended) or BIOL 105 (Genetics)."
+    },
+    {
+      "id": "BIOCHEMISTRY",
+      "name": "Biochemistry",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "BIOC 100A + BIOC 100B",
+          "courses": ["BIOC 100A", "BIOC 100B"]
+        },
+        {
+          "label": "BME 101 + CHEM 103",
+          "courses": ["BME 101", "CHEM 103"]
+        },
+        {
+          "label": "BME 101 + BIOL 100",
+          "courses": ["BME 101", "BIOL 100"]
+        }
+      ],
+      "description": "Select one of the following Biochemistry series."
+    },
+    {
+      "id": "BIOINFORMATICS_BIOETHICS",
+      "name": "Bioinformatics and Bioethics",
+      "type": "all_required",
+      "courses": ["BME 80G", "BME 160", "BME 110", "BME 185", "BME 163"],
+      "description": "Complete all Bioinformatics and Bioethics courses. BME 80G (Bioethics), BME 160 (Research Programming in the Life Sciences, 6 units), BME 110 (Computational Biology Tools), BME 185 (Technical Writing for Biomolecular Engineers, also satisfies DC requirement), BME 163 (Applied Visualization and Analysis of Scientific Data)."
+    },
+    {
+      "id": "MODELING_DESIGN",
+      "name": "Modeling & Design Sequence",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "Engineering Stem Cells: BME 177 + BME 177L",
+          "courses": ["BME 177", "BME 177L"]
+        },
+        {
+          "label": "Protein Engineering: BME 128 + BME 128L",
+          "courses": ["BME 128", "BME 128L"]
+        },
+        {
+          "label": "Genomes / Long Read Sequencing: BME 130 + BME 123L",
+          "courses": ["BME 130", "BME 123L"]
+        }
+      ],
+      "description": "Choose one of the following Modeling & Design sequences."
+    },
+    {
+      "id": "ELECTIVE",
+      "name": "Elective",
+      "type": "pick_n",
+      "n": 1,
+      "courses": [
+        "AM 115", "AM 147", "BIOL 115", "METX 100", "METX 140",
+        "BIOC 100C", "BME 118", "BME 122H", "BME 123L", "BME 128",
+        "BME 128L", "BME 130", "BME 132", "BME 140", "BME 175",
+        "BME 177", "BME 177L", "BME 178", "ECE 104"
+      ],
+      "description": "Choose one elective. Course used as an Elective cannot be used to satisfy other major requirements. Any 5-credit biomolecular engineering graduate course (BME 201-279) may also be used. *BIOL 115 and BME 178 have additional prerequisites not covered by the major requirements."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Biomolecular Capstone",
+      "type": "choose_group",
+      "groups": [
+        {
+          "label": "Bioinformatics Capstone",
+          "courses": ["BME 205", "BME 230A", "BME 129C"]
+        },
+        {
+          "label": "iGEM",
+          "courses": ["BME 180", "BME 188A", "BME 188B", "BME 188C"]
+        },
+        {
+          "label": "Senior Design",
+          "courses": ["BME 129A", "BME 129B", "BME 129C"]
+        },
+        {
+          "label": "Senior Thesis",
+          "courses": ["BME 195", "BME 195", "BME 195"]
+        }
+      ],
+      "description": "Students must complete one of the following capstone tracks. The Bioinformatics Capstone is programming heavy. The Senior Thesis option consists of 15 credits of BME 195 split over 3 quarters."
+    }
+  ]
+}

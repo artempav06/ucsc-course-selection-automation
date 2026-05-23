@@ -1,0 +1,12 @@
+Scrape Report — scrape_math_fix2
+Subjects: 1
+Total courses: 65
+Quarters real: 0
+Quarters defaulted: 65
+With labCoreq: 4
+With enrollmentRestrictions: 1
+With repeatable: 5
+With crossListed: 0
+
+Warnings:
+  (none)

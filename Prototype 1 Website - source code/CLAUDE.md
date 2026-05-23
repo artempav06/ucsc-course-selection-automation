@@ -10,7 +10,7 @@ Pure static HTML/JS/CSS — no build step, no bundler, no package.json. JS files
 
 **Run tests** (Node.js, from this directory):
 ```
-node test_all_majors.js      # Smoke test all 10 majors: schedule gen, units, prereqs, duplicates
+node test_all_majors.js      # Smoke test all 12 majors: schedule gen, units, prereqs, duplicates
 node test_edge_cases.js       # Year/quarter timing scenarios (CS_BA: sophomore, mid-year, gap, summer)
 node test_integration.js      # Full flow: generate + validate, equivalences, course swaps, catalog integrity
 node test_debug_schedule.js   # Debug: prints a full schedule (not pass/fail)
@@ -18,7 +18,7 @@ node test_debug_schedule.js   # Debug: prints a full schedule (not pass/fail)
 
 Tests load JS via `vm.runInThisContext` in this exact order: `courses.js → majors.js → data.js → engine.js`. This mirrors the browser load order and is required because there's no module system.
 
-**Known test failures:** `test_all_majors.js` has 5 prereq-violation failures in auto-scraped majors (AM_BS, BIOTECH_BS, BMEB_BI, BMEB_BM, EE_BS). These are data quality issues in scraped course prereqs, not engine bugs.
+All tests pass: `test_all_majors.js` (242/242), `test_edge_cases.js` (40/40), `test_integration.js` (125/125).
 
 ## Architecture
 
@@ -27,8 +27,8 @@ Single-page app with three views: landing → 4-step wizard → schedule display
 ### JS load order and globals (dependency chain)
 
 ```
-js/courses.js   → COURSES object (~1900 entries, ~19K lines)
-js/majors.js    → MAJOR_REQUIREMENTS registry (10 majors), CS_BA_REQUIREMENTS
+js/courses.js   → COURSES object (~4300 entries, ~40K lines)
+js/majors.js    → MAJOR_REQUIREMENTS registry (12 majors), CS_BA_REQUIREMENTS
 js/data.js      → GE_REQUIREMENTS, UC_REQUIREMENTS, INTEREST_AREAS, GE_INTEREST_AREAS
 js/engine.js    → Scheduler, Validator (depends on all three above)
 js/app.js       → UI controller (depends on engine + DOM)
@@ -90,11 +90,10 @@ Equivalences are modeled through major requirement categories, not a separate ma
 
 ## Supported majors
 
-CS_BA (hand-tuned), CS_BS, CE_BS, EE_BS, CSGD_BS, AM_BS, BMEB_BI, BMEB_BM, BIOTECH_BS, NDT_BS
+CS_BA (hand-tuned), CS_BS, CE_BS, EE_BS, CSGD_BS, AM_BS, BMEB_BI, BMEB_BM, BIOTECH_BS, NDT_BS, RE_BS, TIM_BS
 
-CS_BA has its own selection path (`selectCsBaSplit`). The other 9 use `selectGenericSplit` with auto-scraped requirement definitions.
+CS_BA has its own selection path (`selectCsBaSplit`). The other 11 use `selectGenericSplit` with auto-scraped requirement definitions.
 
 ## Known issues
 
-- All auto-scraped courses default to `["F","W","S"]` quarter availability — engine can't enforce real quarter restrictions.
-- 5 auto-scraped majors (AM_BS, BIOTECH_BS, BMEB_BI, BMEB_BM, EE_BS) have prereq chain gaps where required courses reference prereqs not included in any major category (e.g., CHEM 8B for BIOL 100 in BMEB_BI). These cause test failures and force-placed courses without prereqs in generated schedules.
+- ~84% of auto-scraped courses default to `["F","W","S","SU"]` quarter availability — real quarter data only from ~16% of courses (mostly humanities/social science depts). STEM departments publish no quarter data in the catalog.

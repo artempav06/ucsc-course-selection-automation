@@ -1,0 +1,141 @@
+====================================================================================================
+INVESTIGATION DUMP: CS_BA + cs_ai_ml
+Profile: Freshman, F2024→S2028, maxUnits=19, minUnits=12, no summer, no completed
+====================================================================================================
+
+── PHASE BREAKDOWN ──
+Phase 1 (Major walk):     18 courses, 98 units (47 UD)
+  Types: {"major_core":12,"major_elective":6}
+  Courses: CSE 20, CSE 12, CSE 30, CSE 40, CSE 16, CSE 13S, CSE 101, MATH 19A, MATH 19B, AM 10, CSE 115A, CSE 110A, CSE 144, CSE 142, CSE 140, CSE 143, CSE 145, CSE 150
+Phase 2 (GE):             8 courses, 40 units
+  Courses: PHIL 22, CRES 10, MUSC 11, BIOE 20B, PHIL 9, PHIL 28, THEA 10, WRIT 2
+Phase 3 (UC):             3 courses, 15 units
+  Courses: WRIT 1, HIS 10B, HIS 80A
+Phase 4 (Prereq expand):  1 courses, 5 units
+  Courses: CSE 130
+
+── THE BUG: supplementUpperDiv ──
+Before Phase 5: 30 courses, 158 units total, 52 UD units
+Phase 5 (UD supplement):  2 courses, 10 units (10 UD)
+  supplementUpperDiv saw curUD=0 (bug: counted from empty udAdded[], not selected[])
+  Actually had 52 UD units already → only needed 8 more
+  EXCESS: 2 units added unnecessarily
+  Courses: CSE 101P, CSE 101M
+After Phase 5: 168 units total, 62 UD units
+
+── PHASES 6-8 ──
+Phase 6 (FREE pad):       3 courses, 15 units (target was 180)
+Phase 7 (Filler pool):    60 candidates built
+Phase 8 (Placement):      35 courses, 183 units to place
+  Fillers added during placement: 4 courses, 20 units
+  Placement fillers: FILM 20A, ART 10, FREE 4, FREE 5
+
+── TOTALS ──
+Total placed: 39 courses, 203 units
+totalUnitsRequired: 180
+EXCESS: 23 units over target
+Schedule spans: 5 years
+
+── DUPLICATES ──
+None found.
+
+── SCHEDULE (quarter by quarter) ──
+
+Year 1 (Freshman) (2024–2025)
+  F: 15 units
+    MATH 19A        5u  lower  [major_core    ]  Calculus for Science, Engineering, and Mathematics
+    CSE 20          5u  lower  [major_core    ]  Beginning Programming in Python
+    WRIT 1          5u  lower  [uc            ]  Introduction to Academic Writing
+  W: 15 units
+    CSE 16          5u  lower  [major_core    ]  Applied Discrete Mathematics
+    MATH 19B        5u  lower  [major_core    ]  Calculus for Science, Engineering, and Mathematics
+    FREE 1          5u  lower  [filler        ]  Free Elective
+  S: 17 units
+    AM 10           5u  lower  [major_core    ]  Mathematical Methods for Engineers I
+    CSE 12          7u  lower  [major_core    ]  Computer Systems and Assembly Language
+    FREE 2          5u  lower  [filler        ]  Free Elective
+
+Year 2 (Sophomore) (2025–2026)
+  F: 19 units
+    CSE 30          7u  lower  [major_core    ]  Programming Abstractions: Python
+    CSE 13S         7u  lower  [major_core    ]  Computer Systems and C Programming
+    FREE 3          5u  lower  [filler        ]  Free Elective
+  W: 15 units
+    CSE 40          5u  lower  [major_core    ]  Machine Learning Basics: Data and Decision Trees
+    CSE 101         5u  upper  [major_core    ]  Introduction to Data Structures and Algorithms
+    PHIL 9          5u  lower  [ge            ]  Reasoning and Critical Thinking
+  S: 17 units
+    CSE 150         7u  upper  [major_elective]  Introduction to Computer Networks
+    CSE 144         5u  upper  [major_elective]  Applied Machine Learning
+    CRES 10         5u  lower  [ge            ]  Introduction to Critical Race and Ethnic Studies
+
+Year 3 (Junior) (2026–2027)
+  F: 15 units
+    CSE 145         5u  upper  [major_elective]  Introduction to Data Mining
+    CSE 110A        5u  upper  [major_core    ]  Fundamentals of Compiler Design I
+    THEA 10         5u  lower  [ge            ]  Introduction to Performance
+  W: 15 units
+    CSE 140         5u  upper  [major_elective]  Artificial Intelligence
+    CSE 143         5u  upper  [major_elective]  Introduction to Natural Language Processing
+    HIS 10B         5u  lower  [uc            ]  United States History, 1877 to the Present
+  S: 15 units
+    CSE 142         5u  upper  [major_elective]  Machine Learning
+    CSE 130         5u  upper  [prereq        ]  Principles of Computer Systems Design
+    BIOE 20B        5u  lower  [ge            ]  Ecology and Evolution
+
+Year 4 (Senior) (2027–2028)
+  F: 15 units
+    CSE 115A        5u  upper  [major_core    ]  Introduction to Software Engineering
+    MUSC 11         5u  lower  [ge            ]  Musics of the World
+    PHIL 22         5u  lower  [ge            ]  Introduction to Ethical Theory
+  W: 15 units
+    PHIL 28         5u  lower  [ge            ]  Environmental Ethics
+    WRIT 2          5u  lower  [ge            ]  Rhetoric and Inquiry
+    CSE 101M        5u  upper  [filler        ]  Mathematical Foundations of Data Science
+  S: 15 units
+    HIS 80A         5u  lower  [uc            ]  United States Social History
+    FILM 20A        5u  lower  [filler        ]  Introduction to Film and Digital Media
+    ART 10          5u  lower  [filler        ]  Introduction to Visual Art
+
+Year 5 (5th Year) (2028–2029)
+  F: 5 units
+    CSE 101P        5u  upper  [filler        ]  Data Structures and Algorithms (Practice-based)
+  W: 5 units
+    FREE 4          5u  lower  [filler        ]  Free Elective
+  S: 5 units
+    FREE 5          5u  lower  [filler        ]  Free Elective
+
+── REQUIREMENT SATISFACTION ──
+allMet: true
+  Major: true  GE: true  UC: true
+  totalUnits: 203 (need 180)  upperDiv: 62 (need 60)
+
+Major categories:
+  ✓ LD_CORE              3/3  courses: CSE 20, CSE 12, CSE 30
+  ✓ MATH_CORE            2/2  courses: CSE 40, CSE 16
+  ✓ CALC_A               1/1  courses: MATH 19A
+  ✓ CALC_B               1/1  courses: MATH 19B
+  ✓ LINEAR_ALGEBRA       1/1  courses: AM 10
+  ✓ PROGRAMMING_SEQ      1/1  courses: CSE 13S, CSE 101
+  ✓ BREADTH              3/3  courses: CSE 101M, CSE 140, CSE 142, CSE 143, CSE 144, CSE 150, CSE 110A, CSE 130
+  ✓ ELECTIVE             3/3  courses: CSE 101M, CSE 110A, CSE 130, CSE 140, CSE 142, CSE 143, CSE 144, CSE 145, CSE 150
+  ✓ DC                   1/1  courses: CSE 115A
+  ✓ CAPSTONE             1/1  courses: CSE 110A, CSE 140, CSE 143, CSE 144, CSE 145
+
+GE categories:
+  ✓ CC    Cross-Cultural Analysis             courses: PHIL 22
+  ✓ ER    Ethnicity and Race                  courses: CRES 10, HIS 10B
+  ✓ IM    Interpreting Arts and Media         courses: MUSC 11, FILM 20A
+  ✓ MF    Mathematical and Formal Reasoning   courses: MATH 19A, CSE 20, CSE 16, MATH 19B, AM 10
+  ✓ SI    Scientific Inquiry                  courses: BIOE 20B
+  ✓ SR    Statistical Reasoning               courses: CSE 40
+  ✓ TA    Textual Analysis                    courses: WRIT 1, PHIL 9
+  ✓ PE    Perspectives                        courses: PHIL 28
+  ✓ PR    Practice                            courses: THEA 10, ART 10
+  ✓ C     Composition                         courses: WRIT 2
+  ✓ DC    Disciplinary Communication          courses: CSE 115A
+
+UC requirements:
+  ✓ ELWR   Entry Level Writing       courses: WRIT 1
+  ✓ AH     American History          courses: HIS 10B, HIS 80A
+  ✓ AI     American Institutions     courses: HIS 10B, HIS 80A

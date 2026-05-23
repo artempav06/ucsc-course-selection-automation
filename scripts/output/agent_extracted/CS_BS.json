@@ -1,0 +1,107 @@
+{
+  "id": "CS_BS",
+  "name": "Computer Science B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BS_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.8,
+  "categories": [
+    {
+      "id": "MATH_CALC",
+      "name": "Calculus Sequence",
+      "type": "choose_group",
+      "groups": [
+        { "label": "MATH 19-series", "courses": ["MATH 19A", "MATH 19B"] },
+        { "label": "MATH 20-series (Honors)", "courses": ["MATH 20A", "MATH 20B"] }
+      ],
+      "description": "Choose one calculus sequence: MATH 19A+19B or MATH 20A+20B."
+    },
+    {
+      "id": "MATH_LIN_ALG",
+      "name": "Linear Algebra / Multivariate Calculus",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Engineering Math (AM)", "courses": ["AM 10", "AM 30"] },
+        { "label": "Pure Math (MATH)", "courses": ["MATH 21", "MATH 23A"] }
+      ],
+      "description": "Choose one sequence: AM 10 + AM 30 or MATH 21 + MATH 23A."
+    },
+    {
+      "id": "LD_CS_CORE",
+      "name": "Lower Division CS Core",
+      "type": "all_required",
+      "courses": ["CSE 12", "CSE 13S", "CSE 16", "CSE 20", "CSE 30", "CSE 40", "ECE 30"],
+      "description": "All lower-division CS and ECE core courses are required."
+    },
+    {
+      "id": "UD_CS_CORE",
+      "name": "Upper Division CS Core",
+      "type": "all_required",
+      "courses": ["CSE 101", "CSE 101M", "CSE 102", "CSE 103", "CSE 114A", "CSE 120", "CSE 130"],
+      "description": "All upper-division CS core courses are required."
+    },
+    {
+      "id": "STATS",
+      "name": "Probability and Statistics",
+      "type": "pick_one",
+      "courses": ["CSE 107", "STAT 131"],
+      "description": "Choose one probability/statistics course."
+    },
+    {
+      "id": "PHYSICS",
+      "name": "Physics Sequence",
+      "type": "choose_group",
+      "groups": [
+        { "label": "PHYS 5A + 5B", "courses": ["PHYS 5A", "PHYS 5B"] },
+        { "label": "PHYS 5A + 5C", "courses": ["PHYS 5A", "PHYS 5C"] },
+        { "label": "PHYS 6A + 6B", "courses": ["PHYS 6A", "PHYS 6B"] },
+        { "label": "PHYS 6A + 6C", "courses": ["PHYS 6A", "PHYS 6C"] }
+      ],
+      "description": "Choose one physics combination. Associated labs are required for enrollment but do not count toward major requirements."
+    },
+    {
+      "id": "DC",
+      "name": "Disciplinary Communication (DC)",
+      "type": "pick_one",
+      "courses": ["CSE 115A", "CSE 185E", "CSE 185S", "CSE 195"],
+      "description": "Complete one DC course. CSE 195 can satisfy DC OR an Upper Division Elective, but not both. DC courses cannot be used to satisfy Upper Division Electives (except CSE 195).",
+      "note": "DC courses cannot double-count as upper-division electives, except CSE 195 which can satisfy DC OR an elective but not both."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Capstone / Comprehensive Requirement",
+      "type": "pick_one",
+      "courses": [
+        "CSE 110B", "CSE 115C", "CSE 115D", "CSE 121", "CSE 134",
+        "CSE 138", "CSE 140", "CSE 143", "CSE 144", "CSE 145",
+        "CSE 156/L", "CSE 157", "CSE 160", "CSE 161/L", "CSE 162/L",
+        "CSE 163", "CSE 168", "CSE 181", "CSE 183", "CSE 184",
+        "CSE 187", "CMPM 172"
+      ],
+      "description": "Complete one capstone course or senior thesis. The capstone course can count toward 1 of the 4 required upper division electives. Many capstone courses require additional prerequisites not already in major requirements.",
+      "note": "The capstone course can double-count as one of the 4 upper-division electives."
+    },
+    {
+      "id": "UD_ELECTIVE",
+      "name": "Upper Division Electives",
+      "type": "pick_n",
+      "n": 4,
+      "courses": [
+        "CSE 110B", "CSE 115C", "CSE 115D", "CSE 121", "CSE 134",
+        "CSE 138", "CSE 140", "CSE 143", "CSE 144", "CSE 145",
+        "CSE 156/L", "CSE 157", "CSE 160", "CSE 161/L", "CSE 162/L",
+        "CSE 163", "CSE 168", "CSE 181", "CSE 183", "CSE 184",
+        "CSE 187", "CSE 195",
+        "CMPM 120", "CMPM 131", "CMPM 146", "CMPM 163", "CMPM 164/L",
+        "CMPM 171", "CMPM 172",
+        "AM 114", "AM 147", "AM 148", "AM 160",
+        "MATH 110", "MATH 115", "MATH 116", "MATH 117", "MATH 118",
+        "MATH 134", "MATH 145/L", "MATH 148", "MATH 160", "MATH 161",
+        "STAT 132"
+      ],
+      "description": "Choose 4 (or more) upper-division CSE courses (100-189), or CSE 195, or courses from the Computational Media electives list. Up to 2 may be replaced by upper-division mathematics electives from the approved list. CSE 115A, CSE 185S, and CSE 185E cannot satisfy an elective requirement.",
+      "note": "Up to 2 of the 4 electives may be math courses. CSE 115A, CSE 185S, CSE 185E cannot be used here."
+    }
+  ]
+}

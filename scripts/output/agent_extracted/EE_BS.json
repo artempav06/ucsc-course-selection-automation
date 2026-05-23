@@ -1,0 +1,99 @@
+{
+  "id": "EE_BS",
+  "name": "Electrical Engineering B.S.",
+  "pdfUrl": "https://undergrad.engineering.ucsc.edu/files/2025/09/EE_25-26.pdf",
+  "totalUnitsRequired": 180,
+  "minUpperDivUnits": 60,
+  "minGPA": 2.0,
+  "majorGPA": 2.5,
+  "categories": [
+    {
+      "id": "CALCULUS",
+      "name": "Calculus",
+      "type": "all_required",
+      "courses": ["MATH 19A", "MATH 19B"],
+      "description": "Required calculus sequence for all EE students."
+    },
+    {
+      "id": "MULTIVARIATE_CALC",
+      "name": "Multivariate/Vector Calculus",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Engineering Math (AM 30 + AM 100)", "courses": ["AM 30", "AM 100"] },
+        { "label": "Pure Math (MATH 23A + MATH 23B)", "courses": ["MATH 23A", "MATH 23B"] }
+      ],
+      "description": "Choose one multivariate/vector calculus sequence. AM 30 is Multivariate Calculus for Engineers; AM 100 is Mathematical Methods for Engineers. MATH 23A/23B is Vector Calculus I and II."
+    },
+    {
+      "id": "LINEAR_ALG_DIFF_EQ",
+      "name": "Linear Algebra & Differential Equations",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Applied Math (AM 10 + AM 20)", "courses": ["AM 10", "AM 20"] },
+        { "label": "Pure Math (MATH 21 + MATH 24)", "courses": ["MATH 21", "MATH 24"] }
+      ],
+      "description": "Choose one linear algebra and differential equations sequence. AM 10/20 preferred for EE majors."
+    },
+    {
+      "id": "STATS",
+      "name": "Probability & Statistics",
+      "type": "pick_one",
+      "courses": ["STAT 131", "CSE 107"],
+      "description": "Choose one probability/statistics course. Note: CSE 16 is NOT a major requirement for EE."
+    },
+    {
+      "id": "PHYSICS",
+      "name": "Physics",
+      "type": "all_required",
+      "courses": ["PHYS 5A/L", "PHYS 5B/M", "PHYS 5C/N", "PHYS 5D"],
+      "description": "Required physics sequence. PHYS 15A may substitute for PHYS 5A/L; PHYS 15C may substitute for PHYS 5C/N (honors alternatives; consult BE advising)."
+    },
+    {
+      "id": "LD_ENGINEERING",
+      "name": "Lower Division Engineering & Programming",
+      "type": "all_required",
+      "courses": ["CSE 20", "CSE 12", "ECE 13", "ECE 80T"],
+      "description": "Required lower-division courses. CSE 20 is Beginning Programming in Python (required prereq for ECE 13). CSE 12 is Computer Systems and Assembly Language. ECE 13 is Computer Systems and C Programming. ECE 80T is waived for transfer students. CSE 30 is recommended but not required."
+    },
+    {
+      "id": "UD_EE_CORE",
+      "name": "Upper Division EE Core",
+      "type": "all_required",
+      "courses": ["ECE 101/L", "ECE 102/L", "ECE 103/L", "ECE 135/L", "ECE 151", "ECE 171/L", "CSE 100/L"],
+      "description": "Required upper-division electrical engineering and logic design courses."
+    },
+    {
+      "id": "DESIGN_ELECTIVE",
+      "name": "Design Elective",
+      "type": "pick_one",
+      "courses": ["ECE 118", "ECE 121", "ECE 157/L", "ECE 167", "ECE 173"],
+      "description": "One of the four concentration electives must be a design elective, chosen from this list. Must be taken before ECE 129A."
+    },
+    {
+      "id": "CONCENTRATION_ELECTIVES",
+      "name": "Concentration Electives",
+      "type": "pick_n",
+      "n": 3,
+      "courses": [
+        "ECE 104", "ECE 110", "ECE 115", "ECE 118", "ECE 121",
+        "ECE 122A", "ECE 122B", "ECE 130/L", "ECE 136", "ECE 141",
+        "ECE 145", "ECE 149", "ECE 152", "ECE 153", "ECE 157/L",
+        "ECE 163", "ECE 167", "ECE 169", "ECE 170", "ECE 172",
+        "ECE 173", "ECE 174", "ECE 175/L", "ECE 176/L", "ECE 177/L",
+        "ECE 178", "ECE 179", "ECE 180J", "ECE 181J", "ECE 183",
+        "ECE 185"
+      ],
+      "description": "Choose 3 additional concentration elective courses (minimum 3 from one track). Tracks: Electronics/Optics (ECE 104, 115, 118, 121, 130/L, 136, 141, 145, 149, 157/L, 163, 167, 169, 172, 173, 175/L, 176/L, 177/L, 178, 180J, 183, 185) or Communications/Signals/Systems (ECE 118, 130/L, 136, 141, 145, 149, 152, 153, 163, 169, 183). Graduate-level courses may be used with department approval."
+    },
+    {
+      "id": "CAPSTONE",
+      "name": "Comprehensive Requirement (Capstone)",
+      "type": "choose_group",
+      "groups": [
+        { "label": "Capstone Sequence (ECE 129A/B/C)", "courses": ["ECE 129A", "ECE 129B", "ECE 129C"] },
+        { "label": "Capstone + Senior Thesis", "courses": ["ECE 129A", "ECE 195"] }
+      ],
+      "description": "Complete capstone requirement: either ECE 129A/B/C sequence, or ECE 129A plus ECE 195 (Senior Thesis, 10 units, requires department approval). Prerequisites: ECE 171/L, CSE 100/L, and at least one design elective."
+    }
+  ]
+}

@@ -1,0 +1,3315 @@
+[
+  {
+    "code": "CSE 3",
+    "title": "Computing Technology in a Changing Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-T",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to computer hardware, software, and networking, with an emphasis on how these technologies impact society. Students learn key technical concepts and terminology and learn to modify and create programming code through making webpages and simple games. Students also gain hands-on experience using emerging technological tools such as 3D printing, laser-cutting, or 3D modeling software in virtual reality headsets. Course covers the history of computing, the early days of the internet, hardware fundamentals, accessibility tools, professional programming practices, open-source software, intellectual property concerns, networking, digital privacy, and cybersecurity. Designed for students with only basic, user-level computer experience. (Formerly offered as Personal Computer Concepts: Software and Hardware.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-3",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 5J",
+    "title": "Introduction to Programming in Java",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "MF",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces programming in Java for students who have no prior programming experience. Students learn programming and documentation skills, as well as algorithmic problem-solving, and programming methodologies. Introduces computers, compilers, and editors. Students write small to medium-sized programs. This course and CSE 5C and CSE 5P cover similar concepts, but use different programming languages. Because CSE 5J followed by CSE 11 is a two-quarter alternative to the accelerated course CSE 12A and CSE 12L, engineering majors and students planning on continuing the programming sequence are encouraged to take CSE 5J rather than CSE 5C or CSE 5P. Students may not receive credit for CSE 5J taken concurrently or subsequently to CSE 12A, CSE 12B, or Computer Engineering 13. (Formerly CMPS 5J.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-5j",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 10",
+    "title": "Introduction to Computer Science",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "MF",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "An overview of the theory, foundations, and practice of computer science with emphasis on what computers can and cannot do, now and in the future. Topics include algorithms and data, correctness and efficiency of algorithms, hardware, programming languages, limitations of computation, applications, and social issues. No programming skills are required as a prerequisite. Major concepts and open problems in computer science are presented without reliance on sophisticated mathematical tools. Students cannot receive credit for this course after completing CSE 15. (Formerly CMPS 10.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-10",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 12",
+    "title": "Computer Systems and Assembly Language and Lab",
+    "units": 7,
+    "division": "lower",
+    "prereqs": [
+      [
+        "CSE 5J",
+        "CSE 20",
+        "CSE 30",
+        "BME 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to computer systems and assembly language and how computers compute in hardware and software. Topics include digital logic, number systems, data structures, compiling/assembly process, basics of the system software, and computer architecture. Course is 7 credits with integrated laboratories illustrating concepts covered in lecture. Note that CSE 12 assumes some programming experience. Students can show programming experience by taking one of the courses listed in the prerequisite list below or by taking the CSE python Test-out Exam: https://undergrad.soe.ucsc.edu/cse-20-testout-exam (Formerly CSE 12 and CSE 12L)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-12",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 13S",
+    "title": "Computer Systems and C Programming",
+    "units": 7,
+    "division": "lower",
+    "prereqs": [
+      [
+        "CSE 12",
+        "BME 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Focuses on C programming, command line, shell programming, editors, debuggers, source code control, and other tools. Examines basic computer systems, algorithm design, and development, data types, and program structures. Develops understanding of process model, compile-link-execute build cycle, language-machine interface, memory, and data representation. Students cannot receive credit for both CSE 13S and CSE 13E. Course is 7 credits with integrated laboratory.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-13s",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 16",
+    "title": "Applied Discrete Mathematics",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [
+      [
+        "MATH 19A",
+        "MATH 20A",
+        "MATH 19B",
+        "MATH 20B",
+        "MATH 11B",
+        "AM 11B",
+        "AM 15B",
+        "ECON 11B"
+      ]
+    ],
+    "ge": "MF",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to applications of discrete mathematical systems. Topics include sets, functions, relations, graphs, predicate calculus, mathematical proof methods (induction, contraposition, contradiction), counting methods (permutations, combinations), and recurrences. Examples are drawn from computer science and computer engineering. Knowledge of computer programming is useful before taking this course. Students who do not have prior programming experience are strongly recommended to take CSE 20 or CSE 30 before taking this course.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-16",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 20",
+    "title": "Beginning Programming in Python",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [
+      [
+        "CSE 30"
+      ]
+    ],
+    "ge": "MF",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides students with Python programming skills and the ability to design programs and read Python code. Topics include data types, control flow, methods and advanced functions, built-in data structures, and introduction to OOP. No prior programming experience is required. Students may not receive credit for CSE 20 after receiving credit for CSE 30 . Students with prior programming experience (especially in Python) are encouraged to take CSE Testout Exam to be evaluated for their readiness to take CSE 30 directly: https://undergrad.soe.ucsc.edu/cse-20-testout-exam.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-20",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 30",
+    "title": "Programming Abstractions: Python",
+    "units": 7,
+    "division": "lower",
+    "prereqs": [
+      [
+        "CSE 20",
+        "BME 160"
+      ],
+      [
+        "MATH 3",
+        "MATH 11A",
+        "MATH 19A",
+        "MATH 20A",
+        "AM 3",
+        "AM 11A",
+        "ECON 11A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to software development in Python focusing on structuring software in terms of objects endowed with primitive operations. Introduces concepts and techniques via a sequence of concrete case studies. Coursework consists of programming assignments and a final examination. Note that CSE 30 assumes some Python experience, students trained in a different language should self-study Python to prepare for CSE 30 . See CSE Testout Exam for resources and further information.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-30",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 40",
+    "title": "Machine Learning Basics: Data Analysis and Empirical Methods",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [
+      [
+        "MATH 19B",
+        "MATH 20B",
+        "CSE 30"
+      ]
+    ],
+    "ge": "SR",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to the basic mathematical concepts and programming abstractions required for modern machine learning, data science, and empirical science. The mathematical foundations include basic probability, linear algebra, and optimization. The programming abstractions include data manipulation and visualization. The principles of empirical analysis, evaluation, critique and reproducibility are emphasized. Mathematical and programming abstractions are grounded in empirical studies including data-driven evidential reasoning, predictive modeling, and causal analysis.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-40",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 80A",
+    "title": "Universal Access: Disability, Technology, and Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-T",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Overview of human-centered technology and of its potential for increasing the quality of life and independence of disabled individuals. A substantial portion of the course is devoted to studying physical, psychological, and psychosocial aspects of disability. Topics include: diversity and integration, legislation, accessibility, and universal design. (Formerly Computer Engineering 80A.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-80a",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 80L",
+    "title": "Social Data Analytics and Visualization",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "SR",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Course examines: social data analytics--veracity, consistency, uncertainty, volume; statistical computation--misuse, bias, dispersion, correlation, regressions, differential scales, normal distributions, factor and cluster analysis, extrapolation, inference, simple programming; visual representations--communication, critique and design of infographics; applications--environment, energy, economics, education, empowerment. (Formerly Computer Science 80L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-80l",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 80N",
+    "title": "Introduction to Networking and the Internet",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-T",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to the evolution, technological basis, and services of the Internet, with descriptions of its underlying communications structure, routing algorithms, peer-to-peer hierarchy, reliability, and packet switching. Network security, mail, multimedia and data compression issues, HTML, and digital images. Students who have completed CSE 150 cannot receive credit for this course. (Formerly Computer Engineering 80N.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-80n",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 80S",
+    "title": "Social Networks",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [
+      [
+        "MATH 3",
+        "AM 3",
+        "AM 11B"
+      ]
+    ],
+    "ge": "SR",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to social networks and game theory. Topics include the structure of social networks; the world wide web; the flow of information and behavior through networks; and the principles behind modern web search and search-ad placement. (Formerly Computer Science 17.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-80s",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 94",
+    "title": "Group Tutorial",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-94",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 94F",
+    "title": "Group Tutorial",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides a means for a small group of students to study a particular topic in consultation with a faculty sponsor. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-94f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 99",
+    "title": "Tutorial",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-99",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 99F",
+    "title": "Tutorial",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-99f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 100",
+    "title": "Logic Design",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Boolean algebra, logic minimization, finite-state machine design, sequential circuits, common logic elements, programmable logic devices, and an introduction to system level design. The electrical behavior of circuits including three state outputs, propagation delay, logic levels, and fanout.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-100",
+    "labCoreq": "CSE 100L",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 100L",
+    "title": "Logic Design Laboratory",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Laboratory sequence illustrating topics covered in course 100. Two 2-hour laboratory sessions per week. Weekly laboratory assignments which require the use of the oscilloscopes, TTL circuits, computer-aided design and simulation tools, and programmable logic.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-100l",
+    "labCoreq": "CSE 100",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 101",
+    "title": "Introduction to Data Structures and Algorithms",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12",
+        "BME 160"
+      ],
+      [
+        "CSE 13E",
+        "ECE 13",
+        "CSE 13S"
+      ],
+      [
+        "CSE 16"
+      ],
+      [
+        "CSE 30"
+      ],
+      [
+        "MATH 11B",
+        "MATH 19B",
+        "MATH 20B",
+        "AM 11B",
+        "ECON 11B"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to abstract data types and basics of algorithms. Linked lists, stacks, queues, hash tables, trees, heaps, and graphs will be covered. Students will also be taught how to derive big-Oh analysis of simple algorithms. All assignments will be in C/C++. (Formerly Computer Science 101 Algorithms and Abstract Data Types.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 101M",
+    "title": "Mathematical Thinking for Computer Science",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to problem-solving and proof techniques for computer science: modeling CS problems using mathematical concepts; solving problems and inventing mathematical arguments; writing rigorous, understandable proofs using LaTeX. Applications in all CS areas with focus on analyzing algorithms, programs, and protocols.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101m",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 101P",
+    "title": "Introduction to Data Structures and Algorithms in Python",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 16"
+      ],
+      [
+        "BME 160",
+        "CSE 20"
+      ],
+      [
+        "CSE 30"
+      ],
+      [
+        "MATH 11B",
+        "MATH 19B",
+        "MATH 20B",
+        "AM 11B"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to abstract data types and basics of algorithms. Linked lists, stacks, queues, hash tables, trees, heaps, and graphs are covered. Students taught how to derive big-Oh analysis of simple algorithms. All assignments are in Python. Note that CSE 101P assumes Python experience, students trained in a different language should self-study Python to prepare for CSE 101P . See CSE 20 Testout Exam for resources and further information. Students cannot receive credit for this course and CSE 101 . Students intending to complete the Computer Science B.S. should enroll in course CSE 101 .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101p",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to computer science B.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 102",
+    "title": "Introduction to Analysis of Algorithms",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101M"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Methods for the systematic construction and mathematical analysis of algorithms. Order notation, the RAM model of computation, lower bounds, and recurrence relations are covered. The algorithm design techniques include divide-and-conquer, branch and bound, and dynamic programming. Applications to combinatorial, graph, string, and geometric algorithms. (Formerly Computer Science 102.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-102",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 103",
+    "title": "Computational Models",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101M"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Various representations for regular languages, context-free grammars, normal forms, simple parsing, pumping lemmas, Turing machines, the Church-Turing thesis, intractable problems, the P-NP question. (Formerly CMPS 130.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-103",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 104",
+    "title": "Computability and Computational Complexity",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 103"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Turing machines, general phase-structure grammars, the Chomsky hierarchy, recursive functions, diagonalization, the Halting problem, computability and unsolvability, computational complexity, time and space bounds, NP-completeness with emphasis on reductions between problems from various areas. (Formerly CMPS 132.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-104",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 105",
+    "title": "Modern Algorithmic Toolbox",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101M",
+        "CSE 102"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Undergraduate course on the modern algorithmic toolbox, meant for undergraduate students with a strong mathematical background. Students need familiarity with discrete math, analysis of algorithms, basic analysis, probability theory, and graph theory. Class is aimed at students who want to learn more about the central ideas and algorithmic techniques that are used in modern data science applications. Class focuses on the theoretical underpinnings of these algorithms as well as their practical applications and implementation details.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-105",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 106",
+    "title": "Applied Graph Theory and Algorithms",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Basic concepts and algorithms are reviewed including trees, Eulerian and Hamiltonian graphs, and graph transversal. Algorithms are explored to solve problems in connectivity, routing, matching, and embedding of graphs. Graph theory and algorithms are developed around applications in computer engineering. (Formerly Computer Engineering 177.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-106",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 107",
+    "title": "Probability and Statistics for Engineers",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 16"
+      ],
+      [
+        "AM 30",
+        "MATH 22",
+        "MATH 23A"
+      ]
+    ],
+    "ge": "SR",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to fundamental tools of stochastic analysis. Probability, conditional probability; Bayes Theorem; random variables and transforms; independence; Bernnoulli trials. Statistics, inference from limited data; outcomes of repeated experiments; applications to design; assessment of relative frequency and probability; law of large numbers; precision of measurements. Elements of stochastic processes, Poisson processes; Markov chains. Students cannot receive credit for this course and Applied Mathematics and Statistics 131. (Formerly Computer Engineering 107.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-107",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 108",
+    "title": "Algorithmic Foundations of Cryptography",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Focuses on some of the foundational aspects of modern cryptography, namely, private and public key cryptography, digital signatures, pseudorandom generators and functions, message authentication codes, hash functions, and random oracles. Course also connects the formal concepts with some real-world applications, like RA, SSL, and bitcoin, exposing students to general concepts of probability theory, number theory, and rigorous proofs. (Formerly Computer Science 118.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-108",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment restricted to computer engineering and computer science majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 108C",
+    "title": "Computing on Encrypted Data",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 108",
+        "CSE 132"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to privacy-preserving computation. Students understand and learn how to build end-to-end privacy-preserving systems. Topics cover different areas of private computation, secure multiparty computation, (fully) homomorphic encryption, anonymous communication, oblivious RAM and oblivious computation, hardware enclaves, structural and searchable encryption, and cryptanalysis topics.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-108c",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 110A",
+    "title": "Fundamentals of Compiler Design I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ],
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "An introduction to the basic techniques used in compiler design. Topics include compiler structure, symbol tables, regular expressions and languages, finite automata, lexical analysis, context-free languages, LL(1), recursive descent, LALR(1), and LR(1) parsing; and attribute grammars as a model of syntax-directed translation. Students use compiler building tools to construct a working compiler. (Formerly Computer Science 104A.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-110a",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 110B",
+    "title": "Fundamentals of Compiler Design II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 110A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Advanced study of compiler implementation. Topics include compiler structure back end, run-time environments, storage management, garbage collection, register allocation, code generation, basic blocks, control flow, data flow, local and global optimization, interpretation, and machine-code generation. Students may not receive credit for this course and CSE 211. Taught in conjunction with CSE 211. (Formerly Computer Science 104B.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-110b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 111",
+    "title": "Advanced Programming",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 15",
+        "CSE 13S",
+        "CSE 13E",
+        "ECE 13",
+        "CSE 101"
+      ],
+      [
+        "CSE 15L",
+        "CMPM 35",
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "An introduction to object-oriented techniques of software development including data abstraction, inheritance, polymorphism, and object-oriented design. Extensive practice using a computer to solve problems, including construction of graphical user interfaces and a multithreaded client/server applications.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-111",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 112",
+    "title": "Comparative Programming Languages",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers several programming languages and compares styles, philosophy, and design principles. Principles underlying declarative, functional, and object-oriented programming styles are studied. Students write programs emphasizing each of these techniques. (Formerly Computer Science 112.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-112",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 113",
+    "title": "Parallel and Concurrent Programming",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ],
+      [
+        "CSE 101",
+        "CSE 120"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to parallel and concurrent programming. Topics include: types of parallel computers and programming platforms; design, implementation, and optimization of programs for parallel and multicore processors; basic and advanced programming techniques; performance analysis and load balancing; and selected parallel algorithms.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-113",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 114A",
+    "title": "Foundations of Programming Languages",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Problem solving emphasizing recursion, data abstraction, and higher-order functions. Introduction to types and type checking, modular programming, and reasoning about program correctness. (Formerly CSE 116, Introduction to Functional Programming.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-114a",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 114B",
+    "title": "Functional Programming",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 114A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "An in-depth study of the functional style of programming and functional abstraction, including the study of applicative functors and monads, and monadic parsers. (Formerly CSE 114.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-114b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to junior and senior computer science majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 115A",
+    "title": "Introduction to Software Engineering",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ],
+      [
+        "CSE 130"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Emphasizes the characteristics of well-engineered software systems. Topics include requirements analysis and specification, design, programming, verification and validation, maintenance, and project management. Practical and research methods are studied. Imparts an understanding of the steps used to effectively develop computer software. (Formerly Computer Science 115.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115a",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 115B",
+    "title": "Software Design Project",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 115A"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students in teams specify, design, construct, test, and document a complete software system in a specialized application domain. Class time is spent in technical discussions and ongoing design reviews. A formal presentation and demonstration of each project is required. An organizational meeting will be held during the preceding quarter. Projects may be drawn from industry and campus research groups. (Formerly Computer Science 116.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 115C",
+    "title": "Software Design Project II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 115B"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Continuation of CSE 116. Students work in teams to develop, test, document, and deploy a substantial software project. Teams give a formal presentation and demonstration of each project. (Formerly Computer Science 117.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115c",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 115D",
+    "title": "Software Design Project - Accelerated",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 115A"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Accelerated version of CSE 115B and CSE 115C . Students work in teams to develop, test, document and deploy a substantial software project. Each team gives a formal presentation and demonstration of their project. Students cannot receive credit for both CSE 115D and any part of the 115B-115C sequence.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115d",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 117",
+    "title": "Open Source Programming",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ],
+      [
+        "CSE 102",
+        "CSE 111",
+        "CSE 115A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Teaches the principles of open source software development. By participating in diverse projects, students experience the process of developing software in a distributed, community-centric environment. Students learn about the tools, processes, and soft skills that are essential in this context.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-117",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment restricted to School of Engineering majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 118",
+    "title": "Mobile Applications",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces the tools and techniques required to develop the sophisticated interactive mobile applications we use daily on our Android and iOS devices. Native (specific to Android or iOS devices) and cross-platform (designed to work on both Android and iOS) development is undertaken with deployment to device emulators and, optionally, personal devices. Ownership of an Android or iOS device is not required and confers no advantage. (Formerly CMPS 121.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-118",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 119",
+    "title": "Software for Society",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": "PE-T",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides experience with applying computing to social issues. Case studies on multiple issues. For example: privacy, copyright, voting, education, poverty, energy, activism. Team project in which students develop software to address a pre-identified need of a global or local non-profit. (Formerly Computer Science 119.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-119",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 120",
+    "title": "Computer Architecture",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ],
+      [
+        "CSE 13E",
+        "CSE 13S",
+        "ECE 13",
+        "CSE 15",
+        "CSE 15L",
+        "CSE 16"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to computer architecture including examples of current approaches and the effect of technology and software. Computer performance evaluation, basic combinatorial and sequential digital components, different instruction set architectures with a focus on the MIPS ISA and RISC paradigm. Evolution of CPU microarchitecture from single-cycle to multi-cycle pipelines, with overview of super-scalar, multiple-issue and VLIW. Memory system, cache, virtual memory and relationship between memory and performance. Evolution of PC system architecture. May include advanced topics, such as parallel processing, MIMD, and SIMD.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-120",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 121",
+    "title": "Embedded System Design",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 100"
+      ],
+      [
+        "CSE 100L"
+      ],
+      [
+        "CSE 13E",
+        "CSE 13S",
+        "ECE 13"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "The design and use of microprocessor-based embedded systems. Covers microprocessor and microcontroller architecture, programming techniques, bus and memory organization, DMA, timing issues, interrupts, peripheral devices, serial and parallel communication, and interfacing to analog and digital systems. (Formerly Microprocessor System Design, and formerly offered as two courses, CMPE 121 and CMPE 121L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-121",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 122",
+    "title": "Introduction to VLSI Digital System Design",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 100",
+        "CSE 100L",
+        "ECE 101"
+      ],
+      [
+        "ECE 101L"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces very large scale integrated (VLSI) custom integrated circuits. Topics include: semiconductor manufacturing, logic families, field-effect transistors (FETs), interconnect models, simulation, and circuits. Introduces the design flow from logic design to layout with a focus on high performance and low power. Students cannot receive credit for this course and CSE 222A . (Formerly Computer Engineering 122.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-122",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 123A",
+    "title": "Engineering Design Project I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 121"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "First of a two-course sequence that is the culmination of the engineering program. Students apply knowledge and skills gained in elective track to complete a major design project. Students complete research, specification, planning, and procurement for a substantial project. Includes technical discussions, design reviews, and formal presentations; engineering design cycle, engineering teams, and professional practices. Formal technical specification of the approved project is presented to faculty.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-123a",
+    "labCoreq": "CSE 185E",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 123B",
+    "title": "Engineering Design Project II",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 123A",
+        "CSE 185E",
+        "CSE 185S"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Second of two-course sequence in engineering system design. Students fully implement and test system designed and specified in CSE 123A . Formal written report, oral presentation, and demonstration of successful project to review panel of engineering faculty required.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-123b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 125",
+    "title": "Logic Design with Verilog",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 100"
+      ],
+      [
+        "CSE 100L"
+      ],
+      [
+        "CSE 120"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Verilog digital logic design with emphasis on ASIC and FPGA design. Students design and verify large-scale systems. Assignments and project use the Verilog Hardware Description Language with emphasis on verification and high-frequency ASIC/FPGA targets. May be taught in conjunction with CSE 225 . Students cannot receive credit for both courses.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-125",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 127A",
+    "title": "Chip Design Capstone I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 125",
+        "CSE 225"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "First of a two-course sequence focused on design specification, RTL development, and functional verification. Students work in teams to define and document a chip project, develop synthesizable RTL, and build testbenches. Emphasizes project planning, design methodology, and collaborative engineering practices.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-127a",
+    "labCoreq": "CSE 122",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 127B",
+    "title": "Chip Design Capstone II",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 127A"
+      ],
+      [
+        "CSE 122",
+        "CSE 222A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Second of a two-course sequence in VLSI system design. Students implement and validate the chip projects specified in the first course, focusing on synthesis, place-and-route, IP integration, timing closure, and sign-off. Emphasis is placed on hands-on design work, debugging, and meeting tape-out requirements. The course culminates in a formal report and public oral presentation. Chips may be fabricated depending on funds available.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-127b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 129A",
+    "title": "Capstone Project I",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "First of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this first course, students complete the specification and planning for a substantial project. Topics covered: engineering design cycle, engineering teams, and professional practices. (Formerly Computer Engineering 129A.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-129a",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to bioengineering, biomolecular engineering and bioinformatics, computer engineering, and robotics engineering majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 129B",
+    "title": "Capstone Project II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Second of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this second course, students complete the research and procurement for a substantial project and a preliminary implementation. Prerequisite(s): CSE 121 , CSE 121L, and CSE 129A . Previous or concurrent enrollment in CSE 185. Enrollment by permission of instructor.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-129b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 129C",
+    "title": "Capstone Project III",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Third of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this third course, students work in teams to complete the project specified and advanced in the first two courses. A formal written report, oral presentation, and demonstration of the successful project to a review panel of engineering faculty is required. Prerequisite(s): CSE 129B and CSE 185. Enrollment by permission of instructor.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-129c",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 130",
+    "title": "Principles of Computer Systems Design",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12"
+      ],
+      [
+        "CSE 101",
+        "CSE 15",
+        "CSE 15L"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers the principles governing computer-systems design and complexity; familiarity with memory, storage, and networking; concurrency and synchronization; layering (abstraction and modularity); naming; client-server and virtualized system models; and performance. Requires significant programming projects demonstrating mastery of these concepts.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-130",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 132",
+    "title": "Computer Security",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 130",
+        "CSE 131"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to computer security (including selected topics in network security). Access control. Security in programming languages. Basic cryptography. Security protocols. (Formerly CMPS 122.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-132",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment restricted to School of Engineering majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 134",
+    "title": "Embedded Operating Systems",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 120"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Detailed exploration of the internal design of an embedded operating systems kernel. Covers kernel structure and organization, device drivers, I/O systems, file systems, memory management, and security. Students complete significant programming projects that extend or modify existing operating systems. (Formerly Computer Engineering 114.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-134",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 138",
+    "title": "Distributed Systems",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 130",
+        "CSE 131"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers topics in distributed computing including communication, naming, synchronization, consistency and replication, fault tolerance, and security. Examples drawn from peer-to-peer systems, online gaming, the World Wide Web; other systems also used to illustrate approaches to these topics. Students implement simple distributed systems over the course of the quarter. (Formerly CMPS 128, Distributed Systems: File Sharing, Online Gaming, and More.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-138",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 140",
+    "title": "Artificial Intelligence",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P"
+      ],
+      [
+        "CSE 40",
+        "STAT 132"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to the contemporary concepts and techniques of artificial intelligence, including any or all of: machine perception and inference, machine learning, optimization problems, computational methods and models of search, game playing and theorem proving. Emphasis may be on any formal method of perceiving, learning, reasoning, and problem solving which proves to be effective. This includes both symbolic and neural network approaches to artificial intelligence. Issues discussed include symbolic versus nonsymbolic methods, local versus global methods, hierarchical organization and control, and brain modeling versus engineering approaches. Lisp or Prolog may be introduced. Involves one major project or regular programming assignments.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-140",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 142",
+    "title": "Machine Learning",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 40",
+        "STAT 132"
+      ],
+      [
+        "CSE 101",
+        "CSE 101P"
+      ],
+      [
+        "AM 30",
+        "MATH 22",
+        "MATH 23A"
+      ],
+      [
+        "STAT 131",
+        "CSE 107"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to machine learning algorithms and their applications. Topics include classification learning, density estimation and Bayesian learning regression, and online learning. Provides introduction to standard learning methods such as neural networks, decision trees, boosting, and nearest neighbor techniques.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-142",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 143",
+    "title": "Introduction to Natural Language Processing",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P",
+        "CSE 107",
+        "STAT 131"
+      ],
+      [
+        "CSE 40"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces the theory and practice of natural language processing (NLP)--the creation of computer programs that can understand, generate, and learn natural language. Introduces the three major subfields of NLP: syntax (the structure of a sentence); semantics (the explicit meaning of a single sentence); and pragmatics (the implicit meaning of a sentence when it is used in a specific discourse). Projects focus on the techniques useful for a particular application area, alternating in different years. Project application areas include information extraction, narrative understanding, sentiment analysis, dialogue systems, and question answering. (Formerly CMPS 143.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-143",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 144",
+    "title": "Applied Machine Learning: Deep Learning",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 40",
+        "STAT 132"
+      ],
+      [
+        "CSE 101",
+        "CSE 101P"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides a practical and project-oriented introduction to deep learning techniques. Starts with a review of basic elements of machine learning: training and testing, loss function, gradient descent, linear regression, and logistic regression. Moves on to common deep learning models: feedforward networks, convolutional networks for image recognition, recurrent networks and LSTM for temporal and sequential data, attention models and transformers. Some practical concepts for deep learning, including how to find model parameters, how to train large scale models, techniques for regularization and avoid overfitting, are also covered. A very basic introduction to more complex techniques such as deep reinforcement learning, neural symbolic models and diffusion models is provided in week 9. Selected student teams present their course projects in the last week. (Formerly offered as Applied Machine Learning.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-144",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 145",
+    "title": "Introduction to Data Mining",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 15",
+        "CSE 15L",
+        "CSE 30",
+        "CSE 13S"
+      ],
+      [
+        "AM 30",
+        "MATH 22",
+        "MATH 23A"
+      ],
+      [
+        "STAT 5",
+        "CSE 107",
+        "STAT 131"
+      ],
+      [
+        "AM 10",
+        "MATH 21"
+      ],
+      [
+        "CSE 16",
+        "ECON 113"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers the techniques, algorithms, and applications of data mining, including data preprocessing, data exploration, classification, clustering, mining text, and sequential and social data. (Formerly TIM 145.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-145",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 146",
+    "title": "Ethics and Algorithms",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ],
+      [
+        "CSE 107",
+        "STAT 131"
+      ],
+      [
+        "CSE 40",
+        "CSE 142"
+      ],
+      [
+        "CSE 140"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides an introduction to data-driven and algorithmic decision making, and ethical frameworks for evaluating automated systems. Emphasis on algorithmic literacy, critical analysis, and fundamental limitations of automated decision making. Covers concepts including predictive and causal modeling. Discusses bias, fairness, interpretability, privacy, and accountability. Finally, discusses notions of autonomy and algorithmic auditing.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-146",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 150",
+    "title": "Introduction to Computer Networks",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 16"
+      ],
+      [
+        "CSE 12"
+      ],
+      [
+        "CSE 30",
+        "CSE 15",
+        "CSE 15L"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Addresses issues arising in organizing communications among autonomous computers. Network models and conceptual layers; Internet-working; characteristics of transmission media; switching techniques (packet switching, circuit switching, cell switching); medium access control (MAC) protocols and local area networks; error-control strategies and link-level protocols; routing algorithms for bridges and routers; congestion control mechanisms; transport protocols; application of concepts to practical wireless and wireline networks and standard protocol architectures. Lab component provides students with hands-on experience in computer networks. Students who have completed CSE 80N can take this course for credit.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-150",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 151",
+    "title": "Advanced Computer Networks",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 150"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides an in-depth coverage of fundamental topics introduced in course 150 including routing, transport, and internetworking. Also introduces advanced concepts not covered in CSE 150 including wireless, application-layer services, security, etc. (Formerly Computer Engineering 151.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-151",
+    "labCoreq": "CSE 151L",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 151L",
+    "title": "Advanced Computer Networks Laboratory",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 150"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Laboratory illustrating the concepts covered in CSE 151 : provides students with hands-on experience in computer networks. (Formerly Computer Engineering 151L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-151l",
+    "labCoreq": "CSE 151",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 152",
+    "title": "Principles of Computer Communication",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 107",
+        "CSE 150"
+      ],
+      [
+        "CSE 150L"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Course focuses on the design and analysis of protocols for computer communication. Topics include: the safety, liveliness, and performance of communication protocols for medium access control (MAC); link control; routing and switching; multicasting; and end-to-end transport. Students cannot receive credit for this course and CSE 250B .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-152",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 153",
+    "title": "Network Security and Privacy",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 80N",
+        "CSE 150"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Comprehensive introduction to security and privacy in networked systems. Students develop experience in network protocol security, programmable network security, large scale network attacks and defenses, and privacy-enhancing technologies.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-153",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 156",
+    "title": "Network Programming",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 150"
+      ],
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Methods and tools used for network programming. Topics include: operating system (OS) support for network protocols; inter-process communication (IPC) facilities, such as pipes, sockets, and remote procedure call (RPC); design of client and server sides of network applications; network security; and programming projects. (Formerly Computer Engineering 156.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-156",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 156L",
+    "title": "Network Programming Laboratory",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 150"
+      ],
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Laboratory sequence illustrating concepts taught in CSE 156 . Students learn use of network programming tools and methods via programming exercises. (Formerly Computer Engineering 156L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-156l",
+    "labCoreq": "CSE 156",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 157",
+    "title": "Internet of Things",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 121"
+      ],
+      [
+        "CSE 150"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces the key concepts and techniques in the design of Internet of Things (IoT). Topics include dominant architectures and protocols for IoT, wireless infrastructure for IoT, hardware and software development methodologies, embedded software design for IoT, cloud software for IoT, and network and system security. Students work in teams on a project to design, prototype, and test a complete IoT system.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-157",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 160",
+    "title": "Introduction to Computer Graphics",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "MATH 21",
+        "AM 10"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces techniques of modeling, transformation, and rendering for computer-generated imagery. Topics: 2D/3D primitives, projections, matrix composition, and shading algorithms. Programming assignments and major project required. Students cannot receive credit for both this course and CSE 260 in quarters when they are offered concurrently. Mastery of materials in the prerequisite courses will be verified with a quiz or assignment during the first two weeks of the course. Lab component will help with gaining additional competence with a number of important software development tools, graphics libraries, and graphical user interfaces. Topics include OpenGL, WebGL, rubberbanding, picking, sliders, buttons, dialog, event handling, double buffering, lighting, shading, materials, and textures. The topic list may be updated to reflect technological changes. (Formerly Computer Science 160.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-160",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 161",
+    "title": "Introduction to Data Visualization",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Concepts and methods for data analysis, information and scientific visualization, and effective communication of technical data. Topics include: mathematical foundations; scalar, vector, and tensor field visualization; multivariate visualization; and tree and graph visualizations. Applications are drawn from social-network analysis; environmental and space science; and medical imaging. Evaluation based on examinations, programming exercises, and a project. (Formerly CMPS 161.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-161",
+    "labCoreq": "CSE 161L",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 161L",
+    "title": "Data Visualization Laboratory",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 161"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Complements CSE 161 . Students gain additional competence with a number of important software development tools and techniques. Included are Paraview, Visualization Toolkit (VTK), and Insight Toolkit (ITK). Students get hands-on experience with designing transfer functions, isosurfacing, direct volume rendering, vector-field visualization techniques, as well as methods for dealing with non-spatial data. (Formerly CMPS 161L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-161l",
+    "labCoreq": "CSE 161",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 162",
+    "title": "Advanced Computer Graphics and Animation",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers concepts and methods for modeling and rendering static and dynamic scenes Topics include: mathematical foundations (e.g., splines and numerical integration; global illumination models; texture mapping; morphing; physically based animation; behavioral animations; and procedural animations. Evaluation based on examinations, programming exercises, and a project. (Formerly CMPS 162.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-162",
+    "labCoreq": "CSE 162L",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 162L",
+    "title": "Advanced Computer Graphics and Animation Laboratory",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 162"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Complements CSE 162. Students gain additional competence in a hands-on computational laboratory setting. Representative examples include topics, such as interactive curve and surface design; shaders for advanced effects; crowd and behavioral animation; experiments with particle systems; facial animation; and motion and planning. (Formerly CMPS 162L.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-162l",
+    "labCoreq": "CSE 162",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 163",
+    "title": "Data Programming for Visualization",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Presents the basics of open-source programming tools to perform data analysis and create interactive visualizations and maps for the web, data integrity and scraping, statistical computation, simple and novel visualizations, and geomapping. The examples are drawn from social science, public policy, and data journalism. (Formerly CMPS 165.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-163",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 164",
+    "title": "Computer Vision",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 144"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduces both the basic computer vision concepts and the advanced deep learning methods for computer vision. Topics include fundamentals of image formation, camera imaging geometry, early-/mid-/high-level vision, basics of machine learning and convolutional neural networks for vision.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-164",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 165",
+    "title": "Human-Computer Interaction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 30"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Theory and hands-on practice to understand what makes user interfaces usable and accessible to diverse individuals. Covers human senses and memory and their design implications, requirement solicitation, user-centered design and prototyping techniques, and expert and user evaluations. Interdisciplinary course for social science and engineering majors. Students cannot receive credit for this course and CSE 265 or DANM 231.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-165",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 167",
+    "title": "Mobile Sensing and Interaction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 13S",
+        "CSE 13E",
+        "CSE 15"
+      ],
+      [
+        "CSE 15L",
+        "CSE 13S",
+        "CSE 13E"
+      ],
+      [
+        "PHYS 5A",
+        "CSE 13S",
+        "CSE 13E"
+      ],
+      [
+        "AM 10",
+        "CSE 13S",
+        "CSE 13E"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides hands-on knowledge and experience with modern mobile computing platforms for sensing and interactions tasks. Students learn how to create usable applications on a sensor-laden, mobile computing platform with adequate level of user interface.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-167",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 168",
+    "title": "Introduction to Augmented Reality and Virtual Reality",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 160",
+        "CSE 118",
+        "CSE 167"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Covers the concepts and methods needed to develop augmented reality (AR) and virtual reality (VR) applications. Topics include 3D modeling, graphics rendering, image compositing, occlusion handling, sensors, computer vision and image analysis, toolkits for AR, different display options, dynamics, interaction, and navigation.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-168",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 180",
+    "title": "Database Systems I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to the concepts, approaches, tools, and methodology of database design. Covers the entity-relationship model, the relational model, relational algebra, relational calculus, commercial languages (such as SQL and QBE), functional dependencies, normal forms, and design theory. Other topics may include knowledge-bases, constraint databases, and alternative database models. Students that have taken and passed CSE 182 may not take CSE 180 for credit. (Formerly CMPS 180.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-180",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 181",
+    "title": "Database Systems II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 180"
+      ],
+      [
+        "CSE 130"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Introduction to the architecture and implementation of database systems. Topics covered include data storage, tree and hash indexes, storage management, query evaluation and optimization, transaction management, concurrency control, recovery, and XML data management.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-181",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 182",
+    "title": "Introduction to Database Management Systems",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 16",
+        "BME 160"
+      ],
+      [
+        "CSE 30"
+      ],
+      [
+        "CSE 180"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Concepts, approaches, tools, and methodology of database design and utilization. Topics include the relational data model; modeling relationships between entities; dependencies and normal forms; commercial data management languages such as SQL (defining SQL data, SQL queries and modifications, views, indexes, constraints, and triggers); transactions; stored procedures and functions; access to databases from a programming language (Python); relational algebra; query execution plans; and non-relational data models such as JSON and XML. Involves database application development projects. Students that have taken and passed CSE 180 cannot receive credit for CSE 182 .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-182",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 183",
+    "title": "Web Applications",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 15",
+        "CSE 15L",
+        "CMPM 35",
+        "CSE 101"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "The World-Wide Web is one of the main mechanisms by which computer applications are delivered to users. This course introduces the design of Web applications. Students learn the main technologies involved, and build web applications as part of homework assignments and group class projects. Students cannot receive credit for this course and CSE 186 .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-183",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 184",
+    "title": "Data Wrangling and Web Scraping",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Python basics; data extraction from CSV, JSON, XML, Excel, PDF, encoded text files; data cleaning, finding duplicates, missing data, fuzzy matching; data exploration, joining, aggregating, separating, correlation, clustering; web scraping, APIs, scraping data from social media, open data network. (Formerly CMPS 184.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-184",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 185C",
+    "title": "Building Careers in Emerging Technology: Sustainability, Innovation, and Impact",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Augments a summer internship in emerging technologies by building skills in three areas: (1) professionalism and career development in emerging technology (e.g., semiconductors, cybersecurity, data and AI, aviation, climate and energy, and digital health) work environments; (2) innovation and research skills to scope, identify, and validate new ideas, concepts, and knowledge; and (3) communication, impact, and dissemination to clearly present and articulate the nature and significance of your work. Enrollment is by permission of the instructor.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185c",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 185E",
+    "title": "Technical Writing for Computer Science and Engineering",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12",
+        "CSE 15",
+        "CSE 30",
+        "BME 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Writing by engineers and computer scientists to technical audiences. Writing exercises include: cover letter and resume for job application, tutorial writing, grant proposal, document specification, literature review, and a final technical report. Two oral presentations are also required, an in-class presentation and a poster presentation. Students also receive instruction in the use of UC library and journal database resources, and in the writing of a statement of purpose for graduate school application. Also offered as CSE 185S. (Formerly Computer Engineering 185, Technical Writing for Computer Engineers.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185e",
+    "labCoreq": null,
+    "crossListed": [
+      "CSE 185S"
+    ],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to computer engineering, bioengineering, bioinformatics, biomolecular engineering and bioinformatics, or network and digital technology majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 186",
+    "title": "Full Stack Web Development I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 101",
+        "CSE 101P"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Examines current uses of the World Wide Web for delivery of the sophisticated interactive applications used daily. Web applications offer several advantages over traditional, locally installable binaries including heterogeneous deployment, instantaneous access, continuous updates, and the possibility of collaboration at scale. These full stack web applications are typically more complex than their traditional counterparts, requiring the seamless integrating of numerous related technologies if end users are to have a productive experience and the system is to remain robust, performant, and secure. Students cannot receive credit for this course and CSE 183 .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-186",
+    "labCoreq": "CSE 180",
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors majoring in computer engineering, computer science, computer game design, and network and digital technology.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 187",
+    "title": "Full Stack Web Development II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 186"
+      ]
+    ],
+    "ge": "PR-E",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Continues the examination of current uses of the World Wide Web for delivery of the sophisticated interactive applications we use daily. Advanced development techniques are examined with continued emphasis on automated testing. A sizable team project is undertaken to introduce topics including, but not limited to, automated build pipelines, penetration testing, API versioning, and deployment at scale.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-187",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 191",
+    "title": "Computer Science and Technology Seminar",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Weekly talks by industry experts, university researchers, field practitioners, and video presentations provide an in-depth exposure to a specific or a broad area of computer science and technology. Topics include emerging ideas, opportunities, challenges, and future of the industry. (Formerly CMPS 191.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-191",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 192",
+    "title": "Supervised Student Teaching/Tutoring",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students hold tutoring hours, run a lab, or lead discussion section in conjunction with a regularly offered course and under close supervision by the course's instructor. Weekly meetings with a regular faculty member to discuss teaching techniques, pedagogy, sensitivity to students' needs, maintaining a comfortable learning environment, and strategies for handling difficult situations. Students submit a report on their teaching experience. Enrollment by permission of instructor and restricted to sophomores, juniors, and seniors. (Formerly CMPS 192.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-192",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 192F",
+    "title": "Supervised Student Teaching/Tutoring",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students hold tutoring hours, run a lab, or lead discussion section in conjunction with a regularly offered course and under close supervision by the course's instructor. Weekly meetings with a regular faculty member to discuss teaching techniques, pedagogy, sensitivity to students' needs, maintaining a comfortable learning environment, and strategies for handling difficult situations. Students submit a report on their teaching experience. Enrollment by permission of instructor and restricted to sophomores, juniors, and seniors. (Formerly CMPS 192F.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-192f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 193",
+    "title": "Field Study",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides for individual programs of study with specific academic objectives carried out under the direction of a faculty member of the Computer Engineering Department and a willing sponsor at the field site using resources not normally available on campus. Credit is based on the presentation of evidence of achieving the objectives by submitting a written and oral presentation. May not be repeated for credit. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-193",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 193F",
+    "title": "Field Study",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides for individual programs of study with specific academic objectives carried out under the direction of a faculty member of the Computer Engineering Department and a willing sponsor at the field site using resources not normally available on campus. Credit is based on the presentation of evidence of achieving the objectives by submitting a written and oral presentation. May not be repeated for credit. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-193f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 194",
+    "title": "Group Tutorial",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "A program of independent study arranged between a group of students and a faculty member. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-194",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 194F",
+    "title": "Group Tutorial",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "A program of independent study arranged between a group of students and a faculty member. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-194f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 195",
+    "title": "Senior Thesis Research",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency. Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Computer Engineering majors, CSE 123A or CSE 129A .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-195",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 195F",
+    "title": "Senior Thesis Research",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency. Consent of instructor required. Prerequisite: CSE 123A .",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-195f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 198",
+    "title": "Individual Study or Research",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-198",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 198F",
+    "title": "Individual Study or Research",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-198f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 199",
+    "title": "Tutorial",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "For fourth-year students majoring in computer engineering. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-199",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 199F",
+    "title": "Tutorial",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "For fourth-year students majoring in computer engineering. Students submit petition to sponsoring agency.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-199f",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": true,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "CSE 185E",
+    "title": "Technical Writing for Computer Science and Engineering",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 12",
+        "CSE 15",
+        "CSE 30",
+        "BME 160"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Writing by engineers and computer scientists to technical audiences. Writing exercises include: cover letter and resume for job application, tutorial writing, grant proposal, document specification, literature review, and a final technical report. Two oral presentations are also required, an in-class presentation and a poster presentation. Students also receive instruction in the use of UC library and journal database resources, and in the writing of a statement of purpose for graduate school application. Also offered as CSE 185S. (Formerly Computer Engineering 185, Technical Writing for Computer Engineers.)",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185e",
+    "labCoreq": null,
+    "crossListed": [
+      "CSE 185S"
+    ],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to computer engineering, bioengineering, bioinformatics, biomolecular engineering and bioinformatics, or network and digital technology majors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "ECON 166B",
+    "title": "Game Theory and Applications II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ECON 166A",
+        "CSE 166A"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Explores research frontiers in game theory, emphasizing applications in social science, biology, and engineering. Each interdisciplinary team develops a topic, and presents it to the class in oral and written reports and demonstrations. Students must have shown a strong performance in course 166A or equivalent. Students cannot receive credit for this course and ECON 272 , CSE 209, or BIOE 274.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-166b",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "GCH 41",
+    "title": "Clinical AI Applications for Health and Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-T",
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Provides an introduction to the field of Artificial Intelligence (AI) designed for healthcare applications. Topics include ethics, policy, and AI applications for medical and psychological care, including those related to the social determinants of health. Emphasis is on explainability and accountability in AI, and holistic approaches to applying AI in varying contexts.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health/lower-division/gch-41",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": null,
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  },
+  {
+    "code": "PHYS 150",
+    "title": "Quantum Computing",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PHYS 116A",
+        "MATH 21",
+        "AM 10"
+      ]
+    ],
+    "ge": null,
+    "geAll": [],
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Review of linear algebra. Includes basic concepts in quantum mechanics including quantum states, measurements, operators, entanglement, entanglement entropy, \"no cloning\" theorem, and density matrices; classical gates, reversible computing, and quantum gates; several quantum algorithms including Deutsch's algorithm, Simon's algorithm, Shor's algorithm, and the Grover algorithm; quantum error correction; and quantum key distribution and teleportation.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-150",
+    "labCoreq": null,
+    "crossListed": [],
+    "repeatable": false,
+    "maxUnits": null,
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors.",
+    "_flags": {
+      "quarters_defaulted": true,
+      "source_subject": "CSE"
+    }
+  }
+]
