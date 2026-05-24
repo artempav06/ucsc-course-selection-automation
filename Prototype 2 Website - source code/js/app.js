@@ -181,7 +181,10 @@ function initWizard() {
     AppState.profile.targetGradYear = parseInt(document.getElementById("select-grad-year").value, 10);
     AppState.profile.includeSummer = document.getElementById("check-summer").checked;
 
-    AppState.profile.maxUnits = 19;
+    const maxUnitsValue = parseInt(document.getElementById("input-max-units")?.value, 10);
+    AppState.profile.maxUnits = Number.isFinite(maxUnitsValue)
+      ? Math.min(25, Math.max(12, maxUnitsValue))
+      : 19;
 
     AppState.profile.profImportance = document.getElementById("select-prof-importance").value;
 

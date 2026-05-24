@@ -83,14 +83,18 @@ const GE_REQUIREMENTS = [
     id: "DC", name: "Disciplinary Communication",
     needed: 1,
     // Covers DC courses across all supported majors:
-    //   CS/CE/EE/NDT → CSE 115A / 115 / 185E / 185S / 195
+    //   CS/CE/NDT     → CSE 115A / 115 / 185E / 185S / 195
+    //   EE/RE         → ECE 129A/B/C senior capstone sequence
+    //   TIM           → TIM 175
     //   CSGD          → CMPM 170 / 171
     //   Bioengineering → BME 185
     //   Applied Math  → AM 170A
     courses: ["CSE 115A", "CSE 115", "CSE 185E", "CSE 185S", "CSE 195",
+              "ECE 129A", "ECE 129B", "ECE 129C", "TIM 175",
               "CMPM 170", "CMPM 171", "BME 185", "AM 170A"],
     note: "Satisfied by your major's DC requirement.",
     autoSatisfiedBy: ["CSE 115A", "CSE 115", "CSE 185E", "CSE 185S", "CSE 195",
+                      "ECE 129A", "ECE 129B", "ECE 129C", "TIM 175",
                       "CMPM 170", "CMPM 171", "BME 185", "AM 170A"]
   }
 ];

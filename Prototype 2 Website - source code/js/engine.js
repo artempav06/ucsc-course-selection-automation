@@ -208,7 +208,7 @@ const Scheduler = {
     // Walk non-pick_n categories first (all_required, choose_group, pick_one)
     for (const cat of sortedCats)
       if (cat.type !== "pick_n")
-        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged);
+        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, null, profile);
 
     // Build virtuallyPresent: unselected alternatives whose equivalents are already selected
     const virtuallyPresent = new Set();
@@ -233,7 +233,7 @@ const Scheduler = {
     // Walk pick_n categories with virtuallyPresent filtering
     for (const cat of sortedCats)
       if (cat.type === "pick_n")
-        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, virtuallyPresent);
+        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, virtuallyPresent, profile);
 
     // --- Phase 2: GE courses ---
     this.pickGE(used, completedSet, geConcentration, profile).forEach(c => {
@@ -275,7 +275,7 @@ const Scheduler = {
 
   // --- Unified category walker ---
 
-  walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, virtuallyPresent) {
+  walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, virtuallyPresent, profile) {
     switch (cat.type) {
       case "all_required":
         (cat.courses || []).filter(c => !chooseGroupCourses.has(c)).forEach(c => pushTagged(c, "major_core"));
@@ -284,6 +284,7 @@ const Scheduler = {
       case "choose_group": {
         const groups = cat.groups || [];
         const best = groups.find(g => g.courses.some(c => completedSet.has(c)))
+          || groups.find(g => /strongly preferred/i.test(g.label || "") && g.courses.every(c => COURSES[c]))
           || groups.find(g => g.courses.every(c => COURSES[c]))
           || groups[0];
         if (best) best.courses.filter(c => COURSES[c] && !completedSet.has(c)).forEach(c => pushTagged(c, "major_core"));
@@ -292,7 +293,9 @@ const Scheduler = {
 
       case "pick_one": {
         if ((cat.courses || []).some(c => completedSet.has(c) || used.has(c))) break;
-        const first = (cat.courses || []).find(c => COURSES[c] && !completedSet.has(c));
+        const pool = (cat.courses || []).filter(c => COURSES[c] && !completedSet.has(c));
+        const ranked = this.rankByConcentration(pool, concentration, profile, used, virtuallyPresent || new Set());
+        const first = ranked[0];
         if (first) pushTagged(first, "major_core");
         break;
       }
@@ -303,14 +306,52 @@ const Scheduler = {
         const alreadySatisfied = (cat.courses || []).filter(c => completedSet.has(c)).length;
         const needed = Math.max(0, (cat.n || 1) - alreadySatisfied);
         if (needed === 0) break;
-        const ranked = this.rankByConcentration(pool, concentration);
+        const ranked = this.rankByConcentration(pool, concentration, profile, used, vp);
         ranked.slice(0, needed).forEach(c => pushTagged(c, "major_elective"));
         break;
       }
     }
   },
 
-  rankByConcentration(pool, concentration) {
+  coursePreferenceScore(code, profile) {
+    if (!profile) return 0;
+    const preferred = new Set(profile.preferredCourses || []);
+    const avoided = new Set(profile.avoidedCourses || []);
+    let score = 0;
+    if (preferred.has(code)) score += 1000;
+    if (avoided.has(code)) score -= 1000;
+
+    // Professor/RMP preference is a student preference, but it should not dominate
+    // hard requirement/path fit. Scale it only when the user says it matters.
+    const rmp = COURSES[code]?.rmpScore || 0;
+    const importance = profile.profImportance || "medium";
+    if (importance === "high") score += rmp * 3;
+    else if (importance === "medium") score += rmp;
+    else if (importance === "low") score += rmp * 0.25;
+    return score;
+  },
+
+  missingPrereqCost(code, knownSet, virtuallyPresent, visiting = new Set()) {
+    const course = COURSES[code];
+    if (!course || !course.prereqs || visiting.has(code)) return 0;
+    visiting.add(code);
+    let cost = 0;
+    const vp = virtuallyPresent || new Set();
+    for (const orGroup of course.prereqs) {
+      if (orGroup.some(p => knownSet.has(p) || vp.has(p))) continue;
+      const candidates = orGroup.filter(p => COURSES[p] && !vp.has(p));
+      if (candidates.length === 0) continue;
+      const cheapest = Math.min(...candidates.map(p =>
+        (knownSet.has(p) ? 0 : (COURSES[p]?.units || 5)) + this.missingPrereqCost(p, knownSet, vp, new Set(visiting))
+      ));
+      cost += cheapest;
+    }
+    return cost;
+  },
+
+  rankByConcentration(pool, concentration, profile, usedSet, virtuallyPresent) {
+    const known = usedSet || new Set();
+    const vp = virtuallyPresent || new Set();
     return pool
       .map(code => {
         let score = 0;
@@ -318,7 +359,10 @@ const Scheduler = {
           const concs = COURSES[code]?.concentrations || [];
           if (concs.includes(concentration)) score += 100;
         }
-        score += (COURSES[code]?.rmpScore || 0);
+        const missingPrereqUnits = this.missingPrereqCost(code, known, vp);
+        score -= missingPrereqUnits * 8;
+        if ((COURSES[code]?.units || 0) > 7) score -= 25;
+        score += this.coursePreferenceScore(code, profile);
         return { code, score };
       })
       .sort((a, b) => b.score - a.score)
@@ -459,14 +503,21 @@ const Scheduler = {
       (s, c) => s + (COURSES[c]?.division === "upper" ? COURSES[c].units : 0), 0);
     if (curUD >= minUD) return;
 
+    const prereqContext = new Set([...used, ...completedSet]);
+    const isSafeSupplement = c => COURSES[c].division === "upper"
+      && !c.startsWith("FREE")
+      && !used.has(c)
+      && !completedSet.has(c)
+      && !vp.has(c)
+      && Validator.prereqsMet(COURSES[c].prereqs, prereqContext);
+
     const udPool = Object.keys(COURSES)
-      .filter(c => COURSES[c].division === "upper" && !c.startsWith("FREE") && !used.has(c) && !completedSet.has(c) && !vp.has(c) && c.startsWith(deptPfx))
-      .concat(Object.keys(COURSES).filter(c =>
-        COURSES[c].division === "upper" && !c.startsWith("FREE") && !used.has(c) && !completedSet.has(c) && !vp.has(c) && !c.startsWith(deptPfx)));
+      .filter(c => isSafeSupplement(c) && c.startsWith(deptPfx))
+      .concat(Object.keys(COURSES).filter(c => isSafeSupplement(c) && !c.startsWith(deptPfx)));
 
     for (const code of udPool) {
       if (curUD >= minUD) break;
-      target.push(code); used.add(code);
+      target.push(code); used.add(code); prereqContext.add(code);
       curUD += COURSES[code].units;
     }
   },
@@ -538,7 +589,7 @@ const Scheduler = {
 
     const calYearOf = (q, sched) => (q === "F") ? sched.academicStart : sched.academicStart + 1;
 
-    const sorted = this.topoSort(courses, completedCourses);
+    const sorted = this.topoSort(courses, completedCourses, courseTypeMap);
     const remaining = [...sorted];
     const fillerR = [...fillerPool];
     const MAJOR_TYPES = new Set(["major_core", "major_elective", "prereq"]);
@@ -558,9 +609,10 @@ const Scheduler = {
       }
     }
 
-    const canPlace = (code, q, completedBefore, unitsUsed) => {
+    const canPlace = (code, q, completedBefore, unitsUsed, levelNum = 1) => {
       const course = COURSES[code];
       if (!course) return false;
+      if (/restricted to seniors/i.test(course.enrollmentRestrictions || "") && levelNum < 4) return false;
       if (!course.quarters.includes(q)) return false;
       if (!Validator.prereqsMet(course.prereqs, completedBefore)) return false;
       if (unitsUsed + course.units > maxUnits) return false;
@@ -601,7 +653,7 @@ const Scheduler = {
       for (let i = 0; i < remaining.length && majorCount < 2;) {
         const code = remaining[i];
         if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
-        if (!canPlace(code, q, completedBefore, unitsUsed)) { i++; continue; }
+        if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
         remaining.splice(i, 1);
         quarterArr._unitsUsed = unitsUsed;
         const added = placeWithCoreq(code, quarterArr, completedBefore);
@@ -612,7 +664,7 @@ const Scheduler = {
       for (let i = 0; i < remaining.length && unitsUsed < maxUnits;) {
         const code = remaining[i];
         if (MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
-        if (!canPlace(code, q, completedBefore, unitsUsed)) { i++; continue; }
+        if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
         remaining.splice(i, 1);
         quarterArr._unitsUsed = unitsUsed;
         const added = placeWithCoreq(code, quarterArr, completedBefore);
@@ -624,7 +676,7 @@ const Scheduler = {
         for (let i = 0; i < remaining.length && majorCount < 3;) {
           const code = remaining[i];
           if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
-          if (!canPlace(code, q, completedBefore, unitsUsed)) { i++; continue; }
+          if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
           remaining.splice(i, 1);
           quarterArr._unitsUsed = unitsUsed;
           const added = placeWithCoreq(code, quarterArr, completedBefore);
@@ -632,18 +684,11 @@ const Scheduler = {
         }
       }
 
-      // Phase D: Fill from filler pool if still under minimum
-      if (unitsUsed < minUnits) {
-        for (let i = 0; i < fillerR.length && unitsUsed < minUnits;) {
-          const code = fillerR[i];
-          if (!canPlace(code, q, completedBefore, unitsUsed)) { i++; continue; }
-          fillerR.splice(i, 1);
-          quarterArr.push(code);
-          placed.add(code);
-          courseTypeMap.set(code, "filler");
-          unitsUsed += COURSES[code].units;
-        }
-      }
+      // Phase D intentionally does not introduce extra courses from the broad filler pool.
+      // Unit padding is handled in Scheduler.generate() Phase 6, where FREE courses are
+      // added only if the selected plan is below the degree unit target. Adding more
+      // opportunistic fillers here can consume slots needed by late prerequisite chains
+      // and force otherwise-placeable major courses into a fifth year.
 
       delete quarterArr._q;
       delete quarterArr._unitsUsed;
@@ -673,6 +718,44 @@ const Scheduler = {
           break;
         }
       }
+    }
+
+    // Before extending the schedule, try to backfill any leftover courses into
+    // earlier quarters that still have capacity. The main pass is intentionally
+    // conservative (major-course caps, filler balancing), so a course can remain
+    // unplaced even when a valid earlier slot exists.
+    const completedBeforeSlot = slotIndex => {
+      const done = new Set(completedCourses);
+      for (let i = 0; i < slotIndex; i++) {
+        const slot = allQuarters[i];
+        const arr = schedule[slot.yi].quarters[slot.q] || [];
+        for (const c of arr) if (c !== "_GAP") done.add(c);
+      }
+      return done;
+    };
+
+    for (let ri = 0; ri < remaining.length;) {
+      const code = remaining[ri];
+      const course = COURSES[code];
+      let didPlace = false;
+      if (course && !placed.has(code)) {
+        for (let si = 0; si < allQuarters.length; si++) {
+          const slot = allQuarters[si];
+          const arr = schedule[slot.yi].quarters[slot.q];
+          if (!arr || arr[0] === "_GAP") continue;
+          if (/restricted to seniors/i.test(course.enrollmentRestrictions || "") && schedule[slot.yi].levelNum < 4) continue;
+          const qUnits = arr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+          if (qUnits + course.units > maxUnits) continue;
+          if (!course.quarters.includes(slot.q)) continue;
+          if (!Validator.prereqsMet(course.prereqs, completedBeforeSlot(si))) continue;
+          arr.push(code);
+          placed.add(code);
+          didPlace = true;
+          break;
+        }
+      }
+      if (didPlace) remaining.splice(ri, 1);
+      else ri++;
     }
 
     // Overflow: place remaining courses
@@ -713,29 +796,15 @@ const Scheduler = {
       }
     }
 
-    // Fill empty quarters with FREE courses
-    let freeIdx = 1;
-    for (let yi = 0; yi < schedule.length; yi++) {
-      for (const q of Object.keys(schedule[yi].quarters)) {
-        const quarterArr = schedule[yi].quarters[q];
-        if (quarterArr.length !== 0) continue;
-        while (freeIdx <= 30) {
-          const code = `FREE ${freeIdx++}`;
-          if (COURSES[code] && !placed.has(code)) {
-            quarterArr.push(code); placed.add(code);
-            courseTypeMap.set(code, "filler");
-            break;
-          }
-        }
-      }
-    }
-
+    // Do not synthesize courses into empty quarters here. FREE padding is selected
+    // earlier only when needed for degree-unit minimums; adding it after overflow
+    // inflates validation totals and can make a repaired 4-year plan look bloated.
     return schedule;
   },
 
   // --- Topological sort by prereqs ---
 
-  topoSort(codes, completed) {
+  topoSort(codes, completed, courseTypeMap = new Map()) {
     const codeSet = new Set(codes);
     const completedSet = completed instanceof Set ? completed : new Set(completed);
     const allKnown = new Set([...codeSet, ...completedSet]);
@@ -767,15 +836,33 @@ const Scheduler = {
       if (deg === 0) queue.push(code);
     }
 
-    // Stable sort: lower division first, then by course number
-    queue.sort((a, b) => {
+    const downstreamDepth = new Map();
+    const depthOf = (code, visiting = new Set()) => {
+      if (downstreamDepth.has(code)) return downstreamDepth.get(code);
+      if (visiting.has(code)) return 0;
+      visiting.add(code);
+      const children = deps.get(code) || [];
+      const depth = children.length === 0 ? 0 : 1 + Math.max(...children.map(child => depthOf(child, new Set(visiting))));
+      downstreamDepth.set(code, depth);
+      return depth;
+    };
+    const courseNum = code => parseInt((code.match(/(\d+)/) || [0, "0"])[1], 10);
+    const typePriority = code => ({ major_core: 0, prereq: 1, major_elective: 2, ge: 3, uc: 4, filler: 5 }[courseTypeMap.get(code)] ?? 6);
+    const sortQueue = () => queue.sort((a, b) => {
+      const daPath = depthOf(a), dbPath = depthOf(b);
+      if (daPath !== dbPath) return dbPath - daPath;
+      const ta = typePriority(a), tb = typePriority(b);
+      if (ta !== tb) return ta - tb;
       const da = COURSES[a]?.division === "lower" ? 0 : 1;
       const db = COURSES[b]?.division === "lower" ? 0 : 1;
       if (da !== db) return da - db;
-      const na = parseInt((a.match(/(\d+)/) || [0, "0"])[1], 10);
-      const nb = parseInt((b.match(/(\d+)/) || [0, "0"])[1], 10);
-      return na - nb;
+      return courseNum(a) - courseNum(b);
     });
+
+    // Critical-path sort: among currently available courses, take courses that unlock
+    // the longest remaining prerequisite chains first. This prevents late overflow
+    // when a course like CSE 101 unlocks CSE 180/182 or ECON 100A unlocks ECON 113/114.
+    sortQueue();
 
     const result = [];
     const visited = new Set();
@@ -787,7 +874,10 @@ const Scheduler = {
       for (const dep of (deps.get(code) || [])) {
         const newDeg = (inDegree.get(dep) || 1) - 1;
         inDegree.set(dep, newDeg);
-        if (newDeg <= 0 && !visited.has(dep)) queue.push(dep);
+        if (newDeg <= 0 && !visited.has(dep)) {
+          queue.push(dep);
+          sortQueue();
+        }
       }
     }
 

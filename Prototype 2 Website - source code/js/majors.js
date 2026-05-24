@@ -128,6 +128,7 @@ const CS_BA_REQUIREMENTS = {
 const AM_BS_REQUIREMENTS = {
   id: "AM_BS",
   name: "Applied Mathematics B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs/",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/Applied-Math-Major_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -176,16 +177,19 @@ const AM_BS_REQUIREMENTS = {
       id: "PROGRAMMING",
       name: "Programming",
       type: "pick_one",
-      courses: ["CSE 20", "CSE 13S", "ECE 13", "ASTR 19", "ECON 22P"],
+      courses: ["CSE 20", "CSE 13S", "ECE 13", "ASTR 19"],
       description: "Complete one programming course."
     },
     {
       id: "LD_ELECTIVES",
       name: "Lower Division Electives",
       type: "pick_n",
-      courses: [],
+      courses: [
+        "CSE 30", "ECON 1", "ECON 2", "STAT 7", "STAT 7L", "STAT 17", "STAT 17L",
+        "PHYS 5A", "PHYS 5B", "PHYS 5C", "ASTR 21", "ECE 9", "BIOL 20A", "BIOE 20C"
+      ],
       n: 2,
-      description: "Complete 2 lower division electives. A list of the lower division electives can be found on the BE Undergraduate Advising website."
+      description: "Complete 2 lower-division electives from the official catalog list. Lecture/lab combinations count as one course where the associated lab is required. Source: UCSC General Catalog Applied Mathematics B.S."
     },
     {
       id: "UD_REQUIRED",
@@ -212,9 +216,17 @@ const AM_BS_REQUIREMENTS = {
       id: "UD_ELECTIVES",
       name: "Upper-Division Electives",
       type: "pick_n",
-      courses: [],
+      courses: [
+        "AM 115", "AM 130", "TIM 150", "STAT 132", "AM 147",
+        "ASTR 112", "ASTR 113", "ASTR 119", "BME 118", "BME 160",
+        "CSE 101", "CSE 102", "CSE 104", "CSE 106", "CSE 108", "CSE 113", "CSE 140", "CSE 142", "CSE 144", "CSE 160", "CSE 161", "CSE 162",
+        "ECE 101", "ECE 103", "ECE 115", "ECE 135", "ECE 136", "ECE 141", "ECE 145", "ECE 149", "ECE 151", "ECE 153", "ECE 163", "ECE 179",
+        "ECON 100A", "ECON 100B", "ECON 100M", "ECON 100N", "ECON 101", "ECON 113", "ECON 114", "ECON 115", "ECON 124", "ECON 166A",
+        "MATH 105A", "MATH 105B", "MATH 105C", "MATH 110", "MATH 111A", "MATH 111T", "MATH 114", "MATH 115", "MATH 116", "MATH 117", "MATH 118", "MATH 120", "MATH 121A", "MATH 121B", "MATH 124", "MATH 130", "MATH 134", "MATH 140", "MATH 152", "MATH 160",
+        "PHYS 105", "PHYS 110A", "PHYS 110B", "PHYS 139A", "PHYS 139B", "PHYS 150", "PHYS 171", "STAT 108", "TIM 147"
+      ],
       n: 3,
-      description: "Complete 3 upper-division elective courses. Up to one elective can be replaced by a 5-credit independent study with a program faculty member. A list of the upper division electives can be found on the BE Undergraduate Advising website."
+      description: "Complete 3 upper-division elective courses from the official catalog list. Any 5-credit AM 100-199/200-299 course that is not a core course may also count, with catalog exclusions. Source: UCSC General Catalog Applied Mathematics B.S."
     },
     {
       id: "DC",
@@ -1298,6 +1310,7 @@ const RE_BS_REQUIREMENTS = {
 const TIM_BS_REQUIREMENTS = {
   id: "TIM_BS",
   name: "Technology and Information Management B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs/?tab=2",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/TIM_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -1343,9 +1356,12 @@ const TIM_BS_REQUIREMENTS = {
     {
       id: "ECONOMICS",
       name: "Economics Courses",
-      type: "all_required",
-      courses: ["ECON 1", "ECON 2", "ECON 100A", "ECON 113", "ECON 10A"],
-      description: "Complete all economics courses."
+      type: "choose_group",
+      groups: [
+        { label: "ECON 100A path", courses: ["ECON 1", "ECON 2", "ECON 10A", "ECON 100A", "ECON 113"] },
+        { label: "ECON 100M path", courses: ["ECON 1", "ECON 2", "ECON 10A", "ECON 100M", "ECON 113"] }
+      ],
+      description: "Complete ECON 1, ECON 2, ECON 10A, ECON 113, and one intermediate microeconomics course: ECON 100A or ECON 100M."
     },
     {
       id: "STATISTICS",
@@ -1367,7 +1383,8 @@ const TIM_BS_REQUIREMENTS = {
       type: "pick_n",
       n: 2,
       courses: [
-        "CSE 101", "CSE 102", "CSE 103", "CSE 104A", "CSE 105", "CSE 107",
+        "TIM 171", "TIM 174", "TIM 176", "TIM 177", "TIM 178", "STAT 131", "CSE 107", "CSE 120",
+        "CSE 101", "CSE 102", "CSE 103", "CSE 104A", "CSE 105",
         "CSE 110A", "CSE 111", "CSE 112", "CSE 113", "CSE 114A", "CSE 115A",
         "CSE 115B", "CSE 115C", "CSE 115D", "CSE 116", "CSE 117", "CSE 118",
         "CSE 119", "CSE 120", "CSE 121", "CSE 122", "CSE 123A", "CSE 123B",
@@ -1375,7 +1392,6 @@ const TIM_BS_REQUIREMENTS = {
         "CSE 142", "CSE 143", "CSE 144", "CSE 145", "CSE 148", "CSE 151",
         "CSE 156", "CSE 157", "CSE 160", "CSE 161", "CSE 162", "CSE 163",
         "CSE 165", "CSE 168", "CSE 180", "CSE 183", "CSE 184", "CSE 185",
-        "TIM 171", "TIM 174", "TIM 176", "TIM 177", "TIM 178", "STAT 131",
         "AM 100", "AM 112", "AM 114", "AM 115", "AM 129", "AM 130",
         "AM 147", "ECE 101", "ECE 103", "ECE 118", "ECE 121", "ECE 151",
         "ECE 153", "ECE 171"

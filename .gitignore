@@ -1,3 +1,13 @@
 .DS_Store
 __pycache__/
 *.pyc
+*.swp
+*.swo
+
+# Local build/debug artifacts
+output/
+*.dSYM/
+
+# Local editor/OS metadata
+.vscode/
+.idea/
