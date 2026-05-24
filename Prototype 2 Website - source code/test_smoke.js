@@ -36,6 +36,11 @@ function extractPlaced(schedule) {
 function getBalanceMetrics(schedule) {
   const typeMap = schedule.courseTypeMap || new Map();
   const MAJOR_TYPES = new Set(["major_core", "major_elective", "prereq"]);
+  const isLabWork = code => {
+    const course = COURSES[code];
+    if (!course) return false;
+    return Boolean(course.labCoreq) || /L$/.test(code) || /laboratory/i.test(course.title || "") || course.units <= 2;
+  };
   let totalQ = 0, targetQ = 0, acceptQ = 0, maxMajQ = 0;
 
   for (const year of schedule) {
@@ -43,7 +48,10 @@ function getBalanceMetrics(schedule) {
       if (!arr || arr[0] === "_GAP" || arr.length === 0) continue;
       totalQ++;
       const units = arr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
-      const majCount = arr.filter(c => MAJOR_TYPES.has(typeMap.get(c))).length;
+      // Labs/corequisite companions are usually 1–2 unit workload add-ons and
+      // should not make an otherwise balanced quarter look like it has four or
+      // five full major classes.
+      const majCount = arr.filter(c => MAJOR_TYPES.has(typeMap.get(c)) && !isLabWork(c)).length;
       if (units >= 15 && units <= 19) targetQ++;
       if (units >= 12 && units <= 22) acceptQ++;
       if (majCount > maxMajQ) maxMajQ = majCount;
@@ -62,12 +70,15 @@ function checkPrereqOrder(schedule) {
   for (const year of schedule) {
     for (const q of ["F","W","S","SU"]) {
       if (!year.quarters[q]) continue;
+      const sameQuarter = new Set(year.quarters[q]);
       const snapshot = new Set(completedBefore);
       for (const code of year.quarters[q]) {
         if (code === "_GAP" || code.startsWith("FREE")) continue;
         const course = COURSES[code];
         if (!course || !course.prereqs) continue;
-        if (!Validator.prereqsMet(course.prereqs, snapshot)) {
+        const prereqContext = new Set(snapshot);
+        if (course.labCoreq && sameQuarter.has(course.labCoreq)) prereqContext.add(course.labCoreq);
+        if (!Validator.prereqsMet(course.prereqs, prereqContext)) {
           violations.push(code);
         }
       }
@@ -120,7 +131,7 @@ for (const major of MAJORS) {
         if (!validation.allMet) { checks.push("allMet=false"); result = "FAIL"; }
         if (dupes.length > 0) { checks.push(`${dupes.length} dupes`); result = "FAIL"; }
         if (prereqViolations.length > 0) { checks.push(`${prereqViolations.length} prereq violations`); result = "WARN"; }
-        if (years > 5) { checks.push(`${years} years`); result = result === "FAIL" ? "FAIL" : "WARN"; }
+        if (years > 4) { checks.push(`${years} years`); result = result === "FAIL" ? "FAIL" : "WARN"; }
         if (bal.maxMajQ > 3) { checks.push(`maxMaj=${bal.maxMajQ}`); result = result === "FAIL" ? "FAIL" : "WARN"; }
 
         if (result === "PASS") pass++;

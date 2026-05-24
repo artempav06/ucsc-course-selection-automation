@@ -79,7 +79,7 @@ const Validator = {
           const allOptions = cat.courses || [];
           status.selectedCourses = allOptions.filter(c => planned.has(c));
           const dcCat = requirements.categories.find(r => r.id === "DC");
-          if (dcCat && cat.id !== "DC") {
+          if (dcCat && cat.id !== "DC" && !/capstone can count/i.test(cat.description || "")) {
             const usedDC = (dcCat.courses || []).filter(c => planned.has(c));
             status.selectedCourses = status.selectedCourses.filter(c => !usedDC.includes(c));
           }
@@ -303,7 +303,7 @@ const Scheduler = {
       case "pick_n": {
         const vp = virtuallyPresent || new Set();
         const pool = (cat.courses || []).filter(c => !used.has(c) && COURSES[c] && !completedSet.has(c) && !vp.has(c));
-        const alreadySatisfied = (cat.courses || []).filter(c => completedSet.has(c)).length;
+        const alreadySatisfied = (cat.courses || []).filter(c => completedSet.has(c) || used.has(c)).length;
         const needed = Math.max(0, (cat.n || 1) - alreadySatisfied);
         if (needed === 0) break;
         const ranked = this.rankByConcentration(pool, concentration, profile, used, vp);
@@ -361,6 +361,8 @@ const Scheduler = {
         }
         const missingPrereqUnits = this.missingPrereqCost(code, known, vp);
         score -= missingPrereqUnits * 8;
+        const prereqGroups = COURSES[code]?.prereqs || [];
+        score -= prereqGroups.length * 2;
         if ((COURSES[code]?.units || 0) > 7) score -= 25;
         score += this.coursePreferenceScore(code, profile);
         return { code, score };
@@ -470,15 +472,19 @@ const Scheduler = {
 
   expandPrereqs(planCodes, completedSet, usedSet, virtuallyPresent) {
     const allKnown = new Set([...planCodes, ...usedSet, ...completedSet]);
-    const vp = virtuallyPresent || new Set();
     const toAdd = [];
     for (let pass = 0; pass < 6; pass++) {
       let added = false;
       for (const code of [...allKnown]) {
         const course = COURSES[code];
-        if (!course || !course.prereqs) continue;
+        if (!course) continue;
+        const labCode = course.labCoreq;
+        if (labCode && COURSES[labCode] && !allKnown.has(labCode)) {
+          toAdd.push(labCode); allKnown.add(labCode); added = true;
+        }
+        if (!course.prereqs) continue;
         for (const orGroup of course.prereqs) {
-          if (orGroup.some(p => allKnown.has(p) || vp.has(p))) continue;
+          if (orGroup.some(p => allKnown.has(p))) continue;
           const candidate = orGroup
             .filter(p => COURSES[p] && !allKnown.has(p))
             .sort((a, b) => (COURSES[a].division === "lower" ? 0 : 1) - (COURSES[b].division === "lower" ? 0 : 1))[0];
@@ -573,18 +579,35 @@ const Scheduler = {
     const studentType = profile.studentType   || "undergrad";
 
     const schedule = this.buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer);
+    if (schedule.length === 0) return schedule;
 
-    // GAP quarter handling
+    // GAP quarter handling. gapYear is a calendar year from the UI, so
+    // "Winter 2027" must map to 2027-W (not the next academic year). For a
+    // full-year gap, honor the selected starting term and mark the next 3 or 4
+    // quarters in calendar order.
     const gapKeys = new Set();
     if (profile.gapEnabled && profile.gapTerm && profile.gapYear) {
-      const gapTerms = (profile.gapType === "year")
-        ? (includeSummer ? ["F","W","S","SU"] : ["F","W","S"])
-        : [profile.gapTerm];
       const gapBaseYear = parseInt(profile.gapYear, 10);
-      gapTerms.forEach(t => {
-        const calY = (t === "F") ? gapBaseYear : gapBaseYear + 1;
-        gapKeys.add(`${calY}-${t}`);
-      });
+      const termCycle = includeSummer ? ["F","W","S","SU"] : ["F","W","S"];
+      const addGapQuarter = (term, year) => gapKeys.add(`${year}-${term}`);
+      const nextQuarter = (term, year) => {
+        if (term === "F") return { term: "W", year: year + 1 };
+        if (term === "W") return { term: "S", year };
+        if (term === "S" && includeSummer) return { term: "SU", year };
+        if (term === "S") return { term: "F", year };
+        if (term === "SU") return { term: "F", year };
+        return { term: "F", year };
+      };
+
+      if (profile.gapType === "year") {
+        let cur = { term: profile.gapTerm, year: gapBaseYear };
+        for (let i = 0; i < termCycle.length; i++) {
+          addGapQuarter(cur.term, cur.year);
+          cur = nextQuarter(cur.term, cur.year);
+        }
+      } else {
+        addGapQuarter(profile.gapTerm, gapBaseYear);
+      }
     }
 
     const calYearOf = (q, sched) => (q === "F") ? sched.academicStart : sched.academicStart + 1;
@@ -616,6 +639,18 @@ const Scheduler = {
       if (!course.quarters.includes(q)) return false;
       if (!Validator.prereqsMet(course.prereqs, completedBefore)) return false;
       if (unitsUsed + course.units > maxUnits) return false;
+
+      const labCode = course.labCoreq;
+      if (labCode && COURSES[labCode] && !completedBefore.has(labCode)) {
+        const labCourse = COURSES[labCode];
+        const labAvailable = remaining.includes(labCode) || fillerR.includes(labCode);
+        const prereqContext = new Set(completedBefore);
+        prereqContext.add(code);
+        if (!labAvailable) return false;
+        if (!labCourse.quarters.includes(q)) return false;
+        if (!Validator.prereqsMet(labCourse.prereqs, prereqContext)) return false;
+        if (unitsUsed + course.units + labCourse.units > maxUnits) return false;
+      }
       return true;
     };
 
@@ -626,8 +661,10 @@ const Scheduler = {
       if (labCode && COURSES[labCode] && !placed.has(labCode) && !quarterArr.includes(labCode)) {
         const labInRemaining = remaining.indexOf(labCode);
         const labInFiller = fillerR.indexOf(labCode);
+        const prereqContext = new Set(completedBefore);
+        prereqContext.add(code);
         if (COURSES[labCode].quarters.includes(quarterArr._q) &&
-            Validator.prereqsMet(COURSES[labCode].prereqs, completedBefore) &&
+            Validator.prereqsMet(COURSES[labCode].prereqs, prereqContext) &&
             units + COURSES[labCode].units + quarterArr._unitsUsed <= maxUnits) {
           quarterArr.push(labCode);
           units += COURSES[labCode].units;
@@ -734,6 +771,27 @@ const Scheduler = {
       return done;
     };
 
+    const freeCode = c => String(c).startsWith("FREE");
+    const unitsNeededFor = (code, completedBefore) => {
+      const course = COURSES[code];
+      if (!course) return 0;
+      let needed = course.units || 0;
+      const labCode = course.labCoreq;
+      if (labCode && COURSES[labCode] && !completedBefore.has(labCode)) needed += COURSES[labCode].units || 0;
+      return needed;
+    };
+    const removeFreeUntilFits = (arr, neededUnits) => {
+      let units = arr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+      for (let i = arr.length - 1; i >= 0 && units + neededUnits > maxUnits; i--) {
+        if (freeCode(arr[i])) {
+          units -= COURSES[arr[i]]?.units || 0;
+          placed.delete(arr[i]);
+          arr.splice(i, 1);
+        }
+      }
+      return units;
+    };
+
     for (let ri = 0; ri < remaining.length;) {
       const code = remaining[ri];
       const course = COURSES[code];
@@ -744,11 +802,14 @@ const Scheduler = {
           const arr = schedule[slot.yi].quarters[slot.q];
           if (!arr || arr[0] === "_GAP") continue;
           if (/restricted to seniors/i.test(course.enrollmentRestrictions || "") && schedule[slot.yi].levelNum < 4) continue;
-          const qUnits = arr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
-          if (qUnits + course.units > maxUnits) continue;
-          if (!course.quarters.includes(slot.q)) continue;
-          if (!Validator.prereqsMet(course.prereqs, completedBeforeSlot(si))) continue;
-          arr.push(code);
+          const completedAtSlot = completedBeforeSlot(si);
+          let qUnits = removeFreeUntilFits(arr, unitsNeededFor(code, completedAtSlot));
+          if (!canPlace(code, slot.q, completedAtSlot, qUnits, schedule[slot.yi].levelNum)) continue;
+          arr._q = slot.q;
+          arr._unitsUsed = qUnits;
+          placeWithCoreq(code, arr, completedAtSlot);
+          delete arr._q;
+          delete arr._unitsUsed;
           placed.add(code);
           didPlace = true;
           break;
@@ -770,7 +831,10 @@ const Scheduler = {
       const addNewYear = () => {
         const last = schedule[schedule.length - 1];
         const nextAcad = last.academicStart + 1;
-        if (nextAcad > gradAcad + 1) return false;
+        // If the student's constraints (low max units, GAPs, late start, dense major)
+        // make the requested graduation window infeasible, keep extending a bounded
+        // number of years rather than silently dropping unmet courses/GE requirements.
+        if (nextAcad > gradAcad + 4) return false;
         const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
         schedule.push(newYear);
         overflowY = newYear;
@@ -784,9 +848,15 @@ const Scheduler = {
         for (let attempt = 0; attempt < 6 && !didPlace; attempt++) {
           const quarterArr = overflowY.quarters[lastQ];
           if (!quarterArr) break;
-          const qUnits = quarterArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
-          if (qUnits + COURSES[code].units <= maxUnits) {
-            quarterArr.push(code); placed.add(code); didPlace = true;
+          const completedNow = new Set(placed);
+          let qUnits = removeFreeUntilFits(quarterArr, unitsNeededFor(code, completedNow));
+          if (canPlace(code, lastQ, completedNow, qUnits, overflowY.levelNum)) {
+            quarterArr._q = lastQ;
+            quarterArr._unitsUsed = qUnits;
+            placeWithCoreq(code, quarterArr, completedNow);
+            delete quarterArr._q;
+            delete quarterArr._unitsUsed;
+            placed.add(code); didPlace = true;
           } else {
             const curIdx = qOrder.indexOf(lastQ);
             if (curIdx < qOrder.length - 1) lastQ = qOrder[curIdx + 1];
@@ -796,9 +866,40 @@ const Scheduler = {
       }
     }
 
-    // Do not synthesize courses into empty quarters here. FREE padding is selected
-    // earlier only when needed for degree-unit minimums; adding it after overflow
-    // inflates validation totals and can make a repaired 4-year plan look bloated.
+    // Final unit padding: real required courses may evict FREE placeholders during
+    // backfill/overflow. After all real courses are placed, add FREE electives only
+    // as needed to reach the 180-unit degree floor.
+    let totalUnits = schedule.reduce((sum, year) => sum + Object.values(year.quarters)
+      .flat().reduce((s, c) => s + (COURSES[c]?.units || 0), 0), 0);
+    const usedFree = new Set(schedule.flatMap(year => Object.values(year.quarters).flat()).filter(freeCode));
+    const freePool = Object.keys(COURSES).filter(freeCode).filter(c => !usedFree.has(c));
+    for (const free of freePool) {
+      if (totalUnits >= 180) break;
+      let placedFree = false;
+      for (const slot of allQuarters) {
+        const arr = schedule[slot.yi].quarters[slot.q];
+        if (!arr || arr[0] === "_GAP") continue;
+        const qUnits = arr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+        if (qUnits + COURSES[free].units <= maxUnits) {
+          arr.push(free);
+          totalUnits += COURSES[free].units;
+          placedFree = true;
+          break;
+        }
+      }
+      if (!placedFree) {
+        const last = schedule[schedule.length - 1];
+        const nextAcad = last.academicStart + 1;
+        if (nextAcad > gradAcad + 4) break;
+        const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
+        schedule.push(newYear);
+        allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
+        newYear.quarters.F.push(free);
+        totalUnits += COURSES[free].units;
+      }
+    }
+
+    // Do not synthesize anything beyond the minimum degree-unit padding above.
     return schedule;
   },
 
@@ -893,20 +994,29 @@ const Scheduler = {
   buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer) {
     const schedule = [];
     const levelNames = { 1: "Freshman", 2: "Sophomore", 3: "Junior", 4: "Senior", 5: "5th Year" };
-    const termOrder = ["F", "W", "S"];
+    const termOrder = includeSummer ? ["F", "W", "S", "SU"] : ["F", "W", "S"];
     const startIdx = termOrder.indexOf(curTerm);
-    const gradAcad = (gradTerm === "F") ? gradYear : gradYear - 1;
-    const startAcad = (curTerm === "F") ? curYear : curYear - 1;
+    const safeStartIdx = startIdx >= 0 ? startIdx : 0;
+    const academicYearOf = (term, year) => (term === "F") ? year : year - 1;
+    const termIndex = (term, year) => academicYearOf(term, year) * 4 + (["F", "W", "S", "SU"].indexOf(term));
+    const gradAcad = academicYearOf(gradTerm, gradYear);
+    const startAcad = academicYearOf(curTerm, curYear);
+
+    // A target graduation date before the current term is not a valid planning
+    // window. Return an empty skeleton; the UI prevents this, but the engine
+    // should still avoid creating quarters before the selected current term.
+    if (termIndex(gradTerm, gradYear) < termIndex(curTerm, curYear)) return schedule;
 
     for (let acad = startAcad; acad <= gradAcad; acad++) {
       const yearNum = acad - startAcad + startLevel;
       const year = this.makeYearObj(acad, yearNum, studentType, curTerm, gradTerm, includeSummer);
-      if (acad === startAcad && startIdx > 0) {
-        for (let i = 0; i < startIdx; i++) delete year.quarters[termOrder[i]];
+      if (acad === startAcad && safeStartIdx > 0) {
+        for (let i = 0; i < safeStartIdx; i++) delete year.quarters[termOrder[i]];
       }
       if (acad === gradAcad) {
         const gradIdx = termOrder.indexOf(gradTerm);
-        for (let i = gradIdx + 1; i < termOrder.length; i++) delete year.quarters[termOrder[i]];
+        const safeGradIdx = gradIdx >= 0 ? gradIdx : termOrder.length - 1;
+        for (let i = safeGradIdx + 1; i < termOrder.length; i++) delete year.quarters[termOrder[i]];
         if (year.quarters.SU && gradTerm !== "SU") delete year.quarters.SU;
       }
       schedule.push(year);

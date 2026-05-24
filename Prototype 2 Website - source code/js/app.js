@@ -170,13 +170,18 @@ function initWizard() {
   document.getElementById("btn-wizard-next-2")?.addEventListener("click", () => {
     AppState.profile.elwrSatisfied = document.getElementById("check-elwr").checked;
     const pc = parseInt(document.getElementById("input-prior-credits").value, 10);
-    AppState.profile.priorCredits = isNaN(pc) || pc < 0 ? 0 : pc;
+    AppState.profile.priorCredits = isNaN(pc) || pc < 0 ? 0 : Math.min(120, pc);
     showWizardStep(3);
   });
   document.getElementById("btn-wizard-back-2")?.addEventListener("click", () => showWizardStep(1));
 
   // Step 3: Graduation Preferences
   document.getElementById("btn-wizard-next-3")?.addEventListener("click", () => {
+    if (!isGradWindowValid()) {
+      updateGradDurationHint();
+      return;
+    }
+
     AppState.profile.targetGradTerm = document.getElementById("select-grad-term").value;
     AppState.profile.targetGradYear = parseInt(document.getElementById("select-grad-year").value, 10);
     AppState.profile.includeSummer = document.getElementById("check-summer").checked;
@@ -325,7 +330,7 @@ function updateGradDurationHint() {
 
   const quarters = quartersBetween(curTerm, curYear, gradTerm, gradYear);
   if (quarters < 1) {
-    hint.textContent = "Target is before current term. Please adjust.";
+    hint.textContent = "Target is before current term. Please adjust before continuing.";
     hint.style.color = "#c62828";
     return;
   }
@@ -334,12 +339,21 @@ function updateGradDurationHint() {
   hint.style.color = "";
 }
 
+function isGradWindowValid() {
+  const curTerm = document.getElementById("select-current-term")?.value;
+  const curYear = parseInt(document.getElementById("select-current-year")?.value, 10);
+  const gradTerm = document.getElementById("select-grad-term")?.value;
+  const gradYear = parseInt(document.getElementById("select-grad-year")?.value, 10);
+  return !!(curTerm && curYear && gradTerm && gradYear) && quartersBetween(curTerm, curYear, gradTerm, gradYear) >= 1;
+}
+
 // Count quarters between two (term, year) positions, inclusive of the start
 function quartersBetween(startTerm, startYear, endTerm, endYear) {
+  const order = ["F", "W", "S", "SU"];
   const idx = (t, y) => {
     const academic = academicYearStartOf(t, y);
-    const ord = TERM_ORDER.indexOf(t);
-    return academic * 3 + (ord < 0 ? 0 : ord);
+    const ord = order.indexOf(t);
+    return academic * order.length + (ord < 0 ? 0 : ord);
   };
   return idx(endTerm, endYear) - idx(startTerm, startYear) + 1;
 }
@@ -724,6 +738,7 @@ function generateAndShowSchedule() {
   // Render
   renderSchedule();
   renderRequirements();
+  showValidationAlerts();
 }
 
 function renderSchedule() {

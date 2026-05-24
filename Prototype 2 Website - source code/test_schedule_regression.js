@@ -27,11 +27,14 @@ function prereqViolations(schedule) {
     for (const q of ['F', 'W', 'S', 'SU']) {
       const arr = year.quarters[q];
       if (!arr) continue;
+      const sameQuarter = new Set(arr);
       const snapshot = new Set(completedBefore);
       for (const code of arr) {
         if (code === '_GAP' || code.startsWith('FREE')) continue;
         const course = COURSES[code];
-        if (course?.prereqs && !Validator.prereqsMet(course.prereqs, snapshot)) {
+        const prereqContext = new Set(snapshot);
+        if (course?.labCoreq && sameQuarter.has(course.labCoreq)) prereqContext.add(course.labCoreq);
+        if (course?.prereqs && !Validator.prereqsMet(course.prereqs, prereqContext)) {
           violations.push(`${code} in ${year.label} ${q}`);
         }
       }
