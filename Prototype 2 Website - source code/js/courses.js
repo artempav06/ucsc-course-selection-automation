@@ -749,8 +749,8 @@ const COURSES = {
   "FREE 2U8": { title: "Free Elective (2 units)", units: 2, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Any 2-unit course (lab, seminar, activity).", section: ["FREE"], rmpScore: 0 },
   "FREE 2U9": { title: "Free Elective (2 units)", units: 2, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Any 2-unit course (lab, seminar, activity).", section: ["FREE"], rmpScore: 0 },
 
-  "BME 205": { concentrations: [], title: "Bioinformatics: Molecular Biology and Genomics", units: 5, division: "upper", prereqs: [["BME 160"]], ge: null, quarters: ["F","W","S"], desc: "Computational approaches to molecular biology and genomics.", section: ["FREE"], rmpScore: 0 },
-  "BME 230A": { concentrations: [], title: "Computational Genomics", units: 5, division: "upper", prereqs: [["BME 205"]], ge: null, quarters: ["F","W","S"], desc: "Advanced computational methods for analyzing genomic data.", section: ["FREE"], rmpScore: 0 },
+  "BME 205": { concentrations: [], title: "Bioinformatics: Molecular Biology and Genomics", units: 5, division: "upper", prereqs: [["BME 160", "CSE 20"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Computational approaches to molecular biology and genomics. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
+  "BME 230A": { concentrations: [], title: "Computational Genomics", units: 5, division: "upper", prereqs: [["BME 205"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Advanced computational methods for analyzing genomic data. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
   "FILM 80V": { concentrations: [], title: "Introduction to Digital Media", units: 5, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Introduction to digital media production and theory.", section: ["FREE"], rmpScore: 0 },
 
   // ECE graduate courses (RE_BS ADV_ROBOTICS_ELECTIVE)
@@ -766,11 +766,11 @@ const COURSES = {
   "ECE 249": { concentrations: [], title: "Introduction to Cyber-physical Systems", units: 5, division: "graduate", prereqs: [["CSE 100"], ["ECE 13", "CSE 13E"]], ge: null, quarters: ["F","W","S"], desc: "Modeling tools for continuous/discrete systems, finite state machines, hybrid automata, and formal verification.", section: ["FREE"], rmpScore: 0 },
 
   // TIM courses (TIM_BS BASKIN_ENGR_ELECTIVES)
-  "TIM 171": { concentrations: ["tim_entrepreneurship"], title: "Information Systems and Technology", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: ["F","W","S"], desc: "Study of information systems and their role in technology management organizations.", section: ["FREE"], rmpScore: 0 },
-  "TIM 174": { concentrations: ["tim_entrepreneurship"], title: "Supply Chain Management", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: ["F","W","S"], desc: "Management of supply chains in technology firms, covering logistics, operations, and optimization.", section: ["FREE"], rmpScore: 0 },
-  "TIM 176": { concentrations: ["tim_entrepreneurship"], title: "Technology Entrepreneurship", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: ["F","W","S"], desc: "Principles of entrepreneurship and innovation in technology ventures.", section: ["FREE"], rmpScore: 0 },
-  "TIM 177": { concentrations: ["tim_entrepreneurship"], title: "Technology Consulting", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: ["F","W","S"], desc: "Consulting methodologies and practices in technology management contexts.", section: ["FREE"], rmpScore: 0 },
-  "TIM 178": { concentrations: ["tim_entrepreneurship"], title: "Managing Technology Innovation", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: ["F","W","S"], desc: "Strategies for managing technology innovation in organizations.", section: ["FREE"], rmpScore: 0 },
+  "TIM 171": { concentrations: ["tim_entrepreneurship"], title: "Information Systems and Technology", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
+  "TIM 174": { concentrations: ["tim_entrepreneurship"], title: "Supply Chain Management", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
+  "TIM 176": { concentrations: ["tim_entrepreneurship"], title: "Technology Entrepreneurship", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
+  "TIM 177": { concentrations: ["tim_entrepreneurship"], title: "Technology Consulting", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
+  "TIM 178": { concentrations: ["tim_entrepreneurship"], title: "Managing Technology Innovation", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
 
   // CSE electives (TIM_BS, RE_BS, NDT_BS)
   "CSE 104A": { concentrations: [], title: "Computability and Computational Complexity", units: 5, division: "upper", prereqs: [["CSE 103"]], ge: null, quarters: ["F","W","S"], desc: "Turing machines, Chomsky hierarchy, recursive functions, the Halting problem, and NP-completeness.", section: ["FREE"], rmpScore: 0 },
@@ -2205,7 +2205,8 @@ const COURSES = {
   "ECE 10": { concentrations: [],
     title: "Fundamentals of Robot Kinematics and Dynamics",
     units: 5, division: "lower",
-    prereqs: [["ECE 9", "AM 20", "MATH 24"]],
+    // Official catalog: ECE 9, and AM 20 or MATH 24.
+    prereqs: [["ECE 9"], ["AM 20", "MATH 24"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/lower-division/ece-10",
     desc: "Covers the theory and application of mathematical models to analyze the kinematics and dynamics of robot mechanisms or their components using vector algebra, differential equations, and computer simulations; also covers robot vehicle kinematics, robot arm kinematics, and robot dynamics with computational examples and problems. Some basic programming skills and familiarity with MATLAB are expected. (Formerly CMPE 10.)",
@@ -2433,7 +2434,9 @@ const COURSES = {
   "ECE 118": { concentrations: ["ee_embedded_controls","gd_game_systems","ndt_embedded","re_autonomous","tim_systems_eng"],
     title: "Introduction to Mechatronics",
     units: 10, division: "upper",
-    prereqs: [["ECE 101"], ["ECE 101L"], ["CSE 100"], ["CSE 100L"], ["ECE 13", "CSE 13E", "ECE 121", "ECE 167"]],
+    // Official catalog: ECE 101 and ECE 101L and CSE 100 and CSE 100L; and ECE 13 or CSE 13E.
+    // ECE 121 and ECE 167 are recommended for Robotics Engineering, not prerequisites.
+    prereqs: [["ECE 101"], ["ECE 101L"], ["CSE 100"], ["CSE 100L"], ["ECE 13", "CSE 13E"]],
     ge: "PR-E", quarters: ["F", "W", "S", "SU"],
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-118",
     desc: "Technologies involved in mechatronics (intelligent electro-mechanical systems) and techniques necessary to integrate these technologies into mechatronic systems. Topics include electronics (A/D, D/A converters, opamps, filters, power devices), software program design (event-driven programming, state machine-based design), DC and stepper motors, basic sensing, and basic mechanical design (machine elements and mechanical CAD). Combines lab component of structured assignments with a large and open-ended team project. Students who enrolled in this class will learn how to solve engineering problems using the C Programming Language. Cannot receive credit for this course and ECE 218 .",
@@ -2479,8 +2482,12 @@ const COURSES = {
   "ECE 129A": { concentrations: [],
     title: "Capstone Project I",
     units: 5, division: "upper",
-    prereqs: [["CSE 100"]],
+    // Official catalog: CSE 100; enrollment restricted to senior EE/RE majors.
+    // RE students must complete ECE 118 and ECE 121 before capstone.
+    // EE students must complete ECE 171 and one of ECE 157/ECE 173/ECE 118/ECE 121.
+    prereqs: [["CSE 100"], ["ECE 118", "ECE 171"], ["ECE 121", "ECE 157", "ECE 173"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
+    enrollmentRestrictions: "Enrollment is restricted to seniors: Electrical Engineering and Robotics Engineering majors.",
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-129a",
     desc: "First of a three-course sequence in which students apply knowledge and skills gained in elective track to complete a major design project. In this first course, students complete the specification and planning for a substantial project. Topics covered: engineering design cycle, engineering teams, and professional practices. (Formerly EE 129A.)",
     section: ["FREE"], rmpScore: 0
@@ -4964,7 +4971,7 @@ const COURSES = {
   "BME 129C": { concentrations: [],
     title: "Project Design and Implementation in Biomolecular Engineering III",
     units: 5, division: "upper",
-    prereqs: [["BME 129B", "BME 230A"]],
+    prereqs: [["BME 129B", "BME 230A"], ["BME 185"]],
     ge: "PR-E", quarters: ["F", "W", "S", "SU"],
     enrollmentRestrictions: "Enrollment is restricted to senior bioengineering or biomolecular engineering and bioinformatics majors.",
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/100/bme-129c",
@@ -5149,7 +5156,7 @@ const COURSES = {
   "BME 195": { concentrations: [],
     title: "Senior Thesis Research",
     units: 5, division: "upper",
-    prereqs: [],
+    prereqs: [["BME 185"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
     repeatable: true,
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/100/bme-195",
@@ -15301,6 +15308,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["MATH 19B", "MATH 20B", "MATH 11B", "AM 11B", "ECON 11B"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
+    labCoreq: "TIM 172P",
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172a",
     desc: "Addresses strategic, engineering, marketing, and financial processes and tools for the management, development, and commercialization of high-tech products. Declared TIM majors must concurrently enroll in TIM 172P to fulfill the capstone series. (Formerly CSE 171A.)",
     section: ["FREE"], rmpScore: 0
@@ -15310,6 +15318,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["TIM 172A"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
+    labCoreq: "TIM 172Q",
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-172b",
     desc: "Addresses the development and application of processes and tools for the management, design, optimization, and operation of supply chain networks for high-tech products. Declared TIM majors must concurrently enroll in TIM 172Q to fulfill the capstone series. (Formerly CSE 171B.)",
     section: ["FREE"], rmpScore: 0
@@ -15347,7 +15356,7 @@ const COURSES = {
   "TIM 175": { concentrations: [],
     title: "Business Strategy and Information Systems",
     units: 5, division: "upper",
-    prereqs: [["TIM 50"]],
+    prereqs: [["WRIT 2"], ["TIM 50"]],
     ge: null, quarters: ["F", "W", "S", "SU"],
     catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/tim-technology-information-management/upper-division/tim-175",
     desc: "Analysis of effective use of information systems within a business enterprise, with emphasis on gaining a competitive advantage. Integration of information systems with business strategy, financial justification, personnel, and organizational considerations are highlighted. Intended for technology and information management majors or senior engineering majors who have a business interest. (Formerly CSE 175.)",

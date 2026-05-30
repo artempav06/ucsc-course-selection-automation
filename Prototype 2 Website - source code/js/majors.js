@@ -16,7 +16,7 @@
 const CS_BA_REQUIREMENTS = {
   id: "CS_BA",
   name: "Computer Science B.A.",
-  catalogUrl: "https://catalog.ucsc.edu/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-ba/",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-ba",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
   minGPA: 2.0,
@@ -128,7 +128,7 @@ const CS_BA_REQUIREMENTS = {
 const AM_BS_REQUIREMENTS = {
   id: "AM_BS",
   name: "Applied Mathematics B.S.",
-  catalogUrl: "https://catalog.ucsc.edu/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs/",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/applied-mathematics/applied-mathematics-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/Applied-Math-Major_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -147,14 +147,18 @@ const AM_BS_REQUIREMENTS = {
       description: "Complete one calculus sequence."
     },
     {
-      id: "LINEAR_ALGEBRA_DIFF_EQ",
-      name: "Linear Algebra & Differential Equations",
-      type: "choose_group",
-      groups: [
-        { label: "AM 10 + AM 20 (Strongly Preferred)", courses: ["AM 10", "AM 20"] },
-        { label: "MATH 21 + MATH 24", courses: ["MATH 21", "MATH 24"] }
-      ],
-      description: "Complete one sequence. AM 10 + AM 20 is strongly preferred."
+      id: "LINEAR_ALGEBRA",
+      name: "Linear Algebra",
+      type: "pick_one",
+      courses: ["AM 10", "MATH 21"],
+      description: "Choose one: AM 10 or MATH 21. AM 10 is preferred."
+    },
+    {
+      id: "DIFFERENTIAL_EQUATIONS",
+      name: "Differential Equations",
+      type: "pick_one",
+      courses: ["AM 20", "MATH 24"],
+      description: "Choose one: AM 20 or MATH 24. AM 20 is preferred."
     },
     {
       id: "MULTIVARIABLE_CALCULUS",
@@ -248,6 +252,7 @@ const AM_BS_REQUIREMENTS = {
 const BIOTECH_BS_REQUIREMENTS = {
   id: "BIOTECH_BS",
   name: "Biotechnology B.A.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biotechnology-ba",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/Biotechnology-25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -292,9 +297,10 @@ const BIOTECH_BS_REQUIREMENTS = {
       type: "choose_group",
       groups: [
         { label: "STAT 7 + STAT 7L", courses: ["STAT 7", "STAT 7L"] },
-        { label: "STAT 5", courses: ["STAT 5"] }
+        { label: "STAT 5", courses: ["STAT 5"] },
+        { label: "STAT 131 substitution", courses: ["STAT 131"] }
       ],
-      description: "Choose one: STAT 7/L or STAT 5."
+      description: "Choose one: STAT 7/L, STAT 5, or STAT 131 substitution."
     },
     {
       id: "UD_CORE",
@@ -335,6 +341,7 @@ const BIOTECH_BS_REQUIREMENTS = {
 const BMEB_BI_REQUIREMENTS = {
   id: "BMEB_BI",
   name: "Biomolecular Engineering and Bioinformatics (Bioinformatics)",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biomolecular-engineering-and-bioinformatics-bs#degree-req-3",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-BINF-25-26-1.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -343,11 +350,21 @@ const BMEB_BI_REQUIREMENTS = {
 
   categories: [
     {
+      id: "CALCULUS",
+      name: "Calculus",
+      type: "choose_group",
+      groups: [
+        { label: "MATH 19A + MATH 19B", courses: ["MATH 19A", "MATH 19B"] },
+        { label: "MATH 20A + MATH 20B", courses: ["MATH 20A", "MATH 20B"] }
+      ],
+      description: "Complete one calculus sequence."
+    },
+    {
       id: "MATH_STATS_CORE",
       name: "Mathematics and Statistics (Core)",
       type: "all_required",
-      courses: ["MATH 19A", "MATH 19B", "CSE 16", "STAT 131"],
-      description: "Complete all core math and statistics courses."
+      courses: ["CSE 16", "STAT 131"],
+      description: "Complete CSE 16 and STAT 131."
     },
     {
       id: "LINEAR_ALGEBRA",
@@ -428,7 +445,7 @@ const BMEB_BI_REQUIREMENTS = {
       type: "pick_n",
       n: 1,
       courses: [
-        "AM 115", "AM 147", "BME 118", "BME 122H", "BME 128", "BME 128L",
+        "AM 115", "AM 147", "BME 118", "BME 122H", "BME 123L", "BME 128", "BME 128L",
         "BME 130", "BME 132", "BME 140", "BME 175", "BME 177", "BME 177L",
         "BME 178", "BIOC 100B", "CSE 142", "CSE 144", "CSE 182", "METX 100",
         "METX 140"
@@ -439,8 +456,15 @@ const BMEB_BI_REQUIREMENTS = {
       id: "PROGRAMMING_CORE",
       name: "Programming (Core)",
       type: "all_required",
-      courses: ["BME 160", "BME 163", "CSE 30"],
-      description: "Complete all core programming courses."
+      courses: ["BME 163", "CSE 30"],
+      description: "Complete BME 163 and CSE 30."
+    },
+    {
+      id: "BME160_SUBSTITUTION",
+      name: "BME 160 / CSE 20 Substitution",
+      type: "pick_one",
+      courses: ["BME 160", "CSE 20"],
+      description: "Choose BME 160 or CSE 20. BME 160 is strongly recommended."
     },
     {
       id: "PROGRAMMING_CHOICE",
@@ -455,9 +479,11 @@ const BMEB_BI_REQUIREMENTS = {
     {
       id: "CAPSTONE",
       name: "Bioinformatics Capstone",
-      type: "all_required",
-      courses: ["BME 205", "BME 230A", "BME 129C", "BME 195"],
-      description: "Complete all capstone courses."
+      type: "choose_group",
+      groups: [
+        { label: "Bioinformatics Capstone", courses: ["BME 205", "BME 230A", "BME 129C"] }
+      ],
+      description: "Complete the Bioinformatics Capstone sequence. The official Senior Thesis alternative requires 15 credits of repeatable BME 195 across three quarters and is deferred until the scheduler supports repeat-count requirements."
     }
   ]
 };
@@ -465,6 +491,7 @@ const BMEB_BI_REQUIREMENTS = {
 const BMEB_BM_REQUIREMENTS = {
   id: "BMEB_BM",
   name: "Biomolecular Engineering and Bioinformatics (Biomolecular)",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/biomolecular-engineering/biomolecular-engineering-and-bioinformatics-bs#degree-req-2",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/BMEB-Biomoleular-25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -473,11 +500,21 @@ const BMEB_BM_REQUIREMENTS = {
 
   categories: [
     {
-      id: "MATH_REQUIRED",
-      name: "Mathematics (Required)",
+      id: "CALCULUS",
+      name: "Calculus",
+      type: "choose_group",
+      groups: [
+        { label: "MATH 19A + MATH 19B", courses: ["MATH 19A", "MATH 19B"] },
+        { label: "MATH 20A + MATH 20B", courses: ["MATH 20A", "MATH 20B"] }
+      ],
+      description: "Complete one calculus sequence."
+    },
+    {
+      id: "STATISTICS",
+      name: "Statistics",
       type: "all_required",
-      courses: ["MATH 19A", "MATH 19B", "STAT 131"],
-      description: "Calculus I, Calculus II, and Introduction to Probability Theory are all required."
+      courses: ["STAT 131"],
+      description: "STAT 131 is required."
     },
     {
       id: "MATH_LINEAR_ALGEBRA",
@@ -505,10 +542,13 @@ const BMEB_BM_REQUIREMENTS = {
     },
     {
       id: "PHYSICS_INTRO",
-      name: "Physics (Introductory)",
-      type: "pick_one",
-      courses: ["PHYS 5A", "PHYS 5L", "PHYS 15A", "PHYS 5L"],
-      description: "Choose one: PHYS 5A/L (Introduction to Physics I) or PHYS 15A/5L (Honors Introduction to Physics I)."
+      name: "Physics I",
+      type: "choose_group",
+      groups: [
+        { label: "PHYS 5A + PHYS 5L", courses: ["PHYS 5A", "PHYS 5L"] },
+        { label: "PHYS 15A + PHYS 5L", courses: ["PHYS 15A", "PHYS 5L"] }
+      ],
+      description: "Complete PHYS 5L with either PHYS 5A or PHYS 15A."
     },
     {
       id: "PHYSICS_REQUIRED",
@@ -587,10 +627,9 @@ const BMEB_BM_REQUIREMENTS = {
       groups: [
         { label: "Bioinformatics Capstone", courses: ["BME 205", "BME 230A", "BME 129C"] },
         { label: "iGEM", courses: ["BME 180", "BME 188A", "BME 188B", "BME 188C"] },
-        { label: "Senior Design", courses: ["BME 129A", "BME 129B", "BME 129C"] },
-        { label: "Senior Thesis", courses: ["BME 195"] }
+        { label: "Senior Design", courses: ["BME 129A", "BME 129B", "BME 129C"] }
       ],
-      description: "Students must complete one of the following capstone tracks. The Bioinformatics Capstone is programming heavy. The Senior Thesis option consists of 15 credits of BME 195 split over 3 quarters."
+      description: "Students must complete one of the following capstone tracks. The Bioinformatics Capstone is programming heavy. The official Senior Thesis option consists of 15 credits of repeatable BME 195 split over three quarters and is deferred until the scheduler supports repeat-count requirements."
     }
   ]
 };
@@ -598,6 +637,7 @@ const BMEB_BM_REQUIREMENTS = {
 const CE_BS_REQUIREMENTS = {
   id: "CE_BS",
   name: "Computer Engineering B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-engineering-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/CE_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -622,9 +662,9 @@ const CE_BS_REQUIREMENTS = {
     {
       id: "DIFF_EQ",
       name: "Differential Equations",
-      type: "pick_one",
-      courses: ["AM 20", "MATH 24"],
-      description: "Choose one differential equations course."
+      type: "all_required",
+      courses: ["AM 20"],
+      description: "AM 20 is required for Computer Engineering B.S."
     },
     {
       id: "MULTIVAR",
@@ -687,8 +727,8 @@ const CE_BS_REQUIREMENTS = {
       id: "DC",
       name: "Disciplinary Communication (DC)",
       type: "pick_one",
-      courses: ["CSE 185E", "CSE 195"],
-      description: "Choose one: CSE 185E or CSE 195."
+      courses: ["CSE 185E", "CSE 185S", "CSE 195"],
+      description: "Choose one: CSE 185E, CSE 185S, or CSE 195."
     },
     {
       id: "CAPSTONE",
@@ -696,7 +736,7 @@ const CE_BS_REQUIREMENTS = {
       type: "choose_group",
       groups: [
         { label: "Engineering Design", courses: ["CSE 123A", "CSE 123B"] },
-        { label: "Chip Design", courses: ["CSE 127A", "CSE 127B"] },
+        { label: "Capstone Project", courses: ["CSE 129A", "CSE 129B", "CSE 129C"] },
         { label: "Mechatronics", courses: ["ECE 118"] },
         { label: "Senior Thesis", courses: ["CSE 195"] }
       ],
@@ -708,6 +748,7 @@ const CE_BS_REQUIREMENTS = {
 const CSGD_BS_REQUIREMENTS = {
   id: "CSGD_BS",
   name: "Computer Science: Computer Game Design B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computational-media/computer-science-computer-game-design-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/CSGD_BS_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -775,11 +816,11 @@ const CSGD_BS_REQUIREMENTS = {
         "CMPM 163", "CMPM 164", "CMPM 169", "CMPM 172", "CMPM 177", "CMPM 178",
         "CMPM 179", "CMPM 180", "CSE 102", "CSE 103", "CSE 104", "CSE 110A",
         "CSE 110B", "CSE 112", "CSE 113", "CSE 115A", "CSE 115B", "CSE 115C",
-        "CSE 117", "CSE 118", "CSE 120", "CSE 130", "CSE 132", "CSE 138",
+        "CSE 117", "CSE 118", "CSE 119", "CSE 120", "CSE 130", "CSE 132", "CSE 138",
         "CSE 140", "CSE 142", "CSE 144", "CSE 145", "CSE 146", "CSE 150",
         "CSE 156", "CSE 157", "CSE 160", "CSE 161", "CSE 162", "CSE 163",
         "CSE 180", "CSE 181", "CSE 183", "CSE 184", "CSE 186", "CSE 187",
-        "ECON 166A", "ECE 118"
+        "ECON 166A", "CSE 166A", "ECE 118"
       ],
       description: "Choose five CGE electives from the approved list."
     },
@@ -803,6 +844,7 @@ const CSGD_BS_REQUIREMENTS = {
 const CS_BS_REQUIREMENTS = {
   id: "CS_BS",
   name: "Computer Science B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/CS_BS_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -856,8 +898,15 @@ const CS_BS_REQUIREMENTS = {
       id: "UD_CORE",
       name: "Upper Division CSE (Core)",
       type: "all_required",
-      courses: ["CSE 120", "CSE 114A", "CSE 130", "CSE 101M"],
+      courses: ["CSE 120", "CSE 130", "CSE 101M"],
       description: "Complete all upper division core courses."
+    },
+    {
+      id: "UD_LANGUAGES",
+      name: "Programming Languages",
+      type: "pick_one",
+      courses: ["CSE 112", "CSE 114A"],
+      description: "Choose one: CSE 112 or CSE 114A."
     },
     {
       id: "UD_THEORY",
@@ -916,6 +965,7 @@ const CS_BS_REQUIREMENTS = {
 const EE_BS_REQUIREMENTS = {
   id: "EE_BS",
   name: "Electrical Engineering B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/EE_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -966,20 +1016,18 @@ const EE_BS_REQUIREMENTS = {
       name: "Physics (Mechanics)",
       type: "choose_group",
       groups: [
-        { label: "PHYS 5A + PHYS 5L", courses: ["PHYS 5A", "PHYS 5L"] },
-        { label: "PHYS 15A", courses: ["PHYS 15A"] }
+        { label: "PHYS 5A + PHYS 5L", courses: ["PHYS 5A", "PHYS 5L"] }
       ],
-      description: "Choose one: PHYS 5A/L or PHYS 15A."
+      description: "Complete PHYS 5A and PHYS 5L."
     },
     {
       id: "PHYSICS_C",
       name: "Physics (E&M)",
       type: "choose_group",
       groups: [
-        { label: "PHYS 5C + PHYS 5N", courses: ["PHYS 5C", "PHYS 5N"] },
-        { label: "PHYS 15C", courses: ["PHYS 15C"] }
+        { label: "PHYS 5C + PHYS 5N", courses: ["PHYS 5C", "PHYS 5N"] }
       ],
-      description: "Choose one: PHYS 5C/N or PHYS 15C."
+      description: "Complete PHYS 5C and PHYS 5N."
     },
     {
       id: "PHYSICS_CORE",
@@ -1054,6 +1102,7 @@ const EE_BS_REQUIREMENTS = {
 const NDT_BS_REQUIREMENTS = {
   id: "NDT_BS",
   name: "Network and Digital Technology B.A.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/network-and-digital-technology-ba",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/Network-Digital-Technology_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -1127,8 +1176,8 @@ const NDT_BS_REQUIREMENTS = {
       id: "UD_CORE",
       name: "Upper Division Core",
       type: "all_required",
-      courses: ["CSE 101", "CSE 150", "CSE 185E"],
-      description: "Complete all upper division core courses. CSE 185E also satisfies DC."
+      courses: ["CSE 101", "CSE 150"],
+      description: "Complete all upper division core courses. DC is satisfied separately by CSE 185E or CSE 185S."
     },
     {
       id: "UD_ELECTIVES",
@@ -1160,9 +1209,9 @@ const NDT_BS_REQUIREMENTS = {
     {
       id: "DC",
       name: "Disciplinary Communication (DC)",
-      type: "all_required",
-      courses: ["CSE 185E"],
-      description: "CSE 185E satisfies the DC requirement."
+      type: "pick_one",
+      courses: ["CSE 185E", "CSE 185S"],
+      description: "Choose one: CSE 185E or CSE 185S satisfies the DC requirement."
     }
   ]
 };
@@ -1170,6 +1219,7 @@ const NDT_BS_REQUIREMENTS = {
 const RE_BS_REQUIREMENTS = {
   id: "RE_BS",
   name: "Robotics Engineering B.S.",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/robotics-engineering-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/RE_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -1310,7 +1360,7 @@ const RE_BS_REQUIREMENTS = {
 const TIM_BS_REQUIREMENTS = {
   id: "TIM_BS",
   name: "Technology and Information Management B.S.",
-  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs/?tab=2",
+  catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/technology-and-information-management/technology-and-information-management-bs",
   pdfUrl: "https://undergrad.engineering.ucsc.edu/files/2025/09/TIM_25-26.pdf",
   totalUnitsRequired: 180,
   minUpperDivUnits: 60,
@@ -1319,11 +1369,21 @@ const TIM_BS_REQUIREMENTS = {
 
   categories: [
     {
-      id: "MATH_CORE",
-      name: "Math (Core)",
+      id: "CALCULUS",
+      name: "Calculus",
+      type: "choose_group",
+      groups: [
+        { label: "MATH 19A + MATH 19B", courses: ["MATH 19A", "MATH 19B"] },
+        { label: "MATH 20A + MATH 20B", courses: ["MATH 20A", "MATH 20B"] }
+      ],
+      description: "Complete one calculus sequence."
+    },
+    {
+      id: "DISCRETE_MATH",
+      name: "Discrete Mathematics",
       type: "all_required",
-      courses: ["MATH 19A", "MATH 19B", "CSE 16"],
-      description: "Complete all core math courses."
+      courses: ["CSE 16"],
+      description: "Complete CSE 16."
     },
     {
       id: "MULTIVAR",
@@ -1383,7 +1443,7 @@ const TIM_BS_REQUIREMENTS = {
       type: "pick_n",
       n: 2,
       courses: [
-        "TIM 171", "TIM 174", "TIM 176", "TIM 177", "TIM 178", "STAT 131", "CSE 107", "CSE 120",
+        "TIM 147", "TIM 150", "TIM 173", "STAT 131", "CSE 107", "CSE 120",
         "CSE 101", "CSE 102", "CSE 103", "CSE 104A", "CSE 105",
         "CSE 110A", "CSE 111", "CSE 112", "CSE 113", "CSE 114A", "CSE 115A",
         "CSE 115B", "CSE 115C", "CSE 115D", "CSE 116", "CSE 117", "CSE 118",
@@ -1410,8 +1470,8 @@ const TIM_BS_REQUIREMENTS = {
         "ECON 136", "ECON 137", "ECON 140", "ECON 141", "ECON 150", "ECON 155",
         "ECON 160", "ECON 161A", "ECON 161B", "ECON 166", "ECON 170", "ECON 171",
         "ECON 172", "ECON 173", "ECON 175", "ECON 176", "ECON 177", "ECON 178",
-        "ECON 180", "ECON 181", "ECON 182", "ECON 183", "ECON 185", "ECON 186",
-        "ECON 187", "ECON 188", "ECON 189", "ECON 190"
+        "ECON 180", "ECON 181", "ECON 182", "ECON 183", "ECON 185",
+        "ECON 187", "ECON 188", "ECON 189"
       ],
       description: "Choose one UD Economics course from the approved list."
     },

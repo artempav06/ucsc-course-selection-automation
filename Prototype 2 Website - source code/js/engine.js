@@ -512,6 +512,8 @@ const Scheduler = {
     const prereqContext = new Set([...used, ...completedSet]);
     const isSafeSupplement = c => COURSES[c].division === "upper"
       && !c.startsWith("FREE")
+      && Array.isArray(COURSES[c].quarters)
+      && COURSES[c].quarters.length > 0
       && !used.has(c)
       && !completedSet.has(c)
       && !vp.has(c)

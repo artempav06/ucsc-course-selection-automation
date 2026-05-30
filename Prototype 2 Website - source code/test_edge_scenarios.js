@@ -105,6 +105,17 @@ function assert(cond, msg) {
   if (!cond) throw new Error(msg);
 }
 
+function courseSlot(schedule, target) {
+  for (let yi = 0; yi < schedule.length; yi++) {
+    const year = schedule[yi];
+    for (const q of ['F','W','S','SU']) {
+      const arr = year.quarters[q] || [];
+      if (arr.includes(target)) return { yearIndex: yi, levelNum: year.levelNum, q, label: year.label };
+    }
+  }
+  return null;
+}
+
 const tests = [];
 function test(name, fn) { tests.push({ name, fn }); }
 
@@ -201,6 +212,71 @@ test('dense robotics concentrations avoid unnecessary fifth-year single-course o
     }
   }
   assert(failures.length === 0, failures.join(' | '));
+});
+
+test('official Robotics planner constraints keep ECE capstone in senior year after ECE 118 and ECE 121', () => {
+  const schedule = Scheduler.generate(makeProfile({ major: 'RE_BS', concentration: 're_autonomous', currentYear: 2024, targetGradYear: 2028 }));
+  const s129A = courseSlot(schedule, 'ECE 129A');
+  const s129B = courseSlot(schedule, 'ECE 129B');
+  const s129C = courseSlot(schedule, 'ECE 129C');
+  const s118 = courseSlot(schedule, 'ECE 118');
+  const s121 = courseSlot(schedule, 'ECE 121');
+  assert(s129A && s129B && s129C, 'missing ECE 129A/B/C capstone sequence');
+  assert(s118 && s121, 'missing ECE 118 or ECE 121, required before RE capstone');
+  assert(s129A.levelNum >= 4, `ECE 129A should be senior-year only, got ${s129A.label} ${s129A.q}`);
+  assert(s118.yearIndex < s129A.yearIndex || (s118.yearIndex === s129A.yearIndex && ['F','W','S','SU'].indexOf(s118.q) < ['F','W','S','SU'].indexOf(s129A.q)), 'ECE 118 should be completed before ECE 129A');
+  assert(s121.yearIndex < s129A.yearIndex || (s121.yearIndex === s129A.yearIndex && ['F','W','S','SU'].indexOf(s121.q) < ['F','W','S','SU'].indexOf(s129A.q)), 'ECE 121 should be completed before ECE 129A');
+  assert(s129A.yearIndex < s129B.yearIndex || (s129A.yearIndex === s129B.yearIndex && ['F','W','S','SU'].indexOf(s129A.q) < ['F','W','S','SU'].indexOf(s129B.q)), 'ECE 129B should follow ECE 129A');
+  assert(s129B.yearIndex < s129C.yearIndex || (s129B.yearIndex === s129C.yearIndex && ['F','W','S','SU'].indexOf(s129B.q) < ['F','W','S','SU'].indexOf(s129C.q)), 'ECE 129C should follow ECE 129B');
+});
+
+function category(major, id) {
+  return (MAJOR_REQUIREMENTS[major].categories || []).find(c => c.id === id);
+}
+function groupHas(cat, courses) {
+  return (cat.groups || []).some(g => courses.every(c => (g.courses || []).includes(c)));
+}
+
+function before(a, b) {
+  return a.yearIndex < b.yearIndex || (a.yearIndex === b.yearIndex && ['F','W','S','SU'].indexOf(a.q) < ['F','W','S','SU'].indexOf(b.q));
+}
+
+test('official catalog alternatives are represented for audited non-RE majors', () => {
+  assert(groupHas(category('BMEB_BI', 'CALCULUS'), ['MATH 20A', 'MATH 20B']), 'BMEB_BI missing MATH 20A/B calculus path');
+  assert(groupHas(category('BMEB_BM', 'CALCULUS'), ['MATH 20A', 'MATH 20B']), 'BMEB_BM missing MATH 20A/B calculus path');
+  assert(groupHas(category('TIM_BS', 'CALCULUS'), ['MATH 20A', 'MATH 20B']), 'TIM_BS missing MATH 20A/B calculus path');
+  assert(category('CS_BS', 'UD_LANGUAGES').courses.includes('CSE 112'), 'CS_BS missing CSE 112 / CSE 114A choice');
+  assert(category('BIOTECH_BS', 'LD_STATISTICS').groups.some(g => g.courses.includes('STAT 131')), 'BIOTECH_BS missing STAT 131 statistics substitution');
+  assert(category('CSGD_BS', 'CGE_ELECTIVES').courses.includes('CSE 119'), 'CSGD_BS missing CSE 119 elective');
+  assert(category('CSGD_BS', 'CGE_ELECTIVES').courses.includes('CSE 166A'), 'CSGD_BS missing CSE 166A cross-list elective');
+  assert(category('CE_BS', 'DC').courses.includes('CSE 185S'), 'CE_BS missing CSE 185S DC option');
+  assert(category('NDT_BS', 'DC').courses.includes('CSE 185S'), 'NDT_BS missing CSE 185S DC option');
+  assert(!category('TIM_BS', 'ECON_ELECTIVE').courses.includes('ECON 190'), 'TIM_BS should not include ECON 190 outside official 100-189 economics elective range');
+});
+
+test('official TIM comprehensive sequence keeps required concurrent pairs together', () => {
+  const schedule = Scheduler.generate(makeProfile({ major: 'TIM_BS', concentration: 'tim_entrepreneurship', currentYear: 2024, targetGradYear: 2028 }));
+  const a = courseSlot(schedule, 'TIM 172A');
+  const p = courseSlot(schedule, 'TIM 172P');
+  const b = courseSlot(schedule, 'TIM 172B');
+  const q = courseSlot(schedule, 'TIM 172Q');
+  assert(a && p && b && q, 'missing TIM 172A/P/B/Q');
+  assert(a.yearIndex === p.yearIndex && a.q === p.q, `TIM 172A and TIM 172P must be concurrent, got ${a.label} ${a.q} vs ${p.label} ${p.q}`);
+  assert(b.yearIndex === q.yearIndex && b.q === q.q, `TIM 172B and TIM 172Q must be concurrent, got ${b.label} ${b.q} vs ${q.label} ${q.q}`);
+});
+
+test('official BMEB capstone options are alternatives and occur after BME 185 technical writing', () => {
+  for (const [major, concentration] of [['BMEB_BI', 'bi_computational'], ['BMEB_BM', 'bm_molecular_eng']]) {
+    const schedule = Scheduler.generate(makeProfile({ major, concentration, currentYear: 2024, targetGradYear: 2028 }));
+    const technicalWriting = courseSlot(schedule, 'BME 185');
+    assert(technicalWriting, `${major} missing BME 185`);
+    for (const code of ['BME 205', 'BME 230A', 'BME 129C', 'BME 195']) {
+      const slot = courseSlot(schedule, code);
+      if (slot) assert(before(technicalWriting, slot), `${major} places ${code} before BME 185`);
+    }
+    const courses = plannedCourses(schedule);
+    if (major === 'BMEB_BI') assert(!(courses.includes('BME 129C') && courses.includes('BME 195')), 'BMEB_BI should not require both bioinformatics capstone and senior thesis');
+  }
 });
 
 let failed = 0;
