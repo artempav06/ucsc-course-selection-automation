@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ucsc-scheduler.local/schemas/planner-expectation.schema.json",
+  "title": "Prototype 3 Planner Expectation",
+  "type": "object",
+  "required": ["id", "majorId", "sourceUrl", "checks"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "majorId": { "type": "string", "minLength": 1 },
+    "sourceUrl": { "type": "string", "minLength": 1 },
+    "catalogYear": { "type": "string" },
+    "notes": { "type": "string" },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "severity"],
+        "properties": {
+          "type": {
+            "enum": [
+              "course_before_course",
+              "course_in_year_range",
+              "courses_same_term",
+              "sequence_order",
+              "avoid_single_course_overflow"
+            ]
+          },
+          "severity": { "enum": ["warning", "error"] },
+          "courses": { "type": "array", "items": { "type": "string" } },
+          "course": { "type": "string" },
+          "before": { "type": "string" },
+          "after": { "type": "string" },
+          "minYear": { "type": "integer", "minimum": 1 },
+          "maxYear": { "type": "integer", "minimum": 1 },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}

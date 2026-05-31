@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ucsc-scheduler.local/schemas/major.schema.json",
+  "title": "Prototype 3 Major Requirements",
+  "type": "object",
+  "required": ["id", "name", "catalogUrl", "categories"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "catalogUrl": { "type": "string", "minLength": 1 },
+    "pdfUrl": { "type": "string" },
+    "totalUnitsRequired": { "type": "number" },
+    "minUpperDivUnits": { "type": "number" },
+    "minGPA": { "type": "number" },
+    "majorGPA": { "type": "number" },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "requirement-category.schema.json" }
+    }
+  }
+}
