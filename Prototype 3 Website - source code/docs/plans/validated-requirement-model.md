@@ -68,6 +68,7 @@ Tasks:
 4. Normalize degree-progress and student-profile constraints into provider objects. **Initial version complete.**
 5. Add tests that normalization preserves current selected requirements for representative majors. **Runtime-data behavior-preserving tests added.**
 6. Expose normalized requirement collection through `Scheduler.buildRequirementSet(profile)` and attach it to `Validator.validateAll(...).requirementSet`. **Initial non-invasive integration complete.**
+7. Add `RequirementCollector` as a normalized-to-legacy mirror for scheduler requirement inputs. **Initial non-invasive collector complete.**
 
 Do not change scheduling behavior yet.
 
@@ -75,7 +76,7 @@ Do not change scheduling behavior yet.
 
 Tasks:
 
-1. Extract pure helpers first. **Started with normalized requirement collection.**
+1. Extract pure helpers first. **Started with normalized requirement collection and collector mirror.**
 2. Preserve global `Scheduler` API.
 3. Keep script-tag compatibility.
 4. Run full suite after each extraction.
@@ -121,6 +122,7 @@ node tools/validate-data.js && \
 node test_data_validation.js && \
 node test_requirement_normalizer.js && \
 node test_requirement_normalizer_runtime.js && \
+node test_requirement_collector.js && \
 node test_scheduler_requirement_set.js && \
 node test_toposort.js && \
 node test_edge_scenarios.js && \

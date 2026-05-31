@@ -21,10 +21,12 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `tools/data-validator.js` — reusable validator module.
 - `tools/validate-data.js` — CLI validation entrypoint.
 - `js/engine/requirement-normalizer.js` — normalized requirement provider layer for major, GE, UC, degree-progress, student-profile, and richer catalog metadata requirements.
+- `js/engine/requirement-collector.js` — normalized requirement collection mirror for legacy scheduler inputs.
 - `test_data_validation.js` — validator tests.
 - `test_requirement_normalizer.js` — normalizer unit tests.
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
+- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs.
 
 ## Run validation and tests
 
@@ -35,6 +37,7 @@ node tools/validate-data.js
 node test_data_validation.js
 node test_requirement_normalizer.js
 node test_requirement_normalizer_runtime.js
+node test_requirement_collector.js
 node test_scheduler_requirement_set.js
 node test_toposort.js
 node test_edge_scenarios.js
@@ -57,7 +60,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 ## Next recommended work
 
 1. Improve warning triage by marking which warning buckets affect supported-major requirements versus broad imported catalog data.
-2. Start extracting the engine requirement-collection code into a module that consumes `Scheduler.buildRequirementSet(profile)`.
+2. Expand `RequirementCollector` comparison tests until it mirrors all legacy scheduler requirement-selection inputs.
 3. Keep scheduler behavior unchanged while extraction tests compare old and normalized outputs.
 4. Use the new `repeat_course`, `prerequisitesByMajor`, `equivalentCourses`, and `creditExclusions` metadata contracts when adding official catalog cases.
 5. Add actual scheduling behavior for accumulated-credit/repeatable-credit requirements and major-specific prerequisite branches only after official catalog regressions exist.

@@ -202,6 +202,12 @@ const Scheduler = {
     return buildNormalizedRequirementSet(profile);
   },
 
+  collectRequirements(profile) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.collect !== "function") return null;
+    return collector.collect(this.buildRequirementSet(profile));
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
