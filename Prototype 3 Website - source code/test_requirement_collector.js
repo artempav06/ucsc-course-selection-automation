@@ -71,10 +71,118 @@ function testCollectorComputesChooseGroupCourseSetWithoutMutatingRequirements() 
   assert.strictEqual(JSON.stringify(MAJOR_REQUIREMENTS.CS_BS.categories), before);
 }
 
+function legacySelectMajorCourses(profile) {
+  const completedSet = new Set(profile.completedCourses || []);
+  const used = new Set(completedSet);
+  const selected = [];
+  const courseTypeMap = new Map();
+  const pushTagged = (code, type) => {
+    if (code && COURSES[code] && !used.has(code)) {
+      selected.push(code);
+      used.add(code);
+      courseTypeMap.set(code, type);
+    }
+  };
+
+  const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+  const sortedCats = [...(reqs.categories || [])].sort((a, b) =>
+    (RequirementCollector.CATEGORY_PRIORITY[a.type] ?? 3) - (RequirementCollector.CATEGORY_PRIORITY[b.type] ?? 3)
+  );
+
+  const chooseGroupCourses = new Set();
+  for (const cat of sortedCats) {
+    if (cat.type === 'choose_group') {
+      for (const group of (cat.groups || [])) {
+        for (const course of (group.courses || [])) chooseGroupCourses.add(course);
+      }
+    }
+  }
+
+  for (const cat of sortedCats) {
+    if (cat.type !== 'pick_n') {
+      Scheduler.walk(cat, completedSet, used, profile.concentration || null, chooseGroupCourses, pushTagged, null, profile);
+    }
+  }
+
+  const virtuallyPresent = new Set();
+  for (const cat of sortedCats) {
+    if (cat.type === 'pick_one') {
+      const sel = (cat.courses || []).find(c => used.has(c));
+      if (sel) for (const alt of cat.courses) if (alt !== sel) virtuallyPresent.add(alt);
+    }
+    if (cat.type === 'choose_group') {
+      for (const group of (cat.groups || [])) {
+        if (group.courses.every(c => used.has(c) || completedSet.has(c))) {
+          for (const other of (cat.groups || [])) {
+            if (other !== group) other.courses.forEach(c => virtuallyPresent.add(c));
+          }
+          break;
+        }
+      }
+    }
+  }
+
+  for (const cat of sortedCats) {
+    if (cat.type === 'pick_n') {
+      Scheduler.walk(cat, completedSet, used, profile.concentration || null, chooseGroupCourses, pushTagged, virtuallyPresent, profile);
+    }
+  }
+
+  return { selected, courseTypes: [...courseTypeMap.entries()], virtuallyPresent: [...virtuallyPresent].sort() };
+}
+
+function normalizedSelectMajorCourses(profile) {
+  const collected = Scheduler.collectRequirements(profile);
+  return RequirementCollector.selectMajorCourses(collected, profile, {
+    courses: COURSES,
+    rankByConcentration: (pool, concentration, selectionProfile, usedSet, virtuallyPresent) =>
+      Scheduler.rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent)
+  });
+}
+
+function testCollectorMajorSelectionMirrorsLegacyDefaultCsBsOrdering() {
+  const profile = makeProfile({ completedCourses: [] });
+  assert.deepStrictEqual(normalizedSelectMajorCourses(profile), legacySelectMajorCourses(profile));
+}
+
+function testCollectorMajorSelectionPreservesCompletedCoursePathContinuity() {
+  const profile = makeProfile({ completedCourses: ['MATH 19A'] });
+  assert.deepStrictEqual(normalizedSelectMajorCourses(profile), legacySelectMajorCourses(profile));
+}
+
+function testCollectorMajorSelectionHonorsConcentrationAndAvoidedCourses() {
+  const profile = makeProfile({ major: 'TIM_BS', concentration: 'tim_systems_eng', avoidedCourses: ['CSE 160'] });
+  assert.deepStrictEqual(normalizedSelectMajorCourses(profile), legacySelectMajorCourses(profile));
+}
+
+function testCollectorMajorSelectionAcceptsSerializedChooseGroupCourseSet() {
+  const collected = Scheduler.collectRequirements(makeProfile({ major: 'CS_BS', completedCourses: [] }));
+  const serializedLike = {
+    ...collected,
+    chooseGroupCourses: [...collected.chooseGroupCourses]
+  };
+  assert.deepStrictEqual(
+    RequirementCollector.selectMajorCourses(serializedLike, makeProfile({ major: 'CS_BS', completedCourses: [] }), {
+      courses: COURSES,
+      rankByConcentration: (pool, concentration, selectionProfile, usedSet, virtuallyPresent) =>
+        Scheduler.rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent)
+    }),
+    RequirementCollector.selectMajorCourses(collected, makeProfile({ major: 'CS_BS', completedCourses: [] }), {
+      courses: COURSES,
+      rankByConcentration: (pool, concentration, selectionProfile, usedSet, virtuallyPresent) =>
+        Scheduler.rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent)
+    })
+  );
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
-  testCollectorComputesChooseGroupCourseSetWithoutMutatingRequirements
+  testCollectorComputesChooseGroupCourseSetWithoutMutatingRequirements,
+  testCollectorMajorSelectionMirrorsLegacyDefaultCsBsOrdering,
+  testCollectorMajorSelectionPreservesCompletedCoursePathContinuity,
+  testCollectorMajorSelectionHonorsConcentrationAndAvoidedCourses,
+  testCollectorMajorSelectionAcceptsSerializedChooseGroupCourseSet
 ];
 let passed = 0;
 for (const test of tests) {

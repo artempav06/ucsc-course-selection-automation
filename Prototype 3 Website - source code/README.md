@@ -60,7 +60,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 ## Next recommended work
 
 1. Improve warning triage by marking which warning buckets affect supported-major requirements versus broad imported catalog data.
-2. Expand `RequirementCollector` comparison tests until it mirrors all legacy scheduler requirement-selection inputs.
+2. Continue expanding `RequirementCollector` comparison tests across more majors/profiles until it mirrors all legacy scheduler requirement-selection inputs.
 3. Keep scheduler behavior unchanged while extraction tests compare old and normalized outputs.
 4. Use the new `repeat_course`, `prerequisitesByMajor`, `equivalentCourses`, and `creditExclusions` metadata contracts when adding official catalog cases.
 5. Add actual scheduling behavior for accumulated-credit/repeatable-credit requirements and major-specific prerequisite branches only after official catalog regressions exist.

@@ -69,6 +69,7 @@ Tasks:
 5. Add tests that normalization preserves current selected requirements for representative majors. **Runtime-data behavior-preserving tests added.**
 6. Expose normalized requirement collection through `Scheduler.buildRequirementSet(profile)` and attach it to `Validator.validateAll(...).requirementSet`. **Initial non-invasive integration complete.**
 7. Add `RequirementCollector` as a normalized-to-legacy mirror for scheduler requirement inputs. **Initial non-invasive collector complete.**
+8. Compare normalized-provider major course selection against the current legacy scheduler selection for representative profiles before replacing scheduler logic. **Started with CS_BS default ordering, completed-course path continuity, and TIM_BS concentration/avoidance coverage.**
 
 Do not change scheduling behavior yet.
 
