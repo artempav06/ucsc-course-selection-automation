@@ -12,6 +12,8 @@ const load = f => vm.runInThisContext(fs.readFileSync(path.join(dir, f), 'utf8')
 load('js/courses.js');
 load('js/majors.js');
 load('js/data.js');
+load('js/engine/requirement-normalizer.js');
+load('js/engine/requirement-collector.js');
 load('js/engine.js');
 
 const TERM_ORDER = { F: 0, W: 1, S: 2, SU: 3 };

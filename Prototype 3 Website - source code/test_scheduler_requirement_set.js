@@ -9,6 +9,7 @@ load('js/courses.js');
 load('js/majors.js');
 load('js/data.js');
 load('js/engine/requirement-normalizer.js');
+load('js/engine/requirement-collector.js');
 load('js/engine.js');
 
 function makeProfile(overrides = {}) {

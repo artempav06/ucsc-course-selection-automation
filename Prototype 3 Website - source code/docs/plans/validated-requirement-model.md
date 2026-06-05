@@ -70,9 +70,10 @@ Tasks:
 6. Expose normalized requirement collection through `Scheduler.buildRequirementSet(profile)` and attach it to `Validator.validateAll(...).requirementSet`. **Initial non-invasive integration complete.**
 7. Add `RequirementCollector` as a normalized-to-legacy mirror for scheduler requirement inputs. **Initial non-invasive collector complete.**
 8. Compare normalized-provider major course selection against the current legacy scheduler selection for representative profiles before replacing scheduler logic. **Expanded to all supported majors with default profiles plus a representative completed/preferred/avoided profile matrix.**
-9. Expose normalized major selection through `Scheduler.selectMajorCourses(profile)` for behavior-preserving scheduler extraction. **Initial wrapper complete; it is not wired into `Scheduler.generate()` yet.**
+9. Expose normalized major selection through `Scheduler.selectMajorCourses(profile)` for behavior-preserving scheduler extraction. **Complete and wired into `Scheduler.generate()` as the only major-selection path.**
+10. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Do not change scheduling behavior yet.
+Major-selection replacement is complete. Continue the one-phase-at-a-time migration with GE/UC selection mirroring next; do not bundle prerequisite closure, filler, placement, or validator rewrites into that change.
 
 ## Phase E — Split engine modules gradually
 

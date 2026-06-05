@@ -222,61 +222,27 @@ const Scheduler = {
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
-    const concentration   = profile.concentration   || null;
     const geConcentration = profile.geConcentration || null;
 
     const majorId = (profile && profile.major) || "CS_BA";
     const reqs = (typeof MAJOR_REQUIREMENTS !== "undefined" && MAJOR_REQUIREMENTS[majorId])
       || CS_BA_REQUIREMENTS;
 
-    const selected = [];
-    const courseTypeMap = new Map();
+    // --- Phase 1: Select major courses via normalized collector wrapper ---
+    const majorSelection = this.selectMajorCourses(profile) || {
+      selected: [],
+      courseTypes: [],
+      virtuallyPresent: []
+    };
+    const selected = (majorSelection.selected || []).slice();
+    selected.forEach(code => used.add(code));
+    const courseTypeMap = new Map(majorSelection.courseTypes || []);
+    const virtuallyPresent = new Set(majorSelection.virtuallyPresent || []);
     const pushTagged = (code, type) => {
       if (code && COURSES[code] && !used.has(code)) {
         selected.push(code); used.add(code); courseTypeMap.set(code, type);
       }
     };
-
-    // --- Phase 1: Walk major categories ---
-    const CAT_PRIORITY = { all_required: 0, choose_group: 1, pick_one: 2, pick_n: 3 };
-    const sortedCats = [...(reqs.categories || [])].sort(
-      (a, b) => (CAT_PRIORITY[a.type] ?? 3) - (CAT_PRIORITY[b.type] ?? 3)
-    );
-
-    const chooseGroupCourses = new Set();
-    for (const cat of sortedCats)
-      if (cat.type === "choose_group")
-        for (const g of (cat.groups || [])) (g.courses || []).forEach(c => chooseGroupCourses.add(c));
-
-    // Walk non-pick_n categories first (all_required, choose_group, pick_one)
-    for (const cat of sortedCats)
-      if (cat.type !== "pick_n")
-        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, null, profile);
-
-    // Build virtuallyPresent: unselected alternatives whose equivalents are already selected
-    const virtuallyPresent = new Set();
-    for (const cat of sortedCats) {
-      if (cat.type === "pick_one") {
-        const sel = (cat.courses || []).find(c => used.has(c));
-        if (sel) {
-          for (const alt of cat.courses) if (alt !== sel) virtuallyPresent.add(alt);
-        }
-      }
-      if (cat.type === "choose_group") {
-        for (const g of (cat.groups || [])) {
-          if (g.courses.every(c => used.has(c) || completedSet.has(c))) {
-            for (const other of (cat.groups || []))
-              if (other !== g) other.courses.forEach(c => virtuallyPresent.add(c));
-            break;
-          }
-        }
-      }
-    }
-
-    // Walk pick_n categories with virtuallyPresent filtering
-    for (const cat of sortedCats)
-      if (cat.type === "pick_n")
-        this.walk(cat, completedSet, used, concentration, chooseGroupCourses, pushTagged, virtuallyPresent, profile);
 
     // --- Phase 2: GE courses ---
     this.pickGE(used, completedSet, geConcentration, profile).forEach(c => {

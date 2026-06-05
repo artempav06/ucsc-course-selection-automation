@@ -269,6 +269,23 @@ function testSchedulerSelectMajorCoursesWrapperMirrorsLegacySelection() {
   }
 }
 
+function testSchedulerGenerateUsesNormalizedMajorSelectionWrapper() {
+  const originalSelectMajorCourses = Scheduler.selectMajorCourses;
+  let calls = 0;
+  Scheduler.selectMajorCourses = function wrappedSelectMajorCourses(profile) {
+    calls += 1;
+    return originalSelectMajorCourses.call(this, profile);
+  };
+  try {
+    const schedule = Scheduler.generate(defaultMajorProfile('CS_BS'));
+    const validation = Validator.validateAll(schedule, defaultMajorProfile('CS_BS'));
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate major selection exactly once');
+  } finally {
+    Scheduler.selectMajorCourses = originalSelectMajorCourses;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -279,7 +296,8 @@ const tests = [
   testCollectorMajorSelectionAcceptsSerializedChooseGroupCourseSet,
   testCollectorMajorSelectionMirrorsLegacyForAllSupportedMajorsDefaultProfiles,
   testCollectorMajorSelectionMirrorsLegacyForRepresentativeProfileMatrix,
-  testSchedulerSelectMajorCoursesWrapperMirrorsLegacySelection
+  testSchedulerSelectMajorCoursesWrapperMirrorsLegacySelection,
+  testSchedulerGenerateUsesNormalizedMajorSelectionWrapper
 ];
 let passed = 0;
 for (const test of tests) {
