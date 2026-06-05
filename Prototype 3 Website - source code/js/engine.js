@@ -208,6 +208,17 @@ const Scheduler = {
     return collector.collect(this.buildRequirementSet(profile));
   },
 
+  selectMajorCourses(profile) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectMajorCourses !== "function") return null;
+    const collected = this.collectRequirements(profile);
+    return collector.selectMajorCourses(collected, profile, {
+      courses: COURSES,
+      rankByConcentration: (pool, concentration, selectionProfile, usedSet, virtuallyPresent) =>
+        this.rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent)
+    });
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);

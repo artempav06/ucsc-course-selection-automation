@@ -26,7 +26,7 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_requirement_normalizer.js` — normalizer unit tests.
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
-- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs.
+- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, a representative completed/preferred/avoided profile matrix, and `Scheduler.selectMajorCourses(profile)` wrapper coverage.
 
 ## Run validation and tests
 
@@ -59,8 +59,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Improve warning triage by marking which warning buckets affect supported-major requirements versus broad imported catalog data.
-2. Continue expanding `RequirementCollector` comparison tests across more majors/profiles until it mirrors all legacy scheduler requirement-selection inputs.
-3. Keep scheduler behavior unchanged while extraction tests compare old and normalized outputs.
-4. Use the new `repeat_course`, `prerequisitesByMajor`, `equivalentCourses`, and `creditExclusions` metadata contracts when adding official catalog cases.
-5. Add actual scheduling behavior for accumulated-credit/repeatable-credit requirements and major-specific prerequisite branches only after official catalog regressions exist.
+1. Replace the legacy major-selection block in `Scheduler.generate()` with the already-tested `Scheduler.selectMajorCourses(profile)` wrapper, but keep the change isolated from GE/UC, prereq closure, filler, and placement logic.
+2. After replacement, add schedule-output preservation checks for representative profiles and run the full suite.
+3. Then move to GE/UC selection mirroring, prerequisite expansion, and upper-div/filler phases one at a time.
+4. Continue warning-bucket triage after the major-selection extraction is stable.
