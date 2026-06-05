@@ -239,6 +239,19 @@ const Scheduler = {
     });
   },
 
+  selectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectPrerequisiteCourses !== "function") return null;
+    return collector.selectPrerequisiteCourses(this.collectRequirements(profile), profile, {
+      selected,
+      completedSet,
+      used,
+      virtuallyPresent
+    }, {
+      courses: COURSES
+    });
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
@@ -275,7 +288,8 @@ const Scheduler = {
     });
 
     // --- Phase 4: Expand prereqs ---
-    this.expandPrereqs(selected, completedSet, used, virtuallyPresent).forEach(c => pushTagged(c, "prereq"));
+    (this.selectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent) || this.expandPrereqs(selected, completedSet, used, virtuallyPresent))
+      .forEach(c => pushTagged(c, "prereq"));
 
     // --- Phase 5: Upper-div supplement ---
     const udAdded = [];

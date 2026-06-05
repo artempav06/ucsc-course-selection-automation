@@ -72,9 +72,10 @@ Tasks:
 8. Compare normalized-provider major course selection against the current legacy scheduler selection for representative profiles before replacing scheduler logic. **Expanded to all supported majors with default profiles plus a representative completed/preferred/avoided profile matrix.**
 9. Expose normalized major selection through `Scheduler.selectMajorCourses(profile)` for behavior-preserving scheduler extraction. **Complete and wired into `Scheduler.generate()` as the only major-selection path.**
 10. Expose normalized GE/UC selection through `Scheduler.selectGECourses(...)` and `Scheduler.selectUCCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the GE/UC selection path.**
-11. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
+11. Expose normalized prerequisite expansion through `Scheduler.selectPrerequisiteCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the prerequisite expansion path.**
+12. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Major, GE, and UC selection replacement is complete. Continue the one-phase-at-a-time migration with prerequisite expansion mirroring next; do not bundle upper-div supplement, filler, placement, or validator rewrites into that change.
+Major, GE, UC, and prerequisite selection replacement is complete. Continue the one-phase-at-a-time migration with upper-division supplement mirroring next; do not bundle filler, placement, or validator rewrites into that change.
 
 ## Phase E — Split engine modules gradually
 

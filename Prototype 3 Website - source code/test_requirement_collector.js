@@ -186,6 +186,33 @@ function normalizedSelectUCCourses(profile) {
   return { picks, used: [...state.used].sort() };
 }
 
+function stateAfterMajorGEAndUC(profile) {
+  const state = stateAfterMajorAndGE(profile);
+  Scheduler.pickUC(state.used, profile);
+  const majorSelection = Scheduler.selectMajorCourses(profile);
+  const selected = [...(majorSelection.selected || [])];
+  return {
+    selected,
+    used: state.used,
+    completedSet: state.completedSet,
+    virtuallyPresent: new Set(majorSelection.virtuallyPresent || [])
+  };
+}
+
+function legacySelectPrerequisiteCourses(profile) {
+  const state = stateAfterMajorGEAndUC(profile);
+  const picks = Scheduler.expandPrereqs(state.selected, state.completedSet, state.used, state.virtuallyPresent);
+  return { picks };
+}
+
+function normalizedSelectPrerequisiteCourses(profile) {
+  const state = stateAfterMajorGEAndUC(profile);
+  const picks = RequirementCollector.selectPrerequisiteCourses(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES
+  });
+  return { picks };
+}
+
 function testCollectorMajorSelectionMirrorsLegacyDefaultCsBsOrdering() {
   const profile = makeProfile({ completedCourses: [] });
   assert.deepStrictEqual(normalizedSelectMajorCourses(profile), legacySelectMajorCourses(profile));
@@ -404,6 +431,55 @@ function testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection() {
   }
 }
 
+function prerequisiteMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('CS_BA', { completedCourses: ['CSE 20'] }),
+    defaultMajorProfile('CE_BS', { concentration: 'ce_digital_hw' }),
+    defaultMajorProfile('RE_BS', { concentration: 're_autonomous', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('EE_BS', { completedCourses: ['WRIT 1'], elwrSatisfied: true }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_systems_eng', avoidedCourses: ['CSE 160'] })
+  ];
+}
+
+function testCollectorPrerequisiteSelectionMirrorsLegacyForRepresentativeProfiles() {
+  assert.strictEqual(typeof RequirementCollector.selectPrerequisiteCourses, 'function', 'RequirementCollector.selectPrerequisiteCourses must exist');
+  for (const profile of prerequisiteMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedSelectPrerequisiteCourses(profile), legacySelectPrerequisiteCourses(profile));
+  }
+}
+
+function testSchedulerPrerequisiteSelectionWrapperMirrorsLegacySelection() {
+  assert.strictEqual(typeof Scheduler.selectPrerequisiteCourses, 'function', 'Scheduler.selectPrerequisiteCourses must exist');
+  for (const profile of prerequisiteMirrorProfiles()) {
+    const state = stateAfterMajorGEAndUC(profile);
+    const legacy = Scheduler.expandPrereqs(state.selected, state.completedSet, state.used, state.virtuallyPresent);
+    const wrapperState = stateAfterMajorGEAndUC(profile);
+    assert.deepStrictEqual(
+      Scheduler.selectPrerequisiteCourses(profile, wrapperState.selected, wrapperState.completedSet, wrapperState.used, wrapperState.virtuallyPresent),
+      legacy
+    );
+  }
+}
+
+function testSchedulerGenerateUsesNormalizedPrerequisiteSelectionWrapper() {
+  const originalSelectPrerequisiteCourses = Scheduler.selectPrerequisiteCourses;
+  let calls = 0;
+  Scheduler.selectPrerequisiteCourses = function wrappedSelectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent) {
+    calls += 1;
+    return originalSelectPrerequisiteCourses.call(this, profile, selected, completedSet, used, virtuallyPresent);
+  };
+  try {
+    const profile = defaultMajorProfile('RE_BS', { concentration: 're_autonomous' });
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate prerequisite selection exactly once');
+  } finally {
+    Scheduler.selectPrerequisiteCourses = originalSelectPrerequisiteCourses;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -419,7 +495,10 @@ const tests = [
   testSchedulerGenerateUsesNormalizedGEAndUCSelectionWrappers,
   testCollectorGESelectionMirrorsLegacyForBroadProfileMatrix,
   testCollectorUCSelectionMirrorsLegacyForBroadProfileMatrix,
-  testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection
+  testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection,
+  testCollectorPrerequisiteSelectionMirrorsLegacyForRepresentativeProfiles,
+  testSchedulerPrerequisiteSelectionWrapperMirrorsLegacySelection,
+  testSchedulerGenerateUsesNormalizedPrerequisiteSelectionWrapper
 ];
 let passed = 0;
 for (const test of tests) {

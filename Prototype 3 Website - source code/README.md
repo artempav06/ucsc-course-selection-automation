@@ -26,7 +26,7 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_requirement_normalizer.js` — normalizer unit tests.
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
-- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, and `Scheduler.selectUCCourses(...)` wrapper coverage, plus guards that `Scheduler.generate()` delegates those selection phases through normalized wrappers.
+- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, and `Scheduler.selectPrerequisiteCourses(...)` wrapper coverage, plus guards that `Scheduler.generate()` delegates those selection phases through normalized wrappers.
 
 ## Run validation and tests
 
@@ -59,7 +59,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Mirror prerequisite expansion through the normalized pipeline using old-vs-new equality tests before replacing the `Scheduler.generate()` prereq phase.
-2. Keep upper-div supplement, filler/free padding, placement, and validator changes out of the prerequisite replacement commit.
+1. Mirror upper-division supplement through the normalized pipeline using old-vs-new equality tests before replacing the `Scheduler.generate()` supplement phase.
+2. Keep filler/free padding, placement, and validator changes out of the upper-division supplement replacement commit.
 3. Improve combo-matrix warning reports so the existing 2510 warnings are grouped by schedule length, high units, overload, filler, prerequisites/order, and unsupported profile constraint.
-4. Continue warning-bucket triage, starting with `unknownGeReference`, after the normalized major/GE/UC selection extraction remains stable.
+4. Continue warning-bucket triage, starting with `unknownGeReference`, after the normalized major/GE/UC/prerequisite extraction remains stable.

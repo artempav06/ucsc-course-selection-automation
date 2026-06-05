@@ -302,6 +302,37 @@
     return picks;
   }
 
+  function selectPrerequisiteCourses(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const planCodes = state.planCodes || state.selected || [];
+    const completedSet = state.completedSet || new Set((profile && profile.completedCourses) || []);
+    const usedSet = state.used || new Set();
+    const virtuallyPresent = state.virtuallyPresent || new Set();
+    const allKnown = new Set([...planCodes, ...usedSet, ...completedSet]);
+    const toAdd = [];
+    for (let pass = 0; pass < 6; pass++) {
+      let added = false;
+      for (const code of [...allKnown]) {
+        const course = courses[code];
+        if (!course) continue;
+        const labCode = course.labCoreq;
+        if (labCode && courses[labCode] && !allKnown.has(labCode)) {
+          toAdd.push(labCode); allKnown.add(labCode); added = true;
+        }
+        if (!course.prereqs) continue;
+        for (const orGroup of course.prereqs) {
+          if (orGroup.some(p => allKnown.has(p))) continue;
+          const candidate = orGroup
+            .filter(p => courses[p] && !allKnown.has(p))
+            .sort((a, b) => (courses[a].division === "lower" ? 0 : 1) - (courses[b].division === "lower" ? 0 : 1))[0];
+          if (candidate) { toAdd.push(candidate); allKnown.add(candidate); added = true; }
+        }
+      }
+      if (!added) break;
+    }
+    return toAdd;
+  }
+
   return {
     CATEGORY_PRIORITY,
     collect,
@@ -311,6 +342,7 @@
     collectProfileConstraints,
     selectMajorCourses,
     selectGECourses,
-    selectUCCourses
+    selectUCCourses,
+    selectPrerequisiteCourses
   };
 });
