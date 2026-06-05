@@ -140,6 +140,52 @@ function normalizedSelectMajorCourses(profile) {
   });
 }
 
+function selectionStateAfterMajor(profile) {
+  const completedSet = new Set(profile.completedCourses || []);
+  const used = new Set(completedSet);
+  const majorSelection = Scheduler.selectMajorCourses(profile);
+  for (const code of majorSelection.selected || []) used.add(code);
+  return { used, completedSet };
+}
+
+function legacySelectGECourses(profile) {
+  const state = selectionStateAfterMajor(profile);
+  const picks = Scheduler.pickGE(state.used, state.completedSet, profile.geConcentration || null, profile);
+  return { picks, used: [...state.used].sort() };
+}
+
+function normalizedSelectGECourses(profile) {
+  const state = selectionStateAfterMajor(profile);
+  const picks = RequirementCollector.selectGECourses(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES,
+    geRequirements: GE_REQUIREMENTS,
+    ucRequirements: UC_REQUIREMENTS,
+    concentrations: CONCENTRATIONS
+  });
+  return { picks, used: [...state.used].sort() };
+}
+
+function stateAfterMajorAndGE(profile) {
+  const state = selectionStateAfterMajor(profile);
+  Scheduler.pickGE(state.used, state.completedSet, profile.geConcentration || null, profile);
+  return state;
+}
+
+function legacySelectUCCourses(profile) {
+  const state = stateAfterMajorAndGE(profile);
+  const picks = Scheduler.pickUC(state.used, profile);
+  return { picks, used: [...state.used].sort() };
+}
+
+function normalizedSelectUCCourses(profile) {
+  const state = stateAfterMajorAndGE(profile);
+  const picks = RequirementCollector.selectUCCourses(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES,
+    ucRequirements: UC_REQUIREMENTS
+  });
+  return { picks, used: [...state.used].sort() };
+}
+
 function testCollectorMajorSelectionMirrorsLegacyDefaultCsBsOrdering() {
   const profile = makeProfile({ completedCourses: [] });
   assert.deepStrictEqual(normalizedSelectMajorCourses(profile), legacySelectMajorCourses(profile));
@@ -286,6 +332,78 @@ function testSchedulerGenerateUsesNormalizedMajorSelectionWrapper() {
   }
 }
 
+function testSchedulerGenerateUsesNormalizedGEAndUCSelectionWrappers() {
+  const originalSelectGECourses = Scheduler.selectGECourses;
+  const originalSelectUCCourses = Scheduler.selectUCCourses;
+  let geCalls = 0;
+  let ucCalls = 0;
+  Scheduler.selectGECourses = function wrappedSelectGECourses(profile, used, completedSet) {
+    geCalls += 1;
+    return originalSelectGECourses.call(this, profile, used, completedSet);
+  };
+  Scheduler.selectUCCourses = function wrappedSelectUCCourses(profile, used) {
+    ucCalls += 1;
+    return originalSelectUCCourses.call(this, profile, used);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS', { geConcentration: 'ge_arts_humanities' });
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(geCalls, 1, 'Scheduler.generate should delegate GE selection exactly once');
+    assert.strictEqual(ucCalls, 1, 'Scheduler.generate should delegate UC selection exactly once');
+  } finally {
+    Scheduler.selectGECourses = originalSelectGECourses;
+    Scheduler.selectUCCourses = originalSelectUCCourses;
+  }
+}
+
+function geUcMirrorProfiles() {
+  const profiles = [];
+  for (const majorId of Object.keys(MAJOR_REQUIREMENTS).sort()) {
+    profiles.push(defaultMajorProfile(majorId));
+    profiles.push(defaultMajorProfile(majorId, { geConcentration: 'ge_arts_humanities' }));
+    profiles.push(defaultMajorProfile(majorId, { completedCourses: ['WRIT 1'], elwrSatisfied: true }));
+    const completed = representativeCompletedCourseForMajor(majorId);
+    if (completed) {
+      profiles.push(defaultMajorProfile(majorId, { completedCourses: [completed] }));
+    }
+  }
+  profiles.push(defaultMajorProfile('TIM_BS', { concentration: 'tim_systems_eng', geConcentration: 'ge_arts_humanities' }));
+  assert(profiles.length >= Object.keys(MAJOR_REQUIREMENTS).length * 3, 'expected broad GE/UC profile coverage');
+  return profiles;
+}
+
+function testCollectorGESelectionMirrorsLegacyForBroadProfileMatrix() {
+  assert.strictEqual(typeof RequirementCollector.selectGECourses, 'function', 'RequirementCollector.selectGECourses must exist');
+  for (const profile of geUcMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedSelectGECourses(profile), legacySelectGECourses(profile));
+  }
+}
+
+function testCollectorUCSelectionMirrorsLegacyForBroadProfileMatrix() {
+  assert.strictEqual(typeof RequirementCollector.selectUCCourses, 'function', 'RequirementCollector.selectUCCourses must exist');
+  for (const profile of geUcMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedSelectUCCourses(profile), legacySelectUCCourses(profile));
+  }
+}
+
+function testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection() {
+  assert.strictEqual(typeof Scheduler.selectGECourses, 'function', 'Scheduler.selectGECourses must exist');
+  assert.strictEqual(typeof Scheduler.selectUCCourses, 'function', 'Scheduler.selectUCCourses must exist');
+  for (const profile of geUcMirrorProfiles()) {
+    const geState = selectionStateAfterMajor(profile);
+    const legacyGe = Scheduler.pickGE(new Set(geState.used), new Set(geState.completedSet), profile.geConcentration || null, profile);
+    const wrapperState = selectionStateAfterMajor(profile);
+    assert.deepStrictEqual(Scheduler.selectGECourses(profile, wrapperState.used, wrapperState.completedSet), legacyGe);
+
+    const legacyUcState = stateAfterMajorAndGE(profile);
+    const legacyUc = Scheduler.pickUC(new Set(legacyUcState.used), profile);
+    const wrapperUcState = stateAfterMajorAndGE(profile);
+    assert.deepStrictEqual(Scheduler.selectUCCourses(profile, wrapperUcState.used), legacyUc);
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -297,7 +415,11 @@ const tests = [
   testCollectorMajorSelectionMirrorsLegacyForAllSupportedMajorsDefaultProfiles,
   testCollectorMajorSelectionMirrorsLegacyForRepresentativeProfileMatrix,
   testSchedulerSelectMajorCoursesWrapperMirrorsLegacySelection,
-  testSchedulerGenerateUsesNormalizedMajorSelectionWrapper
+  testSchedulerGenerateUsesNormalizedMajorSelectionWrapper,
+  testSchedulerGenerateUsesNormalizedGEAndUCSelectionWrappers,
+  testCollectorGESelectionMirrorsLegacyForBroadProfileMatrix,
+  testCollectorUCSelectionMirrorsLegacyForBroadProfileMatrix,
+  testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection
 ];
 let passed = 0;
 for (const test of tests) {

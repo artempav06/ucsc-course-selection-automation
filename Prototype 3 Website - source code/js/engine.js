@@ -219,6 +219,26 @@ const Scheduler = {
     });
   },
 
+  selectGECourses(profile, used, completedSet) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectGECourses !== "function") return null;
+    return collector.selectGECourses(this.collectRequirements(profile), profile, { used, completedSet }, {
+      courses: COURSES,
+      geRequirements: GE_REQUIREMENTS,
+      ucRequirements: UC_REQUIREMENTS,
+      concentrations: (typeof CONCENTRATIONS !== "undefined") ? CONCENTRATIONS : {}
+    });
+  },
+
+  selectUCCourses(profile, used) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectUCCourses !== "function") return null;
+    return collector.selectUCCourses(this.collectRequirements(profile), profile, { used }, {
+      courses: COURSES,
+      ucRequirements: UC_REQUIREMENTS
+    });
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
@@ -245,12 +265,12 @@ const Scheduler = {
     };
 
     // --- Phase 2: GE courses ---
-    this.pickGE(used, completedSet, geConcentration, profile).forEach(c => {
+    (this.selectGECourses(profile, used, completedSet) || this.pickGE(used, completedSet, geConcentration, profile)).forEach(c => {
       if (c && COURSES[c]) { selected.push(c); courseTypeMap.set(c, "ge"); }
     });
 
     // --- Phase 3: UC courses ---
-    this.pickUC(used, profile).forEach(c => {
+    (this.selectUCCourses(profile, used) || this.pickUC(used, profile)).forEach(c => {
       selected.push(c); used.add(c); courseTypeMap.set(c, "uc");
     });
 

@@ -194,6 +194,114 @@
     };
   }
 
+  function legacyRequirement(requirement) {
+    return requirement && requirement.original && typeof requirement.original === 'object'
+      ? requirement.original
+      : requirement;
+  }
+
+  function selectGECourses(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const geRequirements = (collected && collected.geRequirements || helpers.geRequirements || []).map(legacyRequirement);
+    const ucRequirements = (collected && collected.ucRequirements || helpers.ucRequirements || []).map(legacyRequirement);
+    const concentrations = helpers.concentrations || {};
+    const used = state.used || new Set();
+    const completedSet = state.completedSet || new Set((profile && profile.completedCourses) || []);
+    const picks = [];
+    const geConcentration = (profile && profile.geConcentration) || null;
+    const geConc = geConcentration && concentrations && concentrations.ge
+      ? concentrations.ge.find(group => group.id === geConcentration)
+      : null;
+    const geConcCourses = geConc ? new Set(geConc.courses) : null;
+
+    const neededUC = new Map();
+    for (const req of ucRequirements) {
+      if (req.id === 'ELWR' && profile && profile.elwrSatisfied) continue;
+      let satisfied = false;
+      for (const code of used) {
+        if ((req.courses || []).includes(code)) { satisfied = true; break; }
+        const course = courses[code];
+        if (course && course.alsoSatisfies && course.alsoSatisfies.includes(req.id)) { satisfied = true; break; }
+      }
+      if (!satisfied) neededUC.set(req.id, req);
+    }
+
+    for (const ge of geRequirements) {
+      let satisfied = false;
+      for (const code of used) {
+        const course = courses[code];
+        if (!course) continue;
+        if (course.ge === ge.id) { satisfied = true; break; }
+        if (ge.subcategories && ge.subcategories.includes(course.ge)) { satisfied = true; break; }
+        if (ge.autoSatisfiedBy && ge.autoSatisfiedBy.includes(code)) { satisfied = true; break; }
+      }
+      if (satisfied) continue;
+
+      const candidates = [];
+      for (const [code, course] of Object.entries(courses)) {
+        if (used.has(code) || completedSet.has(code)) continue;
+        if (code.startsWith('FREE')) continue;
+        if (course.ge === ge.id) { candidates.push(code); continue; }
+        if (ge.subcategories && ge.subcategories.includes(course.ge)) candidates.push(code);
+      }
+      const fallback = (ge.courses || []).filter(code => !used.has(code) && courses[code] && !completedSet.has(code));
+      const pool = candidates.length > 0 ? candidates : fallback;
+      const scored = pool
+        .map(code => {
+          let score = 0;
+          if (geConcCourses && geConcCourses.has(code)) score += 100;
+          for (const [ucId, ucReq] of neededUC) {
+            if ((ucReq.courses || []).includes(code)) score += 200;
+            else if (courses[code] && courses[code].alsoSatisfies && courses[code].alsoSatisfies.includes(ucId)) score += 200;
+          }
+          const match = code.match(/(\d+)/);
+          if (match) score -= Math.floor(parseInt(match[1], 10) / 100);
+          score += (courses[code] && courses[code].rmpScore) || 0;
+          return { code, score };
+        })
+        .sort((a, b) => b.score - a.score);
+
+      if (scored.length > 0) {
+        const picked = scored[0].code;
+        picks.push(picked);
+        used.add(picked);
+        for (const [ucId, ucReq] of neededUC) {
+          if ((ucReq.courses || []).includes(picked) ||
+              (courses[picked] && courses[picked].alsoSatisfies && courses[picked].alsoSatisfies.includes(ucId))) {
+            neededUC.delete(ucId);
+          }
+        }
+      }
+    }
+    return picks;
+  }
+
+  function selectUCCourses(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const ucRequirements = (collected && collected.ucRequirements || helpers.ucRequirements || []).map(legacyRequirement);
+    const used = state.used || new Set();
+    const picks = [];
+    for (const req of ucRequirements) {
+      if (req.id === 'ELWR' && profile && profile.elwrSatisfied) continue;
+      let satisfied = false;
+      for (const code of used) {
+        if ((req.courses || []).includes(code)) { satisfied = true; break; }
+        const course = courses[code];
+        if (course && course.alsoSatisfies && course.alsoSatisfies.includes(req.id)) { satisfied = true; break; }
+      }
+      if (!satisfied) {
+        for (const code of req.courses || []) {
+          if (!used.has(code) && courses[code]) {
+            picks.push(code);
+            used.add(code);
+            break;
+          }
+        }
+      }
+    }
+    return picks;
+  }
+
   return {
     CATEGORY_PRIORITY,
     collect,
@@ -201,6 +309,8 @@
     collectChooseGroupCourses,
     collectDegreeTargets,
     collectProfileConstraints,
-    selectMajorCourses
+    selectMajorCourses,
+    selectGECourses,
+    selectUCCourses
   };
 });
