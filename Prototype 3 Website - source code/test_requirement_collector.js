@@ -659,6 +659,82 @@ function testSchedulerGenerateUsesNormalizedFreePaddingWrapper() {
   }
 }
 
+function stateAfterMajorGEUCPrereqsUpperDivAndFreePadding(profile) {
+  const state = stateAfterMajorGEUCPrereqsAndUpperDiv(profile);
+  const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+  const targetUnits = reqs.totalUnitsRequired || 180;
+  let total = Scheduler._countUnits(state.selected, state.completedSet, profile);
+  for (let i = 1; i <= 30 && total < targetUnits; i++) {
+    const code = `FREE ${i}`;
+    if (COURSES[code] && !state.used.has(code)) {
+      state.selected.push(code);
+      state.used.add(code);
+      total += COURSES[code].units;
+    }
+  }
+  return state;
+}
+
+function legacyBuildFillerPool(profile) {
+  const state = stateAfterMajorGEUCPrereqsUpperDivAndFreePadding(profile);
+  return Scheduler.buildFillerPool(profile, state.used, state.virtuallyPresent);
+}
+
+function normalizedBuildFillerPool(profile) {
+  const state = stateAfterMajorGEUCPrereqsUpperDivAndFreePadding(profile);
+  return RequirementCollector.buildFillerPool(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES,
+    concentrations: CONCENTRATIONS
+  });
+}
+
+function fillerPoolMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('CS_BA', { concentration: 'cs_graphics_vision', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('AM_BS', { concentration: 'am_pure_math' }),
+    defaultMajorProfile('CE_BS', { concentration: 'ce_networks', avoidedCourses: ['CSE 150'] }),
+    defaultMajorProfile('EE_BS', { concentration: 'ee_embedded_controls', completedCourses: ['WRIT 1'], elwrSatisfied: true }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_data_analytics', geConcentration: 'ge_arts_humanities' })
+  ];
+}
+
+function testCollectorFillerPoolMirrorsLegacyForRepresentativeProfiles() {
+  assert.strictEqual(typeof RequirementCollector.buildFillerPool, 'function', 'RequirementCollector.buildFillerPool must exist');
+  for (const profile of fillerPoolMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedBuildFillerPool(profile), legacyBuildFillerPool(profile));
+  }
+}
+
+function testSchedulerFillerPoolWrapperMirrorsLegacySelection() {
+  assert.strictEqual(typeof Scheduler.buildNormalizedFillerPool, 'function', 'Scheduler.buildNormalizedFillerPool must exist');
+  for (const profile of fillerPoolMirrorProfiles()) {
+    const state = stateAfterMajorGEUCPrereqsUpperDivAndFreePadding(profile);
+    assert.deepStrictEqual(
+      Scheduler.buildNormalizedFillerPool(profile, state.used, state.virtuallyPresent),
+      Scheduler.buildFillerPool(profile, state.used, state.virtuallyPresent)
+    );
+  }
+}
+
+function testSchedulerGenerateUsesNormalizedFillerPoolWrapper() {
+  const originalBuildNormalizedFillerPool = Scheduler.buildNormalizedFillerPool;
+  let calls = 0;
+  Scheduler.buildNormalizedFillerPool = function wrappedBuildNormalizedFillerPool(profile, used, virtuallyPresent) {
+    calls += 1;
+    return originalBuildNormalizedFillerPool.call(this, profile, used, virtuallyPresent);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS');
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate filler-pool construction exactly once');
+  } finally {
+    Scheduler.buildNormalizedFillerPool = originalBuildNormalizedFillerPool;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -683,7 +759,10 @@ const tests = [
   testSchedulerGenerateUsesNormalizedUpperDivisionSupplementWrapper,
   testCollectorFreePaddingMirrorsLegacyForRepresentativeProfiles,
   testSchedulerFreePaddingWrapperMirrorsLegacySelection,
-  testSchedulerGenerateUsesNormalizedFreePaddingWrapper
+  testSchedulerGenerateUsesNormalizedFreePaddingWrapper,
+  testCollectorFillerPoolMirrorsLegacyForRepresentativeProfiles,
+  testSchedulerFillerPoolWrapperMirrorsLegacySelection,
+  testSchedulerGenerateUsesNormalizedFillerPoolWrapper
 ];
 let passed = 0;
 for (const test of tests) {

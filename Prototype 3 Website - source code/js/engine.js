@@ -278,6 +278,18 @@ const Scheduler = {
     });
   },
 
+  buildNormalizedFillerPool(profile, used, virtuallyPresent) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.buildFillerPool !== "function") return null;
+    return collector.buildFillerPool(this.collectRequirements(profile), profile, {
+      used,
+      virtuallyPresent
+    }, {
+      courses: COURSES,
+      concentrations: (typeof CONCENTRATIONS !== "undefined") ? CONCENTRATIONS : {}
+    });
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
@@ -341,7 +353,8 @@ const Scheduler = {
     freePadding.forEach(c => { selected.push(c); courseTypeMap.set(c, "filler"); });
 
     // --- Phase 7: Build filler pool ---
-    const fillerPool = this.buildFillerPool(profile, used, virtuallyPresent);
+    const normalizedFillerPool = this.buildNormalizedFillerPool(profile, used, virtuallyPresent);
+    const fillerPool = normalizedFillerPool || this.buildFillerPool(profile, used, virtuallyPresent);
 
     // --- Phase 8: Place into quarters ---
     const remaining = selected.filter(c => !completedSet.has(c));

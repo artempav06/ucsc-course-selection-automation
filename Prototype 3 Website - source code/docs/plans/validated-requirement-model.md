@@ -75,9 +75,10 @@ Tasks:
 11. Expose normalized prerequisite expansion through `Scheduler.selectPrerequisiteCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the prerequisite expansion path.**
 12. Expose normalized upper-division supplement through `Scheduler.selectUpperDivisionSupplement(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the upper-division supplement path.**
 13. Expose normalized FREE/unit padding through `Scheduler.selectFreePaddingCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the FREE/unit-padding path.**
-14. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
+14. Expose normalized filler-pool construction through `Scheduler.buildNormalizedFillerPool(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the filler-pool construction path.**
+15. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Major, GE, UC, prerequisite, upper-division supplement, and FREE/unit-padding selection replacement is complete. Continue the one-phase-at-a-time migration with filler-pool construction, placement, and validator logic as separate changes; do not bundle them together.
+Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, and filler-pool selection replacement is complete. Continue the one-phase-at-a-time migration with placement and validator logic as separate changes; do not bundle them together.
 
 ## Phase E — Split engine modules gradually
 

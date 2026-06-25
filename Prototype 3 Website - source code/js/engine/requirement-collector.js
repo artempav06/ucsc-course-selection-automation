@@ -409,6 +409,42 @@
     return picks;
   }
 
+  function buildFillerPool(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const concentrations = helpers.concentrations || {};
+    const usedSet = state.used || new Set();
+    const virtuallyPresent = state.virtuallyPresent || new Set();
+    const prereqFor = new Set();
+    for (const code of usedSet) {
+      const course = courses[code];
+      if (!course || !course.prereqs) continue;
+      for (const orGroup of course.prereqs) orGroup.forEach(prereq => prereqFor.add(prereq));
+    }
+
+    const concentration = (profile && profile.concentration) || null;
+    const geConcentration = (profile && profile.geConcentration) || null;
+    const geConcentrations = Array.isArray(concentrations.ge) ? concentrations.ge : [];
+    const geConc = geConcentration ? geConcentrations.find(group => group.id === geConcentration) : null;
+    const geConcSet = geConc ? new Set(geConc.courses) : null;
+
+    const candidates = [];
+    for (const [code, course] of Object.entries(courses)) {
+      if (usedSet.has(code) || code.startsWith("FREE") || virtuallyPresent.has(code)) continue;
+      if (course.units < 1 || course.units > 5) continue;
+      if (!course.quarters || course.quarters.length === 0) continue;
+      if (prereqFor.has(code)) continue;
+      let score = 0;
+      if (concentration && (course.concentrations || []).includes(concentration)) score += 50;
+      if (geConcSet && geConcSet.has(code)) score += 30;
+      if (course.ge) score += 20;
+      score += (course.rmpScore || 0);
+      if (course.division === "lower") score += 5;
+      candidates.push({ code, score });
+    }
+    candidates.sort((a, b) => b.score - a.score);
+    return candidates.slice(0, 60).map(candidate => candidate.code);
+  }
+
   return {
     CATEGORY_PRIORITY,
     collect,
@@ -421,6 +457,7 @@
     selectUCCourses,
     selectPrerequisiteCourses,
     selectUpperDivisionSupplement,
-    selectFreePaddingCourses
+    selectFreePaddingCourses,
+    buildFillerPool
   };
 });
