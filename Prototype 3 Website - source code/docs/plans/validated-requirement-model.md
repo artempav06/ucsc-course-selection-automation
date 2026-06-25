@@ -81,7 +81,7 @@ Tasks:
 17. Expose explanation/debug output through `Scheduler.generateWithExplanation(...)` with representative profile tests and update `scripts/inspect_schedule.js` to consume the shared explanation seam instead of monkey-patching scheduler internals. **Complete and wired into `Scheduler.generate()` as the generation path with validation disabled for normal generation.**
 18. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, quarter-placement, validator, and explanation/debug-output seam replacement is complete. Continue the one-phase-at-a-time approach by using the new explanation output to triage warning buckets; do not bundle catalog fixes, scoring changes, or warning policy changes into unrelated refactors.
+Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, quarter-placement, validator, and explanation/debug-output seam replacement is complete. Phase 10 warning-bucket triage is complete in `docs/plans/warning-bucket-triage-phase10.md`; it identified final unit padding with prior credits as the first behavior fix target. Continue the one-phase-at-a-time approach: add focused regression tests first, then fix final padding only, then rerun warning buckets before placement/density work.
 
 ## Phase E — Split engine modules gradually
 

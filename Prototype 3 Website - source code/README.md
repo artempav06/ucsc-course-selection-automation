@@ -28,6 +28,8 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
 - `test_requirement_collector.js` — behavior-preserving collector/scheduler/validator/explanation seam test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion, upper-division supplement, FREE/unit-padding, filler-pool, quarter-placement, validation, and explanation/debug-output profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, `Scheduler.selectPrerequisiteCourses(...)`, `Scheduler.selectUpperDivisionSupplement(...)`, `Scheduler.selectFreePaddingCourses(...)`, `Scheduler.buildNormalizedFillerPool(...)`, `Scheduler.placeSelectedCourses(...)`, `Validator.validateSchedule(...)`, `Scheduler.generateWithExplanation(...)`, `Scheduler.generate()` wrapper delegation, and `Validator.validateAll(...)` wrapper delegation.
 - `scripts/inspect_schedule.js` — CLI diagnostic report powered by `Scheduler.generateWithExplanation(...)`, useful for explaining phase choices before warning-bucket fixes.
+- `scripts/phase10_warning_triage.js` — read-only combo-matrix warning-bucket diagnostic helper used by the Phase 10 triage report.
+- `docs/plans/warning-bucket-triage-phase10.md` — current root-cause map for schedule-length, high-unit, and major-density warnings.
 
 ## Run validation and tests
 
@@ -60,6 +62,6 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Start warning-bucket triage using the new explanation/debug output. `test_combo_matrix.js` still groups the 2510 current warnings into schedule-length, high-unit, and major-course-density buckets with examples.
+1. Phase 10 warning-bucket triage is complete in `docs/plans/warning-bucket-triage-phase10.md`. Start Phase 11 by adding focused regression tests for final FREE padding with prior credits; do this before any behavior change.
 2. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
 3. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.
