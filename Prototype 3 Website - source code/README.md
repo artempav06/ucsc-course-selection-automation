@@ -26,7 +26,7 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_requirement_normalizer.js` — normalizer unit tests.
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
-- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion, upper-division supplement, FREE/unit-padding, and filler-pool profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, `Scheduler.selectPrerequisiteCourses(...)`, `Scheduler.selectUpperDivisionSupplement(...)`, `Scheduler.selectFreePaddingCourses(...)`, `Scheduler.buildNormalizedFillerPool(...)`, and `Scheduler.generate()` wrapper delegation.
+- `test_requirement_collector.js` — behavior-preserving collector/scheduler seam test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion, upper-division supplement, FREE/unit-padding, filler-pool, and quarter-placement profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, `Scheduler.selectPrerequisiteCourses(...)`, `Scheduler.selectUpperDivisionSupplement(...)`, `Scheduler.selectFreePaddingCourses(...)`, `Scheduler.buildNormalizedFillerPool(...)`, `Scheduler.placeSelectedCourses(...)`, and `Scheduler.generate()` wrapper delegation.
 
 ## Run validation and tests
 
@@ -59,7 +59,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Keep quarter placement and validator changes isolated as later normalized migration phases.
+1. Keep validator changes isolated as the next normalized migration phase.
 2. Continue warning-bucket triage. `test_combo_matrix.js` now groups the 2510 current warnings into schedule-length, high-unit, and major-course-density buckets with examples.
 3. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
 4. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.

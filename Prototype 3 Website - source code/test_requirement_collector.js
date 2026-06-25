@@ -735,6 +735,73 @@ function testSchedulerGenerateUsesNormalizedFillerPoolWrapper() {
   }
 }
 
+function prePlacementState(profile) {
+  const completedSet = new Set(profile.completedCourses || []);
+  const used = new Set(completedSet);
+  const courseTypeMap = new Map();
+  const selected = [];
+  const addTagged = (code, type) => {
+    if (code && COURSES[code] && !used.has(code)) {
+      selected.push(code);
+      used.add(code);
+      courseTypeMap.set(code, type);
+    }
+  };
+
+  const majorSelection = Scheduler.selectMajorCourses(profile);
+  (majorSelection.selected || []).forEach(([code, type]) => addTagged(code, type));
+  const virtuallyPresent = new Set(majorSelection.virtuallyPresent || []);
+  Scheduler.selectGECourses(profile, used, completedSet).forEach(code => addTagged(code, 'ge'));
+  Scheduler.selectUCCourses(profile, used).forEach(code => addTagged(code, 'uc'));
+  Scheduler.selectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent).forEach(code => addTagged(code, 'prereq'));
+  Scheduler.selectUpperDivisionSupplement(profile, used, completedSet, virtuallyPresent).forEach(code => addTagged(code, 'filler'));
+  Scheduler.selectFreePaddingCourses(profile, selected, completedSet, used).forEach(code => addTagged(code, 'filler'));
+  const fillerPool = Scheduler.buildNormalizedFillerPool(profile, used, virtuallyPresent);
+  const remaining = selected.filter(code => !completedSet.has(code));
+  return { remaining, courseTypeMap, fillerPool, completedSet };
+}
+
+function placementMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('CS_BA', { concentration: 'cs_data', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('AM_BS', { concentration: 'am_modeling', includeSummer: true }),
+    defaultMajorProfile('RE_BS', { concentration: 're_autonomous', maxUnits: 17 }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_systems_eng', gapEnabled: true, gapTerm: 'W', gapYear: 2026 }),
+    defaultMajorProfile('EE_BS', { concentration: 'ee_signals_comm', currentLevel: 2, currentTerm: 'S', currentYear: 2025 })
+  ];
+}
+
+function testSchedulerPlacementWrapperMirrorsLegacyPlacement() {
+  assert.strictEqual(typeof Scheduler.placeSelectedCourses, 'function', 'Scheduler.placeSelectedCourses must exist');
+  for (const profile of placementMirrorProfiles()) {
+    const legacyState = prePlacementState(profile);
+    const wrapperState = prePlacementState(profile);
+    assert.deepStrictEqual(
+      Scheduler.placeSelectedCourses(profile, wrapperState.remaining, wrapperState.courseTypeMap, wrapperState.fillerPool, wrapperState.completedSet),
+      Scheduler.placeIntoQuarters(legacyState.remaining, legacyState.courseTypeMap, legacyState.fillerPool, legacyState.completedSet, profile)
+    );
+  }
+}
+
+function testSchedulerGenerateUsesPlacementWrapper() {
+  const originalPlaceSelectedCourses = Scheduler.placeSelectedCourses;
+  let calls = 0;
+  Scheduler.placeSelectedCourses = function wrappedPlaceSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet) {
+    calls += 1;
+    return originalPlaceSelectedCourses.call(this, profile, remaining, courseTypeMap, fillerPool, completedSet);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS');
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate quarter placement exactly once');
+  } finally {
+    Scheduler.placeSelectedCourses = originalPlaceSelectedCourses;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -762,7 +829,9 @@ const tests = [
   testSchedulerGenerateUsesNormalizedFreePaddingWrapper,
   testCollectorFillerPoolMirrorsLegacyForRepresentativeProfiles,
   testSchedulerFillerPoolWrapperMirrorsLegacySelection,
-  testSchedulerGenerateUsesNormalizedFillerPoolWrapper
+  testSchedulerGenerateUsesNormalizedFillerPoolWrapper,
+  testSchedulerPlacementWrapperMirrorsLegacyPlacement,
+  testSchedulerGenerateUsesPlacementWrapper
 ];
 let passed = 0;
 for (const test of tests) {

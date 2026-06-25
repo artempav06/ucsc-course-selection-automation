@@ -290,6 +290,10 @@ const Scheduler = {
     });
   },
 
+  placeSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet) {
+    return this.placeIntoQuarters(remaining, courseTypeMap, fillerPool, completedSet, profile);
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
@@ -358,7 +362,7 @@ const Scheduler = {
 
     // --- Phase 8: Place into quarters ---
     const remaining = selected.filter(c => !completedSet.has(c));
-    const schedule = this.placeIntoQuarters(remaining, courseTypeMap, fillerPool, completedSet, profile);
+    const schedule = this.placeSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet);
     schedule.courseTypeMap = courseTypeMap;
     return schedule;
   },
