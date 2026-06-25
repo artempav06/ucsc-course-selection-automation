@@ -78,9 +78,10 @@ Tasks:
 14. Expose normalized filler-pool construction through `Scheduler.buildNormalizedFillerPool(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the filler-pool construction path.**
 15. Expose quarter placement through `Scheduler.placeSelectedCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the quarter-placement path.**
 16. Expose validator behavior through `Validator.validateSchedule(...)` with representative profile mirror tests. **Complete and wired into `Validator.validateAll()` as the validation path.**
-17. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
+17. Expose explanation/debug output through `Scheduler.generateWithExplanation(...)` with representative profile tests and update `scripts/inspect_schedule.js` to consume the shared explanation seam instead of monkey-patching scheduler internals. **Complete and wired into `Scheduler.generate()` as the generation path with validation disabled for normal generation.**
+18. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, quarter-placement, and validator seam replacement is complete. Continue the one-phase-at-a-time migration with explanation/debug output as the next separate change; do not bundle unrelated quality fixes into it.
+Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, quarter-placement, validator, and explanation/debug-output seam replacement is complete. Continue the one-phase-at-a-time approach by using the new explanation output to triage warning buckets; do not bundle catalog fixes, scoring changes, or warning policy changes into unrelated refactors.
 
 ## Phase E — Split engine modules gradually
 

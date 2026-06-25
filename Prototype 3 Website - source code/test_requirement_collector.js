@@ -884,6 +884,39 @@ function testValidatorValidateAllUsesScheduleWrapper() {
   }
 }
 
+function testSchedulerGenerateWithExplanationExposesPhaseDebugOutput() {
+  assert.strictEqual(typeof Scheduler.generateWithExplanation, 'function', 'Scheduler.generateWithExplanation must exist');
+  for (const profile of validatorMirrorProfiles()) {
+    const explained = Scheduler.generateWithExplanation(profile);
+    assert(Array.isArray(explained.schedule), 'expected generated schedule array');
+    assert(explained.explanation && explained.explanation.phases, 'expected explanation phase debug data');
+    assert.deepStrictEqual(explained.schedule, Scheduler.generate(profile), `explained schedule should match normal generate for ${profile.major}`);
+    assert.deepStrictEqual(explained.explanation.phases.majorSelection.courses, Scheduler.selectMajorCourses(profile).selected);
+    assert.strictEqual(explained.explanation.phases.majorSelection.count, Scheduler.selectMajorCourses(profile).selected.length);
+    assert.strictEqual(explained.explanation.phases.fillerPool.count, explained.explanation.phases.fillerPool.candidates.length);
+    assert.strictEqual(explained.explanation.validation.allMet, Validator.validateSchedule(explained.schedule, profile).allMet);
+    assert.strictEqual(explained.explanation.totals.scheduledUnits, Validator.validateSchedule(explained.schedule, profile).totalUnits - (profile.priorCredits || 0));
+  }
+}
+
+function testSchedulerGenerateUsesExplanationWrapper() {
+  const originalGenerateWithExplanation = Scheduler.generateWithExplanation;
+  let calls = 0;
+  Scheduler.generateWithExplanation = function wrappedGenerateWithExplanation(profile) {
+    calls += 1;
+    return originalGenerateWithExplanation.call(this, profile);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS');
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped explanation generation should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate explanation-aware generation exactly once');
+  } finally {
+    Scheduler.generateWithExplanation = originalGenerateWithExplanation;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -915,7 +948,9 @@ const tests = [
   testSchedulerPlacementWrapperMirrorsLegacyPlacement,
   testSchedulerGenerateUsesPlacementWrapper,
   testValidatorScheduleWrapperMirrorsValidationPiecesForRepresentativeProfiles,
-  testValidatorValidateAllUsesScheduleWrapper
+  testValidatorValidateAllUsesScheduleWrapper,
+  testSchedulerGenerateWithExplanationExposesPhaseDebugOutput,
+  testSchedulerGenerateUsesExplanationWrapper
 ];
 let passed = 0;
 for (const test of tests) {

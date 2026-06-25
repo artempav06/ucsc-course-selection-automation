@@ -299,6 +299,10 @@ const Scheduler = {
   },
 
   generate(profile) {
+    return this.generateWithExplanation(profile, { includeValidation: false }).schedule;
+  },
+
+  generateWithExplanation(profile, options = {}) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
     const geConcentration = profile.geConcentration || null;
@@ -306,6 +310,12 @@ const Scheduler = {
     const majorId = (profile && profile.major) || "CS_BA";
     const reqs = (typeof MAJOR_REQUIREMENTS !== "undefined" && MAJOR_REQUIREMENTS[majorId])
       || CS_BA_REQUIREMENTS;
+    const phaseUnits = courses => (courses || []).reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+    const courseTypeCounts = map => {
+      const counts = {};
+      for (const type of map.values()) counts[type] = (counts[type] || 0) + 1;
+      return counts;
+    };
 
     // --- Phase 1: Select major courses via normalized collector wrapper ---
     const majorSelection = this.selectMajorCourses(profile) || {
@@ -317,6 +327,17 @@ const Scheduler = {
     selected.forEach(code => used.add(code));
     const courseTypeMap = new Map(majorSelection.courseTypes || []);
     const virtuallyPresent = new Set(majorSelection.virtuallyPresent || []);
+    const explanation = {
+      phases: {
+        majorSelection: {
+          courses: selected.slice(),
+          count: selected.length,
+          units: phaseUnits(selected),
+          courseTypes: courseTypeCounts(courseTypeMap),
+          virtuallyPresent: [...virtuallyPresent].sort()
+        }
+      }
+    };
     const pushTagged = (code, type) => {
       if (code && COURSES[code] && !used.has(code)) {
         selected.push(code); used.add(code); courseTypeMap.set(code, type);
@@ -324,24 +345,48 @@ const Scheduler = {
     };
 
     // --- Phase 2: GE courses ---
-    (this.selectGECourses(profile, used, completedSet) || this.pickGE(used, completedSet, geConcentration, profile)).forEach(c => {
+    const geCourses = this.selectGECourses(profile, used, completedSet) || this.pickGE(used, completedSet, geConcentration, profile);
+    geCourses.forEach(c => {
       if (c && COURSES[c]) { selected.push(c); courseTypeMap.set(c, "ge"); }
     });
+    explanation.phases.geSelection = {
+      courses: geCourses.slice(),
+      count: geCourses.length,
+      units: phaseUnits(geCourses)
+    };
 
     // --- Phase 3: UC courses ---
-    (this.selectUCCourses(profile, used) || this.pickUC(used, profile)).forEach(c => {
+    const ucCourses = this.selectUCCourses(profile, used) || this.pickUC(used, profile);
+    ucCourses.forEach(c => {
       selected.push(c); used.add(c); courseTypeMap.set(c, "uc");
     });
+    explanation.phases.ucSelection = {
+      courses: ucCourses.slice(),
+      count: ucCourses.length,
+      units: phaseUnits(ucCourses)
+    };
 
     // --- Phase 4: Expand prereqs ---
-    (this.selectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent) || this.expandPrereqs(selected, completedSet, used, virtuallyPresent))
-      .forEach(c => pushTagged(c, "prereq"));
+    const prereqCourses = this.selectPrerequisiteCourses(profile, selected, completedSet, used, virtuallyPresent)
+      || this.expandPrereqs(selected, completedSet, used, virtuallyPresent);
+    prereqCourses.forEach(c => pushTagged(c, "prereq"));
+    explanation.phases.prerequisiteExpansion = {
+      courses: prereqCourses.slice(),
+      count: prereqCourses.length,
+      units: phaseUnits(prereqCourses)
+    };
 
     // --- Phase 5: Upper-div supplement ---
     const normalizedUDSupplement = this.selectUpperDivisionSupplement(profile, used, completedSet, virtuallyPresent);
     const udAdded = normalizedUDSupplement || [];
     if (!normalizedUDSupplement) this.supplementUpperDiv(udAdded, [], used, completedSet, reqs, majorId, virtuallyPresent);
     udAdded.forEach(c => { selected.push(c); courseTypeMap.set(c, "filler"); });
+    explanation.phases.upperDivisionSupplement = {
+      courses: udAdded.slice(),
+      count: udAdded.length,
+      units: phaseUnits(udAdded),
+      upperDivUnits: phaseUnits(udAdded.filter(c => COURSES[c]?.division === "upper"))
+    };
 
     // --- Phase 6: FREE pad to unit target ---
     const normalizedFreePadding = this.selectFreePaddingCourses(profile, selected, completedSet, used);
@@ -359,16 +404,60 @@ const Scheduler = {
       }
     }
     freePadding.forEach(c => { selected.push(c); courseTypeMap.set(c, "filler"); });
+    explanation.phases.freePadding = {
+      courses: freePadding.slice(),
+      count: freePadding.length,
+      units: phaseUnits(freePadding),
+      targetUnits: reqs.totalUnitsRequired || 180
+    };
 
     // --- Phase 7: Build filler pool ---
     const normalizedFillerPool = this.buildNormalizedFillerPool(profile, used, virtuallyPresent);
     const fillerPool = normalizedFillerPool || this.buildFillerPool(profile, used, virtuallyPresent);
+    explanation.phases.fillerPool = {
+      candidates: fillerPool.slice(),
+      count: fillerPool.length
+    };
 
     // --- Phase 8: Place into quarters ---
     const remaining = selected.filter(c => !completedSet.has(c));
     const schedule = this.placeSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet);
     schedule.courseTypeMap = courseTypeMap;
-    return schedule;
+    const plannedFromSchedule = [];
+    for (const year of schedule) {
+      for (const quarter of Object.values(year.quarters)) {
+        plannedFromSchedule.push(...quarter.filter(c => c !== "_GAP"));
+      }
+    }
+    explanation.phases.placement = {
+      remaining: remaining.slice(),
+      remainingCount: remaining.length,
+      scheduledCourses: plannedFromSchedule.slice(),
+      scheduledCount: plannedFromSchedule.length,
+      years: schedule.length,
+      courseTypes: courseTypeCounts(courseTypeMap)
+    };
+    if (options.includeValidation !== false) {
+      explanation.validation = Validator.validateSchedule(schedule, profile);
+      explanation.totals = {
+        selectedUnitsBeforePlacement: this._countUnits(selected, completedSet, profile),
+        scheduledUnits: explanation.validation.totalUnits - (profile ? (profile.priorCredits || 0) : 0),
+        totalUnits: explanation.validation.totalUnits,
+        upperDivUnits: explanation.validation.upperDivUnits,
+        completedUnits: explanation.validation.completedUnits,
+        priorCredits: explanation.validation.priorCredits
+      };
+    } else {
+      explanation.totals = {
+        selectedUnitsBeforePlacement: this._countUnits(selected, completedSet, profile),
+        scheduledUnits: phaseUnits(plannedFromSchedule) + phaseUnits(profile.completedCourses || []),
+        totalUnits: null,
+        upperDivUnits: null,
+        completedUnits: phaseUnits(profile.completedCourses || []),
+        priorCredits: profile ? (profile.priorCredits || 0) : 0
+      };
+    }
+    return { schedule, explanation };
   },
 
   // --- Unified category walker ---
