@@ -26,7 +26,7 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_requirement_normalizer.js` — normalizer unit tests.
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
-- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, and `Scheduler.selectPrerequisiteCourses(...)` wrapper coverage, plus guards that `Scheduler.generate()` delegates those selection phases through normalized wrappers.
+- `test_requirement_collector.js` — behavior-preserving collector test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion, upper-division supplement, and FREE/unit-padding profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, `Scheduler.selectPrerequisiteCourses(...)`, `Scheduler.selectUpperDivisionSupplement(...)`, and `Scheduler.selectFreePaddingCourses(...)` wrapper coverage, plus guards that `Scheduler.generate()` delegates those selection phases through normalized wrappers.
 
 ## Run validation and tests
 
@@ -59,7 +59,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Mirror upper-division supplement through the normalized pipeline using old-vs-new equality tests before replacing the `Scheduler.generate()` supplement phase.
-2. Keep filler/free padding, placement, and validator changes out of the upper-division supplement replacement commit.
-3. Improve combo-matrix warning reports so the existing 2510 warnings are grouped by schedule length, high units, overload, filler, prerequisites/order, and unsupported profile constraint.
-4. Continue warning-bucket triage, starting with `unknownGeReference`, after the normalized major/GE/UC/prerequisite extraction remains stable.
+1. Keep filler-pool construction, quarter placement, and validator changes isolated as later normalized migration phases.
+2. Continue warning-bucket triage. `test_combo_matrix.js` now groups the 2510 current warnings into schedule-length, high-unit, and major-course-density buckets with examples.
+3. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
+4. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Broad student-choice matrix QA for Prototype 2 scheduler engine.
+// Broad student-choice matrix QA for Prototype 3 scheduler engine.
 // Exercises realistic combinations of major/concentration, GE concentration,
 // start term/year, graduation window, transfer level, summer, prior credits,
 // completed courses, avoided courses, and GAP settings.
@@ -238,6 +238,29 @@ function validateProfile(profile) {
   return { schedule, validation, issues, warnings };
 }
 
+function warningBucket(message) {
+  if (/^schedule length /.test(message)) return 'schedule length exceeds selected window';
+  if (/^max major quarter /.test(message)) return 'major-course density exceeds target';
+  if (/^high total units /.test(message)) return 'high total units';
+  return message.replace(/\d+/g, '#');
+}
+
+function groupWarnings(warnings) {
+  const buckets = new Map();
+  for (const warningRecord of warnings) {
+    for (const warning of warningRecord.warnings) {
+      const bucket = warningBucket(warning);
+      const entry = buckets.get(bucket) || { count: 0, examples: [] };
+      entry.count += 1;
+      if (entry.examples.length < 3) {
+        entry.examples.push(`${warningRecord.profile.scenarioLabel}: years=${warningRecord.years} units=${warningRecord.units} :: ${warning}`);
+      }
+      buckets.set(bucket, entry);
+    }
+  }
+  return [...buckets.entries()].sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0]));
+}
+
 function main() {
   const profiles = buildProfiles();
   const failures = [];
@@ -254,7 +277,7 @@ function main() {
     }
   }
 
-  console.log(`Prototype 2 combo matrix checked ${checked} student-choice scenarios`);
+  console.log(`Prototype 3 combo matrix checked ${checked} student-choice scenarios`);
   console.log(`Hard failures: ${failures.length}`);
   console.log(`Warnings: ${warnings.length}`);
 
@@ -266,7 +289,13 @@ function main() {
     if (failures.length > MAX_REPORT) console.log(`... ${failures.length - MAX_REPORT} more failures omitted`);
   }
   if (warnings.length) {
-    console.log('\nWarnings:');
+    console.log('\nWarning buckets:');
+    for (const [bucket, info] of groupWarnings(warnings)) {
+      console.log(`- ${bucket}: ${info.count}`);
+      for (const example of info.examples) console.log(`  example: ${example}`);
+    }
+
+    console.log('\nWarning details:');
     for (const w of warnings.slice(0, MAX_REPORT)) {
       console.log(`- ${w.profile.scenarioLabel}: years=${w.years} units=${w.units} :: ${w.warnings.join(' | ')}`);
     }

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// test_smoke.js — Smoke test all majors × concentrations for Prototype 2
+// test_smoke.js — Smoke test all majors × concentrations for Prototype 3
 const fs = require("fs");
 const vm = require("vm");
 const path = require("path");
@@ -90,7 +90,7 @@ function checkPrereqOrder(schedule) {
   return violations;
 }
 
-console.log("Prototype 2 — Smoke Test (Balanced Placement)");
+console.log("Prototype 3 — Smoke Test (Balanced Placement)");
 console.log("=".repeat(130));
 console.log(
   "Major".padEnd(12) +

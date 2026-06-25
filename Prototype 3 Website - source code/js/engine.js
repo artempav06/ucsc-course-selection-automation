@@ -252,6 +252,32 @@ const Scheduler = {
     });
   },
 
+  selectUpperDivisionSupplement(profile, used, completedSet, virtuallyPresent) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectUpperDivisionSupplement !== "function") return null;
+    return collector.selectUpperDivisionSupplement(this.collectRequirements(profile), profile, {
+      used,
+      completedSet,
+      virtuallyPresent
+    }, {
+      courses: COURSES,
+      prereqsMet: (prereqs, prereqContext) => Validator.prereqsMet(prereqs, prereqContext)
+    });
+  },
+
+  selectFreePaddingCourses(profile, selected, completedSet, used) {
+    const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
+    if (!collector || typeof collector.selectFreePaddingCourses !== "function") return null;
+    return collector.selectFreePaddingCourses(this.collectRequirements(profile), profile, {
+      selected,
+      completedSet,
+      used
+    }, {
+      courses: COURSES,
+      countUnits: (selectedCourses, completedCourses, countProfile) => this._countUnits(selectedCourses, completedCourses, countProfile)
+    });
+  },
+
   generate(profile) {
     const completedSet = new Set(profile.completedCourses || []);
     const used = new Set(completedSet);
@@ -292,19 +318,27 @@ const Scheduler = {
       .forEach(c => pushTagged(c, "prereq"));
 
     // --- Phase 5: Upper-div supplement ---
-    const udAdded = [];
-    this.supplementUpperDiv(udAdded, [], used, completedSet, reqs, majorId, virtuallyPresent);
+    const normalizedUDSupplement = this.selectUpperDivisionSupplement(profile, used, completedSet, virtuallyPresent);
+    const udAdded = normalizedUDSupplement || [];
+    if (!normalizedUDSupplement) this.supplementUpperDiv(udAdded, [], used, completedSet, reqs, majorId, virtuallyPresent);
     udAdded.forEach(c => { selected.push(c); courseTypeMap.set(c, "filler"); });
 
     // --- Phase 6: FREE pad to unit target ---
-    const targetUnits = reqs.totalUnitsRequired || 180;
-    let total = this._countUnits(selected, completedSet, profile);
-    for (let i = 1; i <= 30 && total < targetUnits; i++) {
-      const code = `FREE ${i}`;
-      if (COURSES[code] && !used.has(code)) {
-        pushTagged(code, "filler"); total += COURSES[code].units;
+    const normalizedFreePadding = this.selectFreePaddingCourses(profile, selected, completedSet, used);
+    const freePadding = normalizedFreePadding || [];
+    if (!normalizedFreePadding) {
+      const targetUnits = reqs.totalUnitsRequired || 180;
+      let total = this._countUnits(selected, completedSet, profile);
+      for (let i = 1; i <= 30 && total < targetUnits; i++) {
+        const code = `FREE ${i}`;
+        if (COURSES[code] && !used.has(code)) {
+          freePadding.push(code);
+          used.add(code);
+          total += COURSES[code].units;
+        }
       }
     }
+    freePadding.forEach(c => { selected.push(c); courseTypeMap.set(c, "filler"); });
 
     // --- Phase 7: Build filler pool ---
     const fillerPool = this.buildFillerPool(profile, used, virtuallyPresent);

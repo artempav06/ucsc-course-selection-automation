@@ -333,6 +333,82 @@
     return toAdd;
   }
 
+  function defaultPrereqsMet(prereqs, context) {
+    if (!prereqs || prereqs.length === 0) return true;
+    return prereqs.every(orGroup => (orGroup || []).some(code => context.has(code)));
+  }
+
+  function selectUpperDivisionSupplement(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const prereqsMet = helpers.prereqsMet || defaultPrereqsMet;
+    const used = state.used || new Set();
+    const completedSet = state.completedSet || new Set((profile && profile.completedCourses) || []);
+    const virtuallyPresent = state.virtuallyPresent || new Set();
+    const targets = (collected && collected.degreeTargets) || {};
+    const minUD = targets.minUpperDivUnits || 60;
+    const majorId = (collected && collected.majorId) || (profile && profile.major) || 'CS_BA';
+    const DEPT_MAP = { AM: "AM", CE: "CE", CS: "CSE", EE: "ECE", CSGD: "CMPM", NDT: "GAME", BMEB: "BIOL", BIOTECH: "BIOL" };
+    const majKey = majorId.split("_")[0];
+    const deptPfx = DEPT_MAP[majKey] || majKey;
+
+    let curUD = [...used, ...completedSet].reduce(
+      (sum, code) => sum + (courses[code] && courses[code].division === "upper" ? courses[code].units : 0),
+      0
+    );
+    if (curUD >= minUD) return [];
+
+    const prereqContext = new Set([...used, ...completedSet]);
+    const isSafeSupplement = code => courses[code]
+      && courses[code].division === "upper"
+      && !code.startsWith("FREE")
+      && Array.isArray(courses[code].quarters)
+      && courses[code].quarters.length > 0
+      && !used.has(code)
+      && !completedSet.has(code)
+      && !virtuallyPresent.has(code)
+      && prereqsMet(courses[code].prereqs, prereqContext);
+
+    const udPool = Object.keys(courses)
+      .filter(code => isSafeSupplement(code) && code.startsWith(deptPfx))
+      .concat(Object.keys(courses).filter(code => isSafeSupplement(code) && !code.startsWith(deptPfx)));
+
+    const picks = [];
+    for (const code of udPool) {
+      if (curUD >= minUD) break;
+      picks.push(code);
+      used.add(code);
+      prereqContext.add(code);
+      curUD += courses[code].units;
+    }
+    return picks;
+  }
+
+  function selectFreePaddingCourses(collected, profile, state = {}, helpers = {}) {
+    const courses = helpers.courses || {};
+    const countUnits = helpers.countUnits || ((selected, completedSet, countProfile) => {
+      const completed = completedSet || new Set((countProfile && countProfile.completedCourses) || []);
+      const selectedUnits = (selected || []).reduce((sum, code) => sum + (courses[code] ? courses[code].units : 0), 0);
+      const completedUnits = [...completed].reduce((sum, code) => sum + (courses[code] ? courses[code].units : 0), 0);
+      return selectedUnits + completedUnits + ((countProfile && countProfile.priorCredits) || 0);
+    });
+    const selected = state.selected || [];
+    const completedSet = state.completedSet || new Set((profile && profile.completedCourses) || []);
+    const used = state.used || new Set();
+    const targets = (collected && collected.degreeTargets) || {};
+    const targetUnits = targets.totalUnitsRequired || 180;
+    let total = countUnits(selected, completedSet, profile);
+    const picks = [];
+    for (let i = 1; i <= 30 && total < targetUnits; i++) {
+      const code = `FREE ${i}`;
+      if (courses[code] && !used.has(code)) {
+        picks.push(code);
+        used.add(code);
+        total += courses[code].units;
+      }
+    }
+    return picks;
+  }
+
   return {
     CATEGORY_PRIORITY,
     collect,
@@ -343,6 +419,8 @@
     selectMajorCourses,
     selectGECourses,
     selectUCCourses,
-    selectPrerequisiteCourses
+    selectPrerequisiteCourses,
+    selectUpperDivisionSupplement,
+    selectFreePaddingCourses
   };
 });

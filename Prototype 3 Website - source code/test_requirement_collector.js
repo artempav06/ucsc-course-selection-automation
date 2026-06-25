@@ -480,6 +480,185 @@ function testSchedulerGenerateUsesNormalizedPrerequisiteSelectionWrapper() {
   }
 }
 
+function stateAfterMajorGEUCAndPrereqs(profile) {
+  const state = stateAfterMajorGEAndUC(profile);
+  const prereqPicks = Scheduler.expandPrereqs(state.selected, state.completedSet, state.used, state.virtuallyPresent);
+  for (const code of prereqPicks) {
+    if (code && COURSES[code] && !state.used.has(code)) {
+      state.selected.push(code);
+      state.used.add(code);
+    }
+  }
+  return state;
+}
+
+function legacySelectUpperDivisionSupplement(profile) {
+  const state = stateAfterMajorGEUCAndPrereqs(profile);
+  const target = [];
+  const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+  Scheduler.supplementUpperDiv(target, [], state.used, state.completedSet, reqs, profile.major, state.virtuallyPresent);
+  return { picks: target, used: [...state.used].sort() };
+}
+
+function normalizedSelectUpperDivisionSupplement(profile) {
+  const state = stateAfterMajorGEUCAndPrereqs(profile);
+  const picks = RequirementCollector.selectUpperDivisionSupplement(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES,
+    prereqsMet: (prereqs, prereqContext) => Validator.prereqsMet(prereqs, prereqContext)
+  });
+  return { picks, used: [...state.used].sort() };
+}
+
+function upperDivisionSupplementMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('AM_BS', { concentration: 'am_modeling' }),
+    defaultMajorProfile('CE_BS', { concentration: 'ce_robotics' }),
+    defaultMajorProfile('EE_BS', { completedCourses: ['WRIT 1'], elwrSatisfied: true }),
+    defaultMajorProfile('RE_BS', { concentration: 're_autonomous', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_systems_eng', avoidedCourses: ['CSE 160'] })
+  ];
+}
+
+function testCollectorUpperDivisionSupplementMirrorsLegacyForRepresentativeProfiles() {
+  assert.strictEqual(typeof RequirementCollector.selectUpperDivisionSupplement, 'function', 'RequirementCollector.selectUpperDivisionSupplement must exist');
+  for (const profile of upperDivisionSupplementMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedSelectUpperDivisionSupplement(profile), legacySelectUpperDivisionSupplement(profile));
+  }
+}
+
+function testSchedulerUpperDivisionSupplementWrapperMirrorsLegacySelection() {
+  assert.strictEqual(typeof Scheduler.selectUpperDivisionSupplement, 'function', 'Scheduler.selectUpperDivisionSupplement must exist');
+  for (const profile of upperDivisionSupplementMirrorProfiles()) {
+    const state = stateAfterMajorGEUCAndPrereqs(profile);
+    const target = [];
+    const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+    Scheduler.supplementUpperDiv(target, [], state.used, state.completedSet, reqs, profile.major, state.virtuallyPresent);
+
+    const wrapperState = stateAfterMajorGEUCAndPrereqs(profile);
+    assert.deepStrictEqual(
+      Scheduler.selectUpperDivisionSupplement(profile, wrapperState.used, wrapperState.completedSet, wrapperState.virtuallyPresent),
+      target
+    );
+  }
+}
+
+function testSchedulerGenerateUsesNormalizedUpperDivisionSupplementWrapper() {
+  const originalSelectUpperDivisionSupplement = Scheduler.selectUpperDivisionSupplement;
+  let calls = 0;
+  Scheduler.selectUpperDivisionSupplement = function wrappedSelectUpperDivisionSupplement(profile, used, completedSet, virtuallyPresent) {
+    calls += 1;
+    return originalSelectUpperDivisionSupplement.call(this, profile, used, completedSet, virtuallyPresent);
+  };
+  try {
+    const profile = defaultMajorProfile('RE_BS', { concentration: 're_autonomous' });
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate upper-division supplement selection exactly once');
+  } finally {
+    Scheduler.selectUpperDivisionSupplement = originalSelectUpperDivisionSupplement;
+  }
+}
+
+function stateAfterMajorGEUCPrereqsAndUpperDiv(profile) {
+  const state = stateAfterMajorGEUCAndPrereqs(profile);
+  const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+  const udPicks = [];
+  Scheduler.supplementUpperDiv(udPicks, [], state.used, state.completedSet, reqs, profile.major, state.virtuallyPresent);
+  for (const code of udPicks) {
+    if (code && COURSES[code] && !state.selected.includes(code)) state.selected.push(code);
+  }
+  return state;
+}
+
+function legacySelectFreePaddingCourses(profile) {
+  const state = stateAfterMajorGEUCPrereqsAndUpperDiv(profile);
+  const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+  const targetUnits = reqs.totalUnitsRequired || 180;
+  let total = Scheduler._countUnits(state.selected, state.completedSet, profile);
+  const picks = [];
+  for (let i = 1; i <= 30 && total < targetUnits; i++) {
+    const code = `FREE ${i}`;
+    if (COURSES[code] && !state.used.has(code)) {
+      picks.push(code);
+      state.used.add(code);
+      total += COURSES[code].units;
+    }
+  }
+  return { picks, used: [...state.used].sort() };
+}
+
+function normalizedSelectFreePaddingCourses(profile) {
+  const state = stateAfterMajorGEUCPrereqsAndUpperDiv(profile);
+  const picks = RequirementCollector.selectFreePaddingCourses(Scheduler.collectRequirements(profile), profile, state, {
+    courses: COURSES,
+    countUnits: (selected, completedSet, countProfile) => Scheduler._countUnits(selected, completedSet, countProfile)
+  });
+  return { picks, used: [...state.used].sort() };
+}
+
+function freePaddingMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('CS_BA', { completedCourses: ['CSE 20'] }),
+    defaultMajorProfile('AM_BS', { concentration: 'am_modeling' }),
+    defaultMajorProfile('RE_BS', { concentration: 're_ai_vision', geConcentration: null }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_finance_econ', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('BMEB_BI', { concentration: 'bi_computational' })
+  ];
+}
+
+function testCollectorFreePaddingMirrorsLegacyForRepresentativeProfiles() {
+  assert.strictEqual(typeof RequirementCollector.selectFreePaddingCourses, 'function', 'RequirementCollector.selectFreePaddingCourses must exist');
+  for (const profile of freePaddingMirrorProfiles()) {
+    assert.deepStrictEqual(normalizedSelectFreePaddingCourses(profile), legacySelectFreePaddingCourses(profile));
+  }
+}
+
+function testSchedulerFreePaddingWrapperMirrorsLegacySelection() {
+  assert.strictEqual(typeof Scheduler.selectFreePaddingCourses, 'function', 'Scheduler.selectFreePaddingCourses must exist');
+  for (const profile of freePaddingMirrorProfiles()) {
+    const state = stateAfterMajorGEUCPrereqsAndUpperDiv(profile);
+    const reqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+    const targetUnits = reqs.totalUnitsRequired || 180;
+    let total = Scheduler._countUnits(state.selected, state.completedSet, profile);
+    const legacy = [];
+    for (let i = 1; i <= 30 && total < targetUnits; i++) {
+      const code = `FREE ${i}`;
+      if (COURSES[code] && !state.used.has(code)) {
+        legacy.push(code);
+        state.used.add(code);
+        total += COURSES[code].units;
+      }
+    }
+
+    const wrapperState = stateAfterMajorGEUCPrereqsAndUpperDiv(profile);
+    assert.deepStrictEqual(
+      Scheduler.selectFreePaddingCourses(profile, wrapperState.selected, wrapperState.completedSet, wrapperState.used),
+      legacy
+    );
+  }
+}
+
+function testSchedulerGenerateUsesNormalizedFreePaddingWrapper() {
+  const originalSelectFreePaddingCourses = Scheduler.selectFreePaddingCourses;
+  let calls = 0;
+  Scheduler.selectFreePaddingCourses = function wrappedSelectFreePaddingCourses(profile, selected, completedSet, used) {
+    calls += 1;
+    return originalSelectFreePaddingCourses.call(this, profile, selected, completedSet, used);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS');
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped generate should still produce a valid schedule');
+    assert.strictEqual(calls, 1, 'Scheduler.generate should delegate free padding selection exactly once');
+  } finally {
+    Scheduler.selectFreePaddingCourses = originalSelectFreePaddingCourses;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -498,7 +677,13 @@ const tests = [
   testSchedulerGEAndUCSelectionWrappersMirrorLegacySelection,
   testCollectorPrerequisiteSelectionMirrorsLegacyForRepresentativeProfiles,
   testSchedulerPrerequisiteSelectionWrapperMirrorsLegacySelection,
-  testSchedulerGenerateUsesNormalizedPrerequisiteSelectionWrapper
+  testSchedulerGenerateUsesNormalizedPrerequisiteSelectionWrapper,
+  testCollectorUpperDivisionSupplementMirrorsLegacyForRepresentativeProfiles,
+  testSchedulerUpperDivisionSupplementWrapperMirrorsLegacySelection,
+  testSchedulerGenerateUsesNormalizedUpperDivisionSupplementWrapper,
+  testCollectorFreePaddingMirrorsLegacyForRepresentativeProfiles,
+  testSchedulerFreePaddingWrapperMirrorsLegacySelection,
+  testSchedulerGenerateUsesNormalizedFreePaddingWrapper
 ];
 let passed = 0;
 for (const test of tests) {
