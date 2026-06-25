@@ -77,9 +77,10 @@ Tasks:
 13. Expose normalized FREE/unit padding through `Scheduler.selectFreePaddingCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the FREE/unit-padding path.**
 14. Expose normalized filler-pool construction through `Scheduler.buildNormalizedFillerPool(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the filler-pool construction path.**
 15. Expose quarter placement through `Scheduler.placeSelectedCourses(...)` with old-vs-new representative profile mirror tests. **Complete and wired into `Scheduler.generate()` as the quarter-placement path.**
-16. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
+16. Expose validator behavior through `Validator.validateSchedule(...)` with representative profile mirror tests. **Complete and wired into `Validator.validateAll()` as the validation path.**
+17. Keep Node regression harnesses loading the normalizer and collector before `engine.js` so CLI tests match the browser script order in `index.html`.
 
-Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, and quarter-placement seam replacement is complete. Continue the one-phase-at-a-time migration with validator logic as the next separate change; do not bundle unrelated quality fixes into it.
+Major, GE, UC, prerequisite, upper-division supplement, FREE/unit-padding, filler-pool selection, quarter-placement, and validator seam replacement is complete. Continue the one-phase-at-a-time migration with explanation/debug output as the next separate change; do not bundle unrelated quality fixes into it.
 
 ## Phase E — Split engine modules gradually
 

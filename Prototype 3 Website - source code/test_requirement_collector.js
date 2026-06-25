@@ -802,6 +802,88 @@ function testSchedulerGenerateUsesPlacementWrapper() {
   }
 }
 
+function validatorMirrorProfiles() {
+  return [
+    defaultMajorProfile('CS_BS'),
+    defaultMajorProfile('CS_BA', { concentration: 'cs_data', geConcentration: 'ge_arts_humanities' }),
+    defaultMajorProfile('AM_BS', { concentration: 'am_modeling', includeSummer: true }),
+    defaultMajorProfile('RE_BS', { concentration: 're_autonomous', maxUnits: 17 }),
+    defaultMajorProfile('TIM_BS', { concentration: 'tim_systems_eng', gapEnabled: true, gapTerm: 'W', gapYear: 2026 }),
+    defaultMajorProfile('EE_BS', { concentration: 'ee_signals_comm', currentLevel: 2, currentTerm: 'S', currentYear: 2025 })
+  ];
+}
+
+function expectedValidationFromPublicPieces(schedule, profile) {
+  const plannedFromSchedule = [];
+  for (const year of schedule) {
+    for (const quarter of Object.values(year.quarters)) {
+      plannedFromSchedule.push(...quarter);
+    }
+  }
+  const completed = profile && profile.completedCourses ? profile.completedCourses : [];
+  const allCourses = [...plannedFromSchedule, ...completed];
+  const majorId = (profile && profile.major) || 'CS_BA';
+  const majorReqs = (typeof MAJOR_REQUIREMENTS !== 'undefined' && MAJOR_REQUIREMENTS[majorId])
+    || CS_BA_REQUIREMENTS;
+  const majorResults = Validator.validateMajor(allCourses, majorReqs);
+  const geResults = Validator.validateGE(allCourses);
+  const ucResults = Validator.validateUC(allCourses, profile);
+  const plannedUnits = plannedFromSchedule.reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+  const completedUnits = completed.reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+  const totalUnits = plannedUnits + completedUnits + (profile ? (profile.priorCredits || 0) : 0);
+  const upperDivUnits = [...plannedFromSchedule, ...completed]
+    .reduce((sum, code) => sum + ((COURSES[code] && COURSES[code].division === 'upper') ? COURSES[code].units : 0), 0);
+  const expected = {
+    major: majorResults,
+    ge: geResults,
+    uc: ucResults,
+    requirementSet: buildNormalizedRequirementSet(profile),
+    totalUnits,
+    upperDivUnits,
+    priorCredits: profile ? (profile.priorCredits || 0) : 0,
+    completedUnits,
+    totalUnitsMet: totalUnits >= majorReqs.totalUnitsRequired,
+    upperDivMet: upperDivUnits >= majorReqs.minUpperDivUnits,
+    allMajorMet: majorResults.every(r => r.fulfilled),
+    allGEMet: geResults.every(r => r.fulfilled),
+    allUCMet: ucResults.every(r => r.fulfilled),
+    majorReqs
+  };
+  expected.allMet = expected.allMajorMet && expected.allGEMet && expected.allUCMet
+    && expected.totalUnitsMet && expected.upperDivMet;
+  return expected;
+}
+
+function testValidatorScheduleWrapperMirrorsValidationPiecesForRepresentativeProfiles() {
+  assert.strictEqual(typeof Validator.validateSchedule, 'function', 'Validator.validateSchedule must exist');
+  for (const profile of validatorMirrorProfiles()) {
+    const schedule = Scheduler.generate(profile);
+    assert.deepStrictEqual(
+      Validator.validateSchedule(schedule, profile),
+      expectedValidationFromPublicPieces(schedule, profile),
+      `validateSchedule should preserve validation behavior for ${profile.major}`
+    );
+  }
+}
+
+function testValidatorValidateAllUsesScheduleWrapper() {
+  const originalValidateSchedule = Validator.validateSchedule;
+  let calls = 0;
+  Validator.validateSchedule = function wrappedValidateSchedule(schedule, profile) {
+    calls += 1;
+    return originalValidateSchedule.call(this, schedule, profile);
+  };
+  try {
+    const profile = defaultMajorProfile('CS_BS');
+    const schedule = Scheduler.generate(profile);
+    const validation = Validator.validateAll(schedule, profile);
+    assert.strictEqual(validation.allMet, true, 'wrapped validation should still validate a generated schedule');
+    assert.strictEqual(calls, 1, 'Validator.validateAll should delegate validation exactly once');
+  } finally {
+    Validator.validateSchedule = originalValidateSchedule;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -831,7 +913,9 @@ const tests = [
   testSchedulerFillerPoolWrapperMirrorsLegacySelection,
   testSchedulerGenerateUsesNormalizedFillerPoolWrapper,
   testSchedulerPlacementWrapperMirrorsLegacyPlacement,
-  testSchedulerGenerateUsesPlacementWrapper
+  testSchedulerGenerateUsesPlacementWrapper,
+  testValidatorScheduleWrapperMirrorsValidationPiecesForRepresentativeProfiles,
+  testValidatorValidateAllUsesScheduleWrapper
 ];
 let passed = 0;
 for (const test of tests) {

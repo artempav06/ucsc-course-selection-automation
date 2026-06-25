@@ -145,7 +145,7 @@ const Validator = {
     });
   },
 
-  validateAll(schedule, profile) {
+  validateSchedule(schedule, profile) {
     const plannedFromSchedule = [];
     for (const year of schedule)
       for (const quarter of Object.values(year.quarters))
@@ -188,6 +188,10 @@ const Validator = {
     result.allMet = result.allMajorMet && result.allGEMet && result.allUCMet
                     && result.totalUnitsMet && result.upperDivMet;
     return result;
+  },
+
+  validateAll(schedule, profile) {
+    return this.validateSchedule(schedule, profile);
   }
 };
 
