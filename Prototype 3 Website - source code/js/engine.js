@@ -1057,13 +1057,19 @@ const Scheduler = {
 
     // Final unit padding: real required courses may evict FREE placeholders during
     // backfill/overflow. After all real courses are placed, add FREE electives only
-    // as needed to reach the 180-unit degree floor.
-    let totalUnits = schedule.reduce((sum, year) => sum + Object.values(year.quarters)
-      .flat().reduce((s, c) => s + (COURSES[c]?.units || 0), 0), 0);
-    const usedFree = new Set(schedule.flatMap(year => Object.values(year.quarters).flat()).filter(freeCode));
+    // as needed to reach the degree-unit floor, counting completed units and prior
+    // credits the same way validation does.
+    const scheduledCourses = schedule.flatMap(year => Object.values(year.quarters).flat()).filter(c => c !== "_GAP");
+    const scheduledSet = new Set(scheduledCourses);
+    let totalUnits = scheduledCourses.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+    [...completedCourses].forEach(c => { if (COURSES[c] && !scheduledSet.has(c)) totalUnits += COURSES[c].units; });
+    totalUnits += (profile.priorCredits || 0);
+    const majorReqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+    const targetUnits = majorReqs.totalUnitsRequired || 180;
+    const usedFree = new Set([...scheduledCourses, ...completedCourses].filter(freeCode));
     const freePool = Object.keys(COURSES).filter(freeCode).filter(c => !usedFree.has(c));
     for (const free of freePool) {
-      if (totalUnits >= 180) break;
+      if (totalUnits >= targetUnits) break;
       let placedFree = false;
       for (const slot of allQuarters) {
         const arr = schedule[slot.yi].quarters[slot.q];

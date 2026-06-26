@@ -62,6 +62,6 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Phase 10 warning-bucket triage is complete in `docs/plans/warning-bucket-triage-phase10.md`. Start Phase 11 by adding focused regression tests for final FREE padding with prior credits; do this before any behavior change.
+1. Phase 11/12 final FREE-padding accounting is complete: prior credits and completed-course units are counted before adding placement-phase FREE electives. Re-run warning-bucket triage from the new `test_combo_matrix.js` baseline (`1823` warnings: schedule length `1546`, high total units `1080`, major-course density `178`) before placement/density work.
 2. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
 3. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.

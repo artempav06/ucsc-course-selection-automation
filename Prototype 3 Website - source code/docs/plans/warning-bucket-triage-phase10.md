@@ -2,9 +2,22 @@
 
 **Goal:** Use Prototype 3's new `Scheduler.generateWithExplanation(...)` seam to classify the current combo-matrix warning buckets before changing scheduler behavior.
 
-**Status:** Investigation only. No scheduler behavior changes in this phase.
+**Status:** Investigation complete. Follow-up Phase 11/12 behavior fix committed after this report: final placement-phase FREE padding now counts prior credits and completed-course units before adding extra FREE courses.
 
-**Baseline command:**
+**Post-fix combo-matrix baseline:**
+
+```text
+Prototype 3 combo matrix checked 3531 student-choice scenarios
+Hard failures: 0
+Warnings: 1823
+
+Warning buckets:
+- schedule length exceeds selected window: 1546
+- high total units: 1080
+- major-course density exceeds target: 178
+```
+
+**Original baseline command:**
 
 ```bash
 node test_combo_matrix.js

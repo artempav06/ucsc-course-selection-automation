@@ -281,6 +281,41 @@ test('official BMEB capstone options are alternatives and occur after BME 185 te
   }
 });
 
+test('final FREE padding counts prior credits before extending AM_BS winter-start plans', () => {
+  const profile = makeProfile({
+    major: 'AM_BS',
+    concentration: null,
+    currentLevel: 1,
+    currentTerm: 'W',
+    currentYear: 2027,
+    targetGradTerm: 'S',
+    targetGradYear: 2030,
+    priorCredits: 15,
+    geConcentration: null
+  });
+  const schedule = Scheduler.generate(profile);
+  const validation = Validator.validateAll(schedule, profile);
+  const requiredUnits = MAJOR_REQUIREMENTS.AM_BS.totalUnitsRequired || 180;
+  assert(validation.totalUnits === requiredUnits, `expected exactly ${requiredUnits} total units including prior credits, got ${validation.totalUnits}`);
+  assert(schedule.length <= 4, `prior credits should avoid final FREE-only overflow year, got ${schedule.length} years`);
+});
+
+test('final FREE padding does not reschedule completed FREE electives', () => {
+  const profile = makeProfile({
+    major: 'AM_BS',
+    concentration: null,
+    currentLevel: 1,
+    currentTerm: 'W',
+    currentYear: 2027,
+    targetGradTerm: 'S',
+    targetGradYear: 2030,
+    completedCourses: ['FREE 1'],
+    geConcentration: null
+  });
+  const courses = plannedCourses(Scheduler.generate(profile));
+  assert(!courses.includes('FREE 1'), `completed FREE 1 should not be scheduled again; scheduled FREE courses: ${courses.filter(c => c.startsWith('FREE')).join(', ')}`);
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try {
