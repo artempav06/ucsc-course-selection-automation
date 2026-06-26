@@ -518,6 +518,66 @@ const Scheduler = {
     return score;
   },
 
+  planningQuarterWindow(profile) {
+    if (!profile) return null;
+    const includeSummer = !!profile.includeSummer;
+    const currentTerm = profile.currentTerm || "F";
+    const currentYear = parseInt(profile.currentYear, 10) || new Date().getFullYear();
+    const targetTerm = profile.targetGradTerm || "S";
+    const targetYear = parseInt(profile.targetGradYear, 10) || (currentYear + 4);
+    const nextQuarter = (term, year) => {
+      if (term === "F") return { term: "W", year: year + 1 };
+      if (term === "W") return { term: "S", year };
+      if (term === "S" && includeSummer) return { term: "SU", year };
+      if (term === "S") return { term: "F", year };
+      if (term === "SU") return { term: "F", year };
+      return { term: "F", year };
+    };
+    const gapKeys = new Set();
+    if (profile.gapEnabled && profile.gapTerm && profile.gapYear) {
+      const gapBaseYear = parseInt(profile.gapYear, 10);
+      if (!Number.isNaN(gapBaseYear)) {
+        const addGapQuarter = (term, year) => gapKeys.add(`${year}-${term}`);
+        if (profile.gapType === "year") {
+          let gapCur = { term: profile.gapTerm, year: gapBaseYear };
+          const gapCount = includeSummer ? 4 : 3;
+          for (let i = 0; i < gapCount; i++) {
+            addGapQuarter(gapCur.term, gapCur.year);
+            gapCur = nextQuarter(gapCur.term, gapCur.year);
+          }
+        } else {
+          addGapQuarter(profile.gapTerm, gapBaseYear);
+        }
+      }
+    }
+
+    const quarters = [];
+    let cur = { term: currentTerm, year: currentYear };
+    let reachedTarget = false;
+    for (let guard = 0; guard < 40; guard++) {
+      const key = `${cur.year}-${cur.term}`;
+      if ((cur.term !== "SU" || includeSummer) && !gapKeys.has(key)) quarters.push(cur.term);
+      if (cur.term === targetTerm && cur.year === targetYear) {
+        reachedTarget = true;
+        break;
+      }
+      const next = nextQuarter(cur.term, cur.year);
+      if (next.term === cur.term && next.year === cur.year) break;
+      cur = next;
+    }
+    return reachedTarget && quarters.length > 0 ? quarters : null;
+  },
+
+  availabilityScore(code, profile) {
+    const window = this.planningQuarterWindow(profile);
+    const offered = COURSES[code]?.quarters;
+    if (!window) return 0;
+    if (!offered || offered.length === 0) return -20000;
+    const firstIndex = window.findIndex(q => offered.includes(q));
+    if (firstIndex === -1) return -10000;
+    return 1000 - (firstIndex * 2);
+  },
+
   missingPrereqCost(code, knownSet, virtuallyPresent, visiting = new Set()) {
     const course = COURSES[code];
     if (!course || !course.prereqs || visiting.has(code)) return 0;
@@ -546,6 +606,7 @@ const Scheduler = {
           const concs = COURSES[code]?.concentrations || [];
           if (concs.includes(concentration)) score += 100;
         }
+        score += this.availabilityScore(code, profile);
         const missingPrereqUnits = this.missingPrereqCost(code, known, vp);
         score -= missingPrereqUnits * 8;
         const prereqGroups = COURSES[code]?.prereqs || [];
@@ -604,6 +665,7 @@ const Scheduler = {
         .map(code => {
           let score = 0;
           if (geConcCourses && geConcCourses.has(code)) score += 100;
+          score += this.availabilityScore(code, profile);
           // Multi-coverage bonus: +200 per UC requirement this course also satisfies
           for (const [ucId, ucReq] of neededUC) {
             if (ucReq.courses.includes(code)) score += 200;
@@ -743,6 +805,7 @@ const Scheduler = {
       let score = 0;
       if (concentration && (c.concentrations || []).includes(concentration)) score += 50;
       if (geConcSet && geConcSet.has(code)) score += 30;
+      score += this.availabilityScore(code, profile);
       if (c.ge) score += 20;
       score += (c.rmpScore || 0);
       if (c.division === "lower") score += 5;

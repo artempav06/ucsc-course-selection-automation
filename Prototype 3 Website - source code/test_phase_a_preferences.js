@@ -153,6 +153,119 @@ function testAddableSuggestionsUseMajorAndGEInterestWhenProfileProvided() {
   );
 }
 
+function testPhaseBGESelectionPrefersCoursesOfferedInRemainingWindow() {
+  const profile = makeProfile({
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026,
+    geConcentration: 'ge_tech_society'
+  });
+  const gePicks = selectedGE(profile);
+  assert(
+    gePicks.includes('CSE 3') || gePicks.includes('CSE 80A') || gePicks.includes('GCH 41') || gePicks.includes('ECE 80E'),
+    `spring-only tech/society GE choice should prefer a spring-offered PE option over fall/winter-only CSE 80N; picked ${gePicks.join(', ')}`
+  );
+  assert(
+    !gePicks.includes('CSE 80N'),
+    `spring-only GE selection should avoid fall/winter-only CSE 80N when spring tech/society PE alternatives exist; picked ${gePicks.join(', ')}`
+  );
+}
+
+function testPhaseBElectiveRankingPrefersRemainingQuarterAvailability() {
+  const profile = makeProfile({
+    major: 'CS_BS',
+    concentration: 'cs_web_software',
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026
+  });
+  const ranked = Scheduler.rankByConcentration(['CSE 187', 'CSE 186'], 'cs_web_software', profile, new Set(), new Set());
+  assert.strictEqual(
+    ranked[0],
+    'CSE 186',
+    `spring-only elective ranking should prefer spring-offered CSE 186 over fall-only CSE 187; got ${ranked.join(', ')}`
+  );
+}
+
+function testPhaseBFillerPoolPrefersRemainingQuarterAvailability() {
+  const profile = makeProfile({
+    major: 'CS_BS',
+    concentration: 'cs_web_software',
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026,
+    geConcentration: null
+  });
+  const fillerPool = Scheduler.buildFillerPool(profile, new Set(), new Set());
+  const springIndex = fillerPool.indexOf('CSE 186');
+  const fallIndex = fillerPool.indexOf('CSE 187');
+  assert(springIndex >= 0, `spring-offered CSE 186 should remain in filler pool; got ${fillerPool.slice(0, 12).join(', ')}`);
+  assert(
+    fallIndex === -1 || springIndex < fallIndex,
+    `spring-only filler pool should rank spring-offered CSE 186 before fall-only CSE 187 when both are candidates; top candidates: ${fillerPool.slice(0, 12).join(', ')}`
+  );
+}
+
+function withTemporaryCourses(tempCourses, fn) {
+  for (const [code, course] of Object.entries(tempCourses)) COURSES[code] = course;
+  try {
+    return fn();
+  } finally {
+    for (const code of Object.keys(tempCourses)) delete COURSES[code];
+  }
+}
+
+function testPhaseBAvailabilityScoringExcludesGapQuarters() {
+  withTemporaryCourses({
+    'TEST GAP SPRING': {
+      title: 'Test Spring Gap Course', units: 5, quarters: ['S'], division: 'upper', ge: null,
+      concentrations: ['cs_web_software'], prereqs: [], rmpScore: 9
+    },
+    'TEST WINTER OPEN': {
+      title: 'Test Winter Open Course', units: 5, quarters: ['W'], division: 'upper', ge: null,
+      concentrations: ['cs_web_software'], prereqs: [], rmpScore: 0
+    }
+  }, () => {
+    const profile = makeProfile({
+      concentration: 'cs_web_software',
+      currentTerm: 'W',
+      currentYear: 2027,
+      targetGradTerm: 'S',
+      targetGradYear: 2027,
+      gapEnabled: true,
+      gapType: 'quarter',
+      gapTerm: 'S',
+      gapYear: 2027
+    });
+    const ranked = Scheduler.rankByConcentration(['TEST GAP SPRING', 'TEST WINTER OPEN'], 'cs_web_software', profile, new Set(), new Set());
+    assert.strictEqual(
+      ranked[0],
+      'TEST WINTER OPEN',
+      `availability scoring should ignore Spring 2027 because it is a gap quarter; got ${ranked.join(', ')}`
+    );
+  });
+}
+
+function testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses() {
+  const profile = makeProfile({
+    major: 'TIM_BS',
+    concentration: 'tim_entrepreneurship',
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026
+  });
+  const ranked = Scheduler.rankByConcentration(['TIM 171', 'ECON 135'], 'tim_entrepreneurship', profile, new Set(), new Set());
+  assert.strictEqual(
+    ranked[0],
+    'ECON 135',
+    `courses with empty quarter metadata should not outrank known out-of-window courses; got ${ranked.join(', ')}`
+  );
+}
+
 const tests = [
   testGEConcentrationChangesSelectionTowardStudentInterest,
   testMajorConcentrationCourseTagsAreComplete,
@@ -160,7 +273,12 @@ const tests = [
   testAvoidedCoursesAreRemovedFromPreferenceDrivenChoicesWhenAlternativesExist,
   testPreferredCourseIsPromotedWhenItCanSatisfyElectivePreference,
   testReplacementSuggestionsPreserveGERequirementAndGEInterest,
-  testAddableSuggestionsUseMajorAndGEInterestWhenProfileProvided
+  testAddableSuggestionsUseMajorAndGEInterestWhenProfileProvided,
+  testPhaseBGESelectionPrefersCoursesOfferedInRemainingWindow,
+  testPhaseBElectiveRankingPrefersRemainingQuarterAvailability,
+  testPhaseBFillerPoolPrefersRemainingQuarterAvailability,
+  testPhaseBAvailabilityScoringExcludesGapQuarters,
+  testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses
 ];
 
 let failed = 0;
