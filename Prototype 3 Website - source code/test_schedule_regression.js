@@ -96,16 +96,39 @@ const tim = runCase('TIM_BS', 'tim_entrepreneurship');
 const timSystems = runCase('TIM_BS', 'tim_systems_eng');
 const timFinance = runCase('TIM_BS', 'tim_finance_econ');
 const reAutonomous = runCase('RE_BS', 're_autonomous');
+const reAutonomousFullYearGap = runCase('RE_BS', 're_autonomous', {
+  profile: {
+    currentLevel: 2,
+    currentTerm: 'S',
+    currentYear: 2027,
+    targetGradTerm: 'S',
+    targetGradYear: 2030,
+    completedCourses: ['MATH 19A', 'MATH 19B', 'CSE 16', 'ECE 9'],
+    priorCredits: 45,
+    maxUnits: 15,
+    gapEnabled: true,
+    gapType: 'year',
+    gapTerm: 'F',
+    gapYear: 2028
+  },
+  maxYears: 8,
+  requireNoPrereqViolations: false
+});
 const eeSignals = runCase('EE_BS', 'ee_signals_comm', { requireAllMajor: false });
 const timAvoided = runCase('TIM_BS', 'tim_entrepreneurship', {
   profile: { avoidedCourses: ['TIM 171', 'TIM 174'] }
 });
 const timAvoidedCourses = plannedCourses(timAvoided.schedule);
+const capstoneViolations = prereqViolations(reAutonomousFullYearGap.schedule)
+  .filter(v => v.includes('ECE 129B') || v.includes('ECE 129C'));
+if (capstoneViolations.length) {
+  reAutonomousFullYearGap.errors.push(`expected ECE 129A/B/C capstone sequence to be chronological after full-year gap, got: ${capstoneViolations.join('; ')}`);
+}
 if (timAvoidedCourses.includes('TIM 171') || timAvoidedCourses.includes('TIM 174')) {
   timAvoided.errors.push('expected avoidedCourses TIM 171/TIM 174 not to be selected when alternatives exist');
 }
 let failed = 0;
-for (const result of [am, tim, timSystems, timFinance, reAutonomous, eeSignals, timAvoided]) {
+for (const result of [am, tim, timSystems, timFinance, reAutonomous, reAutonomousFullYearGap, eeSignals, timAvoided]) {
   if (result.errors.length) {
     failed++;
     console.error(`FAIL ${result.major}/${result.concentration}: ${result.errors.join(' | ')}`);

@@ -166,8 +166,8 @@ function buildProfiles() {
   ];
   const gapOptions = [
     { label: 'no-gap' },
-    { gapType: 'quarter', gapTerm: 'W', gapYear: 2028, label: 'winter-gap' },
-    { gapType: 'year', gapTerm: 'F', gapYear: 2028, label: 'full-year-gap' }
+    { gapEnabled: true, gapType: 'quarter', gapTerm: 'W', gapYear: 2028, label: 'winter-gap' },
+    { gapEnabled: true, gapType: 'year', gapTerm: 'F', gapYear: 2028, label: 'full-year-gap' }
   ];
 
   const profiles = [];
@@ -230,6 +230,9 @@ function validateProfile(profile) {
   const avoided = courses.filter(c => (profile.avoidedCourses || []).includes(c));
   if (avoided.length) issues.push(`avoided courses selected: ${avoided.join(', ')}`);
 
+  if (profile.gapType && !profile.gapEnabled) {
+    issues.push(`gap scenario ${profile.gapType} is missing gapEnabled=true`);
+  }
   const expectedYears = yearsExpected(profile);
   if (schedule.length > expectedYears) warnings.push(`schedule length ${schedule.length}>window ${expectedYears}`);
   if (maxMajorQuarter(schedule) > 3) warnings.push(`max major quarter ${maxMajorQuarter(schedule)}>3`);

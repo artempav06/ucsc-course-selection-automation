@@ -62,6 +62,7 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 ## Next recommended work
 
-1. Phase 11/12 final FREE-padding accounting is complete: prior credits and completed-course units are counted before adding placement-phase FREE electives. Re-run warning-bucket triage from the new `test_combo_matrix.js` baseline (`1823` warnings: schedule length `1546`, high total units `1080`, major-course density `178`) before placement/density work.
-2. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
-3. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.
+1. Phase 13 real-gap matrix activation is complete: `winter-gap` / `full-year-gap` matrix profiles now set `gapEnabled: true`, and overflow chronology repair keeps RE_BS ECE 129A/B/C capstone sequences ordered after real full-year gaps. Use the new real-gap `test_combo_matrix.js` baseline (`2296` warnings: schedule length `2098`, high total units `1080`, major-course density `291`) before further placement/density work.
+2. Re-triage the remaining warning buckets by separating no-gap, one-quarter-gap, and full-year-gap profiles; remaining high-unit summer-start cases are the next likely behavior target.
+3. Start data-warning triage with `unknownGeReference: 2`, then classify broader prerequisite/catalog URL warnings.
+4. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages.

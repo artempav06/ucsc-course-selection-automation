@@ -1026,6 +1026,7 @@ const Scheduler = {
         if (nextAcad > gradAcad + 4) return false;
         const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
         schedule.push(newYear);
+        allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
         overflowY = newYear;
         lastQ = "F";
         return true;
@@ -1054,6 +1055,78 @@ const Scheduler = {
         }
       }
     }
+
+    // Final chronology repair: overflow/backfill can occasionally place a prerequisite
+    // chain out of chronological order (for example ECE 129C before ECE 129B after
+    // gap-year overflow). Ordinary prerequisites must be completed before the quarter
+    // starts; only explicit labCoreq relationships may share a quarter. Move offenders
+    // later before adding any final FREE padding.
+    const hasChronologyPrereqProblem = (code, quarterArr, completedBefore) => {
+      const course = COURSES[code];
+      if (!course || !course.prereqs || freeCode(code)) return false;
+      if (Validator.prereqsMet(course.prereqs, completedBefore)) return false;
+      const sameQuarter = new Set(quarterArr.filter(c => c !== code));
+      const labCoreq = course.labCoreq;
+      if (labCoreq && sameQuarter.has(labCoreq)) return false;
+      return true;
+    };
+
+    const repairChronologyPrereqs = () => {
+      for (let pass = 0; pass < 12; pass++) {
+        let moved = false;
+        for (let si = 0; si < allQuarters.length; si++) {
+          const slot = allQuarters[si];
+          const arr = schedule[slot.yi].quarters[slot.q];
+          if (!arr || arr[0] === "_GAP") continue;
+          const completedAtSource = completedBeforeSlot(si);
+          for (let ci = 0; ci < arr.length; ci++) {
+            const code = arr[ci];
+            if (!hasChronologyPrereqProblem(code, arr, completedAtSource)) continue;
+            arr.splice(ci, 1);
+            placed.delete(code);
+            for (let ti = si + 1; ti < allQuarters.length; ti++) {
+              const targetSlot = allQuarters[ti];
+              const targetArr = schedule[targetSlot.yi].quarters[targetSlot.q];
+              if (!targetArr || targetArr[0] === "_GAP") continue;
+              const completedAtTarget = completedBeforeSlot(ti);
+              const qUnits = targetArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+              if (!canPlace(code, targetSlot.q, completedAtTarget, qUnits, schedule[targetSlot.yi].levelNum)) continue;
+              targetArr.push(code);
+              placed.add(code);
+              moved = true;
+              break;
+            }
+            if (!placed.has(code)) {
+              const last = schedule[schedule.length - 1];
+              const nextAcad = last.academicStart + 1;
+              if (nextAcad <= gradAcad + 4) {
+                const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
+                schedule.push(newYear);
+                allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
+                for (const q of ["F", "W", "S"]) {
+                  const targetArr = newYear.quarters[q];
+                  const completedAtTarget = completedBeforeSlot(allQuarters.length - (q === "F" ? 3 : q === "W" ? 2 : 1));
+                  const qUnits = targetArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+                  if (!canPlace(code, q, completedAtTarget, qUnits, newYear.levelNum)) continue;
+                  targetArr.push(code);
+                  placed.add(code);
+                  moved = true;
+                  break;
+                }
+              }
+            }
+            if (!placed.has(code)) {
+              arr.splice(ci, 0, code);
+              placed.add(code);
+            }
+            break;
+          }
+          if (moved) break;
+        }
+        if (!moved) break;
+      }
+    };
+    repairChronologyPrereqs();
 
     // Final unit padding: real required courses may evict FREE placeholders during
     // backfill/overflow. After all real courses are placed, add FREE electives only
