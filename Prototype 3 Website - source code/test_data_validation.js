@@ -1,5 +1,6 @@
 const assert = require('assert');
-const { validateData, summarizeWarnings } = require('./tools/data-validator');
+const path = require('path');
+const { loadRuntimeData, validateData, summarizeWarnings } = require('./tools/data-validator');
 
 function validFixture() {
   return {
@@ -164,6 +165,18 @@ function testWarningSummaryBucketsWarningsByActionableType() {
   assert.strictEqual(summary.buckets.noCurrentOfferings.count, 1);
 }
 
+function testRuntimeDataHasNoUnknownGeReferences() {
+  const data = loadRuntimeData(path.resolve(__dirname));
+  const result = validateData(data, { strictPrereqReferences: false, strictGeReferences: false });
+  const summary = summarizeWarnings(result.warnings);
+  const unknownGe = summary.buckets.unknownGeReference;
+  assert.strictEqual(
+    unknownGe ? unknownGe.count : 0,
+    0,
+    `runtime GE requirements should not reference missing courses; examples: ${unknownGe ? unknownGe.examples.join('; ') : 'none'}`
+  );
+}
+
 const tests = [
   testValidFixturePasses,
   testUnknownPrereqFails,
@@ -175,7 +188,8 @@ const tests = [
   testMalformedRepeatCourseFails,
   testMajorSpecificPrereqMetadataFailsForUnknownCourse,
   testEquivalenciesAndCreditExclusionsFailForUnknownCourse,
-  testWarningSummaryBucketsWarningsByActionableType
+  testWarningSummaryBucketsWarningsByActionableType,
+  testRuntimeDataHasNoUnknownGeReferences
 ];
 
 let passed = 0;
