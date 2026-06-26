@@ -1,6 +1,6 @@
 const assert = require('assert');
 const path = require('path');
-const { loadRuntimeData, validateData, summarizeWarnings } = require('./tools/data-validator');
+const { loadRuntimeData, validateData, summarizeWarnings, summarizeWarningImpact } = require('./tools/data-validator');
 
 function validFixture() {
   return {
@@ -177,6 +177,26 @@ function testRuntimeDataHasNoUnknownGeReferences() {
   );
 }
 
+function testWarningImpactClassifiesDirectSupportedMajorReferences() {
+  const fixture = validFixture();
+  for (const [code, course] of Object.entries(fixture.courses)) {
+    course.catalogUrl = `https://catalog.ucsc.edu/${code.toLowerCase().replace(/ /g, '-')}`;
+  }
+  fixture.courses['CSE 2'].prereqs = [['MISSING PREREQ']];
+  fixture.courses['CSE 1'].catalogUrl = '';
+  fixture.courses['BME 195'].catalogUrl = '';
+  const result = validateData(fixture, { strictPrereqReferences: false });
+  const impact = summarizeWarningImpact(result.warnings, fixture);
+
+  assert.strictEqual(impact.buckets.unknownPrerequisiteReference.total, 1);
+  assert.strictEqual(impact.buckets.unknownPrerequisiteReference.directSupportedMajor.count, 1);
+  assert.strictEqual(impact.buckets.unknownPrerequisiteReference.outsideSupportedMajor.count, 0);
+  assert.deepStrictEqual(impact.buckets.unknownPrerequisiteReference.directSupportedMajor.examples[0].majors, ['TEST_BS']);
+  assert.strictEqual(impact.buckets.missingCatalogUrl.total, 2);
+  assert.strictEqual(impact.buckets.missingCatalogUrl.directSupportedMajor.count, 1);
+  assert.strictEqual(impact.buckets.missingCatalogUrl.outsideSupportedMajor.count, 1);
+}
+
 const tests = [
   testValidFixturePasses,
   testUnknownPrereqFails,
@@ -189,7 +209,8 @@ const tests = [
   testMajorSpecificPrereqMetadataFailsForUnknownCourse,
   testEquivalenciesAndCreditExclusionsFailForUnknownCourse,
   testWarningSummaryBucketsWarningsByActionableType,
-  testRuntimeDataHasNoUnknownGeReferences
+  testRuntimeDataHasNoUnknownGeReferences,
+  testWarningImpactClassifiesDirectSupportedMajorReferences
 ];
 
 let passed = 0;

@@ -30,6 +30,7 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `scripts/inspect_schedule.js` — CLI diagnostic report powered by `Scheduler.generateWithExplanation(...)`, useful for explaining phase choices before warning-bucket fixes.
 - `scripts/phase10_warning_triage.js` — read-only combo-matrix warning-bucket diagnostic helper used by the Phase 10 triage report.
 - `docs/plans/warning-bucket-triage-phase10.md` — current root-cause map for schedule-length, high-unit, and major-density warnings.
+- `docs/plans/data-warning-triage-phase6.md` — impact split for remaining `unknownPrerequisiteReference` and `missingCatalogUrl` data-validation warning buckets.
 
 ## Run validation and tests
 
@@ -64,5 +65,5 @@ The reusable `validateData()` API defaults to stricter reference checking for un
 
 1. Phase 13 real-gap matrix activation is complete: `winter-gap` / `full-year-gap` matrix profiles now set `gapEnabled: true`, and overflow chronology repair keeps RE_BS ECE 129A/B/C capstone sequences ordered after real full-year gaps. Use the new real-gap `test_combo_matrix.js` baseline (`2296` warnings: schedule length `2098`, high total units `1080`, major-course density `291`) before further placement/density work.
 2. Re-triage the remaining warning buckets by separating no-gap, one-quarter-gap, and full-year-gap profiles; remaining high-unit summer-start cases are the next likely behavior target.
-3. Data-warning triage has cleared the `unknownGeReference` bucket by removing stale `CSE 115` DC references; remaining validation warnings are `unknownPrerequisiteReference: 213` and `missingCatalogUrl: 160`.
-4. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages, then classify the remaining prerequisite/catalog URL warnings by supported-major impact.
+3. Data-warning triage has cleared the `unknownGeReference` bucket by removing stale `CSE 115` DC references. The remaining validation warnings are now impact-split by `docs/plans/data-warning-triage-phase6.md`: `unknownPrerequisiteReference` has `39` direct-supported-major and `174` outside-supported-major warnings; `missingCatalogUrl` has `92` direct-supported-major and `68` outside-supported-major warnings.
+4. Continue major-by-major official catalog audits against UCSC General Catalog requirement and planner pages. The next safest data-warning cleanup is a small official-catalog-backed missing-catalog-url cluster before changing prerequisite semantics.

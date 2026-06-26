@@ -299,6 +299,62 @@ function summarizeWarnings(warnings) {
   return { total: (warnings || []).length, buckets };
 }
 
+function buildDirectMajorReferenceMap(majors) {
+  const refs = new Map();
+  for (const [majorId, major] of Object.entries(majors || {})) {
+    for (const category of major.categories || []) {
+      for (const course of collectCategoryCourseRefs(category)) {
+        if (!refs.has(course)) refs.set(course, new Set());
+        refs.get(course).add(majorId);
+      }
+    }
+  }
+  return refs;
+}
+
+function warningCourseCode(warning) {
+  const courseMatch = warning.match(/^COURSES\[(.+?)\]/);
+  if (courseMatch) return courseMatch[1];
+  return null;
+}
+
+function emptyImpactGroup() {
+  return { count: 0, examples: [] };
+}
+
+function addImpactExample(group, warning, majors) {
+  group.count += 1;
+  if (group.examples.length < 10) group.examples.push({ warning, majors });
+}
+
+function summarizeWarningImpact(warnings, data) {
+  const majors = data.majors || data.MAJOR_REQUIREMENTS || {};
+  const directMajorRefs = buildDirectMajorReferenceMap(majors);
+  const buckets = {};
+
+  for (const warning of warnings || []) {
+    const bucket = classifyWarning(warning);
+    if (!buckets[bucket]) {
+      buckets[bucket] = {
+        total: 0,
+        directSupportedMajor: emptyImpactGroup(),
+        outsideSupportedMajor: emptyImpactGroup()
+      };
+    }
+
+    buckets[bucket].total += 1;
+    const code = warningCourseCode(warning);
+    const majorsForCourse = code && directMajorRefs.has(code) ? [...directMajorRefs.get(code)].sort() : [];
+    if (majorsForCourse.length) {
+      addImpactExample(buckets[bucket].directSupportedMajor, warning, majorsForCourse);
+    } else {
+      addImpactExample(buckets[bucket].outsideSupportedMajor, warning, []);
+    }
+  }
+
+  return { total: (warnings || []).length, buckets };
+}
+
 function loadRuntimeData(rootDir = process.cwd()) {
   const context = { console };
   vm.createContext(context);
@@ -325,5 +381,6 @@ module.exports = {
   loadRuntimeData,
   collectCategoryCourseRefs,
   summarizeWarnings,
+  summarizeWarningImpact,
   classifyWarning
 };

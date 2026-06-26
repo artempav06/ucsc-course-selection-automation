@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const path = require('path');
-const { loadRuntimeData, validateData, summarizeWarnings } = require('./data-validator');
+const { loadRuntimeData, validateData, summarizeWarnings, summarizeWarningImpact } = require('./data-validator');
 
 const rootDir = path.resolve(__dirname, '..');
 const data = loadRuntimeData(rootDir);
@@ -17,6 +17,10 @@ if (result.warnings.length) {
   const summary = summarizeWarnings(result.warnings);
   for (const [bucket, info] of Object.entries(summary.buckets).sort((a, b) => b[1].count - a[1].count)) {
     console.log(`WARN_BUCKET ${bucket}: ${info.count}`);
+  }
+  const impact = summarizeWarningImpact(result.warnings, data);
+  for (const [bucket, info] of Object.entries(impact.buckets).sort((a, b) => b[1].total - a[1].total)) {
+    console.log(`WARN_IMPACT ${bucket}: directSupportedMajor=${info.directSupportedMajor.count} outsideSupportedMajor=${info.outsideSupportedMajor.count}`);
   }
   const previewLimit = 25;
   result.warnings.slice(0, previewLimit).forEach(warning => console.log(`WARN ${warning}`));
