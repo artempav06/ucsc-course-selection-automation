@@ -987,7 +987,7 @@ function openSwapModal(code, quarterKey, yearIdx) {
 
   const renderSwapList = (query) => {
     const takenBefore    = getCoursesBeforeQuarter(yearIdx, quarterKey);
-    const replacements   = Scheduler.getReplacements(code, quarterKey, takenBefore, AppState.schedule, query);
+    const replacements   = Scheduler.getReplacements(code, quarterKey, takenBefore, AppState.schedule, query, AppState.profile);
     if (replacements.length === 0) {
       return `<p class="no-results">${query ? "No matching courses found." : "No valid replacement courses available for this quarter."}</p>`;
     }
@@ -1072,7 +1072,7 @@ function openAddCourseModal(yearIdx, quarterKey) {
   const renderAddList = (query) => {
     const takenBefore = getCoursesBeforeQuarter(yearIdx, quarterKey);
     const allPlanned  = getAllPlannedCourses();
-    const results     = Scheduler.searchAddable(quarterKey, takenBefore, allPlanned, query);
+    const results     = Scheduler.searchAddable(quarterKey, takenBefore, allPlanned, query, AppState.profile);
 
     if (results.length === 0) {
       return `<p class="no-results">${query ? "No matching courses found." : "No additional courses available for this quarter."}</p>`;

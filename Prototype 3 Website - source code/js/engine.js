@@ -1306,7 +1306,42 @@ const Scheduler = {
 
   // --- Replacement suggestions ---
 
-  getReplacements(courseCode, quarter, placedCodes, schedule, query) {
+  sameGEFamily(a, b) {
+    if (!a || !b) return false;
+    if (a === b) return true;
+    const familyOf = geCode => {
+      const req = GE_REQUIREMENTS.find(ge => ge.id === geCode || (ge.subcategories || []).includes(geCode));
+      return req ? req.id : geCode;
+    };
+    return familyOf(a) === familyOf(b);
+  },
+
+  manualSuggestionScore(code, profile, replacedCourse) {
+    const course = COURSES[code];
+    if (!course) return 0;
+    let score = 0;
+    if (profile) {
+      score += this.coursePreferenceScore(code, profile);
+      if (profile.concentration && (course.concentrations || []).includes(profile.concentration)) score += 450;
+      if (profile.geConcentration && typeof CONCENTRATIONS !== "undefined") {
+        const geConc = CONCENTRATIONS.ge.find(group => group.id === profile.geConcentration);
+        if (geConc && (geConc.courses || []).includes(code)) score += 180;
+        if (geConc && course.ge && (geConc.geCodes || []).some(geCode => this.sameGEFamily(geCode, course.ge))) score += 80;
+      }
+    } else {
+      score += course.rmpScore || 0;
+    }
+    if (replacedCourse && replacedCourse.ge) {
+      if (this.sameGEFamily(course.ge, replacedCourse.ge)) score += 500;
+      else if (course.ge) score += 25;
+    } else if (course.ge) {
+      score += 20;
+    }
+    if (course.division === "lower") score += 10;
+    return score;
+  },
+
+  getReplacements(courseCode, quarter, placedCodes, schedule, query, profile) {
     const course = COURSES[courseCode];
     if (!course) return [];
     const placedSet = new Set(Array.isArray(placedCodes) ? placedCodes : []);
@@ -1323,14 +1358,15 @@ const Scheduler = {
       candidates.push({
         code, title: c.title, units: c.units, desc: c.desc,
         ge: c.ge, rmpScore: c.rmpScore || 0, sections: c.section,
-        section: c.section, division: c.division
+        section: c.section, division: c.division,
+        preferenceScore: this.manualSuggestionScore(code, profile, course)
       });
     }
-    candidates.sort((a, b) => (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
+    candidates.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
     return candidates.slice(0, 30);
   },
 
-  searchAddable(quarter, placedCodes, allPlanned, query) {
+  searchAddable(quarter, placedCodes, allPlanned, query, profile) {
     const plannedSet = new Set(allPlanned);
     const completedSet = new Set(Array.isArray(placedCodes) ? placedCodes : []);
     const q = (query || "").toLowerCase().trim();
@@ -1344,10 +1380,11 @@ const Scheduler = {
       if (q && !code.toLowerCase().includes(q) && !(c.title || "").toLowerCase().includes(q)) continue;
       results.push({
         code, title: c.title, units: c.units, desc: c.desc,
-        ge: c.ge, rmpScore: c.rmpScore || 0, section: c.section, division: c.division
+        ge: c.ge, rmpScore: c.rmpScore || 0, section: c.section, division: c.division,
+        preferenceScore: this.manualSuggestionScore(code, profile, null)
       });
     }
-    results.sort((a, b) => (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
+    results.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
     return results.slice(0, 30);
   },
 
