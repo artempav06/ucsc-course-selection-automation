@@ -349,10 +349,21 @@ const Scheduler = {
     geCourses.forEach(c => {
       if (c && COURSES[c]) { selected.push(c); courseTypeMap.set(c, "ge"); }
     });
+    const geAvailabilityCodes = new Set(geCourses);
+    if (geConcentration && typeof CONCENTRATIONS !== "undefined") {
+      const geConcGroup = (CONCENTRATIONS.ge || []).find(group => group.id === geConcentration);
+      if (geConcGroup) (geConcGroup.courses || []).forEach(code => geAvailabilityCodes.add(code));
+    }
+    const geAvailabilityScores = {};
+    for (const code of geAvailabilityCodes) {
+      if (COURSES[code]) geAvailabilityScores[code] = this.availabilityScore(code, profile);
+    }
     explanation.phases.geSelection = {
       courses: geCourses.slice(),
       count: geCourses.length,
-      units: phaseUnits(geCourses)
+      units: phaseUnits(geCourses),
+      availabilityWindow: this.planningQuarterWindow(profile) || [],
+      availabilityScores: geAvailabilityScores
     };
 
     // --- Phase 3: UC courses ---
@@ -519,63 +530,11 @@ const Scheduler = {
   },
 
   planningQuarterWindow(profile) {
-    if (!profile) return null;
-    const includeSummer = !!profile.includeSummer;
-    const currentTerm = profile.currentTerm || "F";
-    const currentYear = parseInt(profile.currentYear, 10) || new Date().getFullYear();
-    const targetTerm = profile.targetGradTerm || "S";
-    const targetYear = parseInt(profile.targetGradYear, 10) || (currentYear + 4);
-    const nextQuarter = (term, year) => {
-      if (term === "F") return { term: "W", year: year + 1 };
-      if (term === "W") return { term: "S", year };
-      if (term === "S" && includeSummer) return { term: "SU", year };
-      if (term === "S") return { term: "F", year };
-      if (term === "SU") return { term: "F", year };
-      return { term: "F", year };
-    };
-    const gapKeys = new Set();
-    if (profile.gapEnabled && profile.gapTerm && profile.gapYear) {
-      const gapBaseYear = parseInt(profile.gapYear, 10);
-      if (!Number.isNaN(gapBaseYear)) {
-        const addGapQuarter = (term, year) => gapKeys.add(`${year}-${term}`);
-        if (profile.gapType === "year") {
-          let gapCur = { term: profile.gapTerm, year: gapBaseYear };
-          const gapCount = includeSummer ? 4 : 3;
-          for (let i = 0; i < gapCount; i++) {
-            addGapQuarter(gapCur.term, gapCur.year);
-            gapCur = nextQuarter(gapCur.term, gapCur.year);
-          }
-        } else {
-          addGapQuarter(profile.gapTerm, gapBaseYear);
-        }
-      }
-    }
-
-    const quarters = [];
-    let cur = { term: currentTerm, year: currentYear };
-    let reachedTarget = false;
-    for (let guard = 0; guard < 40; guard++) {
-      const key = `${cur.year}-${cur.term}`;
-      if ((cur.term !== "SU" || includeSummer) && !gapKeys.has(key)) quarters.push(cur.term);
-      if (cur.term === targetTerm && cur.year === targetYear) {
-        reachedTarget = true;
-        break;
-      }
-      const next = nextQuarter(cur.term, cur.year);
-      if (next.term === cur.term && next.year === cur.year) break;
-      cur = next;
-    }
-    return reachedTarget && quarters.length > 0 ? quarters : null;
+    return RequirementCollector.planningQuarterWindow(profile);
   },
 
   availabilityScore(code, profile) {
-    const window = this.planningQuarterWindow(profile);
-    const offered = COURSES[code]?.quarters;
-    if (!window) return 0;
-    if (!offered || offered.length === 0) return -20000;
-    const firstIndex = window.findIndex(q => offered.includes(q));
-    if (firstIndex === -1) return -10000;
-    return 1000 - (firstIndex * 2);
+    return RequirementCollector.availabilityScore(code, profile, COURSES);
   },
 
   missingPrereqCost(code, knownSet, virtuallyPresent, visiting = new Set()) {
@@ -1384,6 +1343,7 @@ const Scheduler = {
     if (!course) return 0;
     let score = 0;
     if (profile) {
+      score += this.availabilityScore(code, profile);
       score += this.coursePreferenceScore(code, profile);
       if (profile.concentration && (course.concentrations || []).includes(profile.concentration)) score += 450;
       if (profile.geConcentration && typeof CONCENTRATIONS !== "undefined") {

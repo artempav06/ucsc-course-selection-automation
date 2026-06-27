@@ -917,6 +917,25 @@ function testSchedulerGenerateUsesExplanationWrapper() {
   }
 }
 
+function testSchedulerAvailabilityScoreDelegatesToCollectorHelper() {
+  assert.strictEqual(typeof RequirementCollector.availabilityScore, 'function', 'RequirementCollector.availabilityScore must exist');
+  const originalAvailabilityScore = RequirementCollector.availabilityScore;
+  let calls = 0;
+  RequirementCollector.availabilityScore = function wrappedAvailabilityScore(code, profile, courses) {
+    calls += 1;
+    assert.strictEqual(code, 'CSE 186');
+    assert.strictEqual(courses, COURSES, 'Scheduler should pass the runtime course catalog into the collector helper');
+    return originalAvailabilityScore(code, profile, courses);
+  };
+  try {
+    const profile = makeProfile({ currentTerm: 'S', currentYear: 2026, targetGradTerm: 'S', targetGradYear: 2026 });
+    assert.strictEqual(Scheduler.availabilityScore('CSE 186', profile), 1000);
+    assert.strictEqual(calls, 1, 'Scheduler.availabilityScore should delegate to RequirementCollector.availabilityScore exactly once');
+  } finally {
+    RequirementCollector.availabilityScore = originalAvailabilityScore;
+  }
+}
+
 const tests = [
   testCollectorMirrorsLegacyMajorCategoryOrder,
   testSchedulerExposesCollectedRequirements,
@@ -950,7 +969,8 @@ const tests = [
   testValidatorScheduleWrapperMirrorsValidationPiecesForRepresentativeProfiles,
   testValidatorValidateAllUsesScheduleWrapper,
   testSchedulerGenerateWithExplanationExposesPhaseDebugOutput,
-  testSchedulerGenerateUsesExplanationWrapper
+  testSchedulerGenerateUsesExplanationWrapper,
+  testSchedulerAvailabilityScoreDelegatesToCollectorHelper
 ];
 let passed = 0;
 for (const test of tests) {

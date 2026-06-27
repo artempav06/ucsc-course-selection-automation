@@ -509,6 +509,8 @@
 
   return {
     CATEGORY_PRIORITY,
+    planningQuarterWindow,
+    availabilityScore,
     collect,
     collectMajorCategories,
     collectChooseGroupCourses,

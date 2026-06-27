@@ -172,6 +172,29 @@ function testPhaseBGESelectionPrefersCoursesOfferedInRemainingWindow() {
   );
 }
 
+function testPhaseBGEExplanationIncludesAvailabilityScoresForPickedCourses() {
+  const profile = makeProfile({
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026,
+    geConcentration: 'ge_tech_society'
+  });
+  const explained = Scheduler.generateWithExplanation(profile, { includeValidation: false });
+  const geExplanation = explained.explanation.phases.geSelection;
+  const springPick = geExplanation.courses.find(code => ['CSE 3', 'CSE 80A', 'GCH 41', 'ECE 80E'].includes(code));
+  assert(springPick, `expected a spring-offered tech/society PE pick; got ${geExplanation.courses.join(', ')}`);
+  assert.deepStrictEqual(
+    geExplanation.availabilityWindow,
+    ['S'],
+    'GE explanation should expose the real remaining quarter window used by availability scoring'
+  );
+  assert(
+    geExplanation.availabilityScores[springPick] > geExplanation.availabilityScores['CSE 80N'],
+    `GE explanation should show the spring pick outranking fall/winter-only CSE 80N by availability; scores: ${JSON.stringify(geExplanation.availabilityScores)}`
+  );
+}
+
 function testPhaseBElectiveRankingPrefersRemainingQuarterAvailability() {
   const profile = makeProfile({
     major: 'CS_BS',
@@ -266,6 +289,68 @@ function testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCou
   );
 }
 
+function testPhaseBAddableSuggestionsPenalizeGapOnlyOfferings() {
+  withTemporaryCourses({
+    'ZPHASEB GAP ONLY PE': {
+      title: 'Zphaseb Gap Only PE', units: 5, quarters: ['W'], division: 'lower', ge: 'PE-T',
+      concentrations: ['ge_tech_society'], prereqs: [], rmpScore: 9
+    },
+    'ZPHASEB SPRING PE': {
+      title: 'Zphaseb Spring PE', units: 5, quarters: ['W', 'S'], division: 'lower', ge: 'PE-T',
+      concentrations: ['ge_tech_society'], prereqs: [], rmpScore: 0
+    }
+  }, () => {
+    const profile = makeProfile({
+      geConcentration: 'ge_tech_society',
+      currentTerm: 'W',
+      currentYear: 2027,
+      targetGradTerm: 'S',
+      targetGradYear: 2027,
+      gapEnabled: true,
+      gapType: 'quarter',
+      gapTerm: 'W',
+      gapYear: 2027
+    });
+    const results = Scheduler.searchAddable('W', [], [], 'ZPHASEB', profile);
+    assertTopResult(
+      results,
+      'ZPHASEB SPRING PE',
+      `add-course suggestions should prefer a PE option still available after a Winter gap over a gap-only high-RMP option; got ${results.map(r => r.code).join(', ')}`
+    );
+  });
+}
+
+function testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings() {
+  withTemporaryCourses({
+    'ZPHASEB GAP ONLY PE': {
+      title: 'Zphaseb Gap Only PE', units: 5, quarters: ['W'], division: 'lower', ge: 'PE-T',
+      concentrations: ['ge_tech_society'], prereqs: [], rmpScore: 9
+    },
+    'ZPHASEB SPRING PE': {
+      title: 'Zphaseb Spring PE', units: 5, quarters: ['W', 'S'], division: 'lower', ge: 'PE-T',
+      concentrations: ['ge_tech_society'], prereqs: [], rmpScore: 0
+    }
+  }, () => {
+    const profile = makeProfile({
+      geConcentration: 'ge_tech_society',
+      currentTerm: 'W',
+      currentYear: 2027,
+      targetGradTerm: 'S',
+      targetGradYear: 2027,
+      gapEnabled: true,
+      gapType: 'quarter',
+      gapTerm: 'W',
+      gapYear: 2027
+    });
+    const results = Scheduler.getReplacements('PSYC 1', 'W', [], [], 'ZPHASEB', profile);
+    assertTopResult(
+      results,
+      'ZPHASEB SPRING PE',
+      `swap suggestions should prefer a PE option still available after a Winter gap over a gap-only high-RMP option; got ${results.map(r => r.code).join(', ')}`
+    );
+  });
+}
+
 const tests = [
   testGEConcentrationChangesSelectionTowardStudentInterest,
   testMajorConcentrationCourseTagsAreComplete,
@@ -275,10 +360,13 @@ const tests = [
   testReplacementSuggestionsPreserveGERequirementAndGEInterest,
   testAddableSuggestionsUseMajorAndGEInterestWhenProfileProvided,
   testPhaseBGESelectionPrefersCoursesOfferedInRemainingWindow,
+  testPhaseBGEExplanationIncludesAvailabilityScoresForPickedCourses,
   testPhaseBElectiveRankingPrefersRemainingQuarterAvailability,
   testPhaseBFillerPoolPrefersRemainingQuarterAvailability,
   testPhaseBAvailabilityScoringExcludesGapQuarters,
-  testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses
+  testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses,
+  testPhaseBAddableSuggestionsPenalizeGapOnlyOfferings,
+  testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings
 ];
 
 let failed = 0;
