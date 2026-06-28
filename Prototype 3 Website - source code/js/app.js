@@ -725,20 +725,56 @@ function populateConcentrationGrids(majorId) {
 
 // ---------- SCHEDULE GENERATION & DISPLAY ----------
 
+function setScheduleLoading(isLoading) {
+  const loading = document.getElementById("loading-screen");
+  if (loading) {
+    loading.classList.toggle("active", Boolean(isLoading));
+    loading.setAttribute("aria-busy", isLoading ? "true" : "false");
+  }
+
+  const generateBtn = document.getElementById("btn-generate");
+  if (generateBtn) {
+    if (isLoading && !generateBtn.dataset.originalLabel) {
+      generateBtn.dataset.originalLabel = generateBtn.textContent || "Generate My Schedule";
+    }
+    generateBtn.disabled = Boolean(isLoading);
+    generateBtn.textContent = isLoading
+      ? "Building your schedule…"
+      : (generateBtn.dataset.originalLabel || "Generate My Schedule");
+  }
+}
+
+function scheduleAfterLoadingPaint(fn) {
+  if (typeof requestAnimationFrame === "function") {
+    requestAnimationFrame(() => setTimeout(fn, 0));
+  } else {
+    setTimeout(fn, 0);
+  }
+}
+
 function generateAndShowSchedule() {
-  // Generate schedule using the engine
-  AppState.schedule = Scheduler.generate(AppState.profile);
+  setScheduleLoading(true);
 
-  // Validate
-  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
+  // Let the browser paint the loading screen before heavier engine work starts.
+  scheduleAfterLoadingPaint(() => {
+    try {
+      // Generate schedule using the engine
+      AppState.schedule = Scheduler.generate(AppState.profile);
 
-  // Switch to schedule view
-  showView("schedule");
+      // Validate
+      AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
 
-  // Render
-  renderSchedule();
-  renderRequirements();
-  showValidationAlerts();
+      // Switch to schedule view
+      showView("schedule");
+
+      // Render
+      renderSchedule();
+      renderRequirements();
+      showValidationAlerts();
+    } finally {
+      setScheduleLoading(false);
+    }
+  }, 0);
 }
 
 function renderSchedule() {

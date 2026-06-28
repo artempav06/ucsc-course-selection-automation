@@ -29,8 +29,12 @@ class FakeElement {
     this.checked = false;
     this.disabled = false;
     this.textContent = '';
+    this.attributes = {};
     this._innerHTML = '';
   }
+  setAttribute(name, value) { this.attributes[name] = String(value); }
+  getAttribute(name) { return this.attributes[name]; }
+  removeAttribute(name) { delete this.attributes[name]; }
   appendChild(child) {
     this.children.push(child);
     if (child.selected) this.value = String(child.value);
@@ -99,15 +103,16 @@ function buildContext() {
     'completed-courses-list', 'course-search-input', 'course-search-results', 'transcript-drop-zone',
     'transcript-file-input', 'btn-transcript-browse', 'transcript-status', 'selected-courses-list',
     'gap-options', 'schedule-grid', 'requirements-panel', 'alert-box', 'modal-swap', 'swap-content',
-    'modal-course-detail', 'detail-content', 'grad-duration-hint'
+    'modal-course-detail', 'detail-content', 'grad-duration-hint', 'loading-screen'
   ];
   const document = makeDocument(ids);
   const captures = { generated: null, validated: null, add: null, swap: null };
+  const timers = [];
 
   const context = {
     console,
     Date,
-    setTimeout,
+    setTimeout(fn) { timers.push(fn); return timers.length; },
     clearTimeout,
     document,
     window: { scrollTo() {} },
@@ -143,7 +148,10 @@ function buildContext() {
       },
       prereqsMet() { return true; }
     },
-    __captures: captures
+    __captures: captures,
+    __runTimers() {
+      while (timers.length) timers.shift()();
+    }
   };
   context.globalThis = context;
   return context;
@@ -203,6 +211,7 @@ function testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations() {
   context.document.getElementById('btn-wizard-next-2').click();
   context.document.getElementById('btn-wizard-next-3').click();
   context.document.getElementById('btn-generate').click();
+  context.__runTimers();
 
   assertProfileFlow(context.__captures.generated, 'generated schedule');
   assertProfileFlow(context.__captures.validated, 'generated validation');
@@ -215,7 +224,38 @@ function testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations() {
   assertProfileFlow(context.__captures.swap, 'swap suggestions');
 }
 
-const tests = [testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations];
+function testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady() {
+  const context = buildContext();
+  loadApp(context);
+  setWizardProfile(context.document);
+  context.document.getElementById('btn-generate').textContent = 'Launch Banana Plan';
+
+  context.document.getElementById('btn-wizard-next-1').click();
+  context.document.getElementById('btn-wizard-next-2').click();
+  context.document.getElementById('btn-wizard-next-3').click();
+  context.document.getElementById('btn-generate').click();
+
+  const loading = context.document.getElementById('loading-screen');
+  const generateBtn = context.document.getElementById('btn-generate');
+  assert.strictEqual(loading.classList.contains('active'), true, 'loading overlay should appear immediately after Generate');
+  assert.strictEqual(loading.getAttribute('aria-busy'), 'true', 'loading overlay should mark the app busy while generating');
+  assert.strictEqual(generateBtn.disabled, true, 'generate button should be disabled while generating');
+  assert.strictEqual(generateBtn.textContent, 'Building your schedule…', 'generate button should show loading text');
+  assert.strictEqual(context.__captures.generated, null, 'schedule generation should wait until the loading frame can render');
+
+  context.__runTimers();
+
+  assertProfileFlow(context.__captures.generated, 'generated schedule after loading');
+  assert.strictEqual(loading.classList.contains('active'), false, 'loading overlay should hide after schedule render');
+  assert.strictEqual(loading.getAttribute('aria-busy'), 'false', 'loading overlay should clear busy state after rendering');
+  assert.strictEqual(generateBtn.disabled, false, 'generate button should be re-enabled after rendering');
+  assert.strictEqual(generateBtn.textContent, 'Launch Banana Plan', 'generate button should restore its original label');
+}
+
+const tests = [
+  testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
+  testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady
+];
 let failed = 0;
 for (const test of tests) {
   try {
