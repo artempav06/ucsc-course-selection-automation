@@ -3,10 +3,17 @@
 // Uses jsPDF, docx (npm), and SheetJS libraries (loaded via CDN)
 // ============================================================
 
+// ---------- EXPORT TOOL AVAILABILITY ----------
+
+function showExportUnavailable(format) {
+  alert(`${format} is temporarily unavailable because its export library did not load. Please refresh the page and try again, or use another export format.`);
+}
+
 // ---------- PDF EXPORT ----------
 
 function exportPDF() {
   if (!AppState.schedule) return alert("No schedule to export.");
+  if (!window.jspdf || !window.jspdf.jsPDF) return showExportUnavailable("PDF export");
 
   // jsPDF is loaded from CDN
   const { jsPDF } = window.jspdf;
@@ -101,6 +108,7 @@ function exportPDF() {
 
 function exportExcel() {
   if (!AppState.schedule) return alert("No schedule to export.");
+  if (typeof XLSX === "undefined" || !XLSX.utils || !XLSX.writeFile) return showExportUnavailable("Excel export");
 
   // SheetJS (XLSX) is loaded from CDN
   const wb = XLSX.utils.book_new();
@@ -174,6 +182,7 @@ function exportExcel() {
 
 function exportDOCX() {
   if (!AppState.schedule) return alert("No schedule to export.");
+  if (!window.docx || !window.docx.Document || !window.docx.Packer) return showExportUnavailable("Word export");
 
   const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
           AlignmentType, WidthType, BorderStyle, ShadingType } = window.docx;

@@ -106,11 +106,11 @@ function buildContext() {
     'modal-course-detail', 'detail-content', 'grad-duration-hint', 'loading-screen'
   ];
   const document = makeDocument(ids);
-  const captures = { generated: null, validated: null, add: null, swap: null };
+  const captures = { generated: null, validated: null, add: null, swap: null, consoleErrors: [] };
   const timers = [];
 
   const context = {
-    console,
+    console: { ...console, error(...args) { captures.consoleErrors.push(args); } },
     Date,
     setTimeout(fn) { timers.push(fn); return timers.length; },
     clearTimeout,
@@ -252,6 +252,30 @@ function testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady() {
   assert.strictEqual(generateBtn.textContent, 'Launch Banana Plan', 'generate button should restore its original label');
 }
 
+function testGenerateFailureShowsFriendlyErrorAndCleansUp() {
+  const context = buildContext();
+  const { AppState } = loadApp(context);
+  setWizardProfile(context.document);
+  context.Scheduler.generate = () => { throw new Error('synthetic scheduler failure'); };
+
+  context.document.getElementById('btn-wizard-next-1').click();
+  context.document.getElementById('btn-wizard-next-2').click();
+  context.document.getElementById('btn-wizard-next-3').click();
+  context.document.getElementById('btn-generate').click();
+
+  assert.doesNotThrow(() => context.__runTimers(), 'generation failure should be handled in the UI instead of escaping');
+
+  const loading = context.document.getElementById('loading-screen');
+  const generateBtn = context.document.getElementById('btn-generate');
+  const alertBox = context.document.getElementById('alert-box');
+  assert.strictEqual(loading.classList.contains('active'), false, 'loading overlay should hide after generation failure');
+  assert.strictEqual(loading.getAttribute('aria-busy'), 'false', 'busy state should clear after generation failure');
+  assert.strictEqual(generateBtn.disabled, false, 'generate button should be re-enabled after generation failure');
+  assert.strictEqual(AppState.currentView, 'schedule', 'generation errors should switch to the schedule view so the alert is visible');
+  assert.strictEqual(alertBox.style.display, 'block', 'generation failure should show a visible alert');
+  assert(alertBox.innerHTML.includes('We couldn\'t build your schedule'), `generation failure alert should be student-friendly; got ${alertBox.innerHTML}`);
+}
+
 function testManualSuggestionModalsRenderReasonChips() {
   const context = buildContext();
   const { AppState, openAddCourseModal, openSwapModal } = loadApp(context);
@@ -286,6 +310,7 @@ function testManualSuggestionModalsRenderReasonChips() {
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
+  testGenerateFailureShowsFriendlyErrorAndCleansUp,
   testManualSuggestionModalsRenderReasonChips
 ];
 let failed = 0;

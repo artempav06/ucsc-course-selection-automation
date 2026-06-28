@@ -752,6 +752,18 @@ function scheduleAfterLoadingPaint(fn) {
   }
 }
 
+function showGenerationError() {
+  const alertBox = document.getElementById("alert-box");
+  if (!alertBox) return;
+  alertBox.innerHTML = `
+    <div class="alert-error">
+      <strong>We couldn't build your schedule.</strong>
+      Please review your preferences and try again. If this keeps happening, restart the planner or remove recently added constraints.
+    </div>
+  `;
+  alertBox.style.display = "block";
+}
+
 function generateAndShowSchedule() {
   setScheduleLoading(true);
 
@@ -771,6 +783,10 @@ function generateAndShowSchedule() {
       renderSchedule();
       renderRequirements();
       showValidationAlerts();
+    } catch (err) {
+      console.error("Schedule generation error:", err);
+      showView("schedule");
+      showGenerationError();
     } finally {
       setScheduleLoading(false);
     }
