@@ -27,6 +27,9 @@ Before adding new user-facing features, Prototype 3 focuses on schedule accuracy
 - `test_requirement_normalizer_runtime.js` — behavior-preserving runtime-data normalizer tests.
 - `test_scheduler_requirement_set.js` — behavior-preserving scheduler integration test for normalized requirement-set generation.
 - `test_requirement_collector.js` — behavior-preserving collector/scheduler/validator/explanation seam test for normalized-to-legacy requirement inputs, including all-supported-major default coverage, representative major coverage, broad all-supported-major GE/UC profile matrices, representative prerequisite-expansion, upper-division supplement, FREE/unit-padding, filler-pool, quarter-placement, validation, and explanation/debug-output profiles, `Scheduler.selectMajorCourses(profile)`, `Scheduler.selectGECourses(...)`, `Scheduler.selectUCCourses(...)`, `Scheduler.selectPrerequisiteCourses(...)`, `Scheduler.selectUpperDivisionSupplement(...)`, `Scheduler.selectFreePaddingCourses(...)`, `Scheduler.buildNormalizedFillerPool(...)`, `Scheduler.placeSelectedCourses(...)`, `Validator.validateSchedule(...)`, `Scheduler.generateWithExplanation(...)`, `Scheduler.generate()` wrapper delegation, and `Validator.validateAll(...)` wrapper delegation.
+- `test_ui_profile_flow.js` — deterministic fake-DOM coverage for wizard profile propagation and Phase C UX states.
+- `test_export_availability.js` — export-library availability guard coverage.
+- `test_responsive_css.js` — static responsive/mobile CSS expectations for phone breakpoints, touch targets, and modal viewport containment.
 - `scripts/inspect_schedule.js` — CLI diagnostic report powered by `Scheduler.generateWithExplanation(...)`, useful for explaining phase choices before warning-bucket fixes.
 - `scripts/phase10_warning_triage.js` — read-only combo-matrix warning-bucket diagnostic helper used by the Phase 10 triage report.
 - `docs/plans/warning-bucket-triage-phase10.md` — current root-cause map for schedule-length, high-unit, and major-density warnings.
@@ -43,6 +46,9 @@ node test_requirement_normalizer.js
 node test_requirement_normalizer_runtime.js
 node test_requirement_collector.js
 node test_scheduler_requirement_set.js
+node test_ui_profile_flow.js
+node test_export_availability.js
+node test_responsive_css.js
 node test_toposort.js
 node test_edge_scenarios.js
 node test_schedule_regression.js
