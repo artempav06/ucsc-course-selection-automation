@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Phase 10 diagnostic helper: summarize combo-matrix warning buckets and representative root-cause clues.
-// This script is intentionally read-only: it loads the static scheduler globals, generates schedules,
-// and prints aggregate warning/phase metrics without changing scheduler behavior.
+// Phase C diagnostic helper: summarize current combo-matrix schedule-quality warnings.
+// Read-only: loads static scheduler globals, generates schedules, and prints aggregate
+// warning/root-cause clues without changing scheduler behavior.
 
 const fs = require('fs');
 const vm = require('vm');
@@ -16,7 +16,6 @@ load('js/engine/requirement-normalizer.js');
 load('js/engine/requirement-collector.js');
 load('js/engine.js');
 
-const TERM_ORDER = { F: 0, W: 1, S: 2, SU: 3 };
 const MAJOR_TYPES = new Set(['major_core', 'major_elective', 'prereq']);
 
 function makeProfile(overrides = {}) {
@@ -27,23 +26,31 @@ function makeProfile(overrides = {}) {
     completedCourses: [], avoidedCourses: [],
     includeSummer: false, maxUnits: 19, minUnits: 12,
     concentrationInterest: null, geConcentration: 'ge_arts_humanities',
-    gapType: null, gapTerm: null, gapYear: null,
+    gapEnabled: false, gapType: null, gapTerm: null, gapYear: null,
     elwrSatisfied: false, priorCredits: 0, studentType: 'undergrad'
   }, overrides);
 }
 
+function academicYearOf(term, year) {
+  return term === 'F' ? year : year - 1;
+}
+
 function yearsExpected(profile) {
-  const academicYearOf = (term, year) => (term === 'F') ? year : year - 1;
   const startAcad = academicYearOf(profile.currentTerm, profile.currentYear);
   const gradAcad = academicYearOf(profile.targetGradTerm, profile.targetGradYear);
   return Math.max(1, gradAcad - startAcad + 1);
 }
 
-function plannedCourses(schedule) {
+function units(codes) {
+  return (codes || []).reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+}
+
+function plannedCourses(schedule, includeFree = true) {
   const out = [];
   for (const year of schedule) {
-    for (const q of ['F','W','S','SU']) {
-      out.push(...(year.quarters[q] || []).filter(c => c !== '_GAP' && !String(c).startsWith('FREE')));
+    for (const q of ['F', 'W', 'S', 'SU']) {
+      const arr = year.quarters[q] || [];
+      out.push(...arr.filter(c => c !== '_GAP' && (includeFree || !String(c).startsWith('FREE'))));
     }
   }
   return out;
@@ -54,18 +61,23 @@ function maxMajorQuarter(schedule) {
   let max = 0;
   let maxQuarter = null;
   for (const year of schedule) {
-    for (const q of ['F','W','S','SU']) {
+    for (const q of ['F', 'W', 'S', 'SU']) {
       const arr = year.quarters[q] || [];
       const majorCourses = arr.filter(code => {
         if (!COURSES[code]) return false;
-        const type = typeMap.get(code);
-        if (!MAJOR_TYPES.has(type)) return false;
+        if (!MAJOR_TYPES.has(typeMap.get(code))) return false;
         const course = COURSES[code];
         return !(course.units <= 2 && course.labCoreq);
       });
       if (majorCourses.length > max) {
         max = majorCourses.length;
-        maxQuarter = { label: `${year.label}-${q}`, courses: majorCourses };
+        maxQuarter = {
+          label: `${year.label}-${q}`,
+          majorCourses,
+          majorUnits: units(majorCourses),
+          allCourses: arr.slice(),
+          allUnits: units(arr)
+        };
       }
     }
   }
@@ -137,113 +149,108 @@ function buildProfiles() {
       }
     }
   }
+
   profiles.push(makeProfile({ major: 'TIM_BS', concentration: 'tim_entrepreneurship', avoidedCourses: ['TIM 171', 'TIM 174'], scenarioLabel: 'avoid-tim-electives', startLabel: 'explicit', prefLabel: 'standard', gapLabel: 'no-gap' }));
   profiles.push(makeProfile({ major: 'RE_BS', concentration: 're_ai_vision', includeSummer: false, maxUnits: 19, geConcentration: null, scenarioLabel: 'dense-re-no-ge', startLabel: 'explicit', prefLabel: 'standard', gapLabel: 'no-gap' }));
-  profiles.push(makeProfile({ major: 'CS_BS', concentration: 'cs_ai_ml', completedCourses: ['MATH 19A','MATH 19B','CSE 20','CSE 30'], currentLevel: 2, currentTerm: 'F', currentYear: 2027, targetGradYear: 2030, geConcentration: null, scenarioLabel: 'cs-transfer-completed-core', startLabel: 'explicit', prefLabel: 'standard', gapLabel: 'no-gap' }));
+  profiles.push(makeProfile({ major: 'CS_BS', concentration: 'cs_ai_ml', completedCourses: ['MATH 19A', 'MATH 19B', 'CSE 20', 'CSE 30'], currentLevel: 2, currentTerm: 'F', currentYear: 2027, targetGradYear: 2030, geConcentration: null, scenarioLabel: 'cs-transfer-completed-core', startLabel: 'explicit', prefLabel: 'standard', gapLabel: 'no-gap' }));
   return profiles;
 }
 
-function warningBucket(message) {
-  if (/^schedule length /.test(message)) return 'schedule length exceeds selected window';
-  if (/^max major quarter /.test(message)) return 'major-course density exceeds target';
-  if (/^high total units /.test(message)) return 'high total units';
-  return message.replace(/\d+/g, '#');
+function increment(map, key) {
+  map.set(key, (map.get(key) || 0) + 1);
 }
 
-function increment(map, key, amount = 1) {
-  map.set(key, (map.get(key) || 0) + amount);
-}
-
-function top(map, n = 12) {
+function top(map, n = 20) {
   return [...map.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, n);
 }
 
-function phaseSummary(explanation, schedule, validation, profile) {
-  const phases = explanation.phases;
+function summarizeRecord(profile, schedule, validation, explanation, warnings) {
+  const scheduled = plannedCourses(schedule, true);
+  const byTypeUnits = {};
   const typeMap = schedule.courseTypeMap || new Map();
-  const scheduled = plannedCourses(schedule);
-  const scheduledTypeUnits = {};
-  const scheduledTypeCount = {};
   for (const code of scheduled) {
     const type = typeMap.get(code) || 'unknown';
-    scheduledTypeUnits[type] = (scheduledTypeUnits[type] || 0) + (COURSES[code]?.units || 0);
-    scheduledTypeCount[type] = (scheduledTypeCount[type] || 0) + 1;
+    byTypeUnits[type] = (byTypeUnits[type] || 0) + (COURSES[code]?.units || 0);
   }
-  const majorQ = maxMajorQuarter(schedule);
+  const freeCourses = scheduled.filter(code => String(code).startsWith('FREE'));
   return {
     scenario: profile.scenarioLabel,
+    warnings,
     years: schedule.length,
     expectedYears: yearsExpected(profile),
-    units: validation.totalUnits,
-    requiredUnits: validation.majorReqs.totalUnitsRequired,
-    priorCredits: validation.priorCredits,
-    completedCourses: profile.completedCourses || [],
-    scheduledCourseCount: scheduled.length,
-    selectedUnitsBeforePlacement: explanation.totals.selectedUnitsBeforePlacement,
-    majorSelection: phases.majorSelection,
-    geSelection: phases.geSelection,
-    ucSelection: phases.ucSelection,
-    prerequisiteExpansion: phases.prerequisiteExpansion,
-    upperDivisionSupplement: phases.upperDivisionSupplement,
-    freePadding: phases.freePadding,
-    fillerPoolCount: phases.fillerPool.count,
-    placement: phases.placement,
-    scheduledTypeUnits,
-    scheduledTypeCount,
-    maxMajorQuarter: majorQ.max,
-    maxMajorQuarterDetail: majorQ.maxQuarter
+    totalUnits: validation.totalUnits,
+    priorCredits: profile.priorCredits || 0,
+    completedUnits: units(profile.completedCourses || []),
+    scheduledUnits: units(scheduled),
+    freeUnits: units(freeCourses),
+    freeCount: freeCourses.length,
+    phaseUnits: {
+      major: explanation.phases.majorSelection.units,
+      ge: explanation.phases.geSelection.units,
+      uc: explanation.phases.ucSelection.units,
+      prereq: explanation.phases.prerequisiteExpansion.units,
+      upperDivSupplement: explanation.phases.upperDivisionSupplement.units,
+      freePadding: explanation.phases.freePadding.units,
+      selectedBeforePlacement: explanation.totals.selectedUnitsBeforePlacement
+    },
+    byTypeUnits,
+    maxMajorQuarter: maxMajorQuarter(schedule)
   };
 }
 
 function main() {
-  const profiles = buildProfiles();
   const bucketCounts = new Map();
   const bucketByMajor = new Map();
   const bucketByStart = new Map();
   const bucketByPref = new Map();
   const bucketByGap = new Map();
-  const warningRecords = [];
+  const lengthOverrun = new Map();
+  const highUnitInputs = new Map();
+  const records = [];
 
+  const profiles = buildProfiles();
   for (const profile of profiles) {
     const { schedule, explanation } = Scheduler.generateWithExplanation(profile, { includeValidation: true });
     const validation = explanation.validation || Validator.validateAll(schedule, profile);
     const warnings = [];
-    if (schedule.length > yearsExpected(profile)) warnings.push(`schedule length ${schedule.length}>window ${yearsExpected(profile)}`);
-    const majorQ = maxMajorQuarter(schedule);
-    if (majorQ.max > 3) warnings.push(`max major quarter ${majorQ.max}>3`);
-    if (validation.totalUnits > 210) warnings.push(`high total units ${validation.totalUnits}`);
-    for (const warning of warnings) {
-      const bucket = warningBucket(warning);
+    if (schedule.length > yearsExpected(profile)) warnings.push('schedule length exceeds selected window');
+    if (maxMajorQuarter(schedule).max > 3) warnings.push('major-course density exceeds target');
+    if (validation.totalUnits > 210) warnings.push('high total units');
+    for (const bucket of warnings) {
       increment(bucketCounts, bucket);
       increment(bucketByMajor, `${bucket} :: ${profile.major}`);
       increment(bucketByStart, `${bucket} :: ${profile.startLabel}`);
       increment(bucketByPref, `${bucket} :: ${profile.prefLabel}`);
       increment(bucketByGap, `${bucket} :: ${profile.gapLabel}`);
     }
-    if (warnings.length) warningRecords.push({ profile, warnings, summary: phaseSummary(explanation, schedule, validation, profile) });
+    if (warnings.includes('schedule length exceeds selected window')) {
+      increment(lengthOverrun, `${schedule.length - yearsExpected(profile)} year over`);
+    }
+    if (warnings.includes('high total units')) {
+      increment(highUnitInputs, `prior=${profile.priorCredits || 0} completedUnits=${units(profile.completedCourses || [])}`);
+    }
+    if (warnings.length) records.push(summarizeRecord(profile, schedule, validation, explanation, warnings));
   }
 
-  const representatives = [];
-  const wants = [
-    r => r.profile.major === 'AM_BS' && r.profile.startLabel === 'freshman-winter' && r.profile.prefLabel === 'standard' && r.profile.gapLabel === 'no-gap' && r.profile.geConcentration === null,
-    r => r.profile.major === 'AM_BS' && r.profile.startLabel === 'sophomore-spring' && r.profile.prefLabel === 'standard' && r.profile.gapLabel === 'no-gap' && r.profile.geConcentration === null,
-    r => r.profile.major === 'AM_BS' && r.profile.startLabel === 'summer-start' && r.profile.prefLabel === 'standard' && r.profile.gapLabel === 'no-gap' && r.profile.geConcentration === null,
-    r => r.profile.scenarioLabel === 'BMEB_BI/bi_computational/none/sophomore-spring/low-max-units/no-gap',
-    r => r.profile.major === 'RE_BS' && r.profile.concentration === 're_ai_vision' && r.profile.startLabel === 'freshman-fall' && r.profile.prefLabel === 'standard' && r.profile.gapLabel === 'no-gap'
-  ];
-  for (const want of wants) {
-    const record = warningRecords.find(want);
-    if (record) representatives.push(record);
-  }
+  const bySeverity = records.slice().sort((a, b) => (
+    (b.totalUnits - a.totalUnits) ||
+    ((b.years - b.expectedYears) - (a.years - a.expectedYears)) ||
+    ((b.maxMajorQuarter.max || 0) - (a.maxMajorQuarter.max || 0))
+  ));
 
   const output = {
     checked: profiles.length,
+    warningRecords: records.length,
     bucketCounts: Object.fromEntries(top(bucketCounts, 10)),
-    topBucketByMajor: Object.fromEntries(top(bucketByMajor, 36)),
+    topBucketByMajor: Object.fromEntries(top(bucketByMajor, 30)),
     topBucketByStart: Object.fromEntries(top(bucketByStart, 20)),
     topBucketByPref: Object.fromEntries(top(bucketByPref, 20)),
     topBucketByGap: Object.fromEntries(top(bucketByGap, 20)),
-    representatives: representatives.map(r => ({ warnings: r.warnings, ...r.summary }))
+    lengthOverrun: Object.fromEntries(top(lengthOverrun, 10)),
+    highUnitInputs: Object.fromEntries(top(highUnitInputs, 20)),
+    severeHighUnitExamples: bySeverity.filter(r => r.warnings.includes('high total units')).slice(0, 8),
+    densityExamples: records.filter(r => r.warnings.includes('major-course density exceeds target')).slice(0, 8),
+    lengthExamples: records.filter(r => r.warnings.includes('schedule length exceeds selected window')).slice(0, 8)
   };
   console.log(JSON.stringify(output, null, 2));
 }

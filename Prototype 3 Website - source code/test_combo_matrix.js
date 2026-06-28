@@ -109,7 +109,10 @@ function unknownCourses(courses) {
 }
 
 function yearsExpected(profile) {
-  return Math.max(1, (profile.targetGradYear - profile.currentYear) + (TERM_ORDER[profile.targetGradTerm] >= TERM_ORDER[profile.currentTerm] ? 1 : 0));
+  const academicYearOf = (term, year) => (term === 'F') ? year : year - 1;
+  const startAcad = academicYearOf(profile.currentTerm, profile.currentYear);
+  const gradAcad = academicYearOf(profile.targetGradTerm, profile.targetGradYear);
+  return Math.max(1, gradAcad - startAcad + 1);
 }
 
 function maxMajorQuarter(schedule) {
@@ -265,6 +268,9 @@ function groupWarnings(warnings) {
 }
 
 function main() {
+  assert(yearsExpected(makeProfile({ currentTerm: 'SU', currentYear: 2027, targetGradTerm: 'S', targetGradYear: 2030 })) === 4,
+    'summer-start warning window should count the selected Summer academic-year bucket');
+
   const profiles = buildProfiles();
   const failures = [];
   const warnings = [];
