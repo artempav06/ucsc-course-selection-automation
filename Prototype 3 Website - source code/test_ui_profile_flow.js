@@ -252,9 +252,41 @@ function testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady() {
   assert.strictEqual(generateBtn.textContent, 'Launch Banana Plan', 'generate button should restore its original label');
 }
 
+function testManualSuggestionModalsRenderReasonChips() {
+  const context = buildContext();
+  const { AppState, openAddCourseModal, openSwapModal } = loadApp(context);
+  AppState.profile = { major: 'CS_BS', concentration: 'cs_web_software', geConcentration: 'ge_arts_humanities' };
+  AppState.schedule = [{ label: 'Senior', academicStart: 2026, quarters: { W: ['CSE 186'], S: [] } }];
+  context.Scheduler.searchAddable = () => [{
+    code: 'CSE 187', title: 'Fall Web Course', units: 5, desc: 'Useful course', ge: null,
+    rmpScore: 4.2, section: ['CSE'], reasons: [
+      { id: 'major_concentration', label: 'Matches major & focus' },
+      { id: 'prerequisites_met', label: 'Prerequisites met' }
+    ]
+  }];
+  context.Scheduler.getReplacements = () => [{
+    code: 'CSE 187', title: 'Fall Web Course', units: 5, desc: 'Useful course', ge: null,
+    rmpScore: 4.2, sections: ['CSE'], section: ['CSE'], reasons: [
+      { id: 'offered_current_quarter', label: 'Offered in Winter' }
+    ]
+  }];
+
+  openAddCourseModal(0, 'W');
+  const addHtml = context.document.getElementById('swap-content').innerHTML;
+  assert(addHtml.includes('suggestion-reasons'), 'add-course modal should render a reason-chip container');
+  assert(addHtml.includes('Matches major &amp; focus'), `add-course reason labels should be escaped and visible; got ${addHtml}`);
+  assert(addHtml.includes('Prerequisites met'), `add-course prerequisite reason should be visible; got ${addHtml}`);
+
+  openSwapModal('CSE 186', 'W', 0);
+  const swapHtml = context.document.getElementById('swap-content').innerHTML;
+  assert(swapHtml.includes('suggestion-reasons'), 'swap modal should render a reason-chip container');
+  assert(swapHtml.includes('Offered in Winter'), `swap reason label should be visible; got ${swapHtml}`);
+}
+
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
-  testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady
+  testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
+  testManualSuggestionModalsRenderReasonChips
 ];
 let failed = 0;
 for (const test of tests) {

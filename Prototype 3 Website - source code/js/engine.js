@@ -1378,6 +1378,45 @@ const Scheduler = {
     return score;
   },
 
+  manualSuggestionReasons(code, profile, replacedCourse, quarter, completedCourses) {
+    const course = COURSES[code];
+    if (!course) return [];
+    const reasons = [];
+    const push = (id, label) => reasons.push({ id, label });
+    if (replacedCourse && replacedCourse.ge && this.sameGEFamily(course.ge, replacedCourse.ge)) {
+      push("same_ge_requirement", `Matches ${replacedCourse.ge} requirement`);
+    } else if (course.ge) {
+      push("ge_requirement", `Counts for ${course.ge}`);
+    }
+    if (profile && profile.concentration && (course.concentrations || []).includes(profile.concentration)) {
+      push("major_concentration", "Matches your major focus");
+    }
+    if (profile && profile.geConcentration && typeof CONCENTRATIONS !== "undefined") {
+      const geConc = CONCENTRATIONS.ge.find(group => group.id === profile.geConcentration);
+      const courseMatch = geConc && (geConc.courses || []).includes(code);
+      const geFamilyMatch = geConc && course.ge && (geConc.geCodes || []).some(geCode => this.sameGEFamily(geCode, course.ge));
+      if (courseMatch || geFamilyMatch || (course.concentrations || []).includes(profile.geConcentration)) {
+        push("ge_concentration", "Matches your GE focus");
+      }
+    }
+    if (quarter && (course.quarters || []).includes(quarter)) {
+      const quarterLabels = { F: "Fall", W: "Winter", S: "Spring", SU: "Summer" };
+      push("offered_current_quarter", `Offered in ${quarterLabels[quarter] || quarter}`);
+    }
+    const availability = profile ? this.availabilityScore(code, profile) : 0;
+    if (profile && availability > 0) push("offered_remaining_window", "Available in your planning window");
+    const completedSet = new Set(Array.isArray(completedCourses) ? completedCourses : []);
+    if (Validator.prereqsMet(course.prereqs, completedSet)) push("prerequisites_met", "Prerequisites met");
+    if ((profile?.preferredCourses || []).includes(code)) push("preferred_course", "On your preferred list");
+    const rmp = course.rmpScore || 0;
+    if (profile && rmp > 0 && (profile.profImportance || "medium") !== "low") {
+      push("professor_rating", `Professor rating ${rmp.toFixed(1)}`);
+    } else if (!profile && rmp > 0) {
+      push("professor_rating", `Professor rating ${rmp.toFixed(1)}`);
+    }
+    return reasons;
+  },
+
   getReplacements(courseCode, quarter, placedCodes, schedule, query, profile) {
     const course = COURSES[courseCode];
     if (!course) return [];
@@ -1396,7 +1435,8 @@ const Scheduler = {
         code, title: c.title, units: c.units, desc: c.desc,
         ge: c.ge, rmpScore: c.rmpScore || 0, sections: c.section,
         section: c.section, division: c.division,
-        preferenceScore: this.manualSuggestionScore(code, profile, course)
+        preferenceScore: this.manualSuggestionScore(code, profile, course),
+        reasons: this.manualSuggestionReasons(code, profile, course, quarter, placedCodes)
       });
     }
     candidates.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
@@ -1418,7 +1458,8 @@ const Scheduler = {
       results.push({
         code, title: c.title, units: c.units, desc: c.desc,
         ge: c.ge, rmpScore: c.rmpScore || 0, section: c.section, division: c.division,
-        preferenceScore: this.manualSuggestionScore(code, profile, null)
+        preferenceScore: this.manualSuggestionScore(code, profile, null),
+        reasons: this.manualSuggestionReasons(code, profile, null, quarter, placedCodes)
       });
     }
     results.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));

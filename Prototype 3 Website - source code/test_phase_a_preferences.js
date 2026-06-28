@@ -374,6 +374,38 @@ function testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings() {
   });
 }
 
+function reasonIds(result) {
+  return (result.reasons || []).map(reason => reason.id);
+}
+
+function testPhaseCAddableSuggestionsExposeTrustworthyReasons() {
+  const profile = makeProfile({
+    concentration: 'cs_ai_ml',
+    geConcentration: 'ge_tech_society',
+    preferredCourses: ['CSE 140'],
+    profImportance: 'high'
+  });
+  const results = Scheduler.searchAddable('W', ['CSE 101', 'CSE 40'], [], 'CSE 140', profile);
+  assertTopResult(results, 'CSE 140', 'phase C add-course reason test should inspect the known AI/ML top suggestion');
+  const ids = reasonIds(results[0]);
+  assert(ids.includes('major_concentration'), `CSE 140 should explain that it matches the selected major concentration; got ${ids.join(', ')}`);
+  assert(ids.includes('offered_current_quarter'), `CSE 140 should explain that it is offered in the selected quarter; got ${ids.join(', ')}`);
+  assert(ids.includes('prerequisites_met'), `CSE 140 should explain that prerequisites are met for this add slot; got ${ids.join(', ')}`);
+  assert(ids.includes('preferred_course'), `CSE 140 should explain the preferred-course boost; got ${ids.join(', ')}`);
+  assert(ids.includes('professor_rating'), `CSE 140 should explain a positive professor/RMP contribution when professor importance is high; got ${ids.join(', ')}`);
+}
+
+function testPhaseCReplacementSuggestionsExposeRequirementAndGEReasons() {
+  const profile = makeProfile({ geConcentration: 'ge_tech_society' });
+  const replacements = Scheduler.getReplacements('PSYC 1', 'F', [], [], '', profile);
+  assertTopResult(replacements, 'CSE 80N', 'phase C replacement reason test should inspect the known tech/society GE replacement');
+  const ids = reasonIds(replacements[0]);
+  assert(ids.includes('same_ge_requirement'), `CSE 80N should explain that it preserves the replaced GE family; got ${ids.join(', ')}`);
+  assert(ids.includes('ge_concentration'), `CSE 80N should explain that it matches the selected GE concentration; got ${ids.join(', ')}`);
+  assert(ids.includes('offered_current_quarter'), `CSE 80N should explain that it is offered in the selected quarter; got ${ids.join(', ')}`);
+  assert(ids.includes('prerequisites_met'), `CSE 80N should explain that prerequisites are met for this swap slot; got ${ids.join(', ')}`);
+}
+
 const tests = [
   testGEConcentrationChangesSelectionTowardStudentInterest,
   testMajorConcentrationCourseTagsAreComplete,
@@ -390,7 +422,9 @@ const tests = [
   testPhaseBAvailabilityScoringExcludesGapQuarters,
   testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses,
   testPhaseBAddableSuggestionsPenalizeGapOnlyOfferings,
-  testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings
+  testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings,
+  testPhaseCAddableSuggestionsExposeTrustworthyReasons,
+  testPhaseCReplacementSuggestionsExposeRequirementAndGEReasons
 ];
 
 let failed = 0;

@@ -1009,6 +1009,16 @@ function renderStars(score) {
   return html;
 }
 
+function renderSuggestionReasons(reasons) {
+  const safeReasons = (reasons || []).slice(0, 4).filter(reason => reason && reason.label);
+  if (safeReasons.length === 0) return "";
+  return `
+    <div class="suggestion-reasons" aria-label="Why this course is suggested">
+      ${safeReasons.map(reason => `<span class="suggestion-reason-chip">${escHTML(reason.label)}</span>`).join("")}
+    </div>
+  `;
+}
+
 function closeModal(id) {
   document.getElementById(id)?.classList.remove("active");
 }
@@ -1041,6 +1051,7 @@ function openSwapModal(code, quarterKey, yearIdx) {
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
             ${r.rmpScore > 0 ? `<span class="rmp-badge">${r.rmpScore.toFixed(1)}</span>` : ""}
           </div>
+          ${renderSuggestionReasons(r.reasons)}
         </div>
       `;
     }).join("");
@@ -1127,6 +1138,7 @@ function openAddCourseModal(yearIdx, quarterKey) {
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
             ${r.rmpScore > 0 ? `<span class="rmp-badge">${r.rmpScore.toFixed(1)}</span>` : ""}
           </div>
+          ${renderSuggestionReasons(r.reasons)}
         </div>
       `;
     }).join("");
