@@ -1451,6 +1451,44 @@ h1, h2, h3, h4 { line-height: 1.3; }
   font-style: italic;
 }
 
+.suggestion-empty-state {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 6px 0 2px;
+  padding: 18px;
+  border: 1px solid #D6E4F0;
+  border-radius: 12px;
+  background: #F7FBFF;
+  color: #243B53;
+}
+
+.suggestion-empty-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #E3F2FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.suggestion-empty-title {
+  margin: 0 0 4px;
+  color: #003C6C;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.suggestion-empty-guidance {
+  margin: 0;
+  color: #52616B;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
 
 /* ---------- RESPONSIVE ---------- */
 

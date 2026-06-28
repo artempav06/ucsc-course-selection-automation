@@ -1045,6 +1045,31 @@ function renderSuggestionReasons(reasons) {
   `;
 }
 
+function renderSuggestionEmptyState(kind, quarterKey, query, courseCode) {
+  const quarterLabel = QUARTER_LABELS[quarterKey] || quarterKey;
+  const trimmedQuery = String(query || "").trim();
+  const isSwap = kind === "swap";
+  const icon = trimmedQuery ? "🔎" : (isSwap ? "🔁" : "➕");
+  const title = trimmedQuery
+    ? `No matches for “${escHTML(trimmedQuery)}”`
+    : (isSwap ? `No replacement fits ${escHTML(quarterLabel)} right now` : `No courses fit ${escHTML(quarterLabel)} right now`);
+  const guidance = trimmedQuery
+    ? "Check the course code/title spelling, try a broader keyword, or clear the search to return to personalized suggestions."
+    : (isSwap
+      ? `Keep ${escHTML(courseCode || "this course")} in place, try another quarter, or adjust completed courses if transfer/AP credit is missing.`
+      : "Try a different quarter, raise the max units for this term, or add completed/AP courses so more prerequisites count as met.");
+
+  return `
+    <div class="suggestion-empty-state" role="status" aria-live="polite">
+      <div class="suggestion-empty-icon" aria-hidden="true">${icon}</div>
+      <div>
+        <p class="suggestion-empty-title">${title}</p>
+        <p class="suggestion-empty-guidance">${guidance}</p>
+      </div>
+    </div>
+  `;
+}
+
 function closeModal(id) {
   document.getElementById(id)?.classList.remove("active");
 }
@@ -1061,7 +1086,7 @@ function openSwapModal(code, quarterKey, yearIdx) {
     const takenBefore    = getCoursesBeforeQuarter(yearIdx, quarterKey);
     const replacements   = Scheduler.getReplacements(code, quarterKey, takenBefore, AppState.schedule, query, AppState.profile);
     if (replacements.length === 0) {
-      return `<p class="no-results">${query ? "No matching courses found." : "No valid replacement courses available for this quarter."}</p>`;
+      return renderSuggestionEmptyState("swap", quarterKey, query, code);
     }
     return replacements.slice(0, 30).map(r => {
       const colors = SECTION_COLORS[r.sections[0]] || SECTION_COLORS["FREE"];
@@ -1148,7 +1173,7 @@ function openAddCourseModal(yearIdx, quarterKey) {
     const results     = Scheduler.searchAddable(quarterKey, takenBefore, allPlanned, query, AppState.profile);
 
     if (results.length === 0) {
-      return `<p class="no-results">${query ? "No matching courses found." : "No additional courses available for this quarter."}</p>`;
+      return renderSuggestionEmptyState("add", quarterKey, query);
     }
     return results.slice(0, 30).map(r => {
       const colors = SECTION_COLORS[r.section[0]] || SECTION_COLORS["FREE"];

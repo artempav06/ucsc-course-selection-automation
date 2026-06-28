@@ -308,6 +308,42 @@ function testManualSuggestionModalsRenderReasonChips() {
   assert(swapHtml.includes('Offered in Winter'), `swap reason label should be visible; got ${swapHtml}`);
 }
 
+function testManualSuggestionEmptyStatesGiveActionableGuidance() {
+  const context = buildContext();
+  const { AppState, openAddCourseModal, openSwapModal } = loadApp(context);
+  AppState.profile = { major: 'CS_BS', concentration: 'cs_web_software', geConcentration: 'ge_arts_humanities' };
+  AppState.schedule = [{ label: 'Senior', academicStart: 2026, quarters: { W: ['CSE 186'], S: [] } }];
+  context.Scheduler.searchAddable = () => [];
+  context.Scheduler.getReplacements = () => [];
+
+  openAddCourseModal(0, 'W');
+  const addHtml = context.document.getElementById('swap-content').innerHTML;
+  assert(addHtml.includes('suggestion-empty-state'), `add-course no-result state should use the product empty-state component; got ${addHtml}`);
+  assert(addHtml.includes('No courses fit Winter right now'), `add-course empty state should name the quarter; got ${addHtml}`);
+  assert(addHtml.includes('Try a different quarter'), `add-course empty state should suggest a next action; got ${addHtml}`);
+  assert(addHtml.includes('role="status"'), `add-course empty state should be announced to assistive tech; got ${addHtml}`);
+
+  const addSearch = context.document.getElementById('add-search-input');
+  addSearch.value = '<script>alert(1)</script>';
+  addSearch.dispatchEvent('input');
+  const addSearchHtml = context.document.getElementById('add-list-container').innerHTML;
+  assert(addSearchHtml.includes('&lt;script&gt;alert(1)&lt;/script&gt;'), `searched text should be escaped in add-course empty state; got ${addSearchHtml}`);
+  assert(!addSearchHtml.includes('<script>alert(1)</script>'), `searched text must not render as HTML; got ${addSearchHtml}`);
+
+  openSwapModal('CSE 186', 'W', 0);
+  const swapHtml = context.document.getElementById('swap-content').innerHTML;
+  assert(swapHtml.includes('suggestion-empty-state'), `swap no-result state should use the product empty-state component; got ${swapHtml}`);
+  assert(swapHtml.includes('No replacement fits Winter right now'), `swap empty state should name the quarter; got ${swapHtml}`);
+  assert(swapHtml.includes('Keep CSE 186'), `swap empty state should explain the safe fallback; got ${swapHtml}`);
+  assert(swapHtml.includes('role="status"'), `swap empty state should be announced to assistive tech; got ${swapHtml}`);
+
+  const swapSearch = context.document.getElementById('swap-search-input');
+  swapSearch.value = 'biology & society';
+  swapSearch.dispatchEvent('input');
+  const swapSearchHtml = context.document.getElementById('swap-list-container').innerHTML;
+  assert(swapSearchHtml.includes('biology &amp; society'), `searched text should be escaped in swap empty state; got ${swapSearchHtml}`);
+}
+
 async function testTranscriptFilePickerRejectsNonPdfBeforeParsing() {
   const context = buildContext();
   loadApp(context);
@@ -368,6 +404,7 @@ const tests = [
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
   testGenerateFailureShowsFriendlyErrorAndCleansUp,
   testManualSuggestionModalsRenderReasonChips,
+  testManualSuggestionEmptyStatesGiveActionableGuidance,
   testTranscriptFilePickerRejectsNonPdfBeforeParsing,
   testTranscriptUploadSuccessAddsRecognizedCourses
 ];
