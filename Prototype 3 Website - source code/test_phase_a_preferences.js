@@ -232,6 +232,29 @@ function testPhaseBFillerPoolPrefersRemainingQuarterAvailability() {
   );
 }
 
+function testPhaseBFillerPoolExplanationIncludesAvailabilityScoresForConcentrationComparisons() {
+  const profile = makeProfile({
+    major: 'CS_BS',
+    concentration: 'cs_web_software',
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026,
+    geConcentration: null
+  });
+  const explained = Scheduler.generateWithExplanation(profile, { includeValidation: false });
+  const fillerExplanation = explained.explanation.phases.fillerPool;
+  assert.deepStrictEqual(
+    fillerExplanation.availabilityWindow,
+    ['S'],
+    'filler-pool explanation should expose the real remaining quarter window used by availability scoring'
+  );
+  assert(
+    fillerExplanation.availabilityScores['CSE 186'] > fillerExplanation.availabilityScores['CSE 187'],
+    `filler-pool explanation should show spring-offered CSE 186 outranking fall-only CSE 187 by availability; scores: ${JSON.stringify(fillerExplanation.availabilityScores)}`
+  );
+}
+
 function withTemporaryCourses(tempCourses, fn) {
   for (const [code, course] of Object.entries(tempCourses)) COURSES[code] = course;
   try {
@@ -363,6 +386,7 @@ const tests = [
   testPhaseBGEExplanationIncludesAvailabilityScoresForPickedCourses,
   testPhaseBElectiveRankingPrefersRemainingQuarterAvailability,
   testPhaseBFillerPoolPrefersRemainingQuarterAvailability,
+  testPhaseBFillerPoolExplanationIncludesAvailabilityScoresForConcentrationComparisons,
   testPhaseBAvailabilityScoringExcludesGapQuarters,
   testPhaseBAvailabilityScoringRanksEmptyQuartersBelowKnownOutOfWindowCourses,
   testPhaseBAddableSuggestionsPenalizeGapOnlyOfferings,

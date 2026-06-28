@@ -425,9 +425,23 @@ const Scheduler = {
     // --- Phase 7: Build filler pool ---
     const normalizedFillerPool = this.buildNormalizedFillerPool(profile, used, virtuallyPresent);
     const fillerPool = normalizedFillerPool || this.buildFillerPool(profile, used, virtuallyPresent);
+    const fillerAvailabilityCodes = new Set(fillerPool);
+    if (profile && profile.concentration && typeof CONCENTRATIONS !== "undefined") {
+      const majorGroups = CONCENTRATIONS.major && CONCENTRATIONS.major[majorId];
+      const activeGroup = Array.isArray(majorGroups)
+        ? majorGroups.find(group => group.id === profile.concentration)
+        : null;
+      if (activeGroup) (activeGroup.courses || []).forEach(code => fillerAvailabilityCodes.add(code));
+    }
+    const fillerAvailabilityScores = {};
+    for (const code of fillerAvailabilityCodes) {
+      if (COURSES[code]) fillerAvailabilityScores[code] = this.availabilityScore(code, profile);
+    }
     explanation.phases.fillerPool = {
       candidates: fillerPool.slice(),
-      count: fillerPool.length
+      count: fillerPool.length,
+      availabilityWindow: this.planningQuarterWindow(profile) || [],
+      availabilityScores: fillerAvailabilityScores
     };
 
     // --- Phase 8: Place into quarters ---
