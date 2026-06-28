@@ -380,7 +380,13 @@ function initTranscriptUpload() {
   // File selected via picker
   fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
-    if (file) handleTranscriptUpload(file);
+    if (file) {
+      if (isPdfTranscriptFile(file)) {
+        handleTranscriptUpload(file);
+      } else {
+        setTranscriptStatus("error", "Please choose a PDF file (.pdf).");
+      }
+    }
     fileInput.value = ""; // allow re-uploading same file
   });
 
@@ -397,12 +403,16 @@ function initTranscriptUpload() {
     dropZone.classList.remove("drag-over");
     const file = e.dataTransfer?.files?.[0];
     if (!file) return;
-    if (file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf")) {
+    if (isPdfTranscriptFile(file)) {
       handleTranscriptUpload(file);
     } else {
       setTranscriptStatus("error", "Please drop a PDF file (.pdf).");
     }
   });
+}
+
+function isPdfTranscriptFile(file) {
+  return file?.type === "application/pdf" || file?.name?.toLowerCase().endsWith(".pdf");
 }
 
 async function handleTranscriptUpload(file) {

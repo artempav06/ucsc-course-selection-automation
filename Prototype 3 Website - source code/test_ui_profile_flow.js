@@ -29,6 +29,7 @@ class FakeElement {
     this.checked = false;
     this.disabled = false;
     this.textContent = '';
+    this.files = [];
     this.attributes = {};
     this._innerHTML = '';
   }
@@ -307,25 +308,85 @@ function testManualSuggestionModalsRenderReasonChips() {
   assert(swapHtml.includes('Offered in Winter'), `swap reason label should be visible; got ${swapHtml}`);
 }
 
+async function testTranscriptFilePickerRejectsNonPdfBeforeParsing() {
+  const context = buildContext();
+  loadApp(context);
+  let getDocumentCalls = 0;
+  context.pdfjsLib = {
+    GlobalWorkerOptions: {},
+    getDocument() {
+      getDocumentCalls++;
+      return { promise: Promise.reject(new Error('parser should not run for non-PDF picker files')) };
+    }
+  };
+
+  const fileInput = context.document.getElementById('transcript-file-input');
+  fileInput.files = [{ name: 'courses.txt', type: 'text/plain', arrayBuffer: async () => new ArrayBuffer(0) }];
+  fileInput.dispatchEvent('change');
+  await Promise.resolve();
+
+  const status = context.document.getElementById('transcript-status');
+  assert.strictEqual(getDocumentCalls, 0, 'non-PDF picker files should be rejected before PDF.js parsing');
+  assert.strictEqual(status.className, 'transcript-status error', 'non-PDF picker files should show an error status');
+  assert(status.textContent.includes('PDF'), `non-PDF picker error should mention PDFs; got ${status.textContent}`);
+}
+
+function waitForMicrotasks() {
+  return new Promise(resolve => setImmediate(resolve));
+}
+
+async function testTranscriptUploadSuccessAddsRecognizedCourses() {
+  const context = buildContext();
+  const { AppState } = loadApp(context);
+  context.pdfjsLib = {
+    GlobalWorkerOptions: {},
+    getDocument() {
+      return {
+        promise: Promise.resolve({
+          numPages: 1,
+          getPage: async () => ({
+            getTextContent: async () => ({ items: [{ str: 'Completed CSE 186 and CSE 187 with passing grades.' }] })
+          })
+        })
+      };
+    }
+  };
+
+  const fileInput = context.document.getElementById('transcript-file-input');
+  fileInput.files = [{ name: 'transcript.pdf', type: 'application/pdf', arrayBuffer: async () => new ArrayBuffer(8) }];
+  fileInput.dispatchEvent('change');
+  await waitForMicrotasks();
+
+  const status = context.document.getElementById('transcript-status');
+  assert.deepStrictEqual([...AppState.profile.completedCourses].sort(), ['CSE 186', 'CSE 187'], 'recognized transcript courses should be added to completedCourses');
+  assert.strictEqual(status.className, 'transcript-status success', 'successful transcript parse should show success status');
+  assert(status.textContent.includes('Found 2 courses'), `success status should summarize found courses; got ${status.textContent}`);
+}
+
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
   testGenerateFailureShowsFriendlyErrorAndCleansUp,
-  testManualSuggestionModalsRenderReasonChips
+  testManualSuggestionModalsRenderReasonChips,
+  testTranscriptFilePickerRejectsNonPdfBeforeParsing,
+  testTranscriptUploadSuccessAddsRecognizedCourses
 ];
-let failed = 0;
-for (const test of tests) {
-  try {
-    test();
-    console.log(`PASS ${test.name}`);
-  } catch (err) {
-    failed++;
-    console.error(`FAIL ${test.name}: ${err.message}`);
-    console.error(err.stack);
+
+(async () => {
+  let failed = 0;
+  for (const test of tests) {
+    try {
+      await test();
+      console.log(`PASS ${test.name}`);
+    } catch (err) {
+      failed++;
+      console.error(`FAIL ${test.name}: ${err.message}`);
+      console.error(err.stack);
+    }
   }
-}
-if (failed) {
-  console.error(`\nUI profile-flow tests failed: ${failed}/${tests.length}`);
-  process.exit(1);
-}
-console.log(`\nUI profile-flow tests passed: ${tests.length}/${tests.length}`);
+  if (failed) {
+    console.error(`\nUI profile-flow tests failed: ${failed}/${tests.length}`);
+    process.exit(1);
+  }
+  console.log(`\nUI profile-flow tests passed: ${tests.length}/${tests.length}`);
+})();
