@@ -293,7 +293,7 @@ function exportDOCX() {
     sections: [{ children }]
   });
 
-  Packer.toBlob(docFile).then(blob => {
+  return Packer.toBlob(docFile).then(blob => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
