@@ -68,6 +68,25 @@ function quarterCalendarYear(q, academicStart) {
   return (q === "F") ? academicStart : academicStart + 1;
 }
 
+function compareCalendarQuarters(termA, yearA, termB, yearB) {
+  const calendarTermOrder = { W: 1, S: 2, SU: 3, F: 4 };
+  if (yearA !== yearB) return yearA - yearB;
+  return (calendarTermOrder[termA] || 0) - (calendarTermOrder[termB] || 0);
+}
+
+function targetQuarterLabel(profile) {
+  if (!profile?.targetGradTerm || !profile?.targetGradYear) return null;
+  return `${QUARTER_LABELS[profile.targetGradTerm] || profile.targetGradTerm} ${profile.targetGradYear}`;
+}
+
+function completionTiming(finalQuarter, finalQuarterCalYear, profile) {
+  if (!profile?.targetGradTerm || !profile?.targetGradYear || !finalQuarter) return "unknown";
+  const cmp = compareCalendarQuarters(finalQuarter, finalQuarterCalYear, profile.targetGradTerm, profile.targetGradYear);
+  if (cmp < 0) return "early";
+  if (cmp > 0) return "late";
+  return "target";
+}
+
 // Given current term + calendar year, compute the academic year start
 // (e.g. W 2027 → academic year starting 2026)
 function academicYearStartOf(term, calYear) {
@@ -816,16 +835,34 @@ function renderSchedule() {
     const yearHeader = document.createElement("div");
     yearHeader.className = "year-header";
     const acadRange = `${yearData.academicStart}–${yearData.academicStart + 1}`;
+    const quarterKeys = Object.keys(yearData.quarters);
+    const finalYearIdx = AppState.schedule.length - 1;
+    const finalQuarter = quarterKeys[quarterKeys.length - 1];
+    const finalQuarterCalYear = finalQuarter ? quarterCalendarYear(finalQuarter, yearData.academicStart) : yearData.academicStart;
+    const expectedQuarterCount = AppState.profile.includeSummer ? 4 : 3;
+    const targetLabel = targetQuarterLabel(AppState.profile);
+    const timing = completionTiming(finalQuarter, finalQuarterCalYear, AppState.profile);
+    const completionDetail = timing === "early" && targetLabel
+      ? `This plan finishes earlier than your ${targetLabel} target, so later target-quarter space is intentionally hidden instead of shown as an empty gap.`
+      : timing === "late" && targetLabel
+        ? `This plan needs an extra term beyond your ${targetLabel} target and finishes after ${QUARTER_LABELS[finalQuarter] || finalQuarter} ${finalQuarterCalYear}. Empty later quarters are hidden so the final year stays readable.`
+        : `This plan finishes after ${QUARTER_LABELS[finalQuarter] || finalQuarter} ${finalQuarterCalYear}, so empty later quarters are hidden instead of shown as blank space.`;
+    const isTerminalYear = yearIdx === finalYearIdx;
+    const isPartialCompletionYear = isTerminalYear
+      && AppState.validation?.allMet
+      && quarterKeys.length > 0
+      && quarterKeys.length < expectedQuarterCount;
+    if (isPartialCompletionYear) yearSection.classList.add("year-complete-partial");
     yearHeader.innerHTML = `
       <h3>${yearData.label} <span class="acad-year-range">(${acadRange})</span></h3>
+      ${isPartialCompletionYear ? `<p class="year-completion-note">✅ Program complete after ${QUARTER_LABELS[finalQuarter] || finalQuarter} ${finalQuarterCalYear}</p>` : ""}
     `;
     yearSection.appendChild(yearHeader);
 
     // Quarters in a row
     const quartersRow = document.createElement("div");
-    quartersRow.className = "quarters-row";
+    quartersRow.className = `quarters-row${isPartialCompletionYear ? " partial-year-row" : ""}`;
 
-    const quarterKeys = Object.keys(yearData.quarters);
     quarterKeys.forEach(q => {
       const courses = yearData.quarters[q];
       const quarterCol = document.createElement("div");
@@ -875,6 +912,16 @@ function renderSchedule() {
     });
 
     yearSection.appendChild(quartersRow);
+    if (isPartialCompletionYear) {
+      const completionCallout = document.createElement("div");
+      completionCallout.className = "schedule-completion-callout";
+      completionCallout.setAttribute("role", "status");
+      completionCallout.innerHTML = `
+        <strong>Graduation requirements satisfied.</strong>
+        ${escHTML(completionDetail)}
+      `;
+      yearSection.appendChild(completionCallout);
+    }
     container.appendChild(yearSection);
   });
 }

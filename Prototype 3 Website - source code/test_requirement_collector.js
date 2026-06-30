@@ -248,6 +248,46 @@ function testCollectorMajorSelectionAcceptsSerializedChooseGroupCourseSet() {
   );
 }
 
+function testCollectorPickNMaySelectVirtuallyPresentExplicitAlternatives() {
+  const collected = {
+    majorCategories: [
+      { type: 'all_required', courses: ['CORE_A'] },
+      { type: 'pick_one', courses: ['ALT_A', 'ALT_B'] },
+      { type: 'pick_n', courses: ['ALT_A', 'ALT_B', 'ALT_C', 'DONE'], n: 3 }
+    ],
+    chooseGroupCourses: new Set()
+  };
+  const courses = {
+    CORE_A: {},
+    ALT_A: {},
+    ALT_B: {},
+    ALT_C: {},
+    DONE: {}
+  };
+  let observedPickNPool = null;
+  let observedVirtualAlternatives = null;
+
+  const result = RequirementCollector.selectMajorCourses(collected, { completedCourses: ['DONE'] }, {
+    courses,
+    rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent) {
+      if (virtuallyPresent && virtuallyPresent.size > 0) {
+        observedPickNPool = pool.slice();
+        observedVirtualAlternatives = [...virtuallyPresent].sort();
+        assert(!pool.includes('ALT_A'), 'pick_n must exclude alternatives already used by pick_one');
+        assert(!pool.includes('DONE'), 'pick_n must exclude completed courses');
+        return ['ALT_B', 'ALT_C'];
+      }
+      return pool.slice();
+    }
+  });
+
+  assert.deepStrictEqual(result.selected, ['CORE_A', 'ALT_A', 'ALT_B']);
+  assert.deepStrictEqual(observedPickNPool, ['ALT_B', 'ALT_C']);
+  assert.deepStrictEqual(observedVirtualAlternatives, ['ALT_B']);
+  assert.deepStrictEqual(result.virtuallyPresent, ['ALT_B']);
+  assert.strictEqual(result.courseTypes.find(([code]) => code === 'ALT_B')[1], 'major_elective');
+}
+
 function assertCollectorMatchesLegacyForProfiles(profiles) {
   const failures = [];
   for (const { label, profile } of profiles) {
@@ -944,6 +984,7 @@ const tests = [
   testCollectorMajorSelectionPreservesCompletedCoursePathContinuity,
   testCollectorMajorSelectionHonorsConcentrationAndAvoidedCourses,
   testCollectorMajorSelectionAcceptsSerializedChooseGroupCourseSet,
+  testCollectorPickNMaySelectVirtuallyPresentExplicitAlternatives,
   testCollectorMajorSelectionMirrorsLegacyForAllSupportedMajorsDefaultProfiles,
   testCollectorMajorSelectionMirrorsLegacyForRepresentativeProfileMatrix,
   testSchedulerSelectMajorCoursesWrapperMirrorsLegacySelection,

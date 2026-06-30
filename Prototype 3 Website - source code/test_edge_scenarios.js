@@ -147,6 +147,31 @@ test('full-year gap honors the selected starting term', () => {
   assert(!gaps.includes('2028-W'), `full-year gap should start at selected Winter 2027, got ${gaps.join(', ')}`);
 });
 
+test('CS_BS web schedule can finish in Winter instead of leaving an unplanned final Winter gap before Spring', () => {
+  const profile = makeProfile({
+    major: 'CS_BS',
+    concentration: 'cs_web_software',
+    geConcentration: 'ge_tech_society',
+    completedCourses: ['CSE 20'],
+    priorCredits: 12,
+    elwrSatisfied: true,
+    includeSummer: true,
+    gapEnabled: true,
+    gapType: 'quarter',
+    gapTerm: 'W',
+    gapYear: 2028,
+    targetGradTerm: 'S',
+    targetGradYear: 2030
+  });
+  const schedule = Scheduler.generate(profile);
+  const validation = Validator.validateAll(schedule, profile);
+  const keys = quarterKeys(schedule);
+  const lastKey = keys[keys.length - 1];
+  assert(validation.allMet, 'expected generated CS_BS web schedule to satisfy all graduation requirements');
+  assert(lastKey === '2030-W', `expected schedule to trim to Winter 2030 completion instead of target Spring with an empty Winter gap, got last quarter ${lastKey}`);
+  assert(!keys.includes('2030-S'), `Spring 2030 should not render after Winter completion: ${keys.join(', ')}`);
+});
+
 test('AM_BS concentration IDs are unique and meaningful', () => {
   const ids = (CONCENTRATIONS.major.AM_BS || []).map(c => c.id);
   assert(ids.every(id => id && id !== '***'), `invalid AM_BS ids: ${ids.join(', ')}`);

@@ -514,8 +514,8 @@ const Scheduler = {
 
       case "pick_n": {
         const vp = virtuallyPresent || new Set();
-        const pool = (cat.courses || []).filter(c => !used.has(c) && COURSES[c] && !completedSet.has(c) && !vp.has(c));
-        const alreadySatisfied = (cat.courses || []).filter(c => completedSet.has(c) || used.has(c)).length;
+        const pool = cat.courses.filter(c => !used.has(c) && COURSES[c] && !completedSet.has(c));
+        const alreadySatisfied = cat.courses.filter(c => completedSet.has(c) || used.has(c)).length;
         const needed = Math.max(0, (cat.n || 1) - alreadySatisfied);
         if (needed === 0) break;
         const ranked = this.rankByConcentration(pool, concentration, profile, used, vp);
@@ -1204,6 +1204,62 @@ const Scheduler = {
     }
 
     // Do not synthesize anything beyond the minimum degree-unit padding above.
+    // If all graduation requirements are satisfied before the requested target
+    // term, graduate in that earlier quarter rather than rendering empty
+    // trailing quarters. A requested Spring target is a latest acceptable
+    // boundary, not a requirement to keep Winter/Spring visible when the plan is
+    // already complete.
+    const quarterOrder = includeSummer ? ["F", "W", "S", "SU"] : ["F", "W", "S"];
+    const clonePrefixThrough = (targetYi, targetQ) => schedule.slice(0, targetYi + 1).map((year, yi) => {
+      const copy = {
+        label: year.label,
+        academicStart: year.academicStart,
+        levelNum: year.levelNum,
+        quarters: {}
+      };
+      const limitIdx = yi === targetYi ? quarterOrder.indexOf(targetQ) : quarterOrder.length - 1;
+      for (let i = 0; i <= limitIdx; i++) {
+        const q = quarterOrder[i];
+        if (Object.prototype.hasOwnProperty.call(year.quarters, q)) copy.quarters[q] = [...year.quarters[q]];
+      }
+      return copy;
+    });
+
+    const prefixMeetsGraduationRequirements = candidate => {
+      const plannedFromCandidate = [];
+      for (const year of candidate) {
+        for (const quarter of Object.values(year.quarters)) {
+          plannedFromCandidate.push(...quarter.filter(code => code !== "_GAP"));
+        }
+      }
+      const completed = profile && profile.completedCourses ? profile.completedCourses : [];
+      const allCourses = [...plannedFromCandidate, ...completed];
+      const majorReqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
+      const majorResults = Validator.validateMajor(allCourses, majorReqs);
+      const geResults = Validator.validateGE(allCourses);
+      const ucResults = Validator.validateUC(allCourses, profile);
+      const scheduledSet = new Set(plannedFromCandidate);
+      let totalCandidateUnits = plannedFromCandidate.reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+      for (const code of completed) if (COURSES[code] && !scheduledSet.has(code)) totalCandidateUnits += COURSES[code].units;
+      totalCandidateUnits += (profile.priorCredits || 0);
+      const upperCandidateUnits = allCourses.reduce((sum, code) => sum + (COURSES[code]?.division === "upper" ? COURSES[code].units : 0), 0);
+      return majorResults.every(result => result.fulfilled)
+        && geResults.every(result => result.fulfilled)
+        && ucResults.every(result => result.fulfilled)
+        && totalCandidateUnits >= (majorReqs.totalUnitsRequired || 180)
+        && upperCandidateUnits >= (majorReqs.minUpperDivUnits || 0);
+    };
+
+    for (let yi = 0; yi < schedule.length; yi++) {
+      for (const q of quarterOrder) {
+        if (!Object.prototype.hasOwnProperty.call(schedule[yi].quarters, q)) continue;
+        const candidate = clonePrefixThrough(yi, q);
+        if (prefixMeetsGraduationRequirements(candidate)) {
+          return candidate;
+        }
+      }
+    }
+
     return schedule;
   },
 

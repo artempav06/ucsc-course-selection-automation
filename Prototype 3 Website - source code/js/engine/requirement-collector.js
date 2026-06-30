@@ -142,8 +142,15 @@
         }
         case 'pick_n': {
           const vp = virtuallyPresent || new Set();
+          // If a course is explicitly listed in a pick_n pool, it can be chosen
+          // as an additional elective even when it was also an unchosen
+          // alternative in another category. CS_BS capstone alternatives are the
+          // motivating case: the catalog allows capstones to count as one of the
+          // UD electives, so excluding every non-selected capstone alternative
+          // can force a later spring-only elective and create an avoidable idle
+          // final Winter quarter.
           const pool = (category.courses || [])
-            .filter(code => !used.has(code) && courses[code] && !completedSet.has(code) && !vp.has(code));
+            .filter(code => !used.has(code) && courses[code] && !completedSet.has(code));
           const alreadySatisfied = (category.courses || [])
             .filter(code => completedSet.has(code) || used.has(code)).length;
           const needed = Math.max(0, (category.n || 1) - alreadySatisfied);

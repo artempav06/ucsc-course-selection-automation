@@ -160,7 +160,7 @@ function buildContext() {
 
 function loadApp(context) {
   const appPath = path.join(__dirname, 'js/app.js');
-  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal };';
+  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal, renderSchedule };';
   vm.runInNewContext(code, context, { filename: 'js/app.js' });
   context.document.dispatchDOMContentLoaded();
   return context.__appExports;
@@ -223,6 +223,49 @@ function testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations() {
 
   assertProfileFlow(context.__captures.add, 'add-course suggestions');
   assertProfileFlow(context.__captures.swap, 'swap suggestions');
+}
+
+function testEarlyCompletionScheduleExplainsHiddenTargetQuarters() {
+  const context = buildContext();
+  const { AppState } = loadApp(context);
+  AppState.profile = { includeSummer: true, targetGradTerm: 'S', targetGradYear: 2030 };
+  AppState.validation = { allMet: true };
+  AppState.schedule = [{
+    label: 'Year 4 (Senior)',
+    academicStart: 2029,
+    quarters: { F: ['CSE 187'], W: ['CSE 186'] }
+  }];
+
+  context.__appExports.renderSchedule();
+
+  const scheduleGrid = context.document.getElementById('schedule-grid');
+  assert.strictEqual(scheduleGrid.children.length, 1, 'schedule should render one terminal year section');
+  const yearSection = scheduleGrid.children[0];
+  assert.strictEqual(yearSection.classList.contains('year-complete-partial'), true, 'partial terminal year should get an explicit styling hook');
+  assert(yearSection.children[0].innerHTML.includes('Program complete after Winter 2030'), `year header should explain the actual graduation quarter; got ${yearSection.children[0].innerHTML}`);
+  assert(yearSection.children[1].className.includes('partial-year-row'), 'partial terminal year should avoid rendering a blank unused column');
+  assert(yearSection.children[2].className.includes('schedule-completion-callout'), 'early completion should render a status callout below the final row');
+  assert(yearSection.children[2].innerHTML.includes('finishes earlier than your Spring 2030 target'), `early completion callout should distinguish early completion from extensions; got ${yearSection.children[2].innerHTML}`);
+  assert(yearSection.children[2].innerHTML.includes('later target-quarter space is intentionally hidden'), `completion callout should explain why Spring/Summer are absent; got ${yearSection.children[2].innerHTML}`);
+}
+
+function testExtendedPartialFinalYearDoesNotClaimEarlyCompletion() {
+  const context = buildContext();
+  const { AppState } = loadApp(context);
+  AppState.profile = { includeSummer: false, targetGradTerm: 'S', targetGradYear: 2030 };
+  AppState.validation = { allMet: true };
+  AppState.schedule = [{
+    label: 'Year 5 (5th Year)',
+    academicStart: 2030,
+    quarters: { F: ['FREE 3'] }
+  }];
+
+  context.__appExports.renderSchedule();
+
+  const yearSection = context.document.getElementById('schedule-grid').children[0];
+  assert(yearSection.children[0].innerHTML.includes('Program complete after Fall 2030'), `header should still state the actual completion term; got ${yearSection.children[0].innerHTML}`);
+  assert(yearSection.children[2].innerHTML.includes('needs an extra term beyond your Spring 2030 target'), `late partial final year should explain extension, not early completion; got ${yearSection.children[2].innerHTML}`);
+  assert(!yearSection.children[2].innerHTML.includes('finishes earlier than your Spring 2030 target'), `late completion must not use early-completion copy; got ${yearSection.children[2].innerHTML}`);
 }
 
 function testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady() {
@@ -401,6 +444,8 @@ async function testTranscriptUploadSuccessAddsRecognizedCourses() {
 
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
+  testEarlyCompletionScheduleExplainsHiddenTargetQuarters,
+  testExtendedPartialFinalYearDoesNotClaimEarlyCompletion,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
   testGenerateFailureShowsFriendlyErrorAndCleansUp,
   testManualSuggestionModalsRenderReasonChips,

@@ -39,10 +39,28 @@ function testPhoneBreakpointKeepsModalsWithinViewport() {
   assertContains(normalized, '.btn-close-modal { min-width: 44px; min-height: 44px;', 'modal close button should be a touch-sized target');
 }
 
+function testScheduleAddCourseButtonsAreDiscoverable() {
+  const normalized = compact(css);
+  assertContains(normalized, '.btn-add-course {', 'schedule columns should expose add-course actions');
+  assertContains(normalized, 'min-height: 40px;', 'add-course buttons should be tall enough to scan and click comfortably on desktop');
+  assertContains(normalized, 'border: 2px solid #003C6C;', 'add-course buttons should use a confident UCSC-blue outline instead of a low-contrast placeholder style');
+  assertContains(normalized, 'font-weight: 700;', 'add-course buttons should read as real actions, not muted helper text');
+  assertContains(normalized, '.btn-add-course:focus-visible', 'add-course buttons should have a keyboard-visible focus state');
+}
+
+function testEarlyCompletionYearsAvoidBlankColumns() {
+  const normalized = compact(css);
+  assertContains(normalized, '.quarters-row.partial-year-row { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));', 'partial terminal years should fill available width instead of leaving blank gray target-quarter columns');
+  assertContains(normalized, '.schedule-completion-callout {', 'partial completion should have a visible explanatory callout style');
+  assertContains(normalized, '.year-complete-partial .quarter-units.tier-over { background: #E3F2FD; color: #003C6C;', 'low-unit final completion quarters should not look like red overload/underload errors');
+}
+
 const tests = [
   testResponsiveViewportAndMobileBreakpointExist,
   testPhoneBreakpointStacksPrimaryControls,
-  testPhoneBreakpointKeepsModalsWithinViewport
+  testPhoneBreakpointKeepsModalsWithinViewport,
+  testScheduleAddCourseButtonsAreDiscoverable,
+  testEarlyCompletionYearsAvoidBlankColumns
 ];
 
 let failed = 0;
