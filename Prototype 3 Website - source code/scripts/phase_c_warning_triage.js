@@ -164,6 +164,64 @@ function top(map, n = 20) {
   return [...map.entries()].sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]))).slice(0, n);
 }
 
+function objectCounts(records, keyFn, limit = 30) {
+  const counts = new Map();
+  for (const record of records) increment(counts, keyFn(record));
+  return Object.fromEntries(top(counts, limit));
+}
+
+function noGapLengthRootCauses(record) {
+  const causes = [];
+  if (record.prefLabel === 'low-max-units') causes.push('lowMaxUnits');
+  if (!['freshman-fall', 'explicit'].includes(record.startLabel)) causes.push('compressedStart');
+  if (record.scheduledUnits > record.expectedYears * 3 * 19) causes.push('heavyScheduledUnits');
+  if (record.freeUnits > 0) causes.push('freePaddingContributes');
+  if ((record.phaseUnits?.major || 0) >= 140) causes.push('denseMajorRequirements');
+  if (record.years - record.expectedYears > 1) causes.push('multiYearOverrun');
+  if (causes.length === 0) causes.push('needsFocusedPlacementInspection');
+  return causes;
+}
+
+function summarizeNoGapLength(records) {
+  const noGapLengthRecords = records.filter(record =>
+    record.gapLabel === 'no-gap' && record.warnings.includes('schedule length exceeds selected window')
+  );
+  const rootCauseCounts = new Map();
+  const rootCauseByPref = new Map();
+  for (const record of noGapLengthRecords) {
+    for (const cause of noGapLengthRootCauses(record)) {
+      increment(rootCauseCounts, cause);
+      increment(rootCauseByPref, `${record.prefLabel} :: ${cause}`);
+    }
+  }
+  const summarizeExample = record => ({
+    scenario: record.scenario,
+    years: record.years,
+    expectedYears: record.expectedYears,
+    scheduledUnits: record.scheduledUnits,
+    freeUnits: record.freeUnits,
+    phaseUnits: record.phaseUnits,
+    rootCauses: noGapLengthRootCauses(record),
+    maxMajorQuarter: record.maxMajorQuarter?.maxQuarter?.label || null
+  });
+  const bySeverity = noGapLengthRecords.slice()
+    .sort((a, b) => (
+      ((b.years - b.expectedYears) - (a.years - a.expectedYears)) ||
+      (b.freeUnits - a.freeUnits) ||
+      ((b.phaseUnits?.major || 0) - (a.phaseUnits?.major || 0))
+    ));
+  return {
+    count: noGapLengthRecords.length,
+    byMajor: objectCounts(noGapLengthRecords, record => record.major),
+    byStart: objectCounts(noGapLengthRecords, record => record.startLabel),
+    byPref: objectCounts(noGapLengthRecords, record => record.prefLabel),
+    rootCauseCounts: Object.fromEntries(top(rootCauseCounts, 20)),
+    rootCauseByPref: Object.fromEntries(top(rootCauseByPref, 20)),
+    representativeExamples: bySeverity.slice(0, 10).map(summarizeExample),
+    standardExamples: bySeverity.filter(record => record.prefLabel === 'standard').slice(0, 10).map(summarizeExample)
+  };
+}
+
 function summarizeRecord(profile, schedule, validation, explanation, warnings) {
   const scheduled = plannedCourses(schedule, true);
   const byTypeUnits = {};
@@ -175,6 +233,10 @@ function summarizeRecord(profile, schedule, validation, explanation, warnings) {
   const freeCourses = scheduled.filter(code => String(code).startsWith('FREE'));
   return {
     scenario: profile.scenarioLabel,
+    major: profile.major,
+    startLabel: profile.startLabel || 'unknown',
+    prefLabel: profile.prefLabel || 'unknown',
+    gapLabel: profile.gapLabel || 'unknown',
     warnings,
     years: schedule.length,
     expectedYears: yearsExpected(profile),
@@ -248,6 +310,7 @@ function main() {
     topBucketByPref: Object.fromEntries(top(bucketByPref, 20)),
     topBucketByGap: Object.fromEntries(top(bucketByGap, 20)),
     lengthOverrun: Object.fromEntries(top(lengthOverrun, 10)),
+    noGapLengthTriage: summarizeNoGapLength(records),
     highUnitInputs: Object.fromEntries(top(highUnitInputs, 20)),
     severeHighUnitExamples: bySeverity.filter(r => r.warnings.includes('high scheduled units')).slice(0, 8),
     densityExamples: records.filter(r => r.warnings.includes('major-course density exceeds target')).slice(0, 8),
