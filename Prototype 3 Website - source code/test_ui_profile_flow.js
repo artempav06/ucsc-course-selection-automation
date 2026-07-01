@@ -160,7 +160,7 @@ function buildContext() {
 
 function loadApp(context) {
   const appPath = path.join(__dirname, 'js/app.js');
-  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal, renderSchedule };';
+  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal, renderSchedule, showValidationAlerts };';
   vm.runInNewContext(code, context, { filename: 'js/app.js' });
   context.document.dispatchDOMContentLoaded();
   return context.__appExports;
@@ -320,6 +320,56 @@ function testGenerateFailureShowsFriendlyErrorAndCleansUp() {
   assert(alertBox.innerHTML.includes('We couldn\'t build your schedule'), `generation failure alert should be student-friendly; got ${alertBox.innerHTML}`);
 }
 
+function testValidationAlertsExplainLateButCompleteSchedules() {
+  const context = buildContext();
+  const { AppState, showValidationAlerts } = loadApp(context);
+  AppState.profile = { targetGradTerm: 'S', targetGradYear: 2030 };
+  AppState.validation = {
+    allMet: true,
+    totalUnits: 180,
+    totalUnitsMet: true,
+    upperDivUnits: 60,
+    upperDivMet: true,
+    priorCredits: 0,
+    completedUnits: 0,
+    majorReqs: { catalogUrl: 'https://catalog.ucsc.edu/test', totalUnitsRequired: 180, minUpperDivUnits: 60 },
+    major: [], ge: [], uc: []
+  };
+  AppState.schedule = [{ label: 'Year 5', academicStart: 2030, quarters: { F: ['CSE 187'] } }];
+
+  showValidationAlerts();
+
+  const html = context.document.getElementById('alert-box').innerHTML;
+  assert(html.includes('All requirements are met'), `complete schedule should still show success; got ${html}`);
+  assert(html.includes('alert-timing-note'), `late complete schedule should include a timing note; got ${html}`);
+  assert(html.includes('finishes in Fall 2030'), `timing note should name the actual completion term; got ${html}`);
+  assert(html.includes('after your Spring 2030 target'), `timing note should compare against the target; got ${html}`);
+  assert(html.includes('late start, gap quarters, low max units'), `timing note should explain likely student constraints; got ${html}`);
+}
+
+function testValidationWarningTextIsEscaped() {
+  const context = buildContext();
+  const { AppState, showValidationAlerts } = loadApp(context);
+  AppState.profile = {};
+  AppState.schedule = [];
+  AppState.validation = {
+    allMet: false,
+    totalUnits: 50,
+    totalUnitsMet: false,
+    upperDivUnits: 0,
+    upperDivMet: false,
+    majorReqs: { totalUnitsRequired: 180, minUpperDivUnits: 60 },
+    major: [{ name: '<script>alert(1)</script>', fulfilled: false }],
+    ge: [], uc: []
+  };
+
+  showValidationAlerts();
+
+  const html = context.document.getElementById('alert-box').innerHTML;
+  assert(html.includes('&lt;script&gt;alert(1)&lt;/script&gt;'), `warning text should be escaped; got ${html}`);
+  assert(!html.includes('<script>alert(1)</script>'), `warning text must not render HTML; got ${html}`);
+}
+
 function testManualSuggestionModalsRenderReasonChips() {
   const context = buildContext();
   const { AppState, openAddCourseModal, openSwapModal } = loadApp(context);
@@ -448,6 +498,8 @@ const tests = [
   testExtendedPartialFinalYearDoesNotClaimEarlyCompletion,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
   testGenerateFailureShowsFriendlyErrorAndCleansUp,
+  testValidationAlertsExplainLateButCompleteSchedules,
+  testValidationWarningTextIsEscaped,
   testManualSuggestionModalsRenderReasonChips,
   testManualSuggestionEmptyStatesGiveActionableGuidance,
   testTranscriptFilePickerRejectsNonPdfBeforeParsing,

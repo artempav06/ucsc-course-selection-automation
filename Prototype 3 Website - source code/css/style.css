@@ -803,6 +803,15 @@ h1, h2, h3, h4 { line-height: 1.3; }
   font-size: 14px;
 }
 
+.alert-timing-note {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(21, 87, 36, 0.18);
+  line-height: 1.45;
+}
+
 .alert-error {
   background: #FDECEA;
   border: 1px solid #F5C2C7;

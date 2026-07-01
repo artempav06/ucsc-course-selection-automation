@@ -215,7 +215,8 @@ function main() {
     const warnings = [];
     if (schedule.length > yearsExpected(profile)) warnings.push('schedule length exceeds selected window');
     if (maxMajorQuarter(schedule).max > 3) warnings.push('major-course density exceeds target');
-    if (validation.totalUnits > 210) warnings.push('high total units');
+    const scheduledUnits = units(plannedCourses(schedule, true));
+    if (scheduledUnits > 210) warnings.push('high scheduled units');
     for (const bucket of warnings) {
       increment(bucketCounts, bucket);
       increment(bucketByMajor, `${bucket} :: ${profile.major}`);
@@ -226,7 +227,7 @@ function main() {
     if (warnings.includes('schedule length exceeds selected window')) {
       increment(lengthOverrun, `${schedule.length - yearsExpected(profile)} year over`);
     }
-    if (warnings.includes('high total units')) {
+    if (warnings.includes('high scheduled units')) {
       increment(highUnitInputs, `prior=${profile.priorCredits || 0} completedUnits=${units(profile.completedCourses || [])}`);
     }
     if (warnings.length) records.push(summarizeRecord(profile, schedule, validation, explanation, warnings));
@@ -248,7 +249,7 @@ function main() {
     topBucketByGap: Object.fromEntries(top(bucketByGap, 20)),
     lengthOverrun: Object.fromEntries(top(lengthOverrun, 10)),
     highUnitInputs: Object.fromEntries(top(highUnitInputs, 20)),
-    severeHighUnitExamples: bySeverity.filter(r => r.warnings.includes('high total units')).slice(0, 8),
+    severeHighUnitExamples: bySeverity.filter(r => r.warnings.includes('high scheduled units')).slice(0, 8),
     densityExamples: records.filter(r => r.warnings.includes('major-course density exceeds target')).slice(0, 8),
     lengthExamples: records.filter(r => r.warnings.includes('schedule length exceeds selected window')).slice(0, 8)
   };

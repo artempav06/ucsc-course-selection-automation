@@ -37,15 +37,19 @@ function makeProfile(overrides = {}) {
   }, overrides);
 }
 
-function plannedCourses(schedule) {
+function plannedCourses(schedule, includeFree = false) {
   const out = [];
   for (const year of schedule) {
     for (const q of ['F','W','S','SU']) {
       const arr = year.quarters[q] || [];
-      out.push(...arr.filter(c => c !== '_GAP' && !String(c).startsWith('FREE')));
+      out.push(...arr.filter(c => c !== '_GAP' && (includeFree || !String(c).startsWith('FREE'))));
     }
   }
   return out;
+}
+
+function units(codes) {
+  return (codes || []).reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
 }
 
 function isLabCoreqSatisfied(code, sameQuarter, completedBefore) {
@@ -239,7 +243,8 @@ function validateProfile(profile) {
   const expectedYears = yearsExpected(profile);
   if (schedule.length > expectedYears) warnings.push(`schedule length ${schedule.length}>window ${expectedYears}`);
   if (maxMajorQuarter(schedule) > 3) warnings.push(`max major quarter ${maxMajorQuarter(schedule)}>3`);
-  if (validation.totalUnits > 210) warnings.push(`high total units ${validation.totalUnits}`);
+  const scheduledUnits = units(plannedCourses(schedule, true));
+  if (scheduledUnits > 210) warnings.push(`high scheduled units ${scheduledUnits} (total with prior/completed ${validation.totalUnits})`);
 
   return { schedule, validation, issues, warnings };
 }
@@ -247,7 +252,7 @@ function validateProfile(profile) {
 function warningBucket(message) {
   if (/^schedule length /.test(message)) return 'schedule length exceeds selected window';
   if (/^max major quarter /.test(message)) return 'major-course density exceeds target';
-  if (/^high total units /.test(message)) return 'high total units';
+  if (/^high scheduled units /.test(message)) return 'high scheduled units';
   return message.replace(/\d+/g, '#');
 }
 

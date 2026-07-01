@@ -544,11 +544,41 @@ const Scheduler = {
   },
 
   planningQuarterWindow(profile) {
-    return RequirementCollector.planningQuarterWindow(profile);
+    if (typeof RequirementCollector !== "undefined" && RequirementCollector.planningQuarterWindow) {
+      return RequirementCollector.planningQuarterWindow(profile);
+    }
+    if (!profile) return [];
+    const termOrder = ["F", "W", "S", "SU"];
+    const startYear = this.academicYear(profile.currentTerm || "F", profile.currentYear || 2026);
+    const endYear = this.academicYear(profile.targetGradTerm || "S", profile.targetGradYear || (startYear + 4));
+    const window = [];
+    for (let academicStart = startYear; academicStart <= endYear; academicStart++) {
+      for (const term of termOrder) {
+        if (term === "SU" && !profile.includeSummer) continue;
+        const calYear = this.calendarYear(term, academicStart);
+        if (this.compareTerm(term, calYear, profile.currentTerm || "F", profile.currentYear || 2026) < 0) continue;
+        if (this.compareTerm(term, calYear, profile.targetGradTerm || "S", profile.targetGradYear || (startYear + 4)) > 0) continue;
+        if (this.isGapTerm(profile, term, calYear)) continue;
+        window.push(term);
+      }
+    }
+    return window;
   },
 
   availabilityScore(code, profile) {
-    return RequirementCollector.availabilityScore(code, profile, COURSES);
+    if (typeof RequirementCollector !== "undefined" && RequirementCollector.availabilityScore) {
+      return RequirementCollector.availabilityScore(code, profile, COURSES);
+    }
+    const window = this.planningQuarterWindow(profile);
+    const offered = COURSES[code] && COURSES[code].quarters;
+    if (!window) return 0;
+    if (!offered || offered.length === 0) return -20000;
+    const firstIndex = window.findIndex(q => offered.includes(q));
+    if (firstIndex === -1) return -10000;
+    const offeredSet = new Set(offered);
+    const inWindowOfferings = window.filter(q => offeredSet.has(q)).length;
+    const termFlexibility = new Set(offered.filter(q => window.includes(q))).size;
+    return 1000 - (firstIndex * 2) + (inWindowOfferings * 0.05) + (termFlexibility * 0.25);
   },
 
   missingPrereqCost(code, knownSet, virtuallyPresent, visiting = new Set()) {

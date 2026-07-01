@@ -115,6 +115,17 @@ const reAutonomousFullYearGap = runCase('RE_BS', 're_autonomous', {
   requireNoPrereqViolations: false
 });
 const eeSignals = runCase('EE_BS', 'ee_signals_comm', { requireAllMajor: false });
+const csAiWinterStart = runCase('CS_BS', 'cs_ai_ml', {
+  profile: {
+    currentTerm: 'W',
+    currentYear: 2027,
+    targetGradTerm: 'S',
+    targetGradYear: 2030,
+    geConcentration: null,
+    priorCredits: 15
+  },
+  maxYears: 4
+});
 const timAvoided = runCase('TIM_BS', 'tim_entrepreneurship', {
   profile: { avoidedCourses: ['TIM 171', 'TIM 174'] }
 });
@@ -128,7 +139,7 @@ if (timAvoidedCourses.includes('TIM 171') || timAvoidedCourses.includes('TIM 174
   timAvoided.errors.push('expected avoidedCourses TIM 171/TIM 174 not to be selected when alternatives exist');
 }
 let failed = 0;
-for (const result of [am, tim, timSystems, timFinance, reAutonomous, reAutonomousFullYearGap, eeSignals, timAvoided]) {
+for (const result of [am, tim, timSystems, timFinance, reAutonomous, reAutonomousFullYearGap, eeSignals, csAiWinterStart, timAvoided]) {
   if (result.errors.length) {
     failed++;
     console.error(`FAIL ${result.major}/${result.concentration}: ${result.errors.join(' | ')}`);

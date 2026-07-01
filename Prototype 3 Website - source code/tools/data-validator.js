@@ -82,7 +82,8 @@ function validateCourse(code, course, courses, errors, warnings, options) {
   }
 
   if (typeof course.rmpScore !== 'number' || Number.isNaN(course.rmpScore)) add(errors, `${location}.rmpScore must be a number`);
-  if (!course.catalogUrl) addWarning(warnings, `${location} missing catalogUrl`);
+  const isSyntheticFreeElective = /^FREE(?:\s+|\s*\d*U)\d+$/i.test(code);
+  if (!course.catalogUrl && !isSyntheticFreeElective) addWarning(warnings, `${location} missing catalogUrl`);
   if (course.labCoreq && !courses[course.labCoreq]) add(errors, `${location} references unknown labCoreq ${course.labCoreq}`);
 }
 

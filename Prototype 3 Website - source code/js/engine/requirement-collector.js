@@ -264,7 +264,15 @@
     if (!offered || offered.length === 0) return -20000;
     const firstIndex = window.findIndex(q => offered.includes(q));
     if (firstIndex === -1) return -10000;
-    return 1000 - (firstIndex * 2);
+
+    // Favor courses that are not just available soon, but also flexible later in
+    // the student's remaining window. A high-RMP GE that is only offered in one
+    // tight season can crowd out a required major course with the same season and
+    // force an avoidable extra year; broad F/W/S options are safer schedule glue.
+    const offeredSet = new Set(offered);
+    const inWindowOfferings = window.filter(q => offeredSet.has(q)).length;
+    const termFlexibility = new Set(offered.filter(q => window.includes(q))).size;
+    return 1000 - (firstIndex * 2) + (inWindowOfferings * 0.05) + (termFlexibility * 0.25);
   }
 
   function selectGECourses(collected, profile, state = {}, helpers = {}) {

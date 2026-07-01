@@ -31,6 +31,7 @@ const COURSES = {
     units: 7, division: "lower",
     prereqs: [["CSE 20", "CSE 30", "CSE 5J", "BME 160"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-12",
     desc: "Introduction to computer systems and assembly language programming. Covers number systems, digital logic, memory, and processor architecture.",
     section: ["CS_LD_CORE"], rmpScore: 3.8
   },
@@ -40,6 +41,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19A", "MATH 20A", "MATH 19B", "MATH 20B"]],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-16",
     desc: "Introduction to discrete mathematical structures including sets, relations, functions, graphs, and formal logic. Applications to CS.",
     section: ["CS_LD_CORE"], rmpScore: 3.5
   },
@@ -49,6 +51,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-20",
     desc: "Introductory programming course using Python. Covers variables, control flow, functions, data structures, and problem solving.",
     section: ["CS_LD_CORE"], rmpScore: 4.0
   },
@@ -58,6 +61,7 @@ const COURSES = {
     units: 7, division: "lower",
     prereqs: [["CSE 20", "BME 160"], ["MATH 19A", "MATH 20A", "MATH 3", "AM 11A", "MATH 11A"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-30",
     desc: "Intermediate programming concepts: abstract data types, recursion, linked lists, stacks, queues, trees, sorting, and searching.",
     section: ["CS_LD_CORE"], rmpScore: 3.9
   },
@@ -67,6 +71,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19B", "MATH 20B"], ["CSE 30"]],
     ge: "SR", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-40",
     desc: "Introduction to machine learning: data analysis, decision trees, statistical reasoning, and basic model evaluation.",
     section: ["CS_LD_CORE"], rmpScore: 3.7
   },
@@ -78,6 +83,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-19a",
     desc: "Limits, continuity, differentiation of algebraic and trigonometric functions, applications of the derivative.",
     section: ["MATH_CALC"], rmpScore: 3.6
   },
@@ -87,6 +93,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19A", "MATH 20A", "MATH 11A"]],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-19b",
     desc: "Integration, techniques of integration, areas, volumes, sequences and series, Taylor series.",
     section: ["MATH_CALC"], rmpScore: 3.4
   },
@@ -96,6 +103,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "MF", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-20a",
     desc: "Honors-level treatment of single-variable calculus: limits, differentiation, applications.",
     section: ["MATH_CALC"], rmpScore: 3.3
   },
@@ -105,6 +113,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 20A"]],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-20b",
     desc: "Honors-level treatment of integration, techniques, series, and Taylor expansions.",
     section: ["MATH_CALC"], rmpScore: 3.2
   },
@@ -114,6 +123,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19A", "MATH 20A"]],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/lower-division/am-10",
     desc: "Introduction to linear algebra: vectors, matrices, linear systems, determinants, eigenvalues.",
     section: ["MATH_LIN_ALG"], rmpScore: 3.5
   },
@@ -123,6 +133,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19A", "MATH 20A", "MATH 3", "AM 11A", "MATH 11A"]],
     ge: "MF", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-21",
     desc: "Systems of linear equations, matrices, determinants, vector spaces, eigenvalues and eigenvectors.",
     section: ["MATH_LIN_ALG"], rmpScore: 3.6
   },
@@ -134,6 +145,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 12", "BME 160"], ["CSE 16"], ["CSE 30"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101",
     desc: "Abstract data types, trees, graphs, sorting, searching, algorithm design and analysis. Prerequisite for most upper-division CS courses.",
     section: ["UD_CORE"], rmpScore: 3.4
   },
@@ -143,6 +155,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 16"], ["CSE 20", "BME 160"], ["CSE 30"]],
     ge: null, quarters: ["F"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101p",
     desc: "Practice-focused approach to data structures and algorithms. Restricted to CS BA and bioinformatics majors.",
     section: ["UD_CORE"], rmpScore: 3.6
   },
@@ -154,6 +167,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-101m",
     desc: "Mathematical tools for data science: probability, statistics, optimization, and information theory.",
     section: ["BREADTH_A"], rmpScore: 3.5
   },
@@ -163,6 +177,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101M"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-102",
     desc: "Advanced algorithm design: dynamic programming, greedy algorithms, amortized analysis, NP-completeness.",
     section: ["BREADTH_A"], rmpScore: 3.3
   },
@@ -172,6 +187,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101M"]],
     ge: null, quarters: ["W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-103",
     desc: "Formal languages, automata, Turing machines, computability, and complexity theory.",
     section: ["BREADTH_A"], rmpScore: 3.2
   },
@@ -181,6 +197,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-112",
     desc: "Study of programming language paradigms: functional, object-oriented, logic, and scripting languages.",
     section: ["BREADTH_A"], rmpScore: 3.7
   },
@@ -190,6 +207,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"]],
     ge: null, quarters: ["F","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-114a",
     desc: "Formal semantics, type systems, lambda calculus, and programming language theory.",
     section: ["BREADTH_A"], rmpScore: 3.4
   },
@@ -199,6 +217,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["F","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-118",
     desc: "Design and development of mobile applications. Covers mobile UI, sensors, location services, and platform APIs.",
     section: ["BREADTH_A"], rmpScore: 4.0
   },
@@ -208,6 +227,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 12"], ["CSE 30"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-120",
     desc: "Processor design, pipelining, memory hierarchy, cache, and I/O systems.",
     section: ["BREADTH_A"], rmpScore: 3.6
   },
@@ -217,6 +237,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"], ["CSE 40", "STAT 132"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-140",
     desc: "Search, knowledge representation, reasoning, planning, machine learning, and natural language understanding.",
     section: ["BREADTH_A", "CAPSTONE"], rmpScore: 3.8
   },
@@ -226,6 +247,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 40", "STAT 132"], ["CSE 101", "CSE 101P"], ["AM 10", "MATH 21"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-142",
     desc: "Supervised and unsupervised learning, neural networks, SVMs, ensemble methods, and practical ML applications.",
     section: ["BREADTH_A"], rmpScore: 3.9
   },
@@ -235,6 +257,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"], ["CSE 40"]],
     ge: null, quarters: ["W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-143",
     desc: "Text processing, language models, parsing, sentiment analysis, information extraction.",
     section: ["BREADTH_A", "CAPSTONE"], rmpScore: 3.7
   },
@@ -244,6 +267,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 40", "STAT 132"], ["CSE 101", "CSE 101P"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-144",
     desc: "Hands-on machine learning: feature engineering, model selection, deep learning, and real-world ML projects.",
     section: ["BREADTH_A", "CAPSTONE"], rmpScore: 4.0
   },
@@ -253,6 +277,7 @@ const COURSES = {
     units: 7, division: "upper",
     prereqs: [["CSE 16"], ["CSE 12"], ["CSE 30"]],
     ge: null, quarters: ["F","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-150",
     desc: "Network architecture, protocols, TCP/IP, routing, network security, and applications.",
     section: ["BREADTH_A"], rmpScore: 3.5
   },
@@ -262,6 +287,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 30"]],
     ge: "PR-E", quarters: ["F","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-183",
     desc: "Design and development of web applications: HTML, CSS, JavaScript, databases, server-side programming.",
     section: ["BREADTH_A", "CAPSTONE"], rmpScore: 4.1
   },
@@ -271,6 +297,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-184",
     desc: "Data collection, cleaning, transformation, and analysis using web scraping and API techniques.",
     section: ["BREADTH_A", "CAPSTONE"], rmpScore: 3.9
   },
@@ -282,6 +309,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 12"], ["CSE 101"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-110a",
     desc: "Lexical analysis, parsing, type checking, code generation, and optimization.",
     section: ["BREADTH_B", "CAPSTONE"], rmpScore: 3.3
   },
@@ -291,6 +319,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 12"], ["CSE 101"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-130",
     desc: "Systems programming, concurrency, synchronization, networking, and distributed systems fundamentals.",
     section: ["BREADTH_B"], rmpScore: 3.5
   },
@@ -300,6 +329,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 130"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-132",
     desc: "Security principles, cryptography, authentication, access control, network and software security.",
     section: ["BREADTH_B"], rmpScore: 3.8
   },
@@ -309,6 +339,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 120"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-134",
     desc: "Design and implementation of operating systems for embedded and resource-constrained environments.",
     section: ["BREADTH_B", "CAPSTONE"], rmpScore: 3.4
   },
@@ -318,6 +349,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 130"]],
     ge: null, quarters: ["W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-138",
     desc: "Distributed computing: consensus, replication, fault tolerance, distributed storage, and consistency.",
     section: ["BREADTH_B", "CAPSTONE"], rmpScore: 4.2
   },
@@ -327,6 +359,7 @@ const COURSES = {
     units: 7, division: "upper",
     prereqs: [["CSE 101"], ["MATH 21", "AM 10"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-160",
     desc: "3D graphics pipeline, transformations, shading, texturing, and rendering algorithms.",
     section: ["BREADTH_B", "CAPSTONE"], rmpScore: 3.6
   },
@@ -336,6 +369,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-180",
     desc: "Relational model, SQL, database design, normalization, indexing, and query processing.",
     section: ["BREADTH_B"], rmpScore: 3.7
   },
@@ -345,6 +379,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101", "CSE 101P"], ["CSE 180"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-186",
     desc: "End-to-end web development: front-end frameworks, RESTful APIs, databases, and deployment.",
     section: ["BREADTH_B"], rmpScore: 4.0
   },
@@ -356,6 +391,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"], ["CSE 130"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115a",
     desc: "Software development lifecycle, agile methods, requirements, design, testing, and team collaboration.",
     section: ["DC"], rmpScore: 3.5
   },
@@ -365,6 +401,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 12", "CSE 30", "CSE 20", "BME 160"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185e",
     desc: "Technical writing skills for engineering: reports, proposals, documentation, and presentations.",
     section: ["DC"], rmpScore: 3.6
   },
@@ -383,6 +420,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-195",
     desc: "Independent research project under faculty supervision resulting in a thesis document.",
     section: ["DC", "CAPSTONE"], rmpScore: 4.0
   },
@@ -394,6 +432,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 115A"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115c",
     desc: "Continuation of software engineering project. Iterative development, testing, and deployment.",
     section: ["CAPSTONE"], rmpScore: 3.8
   },
@@ -403,6 +442,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 115A"]],
     ge: "PR-E", quarters: ["F"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-115d",
     desc: "Final phase of software engineering project. Polish, presentation, and delivery.",
     section: ["CAPSTONE"], rmpScore: 3.9
   },
@@ -412,6 +452,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 30"], ["AM 10", "MATH 21"], ["CSE 16"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-145",
     desc: "Data mining techniques: classification, clustering, association rules, and pattern discovery.",
     section: ["CAPSTONE"], rmpScore: 3.7
   },
@@ -421,6 +462,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-163",
     desc: "Data visualization programming with D3.js and other tools. Interactive visual analytics.",
     section: ["CAPSTONE"], rmpScore: 4.1
   },
@@ -430,6 +472,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 180"], ["CSE 130"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-181",
     desc: "Advanced database topics: distributed databases, NoSQL, transactions, and recovery.",
     section: ["CAPSTONE"], rmpScore: 3.6
   },
@@ -439,6 +482,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 186"]],
     ge: "PR-E", quarters: ["F"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-187",
     desc: "User-centered design, usability testing, interaction design, and UX research methods.",
     section: ["CAPSTONE"], rmpScore: 4.2
   },
@@ -459,6 +503,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-110",
     desc: "Primes, congruences, quadratic reciprocity, and number-theoretic functions. Applications to cryptography.",
     section: ["ELECTIVE"], rmpScore: 3.5
   },
@@ -468,6 +513,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["MATH 21", "AM 10"], ["CSE 101"]],
     ge: null, quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-115",
     desc: "Graphs, trees, matchings, connectivity, coloring, planarity, and network flow.",
     section: ["ELECTIVE"], rmpScore: 3.6
   },
@@ -477,6 +523,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: null, quarters: ["W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-116",
     desc: "Enumerative combinatorics, generating functions, Polya counting, and Ramsey theory.",
     section: ["ELECTIVE"], rmpScore: 3.4
   },
@@ -486,6 +533,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [],
     ge: "MF", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-112",
     desc: "Computational approaches to linguistic analysis, including formal grammars and NLP techniques.",
     section: ["ELECTIVE"], rmpScore: 3.8
   },
@@ -495,6 +543,7 @@ const COURSES = {
     units: 5, division: "upper",
     prereqs: [["CSE 101"]],
     ge: "PR-C", quarters: ["S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-170a",
     desc: "Digital media creation tools and techniques. Film and interactive media production.",
     section: ["ELECTIVE"], rmpScore: 4.0
   },
@@ -507,6 +556,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "CC", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/lower-division/anth-1",
     desc: "Human evolution, genetics, primatology, and biological variation across cultures.",
     section: ["GE"], rmpScore: 3.9
   },
@@ -515,6 +565,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "CC", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/lower-division/socy-15",
     desc: "Sociological analysis of everyday interactions, identity, and cultural practices.",
     section: ["GE"], rmpScore: 4.0
   },
@@ -523,6 +574,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "CC", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/lower-division/lals-1",
     desc: "Interdisciplinary study of Latin American and Latino/a cultures, histories, and societies.",
     section: ["GE"], rmpScore: 4.1
   },
@@ -533,6 +585,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "ER", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/lower-division/cres-10",
     desc: "Critical examination of race, ethnicity, and their intersections with power and inequality.",
     section: ["GE"], rmpScore: 4.0
   },
@@ -541,6 +594,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "ER", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-10b",
     desc: "US history from Reconstruction to the present. Covers political, social, and cultural developments.",
     section: ["GE"], rmpScore: 3.8,
     alsoSatisfies: ["AH", "AI"]
@@ -560,6 +614,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "IM", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-20a",
     desc: "Film analysis, visual storytelling, and introduction to cinema history and theory.",
     section: ["GE"], rmpScore: 4.2
   },
@@ -578,6 +633,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["MATH 19A", "MATH 20A"]],
     ge: "SI", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-6a",
     desc: "Mechanics, energy, thermodynamics. Calculus-based introductory physics.",
     section: ["GE"], rmpScore: 3.4
   },
@@ -586,6 +642,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "SI", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1a",
     desc: "Atomic structure, chemical bonding, stoichiometry, states of matter, and thermodynamics.",
     section: ["GE"], rmpScore: 3.3
   },
@@ -594,6 +651,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "SI", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/lower-division/bioe-20b",
     desc: "Principles of ecology, evolutionary biology, and biodiversity.",
     section: ["GE"], rmpScore: 3.7
   },
@@ -604,6 +662,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "TA", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/lower-division/writ-1",
     desc: "Academic writing fundamentals: analysis, argumentation, evidence, and revision.",
     section: ["GE"], rmpScore: 3.6
   },
@@ -612,6 +671,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "TA", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-1",
     desc: "Reading and writing essays. Exploration of essay forms and analytical writing techniques.",
     section: ["GE"], rmpScore: 3.8
   },
@@ -620,6 +680,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "TA", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/lower-division/phil-9",
     desc: "Logical reasoning, argument analysis, informal fallacies, and critical thinking skills.",
     section: ["GE"], rmpScore: 3.9
   },
@@ -630,6 +691,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "PE-E", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/lower-division/envs-23",
     desc: "Overview of environmental issues: ecology, conservation, policy, and sustainability.",
     section: ["GE"], rmpScore: 4.0
   },
@@ -638,6 +700,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "PE-H", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-1",
     desc: "Survey of psychology: perception, cognition, development, personality, and social behavior.",
     section: ["GE"], rmpScore: 4.1
   },
@@ -646,6 +709,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "PE-H", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/lower-division/socy-1",
     desc: "Sociological perspective on social institutions, inequality, culture, and social change.",
     section: ["GE"], rmpScore: 3.9
   },
@@ -654,6 +718,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "PE-T", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/lower-division/cse-80n",
     desc: "How the Internet works: protocols, web technologies, social impacts of technology.",
     section: ["GE"], rmpScore: 3.8
   },
@@ -672,6 +737,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: "PR-C", quarters: ["F","W"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/lower-division/thea-10",
     desc: "Exploration of performance and theater arts through practice and analysis.",
     section: ["GE"], rmpScore: 4.3
   },
@@ -682,6 +748,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [["WRIT 1", "WRIT 1E"]],
     ge: "C", quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/lower-division/writ-2",
     desc: "Advanced academic writing: research-based argumentation, rhetorical analysis, and inquiry.",
     section: ["GE"], rmpScore: 3.5
   },
@@ -701,6 +768,7 @@ const COURSES = {
     units: 5, division: "lower",
     prereqs: [],
     ge: null, quarters: ["F","W","S"],
+    catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/lower-division/poli-20",
     desc: "Structure and function of US government: Congress, presidency, judiciary, and citizen participation.",
     section: ["GE"], rmpScore: 3.6,
     alsoSatisfies: ["AI"]
@@ -749,21 +817,21 @@ const COURSES = {
   "FREE 2U8": { title: "Free Elective (2 units)", units: 2, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Any 2-unit course (lab, seminar, activity).", section: ["FREE"], rmpScore: 0 },
   "FREE 2U9": { title: "Free Elective (2 units)", units: 2, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Any 2-unit course (lab, seminar, activity).", section: ["FREE"], rmpScore: 0 },
 
-  "BME 205": { concentrations: [], title: "Bioinformatics: Molecular Biology and Genomics", units: 5, division: "upper", prereqs: [["BME 160", "CSE 20"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Computational approaches to molecular biology and genomics. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
-  "BME 230A": { concentrations: [], title: "Computational Genomics", units: 5, division: "upper", prereqs: [["BME 205"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Advanced computational methods for analyzing genomic data. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
-  "FILM 80V": { concentrations: [], title: "Introduction to Digital Media", units: 5, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Introduction to digital media production and theory.", section: ["FREE"], rmpScore: 0 },
+  "BME 205": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-205", concentrations: [], title: "Bioinformatics: Molecular Biology and Genomics", units: 5, division: "upper", prereqs: [["BME 160", "CSE 20"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Computational approaches to molecular biology and genomics. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
+  "BME 230A": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-230a", concentrations: [], title: "Computational Genomics", units: 5, division: "upper", prereqs: [["BME 205"], ["BME 185"]], ge: null, quarters: ["F","W","S"], desc: "Advanced computational methods for analyzing genomic data. BMEB capstone option requires BME 185 technical writing before capstone work.", section: ["FREE"], rmpScore: 0 },
+  "FILM 80V": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80v", concentrations: [], title: "Introduction to Digital Media", units: 5, division: "lower", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Introduction to digital media production and theory.", section: ["FREE"], rmpScore: 0 },
 
   // ECE graduate courses (RE_BS ADV_ROBOTICS_ELECTIVE)
-  "ECE 215": { concentrations: ["re_ai_vision"], title: "Models of Robotic Manipulation", units: 5, division: "graduate", prereqs: [["ECE 141"], ["AM 10", "MATH 21"]], ge: null, quarters: ["F","W","S"], desc: "Theory and application of mathematical models to analyze, design, and program serial kinematic chains.", section: ["FREE"], rmpScore: 0 },
-  "ECE 216": { concentrations: ["re_ai_vision"], title: "Bio-Inspired Locomotion", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Principles of biological locomotion and their application to robotics problems.", section: ["FREE"], rmpScore: 0 },
-  "ECE 222A": { concentrations: [], title: "Advances in Agriculture Technology", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Agricultural technology across cyber-physical systems, robotics, sensor electronics, and signal processing.", section: ["FREE"], rmpScore: 0 },
-  "ECE 240": { concentrations: ["re_autonomous"], title: "Introduction to Linear Dynamical Systems", units: 5, division: "graduate", prereqs: [["ECE 103"]], ge: null, quarters: ["F","W","S"], desc: "Applied linear algebra with applications to circuits, signal processing, communications, and control systems.", section: ["FREE"], rmpScore: 0 },
-  "ECE 242": { concentrations: ["re_autonomous"], title: "Applied Feedback Control", units: 5, division: "graduate", prereqs: [["ECE 141"]], ge: null, quarters: ["F","W","S"], desc: "State space control, discrete-time techniques, and implementation on inverted pendulum.", section: ["FREE"], rmpScore: 0 },
-  "ECE 243": { concentrations: ["re_autonomous"], title: "System Identification", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Constructing linear dynamical models from experimental data using system identification methods.", section: ["FREE"], rmpScore: 0 },
-  "ECE 244": { concentrations: [], title: "Digital Control", units: 5, division: "graduate", prereqs: [["ECE 141"]], ge: null, quarters: ["F","W","S"], desc: "Discrete-time system design and analysis for digital control systems.", section: ["FREE"], rmpScore: 0 },
-  "ECE 245": { concentrations: [], title: "Estimation and Stochastic Control", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Kalman filtering and stochastic control.", section: ["FREE"], rmpScore: 0 },
-  "ECE 246": { concentrations: [], title: "Hybrid Dynamical Systems", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Modeling and analysis of hybrid systems combining continuous and discrete dynamics.", section: ["FREE"], rmpScore: 0 },
-  "ECE 249": { concentrations: [], title: "Introduction to Cyber-physical Systems", units: 5, division: "graduate", prereqs: [["CSE 100"], ["ECE 13", "CSE 13E"]], ge: null, quarters: ["F","W","S"], desc: "Modeling tools for continuous/discrete systems, finite state machines, hybrid automata, and formal verification.", section: ["FREE"], rmpScore: 0 },
+  "ECE 215": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-215", concentrations: ["re_ai_vision"], title: "Models of Robotic Manipulation", units: 5, division: "graduate", prereqs: [["ECE 141"], ["AM 10", "MATH 21"]], ge: null, quarters: ["F","W","S"], desc: "Theory and application of mathematical models to analyze, design, and program serial kinematic chains.", section: ["FREE"], rmpScore: 0 },
+  "ECE 216": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-216", concentrations: ["re_ai_vision"], title: "Bio-Inspired Locomotion", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Principles of biological locomotion and their application to robotics problems.", section: ["FREE"], rmpScore: 0 },
+  "ECE 222A": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-222a", concentrations: [], title: "Advances in Agriculture Technology", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Agricultural technology across cyber-physical systems, robotics, sensor electronics, and signal processing.", section: ["FREE"], rmpScore: 0 },
+  "ECE 240": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-240", concentrations: ["re_autonomous"], title: "Introduction to Linear Dynamical Systems", units: 5, division: "graduate", prereqs: [["ECE 103"]], ge: null, quarters: ["F","W","S"], desc: "Applied linear algebra with applications to circuits, signal processing, communications, and control systems.", section: ["FREE"], rmpScore: 0 },
+  "ECE 242": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-242", concentrations: ["re_autonomous"], title: "Applied Feedback Control", units: 5, division: "graduate", prereqs: [["ECE 141"]], ge: null, quarters: ["F","W","S"], desc: "State space control, discrete-time techniques, and implementation on inverted pendulum.", section: ["FREE"], rmpScore: 0 },
+  "ECE 243": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-243", concentrations: ["re_autonomous"], title: "System Identification", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Constructing linear dynamical models from experimental data using system identification methods.", section: ["FREE"], rmpScore: 0 },
+  "ECE 244": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-244", concentrations: [], title: "Digital Control", units: 5, division: "graduate", prereqs: [["ECE 141"]], ge: null, quarters: ["F","W","S"], desc: "Discrete-time system design and analysis for digital control systems.", section: ["FREE"], rmpScore: 0 },
+  "ECE 245": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-245", concentrations: [], title: "Estimation and Stochastic Control", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Kalman filtering and stochastic control.", section: ["FREE"], rmpScore: 0 },
+  "ECE 246": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-246", concentrations: [], title: "Hybrid Dynamical Systems", units: 5, division: "graduate", prereqs: [["ECE 240"]], ge: null, quarters: ["F","W","S"], desc: "Modeling and analysis of hybrid systems combining continuous and discrete dynamics.", section: ["FREE"], rmpScore: 0 },
+  "ECE 249": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-249", concentrations: [], title: "Introduction to Cyber-physical Systems", units: 5, division: "graduate", prereqs: [["CSE 100"], ["ECE 13", "CSE 13E"]], ge: null, quarters: ["F","W","S"], desc: "Modeling tools for continuous/discrete systems, finite state machines, hybrid automata, and formal verification.", section: ["FREE"], rmpScore: 0 },
 
   // TIM courses (TIM_BS BASKIN_ENGR_ELECTIVES)
   "TIM 171": { concentrations: ["tim_entrepreneurship"], title: "Information Systems and Technology", units: 5, division: "upper", prereqs: [["TIM 50"]], ge: null, quarters: [], desc: "Not in the current UCSC TIM catalog; retained as historical data but unavailable for scheduling.", section: ["FREE"], rmpScore: 0 },
@@ -779,11 +847,11 @@ const COURSES = {
   "CSE 148": { concentrations: [], title: "Advanced Processor Architecture Design Project", units: 5, division: "upper", prereqs: [["CSE 120"]], ge: null, quarters: ["F","W","S"], desc: "Using HDL tools to add advanced architectural features to a basic processor design.", section: ["FREE"], rmpScore: 0 },
   "CSE 185": { concentrations: [], title: "Technical Writing for Computer Science and Engineering", units: 5, division: "upper", prereqs: [["CSE 12", "CSE 30", "BME 160"]], ge: null, quarters: ["F","W","S"], desc: "Writing by engineers and computer scientists to technical audiences.", section: ["FREE"], rmpScore: 0 },
   "CSE 166A": { concentrations: [], title: "Game Theory and Applications I", units: 5, division: "upper", prereqs: [["MATH 19B", "MATH 11B"]], ge: null, quarters: ["F","W","S"], desc: "Modern game theory including extensive form, strategic form, mixed strategies, and simulation techniques.", section: ["FREE"], rmpScore: 0 },
-  "CSE 276": { concentrations: [], title: "Optimization Theory and Applications", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Optimization with practical applications in management and engineering.", section: ["FREE"], rmpScore: 0 },
+  "CSE 276": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-276", concentrations: [], title: "Optimization Theory and Applications", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Optimization with practical applications in management and engineering.", section: ["FREE"], rmpScore: 0 },
 
   // AM courses
   "AM 130": { concentrations: ["am_modeling"], title: "Advanced Topics in Applied Mathematics", units: 5, division: "upper", prereqs: [["AM 114"]], ge: null, quarters: ["F","W","S"], desc: "Advanced topics in applied mathematics.", section: ["FREE"], rmpScore: 0 },
-  "AM 231": { concentrations: [], title: "Nonlinear Control Theory", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Analysis and design of nonlinear control systems using Lyapunov theory and geometric methods.", section: ["FREE"], rmpScore: 0 },
+  "AM 231": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-231", concentrations: [], title: "Nonlinear Control Theory", units: 5, division: "graduate", prereqs: [], ge: null, quarters: ["F","W","S"], desc: "Analysis and design of nonlinear control systems using Lyapunov theory and geometric methods.", section: ["FREE"], rmpScore: 0 },
 
   // ECON electives (TIM_BS ECON_ELECTIVE)
   "ECON 102": { concentrations: ["tim_finance_econ"], title: "Applied Macroeconomic Analysis", units: 5, division: "upper", prereqs: [["ECON 100A", "ECON 100M"]], ge: null, quarters: ["F","W","S"], desc: "Applied macroeconomic analysis and policy evaluation.", section: ["FREE"], rmpScore: 0 },
@@ -806,8 +874,8 @@ const COURSES = {
   "ECON 189": { concentrations: [], title: "Special Topics in Economics", units: 5, division: "upper", prereqs: [["ECON 100A", "ECON 100M"]], ge: null, quarters: ["F","W","S"], desc: "Special topics in economics.", section: ["FREE"], rmpScore: 0 },
 
   // FMST courses (BIOTECH_BS UD_ELECTIVES)
-  "FMST 124": { concentrations: ["bt_society_ethics"], title: "Technology, Science, and Race Across the Americas", units: 5, division: "upper", prereqs: [], ge: "PE-T", quarters: ["F","W","S"], desc: "Analyzes how technological and scientific developments intersect with power structures.", section: ["FREE"], rmpScore: 0 },
-  "FMST 133": { concentrations: ["bt_society_ethics"], title: "Science and the Body", units: 5, division: "upper", prereqs: [], ge: "PE-T", quarters: ["F","W","S"], desc: "How contemporary technoscientific practices are reworking what it means to be human.", section: ["FREE"], rmpScore: 0 },
+  "FMST 124": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/upper-division/fmst-124", concentrations: ["bt_society_ethics"], title: "Technology, Science, and Race Across the Americas", units: 5, division: "upper", prereqs: [], ge: "PE-T", quarters: ["F","W","S"], desc: "Analyzes how technological and scientific developments intersect with power structures.", section: ["FREE"], rmpScore: 0 },
+  "FMST 133": { catalogUrl: "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/upper-division/fmst-133", concentrations: ["bt_society_ethics"], title: "Science and the Body", units: 5, division: "upper", prereqs: [], ge: "PE-T", quarters: ["F","W","S"], desc: "How contemporary technoscientific practices are reworking what it means to be human.", section: ["FREE"], rmpScore: 0 },
 
   // === AUTO-GENERATED FROM UCSC CATALOG (do not hand-edit below) ===
   // 4136 courses auto-merged from UCSC General Catalog

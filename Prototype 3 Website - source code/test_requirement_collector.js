@@ -969,7 +969,11 @@ function testSchedulerAvailabilityScoreDelegatesToCollectorHelper() {
   };
   try {
     const profile = makeProfile({ currentTerm: 'S', currentYear: 2026, targetGradTerm: 'S', targetGradYear: 2026 });
-    assert.strictEqual(Scheduler.availabilityScore('CSE 186', profile), 1000);
+    assert.strictEqual(
+      Scheduler.availabilityScore('CSE 186', profile),
+      originalAvailabilityScore('CSE 186', profile, COURSES),
+      'Scheduler.availabilityScore should return the collector helper score, including in-window availability strength'
+    );
     assert.strictEqual(calls, 1, 'Scheduler.availabilityScore should delegate to RequirementCollector.availabilityScore exactly once');
   } finally {
     RequirementCollector.availabilityScore = originalAvailabilityScore;

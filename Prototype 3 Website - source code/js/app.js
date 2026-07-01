@@ -87,6 +87,26 @@ function completionTiming(finalQuarter, finalQuarterCalYear, profile) {
   return "target";
 }
 
+function finalScheduledTerm(schedule) {
+  if (!Array.isArray(schedule) || schedule.length === 0) return null;
+  for (let yearIdx = schedule.length - 1; yearIdx >= 0; yearIdx--) {
+    const year = schedule[yearIdx];
+    const quarters = year?.quarters || {};
+    const keys = Object.keys(quarters);
+    for (let i = keys.length - 1; i >= 0; i--) {
+      const term = keys[i];
+      const courses = quarters[term] || [];
+      if (courses.length === 0) continue;
+      return {
+        term,
+        year: quarterCalendarYear(term, year.academicStart || 0),
+        label: `${QUARTER_LABELS[term] || term} ${quarterCalendarYear(term, year.academicStart || 0)}`
+      };
+    }
+  }
+  return null;
+}
+
 // Given current term + calendar year, compute the academic year start
 // (e.g. W 2027 → academic year starting 2026)
 function academicYearStartOf(term, calYear) {
@@ -1049,10 +1069,10 @@ function openCourseDetail(code, quarterKey, yearIdx) {
       </div>
 
       <div class="detail-links">
-        <a href="${catalogUrl}" target="_blank" class="btn-link">
+        <a href="${catalogUrl}" target="_blank" rel="noopener noreferrer" class="btn-link">
           View in UCSC Catalog
         </a>
-        <a href="${rmpSearchUrl}" target="_blank" class="btn-link btn-link-secondary">
+        <a href="${rmpSearchUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-link-secondary">
           Rate My Professor
         </a>
       </div>
@@ -1336,7 +1356,7 @@ function renderRequirements() {
       <div class="req-complete">
         <h4>All Requirements Met!</h4>
         <p>Please verify your schedule on the official
-          <a href="${catalogUrl}" target="_blank">UCSC Catalog</a>.
+          <a href="${catalogUrl}" target="_blank" rel="noopener noreferrer">UCSC Catalog</a>.
         </p>
       </div>
     `;
@@ -1424,7 +1444,7 @@ function showValidationAlerts() {
     alertBox.innerHTML = `
       <div class="alert-warning">
         <strong>Warnings (${warnings.length}):</strong>
-        <ul>${warnings.map(w => `<li>${w}</li>`).join("")}</ul>
+        <ul>${warnings.map(w => `<li>${escHTML(w)}</li>`).join("")}</ul>
       </div>
     `;
     alertBox.style.display = "block";
@@ -1434,7 +1454,19 @@ function showValidationAlerts() {
     alertBox.innerHTML = `
       <div class="alert-success">
         <strong>All requirements are met!</strong> Your schedule is complete.
-        Please double-check on the <a href="${catalogUrl}" target="_blank">official UCSC catalog</a>.
+        ${(() => {
+          const finalTerm = finalScheduledTerm(AppState.schedule);
+          const targetLabel = targetQuarterLabel(AppState.profile);
+          const timing = finalTerm ? completionTiming(finalTerm.term, finalTerm.year, AppState.profile) : "unknown";
+          if (timing === "late" && targetLabel) {
+            return `<div class="alert-timing-note"><strong>Timing note:</strong> This plan finishes in ${escHTML(finalTerm.label)}, after your ${escHTML(targetLabel)} target. This usually reflects selected constraints such as late start, gap quarters, low max units, or official prerequisite/course-offering order.</div>`;
+          }
+          if (timing === "early" && targetLabel) {
+            return `<div class="alert-timing-note"><strong>Timing note:</strong> This plan finishes in ${escHTML(finalTerm.label)}, before your ${escHTML(targetLabel)} target. Empty later target quarters are intentionally hidden.</div>`;
+          }
+          return "";
+        })()}
+        Please double-check on the <a href="${catalogUrl}" target="_blank" rel="noopener noreferrer">official UCSC catalog</a>.
       </div>
     `;
     alertBox.style.display = "block";
