@@ -1,9 +1,9 @@
 (function (root, factory) {
+  const api = factory();
   if (typeof module === 'object' && module.exports) {
-    module.exports = factory();
-  } else {
-    root.RequirementNormalizer = factory();
+    module.exports = api;
   }
+  root.RequirementNormalizer = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   function cloneCourses(courses) {
     return Array.isArray(courses) ? courses.slice() : [];

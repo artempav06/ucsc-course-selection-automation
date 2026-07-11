@@ -1,9 +1,9 @@
 (function (root, factory) {
+  const api = factory();
   if (typeof module === 'object' && module.exports) {
-    module.exports = factory();
-  } else {
-    root.RequirementCollector = factory();
+    module.exports = api;
   }
+  root.RequirementCollector = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   const CATEGORY_PRIORITY = { all_required: 0, choose_group: 1, pick_one: 2, pick_n: 3 };
 
@@ -296,6 +296,7 @@
   function isUnrelatedLabScienceGE(code, ge, profile) {
     if (!ge || ge.id !== 'SI') return false;
     if (profile && profile.geConcentration === 'ge_natural_sciences') return false;
+    if (profile && profile.geConcentration === 'ge_health_wellness') return false;
     return /^(CHEM|BIOL|BIOE|PHYS)\s/.test(code);
   }
 
@@ -348,11 +349,12 @@
       const scored = pool
         .map(code => {
           let score = 0;
+          if (ge.id === 'C' && code === 'WRIT 2') score += 500;
           if (geConcCourses && geConcCourses.has(code)) score += 100;
           score += availabilityScore(code, profile, courses);
           const prereqBurden = estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]), courses);
           score -= prereqBurden * 50;
-          if (isUnrelatedLabScienceGE(code, ge, profile)) score -= 25;
+          if (isUnrelatedLabScienceGE(code, ge, profile)) score -= 1200;
           for (const [ucId, ucReq] of neededUC) {
             if ((ucReq.courses || []).includes(code)) score += 200;
             else if (courses[code] && courses[code].alsoSatisfies && courses[code].alsoSatisfies.includes(ucId)) score += 200;

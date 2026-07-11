@@ -723,6 +723,7 @@ const Scheduler = {
   isUnrelatedLabScienceGE(code, ge, profile) {
     if (!ge || ge.id !== "SI") return false;
     if (profile && profile.geConcentration === "ge_natural_sciences") return false;
+    if (profile && profile.geConcentration === "ge_health_wellness") return false;
     return /^(CHEM|BIOL|BIOE|PHYS)\s/.test(code);
   },
 
@@ -770,11 +771,19 @@ const Scheduler = {
       const scored = pool
         .map(code => {
           let score = 0;
+          // Prefer the regular WRIT 2 path for Composition. Summer-only/global
+          // seminar variants can be valid catalog C courses, but they are easy
+          // to strand when the student starts in summer or has a low unit cap.
+          if (ge.id === "C" && code === "WRIT 2") score += 500;
           if (geConcCourses && geConcCourses.has(code)) score += 100;
           score += this.availabilityScore(code, profile);
           const prereqBurden = this.estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]));
           score -= prereqBurden * 50;
-          if (this.isUnrelatedLabScienceGE(code, ge, profile)) score -= 25;
+          // Do not choose chemistry/biology/physics prerequisite chains as a
+          // generic SI GE for non-lab majors just because the course is highly
+          // rated or available. These are valid only when required by the major
+          // or when the student explicitly asks for a science/health GE focus.
+          if (this.isUnrelatedLabScienceGE(code, ge, profile)) score -= 1200;
           // Multi-coverage bonus: +200 per UC requirement this course also satisfies
           for (const [ucId, ucReq] of neededUC) {
             if (ucReq.courses.includes(code)) score += 200;
@@ -944,7 +953,8 @@ const Scheduler = {
     // defaulted to 19 to avoid accidental overloads, but many official engineering
     // planners require an occasional 20-credit quarter; treating 19 as a soft
     // default cap prevents a single 5-credit GE from creating a fake fifth year.
-    const maxUnits = (requestedMaxUnits === 19 && profile.major === "RE_BS") ? 20 : requestedMaxUnits;
+    const engineeringSoft20Majors = new Set(["CE_BS", "EE_BS", "RE_BS"]);
+    const maxUnits = (requestedMaxUnits === 19 && engineeringSoft20Majors.has(profile.major)) ? 20 : requestedMaxUnits;
     const minUnits = profile.minUnits || 12;
 
     const curTerm    = profile.currentTerm    || "F";
@@ -1068,11 +1078,28 @@ const Scheduler = {
       let majorCount = 0;
       const completedBefore = new Set(placed);
 
-      // Phase A: Place up to 3 major/prereq courses. Dense engineering plans
-      // can require three coordinated major courses in a quarter; capping the
-      // main pass at two let GE/filler courses consume capacity and pushed
-      // otherwise-valid capstone/elective chains into an avoidable fifth year.
-      for (let i = 0; i < remaining.length && majorCount < 3;) {
+      // Phase 0: writing/composition is a declaration/progress gate. If WRIT 1
+      // or WRIT 2 is still needed, place it as early as prerequisites/capacity
+      // allow before major courses consume all available room.
+      if (schedule[yi].levelNum <= 4) {
+        const writingCandidates = ["WRIT 1", "WRIT 2"];
+        for (const writingCode of writingCandidates) {
+          const wi = remaining.indexOf(writingCode);
+          if (wi < 0) continue;
+          if (!canPlace(writingCode, q, completedBefore, unitsUsed, schedule[yi].levelNum)) continue;
+          remaining.splice(wi, 1);
+          quarterArr._unitsUsed = unitsUsed;
+          const added = placeWithCoreq(writingCode, quarterArr, completedBefore);
+          unitsUsed += added;
+          break;
+        }
+      }
+
+      // Phase A: Place up to 2 major/prereq courses by default. A third major
+      // course is reserved for the minimum-unit rescue phase below, so normal
+      // quarters leave space for WRIT/GE/electives and do not become unrealistic
+      // 4-5 required-course piles when labs are attached.
+      for (let i = 0; i < remaining.length && majorCount < 2;) {
         const code = remaining[i];
         if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
         if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
