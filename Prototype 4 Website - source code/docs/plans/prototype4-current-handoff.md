@@ -1,52 +1,89 @@
 # Prototype 4 Current Handoff
 
-Updated: 2026-07-10
+_Last updated: 2026-07-11 after CS_BA schedule quality regression fix._
 
-## Latest user direction
-- Complete the planned Phase 0-4 fixes for current schedule issues in Prototype 4.
-- Keep using official UCSC catalog semantics as the source of truth, and verify fixes with tests rather than assumptions.
+## Status
 
-## What was fixed in this batch
-- Completed the previously failing `test_edge_scenarios.js` phase-gate items:
-  1. Dense Robotics (`RE_BS/re_controls_sensing`, `RE_BS/re_ai_vision`) no longer spills a single GE/late course into an unnecessary fifth year.
-  2. Robotics ECE physics-path alternatives no longer add unneeded `PHYS 6*` courses when the selected plan already satisfies the PHYS 5A/5L and PHYS 5C/5N paths.
-  3. `ECE 141` now models the engineering-major prerequisite path (`ECE 103`) without imposing physics-major-only prerequisites (`PHYS 116A`, `PHYS 116C`, `PHYS 133`) on Robotics students.
-  4. BMEB Bioinformatics capstone sequencing now keeps `BME 205` after `BME 185` technical writing in generated plans.
-  5. AM_BS winter-start/prior-credit plans no longer extend into a final overflow year for late elective/FREE padding.
-- Scheduler placement improvements in `js/engine.js`:
-  - Major selection can rank future junior/senior courses without hiding them because the student is currently first-year; direct availability checks and actual quarter placement still honor class-standing restrictions.
-  - Major/elective ranking now gives a schedule-flexibility bonus to broad F/W/S offerings, avoiding narrow one-quarter electives when flexible alternatives exist.
-  - Dense plans can place up to three major/prerequisite courses in a quarter when unit limits permit, instead of letting GE/filler courses consume critical capacity first.
-  - Non-major placement now prioritizes narrow/multi-coverage GE/UC courses like `HIS 10B` ahead of flexible generic GE fillers, preventing fake one-course overflow years.
-  - Robotics plans treat the 19-unit default as a soft 20-unit UCSC-normal cap only for `RE_BS`, which matches official dense engineering-planner behavior while leaving other majors’ previous trimming behavior intact.
+Prototype 4 is the active UCSC course-selection workspace at:
 
-## Files changed
-- `Prototype 4 Website - source code/js/courses.js`
-  - Corrected ECE physics prerequisite encodings for `ECE 9`, `ECE 101`, `ECE 101L`, and `ECE 102` so PHYS 5/15 and PHYS 6 paths are represented as alternatives instead of accidentally requiring both tracks.
-  - Corrected `ECE 141` to require `ECE 103` for engineering/robotics planning and preserve the physics-major-only prerequisite text as catalog notes.
-  - Added `BME 185` as the scheduler-visible predecessor for `BME 205` in the BMEB capstone context.
-- `Prototype 4 Website - source code/js/engine.js`
-  - Future-planning level restriction opt-out for major selection ranking.
-  - Rank-only term-flexibility bonus.
-  - RE_BS soft 20-unit placement cap from the historical 19-unit default.
-  - Up-to-three major/prereq placement pass.
-  - Smarter non-major GE/UC placement priority.
+`/home/artem/projects/ucsc-course-selection-automation/Prototype 4 Website - source code/`
 
-## Verified passing now
-- `node test_phase_a_preferences.js` → 18/18 passed.
-- `node test_edge_scenarios.js` → 16/16 passed.
-- `node test_ui_profile_flow.js` → 11/11 passed.
-- `node test_export_availability.js` → 6/6 passed.
-- `node test_requirement_collector.js` → 35/35 passed.
-- `node test_scheduler_requirement_set.js` → 5/5 passed.
-- `node test_prerequisite_correctness.js` → 7/7 passed.
-- `node test_smoke.js` → 98/98 passed.
-- `node tools/data-validator.js` → exit 0.
+Latest local fixes in this batch address the schedule-quality regression Artem reported for CS_BA:
 
-## Current known status
-- The Phase 0-4 schedule-issue batch is complete and verified locally.
-- Remaining smoke warnings are valid long/dense schedules for CE_BS, EE_BS, and TIM_BS, not hard failures; no prerequisite violations or duplicate-course failures are present in the smoke matrix.
+- CS_BA generic arts/humanities GE schedules no longer pull an unrelated chemistry/biology prerequisite chain (`CHEM 1A`, `CHEM 3A`, `BIOL 20A`, `BIOE 20B`) just to satisfy SI.
+- The GE picker now penalizes courses with missing prerequisite chains and avoids CHEM/BIOL/BIOE/PHYS SI courses unless the student specifically chooses the natural-sciences GE concentration.
+- `BIOL 20A` prerequisite encoding was corrected from two AND groups to one OR group: `CHEM 1A` OR `CHEM 3A` OR `CHEM 4A`.
+- `WRIT 1` no longer engine-enforces `WRIT 26` as a required course because the official prerequisite text includes placement/direct-self-placement alternatives; the official text is preserved in notes.
+- Placement now prioritizes `WRIT 1` and `WRIT 2` so unsatisfied students get them in the first two years, before major declaration pressure becomes a problem.
+- Added regression tests for both issues in `test_edge_scenarios.js`.
 
-## Recommendation for next batch
-- Commit these Prototype 4 fixes after reviewing the diff.
-- Next improvement batch should focus on reducing CE_BS/EE_BS/TIM_BS 5-year warnings if desired, but keep those separate from this completed edge-regression batch.
+## Verified CS_BA Example
+
+Command:
+
+```bash
+node scripts/inspect_schedule.js CS_BA cs_ai_ml
+```
+
+For a fresh CS_BA AI/ML profile with arts/humanities GE concentration:
+
+- Phase 2 GE courses: `MUSC 11D`, `HIS 10B`, `FILM 20A`, `ANTH 3`, `WRIT 1`, `PHIL 28`, `THEA 10`, `WRIT 2`.
+- Phase 4 prereqs: none.
+- `WRIT 1`: Year 2 Winter.
+- `WRIT 2`: Year 2 Spring.
+- No chemistry/biology chain is selected.
+- SI is satisfied by `ANTH 3`.
+- Overall validation: all requirements met, 183 units, 62 upper-division units, 4 years.
+
+## Latest Test Status
+
+Run from `Prototype 4 Website - source code/`:
+
+```bash
+node test_phase_a_preferences.js
+node test_edge_scenarios.js
+node test_ui_profile_flow.js
+node test_export_availability.js
+node test_requirement_collector.js
+node test_scheduler_requirement_set.js
+node test_prerequisite_correctness.js
+node test_smoke.js
+node tools/data-validator.js
+```
+
+Latest verified results:
+
+- `test_phase_a_preferences.js`: 18/18 passed.
+- `test_edge_scenarios.js`: all edge tests passed, including the new CS_BA no-chem-chain and WRIT first-two-years regressions.
+- `test_ui_profile_flow.js`: 11/11 passed.
+- `test_export_availability.js`: 6/6 passed.
+- `test_requirement_collector.js`: 35/35 passed.
+- `test_scheduler_requirement_set.js`: 5/5 passed.
+- `test_prerequisite_correctness.js`: 7/7 passed.
+- `test_smoke.js`: 98/98 passed.
+- `tools/data-validator.js`: exit 0.
+
+## Link Verification Spot Check
+
+Current file URLs were verified with HTTP 200 for:
+
+- `CHEM 1A`: `https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-1a`
+- `CHEM 3A`: `https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/0-99/chem-3a`
+- `WRIT 1`: `https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/lower-division/writ-1`
+- `WRIT 2`: `https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/lower-division/writ-2`
+
+## What Actually Happened With GitHub
+
+Repository history shows Prototype 4 was first committed to the tracked `main` history in:
+
+- `266bf05 feat: add Prototype 4 prerequisite-quality workspace` at `2026-07-10 23:38:14 -0700`
+
+Then schedule-edge fixes were committed/pushed in:
+
+- `058829a fix Prototype 4 schedule edge regressions` at `2026-07-11 00:06:02 -0700`
+
+Before `266bf05`, Prototype 4 existed locally but was not tracked by Git, so GitHub would not show it even though local files existed. Current evidence does not show a committed Prototype 4 folder being deleted from tracked history; the likely cause of it “disappearing” from GitHub earlier was that it had not actually been added/committed/pushed yet.
+
+## Remaining Caution
+
+Prototype 4 is much better after this patch, but before broader beta launch continue doing realistic student scenario QA and browser QA. Node tests are strong, but real UI/browser behavior still needs repeated manual/Playwright-style testing when WSL browser dependencies are available.

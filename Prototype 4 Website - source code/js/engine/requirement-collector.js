@@ -275,6 +275,30 @@
     return 1000 - (firstIndex * 2) + (inWindowOfferings * 0.05) + (termFlexibility * 0.25);
   }
 
+  function estimateMissingPrereqBurden(code, knownSet, courses, visiting) {
+    const course = courses[code];
+    if (!course || !Array.isArray(course.prereqs) || course.prereqs.length === 0) return 0;
+    const seen = visiting || new Set();
+    if (seen.has(code)) return 0;
+    seen.add(code);
+    let burden = 0;
+    for (const group of course.prereqs) {
+      const options = Array.isArray(group) ? group.filter(p => courses[p]) : [];
+      if (options.some(p => knownSet.has(p))) continue;
+      if (options.length === 0) continue;
+      const optionCosts = options.map(p => 1 + estimateMissingPrereqBurden(p, new Set([...knownSet, p]), courses, new Set(seen)));
+      burden += Math.min(...optionCosts);
+    }
+    seen.delete(code);
+    return burden;
+  }
+
+  function isUnrelatedLabScienceGE(code, ge, profile) {
+    if (!ge || ge.id !== 'SI') return false;
+    if (profile && profile.geConcentration === 'ge_natural_sciences') return false;
+    return /^(CHEM|BIOL|BIOE|PHYS)\s/.test(code);
+  }
+
   function selectGECourses(collected, profile, state = {}, helpers = {}) {
     const courses = helpers.courses || {};
     const geRequirements = (collected && collected.geRequirements || helpers.geRequirements || []).map(legacyRequirement);
@@ -326,6 +350,9 @@
           let score = 0;
           if (geConcCourses && geConcCourses.has(code)) score += 100;
           score += availabilityScore(code, profile, courses);
+          const prereqBurden = estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]), courses);
+          score -= prereqBurden * 50;
+          if (isUnrelatedLabScienceGE(code, ge, profile)) score -= 25;
           for (const [ucId, ucReq] of neededUC) {
             if ((ucReq.courses || []).includes(code)) score += 200;
             else if (courses[code] && courses[code].alsoSatisfies && courses[code].alsoSatisfies.includes(ucId)) score += 200;

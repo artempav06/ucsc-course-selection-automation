@@ -702,6 +702,30 @@ const Scheduler = {
 
   // --- GE selection (concentration-aware) ---
 
+  estimateMissingPrereqBurden(code, knownSet, visiting) {
+    const course = COURSES[code];
+    if (!course || !Array.isArray(course.prereqs) || course.prereqs.length === 0) return 0;
+    const seen = visiting || new Set();
+    if (seen.has(code)) return 0;
+    seen.add(code);
+    let burden = 0;
+    for (const group of course.prereqs) {
+      const options = Array.isArray(group) ? group.filter(p => COURSES[p]) : [];
+      if (options.some(p => knownSet.has(p))) continue;
+      if (options.length === 0) continue;
+      const optionCosts = options.map(p => 1 + this.estimateMissingPrereqBurden(p, new Set([...knownSet, p]), new Set(seen)));
+      burden += Math.min(...optionCosts);
+    }
+    seen.delete(code);
+    return burden;
+  },
+
+  isUnrelatedLabScienceGE(code, ge, profile) {
+    if (!ge || ge.id !== "SI") return false;
+    if (profile && profile.geConcentration === "ge_natural_sciences") return false;
+    return /^(CHEM|BIOL|BIOE|PHYS)\s/.test(code);
+  },
+
   pickGE(used, completedSet, geConcentration, profile) {
     const picks = [];
     const geConc = geConcentration && typeof CONCENTRATIONS !== "undefined"
@@ -748,6 +772,9 @@ const Scheduler = {
           let score = 0;
           if (geConcCourses && geConcCourses.has(code)) score += 100;
           score += this.availabilityScore(code, profile);
+          const prereqBurden = this.estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]));
+          score -= prereqBurden * 50;
+          if (this.isUnrelatedLabScienceGE(code, ge, profile)) score -= 25;
           // Multi-coverage bonus: +200 per UC requirement this course also satisfies
           for (const [ucId, ucReq] of neededUC) {
             if (ucReq.courses.includes(code)) score += 200;
@@ -1070,6 +1097,7 @@ const Scheduler = {
           const course = COURSES[code] || {};
           const termFlexibility = new Set((course.quarters || []).filter(term => term !== "SU")).size;
           let score = 0;
+          if (code === "WRIT 1" || code === "WRIT 2") score += 300;
           if (courseTypeMap.get(code) === "uc") score += 150;
           if (course.alsoSatisfies && course.alsoSatisfies.length) score += 120;
           if (course.ge) score += 40;

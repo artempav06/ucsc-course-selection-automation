@@ -200,6 +200,35 @@ test('generated schedules do not place courses before prerequisites are complete
   assert(failures.length === 0, failures.join(' | '));
 });
 
+test('CS_BA generic plans do not pull unrelated chemistry prerequisite chains for SI GE', () => {
+  const profile = makeProfile({
+    major: 'CS_BA',
+    concentration: 'cs_ai_ml',
+    geConcentration: 'ge_arts_humanities',
+    currentYear: 2024,
+    targetGradYear: 2028
+  });
+  const schedule = Scheduler.generate(profile);
+  const courses = plannedCourses(schedule);
+  const unexpected = courses.filter(code => /^CHEM /.test(code) || code === 'BIOL 20A' || code === 'BIOE 20B');
+  assert(unexpected.length === 0, `CS_BA arts/humanities GE should not add unrelated chemistry/biology chain: ${unexpected.join(', ')}`);
+  const validation = Validator.validateAll(schedule, profile);
+  const si = validation.ge.find(req => req.id === 'SI');
+  assert(si && si.fulfilled, 'CS_BA plan should still satisfy SI with a lighter non-chemistry GE');
+});
+
+test('WRIT 1 and WRIT 2 are scheduled in the first two years when not already satisfied', () => {
+  const profile = makeProfile({ major: 'CS_BA', concentration: 'cs_ai_ml', currentYear: 2024, targetGradYear: 2028 });
+  const schedule = Scheduler.generate(profile);
+  const writ1 = courseSlot(schedule, 'WRIT 1');
+  const writ2 = courseSlot(schedule, 'WRIT 2');
+  assert(writ1, 'missing WRIT 1 for unsatisfied ELWR profile');
+  assert(writ2, 'missing WRIT 2 for unsatisfied Composition profile');
+  assert(writ1.levelNum <= 2, `WRIT 1 should be first/second year, got ${writ1.label} ${writ1.q}`);
+  assert(writ2.levelNum <= 2, `WRIT 2 should be first/second year, got ${writ2.label} ${writ2.q}`);
+  assert(before(writ1, writ2), `WRIT 2 should occur after WRIT 1, got WRIT 1 ${writ1.label} ${writ1.q}, WRIT 2 ${writ2.label} ${writ2.q}`);
+});
+
 test('generated schedules co-schedule required lab/corequisite pairs', () => {
   const cases = [
     ['BMEB_BI', 'bi_ecology_micro'],

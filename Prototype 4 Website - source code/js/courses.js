@@ -14207,9 +14207,7 @@ const COURSES = {
     "division": "lower",
     "prereqs": [
       [
-        "CHEM 1A"
-      ],
-      [
+        "CHEM 1A",
         "CHEM 3A",
         "CHEM 4A"
       ]
@@ -101543,11 +101541,7 @@ const COURSES = {
     "title": "Introduction to Academic Writing",
     "units": 5,
     "division": "lower",
-    "prereqs": [
-      [
-        "WRIT 26"
-      ]
-    ],
+    "prereqs": [],
     "ge": "TA",
     "quarters": [
       "F",
