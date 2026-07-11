@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCSC Course Selection Automation</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Export Libraries (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docx@8.2.3/build/index.umd.js"></script>
+
+  <!-- PDF.js for transcript parsing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="logo-text">UCSC</span>
+      <span>Course Selection Automation</span>
+    </div>
+    <div class="navbar-links">
+      <a href="https://catalog.ucsc.edu/en/current/general-catalog" target="_blank">UCSC Catalog</a>
+      <a href="https://www.ucsc.edu" target="_blank">UCSC.edu</a>
+      <button onclick="restartPlanner()">Restart</button>
+    </div>
+  </nav>
+
+
+  <!-- ========== VIEW 1: LANDING PAGE ========== -->
+  <div id="view-landing" class="view active">
+    <div class="landing">
+      <div class="landing-content">
+        <h1>Plan Your Path to Graduation</h1>
+        <p class="subtitle">UC Santa Cruz Course Selection Automation</p>
+        <p class="tagline">
+          Build your complete 4-year academic schedule in minutes.
+          Our system ensures all major requirements, general education,
+          and university requirements are satisfied&mdash;so you can focus on learning.
+        </p>
+
+        <button id="btn-start" class="btn-start">Start Planning</button>
+
+        <div class="landing-features">
+          <div class="feature-card">
+            <h3>Smart Scheduling</h3>
+            <p>Automatically generates a valid schedule respecting prerequisites, quarter availability, and workload balance.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Requirement Tracking</h3>
+            <p>Real-time validation of major, GE, and UC requirements. Instant alerts if changes break your graduation plan.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Export Anywhere</h3>
+            <p>Download your finalized schedule as PDF, Word, or Excel to share with advisors or keep for reference.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========== VIEW 2: WIZARD ========== -->
+  <div id="view-wizard" class="view">
+    <div class="wizard-container">
+
+      <!-- Progress Bar -->
+      <div class="wizard-progress">
+        <div class="progress-track">
+          <div class="progress-bar-bg"></div>
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-dots">
+            <div class="progress-dot active">1</div>
+            <div class="progress-dot">2</div>
+            <div class="progress-dot">3</div>
+            <div class="progress-dot">4</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 1: Academic Profile -->
+      <div id="wizard-step-1" class="wizard-step active">
+        <h2>Academic Profile</h2>
+        <p class="step-desc">Tell us about your major and where you are in your studies.</p>
+
+        <div class="form-group">
+          <label for="select-major">Major</label>
+          <!-- Options populated from MAJOR_REQUIREMENTS at runtime in app.js -->
+          <select id="select-major"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="select-level">Current Student Level</label>
+          <select id="select-level">
+            <optgroup label="Undergraduate">
+              <option value="UG_1">Freshman (1st year)</option>
+              <option value="UG_2">Sophomore (2nd year)</option>
+              <option value="UG_3">Junior (3rd year)</option>
+              <option value="UG_4">Senior (4th year)</option>
+              <option value="UG_5">5th Year Undergraduate</option>
+            </optgroup>
+            <optgroup label="Graduate">
+              <option value="MS_1" disabled>MS - 1st year (coming soon)</option>
+              <option value="MS_2" disabled>MS - 2nd year (coming soon)</option>
+              <option value="PHD_1" disabled>PhD - 1st year (coming soon)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group form-half">
+            <label for="select-current-term">Current Term</label>
+            <select id="select-current-term">
+              <option value="F">Fall</option>
+              <option value="W">Winter</option>
+              <option value="S">Spring</option>
+              <option value="SU">Summer</option>
+            </select>
+          </div>
+          <div class="form-group form-half">
+            <label for="select-current-year">Current Calendar Year</label>
+            <select id="select-current-year">
+              <!-- Populated by JS -->
+            </select>
+          </div>
+        </div>
+        <p class="form-hint">We use this to label your schedule and only plan from this term forward.</p>
+
+        <div class="wizard-buttons">
+          <div></div>
+          <button id="btn-wizard-next-1" class="btn-wizard btn-wizard-primary">Next &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: Academic History -->
+      <div id="wizard-step-2" class="wizard-step">
+        <h2>Academic History</h2>
+        <p class="step-desc">Tell us which courses and credits you already have. These will be subtracted from your remaining plan.</p>
+
+        <!-- Transcript Upload -->
+        <div class="form-group">
+          <label>Upload Unofficial Transcript <span class="label-optional">(optional — fastest way)</span></label>
+          <div class="transcript-upload-area" id="transcript-drop-zone">
+            <input type="file" id="transcript-file-input" accept=".pdf" style="display:none">
+            <div class="transcript-upload-icon">📄</div>
+            <p class="transcript-upload-text">
+              Drag &amp; drop your UCSC unofficial transcript PDF here,<br>
+              or <button type="button" class="btn-browse-link" id="btn-transcript-browse">browse to upload</button>
+            </p>
+            <p class="transcript-upload-hint">
+              Download it from <strong>MyUCSC → Academic History → Unofficial Transcript</strong>
+            </p>
+          </div>
+          <div id="transcript-status" class="transcript-status"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="course-search-input">Or Search and Add Courses Manually</label>
+          <div class="course-search-wrapper">
+            <input type="text" id="course-search-input" class="course-search-input"
+                   placeholder="Type a course code or title (e.g. &quot;CSE 20&quot;, &quot;calculus&quot;, &quot;writing&quot;)">
+            <div id="course-search-results" class="course-search-results"></div>
+          </div>
+          <p class="form-hint">
+            Tip: You can find every class you have taken on your
+            <strong>unofficial transcript</strong> in MyUCSC.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Your Completed Courses</label>
+          <div id="selected-courses-list" class="selected-courses-list">
+            <p class="selected-empty">No courses added yet. Use the search above or the suggestions below.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Common Lower-Division Suggestions</label>
+          <p class="form-hint">Quick-add any course you've already completed:</p>
+          <div id="completed-courses-list" class="courses-checklist">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-prior-credits">Prior Credits (AP, transfer, dual-enrollment, etc.)</label>
+          <div class="input-with-unit">
+            <input type="number" id="input-prior-credits" min="0" max="120" value="0" step="1">
+            <span class="input-unit">units</span>
+          </div>
+          <p class="form-hint">
+            Incoming freshmen: AP exam credits from College Board often transfer as units. Enter the
+            total units awarded (separate from any course listed above).
+          </p>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-row">
+            <input type="checkbox" id="check-elwr">
+            <label for="check-elwr">Entry Level Writing (ELWR) satisfied (AP/placement/transfer)</label>
+          </div>
+        </div>
+
+        <div class="wizard-buttons">
+          <button id="btn-wizard-back-2" class="btn-wizard btn-wizard-secondary">&larr; Back</button>
+          <button id="btn-wizard-next-2" class="btn-wizard btn-wizard-primary">Next &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: Graduation Preferences -->
+      <div id="wizard-step-3" class="wizard-step">
+        <h2>Graduation Preferences</h2>
+        <p class="step-desc">When do you want to graduate, and how heavy do you want each quarter to be?</p>
+
+        <div class="form-group">
+          <label>Target Graduation Term</label>
+          <div class="form-row">
+            <div class="form-group form-half" style="margin-bottom:0">
+              <label for="select-grad-term" class="sub-label">Term</label>
+              <select id="select-grad-term">
+                <option value="F">Fall</option>
+                <option value="W">Winter</option>
+                <option value="S" selected>Spring</option>
+              </select>
+            </div>
+            <div class="form-group form-half" style="margin-bottom:0">
+              <label for="select-grad-year" class="sub-label">Year</label>
+              <select id="select-grad-year">
+                <!-- Populated by JS -->
+              </select>
+            </div>
+          </div>
+          <p class="form-hint" id="grad-duration-hint">Pick the term you'd ideally walk the stage.</p>
+        </div>
+
+        <input type="hidden" id="input-max-units" value="19">
+
+        <div class="form-group">
+          <div class="checkbox-row">
+            <input type="checkbox" id="check-summer">
+            <label for="check-summer">Include Summer Quarter</label>
+          </div>
+        </div>
+
+        <!-- GAP Period -->
+        <div class="form-group">
+          <div class="checkbox-row">
+            <input type="checkbox" id="check-gap">
+            <label for="check-gap">I'm planning a GAP period (leave of absence)</label>
+          </div>
+          <div id="gap-options" class="gap-options" style="display:none">
+            <div class="form-row gap-row">
+              <div class="form-group form-third" style="margin-bottom:0">
+                <label class="sub-label">Duration</label>
+                <select id="select-gap-type">
+                  <option value="quarter">One Quarter</option>
+                  <option value="year">Full Year (3 quarters)</option>
+                </select>
+              </div>
+              <div class="form-group form-third" style="margin-bottom:0">
+                <label class="sub-label">Starting Term</label>
+                <select id="select-gap-term">
+                  <option value="F">Fall</option>
+                  <option value="W">Winter</option>
+                  <option value="S">Spring</option>
+                </select>
+              </div>
+              <div class="form-group form-third" style="margin-bottom:0">
+                <label class="sub-label">Starting Year</label>
+                <select id="select-gap-year">
+                  <!-- Populated by JS -->
+                </select>
+              </div>
+            </div>
+            <p class="form-hint">Your graduation date will automatically shift to account for the GAP period.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="select-prof-importance">How important are professor ratings?</label>
+          <select id="select-prof-importance">
+            <option value="low">Low - I care more about the course content</option>
+            <option value="medium" selected>Medium - I'd like good professors when possible</option>
+            <option value="high">High - I'd rather take a different course if the professor is better</option>
+          </select>
+        </div>
+
+        <div class="wizard-buttons">
+          <button id="btn-wizard-back-3" class="btn-wizard btn-wizard-secondary">&larr; Back</button>
+          <button id="btn-wizard-next-3" class="btn-wizard btn-wizard-primary">Next &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Concentration & Generate -->
+      <div id="wizard-step-4" class="wizard-step">
+        <h2>Choose Your Focus</h2>
+        <p class="step-desc">Pick the area you'd most like to specialize in. We'll use this to choose your electives and shape your GE experience.</p>
+
+        <div class="form-group">
+          <label>Major Concentration</label>
+          <p class="form-hint">Pick the area you most want to focus on within your major.</p>
+          <div class="interests-grid" id="concentration-grid">
+            <!-- Populated dynamically from CONCENTRATIONS.major[selectedMajor] -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>General Education Focus</label>
+          <p class="form-hint">Pick the type of GE courses you'd most enjoy.</p>
+          <div class="interests-grid" id="ge-concentration-grid">
+            <!-- Populated dynamically from CONCENTRATIONS.ge -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-row">
+            <input type="checkbox" id="check-auto-suggest" checked>
+            <label for="check-auto-suggest">Auto-suggest elective and GE courses for me</label>
+          </div>
+          <p style="font-size:12px;color:#888;margin-top:4px;margin-left:28px;">
+            If unchecked, you'll see available options for each quarter and pick manually.
+          </p>
+        </div>
+
+        <div class="wizard-buttons">
+          <button id="btn-wizard-back-4" class="btn-wizard btn-wizard-secondary">&larr; Back</button>
+          <button id="btn-generate" class="btn-wizard btn-wizard-generate">Generate My Schedule</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========== VIEW 3: SCHEDULE ========== -->
+  <div id="view-schedule" class="view">
+    <div class="schedule-layout">
+
+      <!-- Main Schedule Grid -->
+      <div class="schedule-main">
+        <div class="schedule-top-bar">
+          <h2 class="schedule-title">Your Academic Schedule</h2>
+          <div class="schedule-actions">
+            <button class="btn-back-wizard" onclick="backToWizard()">Edit Preferences</button>
+            <button class="btn-export" onclick="exportPDF()">Export PDF</button>
+            <button class="btn-export" onclick="exportExcel()">Export Excel</button>
+            <button class="btn-export" onclick="exportDOCX()">Export Word</button>
+          </div>
+        </div>
+
+        <div id="alert-box" class="alert-box"></div>
+
+        <div id="schedule-grid">
+          <!-- Populated by JS -->
+        </div>
+
+        <div style="margin-top:24px;padding:16px;background:#FFF3E0;border-radius:8px;border:1px solid #FFE0B2;font-size:13px;color:#E65100;">
+          <strong>Important:</strong> This schedule is a planning tool. Please verify all courses
+          and requirements on the official
+          <a href="https://catalog.ucsc.edu/en/current/general-catalog" target="_blank" style="color:#E65100;font-weight:600;">UCSC General Catalog</a>
+          and consult with your academic advisor before enrolling.
+        </div>
+      </div>
+
+      <!-- Requirements Sidebar -->
+      <div class="requirements-sidebar">
+        <div id="requirements-panel">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ========== MODAL: Course Detail ========== -->
+  <div id="modal-course-detail" class="modal-overlay" onclick="if(event.target===this)closeModal('modal-course-detail')">
+    <div class="modal-content">
+      <div id="detail-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MODAL: Swap / Add Course ========== -->
+  <div id="modal-swap" class="modal-overlay" onclick="if(event.target===this)closeModal('modal-swap')">
+    <div class="modal-content">
+      <div id="swap-content">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+  <!-- ========== LOADING OVERLAY: Schedule Generation ========== -->
+  <div id="loading-screen" class="loading-screen" role="status" aria-live="polite" aria-busy="false">
+    <div class="loading-card">
+      <div class="slug-track" aria-hidden="true">
+        <span class="pixel-banana-slug">🍌🐌</span>
+      </div>
+      <h2>Building your personalized schedule…</h2>
+      <p>Checking prerequisites, quarters, GE fit, concentrations, gaps, and professor preferences.</p>
+    </div>
+  </div>
+
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- Load order matters: courses/majors define globals that data.js and engine.js read. -->
+  <script src="js/courses.js"></script>
+  <script src="js/majors.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/engine/requirement-normalizer.js"></script>
+  <script src="js/engine/requirement-collector.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/export.js"></script>
+
+</body>
+</html>
