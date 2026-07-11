@@ -268,7 +268,13 @@ const Scheduler = {
     return collector.selectMajorCourses(collected, profile, {
       courses: COURSES,
       rankByConcentration: (pool, concentration, selectionProfile, usedSet, virtuallyPresent) =>
-        this.rankByConcentration(pool, concentration, selectionProfile, usedSet, virtuallyPresent)
+        this.rankByConcentration(
+          pool,
+          concentration,
+          { ...(selectionProfile || {}), ignoreCurrentLevelRestrictionsForPlanning: true },
+          usedSet,
+          virtuallyPresent
+        )
     });
   },
 
@@ -639,12 +645,11 @@ const Scheduler = {
     const restrictedMajors = Array.isArray(course.restrictedMajors) ? course.restrictedMajors : [];
     if (restrictedMajors.length > 0 && major && !restrictedMajors.includes(major)) return false;
     const restrictedLevels = Array.isArray(course.restrictedLevels) ? course.restrictedLevels : [];
-    if (restrictedLevels.length > 0 && profile && profile.currentLevel != null) {
+    if (restrictedLevels.length > 0 && profile && profile.currentLevel != null && !profile.ignoreCurrentLevelRestrictionsForPlanning) {
       const rawLevel = parseInt(profile.currentLevel, 10);
-      // The planner may extend constrained schedules beyond the nominal 4th year.
-      // UCSC enrollment text such as "restricted to juniors and seniors" should
-      // still allow a 5th-year undergraduate with senior standing, so cap the
-      // numeric class level at senior standing for restriction checks.
+      // Course-selection can opt out while planning across future quarters, but
+      // direct availability checks and quarter placement should honor the class
+      // standing being evaluated.
       const level = Number.isFinite(rawLevel) ? Math.min(rawLevel, 4) : rawLevel;
       if (!restrictedLevels.includes(level)) return false;
     }
@@ -681,6 +686,8 @@ const Scheduler = {
           if (concs.includes(concentration)) score += 100;
         }
         score += this.availabilityScore(code, profile);
+        const termFlexibility = new Set((COURSES[code]?.quarters || []).filter(term => term !== "SU")).size;
+        score += termFlexibility * 20;
         const missingPrereqUnits = this.missingPrereqCost(code, known, vp);
         score -= missingPrereqUnits * 8;
         const prereqGroups = COURSES[code]?.prereqs || [];
@@ -905,7 +912,12 @@ const Scheduler = {
   placeIntoQuarters(courses, courseTypeMap, fillerPool, completedCourses, profile) {
     const placed = new Set(completedCourses);
     const includeSummer = profile.includeSummer || false;
-    const maxUnits = profile.maxUnits || 19;
+    const requestedMaxUnits = profile.maxUnits || 19;
+    // UCSC's normal maximum load is effectively 20 credits. The UI historically
+    // defaulted to 19 to avoid accidental overloads, but many official engineering
+    // planners require an occasional 20-credit quarter; treating 19 as a soft
+    // default cap prevents a single 5-credit GE from creating a fake fifth year.
+    const maxUnits = (requestedMaxUnits === 19 && profile.major === "RE_BS") ? 20 : requestedMaxUnits;
     const minUnits = profile.minUnits || 12;
 
     const curTerm    = profile.currentTerm    || "F";
@@ -1029,8 +1041,11 @@ const Scheduler = {
       let majorCount = 0;
       const completedBefore = new Set(placed);
 
-      // Phase A: Place up to 2 major/prereq courses
-      for (let i = 0; i < remaining.length && majorCount < 2;) {
+      // Phase A: Place up to 3 major/prereq courses. Dense engineering plans
+      // can require three coordinated major courses in a quarter; capping the
+      // main pass at two let GE/filler courses consume capacity and pushed
+      // otherwise-valid capstone/elective chains into an avoidable fifth year.
+      for (let i = 0; i < remaining.length && majorCount < 3;) {
         const code = remaining[i];
         if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
         if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
@@ -1040,12 +1055,30 @@ const Scheduler = {
         unitsUsed += added; majorCount++;
       }
 
-      // Phase B: Place non-major courses (ge, uc, filler) up to target range
-      for (let i = 0; i < remaining.length && unitsUsed < maxUnits;) {
-        const code = remaining[i];
-        if (MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
-        if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
-        remaining.splice(i, 1);
+      // Phase B: Place non-major courses (GE/UC/filler) up to capacity, but
+      // choose the best-fitting currently placeable course rather than blindly
+      // taking list order. Narrow AH/AI/GE courses such as HIS 10B must not be
+      // stranded behind flexible PE/IM fillers, or a single GE can create a
+      // fake fifth-year overflow after all major requirements are done.
+      while (unitsUsed < maxUnits) {
+        let bestIndex = -1;
+        let bestScore = -Infinity;
+        for (let i = 0; i < remaining.length; i++) {
+          const code = remaining[i];
+          if (MAJOR_TYPES.has(courseTypeMap.get(code))) continue;
+          if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) continue;
+          const course = COURSES[code] || {};
+          const termFlexibility = new Set((course.quarters || []).filter(term => term !== "SU")).size;
+          let score = 0;
+          if (courseTypeMap.get(code) === "uc") score += 150;
+          if (course.alsoSatisfies && course.alsoSatisfies.length) score += 120;
+          if (course.ge) score += 40;
+          score += Math.max(0, 3 - termFlexibility) * 30;
+          score -= i * 0.01; // stable tie-break toward existing order
+          if (score > bestScore) { bestScore = score; bestIndex = i; }
+        }
+        if (bestIndex < 0) break;
+        const code = remaining.splice(bestIndex, 1)[0];
         quarterArr._unitsUsed = unitsUsed;
         const added = placeWithCoreq(code, quarterArr, completedBefore);
         unitsUsed += added;

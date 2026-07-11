@@ -17566,6 +17566,9 @@ const COURSES = {
       [
         "BME 105",
         "BIOL 105"
+      ],
+      [
+        "BME 185"
       ]
     ],
     "ge": null,
@@ -33222,8 +33225,7 @@ const COURSES = {
     "prereqs": [
       [
         "MATH 19A",
-        "MATH 20A",
-        "PHYS 6A"
+        "MATH 20A"
       ],
       [
         "PHYS 5A",
@@ -33232,9 +33234,6 @@ const COURSES = {
       ],
       [
         "PHYS 5L",
-        "PHYS 6A"
-      ],
-      [
         "PHYS 6L"
       ],
       [
@@ -33627,9 +33626,6 @@ const COURSES = {
       ],
       [
         "PHYS 5N",
-        "PHYS 6C"
-      ],
-      [
         "PHYS 6N"
       ],
       [
@@ -33672,9 +33668,6 @@ const COURSES = {
       ],
       [
         "PHYS 5N",
-        "PHYS 6C"
-      ],
-      [
         "PHYS 6N"
       ],
       [
@@ -33710,6 +33703,7 @@ const COURSES = {
     "prereqs": [
       [
         "PHYS 5A",
+        "PHYS 15A",
         "PHYS 6A"
       ],
       [
@@ -33717,11 +33711,16 @@ const COURSES = {
         "PHYS 6L"
       ],
       [
+        "PHYS 5B",
+        "PHYS 6B"
+      ],
+      [
         "PHYS 5M",
         "PHYS 6M"
       ],
       [
         "PHYS 5C",
+        "PHYS 15C",
         "PHYS 6C"
       ],
       [
@@ -33757,6 +33756,7 @@ const COURSES = {
     "prereqs": [
       [
         "PHYS 5A",
+        "PHYS 15A",
         "PHYS 6A"
       ],
       [
@@ -33764,11 +33764,16 @@ const COURSES = {
         "PHYS 6L"
       ],
       [
+        "PHYS 5B",
+        "PHYS 6B"
+      ],
+      [
         "PHYS 5M",
         "PHYS 6M"
       ],
       [
         "PHYS 5C",
+        "PHYS 15C",
         "PHYS 6C"
       ],
       [
@@ -34433,15 +34438,6 @@ const COURSES = {
     "prereqs": [
       [
         "ECE 103"
-      ],
-      [
-        "PHYS 116A"
-      ],
-      [
-        "PHYS 116C"
-      ],
-      [
-        "PHYS 133"
       ]
     ],
     "ge": null,

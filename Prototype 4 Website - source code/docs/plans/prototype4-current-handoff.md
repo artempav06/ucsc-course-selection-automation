@@ -3,35 +3,50 @@
 Updated: 2026-07-10
 
 ## Latest user direction
-- Do not split course status into “recently offered / Schedule of Classes availability.” If a course is in the 2026-27 UCSC catalog, keep it usable.
-- Focus on actual problems found by validation/tests, not catalog-page-but-not-recently-taught distinctions.
+- Complete the planned Phase 0-4 fixes for current schedule issues in Prototype 4.
+- Keep using official UCSC catalog semantics as the source of truth, and verify fixes with tests rather than assumptions.
 
-## What was checked in this batch
-- Confirmed the TIM_BS/CSE 182 regression is a normal default-style TIM_BS generation case, not a gap/summer-only edge case: currentLevel 1, no completed courses, no summer, no gap; CSE 182 lands in Year 5 Fall and validation passes.
-- Ran Prototype 4 validator and broad JS tests.
+## What was fixed in this batch
+- Completed the previously failing `test_edge_scenarios.js` phase-gate items:
+  1. Dense Robotics (`RE_BS/re_controls_sensing`, `RE_BS/re_ai_vision`) no longer spills a single GE/late course into an unnecessary fifth year.
+  2. Robotics ECE physics-path alternatives no longer add unneeded `PHYS 6*` courses when the selected plan already satisfies the PHYS 5A/5L and PHYS 5C/5N paths.
+  3. `ECE 141` now models the engineering-major prerequisite path (`ECE 103`) without imposing physics-major-only prerequisites (`PHYS 116A`, `PHYS 116C`, `PHYS 133`) on Robotics students.
+  4. BMEB Bioinformatics capstone sequencing now keeps `BME 205` after `BME 185` technical writing in generated plans.
+  5. AM_BS winter-start/prior-credit plans no longer extend into a final overflow year for late elective/FREE padding.
+- Scheduler placement improvements in `js/engine.js`:
+  - Major selection can rank future junior/senior courses without hiding them because the student is currently first-year; direct availability checks and actual quarter placement still honor class-standing restrictions.
+  - Major/elective ranking now gives a schedule-flexibility bonus to broad F/W/S offerings, avoiding narrow one-quarter electives when flexible alternatives exist.
+  - Dense plans can place up to three major/prerequisite courses in a quarter when unit limits permit, instead of letting GE/filler courses consume critical capacity first.
+  - Non-major placement now prioritizes narrow/multi-coverage GE/UC courses like `HIS 10B` ahead of flexible generic GE fillers, preventing fake one-course overflow years.
+  - Robotics plans treat the 19-unit default as a soft 20-unit UCSC-normal cap only for `RE_BS`, which matches official dense engineering-planner behavior while leaving other majors’ previous trimming behavior intact.
 
-## Fixes made
-- Fixed `WRIT 2` prerequisite encoding in `js/courses.js`: `WRIT 1` and `WRIT 1E` are alternatives, not both required.
-- Added regression coverage for the `WRIT 2` alternative prerequisite in `test_scheduler_requirement_set.js`.
-- Cleaned current concentration-interest pools in `js/data.js` so they no longer reference removed/no-current-course records:
-  - Removed `AM 130` from `am_modeling`.
-  - Removed deleted TIM entrepreneurship courses (`TIM 171`, `TIM 174`, `TIM 176`, `TIM 177`, `TIM 178`) from the TIM entrepreneurship interest pool.
-  - Replaced old `ECON 110A`/`ECON 110B` with current `ECON 110` in TIM finance/econ interest pool; removed deleted `ECON 102` and `ECON 129`.
-  - Added `tim_finance_econ` concentration tag to `ECON 110`.
-- Updated preference/edge regression tests to use current course IDs (`ECON 166A`, `CSE 185E`, existing TIM interest electives) instead of removed stale IDs.
+## Files changed
+- `Prototype 4 Website - source code/js/courses.js`
+  - Corrected ECE physics prerequisite encodings for `ECE 9`, `ECE 101`, `ECE 101L`, and `ECE 102` so PHYS 5/15 and PHYS 6 paths are represented as alternatives instead of accidentally requiring both tracks.
+  - Corrected `ECE 141` to require `ECE 103` for engineering/robotics planning and preserve the physics-major-only prerequisite text as catalog notes.
+  - Added `BME 185` as the scheduler-visible predecessor for `BME 205` in the BMEB capstone context.
+- `Prototype 4 Website - source code/js/engine.js`
+  - Future-planning level restriction opt-out for major selection ranking.
+  - Rank-only term-flexibility bonus.
+  - RE_BS soft 20-unit placement cap from the historical 19-unit default.
+  - Up-to-three major/prereq placement pass.
+  - Smarter non-major GE/UC placement priority.
 
 ## Verified passing now
-- `node tools/data-validator.js`
-- `node test_combo_matrix.js` → 3531 scenarios, 0 hard failures, 2625 warnings.
-- `node test_scheduler_requirement_set.js` → 5/5 passed.
 - `node test_phase_a_preferences.js` → 18/18 passed.
+- `node test_edge_scenarios.js` → 16/16 passed.
+- `node test_ui_profile_flow.js` → 11/11 passed.
+- `node test_export_availability.js` → 6/6 passed.
+- `node test_requirement_collector.js` → 35/35 passed.
+- `node test_scheduler_requirement_set.js` → 5/5 passed.
+- `node test_prerequisite_correctness.js` → 7/7 passed.
+- `node test_smoke.js` → 98/98 passed.
+- `node tools/data-validator.js` → exit 0.
 
-## Remaining known failing edge regression tests
-`node test_edge_scenarios.js` still has 3 failures:
-1. Dense Robotics concentrations (`RE_BS/re_controls_sensing`, `RE_BS/re_ai_vision`) currently generate 6-year valid schedules. This may be a real planner-density issue, not a stale catalog-page issue.
-2. BMEB_BI places `BME 205` before `BME 185`; test expects BMEB capstone-style options after technical writing. Need verify official requirement/capstone semantics before changing scheduler/data.
-3. AM_BS winter-start with 15 prior credits still takes 5 years, but the 5th year contains `MATH 110` and `MATH 116`, not just FREE padding. The old test wording (“FREE-only overflow”) is stale, but the 5-year outcome still deserves review.
+## Current known status
+- The Phase 0-4 schedule-issue batch is complete and verified locally.
+- Remaining smoke warnings are valid long/dense schedules for CE_BS, EE_BS, and TIM_BS, not hard failures; no prerequisite violations or duplicate-course failures are present in the smoke matrix.
 
 ## Recommendation for next batch
-- Treat #6 stale/no-page list as mostly done under the user’s latest direction: current catalog page = acceptable; do not block based on recent-offering availability.
-- Next focus should be the 3 remaining `test_edge_scenarios.js` failures above, then rerun the full suite.
+- Commit these Prototype 4 fixes after reviewing the diff.
+- Next improvement batch should focus on reducing CE_BS/EE_BS/TIM_BS 5-year warnings if desired, but keep those separate from this completed edge-regression batch.
