@@ -74,6 +74,28 @@ function plannedCourses(schedule) {
   return out;
 }
 
+function emptyNonGapQuartersBeforeLaterWork(schedule, profile) {
+  const slots = [];
+  const includeSummer = Boolean(profile.includeSummer);
+  for (const year of schedule) {
+    for (const q of includeSummer ? ['F', 'W', 'S', 'SU'] : ['F', 'W', 'S']) {
+      if (!Object.prototype.hasOwnProperty.call(year.quarters, q)) continue;
+      const courses = year.quarters[q] || [];
+      slots.push({ label: `${year.label} ${q}`, q, courses });
+    }
+  }
+  const issues = [];
+  for (let i = 0; i < slots.length; i++) {
+    const courses = slots[i].courses;
+    if (courses.length === 1 && courses[0] === '_GAP') continue;
+    if (courses.length > 0) continue;
+    if (slots.slice(i + 1).some(slot => (slot.courses || []).some(code => code !== '_GAP'))) {
+      issues.push(slots[i].label);
+    }
+  }
+  return issues;
+}
+
 function firstConcentration(major) {
   return (CONCENTRATIONS.major[major] || [])[0]?.id || null;
 }
@@ -129,7 +151,37 @@ const csAiWinterStart = runCase('CS_BS', 'cs_ai_ml', {
 const timAvoided = runCase('TIM_BS', 'tim_entrepreneurship', {
   profile: { avoidedCourses: ['TIM 171', 'TIM 174'] }
 });
+const amTransferNoGap = runCase('AM_BS', 'am_modeling', {
+  profile: {
+    currentLevel: 2,
+    currentTerm: 'S',
+    currentYear: 2026,
+    targetGradTerm: 'S',
+    targetGradYear: 2026,
+    priorCredits: 45,
+    gapEnabled: false,
+    includeSummer: false
+  },
+  maxYears: 8,
+  requireAllMajor: false,
+  requireUnits: false,
+  requireUpperDiv: false,
+  requireNoPrereqViolations: false
+});
 const timAvoidedCourses = plannedCourses(timAvoided.schedule);
+const amTransferEmptyQuarters = emptyNonGapQuartersBeforeLaterWork(amTransferNoGap.schedule, Object.assign(makeProfile('AM_BS', 'am_modeling'), {
+  currentLevel: 2,
+  currentTerm: 'S',
+  currentYear: 2026,
+  targetGradTerm: 'S',
+  targetGradYear: 2026,
+  priorCredits: 45,
+  gapEnabled: false,
+  includeSummer: false
+}));
+if (amTransferEmptyQuarters.length) {
+  amTransferNoGap.errors.push(`expected no empty non-gap quarters before later scheduled work, got: ${amTransferEmptyQuarters.join(', ')}`);
+}
 const capstoneViolations = prereqViolations(reAutonomousFullYearGap.schedule)
   .filter(v => v.includes('ECE 129B') || v.includes('ECE 129C'));
 if (capstoneViolations.length) {
@@ -139,7 +191,7 @@ if (timAvoidedCourses.includes('TIM 171') || timAvoidedCourses.includes('TIM 174
   timAvoided.errors.push('expected avoidedCourses TIM 171/TIM 174 not to be selected when alternatives exist');
 }
 let failed = 0;
-for (const result of [am, tim, timSystems, timFinance, reAutonomous, reAutonomousFullYearGap, eeSignals, csAiWinterStart, timAvoided]) {
+for (const result of [am, tim, timSystems, timFinance, reAutonomous, reAutonomousFullYearGap, eeSignals, csAiWinterStart, timAvoided, amTransferNoGap]) {
   if (result.errors.length) {
     failed++;
     console.error(`FAIL ${result.major}/${result.concentration}: ${result.errors.join(' | ')}`);

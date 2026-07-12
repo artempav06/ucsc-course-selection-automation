@@ -308,7 +308,7 @@ profile.concentration   // still maps to first major/elective interest
 
 ## Phase 3 — Preference scoring cleanup
 
-**Progress 2026-07-11:** Partially implemented. Added normalized interest helper APIs on `Scheduler` and mirrored the normalized scoring in `RequirementCollector` so GE selection, filler pools, ranking, add-course, and replacement suggestions understand both legacy single fields and new two-interest arrays. Added two-interest reason assertions to `test_phase_a_preferences.js`. The tag-audit script task remains future work.
+**Progress 2026-07-11:** Implemented and verified. Added normalized interest helper APIs on `Scheduler` and mirrored the normalized scoring in `RequirementCollector` so GE selection, filler pools, ranking, add-course, and replacement suggestions understand both legacy single fields and new two-interest arrays. Added two-interest reason assertions to `test_phase_a_preferences.js`. Added `scripts/audit_interest_tags.js` / `scripts/audit_ge_candidates.js` with `test_interest_tag_audit.js`; current audit hard errors are 0.
 
 ### Task 3.1: Normalize interest matching
 
@@ -418,7 +418,7 @@ node test_interest_tag_audit.js
 
 ## Phase 5 — Quarter placement: credit-first staged placement
 
-**Progress 2026-07-11:** Partially implemented. The placement policy now exposes credit/load helpers and allows dense engineering plans to use a justified soft 20-unit rescue when a <=15-unit quarter can absorb an additional required course, fixing the RE_BS autonomous fake fifth-year regression while keeping normal CS profiles capped by policy tests. Full lower-division urgency scoring and final audit/repair remain future phases.
+**Progress 2026-07-11:** Implemented and verified. `placeIntoQuarters` now uses credit-first major placement instead of the old `majorCount < 2` default, aiming for about 10+ major/prereq credits when valid courses fit, then GE/UC before elective/filler while distribution requirements remain. `Scheduler.courseUrgency(...)` boosts lower-division foundations, WRIT 1/2, prerequisite-chain starters, and rare offerings while preserving topological prerequisite order. Covered by `test_credit_first_placement.js` plus existing edge/prerequisite/regression suites. Dense engineering soft-20 rescue remains narrowly scoped and policy-tested.
 
 ### Task 5.1: Replace `majorCount < 2` with major-credit target
 
@@ -503,6 +503,8 @@ Penalize:
 ---
 
 ## Phase 6 — Final audit and repair stage
+
+**Progress 2026-07-12:** Implemented, fixed, and verified. Added `Scheduler.auditSchedulePolicy(...)`, `Scheduler.repairSchedulePolicy(...)`, and `explanation.policyAudit = { beforeRepair, repairsApplied, afterRepair }` inside `generateWithExplanation`. Follow-up review found the audit/repair cap used `normalMaxUnits(profile)` while placement/load-band logic allowed engineering majors a narrow 20-credit soft cap. Fixed by centralizing cap reads through `Scheduler.effectiveMaxUnits(profile)` for placement, load bands, audit, and repair. Current repair safely removes overflow-causing FREE padding and re-audits; audit catches over-cap quarters, duplicate GE families, FREE/elective-before-GE, unmet requirements, and prerequisite violations without inventing courses or changing major paths. Covered by `test_schedule_policy_audit.js` (4/4, including engineering soft-20 consistency).
 
 ### Task 6.1: Add schedule policy audit
 
@@ -622,6 +624,8 @@ explanation.policyAudit = {
 
 ## Phase 7 — Data correctness / tag-category audit
 
+**Progress 2026-07-11:** Implemented initial hard-error audits and verified 0 hard errors. Added `scripts/audit_ge_candidates.js`, `scripts/audit_interest_tags.js`, and `test_interest_tag_audit.js`. The audit caught stale `HIS 80A` references in AH/AI and `ge_social_sciences`; because the current local catalog marks `HIS 80A` as possible renamed/renumbered with no exact current official page, the active GE/UC/advising pools now use current known alternatives (`HIS 10B`, `POLI 20`) and the concentration docs/tag script were updated to match. Warnings remain advisory only for broader official-catalog follow-up.
+
 ### Task 7.1: Audit GE category correctness for selected/advertised GE pools
 
 **Objective:** Avoid bad GE recommendations from wrong data.
@@ -677,6 +681,8 @@ For each supported major:
 ---
 
 ## Phase 8 — Broad regression and browser QA
+
+**Progress 2026-07-12:** Implemented and verified. Focused suites now cover credit-first placement, audit/repair, GE priority, two-interest UI/profile flow, interest/tag audits, prerequisite correctness, and regressions. `node test_combo_matrix.js` passed 3,531 scenarios with 0 hard failures / 2,281 warnings. A full `for t in test_*.js; do node "$t"; done` pass ran through the suite and hit the 600s shell limit only at the final warning-triage file after all previous files had passed; `node test_warning_triage_diagnostics.js` passed separately. Data/tag audit scripts passed with 0 hard errors (`audit_interest_tags`: 0 warnings; `audit_ge_candidates`: 3 advisory warnings). Real browser smoke via `http://127.0.0.1:8094/` loaded Prototype 4, had no console errors, and generated/rendered an EE_BS schedule with the requirement tracker at 100% complete.
 
 ### Task 8.1: Add focused regression suite
 

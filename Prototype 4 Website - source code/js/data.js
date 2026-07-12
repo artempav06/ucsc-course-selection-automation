@@ -118,14 +118,14 @@ const UC_REQUIREMENTS = [
     id: "AH",
     name: "American History",
     needed: 1,
-    courses: ["HIS 10B", "HIS 80A"],
+    courses: ["HIS 10B"],
     note: "One course in American History."
   },
   {
     id: "AI",
     name: "American Institutions",
     needed: 1,
-    courses: ["HIS 10B", "HIS 80A", "POLI 20"],
+    courses: ["HIS 10B", "POLI 20"],
     note: "One course in American Institutions. HIS 10B satisfies both AH and AI."
   }
 ];
@@ -216,7 +216,7 @@ const CONCENTRATIONS = {
   },
   ge: [
     { id: "ge_arts_humanities", name: "Arts & Humanities", description: "Literature, philosophy, art history, music, film", geCodes: ["TA","IM"], courses: ["LIT 1","PHIL 9","PHIL 11","ANTH 110A","MUSC 11A","MUSC 11B","MUSC 11C","MUSC 11D","MUSC 11E","FILM 20A","THEA 10","ART 10D","ART 10E","ART 10F","LIT 61H","PHIL 22","PHIL 28"] },
-    { id: "ge_social_sciences", name: "Social Sciences", description: "Sociology, psychology, anthropology, political science, history", geCodes: ["CC","ER","PE-H"], courses: ["ANTH 1","SOCY 1","SOCY 15","PSYC 1","CRES 10","HIS 10B","HIS 80A","POLI 1","POLI 20","POLI 21","LALS 1"] },
+    { id: "ge_social_sciences", name: "Social Sciences", description: "Sociology, psychology, anthropology, political science, history", geCodes: ["CC","ER","PE-H"], courses: ["ANTH 1","SOCY 1","SOCY 15","PSYC 1","CRES 10","HIS 10B","POLI 1","POLI 20","POLI 21","LALS 1"] },
     { id: "ge_natural_sciences", name: "Natural Sciences", description: "Physics, chemistry, biology, astronomy, earth sciences", geCodes: ["SI","MF"], courses: ["PHYS 6A","CHEM 1A","BIOE 20B","ASTR 1","ASTR 2","PHYS 5A","EART 1","EART 5","OCEA 1"] },
     { id: "ge_environment", name: "Environment & Sustainability", description: "Environmental studies, climate, ecology, conservation", geCodes: ["PE-E"], courses: ["ENVS 23","ENVS 24","ENVS 100","PHIL 28","BIOE 85","ECON 50","PHYS 80A","ECE 80J","ECE 80H"] },
     { id: "ge_tech_society", name: "Technology & Society", description: "Technology ethics, data literacy, societal impacts of tech", geCodes: ["PE-T","SR"], courses: ["CSE 80N","CSE 3","CSE 80A","CSE 80L","CSE 80S","CSE 40","GCH 41","ECE 80E","ECE 80S","STAT 5","STAT 7","MATH 4"] },

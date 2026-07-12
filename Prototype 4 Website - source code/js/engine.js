@@ -281,9 +281,16 @@ const Scheduler = {
     return requested;
   },
 
+  effectiveMaxUnits(profile) {
+    const cap = this.normalMaxUnits(profile);
+    const engineeringSoft20Majors = new Set(["CE_BS", "EE_BS", "RE_BS"]);
+    if (cap === 19 && profile && engineeringSoft20Majors.has(profile.major)) return 20;
+    return cap;
+  },
+
   creditLoadBand(units, profile) {
     const min = profile && Number.isFinite(parseInt(profile.minUnits, 10)) ? parseInt(profile.minUnits, 10) : 12;
-    const cap = this.normalMaxUnits(profile);
+    const cap = this.effectiveMaxUnits(profile);
     if (units < min) return "under_min";
     if (units <= 14) return "low";
     if (units <= 17) return "target";
@@ -518,6 +525,30 @@ const Scheduler = {
     return this.placeIntoQuarters(remaining, courseTypeMap, fillerPool, completedSet, profile);
   },
 
+  courseUrgency(code, profile, slot = {}, selectedSet = new Set()) {
+    const course = COURSES[code];
+    if (!course) return 0;
+    const levelNum = Number.isFinite(parseInt(slot.levelNum, 10)) ? parseInt(slot.levelNum, 10) : 1;
+    const earlyWindow = levelNum <= 2;
+    let score = 0;
+    if (code === "WRIT 1" || code === "WRIT 2") score += earlyWindow ? 500 : 180;
+    if (course.division === "lower" && earlyWindow) score += 160;
+    if (course.division === "upper" && earlyWindow) score -= 70;
+    if (Array.isArray(course.quarters) && course.quarters.filter(q => q !== "SU").length <= 1) score += 45;
+    const selected = selectedSet || new Set();
+    for (const candidate of selected) {
+      const prereqGroups = [
+        ...(Array.isArray(COURSES[candidate]?.prereqs) ? COURSES[candidate].prereqs : []),
+        ...(Array.isArray(COURSES[candidate]?.concurrentPrereqs) ? COURSES[candidate].concurrentPrereqs : [])
+      ];
+      if (prereqGroups.some(group => Array.isArray(group) && group.includes(code))) score += 120;
+    }
+    const m = code.match(/(\d+)/);
+    if (m) score -= Math.floor(parseInt(m[1], 10) / 100);
+    score += this.availabilityScore(code, profile) * 0.01;
+    return score;
+  },
+
   generate(profile) {
     return this.generateWithExplanation(profile, { includeValidation: false }).schedule;
   },
@@ -667,7 +698,11 @@ const Scheduler = {
 
     // --- Phase 8: Place into quarters ---
     const remaining = selected.filter(c => !completedSet.has(c));
-    const schedule = this.placeSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet);
+    let schedule = this.placeSelectedCourses(profile, remaining, courseTypeMap, fillerPool, completedSet);
+    const beforePolicyAudit = this.auditSchedulePolicy(schedule, profile, courseTypeMap);
+    const policyRepair = this.repairSchedulePolicy(schedule, profile, courseTypeMap, beforePolicyAudit);
+    if (policyRepair.repairsApplied.length > 0) schedule = policyRepair.schedule;
+    const afterPolicyAudit = policyRepair.afterRepair;
     schedule.courseTypeMap = courseTypeMap;
     const plannedFromSchedule = [];
     for (const year of schedule) {
@@ -682,6 +717,11 @@ const Scheduler = {
       scheduledCount: plannedFromSchedule.length,
       years: schedule.length,
       courseTypes: courseTypeCounts(courseTypeMap)
+    };
+    explanation.policyAudit = {
+      beforeRepair: beforePolicyAudit,
+      repairsApplied: policyRepair.repairsApplied,
+      afterRepair: afterPolicyAudit
     };
     if (options.includeValidation !== false) {
       explanation.validation = Validator.validateSchedule(schedule, profile);
@@ -704,6 +744,111 @@ const Scheduler = {
       };
     }
     return { schedule, explanation };
+  },
+
+  // --- Schedule policy audit / repair ---
+
+  auditSchedulePolicy(schedule, profile = {}, courseTypeMap = new Map()) {
+    const hardErrors = [];
+    const warnings = [];
+    const quarterDiagnostics = [];
+    const completed = new Set(profile.completedCourses || []);
+    const seenCourses = new Set(completed);
+    const seenGEFamilies = this.geFamiliesSatisfiedBy([...completed]);
+    const cap = this.effectiveMaxUnits(profile);
+    const majorTypes = new Set(["major_core", "major_elective", "prereq"]);
+    const fillerTypes = new Set(["filler", "elective"]);
+    const addIssue = (bucket, issue) => bucket.push(issue);
+
+    for (const year of (schedule || [])) {
+      for (const [term, quarter] of Object.entries(year.quarters || {})) {
+        if (!Array.isArray(quarter) || quarter[0] === "_GAP") continue;
+        const courses = quarter.filter(code => code !== "_GAP");
+        const units = this.quarterUnits(courses);
+        const typeUnits = this.quarterTypeUnits(courses, courseTypeMap);
+        const majorUnits = [...majorTypes].reduce((sum, type) => sum + (typeUnits[type] || 0), 0);
+        const geUnits = (typeUnits.ge || 0) + (typeUnits.uc || 0);
+        const electiveUnits = [...fillerTypes].reduce((sum, type) => sum + (typeUnits[type] || 0), 0);
+        const neededBefore = this.stillNeededGEFamilies([...seenCourses], profile);
+        const redundantGECourses = [];
+        const localGEFamilies = new Set();
+        for (const code of courses) {
+          const families = this.geFamiliesOfCourse(code);
+          for (const family of families) {
+            if ((seenGEFamilies.has(family) || localGEFamilies.has(family)) && !this.majorRequiredCourseSet(profile).has(code)) redundantGECourses.push(code);
+            localGEFamilies.add(family);
+          }
+        }
+        const diagnostic = {
+          yearLabel: year.label,
+          term,
+          units,
+          majorUnits,
+          geUnits,
+          electiveUnits,
+          loadBand: this.creditLoadBand(units, profile),
+          neededGEBeforeQuarter: [...neededBefore],
+          redundantGECourses: [...new Set(redundantGECourses)],
+          earlyLowerDivisionMissing: [],
+          fixSuggestions: []
+        };
+        if (units > cap) {
+          const issue = { rule: "over_cap", yearLabel: year.label, term, units, cap };
+          addIssue(hardErrors, issue);
+          diagnostic.fixSuggestions.push("remove or move flexible filler/GE until the quarter is <= cap");
+        }
+        if (diagnostic.redundantGECourses.length > 0) {
+          addIssue(warnings, { rule: "duplicate_ge_family", yearLabel: year.label, term, courses: diagnostic.redundantGECourses.slice() });
+          diagnostic.fixSuggestions.push("swap redundant GE family with a still-needed GE family when one fits");
+        }
+        const hasFillerBeforeGE = neededBefore.size > 0 && courses.some(code => String(code).startsWith("FREE") || fillerTypes.has(courseTypeMap.get(code)));
+        if (hasFillerBeforeGE) {
+          addIssue(warnings, { rule: "filler_before_ge_complete", yearLabel: year.label, term, neededGEFamilies: [...neededBefore] });
+          diagnostic.fixSuggestions.push("delay filler/FREE until GE/UC families are complete");
+        }
+        if ((year.levelNum || 1) <= 2) {
+          const hasUpperElective = courses.some(code => COURSES[code]?.division === "upper" && courseTypeMap.get(code) === "major_elective");
+          if (hasUpperElective) {
+            addIssue(warnings, { rule: "early_upper_division_pressure", yearLabel: year.label, term });
+            diagnostic.earlyLowerDivisionMissing.push("upper-division elective appears in first two years; verify lower-division foundation is complete or blocked");
+          }
+        }
+        quarterDiagnostics.push(diagnostic);
+        for (const code of courses) {
+          seenCourses.add(code);
+          for (const family of this.geFamiliesOfCourse(code)) seenGEFamilies.add(family);
+        }
+      }
+    }
+    return { hardErrors, warnings, quarterDiagnostics };
+  },
+
+  repairSchedulePolicy(schedule, profile = {}, courseTypeMap = new Map(), audit = null) {
+    const clone = (schedule || []).map(year => ({
+      ...year,
+      quarters: Object.fromEntries(Object.entries(year.quarters || {}).map(([term, arr]) => [term, Array.isArray(arr) ? [...arr] : arr]))
+    }));
+    const repairsApplied = [];
+    const cap = this.effectiveMaxUnits(profile);
+    for (const year of clone) {
+      for (const [term, arr] of Object.entries(year.quarters || {})) {
+        if (!Array.isArray(arr) || arr[0] === "_GAP") continue;
+        let units = this.quarterUnits(arr);
+        for (let i = arr.length - 1; i >= 0 && units > cap; i--) {
+          const code = arr[i];
+          if (!String(code).startsWith("FREE")) continue;
+          units -= COURSES[code]?.units || 0;
+          arr.splice(i, 1);
+          repairsApplied.push({ action: "remove_overflow_free_padding", yearLabel: year.label, term, course: code });
+        }
+      }
+    }
+    return {
+      schedule: clone,
+      repairsApplied,
+      beforeRepair: audit || this.auditSchedulePolicy(schedule, profile, courseTypeMap),
+      afterRepair: this.auditSchedulePolicy(clone, profile, courseTypeMap)
+    };
   },
 
   // --- Unified category walker ---
@@ -1122,13 +1267,11 @@ const Scheduler = {
   placeIntoQuarters(courses, courseTypeMap, fillerPool, completedCourses, profile) {
     const placed = new Set(completedCourses);
     const includeSummer = profile.includeSummer || false;
-    const requestedMaxUnits = profile.maxUnits || 19;
     // UCSC's normal maximum load is effectively 20 credits. The UI historically
     // defaulted to 19 to avoid accidental overloads, but many official engineering
     // planners require an occasional 20-credit quarter; treating 19 as a soft
     // default cap prevents a single 5-credit GE from creating a fake fifth year.
-    const engineeringSoft20Majors = new Set(["CE_BS", "EE_BS", "RE_BS"]);
-    const maxUnits = (requestedMaxUnits === 19 && engineeringSoft20Majors.has(profile.major)) ? 20 : requestedMaxUnits;
+    const maxUnits = this.effectiveMaxUnits(profile);
     const minUnits = profile.minUnits || 12;
 
     const curTerm    = profile.currentTerm    || "F";
@@ -1269,18 +1412,35 @@ const Scheduler = {
         }
       }
 
-      // Phase A: Place up to 2 major/prereq courses by default. A third major
-      // course is reserved for the minimum-unit rescue phase below, so normal
-      // quarters leave space for WRIT/GE/electives and do not become unrealistic
-      // 4-5 required-course piles when labs are attached.
-      for (let i = 0; i < remaining.length && majorCount < 2;) {
-        const code = remaining[i];
-        if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
-        if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
-        remaining.splice(i, 1);
+      // Phase A: Credit-first major/prereq placement. Keep adding currently
+      // placeable major work until the quarter has about 10+ major credits when
+      // available. Raw course count is not the throttle: a 5+2+3 foundation
+      // bundle should count as 10 credits of major progress before the GE slot.
+      const targetMajorUnits = 10;
+      let majorUnits = 0;
+      const selectedSetForUrgency = new Set([...remaining, ...quarterArr]);
+      while (majorUnits < targetMajorUnits) {
+        let bestIndex = -1;
+        let bestScore = -Infinity;
+        for (let i = 0; i < remaining.length; i++) {
+          const code = remaining[i];
+          if (!MAJOR_TYPES.has(courseTypeMap.get(code))) continue;
+          if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) continue;
+          const addedUnits = COURSES[code]?.units || 0;
+          const projected = unitsUsed + addedUnits;
+          if (projected > maxUnits) continue;
+          let score = -i * 100;
+          score += this.courseUrgency(code, profile, { yearIndex: yi, term: q, levelNum: schedule[yi].levelNum }, selectedSetForUrgency) * 0.01;
+          score += Math.max(0, targetMajorUnits - Math.min(targetMajorUnits, majorUnits + addedUnits)) * -0.08;
+          if (score > bestScore) { bestScore = score; bestIndex = i; }
+        }
+        if (bestIndex < 0) break;
+        const code = remaining.splice(bestIndex, 1)[0];
         quarterArr._unitsUsed = unitsUsed;
         const added = placeWithCoreq(code, quarterArr, completedBefore);
-        unitsUsed += added; majorCount++;
+        unitsUsed += added;
+        majorUnits += added;
+        majorCount++;
       }
 
       // Phase B: Place non-major courses (GE/UC/filler) up to capacity, but
@@ -1549,6 +1709,50 @@ const Scheduler = {
     };
     repairChronologyPrereqs();
 
+    // Empty non-gap quarters are not acceptable UX. If the student did not choose
+    // a GAP quarter, a blank Fall/Winter/Spring in the middle of a plan should be
+    // treated as wasted capacity, not as an implicit break. Pull legally-placeable
+    // later courses backward into those holes before adding any optional FREE
+    // padding. This preserves the student's no-summer/no-gap choices and reduces
+    // fake overflow years caused by stranded empty quarters.
+    const fillEmptyNonGapQuartersFromLaterWork = () => {
+      const isLabPartner = code => Object.values(COURSES).some(course => course && course.labCoreq === code);
+      for (let si = 0; si < allQuarters.length; si++) {
+        const targetSlot = allQuarters[si];
+        const targetArr = schedule[targetSlot.yi].quarters[targetSlot.q];
+        if (!targetArr || targetArr[0] === "_GAP" || targetArr.length > 0) continue;
+        let targetUnits = 0;
+        for (let ti = si + 1; ti < allQuarters.length && targetUnits < minUnits; ti++) {
+          const sourceSlot = allQuarters[ti];
+          const sourceArr = schedule[sourceSlot.yi].quarters[sourceSlot.q];
+          if (!sourceArr || sourceArr[0] === "_GAP" || sourceArr.length === 0) continue;
+          const completedAtTarget = completedBeforeSlot(si);
+          let bestIdx = -1;
+          let bestScore = -Infinity;
+          for (let ci = 0; ci < sourceArr.length; ci++) {
+            const code = sourceArr[ci];
+            const course = COURSES[code];
+            if (!course || freeCode(code)) continue;
+            // Avoid splitting explicit lab/coreq pairs in this generic compaction
+            // pass; main placement/chronology repair already handles those safely.
+            if (course.labCoreq || isLabPartner(code)) continue;
+            if (!canPlace(code, targetSlot.q, completedAtTarget, targetUnits, schedule[targetSlot.yi].levelNum)) continue;
+            const type = courseTypeMap.get(code) || "other";
+            const typeScore = ({ major_core: 500, prereq: 450, major_elective: 400, ge: 300, uc: 280, filler: 100 }[type] || 0);
+            const score = typeScore + (course.units || 0) - (ti - si) * 0.1 - ci * 0.01;
+            if (score > bestScore) { bestScore = score; bestIdx = ci; }
+          }
+          if (bestIdx < 0) continue;
+          const [moved] = sourceArr.splice(bestIdx, 1);
+          targetArr.push(moved);
+          targetUnits += COURSES[moved]?.units || 0;
+          placed.add(moved);
+        }
+      }
+    };
+    fillEmptyNonGapQuartersFromLaterWork();
+    repairChronologyPrereqs();
+
     // Final unit padding: real required courses may evict FREE placeholders during
     // backfill/overflow. After all real courses are placed, add FREE electives only
     // as needed to reach the degree-unit floor, counting completed units and prior
@@ -1588,7 +1792,36 @@ const Scheduler = {
       }
     }
 
-    // Do not synthesize anything beyond the minimum degree-unit padding above.
+    // If a non-gap quarter is still blank while later quarters contain work, use
+    // optional FREE credit to make the quarter explicit instead of silently
+    // behaving like an unchosen break. This is only for regular planned terms;
+    // summer remains excluded unless includeSummer is true, and _GAP remains the
+    // only way to intentionally leave a quarter empty.
+    const fillRemainingEmptyNonGapQuartersWithFree = () => {
+      const usedNow = new Set(schedule.flatMap(year => Object.values(year.quarters).flat()).filter(Boolean));
+      const remainingFree = Object.keys(COURSES).filter(freeCode).filter(code => !usedNow.has(code));
+      let freeIndex = 0;
+      const hasLaterWork = slotIndex => allQuarters.slice(slotIndex + 1).some(slot => {
+        const arr = schedule[slot.yi].quarters[slot.q] || [];
+        return arr.some(code => code !== "_GAP");
+      });
+      for (let si = 0; si < allQuarters.length; si++) {
+        const slot = allQuarters[si];
+        const arr = schedule[slot.yi].quarters[slot.q];
+        if (!arr || arr[0] === "_GAP" || arr.length > 0 || !hasLaterWork(si)) continue;
+        while (freeIndex < remainingFree.length && this.quarterUnits(arr) < minUnits) {
+          const free = remainingFree[freeIndex++];
+          if (!COURSES[free]?.quarters?.includes(slot.q)) continue;
+          if (this.quarterUnits(arr) + (COURSES[free].units || 0) > maxUnits) continue;
+          arr.push(free);
+          totalUnits += COURSES[free].units || 0;
+        }
+      }
+    };
+    fillRemainingEmptyNonGapQuartersWithFree();
+
+    // Do not synthesize additional future years beyond the minimum degree-unit
+    // padding and no-implicit-gap safeguards above.
     // If all graduation requirements are satisfied before the requested target
     // term, graduate in that earlier quarter rather than rendering empty
     // trailing quarters. A requested Spring target is a latest acceptable

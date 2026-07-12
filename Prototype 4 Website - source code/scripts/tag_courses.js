@@ -65,7 +65,7 @@ const CONCENTRATIONS = {
 
   // --- GE concentrations ---
   ge_arts_humanities:  ["LIT 1","PHIL 9","PHIL 11","HAVC 1","MUSC 11","FILM 20A","THEA 10","ART 10","LIT 61H","PHIL 22","PHIL 28"],
-  ge_social_sciences:  ["ANTH 1","SOCY 1","SOCY 15","PSYC 1","CRES 10","HIS 10B","HIS 80A","POLI 1","POLI 20","POLI 21","LALS 1"],
+  ge_social_sciences:  ["ANTH 1","SOCY 1","SOCY 15","PSYC 1","CRES 10","HIS 10B","POLI 1","POLI 20","POLI 21","LALS 1"],
   ge_natural_sciences: ["PHYS 6A","CHEM 1A","BIOE 20B","ASTR 1","ASTR 2","PHYS 5A","EART 1","EART 5","OCEA 1"],
   ge_environment:      ["ENVS 23","ENVS 24","ENVS 100","PHIL 28","BIOE 85","ECON 50","PHYS 80A","ECE 80J","ECE 80H"],
   ge_tech_society:     ["CSE 80N","CSE 3","CSE 80A","CSE 80L","CSE 80S","CSE 40","GCH 41","ECE 80E","ECE 80S","STAT 5","STAT 7","MATH 4"],
