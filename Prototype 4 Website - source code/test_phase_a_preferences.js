@@ -417,6 +417,29 @@ function testPhaseCReplacementSuggestionsExposeRequirementAndGEReasons() {
   assert(ids.includes('prerequisites_met'), `CSE 80N should explain that prerequisites are met for this swap slot; got ${ids.join(', ')}`);
 }
 
+function testTwoElectiveInterestsAffectManualSuggestionReasons() {
+  const profile = makeProfile({
+    concentration: 'cs_web_software',
+    electiveInterests: ['cs_web_software', 'cs_ai_ml'],
+    completedCourses: ['CSE 101', 'CSE 40']
+  });
+  const results = Scheduler.searchAddable('W', ['CSE 101', 'CSE 40'], [], 'CSE 140', profile);
+  assertTopResult(results, 'CSE 140', 'second selected elective interest should still promote AI/ML add-course suggestions');
+  const ids = reasonIds(results[0]);
+  assert(ids.includes('major_concentration'), `CSE 140 should explain that it matches one selected major/elective interest even when it is the second interest; got ${ids.join(', ')}`);
+}
+
+function testTwoGEInterestsAffectManualSuggestionReasons() {
+  const profile = makeProfile({
+    geConcentration: 'ge_arts_humanities',
+    geConcentrations: ['ge_arts_humanities', 'ge_tech_society']
+  });
+  const replacements = Scheduler.getReplacements('PSYC 1', 'F', [], [], 'CSE 80N', profile);
+  assertTopResult(replacements, 'CSE 80N', 'second selected GE interest should still promote tech/society replacement suggestions');
+  const ids = reasonIds(replacements[0]);
+  assert(ids.includes('ge_concentration'), `CSE 80N should explain that it matches one selected GE interest even when it is the second interest; got ${ids.join(', ')}`);
+}
+
 const tests = [
   testGEConcentrationChangesSelectionTowardStudentInterest,
   testMajorConcentrationCourseTagsAreComplete,
@@ -435,7 +458,9 @@ const tests = [
   testPhaseBAddableSuggestionsPenalizeGapOnlyOfferings,
   testPhaseBReplacementSuggestionsPenalizeGapOnlyOfferings,
   testPhaseCAddableSuggestionsExposeTrustworthyReasons,
-  testPhaseCReplacementSuggestionsExposeRequirementAndGEReasons
+  testPhaseCReplacementSuggestionsExposeRequirementAndGEReasons,
+  testTwoElectiveInterestsAffectManualSuggestionReasons,
+  testTwoGEInterestsAffectManualSuggestionReasons
 ];
 
 let failed = 0;

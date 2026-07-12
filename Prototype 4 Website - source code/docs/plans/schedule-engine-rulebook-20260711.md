@@ -43,10 +43,12 @@ This is the working rulebook for the Prototype 4 UCSC schedule generator after t
 
 1. Topologically sort by prerequisite chain depth first, then requirement type, then lower-division before upper-division where appropriate.
 2. Place WRIT 1/2 before normal major placement in early years so writing does not get crowded out.
-3. Default major/prerequisite placement should usually cap at two full required/major courses per quarter; a third is allowed as a rescue to hit minimum units or handle dense official engineering paths.
-4. Labs and 1-2 unit companions are workload add-ons and should not be counted like full 5-unit required courses when judging major-course density.
-5. FREE electives are padding only. They must never displace real requirements, create fake fifth years, or be added beyond what is needed for degree-unit minimums.
-6. For CE_BS, EE_BS, and RE_BS, a requested 19-unit default is treated as a soft 20-unit cap because official engineering planners often require occasional 20-credit quarters. User-requested lower caps, such as 15, remain hard.
+3. Quarter quality should be judged primarily by **credits/units**, not raw course count. Prefer about 15-17 credits when feasible and usually avoid going over 19 credits.
+4. A 4-course quarter can be appropriate when the credits fit, for example two 5-credit major courses, one 2-credit lab, and one 5-credit GE/elective for 17 credits.
+5. Labs and 1-2 unit companions are workload add-ons and should not be counted like full 5-unit required courses when judging major-course density.
+6. FREE electives are padding only. They must never displace real requirements, create fake fifth years, or be added beyond what is needed for degree-unit minimums.
+7. Raw course count should be a tie-breaker only after prerequisite urgency, offering availability, and credit balance.
+8. For CE_BS, EE_BS, and RE_BS, a requested 19-unit default may be treated as a soft 20-unit cap only as a last resort when official engineering planner density truly requires it. Prefer <=19 whenever feasible. User-requested lower caps, such as 15, remain hard.
 
 ## Completion and validation rules
 

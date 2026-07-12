@@ -68,10 +68,12 @@ function makeDocument(ids) {
     createElement(tag) { return new FakeElement(null, tag); },
     querySelector(selector) {
       if (selector === 'input[name="major-concentration"]:checked') {
-        return { value: document.__majorConcentration || '' };
+        const first = (document.__majorConcentrations && document.__majorConcentrations[0]) || document.__majorConcentration || '';
+        return { value: first };
       }
       if (selector === 'input[name="ge-concentration"]:checked') {
-        return { value: document.__geConcentration || '' };
+        const first = (document.__geConcentrations && document.__geConcentrations[0]) || document.__geConcentration || '';
+        return { value: first };
       }
       return null;
     },
@@ -79,6 +81,14 @@ function makeDocument(ids) {
       if (selector === '.view') return ['landing', 'wizard', 'schedule'].map(name => document.getElementById(`view-${name}`));
       if (selector === '.wizard-step') return [1, 2, 3, 4].map(n => document.getElementById(`wizard-step-${n}`));
       if (selector === '.progress-dot') return [0, 1, 2, 3].map(i => document.getElementById(`progress-dot-${i}`));
+      if (selector === 'input[name="major-concentration"]:checked') {
+        return (document.__majorConcentrations || (document.__majorConcentration ? [document.__majorConcentration] : []))
+          .map(value => ({ value, checked: true }));
+      }
+      if (selector === 'input[name="ge-concentration"]:checked') {
+        return (document.__geConcentrations || (document.__geConcentration ? [document.__geConcentration] : []))
+          .map(value => ({ value, checked: true }));
+      }
       return [];
     },
     addEventListener(type, fn) {
@@ -119,8 +129,14 @@ function buildContext() {
     window: { scrollTo() {} },
     MAJOR_REQUIREMENTS: { CS_BS: { name: 'Computer Science B.S.' } },
     CONCENTRATIONS: {
-      major: { CS_BS: [{ id: 'cs_web_software', name: 'Web Software' }] },
-      ge: [{ id: 'ge_arts_humanities', name: 'Arts & Humanities', courses: [], geCodes: [] }]
+      major: { CS_BS: [
+        { id: 'cs_web_software', name: 'Web Software' },
+        { id: 'cs_ai_ml', name: 'AI/ML' }
+      ] },
+      ge: [
+        { id: 'ge_arts_humanities', name: 'Arts & Humanities', courses: [], geCodes: [] },
+        { id: 'ge_tech_society', name: 'Technology & Society', courses: [], geCodes: [] }
+      ]
     },
     COURSES: {
       'CSE 186': { title: 'Full Stack Web Development', units: 5, section: ['CSE'], quarters: ['S'], prereqs: [], desc: '', rmpScore: 0 },
@@ -185,6 +201,8 @@ function setWizardProfile(document) {
   document.getElementById('check-auto-suggest').checked = true;
   document.__majorConcentration = 'cs_web_software';
   document.__geConcentration = 'ge_arts_humanities';
+  document.__majorConcentrations = ['cs_web_software', 'cs_ai_ml'];
+  document.__geConcentrations = ['ge_arts_humanities', 'ge_tech_society'];
 }
 
 function assertProfileFlow(profile, label) {
@@ -201,6 +219,8 @@ function assertProfileFlow(profile, label) {
   assert.strictEqual(profile.gapYear, 2027, `${label} gap year`);
   assert.strictEqual(profile.concentration, 'cs_web_software', `${label} major concentration`);
   assert.strictEqual(profile.geConcentration, 'ge_arts_humanities', `${label} GE concentration`);
+  assert.deepStrictEqual(profile.electiveInterests, ['cs_web_software', 'cs_ai_ml'], `${label} major/elective interest array`);
+  assert.deepStrictEqual(profile.geConcentrations, ['ge_arts_humanities', 'ge_tech_society'], `${label} GE interest array`);
 }
 
 function testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations() {

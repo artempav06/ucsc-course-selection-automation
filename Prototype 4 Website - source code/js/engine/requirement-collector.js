@@ -300,6 +300,115 @@
     return /^(CHEM|BIOL|BIOE|PHYS)\s/.test(code);
   }
 
+  function profileGEInterests(profile) {
+    const values = [];
+    if (profile && Array.isArray(profile.geConcentrations)) values.push(...profile.geConcentrations);
+    if (profile && profile.geConcentration) values.push(profile.geConcentration);
+    return [...new Set(values.filter(Boolean))].slice(0, 2);
+  }
+
+  function profileElectiveInterests(profile) {
+    const values = [];
+    if (profile && Array.isArray(profile.electiveInterests)) values.push(...profile.electiveInterests);
+    if (profile && profile.concentration) values.push(profile.concentration);
+    return [...new Set(values.filter(Boolean))].slice(0, 2);
+  }
+
+  const DISTRIBUTION_REQUIREMENTS_CACHE = typeof WeakMap !== 'undefined' ? new WeakMap() : null;
+
+  function distributionRequirements(helpers) {
+    const key = helpers || {};
+    if (DISTRIBUTION_REQUIREMENTS_CACHE && DISTRIBUTION_REQUIREMENTS_CACHE.has(key)) return DISTRIBUTION_REQUIREMENTS_CACHE.get(key);
+    const requirements = [
+      ...((helpers && helpers.geRequirements) || []),
+      ...((helpers && helpers.ucRequirements) || [])
+    ].map(legacyRequirement);
+    if (DISTRIBUTION_REQUIREMENTS_CACHE) DISTRIBUTION_REQUIREMENTS_CACHE.set(key, requirements);
+    return requirements;
+  }
+
+  function requirementForFamily(familyId, helpers) {
+    return distributionRequirements(helpers).find(req => req.id === familyId || (req.subcategories || []).includes(familyId));
+  }
+
+  function geFamilyOfCode(geCode, helpers) {
+    if (!geCode) return null;
+    const req = requirementForFamily(geCode, helpers);
+    return req ? req.id : geCode;
+  }
+
+  function geFamiliesOfCourse(code, courses, helpers) {
+    const course = courses[code];
+    const families = new Set();
+    if (!course) return families;
+    if (course.ge) families.add(geFamilyOfCode(course.ge, helpers));
+    for (const req of distributionRequirements(helpers)) {
+      if ((req.courses || []).includes(code) || (req.autoSatisfiedBy || []).includes(code)) families.add(req.id);
+      if (course.alsoSatisfies && course.alsoSatisfies.includes(req.id)) families.add(req.id);
+      if (course.alsoSatisfies && (req.subcategories || []).some(sub => course.alsoSatisfies.includes(sub))) families.add(req.id);
+    }
+    families.delete(null);
+    return families;
+  }
+
+  function courseSatisfiesGEFamily(code, familyId, courses, helpers) {
+    return geFamiliesOfCourse(code, courses, helpers).has(geFamilyOfCode(familyId, helpers));
+  }
+
+  function stillNeededGEFamilies(plannedOrCompletedCourses, courses, helpers) {
+    const satisfied = new Set();
+    for (const code of plannedOrCompletedCourses || []) {
+      for (const family of geFamiliesOfCourse(code, courses, helpers)) satisfied.add(family);
+    }
+    const needed = new Set();
+    for (const req of distributionRequirements(helpers)) if (!satisfied.has(req.id)) needed.add(req.id);
+    return needed;
+  }
+
+  function isMajorRequiredCourse(code, collected) {
+    for (const cat of (collected && collected.majorCategories) || []) {
+      if (cat.type === 'all_required' && (cat.courses || []).includes(code)) return true;
+      if (cat.type === 'choose_group' && (cat.groups || []).some(group => (group.courses || []).includes(code))) return true;
+    }
+    return false;
+  }
+
+  function isRedundantGE(code, plannedOrCompletedCourses, collected, courses, helpers) {
+    const families = geFamiliesOfCourse(code, courses, helpers);
+    if (families.size === 0) return false;
+    if (isMajorRequiredCourse(code, collected)) return false;
+    const needed = stillNeededGEFamilies(plannedOrCompletedCourses, courses, helpers);
+    return ![...families].some(family => needed.has(family));
+  }
+
+  function geInterestMatches(code, profile, courses, concentrations, helpers) {
+    const course = courses[code] || {};
+    const matches = profileGEInterests(profile).filter(id => (course.concentrations || []).includes(id));
+    const geGroups = Array.isArray(concentrations && concentrations.ge) ? concentrations.ge : [];
+    for (const id of profileGEInterests(profile)) {
+      const group = geGroups.find(g => g.id === id);
+      if (!group) continue;
+      if ((group.courses || []).includes(code) || [...geFamiliesOfCourse(code, courses, helpers)].some(f => (group.geCodes || []).some(g => geFamilyOfCode(g, helpers) === f))) {
+        matches.push(id);
+      }
+    }
+    return [...new Set(matches)];
+  }
+
+  function interestScore(code, profile, context, courses, concentrations, helpers) {
+    const course = courses[code];
+    if (!course) return 0;
+    let score = 0;
+    const electiveMatches = profileElectiveInterests(profile).filter(id => (course.concentrations || []).includes(id));
+    const geMatches = geInterestMatches(code, profile, courses, concentrations, helpers);
+    score += electiveMatches.length * 120;
+    score += geMatches.length * 80;
+    if (context && context.geGroup && (context.geGroup.courses || []).includes(code)) score += 100;
+    if (context && context.geGroup && course.ge && (context.geGroup.geCodes || []).some(geCode => courseSatisfiesGEFamily(code, geCode, courses, helpers))) score += 50;
+    if ((electiveMatches.length + geMatches.length) >= 2 || (electiveMatches.length && geMatches.length)) score += 40;
+    return score;
+  }
+
   function selectGECourses(collected, profile, state = {}, helpers = {}) {
     const courses = helpers.courses || {};
     const geRequirements = (collected && collected.geRequirements || helpers.geRequirements || []).map(legacyRequirement);
@@ -308,11 +417,12 @@
     const used = state.used || new Set();
     const completedSet = state.completedSet || new Set((profile && profile.completedCourses) || []);
     const picks = [];
-    const geConcentration = (profile && profile.geConcentration) || null;
-    const geConc = geConcentration && concentrations && concentrations.ge
-      ? concentrations.ge.find(group => group.id === geConcentration)
-      : null;
-    const geConcCourses = geConc ? new Set(geConc.courses) : null;
+    const geInterestIds = profileGEInterests(profile);
+    const geConcGroups = Array.isArray(concentrations.ge)
+      ? geInterestIds.map(id => concentrations.ge.find(group => group.id === id)).filter(Boolean)
+      : [];
+    const geConcCourses = new Set();
+    geConcGroups.forEach(group => (group.courses || []).forEach(code => geConcCourses.add(code)));
 
     const neededUC = new Map();
     for (const req of ucRequirements) {
@@ -331,18 +441,22 @@
       for (const code of used) {
         const course = courses[code];
         if (!course) continue;
-        if (course.ge === ge.id) { satisfied = true; break; }
-        if (ge.subcategories && ge.subcategories.includes(course.ge)) { satisfied = true; break; }
+        if (courseSatisfiesGEFamily(code, ge.id, courses, helpers)) { satisfied = true; break; }
+        if ((ge.courses || []).includes(code)) { satisfied = true; break; }
         if (ge.autoSatisfiedBy && ge.autoSatisfiedBy.includes(code)) { satisfied = true; break; }
       }
       if (satisfied) continue;
 
       const candidates = [];
+      const plannedContext = [...used, ...completedSet, ...picks];
+      const neededFamiliesForContext = stillNeededGEFamilies(plannedContext, courses, helpers);
       for (const [code, course] of Object.entries(courses)) {
         if (used.has(code) || completedSet.has(code)) continue;
         if (code.startsWith('FREE')) continue;
-        if (course.ge === ge.id) { candidates.push(code); continue; }
-        if (ge.subcategories && ge.subcategories.includes(course.ge)) candidates.push(code);
+        const families = geFamiliesOfCourse(code, courses, helpers);
+        if (families.size > 0 && !isMajorRequiredCourse(code, collected) && ![...families].some(family => neededFamiliesForContext.has(family))) continue;
+        if (families.has(geFamilyOfCode(ge.id, helpers))) { candidates.push(code); continue; }
+        if ((ge.courses || []).includes(code)) candidates.push(code);
       }
       const fallback = (ge.courses || []).filter(code => !used.has(code) && courses[code] && !completedSet.has(code));
       const pool = candidates.length > 0 ? candidates : fallback;
@@ -350,7 +464,9 @@
         .map(code => {
           let score = 0;
           if (ge.id === 'C' && code === 'WRIT 2') score += 500;
-          if (geConcCourses && geConcCourses.has(code)) score += 100;
+          if (geConcCourses.has(code)) score += 100;
+          for (const group of geConcGroups) score += interestScore(code, profile, { geGroup: group }, courses, concentrations, helpers);
+          score += [...geFamiliesOfCourse(code, courses, helpers)].filter(family => neededFamiliesForContext.has(family)).length * 220;
           score += availabilityScore(code, profile, courses);
           const prereqBurden = estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]), courses);
           score -= prereqBurden * 50;
@@ -545,6 +661,7 @@
       if (!course.quarters || course.quarters.length === 0) continue;
       if (prereqFor.has(code)) continue;
       let score = 0;
+      score += interestScore(code, profile, { mode: 'filler' }, courses, concentrations, helpers);
       if (concentration && (course.concentrations || []).includes(concentration)) score += 50;
       if (geConcSet && geConcSet.has(code)) score += 30;
       score += availabilityScore(code, profile, courses);

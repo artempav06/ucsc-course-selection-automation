@@ -729,10 +729,18 @@ function syncCompletedCoursesUI() {
 }
 
 function collectConcentrations() {
-  const majorRadio = document.querySelector('input[name="major-concentration"]:checked');
-  const geRadio    = document.querySelector('input[name="ge-concentration"]:checked');
-  AppState.profile.concentration   = majorRadio ? majorRadio.value || null : null;
-  AppState.profile.geConcentration = geRadio    ? geRadio.value    || null : null;
+  const selectedValues = selector => Array.from(document.querySelectorAll(selector))
+    .filter(input => input.checked && input.value)
+    .map(input => input.value)
+    .slice(0, 2);
+  const majorValues = selectedValues('input[name="major-concentration"]:checked');
+  const geValues = selectedValues('input[name="ge-concentration"]:checked');
+  const majorRadio = majorValues.length ? { value: majorValues[0] } : document.querySelector('input[name="major-concentration"]:checked');
+  const geRadio = geValues.length ? { value: geValues[0] } : document.querySelector('input[name="ge-concentration"]:checked');
+  AppState.profile.electiveInterests = majorValues.length ? majorValues : (majorRadio && majorRadio.value ? [majorRadio.value] : []);
+  AppState.profile.geConcentrations = geValues.length ? geValues : (geRadio && geRadio.value ? [geRadio.value] : []);
+  AppState.profile.concentration   = AppState.profile.electiveInterests[0] || null;
+  AppState.profile.geConcentration = AppState.profile.geConcentrations[0] || null;
 }
 
 function populateConcentrationGrids(majorId) {
@@ -740,35 +748,45 @@ function populateConcentrationGrids(majorId) {
   const geGrid    = document.getElementById("ge-concentration-grid");
   if (!majorGrid || !geGrid) return;
 
-  // Major concentrations
+  // Major/elective interests
   const majorConcs = (typeof CONCENTRATIONS !== "undefined" && CONCENTRATIONS.major[majorId]) || [];
   majorGrid.innerHTML = `
-    <label class="interest-option">
-      <input type="radio" name="major-concentration" value="" checked>
-      <span class="interest-label">No preference</span>
-    </label>
+    <p class="interest-instructions">Choose up to 2 major/elective interests, or leave all unchecked for no preference.</p>
   ` + majorConcs.map(c => `
     <label class="interest-option">
-      <input type="radio" name="major-concentration" value="${escHTML(c.id)}">
+      <input type="checkbox" name="major-concentration" value="${escHTML(c.id)}">
       <span class="interest-label">${escHTML(c.name)}</span>
       ${c.description ? `<span class="interest-desc">${escHTML(c.description)}</span>` : ""}
     </label>
   `).join("");
 
-  // GE concentrations
+  // GE interests
   const geConcs = (typeof CONCENTRATIONS !== "undefined" && CONCENTRATIONS.ge) || [];
   geGrid.innerHTML = `
-    <label class="interest-option">
-      <input type="radio" name="ge-concentration" value="" checked>
-      <span class="interest-label">No preference</span>
-    </label>
+    <p class="interest-instructions">Choose up to 2 GE interests, or leave all unchecked for no preference.</p>
   ` + geConcs.map(c => `
     <label class="interest-option">
-      <input type="radio" name="ge-concentration" value="${escHTML(c.id)}">
+      <input type="checkbox" name="ge-concentration" value="${escHTML(c.id)}">
       <span class="interest-label">${escHTML(c.name)}</span>
       ${c.description ? `<span class="interest-desc">${escHTML(c.description)}</span>` : ""}
     </label>
   `).join("");
+
+  enforceInterestLimit('input[name="major-concentration"]', majorGrid);
+  enforceInterestLimit('input[name="ge-concentration"]', geGrid);
+}
+
+function enforceInterestLimit(selector, container) {
+  const boxes = Array.from(document.querySelectorAll(selector));
+  boxes.forEach(box => {
+    box.addEventListener?.("change", () => {
+      const checked = boxes.filter(input => input.checked);
+      if (checked.length > 2) {
+        box.checked = false;
+        if (container) container.dataset.limitHint = "Choose up to 2 interests.";
+      }
+    });
+  });
 }
 
 

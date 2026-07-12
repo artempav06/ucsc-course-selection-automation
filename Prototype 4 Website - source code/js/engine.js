@@ -261,6 +261,171 @@ const Scheduler = {
     return collector.collect(this.buildRequirementSet(profile));
   },
 
+  profileGEInterests(profile) {
+    const values = [];
+    if (profile && Array.isArray(profile.geConcentrations)) values.push(...profile.geConcentrations);
+    if (profile && profile.geConcentration) values.push(profile.geConcentration);
+    return [...new Set(values.filter(Boolean))].slice(0, 2);
+  },
+
+  profileElectiveInterests(profile) {
+    const values = [];
+    if (profile && Array.isArray(profile.electiveInterests)) values.push(...profile.electiveInterests);
+    if (profile && profile.concentration) values.push(profile.concentration);
+    return [...new Set(values.filter(Boolean))].slice(0, 2);
+  },
+
+  normalMaxUnits(profile) {
+    const requested = profile && Number.isFinite(parseInt(profile.maxUnits, 10)) ? parseInt(profile.maxUnits, 10) : 19;
+    if (requested > 19) return (profile && profile.allowSoftOverload) ? requested : 19;
+    return requested;
+  },
+
+  creditLoadBand(units, profile) {
+    const min = profile && Number.isFinite(parseInt(profile.minUnits, 10)) ? parseInt(profile.minUnits, 10) : 12;
+    const cap = this.normalMaxUnits(profile);
+    if (units < min) return "under_min";
+    if (units <= 14) return "low";
+    if (units <= 17) return "target";
+    if (units <= cap) return "acceptable_high";
+    return "over_cap";
+  },
+
+  quarterUnits(courses) {
+    return (courses || []).reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+  },
+
+  quarterTypeUnits(courses, courseTypeMap) {
+    const out = {};
+    for (const code of courses || []) {
+      const type = (courseTypeMap && courseTypeMap.get(code)) || "other";
+      out[type] = (out[type] || 0) + (COURSES[code]?.units || 0);
+    }
+    return out;
+  },
+
+  isLowUnitCompanion(code) {
+    const course = COURSES[code];
+    if (!course) return false;
+    if ((course.units || 0) <= 2) return true;
+    if (/lab|laboratory|seminar|practicum/i.test(course.title || "")) return true;
+    return Boolean(course.labCoreq || Object.values(COURSES).some(c => c && c.labCoreq === code));
+  },
+
+  distributionRequirements() {
+    return [
+      ...((typeof GE_REQUIREMENTS !== "undefined") ? GE_REQUIREMENTS : []),
+      ...((typeof UC_REQUIREMENTS !== "undefined") ? UC_REQUIREMENTS : [])
+    ];
+  },
+
+  geRequirementForFamily(familyId) {
+    return this.distributionRequirements()
+      .find(ge => ge.id === familyId || (ge.subcategories || []).includes(familyId));
+  },
+
+  geFamilyOfCode(geCode) {
+    if (!geCode) return null;
+    const req = this.geRequirementForFamily(geCode);
+    return req ? req.id : geCode;
+  },
+
+  geFamiliesOfCourse(code) {
+    const course = COURSES[code];
+    const families = new Set();
+    if (!course) return families;
+    if (course.ge) families.add(this.geFamilyOfCode(course.ge));
+    for (const ge of this.distributionRequirements()) {
+      if ((ge.courses || []).includes(code) || (ge.autoSatisfiedBy || []).includes(code)) families.add(ge.id);
+      if (course.alsoSatisfies && course.alsoSatisfies.includes(ge.id)) families.add(ge.id);
+      if (course.alsoSatisfies && (ge.subcategories || []).some(sub => course.alsoSatisfies.includes(sub))) families.add(ge.id);
+    }
+    families.delete(null);
+    return families;
+  },
+
+  geFamilyOfCourse(code) {
+    return [...this.geFamiliesOfCourse(code)][0] || null;
+  },
+
+  geFamiliesSatisfiedBy(courses) {
+    const families = new Set();
+    for (const code of courses || []) {
+      for (const family of this.geFamiliesOfCourse(code)) families.add(family);
+    }
+    return families;
+  },
+
+  courseSatisfiesGEFamily(code, familyId) {
+    return this.geFamiliesOfCourse(code).has(this.geFamilyOfCode(familyId));
+  },
+
+  majorRequiredCourseSet(profile) {
+    const majorId = (profile && profile.major) || "CS_BA";
+    const reqs = (typeof MAJOR_REQUIREMENTS !== "undefined" && MAJOR_REQUIREMENTS[majorId]) || CS_BA_REQUIREMENTS;
+    const required = new Set();
+    const visitCat = cat => {
+      if (!cat) return;
+      if (cat.type === "all_required") (cat.courses || []).forEach(c => required.add(c));
+      if (cat.type === "choose_group") (cat.groups || []).forEach(g => (g.courses || []).forEach(c => required.add(c)));
+    };
+    (reqs.categories || []).forEach(visitCat);
+    return required;
+  },
+
+  stillNeededGEFamilies(plannedOrCompletedCourses, profile) {
+    const satisfied = this.geFamiliesSatisfiedBy(plannedOrCompletedCourses || []);
+    const needed = new Set();
+    for (const ge of this.distributionRequirements()) {
+      if (!satisfied.has(ge.id)) needed.add(ge.id);
+    }
+    return needed;
+  },
+
+  isRedundantGE(code, plannedOrCompletedCourses, profile) {
+    const families = this.geFamiliesOfCourse(code);
+    if (families.size === 0) return false;
+    if (this.majorRequiredCourseSet(profile).has(code)) return false;
+    const needed = this.stillNeededGEFamilies(plannedOrCompletedCourses, profile);
+    return ![...families].some(family => needed.has(family));
+  },
+
+  courseInterestMatches(code, profile) {
+    const concs = COURSES[code]?.concentrations || [];
+    const electiveMatches = this.profileElectiveInterests(profile).filter(id => concs.includes(id));
+    const geMatches = this.profileGEInterests(profile).filter(id => concs.includes(id));
+    return { elective: electiveMatches, ge: geMatches };
+  },
+
+  geInterestMatches(code, profile) {
+    const matches = this.courseInterestMatches(code, profile).ge.slice();
+    if (typeof CONCENTRATIONS !== "undefined") {
+      for (const id of this.profileGEInterests(profile)) {
+        const group = (CONCENTRATIONS.ge || []).find(g => g.id === id);
+        if (!group) continue;
+        if ((group.courses || []).includes(code) || [...this.geFamiliesOfCourse(code)].some(f => (group.geCodes || []).some(g => this.geFamilyOfCode(g) === f))) {
+          matches.push(id);
+        }
+      }
+    }
+    return [...new Set(matches)];
+  },
+
+  interestScore(code, profile, context = {}) {
+    const course = COURSES[code];
+    if (!course) return 0;
+    let score = 0;
+    const concs = course.concentrations || [];
+    const electiveMatches = this.profileElectiveInterests(profile).filter(id => concs.includes(id));
+    const geMatches = this.geInterestMatches(code, profile);
+    score += electiveMatches.length * 120;
+    score += geMatches.length * 80;
+    if (context.geGroup && (context.geGroup.courses || []).includes(code)) score += 100;
+    if (context.geGroup && course.ge && (context.geGroup.geCodes || []).some(geCode => this.courseSatisfiesGEFamily(code, geCode))) score += 50;
+    if ((electiveMatches.length + geMatches.length) >= 2 || (electiveMatches.length && geMatches.length)) score += 40;
+    return score;
+  },
+
   selectMajorCourses(profile) {
     const collector = (typeof RequirementCollector !== "undefined") ? RequirementCollector : null;
     if (!collector || typeof collector.selectMajorCourses !== "function") return null;
@@ -474,7 +639,8 @@ const Scheduler = {
       courses: freePadding.slice(),
       count: freePadding.length,
       units: phaseUnits(freePadding),
-      targetUnits: reqs.totalUnitsRequired || 180
+      targetUnits: reqs.totalUnitsRequired || 180,
+      policy: "last-resort unit padding after real major/GE/UC requirements and upper-division supplement have been selected"
     };
 
     // --- Phase 7: Build filler pool ---
@@ -681,6 +847,7 @@ const Scheduler = {
       .filter(code => this.isCourseAllowedForProfile(code, profile))
       .map(code => {
         let score = 0;
+        score += this.interestScore(code, profile, { mode: "major" });
         if (concentration) {
           const concs = COURSES[code]?.concentrations || [];
           if (concs.includes(concentration)) score += 100;
@@ -729,9 +896,12 @@ const Scheduler = {
 
   pickGE(used, completedSet, geConcentration, profile) {
     const picks = [];
-    const geConc = geConcentration && typeof CONCENTRATIONS !== "undefined"
-      ? CONCENTRATIONS.ge.find(g => g.id === geConcentration) : null;
-    const geConcCourses = geConc ? new Set(geConc.courses) : null;
+      const geConcIds = this.profileGEInterests(profile);
+      const geConcGroups = (typeof CONCENTRATIONS !== "undefined")
+        ? geConcIds.map(id => CONCENTRATIONS.ge.find(g => g.id === id)).filter(Boolean)
+        : [];
+      const geConcCourses = new Set();
+      geConcGroups.forEach(group => (group.courses || []).forEach(code => geConcCourses.add(code)));
 
     // Compute needed UC requirements for multi-coverage scoring
     const neededUC = new Map();
@@ -751,8 +921,8 @@ const Scheduler = {
       for (const code of used) {
         const c = COURSES[code];
         if (!c) continue;
-        if (c.ge === ge.id) { satisfied = true; break; }
-        if (ge.subcategories && ge.subcategories.includes(c.ge)) { satisfied = true; break; }
+        if (this.courseSatisfiesGEFamily(code, ge.id)) { satisfied = true; break; }
+        if ((ge.courses || []).includes(code)) { satisfied = true; break; }
         if (ge.autoSatisfiedBy && ge.autoSatisfiedBy.includes(code)) { satisfied = true; break; }
       }
       if (satisfied) continue;
@@ -762,8 +932,9 @@ const Scheduler = {
         if (used.has(code) || completedSet.has(code)) continue;
         if (code.startsWith("FREE")) continue;
         if (!this.isCourseAllowedForProfile(code, profile)) continue;
-        if (c.ge === ge.id) { candidates.push(code); continue; }
-        if (ge.subcategories && ge.subcategories.includes(c.ge)) candidates.push(code);
+        if (this.isRedundantGE(code, [...used, ...completedSet, ...picks], profile)) continue;
+        if (this.courseSatisfiesGEFamily(code, ge.id)) { candidates.push(code); continue; }
+        if ((ge.courses || []).includes(code)) candidates.push(code);
       }
       const fallback = (ge.courses || []).filter(c => !used.has(c) && COURSES[c] && !completedSet.has(c) && this.isCourseAllowedForProfile(c, profile));
       const pool = candidates.length > 0 ? candidates : fallback;
@@ -775,7 +946,9 @@ const Scheduler = {
           // seminar variants can be valid catalog C courses, but they are easy
           // to strand when the student starts in summer or has a low unit cap.
           if (ge.id === "C" && code === "WRIT 2") score += 500;
-          if (geConcCourses && geConcCourses.has(code)) score += 100;
+          if (geConcCourses.has(code)) score += 100;
+          for (const group of geConcGroups) score += this.interestScore(code, profile, { geGroup: group });
+          score += [...this.geFamiliesOfCourse(code)].filter(family => this.stillNeededGEFamilies([...used, ...completedSet, ...picks], profile).has(family)).length * 220;
           score += this.availabilityScore(code, profile);
           const prereqBurden = this.estimateMissingPrereqBurden(code, new Set([...used, ...completedSet]));
           score -= prereqBurden * 50;
@@ -931,6 +1104,7 @@ const Scheduler = {
       if (!c.quarters || c.quarters.length === 0) continue;
       if (prereqFor.has(code)) continue;
       let score = 0;
+      score += this.interestScore(code, profile, { mode: "filler" });
       if (concentration && (c.concentrations || []).includes(concentration)) score += 50;
       if (geConcSet && geConcSet.has(code)) score += 30;
       score += this.availabilityScore(code, profile);
@@ -1139,9 +1313,14 @@ const Scheduler = {
         unitsUsed += added;
       }
 
-      // Phase C: Third major course if still under minimum
-      if (unitsUsed < minUnits) {
-        for (let i = 0; i < remaining.length && majorCount < 3;) {
+      // Phase C: Additional major work for underloaded quarters. For dense
+      // engineering plans, allow a fourth required course when the quarter is
+      // still at/under 15 units and the engineering soft-20 cap can absorb it;
+      // otherwise a 5-credit course can be needlessly stranded into a fake fifth
+      // year.
+      const phaseCMajorLimit = (maxUnits >= 20 && unitsUsed <= 15) ? 4 : 3;
+      if (unitsUsed < minUnits || (maxUnits >= 20 && unitsUsed <= 15)) {
+        for (let i = 0; i < remaining.length && majorCount < phaseCMajorLimit;) {
           const code = remaining[i];
           if (!MAJOR_TYPES.has(courseTypeMap.get(code))) { i++; continue; }
           if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) { i++; continue; }
@@ -1625,6 +1804,7 @@ const Scheduler = {
     if (profile) {
       score += this.availabilityScore(code, profile);
       score += this.coursePreferenceScore(code, profile);
+      score += this.interestScore(code, profile, { mode: "manual" });
       if (profile.concentration && (course.concentrations || []).includes(profile.concentration)) score += 450;
       if (profile.geConcentration && typeof CONCENTRATIONS !== "undefined") {
         const geConc = CONCENTRATIONS.ge.find(group => group.id === profile.geConcentration);
@@ -1654,16 +1834,13 @@ const Scheduler = {
     } else if (course.ge) {
       push("ge_requirement", `Counts for ${course.ge}`);
     }
-    if (profile && profile.concentration && (course.concentrations || []).includes(profile.concentration)) {
+    const matchesSelectedElectiveInterest = profile && this.courseInterestMatches(code, profile).elective.length > 0;
+    if (matchesSelectedElectiveInterest) {
       push("major_concentration", "Matches your major focus");
     }
-    if (profile && profile.geConcentration && typeof CONCENTRATIONS !== "undefined") {
-      const geConc = CONCENTRATIONS.ge.find(group => group.id === profile.geConcentration);
-      const courseMatch = geConc && (geConc.courses || []).includes(code);
-      const geFamilyMatch = geConc && course.ge && (geConc.geCodes || []).some(geCode => this.sameGEFamily(geCode, course.ge));
-      if (courseMatch || geFamilyMatch || (course.concentrations || []).includes(profile.geConcentration)) {
-        push("ge_concentration", "Matches your GE focus");
-      }
+    const matchesSelectedGEInterest = profile && this.geInterestMatches(code, profile).length > 0;
+    if (matchesSelectedGEInterest) {
+      push("ge_concentration", "Matches your GE focus");
     }
     if (quarter && (course.quarters || []).includes(quarter)) {
       const quarterLabels = { F: "Fall", W: "Winter", S: "Spring", SU: "Summer" };
