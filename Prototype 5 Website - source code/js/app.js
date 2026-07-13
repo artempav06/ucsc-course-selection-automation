@@ -87,6 +87,63 @@ function completionTiming(finalQuarter, finalQuarterCalYear, profile) {
   return "target";
 }
 
+function uniqueExistingCourseCodes(codes) {
+  const out = [];
+  const seen = new Set();
+  (codes || []).forEach(code => {
+    if (!code || seen.has(code) || !COURSES[code] || code.startsWith("FREE")) return;
+    seen.add(code);
+    out.push(code);
+  });
+  return out;
+}
+
+function collectRequirementCourseCodes(category, out) {
+  if (!category) return;
+  (category.courses || []).forEach(code => out.push(code));
+  (category.groups || []).forEach(group => (group.courses || []).forEach(code => out.push(code)));
+}
+
+function commonLowerDivisionSuggestionsForMajor(majorId) {
+  const reqs = MAJOR_REQUIREMENTS[majorId] || MAJOR_REQUIREMENTS[AppState.profile.major] || null;
+  const candidates = [];
+  (reqs?.categories || []).forEach(category => collectRequirementCourseCodes(category, candidates));
+  const lowerMajorCourses = candidates.filter(code => COURSES[code]?.division === "lower");
+  const writingAndUC = ["WRIT 1", "WRIT 1E", "WRIT 2"];
+  const fallback = ["CSE 20", "CSE 30", "CSE 12", "CSE 16", "CSE 40",
+                    "MATH 19A", "MATH 19B", "MATH 20A", "MATH 20B",
+                    "AM 10", "MATH 21", "WRIT 1", "WRIT 2"];
+  const source = lowerMajorCourses.length > 0
+    ? [...lowerMajorCourses, ...writingAndUC]
+    : fallback;
+  return uniqueExistingCourseCodes(source).slice(0, 28);
+}
+
+function courseVisualType(code) {
+  const typeMap = AppState.schedule && AppState.schedule.courseTypeMap;
+  const courseType = typeMap ? typeMap.get(code) : null;
+  if (courseType === "ge" || courseType === "uc") return "ge";
+  if (courseType === "major_elective") return "elective";
+  if (courseType === "filler") return "free";
+  if (courseType === "major_core" || courseType === "prereq") return "required";
+  if (code && code.startsWith("FREE")) return "free";
+  const course = COURSES[code];
+  if (course?.ge) return "ge";
+  if ((course?.section || []).includes("ELECTIVE")) return "elective";
+  return "required";
+}
+
+const COURSE_TYPE_COLORS = {
+  required: { bg: "#FFEBEE", border: "#C62828", label: "Required" },
+  ge:       { bg: "#E3F2FD", border: "#1565C0", label: "GE" },
+  elective: { bg: "#FFF8E1", border: "#F9A825", label: "Elective" },
+  free:     { bg: "#F5F5F5", border: "#9E9E9E", label: "Free" }
+};
+
+function courseTypeColors(code) {
+  return COURSE_TYPE_COLORS[courseVisualType(code)] || COURSE_TYPE_COLORS.free;
+}
+
 function finalScheduledTerm(schedule) {
   if (!Array.isArray(schedule) || schedule.length === 0) return null;
   for (let yearIdx = schedule.length - 1; yearIdx >= 0; yearIdx--) {
@@ -191,8 +248,9 @@ function initWizard() {
     // Auto-advance the default grad-year dropdown if it's now in the past
     refreshGradYearDefault();
 
-    // Re-populate concentration grids whenever major changes
+    // Re-populate major-aware UI whenever major changes
     populateConcentrationGrids(AppState.profile.major);
+    initCompletedCoursesUI();
 
     showWizardStep(2);
   });
@@ -230,7 +288,7 @@ function initWizard() {
       ? Math.min(25, Math.max(12, maxUnitsValue))
       : 19;
 
-    AppState.profile.profImportance = document.getElementById("select-prof-importance").value;
+    AppState.profile.profImportance = "medium";
 
     // GAP period
     AppState.profile.gapEnabled = document.getElementById("check-gap")?.checked ?? false;
@@ -388,13 +446,23 @@ function isGradWindowValid() {
 
 // Count quarters between two (term, year) positions, inclusive of the start
 function quartersBetween(startTerm, startYear, endTerm, endYear) {
-  const order = ["F", "W", "S", "SU"];
-  const idx = (t, y) => {
-    const academic = academicYearStartOf(t, y);
-    const ord = order.indexOf(t);
+  const order = ["F", "W", "S"];
+  const idx = (term, year) => {
+    const academic = academicYearStartOf(term, year);
+    const ord = order.indexOf(term);
     return academic * order.length + (ord < 0 ? 0 : ord);
   };
-  return idx(endTerm, endYear) - idx(startTerm, startYear) + 1;
+
+  // Duration hints intentionally count only Fall/Winter/Spring planning terms.
+  // If a student starts in Summer, planning starts with the next Fall; if a
+  // target is Summer, the last counted regular quarter is the prior Spring.
+  const startIdx = startTerm === "SU"
+    ? idx("F", startYear)
+    : idx(startTerm, startYear);
+  const endIdx = endTerm === "SU"
+    ? idx("S", endYear)
+    : idx(endTerm, endYear);
+  return endIdx - startIdx + 1;
 }
 
 // ---------- TRANSCRIPT UPLOAD ----------
@@ -561,10 +629,8 @@ function initCompletedCoursesUI() {
   if (!container) return;
   container.innerHTML = "";
 
-  // Show lower-division courses that could be completed
-  const lowerDivCourses = ["CSE 20", "CSE 30", "CSE 12", "CSE 16", "CSE 40",
-                           "MATH 19A", "MATH 19B", "MATH 20A", "MATH 20B",
-                           "AM 10", "MATH 21", "WRIT 1", "WRIT 2"];
+  // Show major-specific lower-division courses that could be completed
+  const lowerDivCourses = commonLowerDivisionSuggestionsForMajor(AppState.profile.major);
 
   lowerDivCourses.forEach(code => {
     const course = COURSES[code];
@@ -972,9 +1038,8 @@ function createCourseCard(code, quarterKey, yearIdx) {
   card.dataset.quarter = quarterKey;
   card.dataset.year = yearIdx;
 
-  // Get color based on primary section
-  const section = course ? course.section[0] : "FREE";
-  const colors = SECTION_COLORS[section] || SECTION_COLORS["FREE"];
+  // Get color based on student-facing course type
+  const colors = courseTypeColors(code);
 
   card.style.borderLeftColor = colors.border;
   card.style.backgroundColor = colors.bg;
@@ -992,10 +1057,6 @@ function createCourseCard(code, quarterKey, yearIdx) {
     ? `<span class="ge-badge">${escHTML(course.ge)}</span>`
     : "";
 
-  // RMP badge
-  const rmpBadge = course && course.rmpScore > 0
-    ? `<span class="rmp-badge" title="Rate My Professor Score">${course.rmpScore.toFixed(1)}</span>`
-    : "";
 
   card.innerHTML = `
     <div class="card-top">
@@ -1007,7 +1068,6 @@ function createCourseCard(code, quarterKey, yearIdx) {
       ${typeBadge}
       <span class="section-badge" style="color:${colors.border}">${escHTML(colors.label)}</span>
       ${geBadge}
-      ${rmpBadge}
     </div>
   `;
 
@@ -1027,8 +1087,7 @@ function openCourseDetail(code, quarterKey, yearIdx) {
   const modal = document.getElementById("modal-course-detail");
   if (!modal) return;
 
-  const catalogUrl = getCatalogUrl(code);
-  const rmpSearchUrl = `https://www.ratemyprofessors.com/search/professors?q=ucsc`;
+  const catalogUrl = course.catalogUrl || getCatalogUrl(code);
 
   // Prereq display
   let prereqText = "None";
@@ -1073,15 +1132,6 @@ function openCourseDetail(code, quarterKey, yearIdx) {
         <span class="detail-label">Satisfies:</span>
         <span>${sectionsHtml}</span>
       </div>
-      ${course.rmpScore > 0 ? `
-      <div class="detail-row">
-        <span class="detail-label">RMP Score:</span>
-        <span class="rmp-display">
-          ${renderStars(course.rmpScore)}
-          <strong>${course.rmpScore.toFixed(1)}</strong>/5.0
-        </span>
-      </div>` : ""}
-
       <div class="detail-desc">
         <p>${escHTML(course.desc)}</p>
       </div>
@@ -1089,9 +1139,6 @@ function openCourseDetail(code, quarterKey, yearIdx) {
       <div class="detail-links">
         <a href="${catalogUrl}" target="_blank" rel="noopener noreferrer" class="btn-link">
           View in UCSC Catalog
-        </a>
-        <a href="${rmpSearchUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-link-secondary">
-          Rate My Professor
         </a>
       </div>
 
@@ -1185,7 +1232,6 @@ function openSwapModal(code, quarterKey, yearIdx) {
           <div class="swap-option-badges">
             <span class="section-badge" style="color:${colors.border}">${colors.label}</span>
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
-            ${r.rmpScore > 0 ? `<span class="rmp-badge">${r.rmpScore.toFixed(1)}</span>` : ""}
           </div>
           ${renderSuggestionReasons(r.reasons)}
         </div>
@@ -1272,7 +1318,6 @@ function openAddCourseModal(yearIdx, quarterKey) {
           <div class="swap-option-badges">
             <span class="section-badge" style="color:${colors.border}">${colors.label}</span>
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
-            ${r.rmpScore > 0 ? `<span class="rmp-badge">${r.rmpScore.toFixed(1)}</span>` : ""}
           </div>
           ${renderSuggestionReasons(r.reasons)}
         </div>
