@@ -1,0 +1,842 @@
+# Prototype 4 Official Prerequisite Review Summary
+
+Generated after indexing the latest current UCSC General Catalog and fetching detail pages for exact current local-course matches. This is an evidence/reporting step only; no course prerequisites were edited.
+
+## Catalog matching summary
+
+- Local course objects: **4296**
+- Official current catalog pages indexed: **6147**
+- exact-current-match: **4151**
+- no-current-official-match-found: **85**
+- possible-renamed-or-renumbered-same-subject: **21**
+- synthetic: **39**
+
+## Exact-current prerequisite review summary
+
+- Exact current local courses with detail pages fetched: **4151**
+- mention-set-matches-simple-text: **551**
+- needs-human-review: **1166**
+- verified-no-prereq-text-and-none-encoded: **2434**
+- Supported-major exact-current courses needing human prerequisite review: **177**
+- High-priority supported-major review candidates by mention/flag mismatch: **162**
+
+## Prerequisite text flags across exact-current courses
+
+- no-official-prereq-text-found: **2495**
+- contains-placement-exam-or-writing-requirement: **507**
+- contains-prior-or-concurrent-language: **194**
+- contains-permission-or-consent-exception: **185**
+- contains-recommended-language: **52**
+- contains-major-or-enrollment-condition: **21**
+
+## Highest-priority supported-major courses needing prerequisite review
+
+- **AM 10** — Mathematical Methods for Engineers I
+  - local: (MATH 3 OR AM 11A OR MATH 11A OR MATH 19A OR MATH 20A)
+  - official: MATH 19A or MATH 20A .
+  - flags: none
+  - official alternatives missing locally: none
+- **AM 114** — Introduction to Dynamical Systems
+  - local: (AM 10 OR PHYS 116A) AND (AM 20 OR PHYS 116A) AND (AM 30 OR PHYS 116A)
+  - official: AM 10 or MATH 21 ; and AM 20 or MATH 24 ; and AM 30 or MATH 23A or MATH 22 ; or PHYS 116A .
+  - flags: none
+  - official alternatives missing locally: none
+- **AM 129** — Foundations of Scientific Computing for Scientists and Engineers
+  - local: (AM 10 OR MATH 21) AND (MATH 11A OR MATH 19A OR MATH 20A)
+  - official: CSE 20 or CSE 13S or CSE 30 or ECE 13 or ASTR 19 ; and AM 10 or MATH 21 ; and MATH 11A or MATH 19A or MATH 20A ; and AM 20 or MATH 24 .
+  - flags: none
+  - official alternatives missing locally: none
+- **AM 148** — GPU Programming for Scientific Computations
+  - local: (AM 147 OR MATH 148 OR PHYS 115)
+  - official: CSE 20 or CSE 13S or CSE 30 or ECE 13 or ASTR 19 ; and AM 147 or MATH 148 or PHYS 115 .
+  - flags: none
+  - official alternatives missing locally: none
+- **AM 170A** — Mathematical Modeling 1
+  - local: (AM 30 OR AM 114 OR STAT 131 OR CSE 107)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **AM 170B** — Mathematical Modeling 2
+  - local: (AM 129 OR AM 112) AND (AM 147) AND (AM 170A)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **AM 195** — Senior Thesis Research
+  - local: (none encoded)
+  - official: AM 129 or AM 209, and AM 112 , and AM 147 , and AM 170A .
+  - flags: none
+  - official alternatives missing locally: AM 209
+- **ASTR 21** — The Diverse Universe: Stars, Planets, and Galaxies
+  - local: (PHYS 5A)
+  - official: PHYS 5A or PHYS 15A .
+  - flags: none
+  - official alternatives missing locally: none
+- **ASTR 119** — Introduction to Scientific Computing
+  - local: (MATH 11A OR MATH 19A OR MATH 20A OR AM 15A)
+  - official: MATH 11A or MATH 19A or MATH 20A or AM 15A.
+  - flags: none
+  - official alternatives missing locally: AM 15A
+- **BME 101** — Molecular Biology for Biomolecular Engineers
+  - local: (BIOL 20A)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **BME 118** — Mathematics of the Mind
+  - local: (MATH 19A) AND (MATH 19B) AND (MATH 20B) AND (MATH 21) AND (CSE 20)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **BME 123L** — Long Read Sequencing
+  - local: (BME 22L)
+  - official: BME 22L, and previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **BME 128L** — Protein Engineering Laboratory
+  - local: (BME 22L)
+  - official: BME 22L; and previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **BME 129A** — Project Design and Implementation in Biomolecular Engineering I
+  - local: (BME 22L) AND (BIOL 100 OR BIOC 100A OR CHEM 103 OR BME 101)
+  - official: BME 22L; BIOL 100 or BIOC 100A or CHEM 103 or BME 101; and previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **BME 129B** — Project Design and Implementation in Biomolecular Engineering II
+  - local: (BME 129A OR BME 150)
+  - official: BME 129A or BME 150.
+  - flags: none
+  - official alternatives missing locally: BME 150
+- **BME 129C** — Project Design and Implementation in Biomolecular Engineering III
+  - local: (BME 129B OR BME 230A) AND (BME 185)
+  - official: BME 129B or BME 230A .
+  - flags: none
+  - official alternatives missing locally: none
+- **BME 130** — Genomes
+  - local: (BIOL 105)
+  - official: BIOL 105 or BME 105 or METX 140 ; or permission of the instructor.
+  - flags: contains-permission-or-consent-exception
+  - official alternatives missing locally: none
+- **BME 140** — Bioinstrumentation
+  - local: (BME 5 OR BME 51A OR EE 101 OR BIOL 100 OR BIOC 100A) AND (BME 51B OR EE 101L OR BME 5 OR BIOL 100 OR BIOC 100A)
+  - official: BME 5; or BME 51A and BME 51B ; or EE 101 and EE 101L; or BIOL 100 ; or BIOC 100A .
+  - flags: none
+  - official alternatives missing locally: EE 101, EE 101L
+- **BME 160** — Research Programming in the Life Sciences
+  - local: (BIOL 20A OR BIOL 21A)
+  - official: BIOL 20A or BIOL 21A.
+  - flags: none
+  - official alternatives missing locally: BIOL 21A
+- **BME 163** — Applied Visualization and Analysis of Scientific Data
+  - local: (BME 160 OR BME 205 OR CSE 20)
+  - official: BME 160 or BME 205 or CSE 20 . Prerequisites can be waived in cases where students have the required programming skills, or who have passed the CSE 20 test-out exam. See CSE 20 Testout Exam (https://undergrad.engineering.ucsc.edu/advising/policies-forms-petitions/cse/) for resources and further information.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **BME 177L** — Engineering Stem Cell Laboratory
+  - local: (BME 22L)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **BME 178** — Stem Cell Biology
+  - local: (BIOL 110 OR BME 101 OR BIOC 100A OR BIOL 100 OR CHEM 103) AND (BIOL 115)
+  - official: BIOL 110 or BME 101 or BIOC 100A or BIOL 100 or CHEM 103; BIOL 115 recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **BME 180** — Professional Practice in Bioengineering
+  - local: (none encoded)
+  - official: previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **BME 185** — Technical Writing for Biomolecular Engineers
+  - local: (BIOL 20A)
+  - official: BIOL 20A ; satisfaction of Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **BME 188A** — Synthetic Biology--Mentored Research A
+  - local: (none encoded)
+  - official: BME 180.
+  - flags: none
+  - official alternatives missing locally: none
+- **BME 188B** — Synthetic Biology--Mentored Research B
+  - local: (none encoded)
+  - official: BME 188A.
+  - flags: none
+  - official alternatives missing locally: none
+- **BME 188C** — Synthetic Biology Mentored Research C
+  - local: (none encoded)
+  - official: BME 188B.
+  - flags: none
+  - official alternatives missing locally: none
+- **BME 205** — Bioinformatics: Molecular Biology and Genomics
+  - local: (BME 160 OR CSE 20) AND (BME 185)
+  - official: BME 160 or CSE 20 ; and CSE 107 or STAT 131 ; and BME 105 or BIOL 105 ; and previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **BME 230A** — Computational Genomics
+  - local: (BME 205) AND (BME 185)
+  - official: BME 205 .
+  - flags: none
+  - official alternatives missing locally: none
+- **CMPM 80J** — Games as Technical Culture
+  - local: (none encoded)
+  - official: Satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CMPM 123** — Advanced Programming
+  - local: (CSE 101 OR CMPM 35)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CMPM 130** — User Interface and User Experience Design
+  - local: (none encoded)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CMPM 152** — Musical Data
+  - local: (CMPM 35 OR CMPM 120 OR CMPM 150 OR CMPM 151)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CMPM 164** — Game Engines
+  - local: (CMPM 163 OR CSE 160)
+  - official: CMPM 163 or CSE 160 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CMPM 169** — Creative Coding
+  - local: (CMPM 35 OR CMPM 120 OR CMPM 163)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CMPM 170** — Rapid Prototyping
+  - local: (CMPM 120 OR CMPM 121)
+  - official: CMPM 120 .
+  - flags: none
+  - official alternatives missing locally: none
+- **CMPM 171** — Game Design Studio
+  - local: (CMPM 121 OR CMPM 130 OR CMPM 170 OR CMPM 176)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CMPM 172** — Game Production Studio
+  - local: (none encoded)
+  - official: CMPM 171 , or by instructor permission.
+  - flags: contains-permission-or-consent-exception
+  - official alternatives missing locally: none
+- **CSE 30** — Programming Abstractions: Python
+  - local: (CSE 20 OR BME 160) AND (MATH 3 OR MATH 11A OR MATH 19A OR MATH 20A OR AM 3 OR AM 11A)
+  - official: CSE 20 or BME 160 ; and MATH 3 or MATH 11A or MATH 19A or MATH 20A or AM 3 or AM 11A or ECON 11A, or a score of 400 or higher on the mathematics placement examination (MPE).
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: ECON 11A
+- **CSE 100** — Logic Design
+  - local: (CSE 12)
+  - official: CSE 12 ; previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 100L** — Logic Design Laboratory
+  - local: (CSE 12)
+  - official: CSE 12 ; previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 101P** — Data Structures and Algorithms (Practice-based)
+  - local: (CSE 16) AND (BME 160 OR CSE 20) AND (CSE 30) AND (MATH 11B OR MATH 19B OR MATH 20B OR AM 11B)
+  - official: CSE 16 ; and BME 160 or CSE 20 or CSE 20 Test Out; and CSE 30 ; and MATH 11B or MATH 19B or MATH 20B or AM 11B .
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CSE 113** — Parallel and Concurrent Programming
+  - local: (CSE 12) AND (CSE 101)
+  - official: CSE 12 and CSE 101 . CSE 120 recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **CSE 115A** — Introduction to Software Engineering
+  - local: (CSE 101) AND (CSE 130)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CSE 117** — Open Source Programming
+  - local: (CSE 101) AND (CSE 102 OR CSE 111 OR CSE 115A)
+  - official: CSE 101 ; and CSE 111 or CSE 115A .
+  - flags: none
+  - official alternatives missing locally: none
+- **CSE 118** — Mobile Applications
+  - local: (CSE 101)
+  - official: CSE 101 or CSE 101P .
+  - flags: none
+  - official alternatives missing locally: none
+- **CSE 120** — Computer Architecture
+  - local: (CSE 12) AND (CSE 13S OR ECE 13)
+  - official: CSE 12 ; and CSE 13E, or CSE 13S , or ECE 13 , or CSE 15 and CSE 15L. CSE 16 recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: CSE 13E, CSE 15, CSE 15L
+- **CSE 123A** — Engineering Design Project I
+  - local: (CSE 121)
+  - official: CSE 121 ; previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 129A** — Capstone Project I
+  - local: (none encoded)
+  - official: previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 129B** — Capstone Project II
+  - local: (none encoded)
+  - official: CSE 121 , CSE 121L, and CSE 129A . Previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: CSE 121L
+- **CSE 129C** — Capstone Project III
+  - local: (none encoded)
+  - official: CSE 129B and CSE 185.
+  - flags: none
+  - official alternatives missing locally: none
+- **CSE 144** — Applied Machine Learning
+  - local: (CSE 40 OR STAT 132) AND (CSE 101 OR CSE 101P)
+  - official: CSE 40 , CSE 40 test-out, or STAT 132 ; and CSE 101 or CSE 101P .
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CSE 146** — Ethics and Algorithms
+  - local: (CSE 101) AND (CSE 107 OR STAT 131) AND (CSE 40 OR CSE 142) AND (CSE 140)
+  - official: CSE 101 ; and CSE 107 or STAT 131 ; and CSE 40 . CSE 142 and CSE 140 are recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **CSE 151** — Advanced Computer Networks
+  - local: (CSE 150)
+  - official: CSE 150 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 151L** — Advanced Computer Networks Laboratory
+  - local: (CSE 150)
+  - official: CSE 150 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 156** — Network Programming
+  - local: (CSE 150) AND (CSE 101)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CSE 156L** — Network Programming Laboratory
+  - local: (CSE 150) AND (CSE 101)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CSE 161** — Introduction to Data Visualization
+  - local: (CSE 160)
+  - official: CSE 160 or equivalent. Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 162** — Advanced Computer Graphics and Animation
+  - local: (CSE 160)
+  - official: CSE 160 or equivalent. Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **CSE 167** — Mobile Sensing and Interaction
+  - local: (CSE 13S OR CSE 13E OR CSE 15) AND (CSE 15L OR CSE 13S OR CSE 13E) AND (PHYS 5A OR CSE 13S OR CSE 13E) AND (AM 10 OR CSE 13S OR CSE 13E)
+  - official: CSE 13S ; or CSE 13E or ECE 13 ; or CSE 15 and CSE 15L; and PHYS 5A or PHYS 15A or PHYS 6A ; and AM 10 or MATH 21 .
+  - flags: none
+  - official alternatives missing locally: CSE 13E, CSE 15, CSE 15L
+- **CSE 182** — Introduction to Database Management Systems
+  - local: (CSE 16 OR BME 160) AND (CSE 30)
+  - official: CSE 16 or BME 160 ; and CSE 30 . Course restricted to juniors and seniors and intended for non-majors; computer science majors should enroll in CSE 180 .
+  - flags: contains-major-or-enrollment-condition
+  - official alternatives missing locally: none
+- **CSE 185E** — Technical Writing for Computer Engineering
+  - local: (none encoded)
+  - official: satisfaction of Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **CSE 186** — Full Stack Web Development I
+  - local: (CSE 101 OR CSE 101P); prior-or-concurrent: (CSE 180 OR CSE 182)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **CSE 195** — Senior Thesis
+  - local: (none encoded)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECE 9** — Statics and Mechanics of Materials
+  - local: (MATH 19A OR MATH 20A) AND (PHYS 5A OR PHYS 5L OR PHYS 6A OR PHYS 6L) AND (AM 10 OR MATH 21)
+  - official: MATH 19A or MATH 20A ; and PHYS 5A or PHYS 15A and PHYS 5L ; or PHYS 6A and PHYS 6L ; and AM 10 or MATH 21 .
+  - flags: none
+  - official alternatives missing locally: none
+- **ECE 13** — Computer Systems and C Programming
+  - local: (CSE 12 OR CSE 20 OR CSE 30)
+  - official: CSE 12 . CSE 20 or CSE 30 (Python programming background) is recommended but not required. Programming experience in any other language is also acceptable.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **ECE 101** — Introduction to Electronic Circuits
+  - local: (PHYS 5C OR PHYS 6C) AND (PHYS 5N OR PHYS 6N) AND (AM 20 OR MATH 24)
+  - official: PHYS 5C or PHYS 15C and PHYS 5N ; or PHYS 6C and PHYS 6N ; and MATH 24 or PHYS 116A , or previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 101L** — Introduction to Electronic Circuits Laboratory
+  - local: (PHYS 5C OR PHYS 6C) AND (PHYS 5N OR PHYS 6N) AND (AM 20 OR MATH 24)
+  - official: PHYS 5C or PHYS 15C and PHYS 5N ; or PHYS 6C and PHYS 6N ; and MATH 24 or PHYS 116A , or previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 102** — Properties of Materials
+  - local: (PHYS 5A OR PHYS 6A) AND (PHYS 5L OR PHYS 6L) AND (PHYS 5M OR PHYS 6M) AND (PHYS 5C OR PHYS 6C) AND (PHYS 5N OR PHYS 6N)
+  - official: PHYS 5A or PHYS 15A and PHYS 5L , PHYS 5B and PHYS 5M , and PHYS 5C or PHYS 15C and 5N; or PHYS 6A and PHYS 6L , PHYS 6B and PHYS 6M , and PHYS 6C and PHYS 6N . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 102L** — Properties of Materials Laboratory
+  - local: (PHYS 5A OR PHYS 6A) AND (PHYS 5L OR PHYS 6L) AND (PHYS 5M OR PHYS 6M) AND (PHYS 5C OR PHYS 6C) AND (PHYS 5N OR PHYS 6N)
+  - official: PHYS 5A or PHYS 15A and PHYS 5L , PHYS 5B and PHYS 5M , and PHYS 5C or PHYS 15C and 5N; or PHYS 6A and PHYS 6L , PHYS 6B and PHYS 6M , and PHYS 6C and PHYS 6N . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 103L** — Signals and Systems Laboratory
+  - local: (ECE 101) AND (ECE 101L) AND (AM 20 OR MATH 24)
+  - official: ECE 101 and ECE 101L and AM 20 or MATH 24 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 118** — Introduction to Mechatronics
+  - local: (ECE 101) AND (ECE 101L) AND (CSE 100) AND (CSE 100L) AND (ECE 13 OR CSE 13E)
+  - official: ECE 101 and ECE 101L ; and CSE 100 and CSE 100L ; and ECE 13 or CSE 13S or CSE 13E. ECE 121 and ECE 167 are highly recommended (but not required).
+  - flags: contains-recommended-language
+  - official alternatives missing locally: CSE 13E
+- **ECE 121** — Microcontroller System Design
+  - local: (CSE 12) AND (ECE 13 OR CSE 13E)
+  - official: CSE 12 ; and ECE 13 or CSE 13E. Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: CSE 13E
+- **ECE 122B** — Collaborative Sustainability Project Implementation
+  - local: (none encoded)
+  - official: ECE 122A . Students apply online; selected applicants complete in-person interviews.
+  - flags: none
+  - official alternatives missing locally: none
+- **ECE 129A** — Capstone Project I
+  - local: (CSE 100) AND (ECE 118 OR ECE 171) AND (ECE 121 OR ECE 157 OR ECE 173)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECE 129B** — Capstone Project II
+  - local: (ECE 129A)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECE 129C** — Capstone Project III
+  - local: (ECE 129B)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECE 130** — Introduction to Optoelectronics and Photonics
+  - local: (PHYS 5B OR PHYS 5C OR PHYS 6B OR PHYS 6C)
+  - official: PHYS 5B and PHYS 5C , or PHYS 15C , or PHYS 6B and PHYS 6C ; and concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 130L** — Introduction to Optoelectronics Laboratory
+  - local: (PHYS 5L OR PHYS 5M OR PHYS 5N OR PHYS 6L OR PHYS 6M OR PHYS 6N)
+  - official: PHYS 5L , PHYS 5M , and PHYS 5N , or PHYS 6L , PHYS 6M , and PHYS 6N ; concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 135** — Electromagnetic Fields and Waves
+  - local: (ECE 101 OR ECE 101L OR PHYS 102) AND (AM 20 OR PHYS 116A OR MATH 24)
+  - official: ECE 101 and ECE 101L , or PHYS 102 ; and AM 20 or PHYS 116A or MATH 24 . Students must concurrently enroll in ECE 135L .
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 135L** — Electromagnetic Fields and Waves Laboratory
+  - local: (ECE 101 OR ECE 101L OR PHYS 102) AND (AM 20 OR PHYS 116A OR MATH 24)
+  - official: ECE 101 and ECE 101L , or PHYS 102 ; and AM 20 or PHYS 116A or MATH 24 . Students must concurrently enroll in ECE 135 .
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 141** — Feedback Control Systems
+  - local: (ECE 103)
+  - official: ECE 103 , and majors in the School of Engineering and Division of Physical and Biological Sciences programs, with the exception of physics majors. Prerequisites for physics majors: PHYS 116A , PHYS 116C , and PHYS 133 .
+  - flags: contains-major-or-enrollment-condition
+  - official alternatives missing locally: none
+- **ECE 149** — Introduction to Cyber-physical Systems
+  - local: (CSE 100 OR CSE 100L OR ECE 13 OR CSE 13E)
+  - official: CSE 100 and CSE 100L or equivalent, and ECE 13 or CSE 13E or equivalent.
+  - flags: none
+  - official alternatives missing locally: CSE 13E
+- **ECE 157** — RF Hardware Design
+  - local: (ECE 101) AND (ECE 101L) AND (ECE 171) AND (ECE 174)
+  - official: ECE 101 and ECE 101L , ECE 103 , and ECE 171 , and ECE 174 ; or consent of instructor. Concurrent
+  - flags: contains-permission-or-consent-exception, contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 163** — Introduction to Small-Scale UAV Theory and Practice
+  - local: (ECE 141 OR ECE 241 OR ECE 242) AND (CSE 30 OR ECE 13 OR CSE 13E OR CSE 13S OR ECE 121 OR ECE 167 OR ECE 145)
+  - official: ECE 141 or ECE 241 or ECE 242 ; and CSE 30 or ECE 13 or CSE 13E or CSE 13S . ECE 121 , ECE 167 , and ECE 145 recommended but not required.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: ECE 241, CSE 13E
+- **ECE 167** — Sensing and Sensor Technologies
+  - local: (CSE 13E OR ECE 13) AND (ECE 103) AND (ECE 103L)
+  - official: CSE 13E or ECE 13 ; and ECE 103 and ECE 103L .
+  - flags: none
+  - official alternatives missing locally: CSE 13E
+- **ECE 169** — Electric Machinery and Control
+  - local: (ECE 176 OR ECE 176L)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **ECE 170** — Advanced Power Electronics
+  - local: (ECE 177)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **ECE 171** — Analog Electronics
+  - local: (ECE 101) AND (ECE 101L)
+  - official: ECE 101 and ECE 101L ; previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 171L** — Analog Electronics Laboratory
+  - local: (ECE 101) AND (ECE 101L)
+  - official: ECE 101 and ECE 101L ; previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 173** — High-Speed Digital Design
+  - local: (ECE 101 OR ECE 101L OR ECE 174 OR ECE 171 OR ECE 121)
+  - official: ECE 101 and ECE 101L and ECE 174 , or by permission of the instructor. ECE 171 and ECE 121 are recommended.
+  - flags: contains-recommended-language, contains-permission-or-consent-exception
+  - official alternatives missing locally: none
+- **ECE 175** — Energy Generation and Control
+  - local: (ECE 101)
+  - official: ECE 101 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 175L** — Energy Generation and Control Laboratory
+  - local: (ECE 101)
+  - official: ECE 101 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 176** — Energy Conservation and Control
+  - local: (ECE 103) AND (ECE 171)
+  - official: ECE 101 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 176L** — Energy Conversion and Control Laboratory
+  - local: (ECE 103) AND (ECE 171)
+  - official: ECE 101 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 177** — Power Electronics
+  - local: (ECE 103)
+  - official: ECE 103 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 177L** — Power Electronics Laboratory
+  - local: (ECE 103)
+  - official: ECE 103 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 180J** — Advanced Renewable Energy Sources, Storage, and Smart Grids
+  - local: (AM 11A OR MATH 11A OR MATH 19A OR MATH 19B OR MATH 20A OR MATH 20B) AND (STAT 5 OR STAT 7 OR STAT 17 OR STAT 131 OR CSE 107 OR PHYS 5C OR PHYS 5N OR PHYS 6C OR PHYS 6N)
+  - official: AM 11A or MATH 11A or MATH 19A or MATH 19B or MATH 20A or MATH 20B ; and STAT 5 or STAT 7 or STAT 17 or STAT 131 or CSE 107 . PHYS 5C or PHYS 15C and PHYS 5N or PHYS 6C and PHYS 6N are recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **ECE 185** — Introduction to the US Electricity Industry
+  - local: (PHYS 5C OR PHYS 6C) AND (PHYS 5N OR PHYS 6N)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **ECE 195** — Senior Thesis Research
+  - local: (none encoded)
+  - official: satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECE 215** — Models of Robotic Manipulation
+  - local: (ECE 141) AND (AM 10 OR MATH 21)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **ECE 216** — Bio-Inspired Locomotion
+  - local: (none encoded)
+  - official: ECE 9 or equivalent.
+  - flags: none
+  - official alternatives missing locally: none
+- **ECE 222A** — Advances in Agriculture Technology
+  - local: (none encoded)
+  - official: previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **ECE 240** — Introduction to Linear Dynamical Systems
+  - local: (ECE 103)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **ECE 246** — Hybrid Dynamical Systems
+  - local: (ECE 240)
+  - official: ECE 240 or ECE 241 or ECE 242 .
+  - flags: none
+  - official alternatives missing locally: ECE 241
+- **ECE 249** — Introduction to Cyber-physical Systems
+  - local: (CSE 100) AND (ECE 13 OR CSE 13E)
+  - official: CSE 100 and CSE 100L or equivalent, and ECE 13 or CSE 13E or equivalent.
+  - flags: none
+  - official alternatives missing locally: CSE 13E
+- **ECON 100A** — Intermediate Microeconomics
+  - local: (ECON 1) AND (ECON 2) AND (AM 11B OR ECON 11B OR MATH 22 OR MATH 23A OR AM 30)
+  - official: ECON 1 and ECON 2 ; and AM 11B or ECON 11B or MATH 22 or MATH 23A or AM 30 .
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **ECON 100B** — Intermediate Macroeconomics
+  - local: (ECON 1) AND (ECON 2) AND (AM 11B OR ECON 11B OR MATH 22 OR MATH 23A OR AM 30)
+  - official: ECON 1 and ECON 2 ; and AM 11B or ECON 11B or MATH 22 or MATH 23A or AM 30 .
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **ECON 100M** — Intermediate Microeconomics, Math Intensive
+  - local: (ECON 1) AND (ECON 2) AND (AM 11B OR ECON 11B OR MATH 22 OR MATH 23A)
+  - official: ECON 1 and ECON 2 ; and AM 11B or ECON 11B or MATH 22 or MATH 23A .
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **ECON 100N** — Intermediate Macroeconomics, Math Intensive
+  - local: (ECON 1) AND (ECON 2) AND (AM 11B OR ECON 11B OR MATH 22 OR MATH 23A)
+  - official: ECON 1 and ECON 2 ; and AM 11B or ECON 11B or MATH 22 or MATH 23A .
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **ECON 104** — Is There Truth in Numbers: The Role of Statistics in Economics
+  - local: (ECON 100A OR ECON 100M) AND (ECON 113)
+  - official: ECON 100A or ECON 100M ; and ECON 113 , and Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **ECON 113** — Introduction to Econometrics
+  - local: (ECON 1) AND (ECON 2) AND (STAT 17) AND (STAT 17L) AND (AM 11B OR ECON 11B OR MATH 22 OR MATH 23A OR AM 30 OR ECON 100A OR ECON 100B)
+  - official: ECON 1 and ECON 2 ; STAT 17 and STAT 17L ; and one of the following: AM 11B or ECON 11B, or MATH 22 , or MATH 23A , or AM 30 . ECON 100A or ECON 100B strongly recommended as preparation.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: ECON 11B
+- **ECON 124** — Machine Learning for Economists
+  - local: (ECON 113 OR ECON 216)
+  - official: ECON 113 or ECON 216 .
+  - flags: none
+  - official alternatives missing locally: ECON 216
+- **ECON 166A** — Game Theory and Applications I
+  - local: (STAT 5 OR STAT 7 OR STAT 17 OR ECON 113) AND (AM 11B OR ECON 11B OR MATH 11B OR MATH 19B OR STAT 131 OR CSE 107)
+  - official: STAT 5 , STAT 7 , STAT 17 or ECON 113 ; and AM 11B or ECON 11B, or MATH 11B , MATH 19B , STAT 131 or CSE 107 .
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **ECON 183** — Women in the Economy
+  - local: (ECON 100A OR ECON 100M) AND (ECON 113)
+  - official: ECON 100A or ECON 100M ; and ECON 113 is strongly recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **ECON 188** — Management in the Global Economy
+  - local: (ECON 113 OR ECON 100A OR ECON 100M)
+  - official: ECON 100A or ECON 100M ; and STAT 5 or STAT 7 or STAT 17 .
+  - flags: none
+  - official alternatives missing locally: none
+- **FMST 133** — Science and the Body
+  - local: (none encoded)
+  - official: FMST 1 and FMST 100 .
+  - flags: none
+  - official alternatives missing locally: none
+- **MATH 19A** — Calculus for Science, Engineering, and Mathematics
+  - local: (none encoded)
+  - official: MATH 3 ; or mathematics placement (MP) score of 400 or higher; or qualifying AP exam. See the UCSC Exam Equivalency Chart in the Undergraduate Academic Program section of the catalog for details.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **MATH 19B** — Calculus for Science, Engineering, and Mathematics
+  - local: (MATH 19A OR MATH 20A OR MATH 11A)
+  - official: MATH 11A or MATH 19A or MATH 20A or qualifying exam. See the UCSC Exam Equivalency Chart in the Undergraduate Academic Program section of the catalog for details.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **MATH 20A** — Honors Calculus
+  - local: (none encoded)
+  - official: mathematics placement (MP) score of 500 higher; or qualifying exam. See the UCSC Exam Equivalency Chart in the Undergraduate Academic Program section of the catalog for details.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **MATH 21** — Linear Algebra
+  - local: (MATH 19A OR MATH 20A OR MATH 3 OR AM 11A OR MATH 11A)
+  - official: score of 400 or higher on the mathematics placement examination (MPE) or MATH 3 or AM 11A or MATH 11A or MATH 19A or MATH 20A .
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **MATH 22** — Introduction to Calculus of Several Variables
+  - local: (MATH 11B OR MATH 19B OR MATH 20B OR AM 15B)
+  - official: MATH 11B or MATH 19B or MATH 20B or AM 15B or qualifying AP exam. See the UCSC Exam Equivalency Chart in the Undergraduate Academic Program section of the catalog for details.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: AM 15B
+- **MATH 23A** — Vector Calculus
+  - local: (MATH 19B OR MATH 20B)
+  - official: MATH 19B or MATH 20B or qualifying AP exam. See the UCSC Exam Equivalency Chart in the Undergraduate Academic Program section of the catalog for details.
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **MATH 24** — Ordinary Differential Equations
+  - local: (MATH 22 OR MATH 23A OR AM 30) AND (MATH 21)
+  - official: MATH 22 or MATH 23A or AM 30 ; MATH 21 is recommended as preparation.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **MATH 105A** — Real Analysis
+  - local: (MATH 22 OR MATH 23B OR MATH 100 OR CSE 101)
+  - official: MATH 22 or MATH 23B or AM 30 , and either MATH 100 or CSE 101 .
+  - flags: none
+  - official alternatives missing locally: none
+- **MATH 110** — Introduction to Number Theory
+  - local: (CSE 101)
+  - official: MATH 100 or CSE 101 .
+  - flags: none
+  - official alternatives missing locally: none
+- **MATH 114** — Introduction to Financial Mathematics
+  - local: (STAT 131 OR CSE 107)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **MATH 115** — Graph Theory
+  - local: (MATH 21 OR AM 10) AND (CSE 101)
+  - official: MATH 21 or AM 10 and either MATH 100 or CSE 101 .
+  - flags: none
+  - official alternatives missing locally: none
+- **MATH 116** — Combinatorics
+  - local: (CSE 101)
+  - official: MATH 100 or CSE 101 .
+  - flags: none
+  - official alternatives missing locally: none
+- **MATH 121A** — Differential Geometry
+  - local: (MATH 21 OR AM 10 OR MATH 23B OR MATH 100 OR CSE 101 OR MATH 105A)
+  - official: MATH 21 or AM 10 , and MATH 23B , and either MATH 100 or CSE 101 . MATH 105A strongly recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **MATH 124** — Introduction to Topology
+  - local: (MATH 100) AND (MATH 111A)
+  - official: MATH 100 ; MATH 111A recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **MATH 130** — Celestial Mechanics
+  - local: (MATH 19A) AND (MATH 23A OR PHYS 5A OR PHYS 6A) AND (MATH 21) AND (MATH 24)
+  - official: MATH 19A and 19B; and MATH 23A or PHYS 5A or PHYS 6A ; MATH 21 and MATH 24 strongly recommended.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **MATH 134** — Cryptography
+  - local: (MATH 100 OR CSE 101) AND (MATH 110)
+  - official: MATH 100 or CSE 101 ; MATH 110 is recommended as preparation.
+  - flags: contains-recommended-language
+  - official alternatives missing locally: none
+- **MATH 148** — Numerical Analysis
+  - local: (MATH 22 OR MATH 23A) AND (MATH 21 OR AM 10) AND (MATH 24 OR AM 20) AND (MATH 103A OR MATH 105A OR MATH 152 OR AM 147 OR CSE 101)
+  - official: MATH 22 or MATH 23A or AM 30 ; and MATH 21 or AM 10 ; and MATH 24 or AM 20 ; and MATH 100 or AM 147 or CSE 101 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5A** — Introduction to Physics I
+  - local: (MATH 19A OR MATH 20A)
+  - official: MATH 19A or MATH 20A . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5B** — Introduction to Physics II
+  - local: (PHYS 5A OR MATH 19B OR MATH 20B)
+  - official: PHYS 5A or PHYS 15A , and MATH 19B or MATH 20B ; concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5C** — Introduction to Physics III
+  - local: (PHYS 5A OR MATH 19B OR MATH 20B)
+  - official: PHYS 5A or PHYS 15A , and MATH 19B or MATH 20B . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5D** — Introduction to Physics IV
+  - local: (PHYS 5A OR PHYS 5L OR PHYS 6A OR PHYS 6L) AND (PHYS 5B OR PHYS 6B) AND (MATH 19B OR MATH 20B)
+  - official: PHYS 5A or PHYS 15A , and PHYS 5L , or PHYS 6A and PHYS 6L ; and PHYS 5B or PHYS 6B ; and MATH 19B or MATH 20B .
+  - flags: none
+  - official alternatives missing locally: none
+- **PHYS 5L** — Introduction to Physics I Laboratory
+  - local: (PHYS 5A OR PHYS 15A)
+  - official: concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5M** — Introduction to Physics II Laboratory
+  - local: (PHYS 5L)
+  - official: PHYS 5L ; concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 5N** — Introduction to Physics Laboratory III
+  - local: (PHYS 5L)
+  - official: PHYS 5L . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 6A** — Introductory Physics I
+  - local: (MATH 19A OR MATH 20A)
+  - official: MATH 11B or 16B or 19B or 20B or AM 15B.
+  - flags: none
+  - official alternatives missing locally: AM 15B
+- **PHYS 6C** — Introductory Physics III
+  - local: (PHYS 5A OR PHYS 6A OR PHYS 7A) AND (MATH 11B OR MATH 16B OR MATH 19B OR MATH 20B OR AM 15B)
+  - official: PHYS 5A or PHYS 15A or PHYS 6A or PHYS 7A ; and MATH 11B or MATH 16B or MATH 19B or MATH 20B or AM 15B.
+  - flags: none
+  - official alternatives missing locally: AM 15B
+- **PHYS 6L** — Introductory Physics I Laboratory
+  - local: (none encoded)
+  - official: Previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 6N** — Introductory Physics III Laboratory
+  - local: (none encoded)
+  - official: Previous or concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 15A** — Honors Introduction to Physics I
+  - local: (MATH 19A OR MATH 20A)
+  - official: MATH 19A or MATH 20A . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 15C** — Honors Introduction to Physics - III
+  - local: (PHYS 5A OR PHYS 15A OR MATH 19B OR MATH 20B)
+  - official: PHYS 5A or PHYS 15A , and MATH 19B or MATH 20B . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 105** — Mechanics
+  - local: (PHYS 5A) AND (PHYS 5L) AND (PHYS 116A OR MATH 21 OR MATH 24 OR AM 10 OR AM 20) AND (ASTR 119 OR CSE 20)
+  - official: PHYS 5A or PHYS 15A , plus PHYS 5L ; and PHYS 116A , or MATH 21 plus MATH 24 , or AM 10 plus AM 20 ; and ASTR 119 or CSE 20 . Concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+- **PHYS 110A** — Electricity, Magnetism, and Optics
+  - local: (PHYS 5C) AND (PHYS 116A OR MATH 21 OR MATH 24) AND (PHYS 116C OR MATH 107)
+  - official: PHYS 5C or PHYS 15C ; and PHYS 116A or MATH 21 and MATH 24 ; and PHYS 116C or MATH 107 .
+  - flags: none
+  - official alternatives missing locally: none
+- **PHYS 150** — Quantum Computing
+  - local: (PHYS 116A OR MATH 21 OR AM 10)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **STAT 5** — Statistics
+  - local: (STAT 7 OR STAT 17)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **STAT 7** — Statistical Methods for the Biological, Environmental, and Health Sciences
+  - local: (AM 3 OR AM 11A OR AM 15A OR MATH 3 OR MATH 11A OR MATH 16A OR MATH 19A OR MATH 20A)
+  - official: Mathematics placement (MP) score of 300 or higher or AM 3 or AM 11A or AM 15A or MATH 3 or MATH 11A or MATH 16A or MATH 19A or MATH 20A . Concurrent
+  - flags: contains-prior-or-concurrent-language, contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: AM 15A
+- **STAT 7L** — Statistical Methods for the Biological, Environmental, and Health Sciences Laboratory
+  - local: (AM 3 OR AM 11A OR AM 15A OR MATH 3 OR MATH 11A OR MATH 16A OR MATH 19A OR MATH 20A)
+  - official: score of 300 or higher on the mathematics placement examination (MPE), AM 3 or AM 11A or AM 15A or MATH 3 or MATH 11A or MATH 16A or MATH 19A or MATH 20A . Concurrent
+  - flags: contains-prior-or-concurrent-language, contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: AM 15A
+- **STAT 17** — Statistical Methods for Business and Economics
+  - local: (AM 3 OR AM 11A OR ECON 11A OR MATH 3 OR MATH 11A OR MATH 16A OR MATH 19A OR MATH 20A)
+  - official: Mathematics placement (MP) score of 300 or higher or completion of AM 3 or AM 11A or ECON 11A or MATH 3 or MATH 11A or MATH 16A or MATH 19A or MATH 20A . Concurrent
+  - flags: contains-prior-or-concurrent-language, contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: ECON 11A
+- **STAT 17L** — Statistical Methods for Business and Economics Laboratory
+  - local: (AM 3 OR AM 11A OR ECON 11A OR MATH 3 OR MATH 11A OR MATH 16A OR MATH 19A OR MATH 20A)
+  - official: (none found / none listed)
+  - flags: no-official-prereq-text-found
+  - official alternatives missing locally: none
+- **STAT 108** — Linear Regression
+  - local: (STAT 132)
+  - official: STAT 132 and satisfaction of the Entry Level Writing and Composition
+  - flags: contains-placement-exam-or-writing-requirement
+  - official alternatives missing locally: none
+- **STAT 131** — Introduction to Probability Theory
+  - local: (AM 11B OR ECON 11B OR MATH 11B OR MATH 19B OR MATH 20B)
+  - official: MATH 22 ; or MATH 23B ; or AM 30 .
+  - flags: none
+  - official alternatives missing locally: none
+- **TIM 147** — Introduction to Data Mining for Business
+  - local: (CSE 20) AND (CSE 30) AND (CSE 16) AND (MATH 22 OR MATH 23A OR AM 30) AND (STAT 5 OR STAT 7) AND (AM 10 OR MATH 21) AND (AM 20 OR MATH 24)
+  - official: CSE 30 ; and MATH 22 or MATH 23A or AM 30 ; and STAT 5 , or STAT 7 and 7L, or STAT 17 and STAT 17L , or STAT 131 , or CSE 107 .
+  - flags: none
+  - official alternatives missing locally: none
+- **TIM 172A** — Introduction to Management of Technology I
+  - local: (MATH 19B OR MATH 20B OR MATH 11B OR AM 11B OR ECON 11B)
+  - official: MATH 19B or MATH 20B or MATH 11B or AM 11B or ECON 11B.
+  - flags: none
+  - official alternatives missing locally: ECON 11B
+- **TIM 172P** — Management of Technology Project I
+  - local: (none encoded)
+  - official: concurrent
+  - flags: contains-prior-or-concurrent-language
+  - official alternatives missing locally: none
+
+## Files generated
+
+- `data/audit/official-catalog-course-index.json`
+- `data/audit/official-catalog-local-match-report.json`
+- `data/audit/official-catalog-course-details.json`
+- `data/audit/official-prerequisite-review-report.json`
+- `docs/plans/official-catalog-local-match-report.md`
+- `docs/plans/official-prerequisite-review-summary.md`
