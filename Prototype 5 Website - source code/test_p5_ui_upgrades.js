@@ -128,6 +128,42 @@ function testCourseDetailUsesDatabaseCatalogUrlAndNoRmpUi() {
   assert(!html.includes('RMP Score'), `detail popup should not render RMP score; got ${html}`);
 }
 
+function testCourseDetailCatalogLinksComeFromCourseDatabaseOnly() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  const { COURSES } = __p5;
+  const representativeCodes = [
+    'AM 3', 'WRIT 1', 'MATH 19A', 'CSE 20', 'CSE 101', 'ECE 13',
+    'BME 110', 'TIM 50', 'PSYC 1', 'HIS 10B', 'ECON 110', 'CMPM 120'
+  ];
+
+  for (const code of representativeCodes) {
+    assert(COURSES[code]?.catalogUrl, `${code} should have a database catalogUrl fixture`);
+    __p5.openCourseDetail(code, 'F', 0);
+    const html = document.getElementById('detail-content').innerHTML;
+    assert(
+      html.includes(`href="${COURSES[code].catalogUrl}"`),
+      `${code} detail popup should use exact COURSES[code].catalogUrl instead of generated fallback; got ${html}`
+    );
+  }
+
+  const original = COURSES['CSE 20'].catalogUrl;
+  COURSES['CSE 20'].catalogUrl = '';
+  __p5.openCourseDetail('CSE 20', 'F', 0);
+  const missingHtml = document.getElementById('detail-content').innerHTML;
+  assert(!missingHtml.includes('View in UCSC Catalog'), `missing DB URL should not render a guessed/broken catalog link; got ${missingHtml}`);
+  assert(!missingHtml.includes('/courses/cse/cse-20'), `detail popup should not fall back to generated legacy URL; got ${missingHtml}`);
+  COURSES['CSE 20'].catalogUrl = original;
+}
+
+function testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup() {
+  const { __p5 } = loadApp();
+  const missing = Object.entries(__p5.COURSES)
+    .filter(([code, course]) => !code.startsWith('FREE') && !(course.catalogUrl || '').trim())
+    .map(([code]) => code);
+  assert.deepStrictEqual(missing, [], `every real course should have a DB catalogUrl before rendering detail links; missing: ${missing.slice(0, 20).join(', ')}`);
+}
+
 function testProfessorPreferenceSectionRemovedFromHtml() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   assert(!html.includes('select-prof-importance'), 'graduation preferences should not ask about professor rating importance');
@@ -139,6 +175,8 @@ const tests = [
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
   testCourseCardsUseRequirementTypeColors,
   testCourseDetailUsesDatabaseCatalogUrlAndNoRmpUi,
+  testCourseDetailCatalogLinksComeFromCourseDatabaseOnly,
+  testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
   testProfessorPreferenceSectionRemovedFromHtml
 ];
 

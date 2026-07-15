@@ -1087,7 +1087,16 @@ function openCourseDetail(code, quarterKey, yearIdx) {
   const modal = document.getElementById("modal-course-detail");
   if (!modal) return;
 
-  const catalogUrl = course.catalogUrl || getCatalogUrl(code);
+  const catalogUrl = (course.catalogUrl || "").trim();
+  const catalogLinkHtml = catalogUrl
+    ? `
+      <div class="detail-links">
+        <a href="${escHTML(catalogUrl)}" target="_blank" rel="noopener noreferrer" class="btn-link">
+          View in UCSC Catalog
+        </a>
+      </div>
+    `
+    : "";
 
   // Prereq display
   let prereqText = "None";
@@ -1136,11 +1145,7 @@ function openCourseDetail(code, quarterKey, yearIdx) {
         <p>${escHTML(course.desc)}</p>
       </div>
 
-      <div class="detail-links">
-        <a href="${catalogUrl}" target="_blank" rel="noopener noreferrer" class="btn-link">
-          View in UCSC Catalog
-        </a>
-      </div>
+      ${catalogLinkHtml}
 
       <div class="detail-actions">
         <button class="btn-action btn-swap" onclick="openSwapModal('${code.replace(/'/g,"\\'")}', '${quarterKey}', ${yearIdx})">
