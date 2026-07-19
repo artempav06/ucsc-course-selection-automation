@@ -1170,6 +1170,89 @@ function showScheduleEditToast(message) {
   setTimeout(() => toast.remove?.(), 2600);
 }
 
+function showScheduleEditWarning(title, bodyHtml, tone = "warning") {
+  const modal = document.getElementById("modal-warning");
+  const content = document.getElementById("warning-content");
+  if (!modal || !content) {
+    showScheduleEditToast(title);
+    return;
+  }
+  content.innerHTML = `
+    <div class="detail-header schedule-warning-header schedule-warning-${escHTML(tone)}">
+      <h2>${escHTML(title)}</h2>
+      <button class="btn-close-modal" onclick="closeModal('modal-warning')">&times;</button>
+    </div>
+    <div class="detail-body schedule-warning-body">
+      ${bodyHtml}
+      <div class="detail-links">
+        <button class="btn-link btn-warning-ok" type="button" onclick="closeModal('modal-warning')">Got it</button>
+      </div>
+    </div>
+  `;
+  modal.classList.add("active");
+}
+
+function courseUnits(code) {
+  return COURSES[code]?.units || 0;
+}
+
+function quarterUnits(courses) {
+  return (courses || [])
+    .filter(code => code !== "_GAP")
+    .reduce((sum, code) => sum + courseUnits(code), 0);
+}
+
+function formatPrereqGroups(groups) {
+  return (groups || [])
+    .map(group => group.map(code => `${code}${COURSES[code]?.title ? ` (${COURSES[code].title})` : ""}`).join(" or "))
+    .join("; and ");
+}
+
+function missingPrereqsForDrop(code, targetQuarter, targetYearIdx) {
+  const course = COURSES[code];
+  if (!course) return [];
+  const priorCourses = new Set(getCoursesBeforeQuarter(targetYearIdx, targetQuarter).filter(c => c !== code && c !== "_GAP"));
+  const sameQuarterCourses = new Set((AppState.schedule?.[targetYearIdx]?.quarters?.[targetQuarter] || []).filter(c => c !== code && c !== "_GAP"));
+  const concurrentContext = new Set([...priorCourses, ...sameQuarterCourses]);
+  const missing = [];
+  for (const group of (Array.isArray(course.prereqs) ? course.prereqs : [])) {
+    if (!group.some(option => priorCourses.has(option))) missing.push(group.slice());
+  }
+  for (const group of (Array.isArray(course.concurrentPrereqs) ? course.concurrentPrereqs : [])) {
+    if (!group.some(option => concurrentContext.has(option))) missing.push(group.slice());
+  }
+  return missing;
+}
+
+function showPrerequisiteDropWarning(code, targetLabel, missingGroups) {
+  const missingText = formatPrereqGroups(missingGroups) || "the required prerequisite course(s)";
+  showScheduleEditWarning(
+    `Can't move ${code} there yet`,
+    `
+      <div class="schedule-warning-card warning-blocked">
+        <p><strong>${escHTML(code)}</strong> cannot be placed in <strong>${escHTML(targetLabel)}</strong> because its prerequisite work has not been completed before that quarter.</p>
+        <p>Take <strong>${escHTML(missingText)}</strong> first, then try moving ${escHTML(code)} again.</p>
+        <p>The course was kept in its original quarter so your schedule stays prerequisite-safe.</p>
+      </div>
+    `,
+    "blocked"
+  );
+}
+
+function showCreditOverloadWarning(code, targetLabel, totalCredits) {
+  showScheduleEditWarning(
+    `${targetLabel} is overloaded`,
+    `
+      <div class="schedule-warning-card warning-overload">
+        <p><strong>${escHTML(code)}</strong> was moved, but <strong>${escHTML(targetLabel)}</strong> now has <strong>${totalCredits} credits</strong>.</p>
+        <p>That is above the normal <strong>19-credit</strong> limit. We will keep your change, but we would not recommend this load unless you confirm it with your advising team.</p>
+        <p>You may need <strong>special permission</strong> to take more than 19 credits in one quarter.</p>
+      </div>
+    `,
+    "overload"
+  );
+}
+
 function refreshScheduleAfterManualEdit(toastMessage) {
   AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
   renderSchedule();
@@ -1193,11 +1276,21 @@ function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, to
   const sourceIdx = source.indexOf(code);
   if (sourceIdx === -1) return false;
 
+  const targetLabel = `${QUARTER_LABELS[toQuarterKey] || toQuarterKey} ${quarterCalendarYear(toQuarterKey, AppState.schedule[targetYearIdx].academicStart)}`;
+  const missingGroups = missingPrereqsForDrop(code, toQuarterKey, targetYearIdx);
+  if (missingGroups.length > 0) {
+    showPrerequisiteDropWarning(code, targetLabel, missingGroups);
+    return false;
+  }
+
+  const targetCreditsAfterMove = quarterUnits(target) + courseUnits(code);
   source.splice(sourceIdx, 1);
   target.push(code);
 
-  const targetLabel = `${QUARTER_LABELS[toQuarterKey] || toQuarterKey} ${quarterCalendarYear(toQuarterKey, AppState.schedule[targetYearIdx].academicStart)}`;
-  refreshScheduleAfterManualEdit(`${code} moved to ${targetLabel}. Requirements and units rechecked.`);
+  refreshScheduleAfterManualEdit(`${code} moved to ${targetLabel}. Requirements, prerequisites, and units rechecked.`);
+  if (targetCreditsAfterMove > 19) {
+    showCreditOverloadWarning(code, targetLabel, targetCreditsAfterMove);
+  }
   return true;
 }
 

@@ -244,6 +244,61 @@ function testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves() {
   assert(html.includes('CSE 30'), `missing prerequisite should be named in alert; got ${html}`);
 }
 
+function testDragMoveBlockedWhenPrerequisitesWouldBeMissing() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  context.Validator = { validateAll() { throw new Error('blocked prerequisite drops should not mutate or revalidate the schedule'); } };
+  __p5.AppState.profile = { completedCourses: [] };
+  __p5.AppState.schedule = [
+    { academicStart: 2026, label: 'Year 1 (Freshman)', quarters: { F: ['WRIT 1'], W: ['CSE 30'], S: ['CSE 101'] } }
+  ];
+
+  const moved = __p5.moveCourseToQuarter('CSE 101', 'S', 0, 'F', 0);
+
+  assert.strictEqual(moved, false, 'drop should be rejected when the target quarter is before required prerequisites');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['WRIT 1'], 'target quarter should stay unchanged after blocked drop');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.S, ['CSE 101'], 'dragged class should snap back to its source quarter');
+  const modal = document.getElementById('modal-warning');
+  const html = document.getElementById('warning-content').innerHTML;
+  assert(modal.classList.contains('active'), 'blocked prerequisite drop should open a warning pop-up');
+  assert(html.includes('CSE 101'), `warning should name the dragged course; got ${html}`);
+  assert(html.includes('CSE 30'), `warning should explain which prerequisite must be completed first; got ${html}`);
+  assert(html.includes('first'), `warning should explain the order problem in student-friendly language; got ${html}`);
+}
+
+function testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  let validateCalls = 0;
+  context.Validator = {
+    validateAll() {
+      validateCalls += 1;
+      return { allMet: true, major: [], ge: [], uc: [], totalUnits: 180, totalUnitsMet: true, upperDivMet: true, prereqViolations: [] };
+    }
+  };
+  context.renderSchedule = () => {};
+  context.renderRequirements = () => {};
+  context.showValidationAlerts = () => {};
+  __p5.AppState.profile = { completedCourses: [] };
+  __p5.AppState.schedule = [
+    { academicStart: 2026, label: 'Year 1 (Freshman)', quarters: { F: ['CSE 20'], W: ['MATH 19A', 'WRIT 2', 'CSE 30'], S: [] } }
+  ];
+
+  const moved = __p5.moveCourseToQuarter('CSE 20', 'F', 0, 'W', 0);
+
+  assert.strictEqual(moved, true, 'overload drops should be allowed so students can customize intentionally');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, []);
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.W, ['MATH 19A', 'WRIT 2', 'CSE 30', 'CSE 20']);
+  assert.strictEqual(validateCalls, 1, 'allowed overload move should still revalidate requirements, credits, and prerequisites');
+  const modal = document.getElementById('modal-warning');
+  const html = document.getElementById('warning-content').innerHTML;
+  assert(modal.classList.contains('active'), 'over-19 credit drop should open a warning pop-up');
+  assert(/\b2\d credits\b/.test(html), `warning should name the overloaded credit total; got ${html}`);
+  assert(html.includes('19'), `warning should mention the normal 19-credit limit; got ${html}`);
+  assert(html.includes('advising'), `warning should recommend checking with advising; got ${html}`);
+  assert(html.includes('special permission'), `warning should mention possible special permission; got ${html}`);
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
@@ -255,7 +310,9 @@ const tests = [
   testDragMoveCourseMutatesScheduleOnceAndRevalidates,
   testDragMoveIgnoresSameQuarterAndGapTargets,
   testCourseCardsAndQuarterColumnsExposeDragDropUx,
-  testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves
+  testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves,
+  testDragMoveBlockedWhenPrerequisitesWouldBeMissing,
+  testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits
 ];
 
 let passed = 0;

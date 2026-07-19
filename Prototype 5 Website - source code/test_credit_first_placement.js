@@ -130,10 +130,63 @@ function testCourseUrgencyPrioritizesLowerDivisionAndPrereqChainStarters() {
   });
 }
 
+function positionOf(schedule, code) {
+  for (let yi = 0; yi < schedule.length; yi++) {
+    for (const term of ['F', 'W', 'S', 'SU']) {
+      const courses = schedule[yi].quarters[term] || [];
+      const idx = courses.indexOf(code);
+      if (idx >= 0) return { yi, term, idx };
+    }
+  }
+  return null;
+}
+
+function comparePositions(a, b) {
+  const termOrder = { F: 0, W: 1, S: 2, SU: 3 };
+  if (a.yi !== b.yi) return a.yi - b.yi;
+  if (termOrder[a.term] !== termOrder[b.term]) return termOrder[a.term] - termOrder[b.term];
+  return a.idx - b.idx;
+}
+
+function testRequiredUpperDivisionWaitsUntilAllRequiredLowerDivisionIsComplete() {
+  withTemporaryCourses({
+    'TDD LD FALL 10': { title: 'Fall Lower Division Requirement', units: 5, quarters: ['F'], prereqs: [], division: 'lower' },
+    'TDD LD SPRING 20': { title: 'Spring Lower Division Requirement', units: 5, quarters: ['S'], prereqs: [], division: 'lower' },
+    'TDD UD WINTER 120': { title: 'Winter Upper Division Requirement', units: 5, quarters: ['W'], prereqs: [], division: 'upper' },
+    'TDD GE WINTER 5': { title: 'Winter GE', units: 5, quarters: ['W'], prereqs: [], ge: 'AH', division: 'lower' }
+  }, () => {
+    const typeMap = new Map([
+      ['TDD LD FALL 10', 'major_core'],
+      ['TDD LD SPRING 20', 'major_core'],
+      ['TDD UD WINTER 120', 'major_core'],
+      ['TDD GE WINTER 5', 'ge']
+    ]);
+    const schedule = Scheduler.placeIntoQuarters(
+      ['TDD UD WINTER 120', 'TDD GE WINTER 5', 'TDD LD FALL 10', 'TDD LD SPRING 20'],
+      typeMap,
+      [],
+      new Set(),
+      baseProfile({ targetGradYear: 2028 })
+    );
+    const lowerSpring = positionOf(schedule, 'TDD LD SPRING 20');
+    const upperWinter = positionOf(schedule, 'TDD UD WINTER 120');
+    assert(lowerSpring, 'spring-only lower-division required course should be scheduled');
+    assert(upperWinter, 'upper-division required course should still be scheduled after the lower-division foundation');
+    assert(
+      comparePositions(lowerSpring, upperWinter) < 0,
+      `upper required course should wait until all required lower division courses are complete; lower=${JSON.stringify(lowerSpring)} upper=${JSON.stringify(upperWinter)}`
+    );
+    const firstWinter = schedule[0].quarters.W.filter(code => !String(code).startsWith('FREE'));
+    assert(firstWinter.includes('TDD GE WINTER 5'), `GE should be allowed while upper major requirements wait; got ${firstWinter.join(', ')}`);
+    assert(!firstWinter.includes('TDD UD WINTER 120'), 'upper major requirement should not occupy Winter before Spring lower-division requirement');
+  });
+}
+
 const tests = [
   testMajorCreditTargetUsesCreditsNotCourseCount,
   testFourCourseSeventeenCreditQuarterIsAllowedWhenCreditsFit,
-  testCourseUrgencyPrioritizesLowerDivisionAndPrereqChainStarters
+  testCourseUrgencyPrioritizesLowerDivisionAndPrereqChainStarters,
+  testRequiredUpperDivisionWaitsUntilAllRequiredLowerDivisionIsComplete
 ];
 
 let failed = 0;

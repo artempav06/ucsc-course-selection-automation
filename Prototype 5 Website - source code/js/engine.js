@@ -1319,6 +1319,28 @@ const Scheduler = {
     const remaining = [...sorted];
     const fillerR = [...fillerPool];
     const MAJOR_TYPES = new Set(["major_core", "major_elective", "prereq"]);
+    const courseNumber = code => {
+      const match = String(code || "").match(/(\d+)/);
+      return match ? parseInt(match[1], 10) : null;
+    };
+    const isLowerDivisionCourse = code => {
+      const course = COURSES[code];
+      const num = courseNumber(code);
+      return Boolean(course) && (course.division === "lower" || (Number.isFinite(num) && num <= 99));
+    };
+    const isUpperDivisionCourse = code => {
+      const course = COURSES[code];
+      const num = courseNumber(code);
+      return Boolean(course) && (course.division === "upper" || (Number.isFinite(num) && num >= 100));
+    };
+    const isRequiredMajorWork = code => MAJOR_TYPES.has(courseTypeMap.get(code));
+    const lowerRequiredMajorCodes = new Set(
+      sorted.filter(code => isRequiredMajorWork(code) && isLowerDivisionCourse(code) && !placed.has(code))
+    );
+    const lowerFoundationGateApplies = !(profile && profile.gapEnabled)
+      && this.normalMaxUnits(profile) >= 18;
+    const lowerRequiredMajorCompleteBefore = completedBefore =>
+      !lowerFoundationGateApplies || [...lowerRequiredMajorCodes].every(code => completedBefore.has(code));
 
     const allQuarters = [];
     for (let yi = 0; yi < schedule.length; yi++) {
@@ -1338,6 +1360,7 @@ const Scheduler = {
     const canPlace = (code, q, completedBefore, unitsUsed, levelNum = 1) => {
       const course = COURSES[code];
       if (!course) return false;
+      if (isRequiredMajorWork(code) && isUpperDivisionCourse(code) && !lowerRequiredMajorCompleteBefore(completedBefore)) return false;
       if (!this.isCourseAllowedForProfile(code, { ...profile, currentLevel: levelNum })) return false;
       if (/restricted to seniors/i.test(course.enrollmentRestrictions || "") && levelNum < 4) return false;
       if (!course.quarters.includes(q)) return false;
@@ -1751,6 +1774,79 @@ const Scheduler = {
       }
     };
     fillEmptyNonGapQuartersFromLaterWork();
+    repairChronologyPrereqs();
+
+    // The lower-division foundation gate can intentionally defer upper-division
+    // major work while required lower-division courses are still being placed.
+    // After compaction/chronology repair has moved every possible lower-division
+    // requirement earlier, retry the remaining real courses before final FREE
+    // padding. This preserves the lower-before-upper policy without dropping
+    // dense/gap/low-unit scenarios that only become placeable after repair.
+    const placeDeferredRequiredWork = () => {
+      for (let ri = 0; ri < remaining.length;) {
+        const code = remaining[ri];
+        const course = COURSES[code];
+        let didPlace = false;
+        if (course && !placed.has(code)) {
+          for (let si = 0; si < allQuarters.length; si++) {
+            const slot = allQuarters[si];
+            const arr = schedule[slot.yi].quarters[slot.q];
+            if (!arr || arr[0] === "_GAP") continue;
+            const completedAtSlot = completedBeforeSlot(si);
+            let qUnits = removeFreeUntilFits(arr, unitsNeededFor(code, completedAtSlot));
+            if (!canPlace(code, slot.q, completedAtSlot, qUnits, schedule[slot.yi].levelNum)) continue;
+            arr._q = slot.q;
+            arr._unitsUsed = qUnits;
+            placeWithCoreq(code, arr, completedAtSlot);
+            delete arr._q;
+            delete arr._unitsUsed;
+            placed.add(code);
+            didPlace = true;
+            break;
+          }
+        }
+        if (didPlace) remaining.splice(ri, 1);
+        else ri++;
+      }
+
+      let guard = 0;
+      while (remaining.some(code => COURSES[code] && !placed.has(code)) && guard++ < 12) {
+        const last = schedule[schedule.length - 1];
+        const nextAcad = last.academicStart + 1;
+        if (nextAcad > gradAcad + 4) break;
+        const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
+        schedule.push(newYear);
+        allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
+        let placedInNewYear = false;
+        for (let ri = 0; ri < remaining.length;) {
+          const code = remaining[ri];
+          const course = COURSES[code];
+          let didPlace = false;
+          if (course && !placed.has(code)) {
+            for (const q of ["F", "W", "S"]) {
+              const slotIndex = allQuarters.findIndex(slot => slot.yi === schedule.length - 1 && slot.q === q);
+              const arr = newYear.quarters[q];
+              const completedAtSlot = completedBeforeSlot(slotIndex);
+              let qUnits = removeFreeUntilFits(arr, unitsNeededFor(code, completedAtSlot));
+              if (!canPlace(code, q, completedAtSlot, qUnits, newYear.levelNum)) continue;
+              arr._q = q;
+              arr._unitsUsed = qUnits;
+              placeWithCoreq(code, arr, completedAtSlot);
+              delete arr._q;
+              delete arr._unitsUsed;
+              placed.add(code);
+              didPlace = true;
+              placedInNewYear = true;
+              break;
+            }
+          }
+          if (didPlace) remaining.splice(ri, 1);
+          else ri++;
+        }
+        if (!placedInNewYear) break;
+      }
+    };
+    placeDeferredRequiredWork();
     repairChronologyPrereqs();
 
     // Final unit padding: real required courses may evict FREE placeholders during
