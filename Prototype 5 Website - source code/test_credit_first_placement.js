@@ -182,11 +182,34 @@ function testRequiredUpperDivisionWaitsUntilAllRequiredLowerDivisionIsComplete()
   });
 }
 
+function testGeneratedPlansAvoidUnderTwelveCreditQuarters() {
+  const profile = baseProfile({
+    major: 'AM_BS',
+    concentration: 'am_modeling',
+    geConcentration: 'ge_arts_humanities',
+    targetGradYear: 2030,
+    elwrSatisfied: false,
+    priorCredits: 0,
+    studentType: 'undergrad'
+  });
+  const { schedule } = Scheduler.generateWithExplanation(profile);
+  const underLoaded = [];
+  for (const year of schedule) {
+    for (const [term, arr] of Object.entries(year.quarters || {})) {
+      if (term === 'SU' || !Array.isArray(arr) || arr[0] === '_GAP' || arr.length === 0) continue;
+      const qUnits = units(arr.filter(code => code !== '_GAP'));
+      if (qUnits > 0 && qUnits < 12) underLoaded.push(`${year.label} ${term}: ${qUnits}u [${arr.join(', ')}]`);
+    }
+  }
+  assert.strictEqual(underLoaded.length, 0, `generated schedules should not leave active quarters below UCSC full-time minimum: ${underLoaded.join('; ')}`);
+}
+
 const tests = [
   testMajorCreditTargetUsesCreditsNotCourseCount,
   testFourCourseSeventeenCreditQuarterIsAllowedWhenCreditsFit,
   testCourseUrgencyPrioritizesLowerDivisionAndPrereqChainStarters,
-  testRequiredUpperDivisionWaitsUntilAllRequiredLowerDivisionIsComplete
+  testRequiredUpperDivisionWaitsUntilAllRequiredLowerDivisionIsComplete,
+  testGeneratedPlansAvoidUnderTwelveCreditQuarters
 ];
 
 let failed = 0;

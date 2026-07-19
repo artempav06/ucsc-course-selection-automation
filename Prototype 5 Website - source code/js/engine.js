@@ -1916,6 +1916,40 @@ const Scheduler = {
     };
     fillRemainingEmptyNonGapQuartersWithFree();
 
+    // Final full-time load repair: generated schedules should not leave an active
+    // non-gap quarter at 5 or 10 credits while nearby quarters carry heavy loads.
+    // UCSC's normal full-time minimum is 12 credits, so after all real courses and
+    // degree-unit padding are placed, add unused FREE elective credit to any
+    // active under-minimum quarter when it fits within the student's max load.
+    const padActiveUnderMinQuartersWithFree = () => {
+      const usedNow = new Set([
+        ...schedule.flatMap(year => Object.values(year.quarters).flat()).filter(Boolean),
+        ...(profile.completedCourses || [])
+      ]);
+      const remainingFree = Object.keys(COURSES)
+        .filter(freeCode)
+        .filter(code => !usedNow.has(code))
+        .sort((a, b) => (COURSES[b]?.units || 0) - (COURSES[a]?.units || 0));
+      for (const slot of allQuarters) {
+        const arr = schedule[slot.yi].quarters[slot.q];
+        if (!arr || arr[0] === "_GAP" || arr.length === 0 || slot.q === "SU") continue;
+        let qUnits = this.quarterUnits(arr);
+        if (qUnits <= 0 || qUnits >= minUnits) continue;
+        while (qUnits < minUnits) {
+          const bestIdx = remainingFree.findIndex(code =>
+            COURSES[code]?.quarters?.includes(slot.q)
+            && qUnits + (COURSES[code].units || 0) <= maxUnits
+          );
+          if (bestIdx < 0) break;
+          const [free] = remainingFree.splice(bestIdx, 1);
+          arr.push(free);
+          qUnits += COURSES[free].units || 0;
+          totalUnits += COURSES[free].units || 0;
+        }
+      }
+    };
+    padActiveUnderMinQuartersWithFree();
+
     // Do not synthesize additional future years beyond the minimum degree-unit
     // padding and no-implicit-gap safeguards above.
     // If all graduation requirements are satisfied before the requested target
@@ -1942,8 +1976,13 @@ const Scheduler = {
     const prefixMeetsGraduationRequirements = candidate => {
       const plannedFromCandidate = [];
       for (const year of candidate) {
-        for (const quarter of Object.values(year.quarters)) {
-          plannedFromCandidate.push(...quarter.filter(code => code !== "_GAP"));
+        for (const [q, quarter] of Object.entries(year.quarters)) {
+          const activeCourses = quarter.filter(code => code !== "_GAP");
+          if (q !== "SU" && activeCourses.length > 0) {
+            const scheduledQuarterUnits = activeCourses.reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+            if (scheduledQuarterUnits > 0 && scheduledQuarterUnits < minUnits) return false;
+          }
+          plannedFromCandidate.push(...activeCourses);
         }
       }
       const completed = profile && profile.completedCourses ? profile.completedCourses : [];

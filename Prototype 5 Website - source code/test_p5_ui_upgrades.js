@@ -299,6 +299,39 @@ function testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits() {
   assert(html.includes('special permission'), `warning should mention possible special permission; got ${html}`);
 }
 
+function testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  let validateCalls = 0;
+  context.Validator = {
+    validateAll() {
+      validateCalls += 1;
+      return { allMet: true, major: [], ge: [], uc: [], totalUnits: 180, totalUnitsMet: true, upperDivMet: true, prereqViolations: [] };
+    }
+  };
+  context.renderSchedule = () => {};
+  context.renderRequirements = () => {};
+  context.showValidationAlerts = () => {};
+  __p5.AppState.profile = { completedCourses: [] };
+  __p5.AppState.schedule = [
+    { academicStart: 2026, label: 'Year 1 (Freshman)', quarters: { F: ['CSE 20', 'WRIT 2', 'MATH 19A'], W: ['CSE 30'], S: [] } }
+  ];
+
+  const moved = __p5.moveCourseToQuarter('CSE 20', 'F', 0, 'W', 0);
+
+  assert.strictEqual(moved, true, 'under-minimum drops should be allowed so students can customize intentionally');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['WRIT 2', 'MATH 19A']);
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.W, ['CSE 30', 'CSE 20']);
+  assert.strictEqual(validateCalls, 1, 'allowed under-minimum move should still revalidate requirements, credits, and prerequisites');
+  const modal = document.getElementById('modal-warning');
+  const html = document.getElementById('warning-content').innerHTML;
+  assert(modal.classList.contains('active'), 'under-12 credit source quarter should open a warning pop-up');
+  assert(html.includes('10 credits'), `warning should name the under-loaded credit total; got ${html}`);
+  assert(html.includes('12'), `warning should mention the 12-credit full-time minimum; got ${html}`);
+  assert(html.includes('academic advising'), `warning should tell students to contact UCSC academic advising; got ${html}`);
+  assert(html.includes('special permission'), `warning should mention possible special permission; got ${html}`);
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
@@ -312,7 +345,8 @@ const tests = [
   testCourseCardsAndQuarterColumnsExposeDragDropUx,
   testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves,
   testDragMoveBlockedWhenPrerequisitesWouldBeMissing,
-  testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits
+  testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits,
+  testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits
 ];
 
 let passed = 0;

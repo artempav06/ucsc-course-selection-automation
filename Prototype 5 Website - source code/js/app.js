@@ -1253,6 +1253,34 @@ function showCreditOverloadWarning(code, targetLabel, totalCredits) {
   );
 }
 
+function showCreditUnderloadWarning(sourceLabel, totalCredits) {
+  showScheduleEditWarning(
+    `${sourceLabel} is below full-time credits`,
+    `
+      <div class="schedule-warning-card warning-underload">
+        <p><strong>${escHTML(sourceLabel)}</strong> now has <strong>${totalCredits} credits</strong>.</p>
+        <p>UCSC generally requires at least <strong>12 credits</strong> in a quarter to be considered a full-time student.</p>
+        <p>Please contact <strong>UCSC academic advising</strong> to confirm your schedule. You may need <strong>special permission</strong> to take fewer than 12 credits.</p>
+      </div>
+    `,
+    "underload"
+  );
+}
+
+function showCombinedCreditLoadWarning(code, sourceLabel, sourceCredits, targetLabel, targetCredits) {
+  showScheduleEditWarning(
+    "Schedule credit load needs advising review",
+    `
+      <div class="schedule-warning-card warning-overload">
+        <p><strong>${escHTML(code)}</strong> was moved, but <strong>${escHTML(targetLabel)}</strong> now has <strong>${targetCredits} credits</strong>, above the normal <strong>19-credit</strong> limit.</p>
+        <p><strong>${escHTML(sourceLabel)}</strong> now has <strong>${sourceCredits} credits</strong>, below the <strong>12-credit</strong> full-time minimum.</p>
+        <p>Please contact <strong>UCSC academic advising</strong> to confirm your schedule. You may need <strong>special permission</strong> for either an overload or a below-full-time quarter.</p>
+      </div>
+    `,
+    "warning"
+  );
+}
+
 function refreshScheduleAfterManualEdit(toastMessage) {
   AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
   renderSchedule();
@@ -1277,19 +1305,28 @@ function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, to
   if (sourceIdx === -1) return false;
 
   const targetLabel = `${QUARTER_LABELS[toQuarterKey] || toQuarterKey} ${quarterCalendarYear(toQuarterKey, AppState.schedule[targetYearIdx].academicStart)}`;
+  const sourceLabel = `${QUARTER_LABELS[fromQuarterKey] || fromQuarterKey} ${quarterCalendarYear(fromQuarterKey, AppState.schedule[sourceYearIdx].academicStart)}`;
   const missingGroups = missingPrereqsForDrop(code, toQuarterKey, targetYearIdx);
   if (missingGroups.length > 0) {
     showPrerequisiteDropWarning(code, targetLabel, missingGroups);
     return false;
   }
 
-  const targetCreditsAfterMove = quarterUnits(target) + courseUnits(code);
+  const movedUnits = courseUnits(code);
+  const targetCreditsAfterMove = quarterUnits(target) + movedUnits;
+  const sourceCreditsAfterMove = quarterUnits(source) - movedUnits;
   source.splice(sourceIdx, 1);
   target.push(code);
 
   refreshScheduleAfterManualEdit(`${code} moved to ${targetLabel}. Requirements, prerequisites, and units rechecked.`);
-  if (targetCreditsAfterMove > 19) {
+  const targetOverloaded = targetCreditsAfterMove > 19;
+  const sourceUnderloaded = sourceCreditsAfterMove > 0 && sourceCreditsAfterMove < 12;
+  if (targetOverloaded && sourceUnderloaded) {
+    showCombinedCreditLoadWarning(code, sourceLabel, sourceCreditsAfterMove, targetLabel, targetCreditsAfterMove);
+  } else if (targetOverloaded) {
     showCreditOverloadWarning(code, targetLabel, targetCreditsAfterMove);
+  } else if (sourceUnderloaded) {
+    showCreditUnderloadWarning(sourceLabel, sourceCreditsAfterMove);
   }
   return true;
 }
