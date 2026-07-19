@@ -936,6 +936,98 @@ h1, h2, h3, h4 { line-height: 1.3; }
   box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 }
 
+.schedule-edit-hint,
+#schedule-grid::before {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border: 1px solid #B7D9F2;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #F4FAFF 0%, #EAF6FF 100%);
+  color: #003C6C;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#schedule-grid::before {
+  content: "↕️ Drag a course card into another quarter to personalize your plan. Requirements and units re-check immediately after every move.";
+}
+
+.course-card[draggable="true"] {
+  cursor: grab;
+  position: relative;
+}
+
+.course-card[draggable="true"]::after {
+  content: "⋮⋮";
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+  color: rgba(0,60,108,0.35);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.course-card[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+.course-card.dragging {
+  opacity: 0.5;
+  transform: rotate(1deg) scale(0.98);
+  box-shadow: 0 10px 24px rgba(0,60,108,0.22);
+}
+
+.quarter-column.drag-over {
+  outline: 3px solid #F1B521;
+  outline-offset: -5px;
+  background: #FFF9DB;
+  box-shadow: inset 0 0 0 2px rgba(0,60,108,0.18);
+}
+
+.quarter-column.drag-over .quarter-header {
+  border-bottom-color: #F1B521;
+}
+
+.quarter-column.drop-denied {
+  animation: drop-denied-shake 0.35s ease;
+  outline: 3px solid #C62828;
+  outline-offset: -5px;
+}
+
+.quarter-drop-disabled {
+  background: #F8F9FA;
+}
+
+.schedule-edit-toast {
+  position: sticky;
+  top: 68px;
+  z-index: 20;
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #003C6C;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(0,60,108,0.25);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.schedule-edit-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes drop-denied-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
 .card-top {
   display: flex;
   justify-content: space-between;

@@ -73,7 +73,10 @@ function loadApp() {
       courseVisualType,
       courseTypeColors,
       createCourseCard,
-      openCourseDetail
+      openCourseDetail,
+      moveCourseToQuarter,
+      refreshScheduleAfterManualEdit,
+      showValidationAlerts
     };`;
   vm.runInNewContext(appCode, context, { filename: 'js/app.js' });
   return context;
@@ -170,6 +173,77 @@ function testProfessorPreferenceSectionRemovedFromHtml() {
   assert(!html.includes('professor preferences'), 'loading copy should not mention professor preferences');
 }
 
+function testDragMoveCourseMutatesScheduleOnceAndRevalidates() {
+  const context = loadApp();
+  const { __p5 } = context;
+  let validateCalls = 0;
+  let renderCalls = [];
+  context.Validator = {
+    validateAll(schedule, profile) {
+      validateCalls += 1;
+      assert.strictEqual(schedule, __p5.AppState.schedule, 'manual move should validate the edited schedule object');
+      assert.strictEqual(profile, __p5.AppState.profile, 'manual move should preserve the active student profile');
+      return { allMet: false, major: [], ge: [], uc: [], totalUnits: 0, totalUnitsMet: false, upperDivMet: false };
+    }
+  };
+  context.renderSchedule = () => renderCalls.push('schedule');
+  context.renderRequirements = () => renderCalls.push('requirements');
+  context.showValidationAlerts = () => renderCalls.push('alerts');
+  __p5.AppState.schedule = [
+    { academicStart: 2026, quarters: { F: ['CSE 20', 'WRIT 2'], W: ['MATH 19A'], S: [] } }
+  ];
+
+  const moved = __p5.moveCourseToQuarter('CSE 20', 'F', 0, 'W', 0);
+
+  assert.strictEqual(moved, true, 'dragging a real course to a new quarter should report success');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['WRIT 2'], 'source quarter should lose exactly the moved course');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.W, ['MATH 19A', 'CSE 20'], 'target quarter should receive the moved course at the end');
+  assert.strictEqual(validateCalls, 1, 'drag/drop moves must trigger live schedule validation');
+  assert.deepStrictEqual(renderCalls, ['schedule', 'requirements', 'alerts'], 'drag/drop should refresh schedule, requirements, and validation alerts');
+}
+
+function testDragMoveIgnoresSameQuarterAndGapTargets() {
+  const { __p5 } = loadApp();
+  __p5.AppState.schedule = [
+    { academicStart: 2026, quarters: { F: ['CSE 20'], W: ['_GAP'], S: [] } }
+  ];
+
+  assert.strictEqual(__p5.moveCourseToQuarter('CSE 20', 'F', 0, 'F', 0), false, 'dropping onto the same quarter should be a no-op');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['CSE 20']);
+  assert.strictEqual(__p5.moveCourseToQuarter('CSE 20', 'F', 0, 'W', 0), false, 'planned gap quarters should not accept dropped courses');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['CSE 20']);
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.W, ['_GAP']);
+}
+
+function testCourseCardsAndQuarterColumnsExposeDragDropUx() {
+  const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
+  assert(css.includes('.course-card[draggable="true"]'), 'course cards should advertise draggable affordance styling');
+  assert(css.includes('.quarter-column.drag-over'), 'quarter columns should have a satisfying drag-over drop target state');
+  assert(css.includes('.schedule-edit-toast'), 'drag/drop edits should have a visible confirmation toast style');
+}
+
+function testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  __p5.AppState.validation = {
+    allMet: false,
+    major: [],
+    ge: [],
+    uc: [],
+    totalUnits: 180,
+    totalUnitsMet: true,
+    upperDivMet: true,
+    prereqViolations: [{ course: 'CSE 101', missing: ['CSE 30'], quarter: 'Fall 2026' }]
+  };
+
+  __p5.showValidationAlerts();
+
+  const html = document.getElementById('alert-box').innerHTML;
+  assert(html.includes('Prerequisite order'), `manual move prerequisite violations should be visible in alerts; got ${html}`);
+  assert(html.includes('CSE 101'), `violating course should be named in alert; got ${html}`);
+  assert(html.includes('CSE 30'), `missing prerequisite should be named in alert; got ${html}`);
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
@@ -177,7 +251,11 @@ const tests = [
   testCourseDetailUsesDatabaseCatalogUrlAndNoRmpUi,
   testCourseDetailCatalogLinksComeFromCourseDatabaseOnly,
   testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
-  testProfessorPreferenceSectionRemovedFromHtml
+  testProfessorPreferenceSectionRemovedFromHtml,
+  testDragMoveCourseMutatesScheduleOnceAndRevalidates,
+  testDragMoveIgnoresSameQuarterAndGapTargets,
+  testCourseCardsAndQuarterColumnsExposeDragDropUx,
+  testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves
 ];
 
 let passed = 0;

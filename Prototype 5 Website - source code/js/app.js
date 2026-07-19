@@ -971,6 +971,8 @@ function renderSchedule() {
       const courses = yearData.quarters[q];
       const quarterCol = document.createElement("div");
       quarterCol.className = "quarter-column";
+      quarterCol.dataset.quarter = q;
+      quarterCol.dataset.year = String(yearIdx);
 
       // Quarter header — show the calendar year alongside the term name
       const qHeader = document.createElement("div");
@@ -988,6 +990,8 @@ function renderSchedule() {
       quarterCol.appendChild(qHeader);
 
       if (isGapQuarter) {
+        quarterCol.classList.add("quarter-drop-disabled");
+        quarterCol.setAttribute("aria-label", `${QUARTER_LABELS[q] || q} ${calYear} is a planned gap and cannot accept dropped courses`);
         // Render special GAP block
         const gapBlock = document.createElement("div");
         gapBlock.className = "quarter-gap";
@@ -998,6 +1002,7 @@ function renderSchedule() {
         `;
         quarterCol.appendChild(gapBlock);
       } else {
+        wireQuarterDropTarget(quarterCol, q, yearIdx);
         // Course cards
         courses.forEach(code => {
           const card = createCourseCard(code, q, yearIdx);
@@ -1037,6 +1042,11 @@ function createCourseCard(code, quarterKey, yearIdx) {
   card.dataset.code = code;
   card.dataset.quarter = quarterKey;
   card.dataset.year = yearIdx;
+  card.setAttribute("draggable", "true");
+  card.setAttribute("role", "button");
+  card.setAttribute("tabindex", "0");
+  card.setAttribute("aria-label", `${code}: drag to another quarter, or press Enter for details`);
+  card.title = "Drag to another quarter, or click for details";
 
   // Get color based on student-facing course type
   const colors = courseTypeColors(code);
@@ -1073,8 +1083,122 @@ function createCourseCard(code, quarterKey, yearIdx) {
 
   // Click to open detail panel
   card.addEventListener("click", () => openCourseDetail(code, quarterKey, yearIdx));
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openCourseDetail(code, quarterKey, yearIdx);
+    }
+  });
+  card.addEventListener("dragstart", (event) => {
+    card.classList.add("dragging");
+    if (event.dataTransfer) {
+      event.dataTransfer.effectAllowed = "move";
+      event.dataTransfer.setData("application/json", JSON.stringify({ code, quarterKey, yearIdx }));
+      event.dataTransfer.setData("text/plain", code);
+    }
+  });
+  card.addEventListener("dragend", () => {
+    card.classList.remove("dragging");
+    clearQuarterDropHighlights();
+  });
 
   return card;
+}
+
+function readDraggedCourse(event) {
+  if (!event?.dataTransfer) return null;
+  const json = event.dataTransfer.getData("application/json");
+  if (json) {
+    try {
+      const parsed = JSON.parse(json);
+      if (parsed && parsed.code) return parsed;
+    } catch (_) {
+      // Fall back to text/plain below for browsers/extensions that strip custom types.
+    }
+  }
+  const code = event.dataTransfer.getData("text/plain");
+  return code ? { code } : null;
+}
+
+function clearQuarterDropHighlights() {
+  document.querySelectorAll?.(".quarter-column.drag-over, .quarter-column.drop-denied")?.forEach(col => {
+    col.classList.remove("drag-over");
+    col.classList.remove("drop-denied");
+  });
+}
+
+function wireQuarterDropTarget(quarterCol, quarterKey, yearIdx) {
+  quarterCol.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    if (event.dataTransfer) event.dataTransfer.dropEffect = "move";
+    quarterCol.classList.add("drag-over");
+  });
+  quarterCol.addEventListener("dragleave", (event) => {
+    if (!event.currentTarget.contains?.(event.relatedTarget)) {
+      quarterCol.classList.remove("drag-over");
+    }
+  });
+  quarterCol.addEventListener("drop", (event) => {
+    event.preventDefault();
+    const dragged = readDraggedCourse(event);
+    clearQuarterDropHighlights();
+    if (!dragged?.code) return;
+    const moved = moveCourseToQuarter(
+      dragged.code,
+      dragged.quarterKey || dragged.quarter,
+      Number.isInteger(dragged.yearIdx) ? dragged.yearIdx : parseInt(dragged.year, 10),
+      quarterKey,
+      yearIdx
+    );
+    if (!moved) {
+      quarterCol.classList.add("drop-denied");
+      setTimeout(() => quarterCol.classList.remove("drop-denied"), 450);
+    }
+  });
+}
+
+function showScheduleEditToast(message) {
+  const container = document.getElementById("schedule-grid");
+  if (!container) return;
+  const toast = document.createElement("div");
+  toast.className = "schedule-edit-toast";
+  toast.setAttribute("role", "status");
+  toast.setAttribute("aria-live", "polite");
+  toast.textContent = message;
+  container.prepend ? container.prepend(toast) : container.appendChild(toast);
+  setTimeout(() => toast.classList.add("show"), 0);
+  setTimeout(() => toast.remove?.(), 2600);
+}
+
+function refreshScheduleAfterManualEdit(toastMessage) {
+  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
+  renderSchedule();
+  renderRequirements();
+  showValidationAlerts();
+  if (toastMessage) showScheduleEditToast(toastMessage);
+}
+
+function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, toYearIdx) {
+  if (!AppState.schedule || !code || code === "_GAP") return false;
+  const sourceYearIdx = Number.isInteger(fromYearIdx) ? fromYearIdx : parseInt(fromYearIdx, 10);
+  const targetYearIdx = Number.isInteger(toYearIdx) ? toYearIdx : parseInt(toYearIdx, 10);
+  if (!Number.isInteger(sourceYearIdx) || !Number.isInteger(targetYearIdx)) return false;
+  if (sourceYearIdx === targetYearIdx && fromQuarterKey === toQuarterKey) return false;
+
+  const source = AppState.schedule[sourceYearIdx]?.quarters?.[fromQuarterKey];
+  const target = AppState.schedule[targetYearIdx]?.quarters?.[toQuarterKey];
+  if (!Array.isArray(source) || !Array.isArray(target)) return false;
+  if (target.length === 1 && target[0] === "_GAP") return false;
+
+  const sourceIdx = source.indexOf(code);
+  if (sourceIdx === -1) return false;
+
+  source.splice(sourceIdx, 1);
+  target.push(code);
+
+  const targetLabel = `${QUARTER_LABELS[toQuarterKey] || toQuarterKey} ${quarterCalendarYear(toQuarterKey, AppState.schedule[targetYearIdx].academicStart)}`;
+  refreshScheduleAfterManualEdit(`${code} moved to ${targetLabel}. Requirements and units rechecked.`);
+  return true;
 }
 
 
@@ -1278,10 +1402,7 @@ function performSwap(oldCode, newCode, quarterKey, yearIdx) {
   closeModal("modal-swap");
 
   // Re-validate and re-render
-  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
-  renderSchedule();
-  renderRequirements();
-  showValidationAlerts();
+  refreshScheduleAfterManualEdit(`${oldCode} swapped for ${newCode}. Requirements and units rechecked.`);
 }
 
 function removeCourse(code, quarterKey, yearIdx) {
@@ -1293,10 +1414,7 @@ function removeCourse(code, quarterKey, yearIdx) {
 
   closeModal("modal-course-detail");
 
-  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
-  renderSchedule();
-  renderRequirements();
-  showValidationAlerts();
+  refreshScheduleAfterManualEdit(`${code} removed. Requirements and units rechecked.`);
 }
 
 function openAddCourseModal(yearIdx, quarterKey) {
@@ -1358,10 +1476,7 @@ function addCourseToQuarter(code, quarterKey, yearIdx) {
   AppState.schedule[yearIdx].quarters[quarterKey].push(code);
   closeModal("modal-swap");
 
-  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
-  renderSchedule();
-  renderRequirements();
-  showValidationAlerts();
+  refreshScheduleAfterManualEdit(`${code} added. Requirements and units rechecked.`);
 }
 
 
@@ -1500,6 +1615,15 @@ function showValidationAlerts() {
     if (!r.fulfilled) {
       warnings.push(`UC: ${r.name} not satisfied.`);
     }
+  });
+
+  // Prerequisite/order check catches manual drag-and-drop moves that make a later course too early.
+  (v.prereqViolations || []).forEach(violation => {
+    const missing = violation.missingGroups
+      ? violation.missingGroups.map(group => group.join(" or ")).join("; ")
+      : (violation.missing || []).join(" or ");
+    const where = violation.quarter || [violation.year, violation.term].filter(Boolean).join(" ");
+    warnings.push(`Prerequisite order: ${violation.course || "A course"}${where ? ` in ${where}` : ""} needs ${missing || "an earlier prerequisite"}.`);
   });
 
   // Units
