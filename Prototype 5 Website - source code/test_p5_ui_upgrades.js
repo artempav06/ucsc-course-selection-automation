@@ -173,6 +173,18 @@ function testProfessorPreferenceSectionRemovedFromHtml() {
   assert(!html.includes('professor preferences'), 'loading copy should not mention professor preferences');
 }
 
+function testNavbarIncludesUcscRateMyProfessorsResourceButton() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
+  assert(html.includes('href="https://www.ratemyprofessors.com/school/1078"'), 'navbar should link directly to the UC Santa Cruz Rate My Professors school page');
+  assert(html.includes('class="nav-rmp-link"'), 'Rate My Professors should be a visible navbar resource button');
+  assert(html.includes('target="_blank"'), 'external Rate My Professors link should open in a new tab');
+  assert(html.includes('rel="noopener noreferrer"'), 'external Rate My Professors link should use safe noopener/noreferrer rel');
+  assert(html.includes('aria-label="Open UC Santa Cruz on Rate My Professors"'), 'RMP navbar button should have a clear accessible label');
+  assert(css.includes('.nav-rmp-link'), 'navbar RMP link should have explicit styling so students notice it');
+  assert(css.includes('background: #FDC700'), 'navbar RMP link should use UCSC gold button styling');
+}
+
 function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
@@ -354,6 +366,7 @@ const tests = [
   testCourseDetailCatalogLinksComeFromCourseDatabaseOnly,
   testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
   testProfessorPreferenceSectionRemovedFromHtml,
+  testNavbarIncludesUcscRateMyProfessorsResourceButton,
   testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions,
   testDragMoveCourseMutatesScheduleOnceAndRevalidates,
   testDragMoveIgnoresSameQuarterAndGapTargets,
