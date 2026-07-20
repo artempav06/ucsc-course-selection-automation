@@ -33,7 +33,12 @@ const AppState = {
     gapEnabled: false,
     gapType: "quarter",        // "quarter" | "year"
     gapTerm: "F",              // "F" | "W" | "S"
-    gapYear: 2027              // calendar year when gap starts
+    gapYear: 2027,             // calendar year when gap starts
+    ahiFulfillment: {
+      usHistoryFullYear: false,
+      usHistoryHalfYear: false,
+      americanGovernmentHalfYear: false
+    }
   },
   schedule: null,              // generated schedule
   validation: null             // validation results
@@ -266,6 +271,7 @@ function initWizard() {
   // Step 2: Academic History
   document.getElementById("btn-wizard-next-2")?.addEventListener("click", () => {
     AppState.profile.elwrSatisfied = document.getElementById("check-elwr").checked;
+    AppState.profile.ahiFulfillment = collectAhiFulfillment();
     const pc = parseInt(document.getElementById("input-prior-credits").value, 10);
     AppState.profile.priorCredits = isNaN(pc) || pc < 0 ? 0 : Math.min(120, pc);
     showWizardStep(3);
@@ -350,6 +356,9 @@ function initWizard() {
 
   // GAP period UI (Step 3)
   initGapUI();
+
+  // American History & Institutions high-school fulfillment UI (Step 2)
+  initAhiFulfillmentUI();
 }
 
 // Populate the major dropdown from the MAJOR_REQUIREMENTS registry.
@@ -619,6 +628,46 @@ function initGapUI() {
       gapOptions.style.display = gapCheck.checked ? "block" : "none";
     });
   }
+}
+
+
+// ---------- AMERICAN HISTORY & INSTITUTIONS UI ----------
+
+function emptyAhiFulfillment() {
+  return {
+    usHistoryFullYear: false,
+    usHistoryHalfYear: false,
+    americanGovernmentHalfYear: false
+  };
+}
+
+function collectAhiFulfillment() {
+  const ahiCheck = document.getElementById("check-ahi");
+  if (!ahiCheck?.checked) return emptyAhiFulfillment();
+  return {
+    usHistoryFullYear: document.getElementById("check-ahi-us-history-full-year")?.checked ?? false,
+    usHistoryHalfYear: document.getElementById("check-ahi-us-history-half-year")?.checked ?? false,
+    americanGovernmentHalfYear: document.getElementById("check-ahi-american-government-half-year")?.checked ?? false
+  };
+}
+
+function initAhiFulfillmentUI() {
+  const ahiCheck = document.getElementById("check-ahi");
+  const ahiOptions = document.getElementById("ahi-options");
+  if (!ahiCheck || !ahiOptions) return;
+
+  const optionIds = [
+    "check-ahi-us-history-full-year",
+    "check-ahi-us-history-half-year",
+    "check-ahi-american-government-half-year"
+  ];
+  const optionChecks = optionIds.map(id => document.getElementById(id)).filter(Boolean);
+  const update = () => {
+    ahiOptions.style.display = ahiCheck.checked ? "block" : "none";
+    if (!ahiCheck.checked) optionChecks.forEach(cb => { cb.checked = false; });
+  };
+  ahiCheck.addEventListener("change", update);
+  update();
 }
 
 

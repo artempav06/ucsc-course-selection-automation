@@ -108,7 +108,9 @@ function buildContext() {
     'btn-start', 'btn-wizard-next-1', 'btn-wizard-next-2', 'btn-wizard-next-3', 'btn-generate',
     'btn-wizard-back-2', 'btn-wizard-back-3', 'btn-wizard-back-4', 'progress-fill',
     'select-major', 'select-level', 'select-current-term', 'select-current-year',
-    'check-elwr', 'input-prior-credits', 'select-grad-term', 'select-grad-year', 'check-summer',
+    'check-elwr', 'check-ahi', 'ahi-options', 'check-ahi-us-history-full-year',
+    'check-ahi-us-history-half-year', 'check-ahi-american-government-half-year',
+    'input-prior-credits', 'select-grad-term', 'select-grad-year', 'check-summer',
     'input-max-units', 'select-prof-importance', 'check-gap', 'select-gap-type', 'select-gap-term',
     'select-gap-year', 'check-auto-suggest', 'concentration-grid', 'ge-concentration-grid',
     'completed-courses-list', 'course-search-input', 'course-search-results', 'transcript-drop-zone',
@@ -188,6 +190,10 @@ function setWizardProfile(document) {
   document.getElementById('select-current-term').value = 'W';
   document.getElementById('select-current-year').value = '2027';
   document.getElementById('check-elwr').checked = true;
+  document.getElementById('check-ahi').checked = true;
+  document.getElementById('check-ahi-us-history-full-year').checked = false;
+  document.getElementById('check-ahi-us-history-half-year').checked = true;
+  document.getElementById('check-ahi-american-government-half-year').checked = true;
   document.getElementById('input-prior-credits').value = '12';
   document.getElementById('select-grad-term').value = 'S';
   document.getElementById('select-grad-year').value = '2027';
@@ -217,6 +223,11 @@ function assertProfileFlow(profile, label) {
   assert.strictEqual(profile.gapType, 'quarter', `${label} gap type`);
   assert.strictEqual(profile.gapTerm, 'S', `${label} gap term`);
   assert.strictEqual(profile.gapYear, 2027, `${label} gap year`);
+  assert.deepStrictEqual(profile.ahiFulfillment, {
+    usHistoryFullYear: false,
+    usHistoryHalfYear: true,
+    americanGovernmentHalfYear: true
+  }, `${label} AH&I fulfillment`);
   assert.strictEqual(profile.concentration, 'cs_web_software', `${label} major concentration`);
   assert.strictEqual(profile.geConcentration, 'ge_arts_humanities', `${label} GE concentration`);
   assert.deepStrictEqual(profile.electiveInterests, ['cs_web_software', 'cs_ai_ml'], `${label} major/elective interest array`);
@@ -243,6 +254,32 @@ function testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations() {
 
   assertProfileFlow(context.__captures.add, 'add-course suggestions');
   assertProfileFlow(context.__captures.swap, 'swap suggestions');
+}
+
+function testAmericanHistoryInstitutionCheckboxUnfoldsOptionsAndResetsWhenOff() {
+  const context = buildContext();
+  const { AppState } = loadApp(context);
+  setWizardProfile(context.document);
+  const ahiToggle = context.document.getElementById('check-ahi');
+  const ahiOptions = context.document.getElementById('ahi-options');
+
+  ahiToggle.checked = true;
+  ahiToggle.dispatchEvent('change');
+  assert.strictEqual(ahiOptions.style.display, 'block', 'checking AH&I should unfold the high-school fulfillment choices');
+
+  context.document.getElementById('btn-wizard-next-1').click();
+  context.document.getElementById('btn-wizard-next-2').click();
+  assert.deepStrictEqual(JSON.parse(JSON.stringify(AppState.profile.ahiFulfillment)), {
+    usHistoryFullYear: false,
+    usHistoryHalfYear: true,
+    americanGovernmentHalfYear: true
+  }, 'academic-history step should store AH&I choices in profile');
+
+  ahiToggle.checked = false;
+  ahiToggle.dispatchEvent('change');
+  assert.strictEqual(ahiOptions.style.display, 'none', 'unchecking AH&I should collapse the choices');
+  assert.strictEqual(context.document.getElementById('check-ahi-us-history-half-year').checked, false, 'collapsing AH&I should clear history half-year choice');
+  assert.strictEqual(context.document.getElementById('check-ahi-american-government-half-year').checked, false, 'collapsing AH&I should clear government half-year choice');
 }
 
 function testEarlyCompletionScheduleExplainsHiddenTargetQuarters() {
@@ -514,6 +551,7 @@ async function testTranscriptUploadSuccessAddsRecognizedCourses() {
 
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
+  testAmericanHistoryInstitutionCheckboxUnfoldsOptionsAndResetsWhenOff,
   testEarlyCompletionScheduleExplainsHiddenTargetQuarters,
   testExtendedPartialFinalYearDoesNotClaimEarlyCompletion,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,

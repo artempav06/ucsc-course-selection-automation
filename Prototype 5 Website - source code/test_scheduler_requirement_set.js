@@ -88,12 +88,44 @@ function testWrit2TreatsWrit1AndWrit1EAsAlternatives() {
   assert(Validator.prereqsMet(COURSES['WRIT 2'].prereqs, withWrit1E), 'WRIT 1E should satisfy WRIT 2 prerequisite');
 }
 
+function testElwrPlacementCountsAsWrit1ForTaAndWrit2Planning() {
+  const profile = makeProfile({ completedCourses: [], elwrSatisfied: true });
+  const validation = Validator.validateAll([], profile);
+  const elwr = validation.uc.find(req => req.id === 'ELWR');
+  const textualAnalysis = validation.ge.find(req => req.id === 'TA');
+  assert(elwr && elwr.fulfilled, 'ELWR placement checkbox should fulfill Entry Level Writing');
+  assert(textualAnalysis && textualAnalysis.fulfilled, 'ELWR placement should count like WRIT 1 for the Textual Analysis section WRIT 1 covers');
+  assert(textualAnalysis.courses.includes('WRIT 1'), `TA fulfillment should show WRIT 1 as profile-satisfied; got ${textualAnalysis.courses.join(', ')}`);
+
+  const used = new Set();
+  const picks = Scheduler.pickUC(used, profile);
+  assert(!picks.includes('WRIT 1') && !picks.includes('WRIT 1E'), `ELWR-satisfied profiles should not schedule WRIT 1/1E; got ${picks.join(', ')}`);
+}
+
+function testAmericanHistoryInstitutionProfileFulfillment() {
+  const fullYearProfile = makeProfile({ completedCourses: [], ahiFulfillment: { usHistoryFullYear: true } });
+  const fullYearUC = Validator.validateUC([], fullYearProfile);
+  assert(fullYearUC.find(req => req.id === 'AH').fulfilled, 'one-year high-school U.S. history should fulfill American History');
+  assert(fullYearUC.find(req => req.id === 'AI').fulfilled, 'one-year high-school U.S. history should fulfill American Institutions');
+  assert.deepStrictEqual(Scheduler.pickUC(new Set(), fullYearProfile).filter(code => ['HIS 10B', 'POLI 20'].includes(code)), [], 'AH&I-fulfilled profiles should not schedule UCSC AH/AI courses');
+
+  const historyOnly = Validator.validateUC([], makeProfile({ completedCourses: [], ahiFulfillment: { usHistoryHalfYear: true } }));
+  assert(historyOnly.find(req => req.id === 'AH').fulfilled, 'half-year U.S. history should fulfill American History');
+  assert(!historyOnly.find(req => req.id === 'AI').fulfilled, 'half-year U.S. history alone should not fulfill American Institutions');
+
+  const governmentOnly = Validator.validateUC([], makeProfile({ completedCourses: [], ahiFulfillment: { americanGovernmentHalfYear: true } }));
+  assert(!governmentOnly.find(req => req.id === 'AH').fulfilled, 'half-year American government alone should not fulfill American History');
+  assert(governmentOnly.find(req => req.id === 'AI').fulfilled, 'half-year American government should fulfill American Institutions');
+}
+
 const tests = [
   testSchedulerBuildsNormalizedRequirementSet,
   testSchedulerBuildRequirementSetDoesNotMutateRuntimeData,
   testGeneratedValidationCarriesRequirementSetForDebuggingWithoutChangingResults,
   testTimRequiredCse182SchedulesDespiteJuniorSeniorRestriction,
-  testWrit2TreatsWrit1AndWrit1EAsAlternatives
+  testWrit2TreatsWrit1AndWrit1EAsAlternatives,
+  testElwrPlacementCountsAsWrit1ForTaAndWrit2Planning,
+  testAmericanHistoryInstitutionProfileFulfillment
 ];
 let passed = 0;
 for (const test of tests) {

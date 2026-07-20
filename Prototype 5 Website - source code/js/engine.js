@@ -3,6 +3,24 @@
 // Single walk() for all majors. Concentration-driven elective ranking.
 // ============================================================
 
+function profileSatisfiedVirtualCourses(profile) {
+  const virtual = [];
+  if (profile && profile.elwrSatisfied) virtual.push("WRIT 1");
+  return virtual;
+}
+
+function effectiveCompletedCourses(profile) {
+  const completed = Array.isArray(profile?.completedCourses) ? profile.completedCourses : [];
+  return [...new Set([...completed, ...profileSatisfiedVirtualCourses(profile)])];
+}
+
+function ahiFulfillmentFor(profile, reqId) {
+  const ahi = profile?.ahiFulfillment || {};
+  if (reqId === "AH") return !!(ahi.usHistoryFullYear || ahi.usHistoryHalfYear);
+  if (reqId === "AI") return !!(ahi.usHistoryFullYear || ahi.americanGovernmentHalfYear);
+  return false;
+}
+
 function buildNormalizedRequirementSet(profile) {
   const majorId = (profile && profile.major) || "CS_BA";
   const major = (typeof MAJOR_REQUIREMENTS !== "undefined" && MAJOR_REQUIREMENTS[majorId])
@@ -140,7 +158,11 @@ const Validator = {
         }
       }
       let isFulfilled = satisfied.length >= req.needed;
-      if (req.id === "ELWR" && profile && profile.elwrSatisfied) isFulfilled = true;
+      if (req.id === "ELWR" && profile && profile.elwrSatisfied) {
+        isFulfilled = true;
+        if (!satisfied.includes("WRIT 1")) satisfied.push("WRIT 1");
+      }
+      if ((req.id === "AH" || req.id === "AI") && ahiFulfillmentFor(profile, req.id)) isFulfilled = true;
       return { id: req.id, name: req.name, fulfilled: isFulfilled, courses: satisfied, note: req.note };
     });
   },
@@ -196,7 +218,7 @@ const Validator = {
     for (const year of schedule)
       for (const quarter of Object.values(year.quarters))
         plannedFromSchedule.push(...quarter);
-    const completed = profile && profile.completedCourses ? profile.completedCourses : [];
+    const completed = effectiveCompletedCourses(profile);
     const allCourses = [...plannedFromSchedule, ...completed];
 
     const majorId = (profile && profile.major) || "CS_BA";
@@ -554,7 +576,7 @@ const Scheduler = {
   },
 
   generateWithExplanation(profile, options = {}) {
-    const completedSet = new Set(profile.completedCourses || []);
+    const completedSet = new Set(effectiveCompletedCourses(profile));
     const used = new Set(completedSet);
     const geConcentration = profile.geConcentration || null;
 
@@ -1134,9 +1156,10 @@ const Scheduler = {
 
   pickUC(used, profile) {
     const picks = [];
-    const completedSet = new Set(profile.completedCourses || []);
+    const completedSet = new Set(effectiveCompletedCourses(profile));
     for (const req of UC_REQUIREMENTS) {
       if (req.id === "ELWR" && profile && profile.elwrSatisfied) continue;
+      if ((req.id === "AH" || req.id === "AI") && ahiFulfillmentFor(profile, req.id)) continue;
       let satisfied = false;
       // used is a superset of completedSet, so checking used alone suffices
       for (const code of used) {
@@ -1985,7 +2008,7 @@ const Scheduler = {
           plannedFromCandidate.push(...activeCourses);
         }
       }
-      const completed = profile && profile.completedCourses ? profile.completedCourses : [];
+      const completed = effectiveCompletedCourses(profile);
       const allCourses = [...plannedFromCandidate, ...completed];
       const majorReqs = MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS;
       const majorResults = Validator.validateMajor(allCourses, majorReqs);

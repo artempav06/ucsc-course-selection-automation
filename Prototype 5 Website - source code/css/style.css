@@ -584,6 +584,51 @@ h1, h2, h3, h4 { line-height: 1.3; }
   accent-color: #003C6C;
 }
 
+.checkbox-card {
+  border: 2px solid #B6CCE0;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #F7FBFF;
+  box-shadow: 0 2px 8px rgba(0, 60, 108, 0.08);
+}
+
+.checkbox-card:hover {
+  border-color: #003C6C;
+  background: #EFF7FF;
+}
+
+.checkbox-card:has(input[type="checkbox"]:checked) {
+  border-color: #003C6C;
+  background: #E3F2FD;
+  box-shadow: 0 3px 12px rgba(0, 60, 108, 0.14);
+}
+
+.checkbox-card .checkbox-row:first-child label {
+  font-size: 15px;
+  color: #003C6C;
+}
+
+.checkbox-card-hint {
+  margin: 2px 0 0 30px;
+}
+
+.ahi-options {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 4px solid #FDC700;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.checkbox-subrow {
+  align-items: flex-start;
+  padding: 8px 0;
+}
+
+.checkbox-subrow label {
+  font-weight: 500;
+}
+
 /* Completed courses checklist */
 .courses-checklist {
   max-height: 260px;

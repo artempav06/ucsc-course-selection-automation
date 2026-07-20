@@ -197,10 +197,36 @@
           </p>
         </div>
 
-        <div class="form-group">
+        <div class="form-group checkbox-card checkbox-card-writing">
           <div class="checkbox-row">
             <input type="checkbox" id="check-elwr">
             <label for="check-elwr">Entry Level Writing (ELWR) satisfied (AP/placement/transfer)</label>
+          </div>
+          <p class="form-hint checkbox-card-hint">If checked, we count WRIT 1 / Entry Level Writing as already fulfilled for planning.</p>
+        </div>
+
+        <div class="form-group checkbox-card checkbox-card-ahi">
+          <div class="checkbox-row">
+            <input type="checkbox" id="check-ahi">
+            <label for="check-ahi">American History &amp; Institutions (AH&amp;I) fulfilled before UCSC</label>
+          </div>
+          <p class="form-hint checkbox-card-hint">
+            You can satisfy UCSC AH&amp;I with a passing one-year U.S. history course, or with a passing half-year U.S. history plus half-year American government course in high school.
+          </p>
+          <div id="ahi-options" class="ahi-options" style="display:none">
+            <p class="form-hint">Check the high-school coursework you completed with a passing grade:</p>
+            <div class="checkbox-row checkbox-subrow">
+              <input type="checkbox" id="check-ahi-us-history-full-year">
+              <label for="check-ahi-us-history-full-year">One-year U.S. history course <span class="label-optional">(fulfills both American History and American Institutions)</span></label>
+            </div>
+            <div class="checkbox-row checkbox-subrow">
+              <input type="checkbox" id="check-ahi-us-history-half-year">
+              <label for="check-ahi-us-history-half-year">Half-year U.S. history course <span class="label-optional">(fulfills American History)</span></label>
+            </div>
+            <div class="checkbox-row checkbox-subrow">
+              <input type="checkbox" id="check-ahi-american-government-half-year">
+              <label for="check-ahi-american-government-half-year">Half-year American government course <span class="label-optional">(fulfills American Institutions)</span></label>
+            </div>
           </div>
         </div>
 

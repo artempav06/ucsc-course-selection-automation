@@ -173,6 +173,20 @@ function testProfessorPreferenceSectionRemovedFromHtml() {
   assert(!html.includes('professor preferences'), 'loading copy should not mention professor preferences');
 }
 
+function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
+  assert(html.includes('id="check-ahi"'), 'Academic History should ask whether AH&I was fulfilled before UCSC');
+  assert(html.includes('id="ahi-options"'), 'AH&I checkbox should reveal an unfoldable options section');
+  assert(html.includes('check-ahi-us-history-full-year'), 'AH&I options should include one-year U.S. history');
+  assert(html.includes('check-ahi-us-history-half-year'), 'AH&I options should include half-year U.S. history');
+  assert(html.includes('check-ahi-american-government-half-year'), 'AH&I options should include half-year American government');
+  assert(html.includes('checkbox-card'), 'Academic History checkboxes should use the more-visible card styling hook');
+  assert(css.includes('.checkbox-card'), 'checkbox-card styling should exist for easy-to-miss checkbox sections');
+  assert(css.includes('border: 2px solid'), 'checkbox cards should have a visible border');
+  assert(css.includes('.checkbox-card:has(input[type="checkbox"]:checked)'), 'checked checkbox cards should get a stronger selected state');
+}
+
 function testDragMoveCourseMutatesScheduleOnceAndRevalidates() {
   const context = loadApp();
   const { __p5 } = context;
@@ -340,6 +354,7 @@ const tests = [
   testCourseDetailCatalogLinksComeFromCourseDatabaseOnly,
   testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
   testProfessorPreferenceSectionRemovedFromHtml,
+  testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions,
   testDragMoveCourseMutatesScheduleOnceAndRevalidates,
   testDragMoveIgnoresSameQuarterAndGapTargets,
   testCourseCardsAndQuarterColumnsExposeDragDropUx,
