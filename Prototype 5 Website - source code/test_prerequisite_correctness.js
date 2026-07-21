@@ -104,6 +104,14 @@ function testMath19ADoesNotForcePrecalculusWhenPlacementAlternativesExist() {
   assert((COURSES['MATH 19A'].prereqs || []).length === 0, 'MATH 19A should not hard-require MATH 3 without placement/AP modeling');
 }
 
+function testMath23AOfficialCoursePrerequisiteAlternativesAreEncoded() {
+  // Official UCSC MATH 23A catalog page, checked 2026-07-20:
+  // https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-23a
+  // "MATH 19B or MATH 20B or qualifying AP exam."
+  assert(hasGroup('MATH 23A', ['MATH 19B', 'MATH 20B']), 'MATH 23A should require MATH 19B or MATH 20B as encoded course alternatives');
+  assert((COURSES['MATH 23A'].officialPrereqText || '').includes('qualifying AP exam'), 'MATH 23A should preserve the official AP exam alternative in officialPrereqText');
+}
+
 function testReverseLabCoreqCanShareQuarterWithLecture() {
   const profile = {
     major: 'RE_BS',
@@ -186,6 +194,7 @@ const tests = [
   testCsBaGeneratedSchedulePlacesCse13sBeforeCse101,
   testValidatorFlagsChronologicalPrerequisiteViolations,
   testMath19ADoesNotForcePrecalculusWhenPlacementAlternativesExist,
+  testMath23AOfficialCoursePrerequisiteAlternativesAreEncoded,
   testReverseLabCoreqCanShareQuarterWithLecture,
   testOfficialCse186PrerequisitesDoNotPreserveStaleConcurrentRequirement,
   testSupportedMajorDefaultSchedulesHaveNoPrerequisiteViolations

@@ -2383,12 +2383,45 @@ const Scheduler = {
     return candidates.slice(0, 30);
   },
 
+  manualFreeCourseSuggestions(plannedSet, query) {
+    const q = (query || "").toLowerCase().trim();
+    const wantsFree = q && (q.includes("free") || q.includes("placeholder") || q.includes("elective"));
+    if (!wantsFree) return [];
+    const hasSpecificUnit = /(^|\D)[125](\D|$)/.test(q) || q.includes("one") || q.includes("two") || q.includes("five");
+    const wantsFive = !hasSpecificUnit || /(^|\D)5(\D|$)/.test(q) || q.includes("five");
+    const wantsTwo = !hasSpecificUnit || /(^|\D)2(\D|$)/.test(q) || q.includes("two");
+    const wantsOne = !hasSpecificUnit || /(^|\D)1(\D|$)/.test(q) || q.includes("one");
+    const families = [
+      { enabled: wantsFive, pattern: /^FREE \d+$/, units: 5 },
+      { enabled: wantsTwo, pattern: /^FREE 2U\d+$/, units: 2 },
+      { enabled: wantsOne, pattern: /^FREE 1U\d+$/, units: 1 }
+    ];
+    const out = [];
+    families.forEach(family => {
+      if (!family.enabled) return;
+      Object.keys(COURSES)
+        .filter(code => family.pattern.test(code) && COURSES[code]?.units === family.units && !plannedSet.has(code))
+        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+        .slice(0, 3)
+        .forEach(code => {
+          const c = COURSES[code];
+          out.push({
+            code, title: c.title, units: c.units, desc: c.desc,
+            ge: c.ge, rmpScore: c.rmpScore || 0, section: c.section || ["FREE"], division: c.division,
+            preferenceScore: 10000 - out.length,
+            reasons: [`${c.units}-credit placeholder for a course you will choose later`]
+          });
+        });
+    });
+    return out;
+  },
+
   searchAddable(quarter, placedCodes, allPlanned, query, profile) {
     const plannedSet = new Set(allPlanned);
     const completedSet = new Set(Array.isArray(placedCodes) ? placedCodes : []);
     const q = (query || "").toLowerCase().trim();
 
-    const results = [];
+    const results = this.manualFreeCourseSuggestions(plannedSet, q);
     for (const [code, c] of Object.entries(COURSES)) {
       if (plannedSet.has(code)) continue;
       if (code.startsWith("FREE")) continue;

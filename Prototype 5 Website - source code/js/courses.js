@@ -73941,7 +73941,12 @@ const COURSES = {
     "title": "Vector Calculus",
     "units": 5,
     "division": "lower",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "MATH 19B",
+        "MATH 20B"
+      ]
+    ],
     "ge": "MF",
     "quarters": [
       "F",
@@ -102943,5 +102948,158 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "FREE 1U1": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U2": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U3": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U4": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U5": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U6": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U7": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U8": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U9": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
   }
 };
