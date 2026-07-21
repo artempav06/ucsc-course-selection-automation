@@ -1,5 +1,38 @@
 # Prototype 4 Current Handoff
 
+_Last updated: 2026-07-20 after Prototype 5 college-core requirement-tracker integration, generated-schedule warning/export cleanup, and focused/full JS regression checks._
+
+## Prototype 5 Latest Handoff
+
+Active workspace is now Prototype 5 at:
+
+`/home/artem/projects/ucsc-course-selection-automation/Prototype 5 Website - source code/`
+
+Latest batch completed:
+
+- Removed the Word download option from the generated schedule UI; PDF and Excel remain.
+- Added generated-schedule advising warning language with selected-major UCSC Catalog requirement link and course-quarter availability caveat.
+- Added college-core handling as an explicit requirement when a student chooses a UCSC college affiliation: the normalized requirement set now includes `PROFILE:COLLEGE_CORE`, validation exposes `collegeCore` / `allCollegeCoreMet`, `allMet` is blocked when the selected college core is missing, the Requirement Tracker shows a College Core section, and validation alerts surface missing college-core courses.
+- Confirmed college-core placement policy: non-Stevenson college core is planned in freshman Fall; Stevenson plans `STEV 1` in freshman Fall and `STEV 2` in freshman Winter unless already completed.
+- Added regressions in `test_scheduler_requirement_set.js` and `test_ui_profile_flow.js` for all-major college-core requirement availability, affiliation-specific validation, freshman-quarter placement, and Requirement Tracker rendering.
+
+Verified from Prototype 5:
+
+```bash
+node test_scheduler_requirement_set.js      # 10/10 passed
+node test_ui_profile_flow.js                # 14/14 passed
+node test_requirement_collector.js          # 35/35 passed
+```
+
+Additional verification already run in this batch:
+
+- `for f in test_*.js; do node "$f"; done` progressed through many tests, but timed out at the long suite boundary before `test_requirement_collector.js`; rerunning `test_requirement_collector.js` separately passed.
+- Follow-up explicit run passed: `test_requirement_normalizer.js`, `test_requirement_normalizer_runtime.js`, `test_responsive_css.js`, `test_schedule_policy_audit.js`, `test_schedule_regression.js`, `test_scheduler_requirement_set.js`, `test_smoke.js`, `test_toposort.js`, `test_ui_profile_flow.js`, and `test_warning_triage_diagnostics.js`.
+
+Next continuation should start by checking current `git diff` in Prototype 5, then continue from any remaining Artem requests rather than the older Prototype 4 sections below.
+
+## Prototype 4 Historical Handoff
+
 _Last updated: 2026-07-12 after fixing no-implicit-gap quarter compaction/padding, rerunning focused scheduler/UI tests, and verifying no no-gap empty regular quarter remains before later scheduled work across a broad student-choice matrix._
 
 ## Active Workspace

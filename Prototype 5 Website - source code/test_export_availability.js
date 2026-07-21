@@ -53,7 +53,7 @@ function buildContext() {
 
 function loadExports(context) {
   const exportPath = path.join(__dirname, 'js/export.js');
-  const code = fs.readFileSync(exportPath, 'utf8') + '\n;globalThis.__exports = { exportPDF, exportExcel, exportDOCX };';
+  const code = fs.readFileSync(exportPath, 'utf8') + '\n;globalThis.__exports = { exportPDF, exportExcel };';
   vm.runInNewContext(code, context, { filename: 'js/export.js' });
   return context.__exports;
 }
@@ -78,12 +78,6 @@ function testExcelExportShowsHelpfulAlertWhenLibraryUnavailable() {
   assertMissingToolAlert(context, 'Excel export');
 }
 
-function testWordExportShowsHelpfulAlertWhenLibraryUnavailable() {
-  const context = buildContext();
-  const { exportDOCX } = loadExports(context);
-  assert.doesNotThrow(() => exportDOCX(), 'Word export should not crash when docx CDN is unavailable');
-  assertMissingToolAlert(context, 'Word export');
-}
 
 function testPdfExportSuccessPathSavesSchedulePlan() {
   const context = buildContext();
@@ -140,49 +134,11 @@ function testExcelExportSuccessPathWritesScheduleWorkbook() {
   assert(capturedSheetData.some(row => row.includes('CSE 20') && row.includes('Beginning Programming in Python')), 'Excel workbook should include scheduled courses');
 }
 
-async function testWordExportSuccessPathReturnsDownloadPromise() {
-  const context = buildContext();
-  const constructed = [];
-  class FakeDocument { constructor(options) { this.options = options; constructed.push(['Document', options]); } }
-  class FakeParagraph { constructor(options) { this.options = options; constructed.push(['Paragraph', options]); } }
-  class FakeTextRun { constructor(options) { this.options = options; constructed.push(['TextRun', options]); } }
-  class FakeTable { constructor(options) { this.options = options; constructed.push(['Table', options]); } }
-  class FakeTableRow { constructor(options) { this.options = options; constructed.push(['TableRow', options]); } }
-  class FakeTableCell { constructor(options) { this.options = options; constructed.push(['TableCell', options]); } }
-  context.window.docx = {
-    Document: FakeDocument,
-    Paragraph: FakeParagraph,
-    TextRun: FakeTextRun,
-    Table: FakeTable,
-    TableRow: FakeTableRow,
-    TableCell: FakeTableCell,
-    AlignmentType: {},
-    WidthType: { DXA: 'DXA' },
-    BorderStyle: { SINGLE: 'SINGLE' },
-    ShadingType: { CLEAR: 'CLEAR' },
-    Packer: { toBlob() { return Promise.resolve({ type: 'docx-test-blob' }); } }
-  };
-
-  const { exportDOCX } = loadExports(context);
-  const result = exportDOCX();
-  assert(result && typeof result.then === 'function', 'Word export should return its download promise so success-path smoke tests can await it');
-  await result;
-
-  assert.deepStrictEqual(context.__alerts, [], 'successful Word export should not alert');
-  assert(constructed.some(([type, options]) => type === 'TextRun' && options.text === 'UCSC Academic Schedule Plan'), 'Word export should include the plan title');
-  assert(constructed.some(([type, options]) => type === 'TextRun' && options.text === 'CSE 20'), 'Word export should include scheduled course codes');
-  assert.strictEqual(context.__createdAnchors.length, 1, 'Word export should create one download anchor');
-  assert.strictEqual(context.__createdAnchors[0].download, 'UCSC_Schedule_Plan.docx');
-  assert.strictEqual(context.__createdAnchors[0].clicked, true, 'Word export should click the download anchor');
-}
-
 const tests = [
   testPdfExportShowsHelpfulAlertWhenLibraryUnavailable,
   testExcelExportShowsHelpfulAlertWhenLibraryUnavailable,
-  testWordExportShowsHelpfulAlertWhenLibraryUnavailable,
   testPdfExportSuccessPathSavesSchedulePlan,
-  testExcelExportSuccessPathWritesScheduleWorkbook,
-  testWordExportSuccessPathReturnsDownloadPromise
+  testExcelExportSuccessPathWritesScheduleWorkbook
 ];
 
 (async function runTests() {

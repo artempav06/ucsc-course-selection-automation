@@ -19640,26 +19640,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CLNI 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: International and Global Perspectives",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clni-college-nine/lower-division/clni-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Addresses large-scale political, cultural, and economic issues to inform global citizenship.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: International and Global Perspectives",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clni-college-nine/lower-division/clni-1",
+      "desc": "College Nine core course. Builds academic literacy\u2014analysis, critical thinking, metacognition, and self-efficacy\u2014while addressing large-scale political, cultural, and economic issues and global citizenship.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CLNI 1A": {
     "concentrations": [],
@@ -22413,26 +22410,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "COWL 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Imagining Justice",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cowl-cowell-college/lower-division/cowl-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Examines the emergence and development of key concepts of justice including procedures, rights, and reparation.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Imagining Justice",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cowl-cowell-college/lower-division/cowl-1",
+      "desc": "Cowell College core course. Builds academic literacy while examining the emergence and development of key concepts of justice: procedures, rights, and reparation.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "COWL 1A": {
     "concentrations": [],
@@ -25245,26 +25239,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CRSN 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Environment and Society",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Engages students in Rachel Carson's intellectual tradition of investigating relationships between environment and society.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Environment and Society",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-1",
+      "desc": "Rachel Carson College core course. Builds academic literacy within Rachel Carson's tradition of investigating relationships between environment and society.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CRSN 1A": {
     "concentrations": [],
@@ -26027,26 +26018,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CRWN 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Ethical and Societal Implications of Emerging Technologies",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Examines how technological revolutions happen, how they transform societies, and how these changes generate new ideological narratives.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Ethical and Societal Implications of Emerging Technologies",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-1",
+      "desc": "Crown College core course. Builds academic literacy while examining how technological revolutions happen, transform societies, and generate new ideological narratives.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CRWN 1A": {
     "concentrations": [],
@@ -58935,26 +58923,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "JRLC 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Social Justice and Community",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jrlc-john-r-lewis-college/lower-division/jrlc-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Reflects our college theme of Social Justice and Community, addressing topics such as identity formation, inequality, and environmental injustice.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Social Justice and Community",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jrlc-john-r-lewis-college/lower-division/jrlc-1",
+      "desc": "John R. Lewis College (College Ten) core course. Builds academic literacy around the theme of social justice and community, including identity formation, inequality, and environmental injustice.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "JRLC 1A": {
     "concentrations": [],
@@ -59597,26 +59582,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "KRSG 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Learning in Community",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-1",
-    "desc": "Teaches foundational practices for intellectual and personal development in an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Framed by three overarching questions: How do I learn? Why do I learn? and From whom do I learn? Students read in different genres and formats and engage in peer-to-peer learning and collaborative discussion. Assignments include reflections on reading and discussion, an oral history project, and a creative project. (Formerly Academic Literacy and Ethos: Power and Representation.)",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Learning in Community",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-1",
+      "desc": "Kresge College core course. Builds academic literacy framed by three questions\u2014how, why, and from whom we learn\u2014with peer-to-peer learning, an oral history project, and a creative project. (Formerly 'Power and Representation.')",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "KRSG 1A": {
     "concentrations": [],
@@ -75337,26 +75319,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "MERR 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Reading Ourselves, Reading the World",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/merr-merrill-college/lower-division/merr-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Engages students in Merrill's intellectual tradition of investigating social change and social justice.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Reading Ourselves, Reading the World",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/merr-merrill-college/lower-division/merr-1",
+      "desc": "Merrill College core course. Builds academic literacy within Merrill's intellectual tradition of investigating social change and social justice.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "MERR 1A": {
     "concentrations": [],
@@ -80232,26 +80211,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "OAKS 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Communicating Diversity for a Just Society",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. The Oakes core course considers the intersections between reading, personal and social identities, and social justice.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Communicating Diversity for a Just Society",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-1",
+      "desc": "Oakes College core course. Builds academic literacy while considering the intersections between reading, personal and social identities, and social justice.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "OAKS 1A": {
     "concentrations": [],
@@ -88219,23 +88195,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "PRTR 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Arts of Reading",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Engages Porter's intellectual tradition of investigating the contribution the arts and humanities make to a good life, a just society, and a flourishing world.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Arts of Reading",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-1",
+      "desc": "Porter College core course. Builds academic literacy within Porter's tradition of investigating how the arts and humanities contribute to a good life, a just society, and a flourishing world.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "PRTR 1A": {
     "concentrations": [],
@@ -96895,26 +96871,23 @@ const COURSES = {
     "rmpScore": 0
   },
   "STEV 1": {
-    "concentrations": [],
-    "title": "Academic Literacy and Ethos: Self and Society",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-1",
-    "desc": "Teaches foundational concepts for intellectual exploration and personal development within an academic community: analysis, critical thinking, metacognition, engagement with others across difference, and self-efficacy. Examines the roots of modern society using diverse religious texts and major classical and modern philosophical works.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Academic Literacy and Ethos: Self and Society",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": null,
+      "quarters": [
+          "F"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-1",
+      "desc": "Stevenson College core course (part 1 of a required two-quarter sequence). Builds academic literacy while examining the roots of modern society through diverse religious texts and major classical and modern philosophical works.",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to college members."
   },
   "STEV 1A": {
     "concentrations": [],
@@ -96960,26 +96933,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "STEV 2": {
-    "concentrations": [],
-    "title": "Self and Society 2",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": "TA",
-    "quarters": [
-      "F",
-      "W",
-      "S",
-      "SU"
-    ],
-    "enrollmentRestrictions": "Enrollment is restricted to first-year and sophomore college members.",
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-2",
-    "desc": "Winter quarter of Stevenson's core course continues development of analytical writing, critical reading, and effective speaking in exploring conflicts inherent in modern society. Investigates themes of colonization, race, gender, class, and cultural conflict. (Formerly course 81A.)",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "(none found/ none listed)"
+      "concentrations": [],
+      "title": "Self and Society 2",
+      "units": 5,
+      "division": "lower",
+      "prereqs": [],
+      "ge": "TA",
+      "quarters": [
+          "W"
+      ],
+      "enrollmentRestrictions": "Enrollment is restricted to first-year and sophomore college members.",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-2",
+      "desc": "Stevenson College core course (part 2 of 2), winter quarter. Continues analytical writing, critical reading, and effective speaking while exploring conflicts in modern society: colonization, race, gender, class, and cultural conflict. (Formerly 81A.)",
+      "section": [
+          "COLLEGE_CORE"
+      ],
+      "rmpScore": 0,
+      "officialPrereqText": "Enrollment is restricted to first-year and sophomore college members."
   },
   "STEV 10": {
     "concentrations": [],

@@ -9,6 +9,55 @@
 
 
 // ------------------------------------------------------------
+// COLLEGE CORE REQUIREMENTS
+// Most UCSC residential colleges require one first-year core course;
+// Stevenson has a Fall + Winter two-course sequence.
+// ------------------------------------------------------------
+
+const COLLEGE_CORE_REQUIREMENTS = {
+  cowell: {
+    name: "Cowell College",
+    courses: ["COWL 1"]
+  },
+  stevenson: {
+    name: "Stevenson College",
+    courses: ["STEV 1", "STEV 2"]
+  },
+  crown: {
+    name: "Crown College",
+    courses: ["CRWN 1"]
+  },
+  merrill: {
+    name: "Merrill College",
+    courses: ["MERR 1"]
+  },
+  porter: {
+    name: "Porter College",
+    courses: ["PRTR 1"]
+  },
+  kresge: {
+    name: "Kresge College",
+    courses: ["KRSG 1"]
+  },
+  oakes: {
+    name: "Oakes College",
+    courses: ["OAKS 1"]
+  },
+  rachel_carson: {
+    name: "Rachel Carson College",
+    courses: ["CRSN 1"]
+  },
+  college_nine: {
+    name: "College Nine",
+    courses: ["CLNI 1"]
+  },
+  john_r_lewis: {
+    name: "John R. Lewis College / College Ten",
+    courses: ["JRLC 1"]
+  }
+};
+
+// ------------------------------------------------------------
 // GENERAL EDUCATION REQUIREMENTS (UCSC 2025-26)
 // Each category requires 1 course (5 credits min)
 // Some major courses satisfy GE codes automatically.

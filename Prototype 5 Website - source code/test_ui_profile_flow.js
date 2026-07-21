@@ -52,6 +52,10 @@ class FakeElement {
   }
   click() { this.dispatchEvent('click'); }
   focus() {}
+  querySelector(selector) {
+    if (selector === 'input') return this.children.find(child => child.tagName === 'INPUT') || null;
+    return null;
+  }
   querySelectorAll() { return []; }
   set innerHTML(value) { this._innerHTML = String(value); }
   get innerHTML() { return this._innerHTML; }
@@ -110,6 +114,7 @@ function buildContext() {
     'select-major', 'select-level', 'select-current-term', 'select-current-year',
     'check-elwr', 'check-ahi', 'ahi-options', 'check-ahi-us-history-full-year',
     'check-ahi-us-history-half-year', 'check-ahi-american-government-half-year',
+    'select-college-affiliation', 'check-college-core-completed', 'college-core-summary',
     'input-prior-credits', 'select-grad-term', 'select-grad-year', 'check-summer',
     'input-max-units', 'select-prof-importance', 'check-gap', 'select-gap-type', 'select-gap-term',
     'select-gap-year', 'check-auto-suggest', 'concentration-grid', 'ge-concentration-grid',
@@ -141,6 +146,9 @@ function buildContext() {
       ]
     },
     COURSES: {
+      'COWL 1': { title: 'Academic Literacy and Ethos: Imagining Justice', units: 5, section: ['COLLEGE_CORE'], quarters: ['F'], prereqs: [], desc: '', rmpScore: 0 },
+      'STEV 1': { title: 'Academic Literacy and Ethos: Self and Society', units: 5, section: ['COLLEGE_CORE'], quarters: ['F'], prereqs: [], desc: '', rmpScore: 0 },
+      'STEV 2': { title: 'Self and Society 2', units: 5, section: ['COLLEGE_CORE'], quarters: ['W'], prereqs: [], desc: '', rmpScore: 0 },
       'CSE 186': { title: 'Full Stack Web Development', units: 5, section: ['CSE'], quarters: ['S'], prereqs: [], desc: '', rmpScore: 0 },
       'CSE 187': { title: 'Fall Web Course', units: 5, section: ['CSE'], quarters: ['F'], prereqs: [], desc: '', rmpScore: 0 }
     },
@@ -178,7 +186,7 @@ function buildContext() {
 
 function loadApp(context) {
   const appPath = path.join(__dirname, 'js/app.js');
-  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal, renderSchedule, showValidationAlerts };';
+  const code = fs.readFileSync(appPath, 'utf8') + '\n;globalThis.__appExports = { AppState, openAddCourseModal, openSwapModal, renderSchedule, renderRequirements, showValidationAlerts, collegeCoreCoursesForProfile };';
   vm.runInNewContext(code, context, { filename: 'js/app.js' });
   context.document.dispatchDOMContentLoaded();
   return context.__appExports;
@@ -194,6 +202,8 @@ function setWizardProfile(document) {
   document.getElementById('check-ahi-us-history-full-year').checked = false;
   document.getElementById('check-ahi-us-history-half-year').checked = true;
   document.getElementById('check-ahi-american-government-half-year').checked = true;
+  document.getElementById('select-college-affiliation').value = 'cowell';
+  document.getElementById('check-college-core-completed').checked = true;
   document.getElementById('input-prior-credits').value = '12';
   document.getElementById('select-grad-term').value = 'S';
   document.getElementById('select-grad-year').value = '2027';
@@ -228,6 +238,9 @@ function assertProfileFlow(profile, label) {
     usHistoryHalfYear: true,
     americanGovernmentHalfYear: true
   }, `${label} AH&I fulfillment`);
+  assert.strictEqual(profile.collegeAffiliation, 'cowell', `${label} college affiliation`);
+  assert.strictEqual(profile.collegeCoreCompleted, true, `${label} college core completed flag`);
+  assert(profile.completedCourses.includes('COWL 1'), `${label} completedCourses should include selected college core course`);
   assert.strictEqual(profile.concentration, 'cs_web_software', `${label} major concentration`);
   assert.strictEqual(profile.geConcentration, 'ge_arts_humanities', `${label} GE concentration`);
   assert.deepStrictEqual(profile.electiveInterests, ['cs_web_software', 'cs_ai_ml'], `${label} major/elective interest array`);
@@ -280,6 +293,25 @@ function testAmericanHistoryInstitutionCheckboxUnfoldsOptionsAndResetsWhenOff() 
   assert.strictEqual(ahiOptions.style.display, 'none', 'unchecking AH&I should collapse the choices');
   assert.strictEqual(context.document.getElementById('check-ahi-us-history-half-year').checked, false, 'collapsing AH&I should clear history half-year choice');
   assert.strictEqual(context.document.getElementById('check-ahi-american-government-half-year').checked, false, 'collapsing AH&I should clear government half-year choice');
+}
+
+function testCollegeCoreCompletionAddsSelectedCollegeCourses() {
+  const context = buildContext();
+  const { AppState, collegeCoreCoursesForProfile } = loadApp(context);
+  setWizardProfile(context.document);
+
+  assert.strictEqual(JSON.stringify(collegeCoreCoursesForProfile({ collegeAffiliation: 'stevenson' })), JSON.stringify(['STEV 1', 'STEV 2']), 'Stevenson should map to its two-quarter Fall/Winter college core sequence');
+
+  context.document.getElementById('select-college-affiliation').value = 'stevenson';
+  context.document.getElementById('check-college-core-completed').checked = true;
+  context.document.getElementById('btn-wizard-next-1').click();
+  context.document.getElementById('btn-wizard-next-2').click();
+
+  assert.strictEqual(AppState.profile.collegeAffiliation, 'stevenson', 'academic-history step should store selected college affiliation');
+  assert.strictEqual(AppState.profile.collegeCoreCompleted, true, 'academic-history step should store college core completion flag');
+  assert(AppState.profile.completedCourses.includes('STEV 1'), 'completed Stevenson core should add STEV 1 to completedCourses');
+  assert(AppState.profile.completedCourses.includes('STEV 2'), 'completed Stevenson core should add STEV 2 to completedCourses');
+  assert(!AppState.profile.completedCourses.includes('COWL 1'), 'switching colleges should not keep a different college core as completed');
 }
 
 function testEarlyCompletionScheduleExplainsHiddenTargetQuarters() {
@@ -549,9 +581,45 @@ async function testTranscriptUploadSuccessAddsRecognizedCourses() {
   assert(status.textContent.includes('Found 2 courses'), `success status should summarize found courses; got ${status.textContent}`);
 }
 
+function testRequirementsPanelShowsSelectedCollegeCoreRequirement() {
+  const context = buildContext();
+  const { AppState, renderRequirements } = loadApp(context);
+  AppState.profile = { collegeAffiliation: 'stevenson', collegeCoreCompleted: false };
+  AppState.validation = {
+    allMet: false,
+    totalUnits: 0,
+    totalUnitsMet: true,
+    upperDivUnits: 0,
+    upperDivMet: true,
+    priorCredits: 0,
+    completedUnits: 0,
+    majorReqs: { totalUnitsRequired: 180, minUpperDivUnits: 60 },
+    major: [],
+    ge: [],
+    uc: [],
+    collegeCore: [{
+      id: 'COLLEGE_CORE',
+      name: 'Stevenson College Core',
+      fulfilled: false,
+      selectedCourses: ['STEV 1'],
+      missing: ['STEV 2'],
+      neededCount: 2,
+      fulfilledCount: 1
+    }]
+  };
+
+  renderRequirements();
+  const html = context.document.getElementById('requirements-panel').innerHTML;
+  assert(html.includes('College Core'), `requirements panel should include a College Core section; got ${html}`);
+  assert(html.includes('Stevenson College Core'), `requirements panel should name selected college core requirement; got ${html}`);
+  assert(html.includes('STEV 1'), `requirements panel should show completed/selected Stevenson Fall core; got ${html}`);
+  assert(html.includes('Missing: STEV 2'), `requirements panel should show missing Stevenson Winter core; got ${html}`);
+}
+
 const tests = [
   testWizardProfileFlowsIntoGeneratedScheduleAndManualRecommendations,
   testAmericanHistoryInstitutionCheckboxUnfoldsOptionsAndResetsWhenOff,
+  testCollegeCoreCompletionAddsSelectedCollegeCourses,
   testEarlyCompletionScheduleExplainsHiddenTargetQuarters,
   testExtendedPartialFinalYearDoesNotClaimEarlyCompletion,
   testGenerateShowsBananaSlugLoadingBeforeScheduleIsReady,
@@ -561,7 +629,8 @@ const tests = [
   testManualSuggestionModalsRenderReasonChips,
   testManualSuggestionEmptyStatesGiveActionableGuidance,
   testTranscriptFilePickerRejectsNonPdfBeforeParsing,
-  testTranscriptUploadSuccessAddsRecognizedCourses
+  testTranscriptUploadSuccessAddsRecognizedCourses,
+  testRequirementsPanelShowsSelectedCollegeCoreRequirement
 ];
 
 (async () => {

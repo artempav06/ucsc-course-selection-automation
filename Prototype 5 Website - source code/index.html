@@ -9,7 +9,6 @@
   <!-- Export Libraries (CDN) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docx@8.2.3/build/index.umd.js"></script>
 
   <!-- PDF.js for transcript parsing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -55,7 +54,7 @@
         <div class="landing-features">
           <div class="feature-card">
             <h3>Smart Scheduling</h3>
-            <p>Automatically generates a valid schedule respecting prerequisites, quarter availability, and workload balance.</p>
+            <p>Automatically generates a planning schedule around prerequisites, requirements, and workload balance; it does not check which quarter each class is offered.</p>
           </div>
           <div class="feature-card">
             <h3>Requirement Tracking</h3>
@@ -63,7 +62,7 @@
           </div>
           <div class="feature-card">
             <h3>Export Anywhere</h3>
-            <p>Download your finalized schedule as PDF, Word, or Excel to share with advisors or keep for reference.</p>
+            <p>Download your finalized schedule as PDF or Excel to share with advisors or keep for reference.</p>
           </div>
         </div>
       </div>
@@ -238,6 +237,33 @@
           </div>
         </div>
 
+        <div class="form-group checkbox-card checkbox-card-college-core">
+          <label for="select-college-affiliation">College affiliation</label>
+          <select id="select-college-affiliation" class="college-affiliation-select">
+            <option value="">Select your UCSC college</option>
+            <option value="cowell">Cowell College</option>
+            <option value="stevenson">Stevenson College</option>
+            <option value="crown">Crown College</option>
+            <option value="merrill">Merrill College</option>
+            <option value="porter">Porter College</option>
+            <option value="kresge">Kresge College</option>
+            <option value="oakes">Oakes College</option>
+            <option value="rachel_carson">Rachel Carson College</option>
+            <option value="college_nine">College Nine</option>
+            <option value="john_r_lewis">John R. Lewis College / College Ten</option>
+          </select>
+          <p id="college-core-summary" class="form-hint checkbox-card-hint">
+            Select your college to see the required first-year college core course.
+          </p>
+          <div class="checkbox-row checkbox-subrow college-core-completed-row">
+            <input type="checkbox" id="check-college-core-completed">
+            <label for="check-college-core-completed">I have completed my required college core course(s)</label>
+          </div>
+          <p class="form-hint checkbox-card-hint">
+            If checked, we count your college-affiliated core class or sequence as completed. If not checked, the scheduler will include it in your first-year plan.
+          </p>
+        </div>
+
         <div class="wizard-buttons">
           <button id="btn-wizard-back-2" class="btn-wizard btn-wizard-secondary">&larr; Back</button>
           <button id="btn-wizard-next-2" class="btn-wizard btn-wizard-primary">Next &rarr;</button>
@@ -372,7 +398,6 @@
             <button class="btn-back-wizard" onclick="backToWizard()">Edit Preferences</button>
             <button class="btn-export" onclick="exportPDF()">Export PDF</button>
             <button class="btn-export" onclick="exportExcel()">Export Excel</button>
-            <button class="btn-export" onclick="exportDOCX()">Export Word</button>
           </div>
         </div>
 

@@ -6,7 +6,53 @@
 function profileSatisfiedVirtualCourses(profile) {
   const virtual = [];
   if (profile && profile.elwrSatisfied) virtual.push("WRIT 1");
+  if (profile && profile.collegeCoreCompleted) virtual.push(...collegeCoreCoursesForProfile(profile));
   return virtual;
+}
+
+function collegeCoreRequirementMap() {
+  if (typeof COLLEGE_CORE_REQUIREMENTS !== "undefined") return COLLEGE_CORE_REQUIREMENTS;
+  return {
+    cowell: { name: "Cowell College", courses: ["COWL 1"] },
+    stevenson: { name: "Stevenson College", courses: ["STEV 1", "STEV 2"] },
+    crown: { name: "Crown College", courses: ["CRWN 1"] },
+    merrill: { name: "Merrill College", courses: ["MERR 1"] },
+    porter: { name: "Porter College", courses: ["PRTR 1"] },
+    kresge: { name: "Kresge College", courses: ["KRSG 1"] },
+    oakes: { name: "Oakes College", courses: ["OAKS 1"] },
+    rachel_carson: { name: "Rachel Carson College", courses: ["CRSN 1"] },
+    college_nine: { name: "College Nine", courses: ["CLNI 1"] },
+    john_r_lewis: { name: "John R. Lewis College / College Ten", courses: ["JRLC 1"] }
+  };
+}
+
+function collegeCoreCoursesForProfile(profile = {}) {
+  const req = collegeCoreRequirementMap()[profile?.collegeAffiliation || ""];
+  return [...new Set((req?.courses || []).filter(code => typeof COURSES !== "undefined" && COURSES[code]))];
+}
+
+function collegeCoreRequirementForProfile(profile = {}) {
+  const collegeId = profile?.collegeAffiliation || "";
+  const req = collegeCoreRequirementMap()[collegeId];
+  const courses = collegeCoreCoursesForProfile(profile);
+  if (!req || courses.length === 0) return null;
+  return {
+    id: "PROFILE:COLLEGE_CORE",
+    sourceId: "collegeAffiliation",
+    domain: "college_core",
+    name: `${req.name} Core`,
+    type: "college_core_courses",
+    collegeId,
+    courses,
+    options: [{ label: `${req.name} Core`, courses: courses.slice() }],
+    minChoices: courses.length,
+    metadata: {
+      timing: collegeId === "stevenson"
+        ? "Stevenson requires STEV 1 in freshman Fall and STEV 2 in freshman Winter."
+        : "Residential college core should be taken in freshman Fall."
+    },
+    original: req
+  };
 }
 
 function effectiveCompletedCourses(profile) {
@@ -34,12 +80,15 @@ function buildNormalizedRequirementSet(profile) {
       : (profile ? profile.maxUnits : undefined),
     allowSummer: Boolean(profile && profile.includeSummer)
   };
-  return normalizer.normalizeRequirementSet({
+  const set = normalizer.normalizeRequirementSet({
     major,
     geRequirements: (typeof GE_REQUIREMENTS !== "undefined") ? GE_REQUIREMENTS : [],
     ucRequirements: (typeof UC_REQUIREMENTS !== "undefined") ? UC_REQUIREMENTS : [],
     profile: normalizedProfile
   });
+  const collegeCoreRequirement = collegeCoreRequirementForProfile(profile);
+  if (set && collegeCoreRequirement) set.requirements.push(collegeCoreRequirement);
+  return set;
 }
 
 const Validator = {
@@ -167,6 +216,25 @@ const Validator = {
     });
   },
 
+  validateCollegeCore(plannedCourses, profile) {
+    const req = collegeCoreRequirementForProfile(profile);
+    if (!req) return [];
+    const planned = new Set(plannedCourses);
+    const selectedCourses = req.courses.filter(code => planned.has(code));
+    const missing = req.courses.filter(code => !planned.has(code));
+    return [{
+      id: req.id,
+      name: req.name,
+      description: req.metadata.timing,
+      fulfilled: missing.length === 0,
+      selectedCourses,
+      courses: selectedCourses,
+      missing,
+      neededCount: req.courses.length,
+      fulfilledCount: selectedCourses.length
+    }];
+  },
+
   validatePrerequisiteChronology(schedule, completedCourses = []) {
     const completedBefore = new Set(completedCourses || []);
     const violations = [];
@@ -228,6 +296,7 @@ const Validator = {
     const majorResults = this.validateMajor(allCourses, majorReqs);
     const geResults    = this.validateGE(allCourses);
     const ucResults    = this.validateUC(allCourses, profile);
+    const collegeCoreResults = this.validateCollegeCore(allCourses, profile);
     const prereqViolations = this.validatePrerequisiteChronology(schedule, completed);
 
     let totalUnits = 0;
@@ -256,7 +325,12 @@ const Validator = {
       prerequisitesMet: prereqViolations.length === 0,
       majorReqs
     };
+    if (collegeCoreResults.length) {
+      result.collegeCore = collegeCoreResults;
+      result.allCollegeCoreMet = collegeCoreResults.every(r => r.fulfilled);
+    }
     result.allMet = result.allMajorMet && result.allGEMet && result.allUCMet
+                    && (!collegeCoreResults.length || result.allCollegeCoreMet)
                     && result.totalUnitsMet && result.upperDivMet && result.prerequisitesMet;
     return result;
   },
@@ -272,6 +346,10 @@ const Validator = {
 // ------------------------------------------------------------
 
 const Scheduler = {
+
+  collegeCoreCoursesForProfile(profile = {}) {
+    return collegeCoreCoursesForProfile(profile);
+  },
 
   buildRequirementSet(profile) {
     return buildNormalizedRequirementSet(profile);
@@ -648,6 +726,17 @@ const Scheduler = {
       courses: ucCourses.slice(),
       count: ucCourses.length,
       units: phaseUnits(ucCourses)
+    };
+
+    // --- Phase 3b: College core courses ---
+    const collegeCoreCourses = this.collegeCoreCoursesForProfile(profile);
+    collegeCoreCourses.forEach(c => pushTagged(c, "college_core"));
+    explanation.phases.collegeCoreSelection = {
+      college: profile?.collegeAffiliation || "",
+      courses: collegeCoreCourses.slice(),
+      count: collegeCoreCourses.length,
+      completed: Boolean(profile?.collegeCoreCompleted),
+      units: phaseUnits(collegeCoreCourses)
     };
 
     // --- Phase 4: Expand prereqs ---
@@ -1453,6 +1542,22 @@ const Scheduler = {
           remaining.splice(wi, 1);
           quarterArr._unitsUsed = unitsUsed;
           const added = placeWithCoreq(writingCode, quarterArr, completedBefore);
+          unitsUsed += added;
+          break;
+        }
+      }
+
+      // Phase 0b: residential college core is a first-year college requirement.
+      // Put the affiliated college's core course/sequence in the first feasible
+      // first-year quarter before elective GE/filler work consumes the slot.
+      if (schedule[yi].levelNum === 1) {
+        for (let ri = 0; ri < remaining.length; ri++) {
+          const code = remaining[ri];
+          if (courseTypeMap.get(code) !== "college_core") continue;
+          if (!canPlace(code, q, completedBefore, unitsUsed, schedule[yi].levelNum)) continue;
+          remaining.splice(ri, 1);
+          quarterArr._unitsUsed = unitsUsed;
+          const added = placeWithCoreq(code, quarterArr, completedBefore);
           unitsUsed += added;
           break;
         }

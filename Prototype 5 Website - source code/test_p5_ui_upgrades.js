@@ -68,6 +68,7 @@ function loadApp() {
     ;globalThis.__p5 = {
       AppState,
       COURSES,
+      MAJOR_REQUIREMENTS,
       quartersBetween,
       commonLowerDivisionSuggestionsForMajor,
       courseVisualType,
@@ -76,7 +77,9 @@ function loadApp() {
       openCourseDetail,
       moveCourseToQuarter,
       refreshScheduleAfterManualEdit,
-      showValidationAlerts
+      showValidationAlerts,
+      majorRequirementCatalogUrl,
+      showScheduleAccuracyWarning
     };`;
   vm.runInNewContext(appCode, context, { filename: 'js/app.js' });
   return context;
@@ -185,6 +188,50 @@ function testNavbarIncludesUcscRateMyProfessorsResourceButton() {
   assert(css.includes('background: #FDC700'), 'navbar RMP link should use UCSC gold button styling');
 }
 
+function testWordExportOptionIsRemovedFromScheduleAndLanding() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  assert(!html.includes('Export Word'), 'schedule download actions should no longer offer Word export');
+  assert(!html.includes('exportDOCX()'), 'schedule UI should not wire a Word export button');
+  assert(!html.includes('docx@'), 'page should not load the Word/docx CDN once Word export is removed');
+  assert(!html.includes('PDF, Word, or Excel'), 'landing copy should not advertise Word download');
+  assert(html.includes('PDF or Excel'), 'landing copy should advertise only the remaining two download formats');
+}
+
+function testLandingDoesNotClaimQuarterAvailabilityIsRespected() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  assert(!html.includes('respecting prerequisites, quarter availability'), 'landing copy must not claim the app considers real quarter availability');
+  assert(html.includes('does not check which quarter each class is offered'), 'landing copy should warn that offering-quarter availability must be checked separately');
+}
+
+function testGeneratedScheduleWarningUsesSelectedMajorCatalogLinkAndAvailabilityCaveat() {
+  const context = loadApp();
+  const { __p5, document } = context;
+
+  for (const [majorId, reqs] of Object.entries(__p5.MAJOR_REQUIREMENTS)) {
+    assert((reqs.catalogUrl || '').startsWith('https://catalog.ucsc.edu/en/current/general-catalog/'), `${majorId} should have an official UCSC catalog requirements link`);
+    assert.strictEqual(__p5.majorRequirementCatalogUrl(majorId), reqs.catalogUrl, `${majorId} warning link should come from the major database`);
+  }
+
+  __p5.AppState.profile.major = 'EE_BS';
+
+  assert.strictEqual(
+    __p5.majorRequirementCatalogUrl('EE_BS'),
+    __p5.MAJOR_REQUIREMENTS.EE_BS.catalogUrl,
+    'EE_BS should resolve to its official UCSC major requirement catalog page'
+  );
+
+  __p5.showScheduleAccuracyWarning();
+
+  const modal = document.getElementById('modal-warning');
+  const html = document.getElementById('warning-content').innerHTML;
+  assert(modal.classList.contains('active'), 'schedule generation should open a warning pop-up');
+  assert(html.includes('not perfect'), `warning should clearly say the generated schedule is not perfect; got ${html}`);
+  assert(html.includes('Academic Advising'), `warning should recommend Academic Advising; got ${html}`);
+  assert(html.includes('Electrical Engineering B.S.'), `warning should name the selected major; got ${html}`);
+  assert(html.includes('https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/electrical-and-computer-engineering/electrical-engineering-bs'), `warning should link to the selected major's official requirement page; got ${html}`);
+  assert(html.includes('does not check which quarter each class is offered'), `warning should mention quarter availability limitation; got ${html}`);
+}
+
 function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
@@ -193,6 +240,10 @@ function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
   assert(html.includes('check-ahi-us-history-full-year'), 'AH&I options should include one-year U.S. history');
   assert(html.includes('check-ahi-us-history-half-year'), 'AH&I options should include half-year U.S. history');
   assert(html.includes('check-ahi-american-government-half-year'), 'AH&I options should include half-year American government');
+  assert(html.includes('id="select-college-affiliation"'), 'Academic History should ask for the student\'s UCSC college affiliation');
+  assert(html.includes('id="check-college-core-completed"'), 'Academic History should ask whether required college core courses are completed');
+  assert(html.includes('Stevenson College'), 'college affiliation choices should include Stevenson for the Fall + Winter core sequence');
+  assert(html.includes('John R. Lewis College / College Ten'), 'college affiliation choices should include College Ten / John R. Lewis');
   assert(html.includes('checkbox-card'), 'Academic History checkboxes should use the more-visible card styling hook');
   assert(css.includes('.checkbox-card'), 'checkbox-card styling should exist for easy-to-miss checkbox sections');
   assert(css.includes('border: 2px solid'), 'checkbox cards should have a visible border');
@@ -367,6 +418,9 @@ const tests = [
   testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
   testProfessorPreferenceSectionRemovedFromHtml,
   testNavbarIncludesUcscRateMyProfessorsResourceButton,
+  testWordExportOptionIsRemovedFromScheduleAndLanding,
+  testLandingDoesNotClaimQuarterAvailabilityIsRespected,
+  testGeneratedScheduleWarningUsesSelectedMajorCatalogLinkAndAvailabilityCaveat,
   testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions,
   testDragMoveCourseMutatesScheduleOnceAndRevalidates,
   testDragMoveIgnoresSameQuarterAndGapTargets,

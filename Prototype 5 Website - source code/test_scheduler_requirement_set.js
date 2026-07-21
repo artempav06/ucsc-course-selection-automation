@@ -118,6 +118,58 @@ function testAmericanHistoryInstitutionProfileFulfillment() {
   assert(governmentOnly.find(req => req.id === 'AI').fulfilled, 'half-year American government should fulfill American Institutions');
 }
 
+function testCollegeCoreCoursesArePlannedUnlessAlreadyCompleted() {
+  assert.strictEqual(typeof Scheduler.collegeCoreCoursesForProfile, 'function', 'Scheduler.collegeCoreCoursesForProfile must exist');
+  const cowellProfile = makeProfile({ collegeAffiliation: 'cowell', collegeCoreCompleted: false, completedCourses: [] });
+  assert.deepStrictEqual(Scheduler.collegeCoreCoursesForProfile(cowellProfile), ['COWL 1'], 'Cowell should map to COWL 1');
+  const cowellSchedule = Scheduler.generate(cowellProfile);
+  const cowellScheduled = cowellSchedule.flatMap(year => Object.values(year.quarters).flat());
+  assert(cowellScheduled.includes('COWL 1'), 'uncompleted Cowell core should be scheduled');
+
+  const stevensonCompletedProfile = makeProfile({ collegeAffiliation: 'stevenson', collegeCoreCompleted: true, completedCourses: ['STEV 1', 'STEV 2'] });
+  assert.deepStrictEqual(Scheduler.collegeCoreCoursesForProfile(stevensonCompletedProfile), ['STEV 1', 'STEV 2'], 'Stevenson should map to STEV 1 + STEV 2');
+  const stevensonSchedule = Scheduler.generate(stevensonCompletedProfile);
+  const stevensonScheduled = stevensonSchedule.flatMap(year => Object.values(year.quarters).flat());
+  assert(!stevensonScheduled.includes('STEV 1'), 'completed Stevenson STEV 1 should not be scheduled again');
+  assert(!stevensonScheduled.includes('STEV 2'), 'completed Stevenson STEV 2 should not be scheduled again');
+}
+
+function testCollegeCoreRequirementAppearsForEveryMajorAndValidatesByAffiliation() {
+  const majorIds = Object.keys(MAJOR_REQUIREMENTS || {});
+  assert(majorIds.length > 1, 'fixture should include all supported Prototype 5 majors');
+
+  for (const majorId of majorIds) {
+    const profile = makeProfile({ major: majorId, collegeAffiliation: 'cowell', collegeCoreCompleted: false, completedCourses: [] });
+    const set = Scheduler.buildRequirementSet(profile);
+    const coreReq = set.requirements.find(req => req.id === 'PROFILE:COLLEGE_CORE');
+    assert(coreReq, `${majorId} should include the profile-driven college core requirement`);
+    assert.strictEqual(coreReq.domain, 'college_core', `${majorId} college core requirement should have its own domain`);
+    assert.deepStrictEqual(coreReq.courses, ['COWL 1'], `${majorId} Cowell affiliation should require COWL 1`);
+  }
+
+  const missingValidation = Validator.validateAll([], makeProfile({ collegeAffiliation: 'cowell', collegeCoreCompleted: false, completedCourses: [] }));
+  assert(missingValidation.collegeCore, 'validation should expose collegeCore results for the requirements panel');
+  assert.strictEqual(missingValidation.allCollegeCoreMet, false, 'missing selected college core should block allMet');
+  assert.strictEqual(missingValidation.allMet, false, 'allMet should include college core completion');
+  assert.strictEqual(missingValidation.collegeCore[0].name, 'Cowell College Core', 'requirement should name the selected college');
+  assert.deepStrictEqual(missingValidation.collegeCore[0].missing, ['COWL 1'], 'missing requirement should show exact required college course');
+
+  const completedValidation = Validator.validateAll([], makeProfile({ collegeAffiliation: 'stevenson', collegeCoreCompleted: true, completedCourses: ['STEV 1', 'STEV 2'] }));
+  assert.strictEqual(completedValidation.allCollegeCoreMet, true, 'completed Stevenson core sequence should satisfy college core requirement');
+  assert.deepStrictEqual(completedValidation.collegeCore[0].selectedCourses, ['STEV 1', 'STEV 2'], 'Stevenson requirement should show both Fall and Winter core courses');
+}
+
+function testCollegeCorePlacementUsesRequiredFreshmanQuarters() {
+  const cowellProfile = makeProfile({ collegeAffiliation: 'cowell', collegeCoreCompleted: false, completedCourses: [], maxUnits: 20 });
+  const cowellSchedule = Scheduler.generate(cowellProfile);
+  assert(cowellSchedule[0].quarters.F.includes('COWL 1'), 'Cowell core must be placed in freshman Fall');
+
+  const stevensonProfile = makeProfile({ collegeAffiliation: 'stevenson', collegeCoreCompleted: false, completedCourses: [], maxUnits: 20 });
+  const stevensonSchedule = Scheduler.generate(stevensonProfile);
+  assert(stevensonSchedule[0].quarters.F.includes('STEV 1'), 'Stevenson STEV 1 must be placed in freshman Fall');
+  assert(stevensonSchedule[0].quarters.W.includes('STEV 2'), 'Stevenson STEV 2 must be placed in freshman Winter');
+}
+
 const tests = [
   testSchedulerBuildsNormalizedRequirementSet,
   testSchedulerBuildRequirementSetDoesNotMutateRuntimeData,
@@ -125,7 +177,10 @@ const tests = [
   testTimRequiredCse182SchedulesDespiteJuniorSeniorRestriction,
   testWrit2TreatsWrit1AndWrit1EAsAlternatives,
   testElwrPlacementCountsAsWrit1ForTaAndWrit2Planning,
-  testAmericanHistoryInstitutionProfileFulfillment
+  testAmericanHistoryInstitutionProfileFulfillment,
+  testCollegeCoreCoursesArePlannedUnlessAlreadyCompleted,
+  testCollegeCoreRequirementAppearsForEveryMajorAndValidatesByAffiliation,
+  testCollegeCorePlacementUsesRequiredFreshmanQuarters
 ];
 let passed = 0;
 for (const test of tests) {

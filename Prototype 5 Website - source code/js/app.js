@@ -21,6 +21,8 @@ const AppState = {
     completedCourses: [],
     priorCredits: 0,           // AP/transfer/dual-enrollment units
     elwrSatisfied: false,
+    collegeAffiliation: "",
+    collegeCoreCompleted: false,
     targetGradTerm: "S",       // target term the student wants to graduate in
     targetGradYear: 2028,      // target calendar year of graduation
     includeSummer: false,
@@ -43,6 +45,31 @@ const AppState = {
   schedule: null,              // generated schedule
   validation: null             // validation results
 };
+
+const FALLBACK_COLLEGE_CORE_REQUIREMENTS = {
+  cowell: { name: "Cowell College", courses: ["COWL 1"] },
+  stevenson: { name: "Stevenson College", courses: ["STEV 1", "STEV 2"] },
+  crown: { name: "Crown College", courses: ["CRWN 1"] },
+  merrill: { name: "Merrill College", courses: ["MERR 1"] },
+  porter: { name: "Porter College", courses: ["PRTR 1"] },
+  kresge: { name: "Kresge College", courses: ["KRSG 1"] },
+  oakes: { name: "Oakes College", courses: ["OAKS 1"] },
+  rachel_carson: { name: "Rachel Carson College", courses: ["CRSN 1"] },
+  college_nine: { name: "College Nine", courses: ["CLNI 1"] },
+  john_r_lewis: { name: "John R. Lewis College / College Ten", courses: ["JRLC 1"] }
+};
+
+function collegeCoreRequirementMap() {
+  return (typeof COLLEGE_CORE_REQUIREMENTS !== "undefined")
+    ? COLLEGE_CORE_REQUIREMENTS
+    : FALLBACK_COLLEGE_CORE_REQUIREMENTS;
+}
+
+function collegeCoreCoursesForProfile(profile = AppState.profile) {
+  const collegeId = profile?.collegeAffiliation || "";
+  const req = collegeCoreRequirementMap()[collegeId];
+  return uniqueExistingCourseCodes(req?.courses || []);
+}
 
 
 // ---------- TERM / LEVEL HELPERS ----------
@@ -272,6 +299,7 @@ function initWizard() {
   document.getElementById("btn-wizard-next-2")?.addEventListener("click", () => {
     AppState.profile.elwrSatisfied = document.getElementById("check-elwr").checked;
     AppState.profile.ahiFulfillment = collectAhiFulfillment();
+    collectCollegeCoreFulfillment();
     const pc = parseInt(document.getElementById("input-prior-credits").value, 10);
     AppState.profile.priorCredits = isNaN(pc) || pc < 0 ? 0 : Math.min(120, pc);
     showWizardStep(3);
@@ -359,6 +387,9 @@ function initWizard() {
 
   // American History & Institutions high-school fulfillment UI (Step 2)
   initAhiFulfillmentUI();
+
+  // College core fulfillment UI (Step 2)
+  initCollegeCoreFulfillmentUI();
 }
 
 // Populate the major dropdown from the MAJOR_REQUIREMENTS registry.
@@ -670,6 +701,56 @@ function initAhiFulfillmentUI() {
   update();
 }
 
+function allCollegeCoreCourseCodes() {
+  const out = [];
+  Object.values(collegeCoreRequirementMap()).forEach(req => (req.courses || []).forEach(code => out.push(code)));
+  return uniqueExistingCourseCodes(out);
+}
+
+function collectCollegeCoreFulfillment() {
+  const select = document.getElementById("select-college-affiliation");
+  const completedCheck = document.getElementById("check-college-core-completed");
+  AppState.profile.collegeAffiliation = select?.value || "";
+  AppState.profile.collegeCoreCompleted = Boolean(completedCheck?.checked && AppState.profile.collegeAffiliation);
+
+  const coreCodes = new Set(allCollegeCoreCourseCodes());
+  AppState.profile.completedCourses = (AppState.profile.completedCourses || [])
+    .filter(code => !coreCodes.has(code));
+
+  if (AppState.profile.collegeCoreCompleted) {
+    collegeCoreCoursesForProfile(AppState.profile).forEach(code => addCompletedCourse(code));
+  } else {
+    syncCompletedCoursesUI();
+  }
+}
+
+function initCollegeCoreFulfillmentUI() {
+  const select = document.getElementById("select-college-affiliation");
+  const completedCheck = document.getElementById("check-college-core-completed");
+  const summary = document.getElementById("college-core-summary");
+  if (!select || !completedCheck || !summary) return;
+
+  const update = () => {
+    AppState.profile.collegeAffiliation = select.value || "";
+    const req = collegeCoreRequirementMap()[AppState.profile.collegeAffiliation];
+    completedCheck.disabled = !req;
+    if (!req) {
+      completedCheck.checked = false;
+      summary.textContent = "Select your college to see the required first-year college core course.";
+      return;
+    }
+    const courses = collegeCoreCoursesForProfile(AppState.profile);
+    const labels = courses.map(code => {
+      const course = COURSES[code];
+      return course ? `${code} — ${course.title}` : code;
+    });
+    summary.textContent = `${req.name} college core: ${labels.join("; ")}.`;
+  };
+
+  select.addEventListener("change", update);
+  update();
+}
+
 
 // ---------- COMPLETED COURSES UI ----------
 
@@ -965,6 +1046,7 @@ function generateAndShowSchedule() {
       renderSchedule();
       renderRequirements();
       showValidationAlerts();
+      showScheduleAccuracyWarning();
     } catch (err) {
       console.error("Schedule generation error:", err);
       showView("schedule");
@@ -1239,6 +1321,28 @@ function showScheduleEditWarning(title, bodyHtml, tone = "warning") {
     </div>
   `;
   modal.classList.add("active");
+}
+
+function majorRequirementCatalogUrl(majorId = AppState.profile.major) {
+  return (MAJOR_REQUIREMENTS[majorId]?.catalogUrl || "https://catalog.ucsc.edu/en/current/general-catalog").trim();
+}
+
+function showScheduleAccuracyWarning() {
+  const majorReqs = MAJOR_REQUIREMENTS[AppState.profile.major] || MAJOR_REQUIREMENTS.CS_BA;
+  const majorName = majorReqs?.name || "your selected major";
+  const catalogUrl = majorRequirementCatalogUrl(AppState.profile.major);
+  showScheduleEditWarning(
+    "Please verify this schedule with UCSC",
+    `
+      <div class="schedule-warning-card warning-advising">
+        <p><strong>This generated schedule is not perfect.</strong> It is a planning draft, not an official academic plan.</p>
+        <p>We strongly recommend visiting the <strong>Academic Advising</strong> team to double check every requirement, prerequisite, credit load, and graduation timeline before you enroll.</p>
+        <p>For your selected major, review the official UCSC requirements here: <a href="${escHTML(catalogUrl)}" target="_blank" rel="noopener noreferrer"><strong>${escHTML(majorName)} requirements</strong></a>.</p>
+        <p>This website also <strong>does not check which quarter each class is offered</strong>. Please confirm course availability in the official UCSC Catalog, class search, or with advising before relying on a quarter-by-quarter plan.</p>
+      </div>
+    `,
+    "warning"
+  );
 }
 
 function courseUnits(code) {
@@ -1698,6 +1802,13 @@ function renderRequirements() {
       ${v.major.map(r => renderReqItem(r)).join("")}
     </div>
 
+    ${(v.collegeCore && v.collegeCore.length) ? `
+      <div class="req-section">
+        <h4>College Core</h4>
+        ${v.collegeCore.map(r => renderReqItem(r)).join("")}
+      </div>
+    ` : ""}
+
     <div class="req-section">
       <h4>General Education</h4>
       ${v.ge.map(r => renderReqItem(r)).join("")}
@@ -1751,7 +1862,7 @@ function renderReqItem(req) {
 function getOverallProgress(v) {
   let total = 0;
   let fulfilled = 0;
-  [...v.major, ...v.ge, ...v.uc].forEach(r => {
+  [...(v.major || []), ...(v.collegeCore || []), ...(v.ge || []), ...(v.uc || [])].forEach(r => {
     total++;
     if (r.fulfilled) fulfilled++;
   });
@@ -1779,6 +1890,14 @@ function showValidationAlerts() {
   v.major.forEach(r => {
     if (!r.fulfilled) {
       warnings.push(`Major: ${r.name} not fully satisfied.`);
+    }
+  });
+
+  // Check college core
+  (v.collegeCore || []).forEach(r => {
+    if (!r.fulfilled) {
+      const missing = r.missing && r.missing.length ? ` Missing: ${r.missing.join(", ")}.` : "";
+      warnings.push(`College Core: ${r.name} not satisfied.${missing}`);
     }
   });
 
