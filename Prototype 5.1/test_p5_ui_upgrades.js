@@ -54,7 +54,7 @@ function buildContext() {
     querySelectorAll() { return []; },
     addEventListener() {}
   };
-  const context = { console, document, window: { scrollTo() {} }, setTimeout, clearTimeout };
+  const context = { console, document, window: { scrollTo() {}, open(url, target, features) { context.__openedUrl = { url, target, features }; } }, setTimeout, clearTimeout };
   context.globalThis = context;
   return context;
 }
@@ -79,7 +79,12 @@ function loadApp() {
       refreshScheduleAfterManualEdit,
       showValidationAlerts,
       majorRequirementCatalogUrl,
-      showScheduleAccuracyWarning
+      showScheduleAccuracyWarning,
+      reviewFormUrl,
+      isReviewFormConfigured,
+      openReviewForm,
+      showStudentReviewPrompt,
+      promptForReviewAfterDownload
     };`;
   vm.runInNewContext(appCode, context, { filename: 'js/app.js' });
   return context;
@@ -409,6 +414,52 @@ function testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits() {
   assert(html.includes('special permission'), `warning should mention possible special permission; got ${html}`);
 }
 
+function testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
+
+  assert(html.includes('class="nav-review-link"'), 'navbar should include a visible Leave Review button');
+  assert(html.includes("showStudentReviewPrompt('navbar')"), 'navbar review button should open the student review prompt');
+  assert(css.includes('.nav-review-link'), 'review navbar button should have explicit styling');
+
+  __p5.showStudentReviewPrompt('navbar');
+  const modal = document.getElementById('modal-warning');
+  const body = document.getElementById('warning-content').innerHTML;
+  assert(modal.classList.contains('active'), 'review navbar action should open a modal');
+  assert(body.includes('Overall rating') && body.includes('1–10'), `review prompt should ask for a 1-10 rating; got ${body}`);
+  assert(body.includes('Selected major') && body.includes('student level'), `review prompt should ask contextual student questions; got ${body}`);
+  assert(body.includes('useful and accurate'), `review prompt should ask about schedule usefulness/accuracy; got ${body}`);
+  assert(body.includes('Cool features'), `review prompt should ask for future feature ideas; got ${body}`);
+  assert(body.includes('Optional email'), `review prompt should mention optional follow-up email; got ${body}`);
+  assert(body.includes('student ID numbers') && body.includes('sensitive personal information'), `review prompt should warn against sensitive info; got ${body}`);
+}
+
+function testReviewPromptShowsSetupUntilGoogleFormUrlIsConfigured() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  assert.strictEqual(__p5.isReviewFormConfigured(), false, 'placeholder review form URL should not count as configured');
+  __p5.showStudentReviewPrompt('pdf');
+  const body = document.getElementById('warning-content').innerHTML;
+  assert(body.includes('Thanks for downloading your schedule'), `download-triggered prompt should thank student after export; got ${body}`);
+  assert(body.includes('Review form setup needed'), `unconfigured form should show setup instructions; got ${body}`);
+  assert(body.includes('Google Sheets'), `setup note should mention Google Sheets storage; got ${body}`);
+}
+
+function testConfiguredReviewFormOpensSafelyInNewTab() {
+  const context = loadApp();
+  const { __p5 } = context;
+  context.window.UCSC_REVIEW_FORM_URL = 'https://forms.gle/abc123ReviewForm';
+  assert.strictEqual(__p5.isReviewFormConfigured(), true, 'forms.gle URL should count as configured');
+  __p5.openReviewForm();
+  assert.deepStrictEqual(context.__openedUrl, {
+    url: 'https://forms.gle/abc123ReviewForm',
+    target: '_blank',
+    features: 'noopener,noreferrer'
+  }, 'review form should open safely in a new tab');
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
@@ -428,7 +479,10 @@ const tests = [
   testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves,
   testDragMoveBlockedWhenPrerequisitesWouldBeMissing,
   testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits,
-  testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits
+  testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits,
+  testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields,
+  testReviewPromptShowsSetupUntilGoogleFormUrlIsConfigured,
+  testConfiguredReviewFormOpensSafelyInNewTab
 ];
 
 let passed = 0;

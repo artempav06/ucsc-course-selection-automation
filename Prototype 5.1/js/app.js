@@ -46,6 +46,79 @@ const AppState = {
   validation: null             // validation results
 };
 
+// ---------- STUDENT REVIEW / FEEDBACK CONFIG ----------
+// Phase 1 uses a Google Form connected to Google Sheets. Replace this
+// placeholder with Artem's live form link after the form is created.
+const REVIEW_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM_LINK";
+const REVIEW_FORM_PLACEHOLDER = "REPLACE_WITH_YOUR_GOOGLE_FORM_LINK";
+
+function reviewFormUrl() {
+  const overrideUrl = (typeof window !== "undefined" && window.UCSC_REVIEW_FORM_URL) ? window.UCSC_REVIEW_FORM_URL : REVIEW_FORM_URL;
+  return String(overrideUrl || "").trim();
+}
+
+function isReviewFormConfigured() {
+  const url = reviewFormUrl();
+  return /^https:\/\/(forms\.gle|docs\.google\.com\/forms)\//.test(url) && !url.includes(REVIEW_FORM_PLACEHOLDER);
+}
+
+function openReviewForm() {
+  const url = reviewFormUrl();
+  if (!isReviewFormConfigured()) {
+    showStudentReviewPrompt("setup");
+    return;
+  }
+  if (typeof window !== "undefined" && typeof window.open === "function") {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+}
+
+function reviewSetupInstructionsHtml() {
+  return `
+    <div class="review-setup-note">
+      <p><strong>Review form setup needed:</strong> create the Google Form, connect it to Google Sheets, turn on email notifications, then replace <code>REVIEW_FORM_URL</code> in <code>js/app.js</code> with the public Google Form link.</p>
+    </div>
+  `;
+}
+
+function showStudentReviewPrompt(source = "navbar") {
+  const isDownload = source === "pdf" || source === "excel" || source === "download";
+  const title = isDownload ? "Before you go, could you leave a quick review?" : "Leave a student review";
+  const configured = isReviewFormConfigured();
+  const opener = configured
+    ? `<button class="btn-link review-primary-action" type="button" onclick="openReviewForm()">Open Review Form</button>`
+    : `<button class="btn-link review-primary-action" type="button" onclick="showStudentReviewPrompt('setup')">Setup Needed</button>`;
+
+  showScheduleEditWarning(
+    title,
+    `
+      <div class="schedule-warning-card review-invite-card">
+        <p>${isDownload ? "Thanks for downloading your schedule!" : "We want to hear from students who use this website."} Your honest feedback will help us make the scheduler more accurate, easier to use, and more helpful for future UCSC students.</p>
+        <p>The review form asks for:</p>
+        <ul>
+          <li><strong>Overall rating:</strong> 1–10</li>
+          <li><strong>Selected major</strong> and student level</li>
+          <li>Whether the generated schedule felt useful and accurate</li>
+          <li>What felt confusing, incorrect, or frustrating</li>
+          <li>Cool features students would like us to add</li>
+          <li>Optional email if the student wants follow-up</li>
+        </ul>
+        <p class="privacy-reminder"><strong>Privacy reminder:</strong> please do not include student ID numbers, passwords, or sensitive personal information.</p>
+        ${configured ? "" : reviewSetupInstructionsHtml()}
+        <div class="review-actions">
+          ${opener}
+          <span class="review-secondary-note">You can also close this window and review later from the top menu.</span>
+        </div>
+      </div>
+    `,
+    "info"
+  );
+}
+
+function promptForReviewAfterDownload(format = "download") {
+  setTimeout(() => showStudentReviewPrompt(format), 350);
+}
+
 const FALLBACK_COLLEGE_CORE_REQUIREMENTS = {
   cowell: { name: "Cowell College", courses: ["COWL 1"] },
   stevenson: { name: "Stevenson College", courses: ["STEV 1", "STEV 2"] },
