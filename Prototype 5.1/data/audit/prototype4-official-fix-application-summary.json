@@ -1,0 +1,6439 @@
+{
+  "appliedChanges": 467,
+  "notesAddedOrMerged": 915,
+  "noPrereqCleared": 21,
+  "concurrentPrereqCoursesEncoded": 5,
+  "clearRestrictionsEncoded": 5,
+  "missingOfficialPrereqCoursesAdded": [
+    "CSE 222A",
+    "CSE 225",
+    "ECE 241",
+    "ECON 216",
+    "OCEA 260",
+    "PHIL 100D",
+    "STAT 266A"
+  ],
+  "skippedForManualOrAmbiguousReviewCount": 672,
+  "skippedSample": [
+    {
+      "code": "AM 15A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "AM 15B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "AM 209",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "AMS 7",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "AMS 7L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ANTH 102",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ANTH 107",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 120",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 121",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 122",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 124",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 129",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 160B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 162B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 163B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 164S",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ART 26",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ARTG 80I",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOE 110",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOE 21C",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOL 138",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOL 138L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOL 21A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BIOL 89",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "BME 150",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CHEM 1B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CHIN 4H",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CHIN 5H",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CMMU 102",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CMMU 198",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "COWL 80A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "COWL 80B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 121L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 13E",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 14",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 15",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 150L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "CSE 15L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "EART 110L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "EART 119",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "EART 260",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ECON 11A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ECON 11B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "EE 101",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "EE 101L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ENVS 105",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ENVS 105L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "ENVS 91F",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "FILM 132C",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "FILM 170",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "HEBR 1B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "IITAL 6",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "JRLC 91",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "LALS 100W",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "METX 119L",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "MUSC 130",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "OAKS 80A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "OAKS 80B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PHIL 21",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PHIL 80G",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PHYS 1",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PHYS 107",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "POLI 109",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PORT 65B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PSYC 20A",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PSYC 20B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "PSYC 3",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "SOCY 12",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "SOCY 30C",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "SPAN 1B",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "STEV 80",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "STEV 81",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "THEA 115",
+      "reason": "missing prerequisite alternative has no exact current official catalog page; left for #6/manual queue"
+    },
+    {
+      "code": "AM 11B",
+      "reason": "official prerequisite alternatives missing and no current official page added: ECON 11A"
+    },
+    {
+      "code": "AM 115",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "STAT 131 and AM 20; a university-level course in biology, and operational knowledge of a programming language; or consent of"
+    },
+    {
+      "code": "AM 170A",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "AM 195",
+      "reason": "official prerequisite alternatives missing and no current official page added: AM 209"
+    },
+    {
+      "code": "AM 231",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "basic knowledge of mathematical analysis and ordinary differential equations is assumed."
+    },
+    {
+      "code": "ANTH 107B",
+      "reason": "official prerequisite alternatives missing and no current official page added: ANTH 107"
+    },
+    {
+      "code": "ANTH 113",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Composition requirement."
+    },
+    {
+      "code": "ANTH 150",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two of the following courses: ANTH 1, ANTH 2, or ANTH 3; satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 161S",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Concurrent"
+    },
+    {
+      "code": "ANTH 185",
+      "reason": "official prerequisite alternatives missing and no current official page added: ANTH 102, BIOL 138, BIOL 138L, ENVS 105, ENVS 105L"
+    },
+    {
+      "code": "ANTH 188C",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ANTH 1, ANTH 2, and ANTH 3. All three courses in sequence ( ANTH 188A, ANTH 188B, ANTH 188C ) required to count for the anthropology major or minor."
+    },
+    {
+      "code": "ANTH 189",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "course 3 and application letter."
+    },
+    {
+      "code": "ANTH 194A",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194H",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194J",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194L",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ANTH 1, ANTH 2, ANTH 3 and an upper division course in archaeology; satisfaction of the Entry Level Writing and Composition requirement."
+    },
+    {
+      "code": "ANTH 194P",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194Q",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194R",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194T",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 194U",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 195S",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196C",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196D",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196E",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196F",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196G",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196H",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196N",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ANTH 196R",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "APLX 136",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Previous or concurrent"
+    },
+    {
+      "code": "ART 20G",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two courses from ART 10D, ART 10E, ART 10F."
+    },
+    {
+      "code": "ART 20H",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two courses from ART 10D, ART 10E, ART 10F."
+    },
+    {
+      "code": "ART 20I",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two courses from ART 10D, ART 10E, ART 10F."
+    },
+    {
+      "code": "ART 20J",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two courses from ART 10D, ART 10E, ART 10F."
+    },
+    {
+      "code": "ART 20K",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "two courses from ART 10D, ART 10E, ART 10F."
+    },
+    {
+      "code": "ART 104",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 106A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 106C",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 106E",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 106G",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 108",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 109",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "Three courses from: ART 15, ART 20G, ART 20H, ART 20I, ART 20J, ART 20K, or ART 20L."
+    },
+    {
+      "code": "ART 110",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 15 or ART 20L or ART 20J; and two from ART 20G, ART 20H, ART 20I, ART 20K; or by permission of"
+    },
+    {
+      "code": "ART 111",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 15 or ART 20L or ART 20J; and two from ART 20G, ART 20H, ART 20I, ART 20K; or by permission of"
+    },
+    {
+      "code": "ART 112",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 15 or ART 20L or ART 20J; and two from ART 20G, ART 20H, ART 20I, ART 20K; or by permission of"
+    },
+    {
+      "code": "ART 113",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 15 or ART 20L or ART 20J; and two from ART 20G, ART 20H, ART 20I, ART 20K; or by permission of"
+    },
+    {
+      "code": "ART 114",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 20L or ART 15 or ART 20J and two courses from ART 20G, 20H, 20I, 20K."
+    },
+    {
+      "code": "ART 119",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 15 or ART 20L or ART 20J; and two from ART 20G, ART 20H, ART 20I, ART 20K; or by permission of"
+    },
+    {
+      "code": "ART 130",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 133",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 137",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 138",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 139",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 150",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 152A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 153",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 154A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 154B",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 154C",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 156",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 157",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "two lower-division studio art courses."
+    },
+    {
+      "code": "ART 158",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ART 20I, and two courses from ART 15, ART 20L, ART 20K, ART 20J, 20G, 20H."
+    },
+    {
+      "code": "ART 159",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 161B",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 162A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 163A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 163C",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 164A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 165",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 160B, ART 162B, ART 163B, ART 164S"
+    },
+    {
+      "code": "ART 166",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 168",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 169",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 170",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "three courses from ART 15, ART 20G, ART 20H, ART 20I, ART 20J, ART 20K, ART 20L; or by permission of"
+    },
+    {
+      "code": "ART 175",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 180B",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 120, ART 121, ART 122, ART 124, ART 129, ART 26"
+    },
+    {
+      "code": "ART 181",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 182",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 183",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 120, ART 121, ART 122, ART 124, ART 129, ART 26"
+    },
+    {
+      "code": "ART 186",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 26"
+    },
+    {
+      "code": "ART 188",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 120, ART 121, ART 122, ART 124, ART 129, ART 26"
+    },
+    {
+      "code": "ART 189",
+      "reason": "official prerequisite alternatives missing and no current official page added: ART 120, ART 121, ART 122, ART 124, ART 129, ART 26"
+    },
+    {
+      "code": "ART 190A",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ARTG 129A",
+      "reason": "official prerequisite alternatives missing and no current official page added: ARTG 80I"
+    },
+    {
+      "code": "ARTG 131",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ARTG 10 and one of the following courses ARTG 20 or ARTG 25 or ARTG 30."
+    },
+    {
+      "code": "ARTG 132",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "ARTG 10, and one of the following courses: ARTG 20 or ARTG 25 or ARTG 30."
+    },
+    {
+      "code": "ARTG 170A",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ARTG 170B",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "ARTG 171",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Enrollment is restricted to senior art and design: games and playable media majors."
+    },
+    {
+      "code": "ASTR 119",
+      "reason": "official prerequisite alternatives missing and no current official page added: AM 15A"
+    },
+    {
+      "code": "ASTR 136A",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "ASTR 136B",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "ASTR 136D",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "ASTR 136E",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "ASTR 136G",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "ASTR 136H",
+      "reason": "n-of/sequence/non-course prerequisite wording requires manual modeling",
+      "officialPrereqText": "PHYS 133, and one of the following: ASTR 119, ASTR 19, or CSE 20."
+    },
+    {
+      "code": "BIOC 163A",
+      "reason": "official prerequisite alternatives missing and no current official page added: CHEM 1B"
+    },
+    {
+      "code": "BIOC 163B",
+      "reason": "official prerequisite alternatives missing and no current official page added: CHEM 1B"
+    },
+    {
+      "code": "BIOE 75",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "skill level equal to Advanced and Rescue Scuba Diver Certification, current AAUS/UCSC diving medical clearance, certifications in CPR/AED, First Aid and Oxygen Administration and minimum of 12 documented ocean dives; and interview: pass water skills evaluation. For details visit scientificdiving.ucsc.edu/course-info"
+    },
+    {
+      "code": "BIOE 108",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 114",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 114L",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 141L",
+      "reason": "official prerequisite alternatives missing and no current official page added: BIOE 110"
+    },
+    {
+      "code": "BIOE 142L",
+      "reason": "self-referential course mention in extracted text",
+      "officialPrereqText": "BIOL 20A, BIOE 20B, and BIOE 20C. Students may benefit from taking BIOE 142L after or concurrently with BIOE 107 or BIOE 140."
+    },
+    {
+      "code": "BIOE 146",
+      "reason": "official prerequisite alternatives missing and no current official page added: PHYS 1"
+    },
+    {
+      "code": "BIOE 147",
+      "reason": "abbreviated same-subject course references require manual expansion",
+      "officialPrereqText": "BIOE 107, BIOE 108, BIOE 145, BIOE 155 or 159A; or ENVS 24 by permission of"
+    },
+    {
+      "code": "BIOE 151A",
+      "reason": "official prerequisite alternatives missing and no current official page added: AMS 7, AMS 7L"
+    },
+    {
+      "code": "BIOE 151B",
+      "reason": "official prerequisite alternatives missing and no current official page added: AMS 7, AMS 7L"
+    },
+    {
+      "code": "BIOE 151D",
+      "reason": "official prerequisite alternatives missing and no current official page added: AMS 7, AMS 7L"
+    },
+    {
+      "code": "BIOE 159A",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 171",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 182F",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Undergraduate research contract on file with the department. If supervised by different faculty or researchers, may be"
+    },
+    {
+      "code": "BIOE 183L",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "concurrent"
+    },
+    {
+      "code": "BIOE 183W",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOE 193",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "course 183W and an undergraduate research contract on file with the department."
+    },
+    {
+      "code": "BIOE 193F",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "course 183W and an undergraduate research contract on file with the department."
+    },
+    {
+      "code": "BIOL 15",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "qualifications as determined by"
+    },
+    {
+      "code": "BIOL 86",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Mathematics 3 or equivalent (i.e., mathematics placement examination score), and satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOL 88",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "satisfaction of the Entry Level Writing and Composition"
+    },
+    {
+      "code": "BIOL 104L",
+      "reason": "abbreviated same-subject course references require manual expansion",
+      "officialPrereqText": "BME 105 or BIOL 105; and BIOC 100A and 100B or BIOL 100; and BIOL 20L or BIOL 101L. It is assumed that students have minimal level exposure to bioinformatic/sequence analysis tools prior to this course."
+    },
+    {
+      "code": "BIOL 108L",
+      "reason": "official prerequisite alternatives missing and no current official page added: METX 119L"
+    },
+    {
+      "code": "BIOL 122L",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "BIOL122K."
+    },
+    {
+      "code": "BIOL 129A",
+      "reason": "self-referential course mention in extracted text",
+      "officialPrereqText": "BIOL 126, BIOL 129L; students cannot enroll in BIOL 129A after receiving credit with a 'C' or better in BIOL 129B."
+    },
+    {
+      "code": "BIOL 129B",
+      "reason": "self-referential course mention in extracted text",
+      "officialPrereqText": "BIOL 105, BIOL 125 and BIOL 128; students cannot enroll in BIOL 129B after receiving credit with a 'C' or better in BIOL 129A."
+    },
+    {
+      "code": "BIOL 129C",
+      "reason": "self-referential course mention in extracted text",
+      "officialPrereqText": "BIOL 125; students cannot enroll in BIOL 129C after receiving credit with a 'C' or better in BIOL 129A or BIOL 129B."
+    },
+    {
+      "code": "BIOL 130L",
+      "reason": "abbreviated same-subject course references require manual expansion",
+      "officialPrereqText": "BIOL 110; BIOL 20L or 102J; and previous or concurrent"
+    },
+    {
+      "code": "BIOL 186L",
+      "reason": "no course prerequisite tokens after removing non-course/concurrent language",
+      "officialPrereqText": "Entry Level Writing and Composition"
+    }
+  ],
+  "appliedSample": [
+    {
+      "code": "AM 6",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 2"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 10",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 3",
+            "AM 11A",
+            "MATH 11A",
+            "MATH 19A",
+            "MATH 20A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 19A",
+            "MATH 20A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 20",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 19B",
+            "MATH 20B",
+            "AM 10",
+            "MATH 21"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 19B",
+            "MATH 20B"
+          ],
+          [
+            "AM 10",
+            "MATH 21"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 100",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 20",
+            "MATH 24",
+            "AM 30",
+            "MATH 23B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "AM 20",
+            "MATH 24"
+          ],
+          [
+            "AM 30",
+            "MATH 23B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 114",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 10",
+            "PHYS 116A"
+          ],
+          [
+            "AM 20",
+            "PHYS 116A"
+          ],
+          [
+            "AM 30",
+            "PHYS 116A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "AM 10",
+            "MATH 21",
+            "PHYS 116A"
+          ],
+          [
+            "AM 20",
+            "MATH 24",
+            "PHYS 116A"
+          ],
+          [
+            "AM 30",
+            "MATH 23A",
+            "MATH 22",
+            "PHYS 116A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 129",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 10",
+            "MATH 21"
+          ],
+          [
+            "MATH 11A",
+            "MATH 19A",
+            "MATH 20A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 20",
+            "CSE 13S",
+            "CSE 30",
+            "ECE 13",
+            "ASTR 19"
+          ],
+          [
+            "AM 10",
+            "MATH 21"
+          ],
+          [
+            "MATH 11A",
+            "MATH 19A",
+            "MATH 20A"
+          ],
+          [
+            "AM 20",
+            "MATH 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 147",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 10",
+            "MATH 21",
+            "AM 20",
+            "MATH 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "AM 10",
+            "MATH 21"
+          ],
+          [
+            "AM 20",
+            "MATH 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 148",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 147",
+            "MATH 148",
+            "PHYS 115"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 20",
+            "CSE 13S",
+            "CSE 30",
+            "ECE 13",
+            "ASTR 19"
+          ],
+          [
+            "AM 147",
+            "MATH 148",
+            "PHYS 115"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 160",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 20",
+            "AM 30",
+            "MATH 24",
+            "PHYS 116A",
+            "AM 129",
+            "CSE 30"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "AM 20"
+          ],
+          [
+            "AM 30",
+            "MATH 24",
+            "PHYS 116A"
+          ],
+          [
+            "AM 129",
+            "CSE 30"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "AM 170B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "AM 129",
+            "AM 112"
+          ],
+          [
+            "AM 147"
+          ],
+          [
+            "AM 170A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "AM 129"
+          ],
+          [
+            "AM 112"
+          ],
+          [
+            "AM 147"
+          ],
+          [
+            "AM 170A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 100",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 105",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 102A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 106A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 107A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 104"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 107C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 106"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 130Y",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 2",
+            "GCH 1"
+          ],
+          [
+            "ANTH 2"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 2",
+            "GCH 1"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 131H",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 130H"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 151S",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 161S"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [],
+        "concurrentPrereqs": [
+          [
+            "ANTH 161S"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "ANTH 188A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 188B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 189A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194D",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194E",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194F",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194G",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194I",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194K",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194M",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2",
+            "ANTH 3"
+          ],
+          [
+            "ANTH 134"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ],
+          [
+            "ANTH 134"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194N",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194O",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194S",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194V",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194W",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194X",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194Y",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 194Z",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196I",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196J",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196K",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196M",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196O",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196P",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196Q",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196T",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196U",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196V",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196W",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ANTH 196X",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "ANTH 1",
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ANTH 1"
+          ],
+          [
+            "ANTH 2"
+          ],
+          [
+            "ANTH 3"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ARBC 2",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "ART 184",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "ART 185",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "ASTR 9B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ASTR 9A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ASTR 21",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5A",
+            "PHYS 15A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ASTR 112",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A",
+            "PHYS 5B",
+            "PHYS 6B",
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A"
+          ],
+          [
+            "PHYS 5B",
+            "PHYS 6B"
+          ],
+          [
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ASTR 113",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A",
+            "PHYS 5B",
+            "PHYS 6B",
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A"
+          ],
+          [
+            "PHYS 5B",
+            "PHYS 6B"
+          ],
+          [
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ASTR 117",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A",
+            "PHYS 5B",
+            "PHYS 6B",
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 22",
+            "MATH 23A"
+          ],
+          [
+            "PHYS 5B",
+            "PHYS 6B"
+          ],
+          [
+            "PHYS 102"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ASTR 136C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 133",
+            "ASTR 119",
+            "ASTR 19",
+            "CSE 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 133"
+          ],
+          [
+            "ASTR 119",
+            "ASTR 19",
+            "CSE 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 20B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 107",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 109",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 112",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOE 107",
+            "BIOE 109",
+            "BIOE 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOE 107"
+          ],
+          [
+            "BIOE 109",
+            "BIOE 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 112L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOE 107",
+            "BIOE 109",
+            "BIOE 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOE 107"
+          ],
+          [
+            "BIOE 109",
+            "BIOE 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 117",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 117L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 117L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "BIOE 117"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": [
+          [
+            "BIOE 117"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "BIOE 118",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "ENVS 23"
+          ],
+          [
+            "BIOE 20B",
+            "ENVS 24"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "ENVS 23"
+          ],
+          [
+            "BIOE 20B",
+            "ENVS 23"
+          ],
+          [
+            "BIOE 20C",
+            "ENVS 23"
+          ],
+          [
+            "ENVS 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 120",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 120L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 120L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 120"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 122",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 122L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 122L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 122"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 127",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 127L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 127L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 127"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 128L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 129",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOL 110"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 129L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "BIOE 129"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": [
+          [
+            "BIOE 129"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "BIOE 131",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 131L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 133",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "BIOE 131"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 133L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "BIOE 131"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 137",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 137L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 138",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOE 107"
+          ],
+          [
+            "BIOE 109"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 139",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOE 107"
+          ],
+          [
+            "BIOE 109"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 140",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 145",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "ENVS 100"
+          ],
+          [
+            "BIOE 107"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "ENVS 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 145L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 150",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 150L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 151C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C",
+            "ENVS 23"
+          ],
+          [
+            "ENVS 24"
+          ],
+          [
+            "STAT 7",
+            "STAT 7L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 153A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 153B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 153C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 155",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 155L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 155"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 155"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 157A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 157B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 161",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 161L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 163",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 163L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 165",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "OCEA 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 172",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 173",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 174",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105",
+            "BIOE 109"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106",
+            "BIOL 105"
+          ],
+          [
+            "BIOE 109"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOE 175",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A",
+            "BIOE 20B",
+            "BIOE 20C",
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOE 20C"
+          ],
+          [
+            "BIOE 106",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 20A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 1A",
+            "CHEM 3A",
+            "CHEM 4A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 1A"
+          ],
+          [
+            "CHEM 3A",
+            "CHEM 4A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 100K",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOL 20L",
+            "BIOL 101L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 102J",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOL 20L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 105A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20L"
+          ],
+          [
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 105B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 105A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 107J",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOL 20L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 109L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOL 101",
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 101L"
+          ],
+          [
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOL 101",
+            "BIOC 100A"
+          ],
+          [
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 101L",
+            "BIOL 102L",
+            "BIOL 107L"
+          ],
+          [
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 110",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOL 101",
+            "BIOC 100A",
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 105"
+          ],
+          [
+            "BIOL 101L",
+            "BIOL 102L",
+            "BIOL 107L",
+            "BIOL 122K",
+            "CHEM 160K",
+            "CHEM 161K",
+            "BIOL 20L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100"
+          ],
+          [
+            "BIOL 101",
+            "BIOC 100A"
+          ],
+          [
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 105"
+          ],
+          [
+            "BIOL 101L",
+            "BIOL 102L",
+            "BIOL 107L",
+            "BIOL 122K",
+            "CHEM 160K",
+            "CHEM 161K",
+            "BIOL 20L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 111A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOE 20B",
+            "BIOL 20A",
+            "BIOL 105"
+          ],
+          [
+            "BIOL 110"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOL 105"
+          ],
+          [
+            "BIOL 110"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 113",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "STAT 5",
+            "STAT 7",
+            "STAT 7L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "STAT 5",
+            "STAT 7"
+          ],
+          [
+            "STAT 7L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 118",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "STAT 5",
+            "STAT 7",
+            "STAT 7L"
+          ],
+          [
+            "BIOL 105",
+            "BME 105"
+          ],
+          [
+            "BIOL 101",
+            "BIOL 115"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "STAT 5",
+            "STAT 7"
+          ],
+          [
+            "STAT 7L"
+          ],
+          [
+            "BIOL 105",
+            "BME 105"
+          ],
+          [
+            "BIOL 101",
+            "BIOL 115"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 121L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOL 101L",
+            "BIOL 102L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 122K",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 3A",
+            "CHEM 4A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 124",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5B",
+            "PHYS 6B"
+          ],
+          [
+            "BIOL 110"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5B",
+            "PHYS 6B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 125",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOL 100",
+            "BIOC 100A",
+            "BIOC 100B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 20A"
+          ],
+          [
+            "BIOE 20B"
+          ],
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOC 100B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 129L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOL 101",
+            "BIOC 100A",
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 101L"
+          ],
+          [
+            "BIOL 125"
+          ],
+          [
+            "STAT 5",
+            "STAT 7",
+            "STAT 7L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100"
+          ],
+          [
+            "BIOL 101",
+            "BIOC 100A"
+          ],
+          [
+            "BIOC 100B"
+          ],
+          [
+            "BIOL 101L"
+          ],
+          [
+            "BIOL 125"
+          ],
+          [
+            "STAT 5",
+            "STAT 7"
+          ],
+          [
+            "STAT 7L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 140",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 105",
+            "BME 105",
+            "BIOL 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 105",
+            "BME 105"
+          ],
+          [
+            "BIOL 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 186F",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOL 20L",
+            "BIOL 102J"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BIOL 186R",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 100",
+            "BIOC 100A"
+          ],
+          [
+            "BIOL 20L",
+            "BIOL 102J"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 118",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 19A"
+          ],
+          [
+            "MATH 19B"
+          ],
+          [
+            "MATH 20B"
+          ],
+          [
+            "MATH 21"
+          ],
+          [
+            "CSE 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 19A"
+          ],
+          [
+            "MATH 19B",
+            "MATH 20A"
+          ],
+          [
+            "MATH 20B"
+          ],
+          [
+            "MATH 21"
+          ],
+          [
+            "CSE 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 129C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BME 129B",
+            "BME 230A"
+          ],
+          [
+            "BME 185"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 129B",
+            "BME 230A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 130",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 105",
+            "BME 105",
+            "METX 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 178",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BIOL 110",
+            "BME 101",
+            "BIOC 100A",
+            "BIOL 100",
+            "CHEM 103"
+          ],
+          [
+            "BIOL 115"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BIOL 110",
+            "BME 101",
+            "BIOC 100A",
+            "BIOL 100",
+            "CHEM 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 188A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 180"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 188B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 188A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 188C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 188B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 195",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "BME 205",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BME 160",
+            "CSE 20"
+          ],
+          [
+            "BME 185"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 160",
+            "CSE 20"
+          ],
+          [
+            "CSE 107",
+            "STAT 131"
+          ],
+          [
+            "BME 105",
+            "BIOL 105"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "BME 230A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "BME 205"
+          ],
+          [
+            "BME 185"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "BME 205"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 110N",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 8A"
+          ],
+          [
+            "CHEM 8B"
+          ],
+          [
+            "CHEM 8L"
+          ],
+          [
+            "CHEM 8M",
+            "CHEM 8N"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 122",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 110"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 8B"
+          ],
+          [
+            "CHEM 8M"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 139",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 1C",
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "MATH 11A",
+            "MATH 19A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 1C"
+          ],
+          [
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "MATH 11A",
+            "MATH 19A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 160J",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 8L",
+            "BIOC 100A",
+            "BIOL 100",
+            "CHEM 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 8L"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 163B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 1C",
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "PHYS 6A",
+            "PHYS 5A"
+          ],
+          [
+            "MATH 22",
+            "MATH 23B",
+            "AM 30"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 1C"
+          ],
+          [
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "PHYS 6A",
+            "PHYS 5A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 163C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 163A",
+            "CHEM 163B",
+            "BIOC 163A",
+            "BIOC 163B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 163A"
+          ],
+          [
+            "CHEM 163B",
+            "BIOC 163A"
+          ],
+          [
+            "BIOC 163B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 164",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 1C",
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "PHYS 5A",
+            "PHYS 5B",
+            "PHYS 5C",
+            "PHYS 6A",
+            "PHYS 6B",
+            "PHYS 6C"
+          ],
+          [
+            "MATH 22",
+            "MATH 23B",
+            "AM 30",
+            "CHEM 163A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 1C"
+          ],
+          [
+            "CHEM 3C",
+            "CHEM 4B"
+          ],
+          [
+            "PHYS 5A"
+          ],
+          [
+            "PHYS 5B"
+          ],
+          [
+            "PHYS 5C",
+            "PHYS 6A"
+          ],
+          [
+            "PHYS 6B"
+          ],
+          [
+            "PHYS 6C"
+          ],
+          [
+            "MATH 22",
+            "MATH 23B",
+            "AM 30"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 171",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHEM 8B",
+            "CHEM 103",
+            "BIOC 100A",
+            "BIOL 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 8B"
+          ],
+          [
+            "CHEM 103",
+            "BIOC 100A",
+            "BIOL 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHEM 186L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHEM 8M"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHIN 103",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHIN 6"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHIN 104",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHIN 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHIN 103",
+            "CHIN 105",
+            "CHIN 107",
+            "CHIN 108"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHIN 105",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHIN 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHIN 103",
+            "CHIN 104",
+            "CHIN 107",
+            "CHIN 108"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHIN 107",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHIN 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHIN 103",
+            "CHIN 104",
+            "CHIN 105",
+            "CHIN 108"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CHIN 108",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CHIN 103"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CHIN 103",
+            "CHIN 104",
+            "CHIN 105",
+            "CHIN 107"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CMMU 100",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CMMU 10"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CMPM 115B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CMPM 115A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CMPM 170",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CMPM 120",
+            "CMPM 121"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CMPM 120"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CMPM 171",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CMPM 121",
+            "CMPM 130",
+            "CMPM 170",
+            "CMPM 176"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CMPM 120"
+          ],
+          [
+            "CMPM 130"
+          ],
+          [
+            "CMPM 170"
+          ],
+          [
+            "CMPM 176"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CMPM 172",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CMPM 171"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 101",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190D",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190E",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190F",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190N",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190P",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190X",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRES 190Y",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRES 10",
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRES 10"
+          ],
+          [
+            "CRES 100"
+          ],
+          [
+            "CRES 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRSN 128",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRSN 28"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRWN 94",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "CRWN 97B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRWN 97A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CRWN 155",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CRWN 85",
+            "STAT 131",
+            "CSE 30",
+            "STAT 266A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CRWN 85"
+          ],
+          [
+            "STAT 131"
+          ],
+          [
+            "CSE 30",
+            "STAT 266A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 12",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 20",
+            "CSE 30",
+            "CSE 5J",
+            "BME 160"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 5J",
+            "CSE 20",
+            "CSE 30",
+            "BME 160"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 117",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 101"
+          ],
+          [
+            "CSE 102",
+            "CSE 111",
+            "CSE 115A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 101"
+          ],
+          [
+            "CSE 111",
+            "CSE 115A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 118",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 101"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 101",
+            "CSE 101P"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 123B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 123A",
+            "CSE 185E",
+            "CSE 185S"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 123A"
+          ],
+          [
+            "CSE 185E",
+            "CSE 185S"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 129C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 129B"
+          ],
+          [
+            "CSE 185"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 144",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 40",
+            "STAT 132"
+          ],
+          [
+            "CSE 101",
+            "CSE 101P"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 40"
+          ],
+          [
+            "CSE 40",
+            "STAT 132"
+          ],
+          [
+            "CSE 101",
+            "CSE 101P"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 146",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 101"
+          ],
+          [
+            "CSE 107",
+            "STAT 131"
+          ],
+          [
+            "CSE 40",
+            "CSE 142"
+          ],
+          [
+            "CSE 140"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 101"
+          ],
+          [
+            "CSE 107",
+            "STAT 131"
+          ],
+          [
+            "CSE 40"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 168",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 160",
+            "CSE 118",
+            "CSE 167"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 160"
+          ],
+          [
+            "CSE 118",
+            "CSE 167"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 186",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 101",
+            "CSE 101P"
+          ]
+        ],
+        "concurrentPrereqs": [
+          [
+            "CSE 180",
+            "CSE 182"
+          ]
+        ]
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 101",
+            "CSE 101P"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CSE 195F",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 123A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CT 100",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CT 10",
+            "CT 11"
+          ],
+          [
+            "CT 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CT 10"
+          ],
+          [
+            "CT 11"
+          ],
+          [
+            "CT 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "CT 101",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CT 11",
+            "CT 20"
+          ],
+          [
+            "CT 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CT 11"
+          ],
+          [
+            "CT 20"
+          ],
+          [
+            "CT 100"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 110C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "EART 5",
+            "EART 10",
+            "EART 20",
+            "EART 5L",
+            "EART 10L",
+            "EART 20L"
+          ],
+          [
+            "MATH 11B",
+            "MATH 19B"
+          ],
+          [
+            "PHYS 6A",
+            "PHYS 5A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 5",
+            "EART 10",
+            "EART 20"
+          ],
+          [
+            "EART 5L",
+            "EART 10L",
+            "EART 20L"
+          ],
+          [
+            "MATH 11B",
+            "MATH 19B"
+          ],
+          [
+            "PHYS 6A",
+            "PHYS 5A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 119A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 19A",
+            "MATH 11A",
+            "MATH 20A",
+            "EART 5",
+            "EART 10",
+            "EART 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 19A",
+            "MATH 11A",
+            "MATH 20A"
+          ],
+          [
+            "EART 5",
+            "EART 10",
+            "EART 20"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 124",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 11B",
+            "MATH 19B",
+            "PHYS 6B",
+            "PHYS 5B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 11B",
+            "MATH 19B"
+          ],
+          [
+            "PHYS 6B",
+            "PHYS 5B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 126",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5A",
+            "PHYS 6A",
+            "EART 110B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5A",
+            "PHYS 6A"
+          ],
+          [
+            "EART 110B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 131",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "EART 5",
+            "EART 10",
+            "EART 20",
+            "MATH 11A",
+            "MATH 19A",
+            "MATH 20A",
+            "PHYS 5A",
+            "PHYS 6A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 5",
+            "EART 10",
+            "EART 20"
+          ],
+          [
+            "MATH 11A",
+            "MATH 19A",
+            "MATH 20A"
+          ],
+          [
+            "PHYS 5A",
+            "PHYS 6A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 146",
+      "action": "cleared prereqs: official current catalog has no prerequisite text"
+    },
+    {
+      "code": "EART 162",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "EART 160",
+            "PHYS 116A",
+            "MATH 22",
+            "MATH 23A",
+            "EART 111"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 160",
+            "PHYS 116A"
+          ],
+          [
+            "MATH 22",
+            "MATH 23A",
+            "EART 111"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 189A",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 109"
+          ],
+          [
+            "EART 109L"
+          ],
+          [
+            "EART 110A"
+          ],
+          [
+            "EART 110B"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 191B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "EART 160",
+            "EART 111",
+            "MATH 22"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 160"
+          ],
+          [
+            "EART 111",
+            "MATH 22"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "EART 191D",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "EART 5"
+          ],
+          [
+            "EART 5L",
+            "EART 10"
+          ],
+          [
+            "EART 10L",
+            "EART 20"
+          ],
+          [
+            "EART 20L"
+          ],
+          [
+            "EART 110B"
+          ],
+          [
+            "EART 110M"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 9",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "MATH 19A",
+            "MATH 20A"
+          ],
+          [
+            "PHYS 5A",
+            "PHYS 5L",
+            "PHYS 6A",
+            "PHYS 6L"
+          ],
+          [
+            "AM 10",
+            "MATH 21"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "MATH 19A",
+            "MATH 20A",
+            "PHYS 6A"
+          ],
+          [
+            "PHYS 5A",
+            "PHYS 15A",
+            "PHYS 6A"
+          ],
+          [
+            "PHYS 5L",
+            "PHYS 6A"
+          ],
+          [
+            "PHYS 6L"
+          ],
+          [
+            "AM 10",
+            "MATH 21"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 13",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "CSE 12",
+            "CSE 20",
+            "CSE 30"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "CSE 12"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 101",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5C",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 5N",
+            "PHYS 6N"
+          ],
+          [
+            "AM 20",
+            "MATH 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5C",
+            "PHYS 15C",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 5N",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 6N"
+          ],
+          [
+            "MATH 24",
+            "PHYS 116A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 101L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5C",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 5N",
+            "PHYS 6N"
+          ],
+          [
+            "AM 20",
+            "MATH 24"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5C",
+            "PHYS 15C",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 5N",
+            "PHYS 6C"
+          ],
+          [
+            "PHYS 6N"
+          ],
+          [
+            "MATH 24",
+            "PHYS 116A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 122B",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ECE 122A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 122C",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "ECE 122A"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 130",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5B",
+            "PHYS 5C",
+            "PHYS 6B",
+            "PHYS 6C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5B"
+          ],
+          [
+            "PHYS 5C",
+            "PHYS 15C",
+            "PHYS 6B"
+          ],
+          [
+            "PHYS 6C"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    },
+    {
+      "code": "ECE 130L",
+      "action": "updated course-only prereqs from official catalog",
+      "before": {
+        "prereqs": [
+          [
+            "PHYS 5L",
+            "PHYS 5M",
+            "PHYS 5N",
+            "PHYS 6L",
+            "PHYS 6M",
+            "PHYS 6N"
+          ]
+        ],
+        "concurrentPrereqs": []
+      },
+      "after": {
+        "prereqs": [
+          [
+            "PHYS 5L"
+          ],
+          [
+            "PHYS 5M"
+          ],
+          [
+            "PHYS 5N",
+            "PHYS 6L"
+          ],
+          [
+            "PHYS 6M"
+          ],
+          [
+            "PHYS 6N"
+          ]
+        ],
+        "concurrentPrereqs": []
+      }
+    }
+  ]
+}

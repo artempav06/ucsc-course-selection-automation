@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ucsc-scheduler.local/schemas/requirement-category.schema.json",
+  "title": "Prototype 4 Requirement Category",
+  "$defs": {
+    "courseList": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "courseMatrix": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+    },
+    "richMetadata": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "sourceUrl": { "type": "string" },
+        "catalogYear": { "type": "string", "minLength": 1 },
+        "prerequisitesByMajor": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/courseMatrix" }
+        },
+        "equivalentCourses": { "$ref": "#/$defs/courseMatrix" },
+        "creditExclusions": { "$ref": "#/$defs/courseMatrix" },
+        "unsupportedOptions": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "allOf": [
+        { "$ref": "#/$defs/richMetadata" },
+        {
+          "type": "object",
+          "required": ["id", "name", "type", "courses"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "type": { "const": "all_required" },
+            "courses": { "$ref": "#/$defs/courseList" }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/$defs/richMetadata" },
+        {
+          "type": "object",
+          "required": ["id", "name", "type", "courses"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "type": { "const": "pick_one" },
+            "courses": { "$ref": "#/$defs/courseList" }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/$defs/richMetadata" },
+        {
+          "type": "object",
+          "required": ["id", "name", "type", "n", "courses"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "type": { "const": "pick_n" },
+            "n": { "type": "integer", "minimum": 1 },
+            "courses": { "$ref": "#/$defs/courseList" }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/$defs/richMetadata" },
+        {
+          "type": "object",
+          "required": ["id", "name", "type", "groups"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "type": { "const": "choose_group" },
+            "groups": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["label", "courses"],
+                "properties": {
+                  "label": { "type": "string", "minLength": 1 },
+                  "courses": { "$ref": "#/$defs/courseList" }
+                },
+                "additionalProperties": true
+              }
+            }
+          },
+          "additionalProperties": true
+        }
+      ]
+    },
+    {
+      "allOf": [
+        { "$ref": "#/$defs/richMetadata" },
+        {
+          "type": "object",
+          "required": ["id", "name", "type", "course", "minUnits", "minTerms"],
+          "properties": {
+            "id": { "type": "string", "minLength": 1 },
+            "name": { "type": "string", "minLength": 1 },
+            "type": { "const": "repeat_course" },
+            "course": { "type": "string", "minLength": 1 },
+            "minUnits": { "type": "number", "exclusiveMinimum": 0 },
+            "minTerms": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": true
+        }
+      ]
+    }
+  ]
+}

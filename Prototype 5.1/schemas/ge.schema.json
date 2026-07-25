@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ucsc-scheduler.local/schemas/ge.schema.json",
+  "title": "Prototype 4 GE Requirement",
+  "type": "object",
+  "required": ["id", "name", "needed"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "needed": { "type": "integer", "minimum": 0 },
+    "courses": { "type": "array", "items": { "type": "string" } },
+    "autoSatisfiedBy": { "type": "array", "items": { "type": "string" } },
+    "subcategories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "courses": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    },
+    "note": { "type": "string" }
+  }
+}

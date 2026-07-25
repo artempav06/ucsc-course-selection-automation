@@ -1,0 +1,161 @@
+# Prototype 4 Official Catalog Match Report
+
+Generated from `scripts/build_official_catalog_index.js`. Source: latest current UCSC General Catalog course pages. No course data was edited by this report.
+
+## Summary
+
+- Local Prototype 4 course objects: **4296**
+- Official current catalog course pages indexed: **6147**
+- exact-current-match: **4151**
+- no-current-official-match-found: **85**
+- possible-renamed-or-renumbered-same-subject: **21**
+- synthetic: **39**
+
+## Missing-link courses classified by current official catalog match
+
+- **AM 130** — Advanced Topics in Applied Mathematics | classification: **no-current-official-match-found** | candidates: none
+- **ART 10** — Introduction to Visual Art | classification: **possible-renamed-or-renumbered-same-subject** | candidates: ART 10D (https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/1-99/art-10d), ART 10E (https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/1-99/art-10e), ART 10F (https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/1-99/art-10f)
+- **CSE 104A** — Computability and Computational Complexity | classification: **possible-renamed-or-renumbered-same-subject** | candidates: CSE 104 (https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-104)
+- **CSE 109** — Computational Models of Prediction | classification: **no-current-official-match-found** | candidates: none
+- **CSE 116** — Introduction to Functional Programming | classification: **no-current-official-match-found** | candidates: none
+- **CSE 131** — Introduction to Operating Systems | classification: **no-current-official-match-found** | candidates: none
+- **CSE 148** — Advanced Processor Architecture Design Project | classification: **no-current-official-match-found** | candidates: none
+- **CSE 185** — Technical Writing for Computer Science and Engineering | classification: **possible-renamed-or-renumbered-same-subject** | candidates: CSE 185E (https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185e), CSE 185C (https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-185c)
+- **ECON 102** — Applied Macroeconomic Analysis | classification: **no-current-official-match-found** | candidates: none
+- **ECON 110A** — Accounting and Managerial Control I | classification: **possible-renamed-or-renumbered-same-subject** | candidates: ECON 110 (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-110)
+- **ECON 110B** — Accounting and Managerial Control II | classification: **possible-renamed-or-renumbered-same-subject** | candidates: ECON 110 (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-110)
+- **ECON 122A** — International Finance | classification: **no-current-official-match-found** | candidates: none
+- **ECON 129** — Urban and Regional Economics | classification: **no-current-official-match-found** | candidates: none
+- **ECON 137** — Economics of the Environment | classification: **no-current-official-match-found** | candidates: none
+- **ECON 155** — Public Finance | classification: **no-current-official-match-found** | candidates: none
+- **ECON 160** — Industrial Organization | classification: **possible-renamed-or-renumbered-same-subject** | candidates: ECON 160A (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-160a), ECON 160B (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-160b)
+- **ECON 166** — Game Theory and Applications | classification: **possible-renamed-or-renumbered-same-subject** | candidates: ECON 166B (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-166b), ECON 166A (https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-166a)
+- **ECON 172** — Economics of Energy | classification: **no-current-official-match-found** | candidates: none
+- **ECON 173** — Environmental Policy | classification: **no-current-official-match-found** | candidates: none
+- **ECON 176** — Economics of Developing Countries | classification: **no-current-official-match-found** | candidates: none
+- **ECON 177** — International Trade and Development | classification: **no-current-official-match-found** | candidates: none
+- **ECON 178** — Economic Growth and Development | classification: **no-current-official-match-found** | candidates: none
+- **ECON 181** — Economics of Real Estate | classification: **no-current-official-match-found** | candidates: none
+- **ECON 185** — Topics in Applied Economics | classification: **no-current-official-match-found** | candidates: none
+- **ECON 187** — Economics and Policy Analysis | classification: **no-current-official-match-found** | candidates: none
+- **ECON 189** — Special Topics in Economics | classification: **no-current-official-match-found** | candidates: none
+- **HAVC 1** — Introduction to Visual Analysis | classification: **no-current-official-match-found** | candidates: none
+- **HIS 80A** — United States Social History | classification: **possible-renamed-or-renumbered-same-subject** | candidates: HIS 80C (https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-80c), HIS 80D (https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-80d), HIS 80X (https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-80x), HIS 80Y (https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-80y)
+- **MUSC 11** — Musics of the World | classification: **possible-renamed-or-renumbered-same-subject** | candidates: MUSC 11A (https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/lower-division/musc-11a), MUSC 11B (https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/lower-division/musc-11b), MUSC 11C (https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/lower-division/musc-11c), MUSC 11D (https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/lower-division/musc-11d), MUSC 11E (https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/lower-division/musc-11e)
+- **TIM 171** — Information Systems and Technology | classification: **no-current-official-match-found** | candidates: none
+- **TIM 174** — Supply Chain Management | classification: **no-current-official-match-found** | candidates: none
+- **TIM 176** — Technology Entrepreneurship | classification: **no-current-official-match-found** | candidates: none
+- **TIM 177** — Technology Consulting | classification: **no-current-official-match-found** | candidates: none
+- **TIM 178** — Managing Technology Innovation | classification: **no-current-official-match-found** | candidates: none
+
+## Manual-review local courses: possible renamed/renumbered same subject
+
+- **ART 10** — Introduction to Visual Art | candidates: ART 10D — , ART 10E — , ART 10F —
+- **CRES 190S** — From Slavery to Precarity: Race, Logistics and Globalization | candidates: CRES 190A — Critical Race Feminisms, CRES 190B — Critical Migration Studies, CRES 190C — The Black Transnational, CRES 190D — Black Geographies and the Imperative of Abolition, CRES 190E — Thinking Through Palestine, CRES 190F — Black Queer Film, CRES 190I — Talanoa—Talkin Story: Indigenous, Decolonial Research and Methodologies, CRES 190L — Comparative Settler Colonial Studies
+- **CSE 104A** — Computability and Computational Complexity | candidates: CSE 104 — Computability and Computational Complexity
+- **CSE 185** — Technical Writing for Computer Science and Engineering | candidates: CSE 185E — , CSE 185C — Building Careers in Emerging Technology: Sustainability, Innovation, and Impact
+- **CSE 185S** — Technical Writing for Computer Science | candidates: CSE 185E — , CSE 185C — Building Careers in Emerging Technology: Sustainability, Innovation, and Impact
+- **ECON 110A** — Accounting and Managerial Control I | candidates: ECON 110 — Managerial Cost Accounting and Control
+- **ECON 110B** — Accounting and Managerial Control II | candidates: ECON 110 — Managerial Cost Accounting and Control
+- **ECON 160** — Industrial Organization | candidates: ECON 160A — Industrial Organization, ECON 160B — Government and Industry
+- **ECON 166** — Game Theory and Applications | candidates: ECON 166B — , ECON 166A —
+- **FMST 194R** — HIstories of the Carceral State | candidates: FMST 194K — Black Diaspora, FMST 194M — Empire and Sexuality, FMST 194O — The Politics of Gender and Human Rights, FMST 194Q — Queer Diasporas, FMST 194A — Feminist Jurisprudence, FMST 194B — Queer/Feminist Historiography, FMST 194C — Gender and Iconicity, FMST 194D — Feminist Science Studies
+- **FMST 194U** — Touring War and Empire | candidates: FMST 194K — Black Diaspora, FMST 194M — Empire and Sexuality, FMST 194O — The Politics of Gender and Human Rights, FMST 194Q — Queer Diasporas, FMST 194A — Feminist Jurisprudence, FMST 194B — Queer/Feminist Historiography, FMST 194C — Gender and Iconicity, FMST 194D — Feminist Science Studies
+- **FMST 194V** — Marxism and Feminism | candidates: FMST 194K — Black Diaspora, FMST 194M — Empire and Sexuality, FMST 194O — The Politics of Gender and Human Rights, FMST 194Q — Queer Diasporas, FMST 194A — Feminist Jurisprudence, FMST 194B — Queer/Feminist Historiography, FMST 194C — Gender and Iconicity, FMST 194D — Feminist Science Studies
+- **HAVC 186I** — Indigenous Art and Activism | candidates: HAVC 186 — Horror and Gender in Art and Visual Culture, HAVC 186Q — Queer Visual Culture
+- **HIS 80A** — United States Social History | candidates: HIS 80C — Global China, HIS 80D — Visualizing Modern East Asia, HIS 80X — History of the Modern Civil Rights Movement, HIS 80Y — World War II Memories in the U.S. and Japan
+- **HISC 80O** — Understanding Popular Music | candidates: HISC 80N — Prophecy Against Empire, HISC 80P — The Black Panther Party: History and Theory of a Political Movement, HISC 80R — What is Space?, HISC 80S — War and the Media, HISC 80T — What is the Witch: Terror, Subjectivity, Modernity, HISC 80U — Labor and Globalization, HISC 80V — Introduction to Marxism, HISC 80W — What is Imperialism?
+- **LALS 143J** — Global Political Economy | candidates: LALS 143 — Race and Ethnicity
+- **LALS 80P** — Environment and Society in Latin America | candidates: LALS 80D — Political Change in Mexico, LALS 80F — Latinos in the U.S.: A Comparative Perspective, LALS 80H — Comparative Latina/o Histories, LALS 80J — Race, Nation, and War, LALS 80S — Sexualities and Genders in Latin American and Latina/o Studies, LALS 80X — Central American Peoples and Cultures
+- **METX 141** — Advanced Bacteriology Laboratory | candidates: METX 141L — Advanced Bacteriology Laboratory
+- **MUSC 11** — Musics of the World | candidates: MUSC 11A — Introduction to Western Classical Music, MUSC 11B — , MUSC 11C — , MUSC 11D — , MUSC 11E — Global Popular Music
+- **PSYC 118A** — Children and War | candidates: PSYC 118C — Theory of Mind
+- **PSYC 118B** — Children in Extreme Circumstances | candidates: PSYC 118C — Theory of Mind
+
+## Manual-review local courses: no current official match found
+
+- **AM 130** — Advanced Topics in Applied Mathematics
+- **ANTH 110IG** — Cultures Of Sustainability And Social Justice Abroad
+- **ANTH 130IG** — Cultures of India Abroad
+- **ARTG 90** — Open Source Contributor Studio
+- **CHEM 1A** — General Chemistry
+- **CHEM 1C** — General Chemistry
+- **CHEM 1M** — General Chemistry Laboratory
+- **CHEM 1N** — General Chemistry Laboratory
+- **CHEM 3A** — General Chemistry
+- **CHEM 3B** — General Chemistry
+- **CHEM 3BL** — General Chemistry Lab
+- **CHEM 3C** — General Chemistry
+- **CHEM 3CL** — General Chemistry Lab
+- **CHEM 4A** — Advanced General Chemistry: Molecular Structure and Reactivity
+- **CHEM 4AL** — Advanced General Chemistry Lab
+- **CHEM 4B** — Advanced General Chemistry: Molecular Structure and Reactivity
+- **CHEM 4BL** — Advanced General Chemistry Lab
+- **CHEM 80H** — Introduction to Wine Science and Chemistry
+- **CHEM 8A** — Organic Chemistry
+- **CHEM 8B** — Organic Chemistry
+- **CHEM 8L** — Organic Chemistry Laboratory
+- **CHEM 8M** — Organic Chemistry Laboratory
+- **CHEM 8N** — Honors Organic Chemistry Lab
+- **CHEM 99** — Tutorial
+- **CHEM 99F** — Tutorial
+- **COWL 165** — Fundraising Practicum
+- **CSE 109** — Computational Models of Prediction
+- **CSE 116** — Introduction to Functional Programming
+- **CSE 131** — Introduction to Operating Systems
+- **CSE 148** — Advanced Processor Architecture Design Project
+- **CSE 166A** — Game Theory and Applications I
+- **CT 110** — Sensors, Signals, and Interaction
+- **CT 161** — Narration and Participation: Modes of Representation in Media
+- **CT 163** — Queer Art
+- **EART 107** — Remote Sensing of the Environment
+- **ECON 102** — Applied Macroeconomic Analysis
+- **ECON 122A** — International Finance
+- **ECON 129** — Urban and Regional Economics
+- **ECON 137** — Economics of the Environment
+- **ECON 155** — Public Finance
+- **ECON 172** — Economics of Energy
+- **ECON 173** — Environmental Policy
+- **ECON 176** — Economics of Developing Countries
+- **ECON 177** — International Trade and Development
+- **ECON 178** — Economic Growth and Development
+- **ECON 181** — Economics of Real Estate
+- **ECON 185** — Topics in Applied Economics
+- **ECON 187** — Economics and Policy Analysis
+- **ECON 189** — Special Topics in Economics
+- **ESCI 122** — Air Pollution
+- **HAVC 1** — Introduction to Visual Analysis
+- **HUMN 15** — Ethics and Technology
+- **HUMN 25** — Humans and Machines: A History
+- **HUMN 35** — Language Technology: Themes Across Cultures and Histories
+- **HUMN 45** — Race and Technology
+- **HUMN 55** — Technologies of Representation
+- **KRSG 12** — Reading Science Fiction: Octavia Butler and Ursula LeGuin
+- **KRSG 3** — Campus Natural History Practicum
+- **LALS 112** — Immigration and Assimilation
+- **LALS 127** — Genero, Nacion Y Modernidad En El Cine
+- **LALS 129** — America Latina: Cine, Dictadura y Memoria
+- **LALS 129S** — Memoria en Las Americas
+- **LALS 138** — Dancing the Americas
+- **LALS 139** — Queer Indigenous Histories in the Americas
+- **LALS 145** — Grassroots Social Change in Latin America
+- **LALS 154** — Juventud in Latin America
+- **LALS 156** — Human Rights and Transitional Justice in the Americas
+- **LALS 159** — Critical Approaches to International Development
+- **LALS 164** — Afro-Diasporic and Indigenous Spirituality
+- **LALS 179** — Environmental Racism in Latin America
+- **LALS 39** — Queer Indigenous Histories in the Americas
+- **LALS 78** — Dancing in the Americas
+- **METX 102** — Cell and Molecular Toxicology
+- **MUSC 54** — North Indian Music Workshop
+- **PHIL 140** — History of Ethics
+- **POLI 31** — Introduction to Latina/o/x Politics
+- **POLI 65** — Introduction to International Relations
+- **PSYC 101** — Topics in Developmental Psychology
+- **PSYC 60** — Introduction to Personality Psychology
+- **TIM 171** — Information Systems and Technology
+- **TIM 174** — Supply Chain Management
+- **TIM 176** — Technology Entrepreneurship
+- **TIM 177** — Technology Consulting
+- **TIM 178** — Managing Technology Innovation
+- **WRIT 2GS** — WRIT 2GS Rhetoric & Inquiry, Global Seminar

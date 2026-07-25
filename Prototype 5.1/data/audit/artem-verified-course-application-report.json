@@ -1,0 +1,258 @@
+{
+  "generatedAt": "2026-07-11T05:21:42.357Z",
+  "activeKeptOrUpdated": [
+    "ANTH 110IG",
+    "ANTH 130IG",
+    "CHEM 1A",
+    "CHEM 1C",
+    "CHEM 1M",
+    "CHEM 1N",
+    "CHEM 3A",
+    "CHEM 3B",
+    "CHEM 3BL",
+    "CHEM 3C",
+    "CHEM 3CL",
+    "CHEM 4A",
+    "CHEM 4AL",
+    "CHEM 4B",
+    "CHEM 4BL",
+    "CHEM 8A",
+    "CHEM 8B",
+    "CHEM 8L",
+    "CHEM 8M",
+    "CHEM 8N",
+    "CHEM 80H",
+    "CHEM 99",
+    "CHEM 99F",
+    "WRIT 2GS"
+  ],
+  "replacementMap": {
+    "CSE 109": [
+      "CSE 111"
+    ],
+    "CSE 116": [
+      "CSE 114A"
+    ],
+    "CSE 131": [
+      "CSE 130"
+    ],
+    "CSE 166A": [
+      "ECON 166A"
+    ],
+    "CT 110": [
+      "CT 167I"
+    ],
+    "CT 161": [
+      "CT 167N"
+    ],
+    "CT 163": [
+      "CT 167Q"
+    ],
+    "ECON 155": [
+      "ECON 150"
+    ],
+    "HUMN 15": [
+      "HTEC 15"
+    ],
+    "HUMN 25": [
+      "HTEC 25"
+    ],
+    "HUMN 35": [
+      "HTEC 35"
+    ],
+    "HUMN 45": [
+      "HTEC 45"
+    ],
+    "HUMN 55": [
+      "HTEC 55"
+    ],
+    "ART 10": [
+      "ART 10D",
+      "ART 10E",
+      "ART 10F"
+    ],
+    "CSE 104A": [
+      "CSE 104"
+    ],
+    "CSE 185": [
+      "CSE 185E"
+    ],
+    "CSE 185S": [
+      "CSE 185E"
+    ],
+    "ECON 110A": [
+      "ECON 110"
+    ],
+    "ECON 110B": [
+      "ECON 110"
+    ],
+    "ECON 160": [
+      "ECON 160A",
+      "ECON 160B"
+    ],
+    "ECON 166": [
+      "ECON 166A",
+      "ECON 166B"
+    ],
+    "FMST 194R": [
+      "CRES 190R"
+    ],
+    "FMST 194U": [
+      "CRES 190U"
+    ],
+    "FMST 194V": [
+      "CRES 190V"
+    ],
+    "METX 141": [
+      "METX 141L"
+    ],
+    "MUSC 11": [
+      "MUSC 11A",
+      "MUSC 11B",
+      "MUSC 11C",
+      "MUSC 11D",
+      "MUSC 11E"
+    ]
+  },
+  "deletedOldCodes": [
+    "AM 130",
+    "ART 10",
+    "ARTG 90",
+    "COWL 165",
+    "CRES 190S",
+    "CSE 104A",
+    "CSE 109",
+    "CSE 116",
+    "CSE 131",
+    "CSE 148",
+    "CSE 166A",
+    "CSE 185",
+    "CSE 185S",
+    "CT 110",
+    "CT 161",
+    "CT 163",
+    "EART 107",
+    "ECON 102",
+    "ECON 110A",
+    "ECON 110B",
+    "ECON 122A",
+    "ECON 129",
+    "ECON 137",
+    "ECON 155",
+    "ECON 160",
+    "ECON 166",
+    "ECON 172",
+    "ECON 173",
+    "ECON 176",
+    "ECON 177",
+    "ECON 178",
+    "ECON 181",
+    "ECON 185",
+    "ECON 187",
+    "ECON 189",
+    "ESCI 122",
+    "FMST 194R",
+    "FMST 194U",
+    "FMST 194V",
+    "HAVC 1",
+    "HAVC 186I",
+    "HIS 80A",
+    "HISC 80O",
+    "HUMN 15",
+    "HUMN 25",
+    "HUMN 35",
+    "HUMN 45",
+    "HUMN 55",
+    "KRSG 3",
+    "KRSG 12",
+    "LALS 39",
+    "LALS 78",
+    "LALS 80P",
+    "LALS 112",
+    "LALS 127",
+    "LALS 129",
+    "LALS 129S",
+    "LALS 138",
+    "LALS 139",
+    "LALS 143J",
+    "LALS 145",
+    "LALS 154",
+    "LALS 156",
+    "LALS 159",
+    "LALS 164",
+    "LALS 179",
+    "METX 102",
+    "METX 141",
+    "MUSC 11",
+    "MUSC 54",
+    "PHIL 140",
+    "POLI 31",
+    "POLI 65",
+    "PSYC 60",
+    "PSYC 101",
+    "PSYC 118A",
+    "PSYC 118B",
+    "TIM 171",
+    "TIM 174",
+    "TIM 176",
+    "TIM 177",
+    "TIM 178"
+  ],
+  "targetCoursesFetched": [
+    "ANTH 110IG",
+    "ANTH 130IG",
+    "ART 10D",
+    "ART 10E",
+    "ART 10F",
+    "CHEM 1A",
+    "CHEM 1C",
+    "CHEM 1M",
+    "CHEM 1N",
+    "CHEM 3A",
+    "CHEM 3B",
+    "CHEM 3BL",
+    "CHEM 3C",
+    "CHEM 3CL",
+    "CHEM 4A",
+    "CHEM 4AL",
+    "CHEM 4B",
+    "CHEM 4BL",
+    "CHEM 8A",
+    "CHEM 8B",
+    "CHEM 8L",
+    "CHEM 8M",
+    "CHEM 8N",
+    "CHEM 80H",
+    "CHEM 99",
+    "CHEM 99F",
+    "CRES 190R",
+    "CRES 190U",
+    "CRES 190V",
+    "CSE 104",
+    "CSE 111",
+    "CSE 114A",
+    "CSE 130",
+    "CSE 185E",
+    "CT 167I",
+    "CT 167N",
+    "CT 167Q",
+    "ECON 110",
+    "ECON 150",
+    "ECON 160A",
+    "ECON 160B",
+    "ECON 166A",
+    "ECON 166B",
+    "HTEC 15",
+    "HTEC 25",
+    "HTEC 35",
+    "HTEC 45",
+    "HTEC 55",
+    "METX 141L",
+    "MUSC 11A",
+    "MUSC 11B",
+    "MUSC 11C",
+    "MUSC 11D",
+    "MUSC 11E",
+    "WRIT 2GS"
+  ]
+}
