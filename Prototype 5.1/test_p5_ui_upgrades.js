@@ -84,7 +84,8 @@ function loadApp() {
       isReviewFormConfigured,
       openReviewForm,
       showStudentReviewPrompt,
-      promptForReviewAfterDownload
+      promptForReviewAfterDownload,
+      validateCollegeAffiliationBeforeNext: (typeof validateCollegeAffiliationBeforeNext === 'function' ? validateCollegeAffiliationBeforeNext : undefined)
     };`;
   vm.runInNewContext(appCode, context, { filename: 'js/app.js' });
   return context;
@@ -185,12 +186,13 @@ function testNavbarIncludesUcscRateMyProfessorsResourceButton() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
   assert(html.includes('href="https://www.ratemyprofessors.com/school/1078"'), 'navbar should link directly to the UC Santa Cruz Rate My Professors school page');
-  assert(html.includes('class="nav-rmp-link"'), 'Rate My Professors should be a visible navbar resource button');
+  assert(html.includes('class="nav-rmp-link"'), 'Rate My Professors should be a visible navbar resource link');
   assert(html.includes('target="_blank"'), 'external Rate My Professors link should open in a new tab');
   assert(html.includes('rel="noopener noreferrer"'), 'external Rate My Professors link should use safe noopener/noreferrer rel');
   assert(html.includes('aria-label="Open UC Santa Cruz on Rate My Professors"'), 'RMP navbar button should have a clear accessible label');
-  assert(css.includes('.nav-rmp-link'), 'navbar RMP link should have explicit styling so students notice it');
-  assert(css.includes('background: #FDC700'), 'navbar RMP link should use UCSC gold button styling');
+  assert(css.includes('.navbar-links button.nav-review-link'), 'review button should keep explicit highlighted styling');
+  assert(css.includes('.navbar-links button.nav-review-link {\n  background: #FDC700'), 'review button should use UCSC gold highlight styling');
+  assert(!css.includes('.navbar-links a.nav-rmp-link,\n.navbar-links button.nav-review-link'), 'RMP link should not be grouped with highlighted review button styling');
 }
 
 function testWordExportOptionIsRemovedFromScheduleAndLanding() {
@@ -246,6 +248,8 @@ function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
   assert(html.includes('check-ahi-us-history-half-year'), 'AH&I options should include half-year U.S. history');
   assert(html.includes('check-ahi-american-government-half-year'), 'AH&I options should include half-year American government');
   assert(html.includes('id="select-college-affiliation"'), 'Academic History should ask for the student\'s UCSC college affiliation');
+  assert(html.includes('id="select-college-affiliation" class="college-affiliation-select" required'), 'College affiliation should be marked required in the form');
+  assert(html.includes('id="college-affiliation-error"'), 'Academic History should include an inline error for missing college affiliation');
   assert(html.includes('id="check-college-core-completed"'), 'Academic History should ask whether required college core courses are completed');
   assert(html.includes('Stevenson College'), 'college affiliation choices should include Stevenson for the Fall + Winter core sequence');
   assert(html.includes('John R. Lewis College / College Ten'), 'college affiliation choices should include College Ten / John R. Lewis');
@@ -253,6 +257,23 @@ function testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions() {
   assert(css.includes('.checkbox-card'), 'checkbox-card styling should exist for easy-to-miss checkbox sections');
   assert(css.includes('border: 2px solid'), 'checkbox cards should have a visible border');
   assert(css.includes('.checkbox-card:has(input[type="checkbox"]:checked)'), 'checked checkbox cards should get a stronger selected state');
+  assert(css.includes('.form-error'), 'required college affiliation validation should have visible inline error styling');
+}
+
+function testCollegeAffiliationBlocksAcademicHistoryNextUntilSelected() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  const select = document.getElementById('select-college-affiliation');
+  const error = document.getElementById('college-affiliation-error');
+
+  assert.strictEqual(typeof __p5.validateCollegeAffiliationBeforeNext, 'function', 'Academic History should expose college-affiliation validation');
+  select.value = '';
+  assert.strictEqual(__p5.validateCollegeAffiliationBeforeNext(), false, 'missing college affiliation should block the Step 2 Next button');
+  assert(error.innerHTML.includes('College affiliation is required'), `missing college should show a clear error; got ${error.innerHTML}`);
+
+  select.value = 'cowell';
+  assert.strictEqual(__p5.validateCollegeAffiliationBeforeNext(), true, 'selected college affiliation should allow the student to continue');
+  assert.strictEqual(error.innerHTML, '', 'valid college selection should clear the inline error');
 }
 
 function testDragMoveCourseMutatesScheduleOnceAndRevalidates() {
@@ -282,6 +303,28 @@ function testDragMoveCourseMutatesScheduleOnceAndRevalidates() {
   assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.W, ['MATH 19A', 'CSE 20'], 'target quarter should receive the moved course at the end');
   assert.strictEqual(validateCalls, 1, 'drag/drop moves must trigger live schedule validation');
   assert.deepStrictEqual(renderCalls, ['schedule', 'requirements', 'alerts'], 'drag/drop should refresh schedule, requirements, and validation alerts');
+}
+
+function testDragCanReorderCoursesWithinSameQuarter() {
+  const context = loadApp();
+  const { __p5 } = context;
+  let validateCalls = 0;
+  context.Validator = { validateAll() { validateCalls += 1; return { allMet: true, major: [], ge: [], uc: [], prereqViolations: [] }; } };
+  context.renderSchedule = () => {};
+  context.renderRequirements = () => {};
+  context.showValidationAlerts = () => {};
+  __p5.AppState.schedule = [
+    { academicStart: 2026, quarters: { F: ['HIS 10B', 'MATH 19A', 'WRIT 2'], W: [], S: [] } }
+  ];
+
+  const movedToTop = __p5.moveCourseToQuarter('MATH 19A', 'F', 0, 'F', 0, 0);
+  assert.strictEqual(movedToTop, true, 'same-quarter drag with a target index should reorder the course');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['MATH 19A', 'HIS 10B', 'WRIT 2'], 'MATH 19A should move above HIS 10B');
+
+  const movedToBottom = __p5.moveCourseToQuarter('HIS 10B', 'F', 0, 'F', 0, 2);
+  assert.strictEqual(movedToBottom, true, 'same-quarter drag should also support moving a course downward');
+  assert.deepStrictEqual(__p5.AppState.schedule[0].quarters.F, ['MATH 19A', 'WRIT 2', 'HIS 10B'], 'HIS 10B should move to the bottom of the quarter');
+  assert.strictEqual(validateCalls, 2, 'quarter reordering should still revalidate and refresh the plan');
 }
 
 function testDragMoveIgnoresSameQuarterAndGapTargets() {
@@ -433,7 +476,8 @@ function testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields() {
   assert(body.includes('useful and accurate'), `review prompt should ask about schedule usefulness/accuracy; got ${body}`);
   assert(body.includes('Cool features'), `review prompt should ask for future feature ideas; got ${body}`);
   assert(body.includes('Optional email'), `review prompt should mention optional follow-up email; got ${body}`);
-  assert(body.includes('student ID numbers') && body.includes('sensitive personal information'), `review prompt should warn against sensitive info; got ${body}`);
+  assert(body.includes('fully anonymous'), `review prompt should tell students the form is fully anonymous; got ${body}`);
+  assert(!body.includes('Privacy reminder'), `review prompt should not show the old privacy-reminder label; got ${body}`);
 }
 
 function testReviewPromptUsesLiveGoogleFormUrlByDefault() {
@@ -478,7 +522,9 @@ const tests = [
   testLandingDoesNotClaimQuarterAvailabilityIsRespected,
   testGeneratedScheduleWarningUsesSelectedMajorCatalogLinkAndAvailabilityCaveat,
   testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions,
+  testCollegeAffiliationBlocksAcademicHistoryNextUntilSelected,
   testDragMoveCourseMutatesScheduleOnceAndRevalidates,
+  testDragCanReorderCoursesWithinSameQuarter,
   testDragMoveIgnoresSameQuarterAndGapTargets,
   testCourseCardsAndQuarterColumnsExposeDragDropUx,
   testValidationAlertsSurfacePrerequisiteViolationsAfterManualMoves,

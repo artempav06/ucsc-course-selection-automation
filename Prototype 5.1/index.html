@@ -245,8 +245,8 @@
         </div>
 
         <div class="form-group checkbox-card checkbox-card-college-core">
-          <label for="select-college-affiliation">College affiliation</label>
-          <select id="select-college-affiliation" class="college-affiliation-select">
+          <label for="select-college-affiliation">College affiliation <span class="required-marker">*</span></label>
+          <select id="select-college-affiliation" class="college-affiliation-select" required aria-describedby="college-core-summary college-affiliation-error">
             <option value="">Select your UCSC college</option>
             <option value="cowell">Cowell College</option>
             <option value="stevenson">Stevenson College</option>
@@ -262,6 +262,7 @@
           <p id="college-core-summary" class="form-hint checkbox-card-hint">
             Select your college to see the required first-year college core course.
           </p>
+          <p id="college-affiliation-error" class="form-error" role="alert" aria-live="polite"></p>
           <div class="checkbox-row checkbox-subrow college-core-completed-row">
             <input type="checkbox" id="check-college-core-completed">
             <label for="check-college-core-completed">I have completed my required college core course(s)</label>

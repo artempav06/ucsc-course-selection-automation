@@ -88,7 +88,6 @@ h1, h2, h3, h4 { line-height: 1.3; }
   text-decoration: none;
 }
 
-.navbar-links a.nav-rmp-link,
 .navbar-links button.nav-review-link {
   background: #FDC700;
   color: #003C6C;
@@ -100,8 +99,6 @@ h1, h2, h3, h4 { line-height: 1.3; }
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.navbar-links a.nav-rmp-link:hover,
-.navbar-links a.nav-rmp-link:focus,
 .navbar-links button.nav-review-link:hover,
 .navbar-links button.nav-review-link:focus {
   background: #FFE066;
@@ -347,6 +344,21 @@ h1, h2, h3, h4 { line-height: 1.3; }
   font-size: 12px;
   color: #6c757d;
   line-height: 1.5;
+}
+.required-marker {
+  color: #C62828;
+  font-weight: 800;
+}
+.form-error {
+  margin-top: 6px;
+  color: #C62828;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.form-group select.input-error {
+  border-color: #C62828;
+  background: #FFF5F5;
 }
 .sub-label {
   font-size: 12px !important;
@@ -1047,6 +1059,18 @@ h1, h2, h3, h4 { line-height: 1.3; }
   opacity: 0.5;
   transform: rotate(1deg) scale(0.98);
   box-shadow: 0 10px 24px rgba(0,60,108,0.22);
+  border-style: dashed;
+}
+
+.course-card.drag-over-card {
+  outline: 2px solid #F1B521;
+  outline-offset: 2px;
+  transform: translateY(-2px);
+}
+
+.course-card.drop-denied-card {
+  animation: drop-denied-shake 0.35s ease;
+  outline: 2px solid #C62828;
 }
 
 .quarter-column.drag-over {
@@ -1416,9 +1440,9 @@ h1, h2, h3, h4 { line-height: 1.3; }
   margin-bottom: 6px;
 }
 
-.privacy-reminder {
-  background: #FFF8E1;
-  border-left: 4px solid #FDC700;
+.anonymous-reminder {
+  background: #EAF7EA;
+  border-left: 4px solid #2E7D32;
   padding: 10px 12px;
   border-radius: 8px;
 }

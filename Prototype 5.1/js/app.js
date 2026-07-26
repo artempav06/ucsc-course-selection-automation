@@ -103,7 +103,7 @@ function showStudentReviewPrompt(source = "navbar") {
           <li>Cool features students would like us to add</li>
           <li>Optional email if the student wants follow-up</li>
         </ul>
-        <p class="privacy-reminder"><strong>Privacy reminder:</strong> please do not include student ID numbers, passwords, or sensitive personal information.</p>
+        <p class="anonymous-reminder"><strong>Anonymous feedback:</strong> this Google Form is fully anonymous, so responses are stored without collecting your name or email unless you choose to share contact information in an answer.</p>
         ${configured ? "" : reviewSetupInstructionsHtml()}
         <div class="review-actions">
           ${opener}
@@ -370,6 +370,7 @@ function initWizard() {
 
   // Step 2: Academic History
   document.getElementById("btn-wizard-next-2")?.addEventListener("click", () => {
+    if (!validateCollegeAffiliationBeforeNext()) return;
     AppState.profile.elwrSatisfied = document.getElementById("check-elwr").checked;
     AppState.profile.ahiFulfillment = collectAhiFulfillment();
     collectCollegeCoreFulfillment();
@@ -780,6 +781,25 @@ function allCollegeCoreCourseCodes() {
   return uniqueExistingCourseCodes(out);
 }
 
+function validateCollegeAffiliationBeforeNext() {
+  const select = document.getElementById("select-college-affiliation");
+  const error = document.getElementById("college-affiliation-error");
+  const selectedCollege = String(select?.value || "").trim();
+  if (selectedCollege) {
+    if (error) error.innerHTML = "";
+    select?.classList?.remove("input-error");
+    select?.removeAttribute?.("aria-invalid");
+    return true;
+  }
+  if (error) {
+    error.innerHTML = "College affiliation is required because every UCSC student has a college core requirement.";
+  }
+  select?.classList?.add("input-error");
+  select?.setAttribute?.("aria-invalid", "true");
+  select?.focus?.();
+  return false;
+}
+
 function collectCollegeCoreFulfillment() {
   const select = document.getElementById("select-college-affiliation");
   const completedCheck = document.getElementById("check-college-core-completed");
@@ -820,7 +840,10 @@ function initCollegeCoreFulfillmentUI() {
     summary.textContent = `${req.name} college core: ${labels.join("; ")}.`;
   };
 
-  select.addEventListener("change", update);
+  select.addEventListener("change", () => {
+    validateCollegeAffiliationBeforeNext();
+    update();
+  });
   update();
 }
 
@@ -1208,8 +1231,8 @@ function renderSchedule() {
       } else {
         wireQuarterDropTarget(quarterCol, q, yearIdx);
         // Course cards
-        courses.forEach(code => {
-          const card = createCourseCard(code, q, yearIdx);
+        courses.forEach((code, courseIndex) => {
+          const card = createCourseCard(code, q, yearIdx, courseIndex);
           quarterCol.appendChild(card);
         });
 
@@ -1239,18 +1262,19 @@ function renderSchedule() {
   });
 }
 
-function createCourseCard(code, quarterKey, yearIdx) {
+function createCourseCard(code, quarterKey, yearIdx, courseIndex = null) {
   const course = COURSES[code];
   const card = document.createElement("div");
   card.className = "course-card";
   card.dataset.code = code;
   card.dataset.quarter = quarterKey;
   card.dataset.year = yearIdx;
+  if (Number.isInteger(courseIndex)) card.dataset.index = String(courseIndex);
   card.setAttribute("draggable", "true");
   card.setAttribute("role", "button");
   card.setAttribute("tabindex", "0");
-  card.setAttribute("aria-label", `${code}: drag to another quarter, or press Enter for details`);
-  card.title = "Drag to another quarter, or click for details";
+  card.setAttribute("aria-label", `${code}: drag to another quarter or reorder within this quarter, or press Enter for details`);
+  card.title = "Drag to another quarter or reorder within this quarter, or click for details";
 
   // Get color based on student-facing course type
   const colors = courseTypeColors(code);
@@ -1297,13 +1321,40 @@ function createCourseCard(code, quarterKey, yearIdx) {
     card.classList.add("dragging");
     if (event.dataTransfer) {
       event.dataTransfer.effectAllowed = "move";
-      event.dataTransfer.setData("application/json", JSON.stringify({ code, quarterKey, yearIdx }));
+      event.dataTransfer.setData("application/json", JSON.stringify({ code, quarterKey, yearIdx, courseIndex }));
       event.dataTransfer.setData("text/plain", code);
     }
   });
   card.addEventListener("dragend", () => {
     card.classList.remove("dragging");
     clearQuarterDropHighlights();
+  });
+  card.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.dataTransfer) event.dataTransfer.dropEffect = "move";
+    card.classList.add("drag-over-card");
+  });
+  card.addEventListener("dragleave", () => {
+    card.classList.remove("drag-over-card");
+  });
+  card.addEventListener("drop", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    card.classList.remove("drag-over-card");
+    const dragged = readDraggedCourse(event);
+    clearQuarterDropHighlights();
+    if (!dragged?.code || dragged.code === code) return;
+    const targetIndex = Number.isInteger(courseIndex) ? courseIndex : parseInt(card.dataset.index, 10);
+    const moved = moveCourseToQuarter(
+      dragged.code,
+      dragged.quarterKey || dragged.quarter,
+      Number.isInteger(dragged.yearIdx) ? dragged.yearIdx : parseInt(dragged.year, 10),
+      quarterKey,
+      yearIdx,
+      Number.isInteger(targetIndex) ? targetIndex : undefined
+    );
+    if (!moved) card.classList.add("drop-denied-card");
   });
 
   return card;
@@ -1325,9 +1376,11 @@ function readDraggedCourse(event) {
 }
 
 function clearQuarterDropHighlights() {
-  document.querySelectorAll?.(".quarter-column.drag-over, .quarter-column.drop-denied")?.forEach(col => {
+  document.querySelectorAll?.(".quarter-column.drag-over, .quarter-column.drop-denied, .course-card.drag-over-card, .course-card.drop-denied-card")?.forEach(col => {
     col.classList.remove("drag-over");
     col.classList.remove("drop-denied");
+    col.classList.remove("drag-over-card");
+    col.classList.remove("drop-denied-card");
   });
 }
 
@@ -1515,12 +1568,13 @@ function refreshScheduleAfterManualEdit(toastMessage) {
   if (toastMessage) showScheduleEditToast(toastMessage);
 }
 
-function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, toYearIdx) {
+function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, toYearIdx, targetIndex = null) {
   if (!AppState.schedule || !code || code === "_GAP") return false;
   const sourceYearIdx = Number.isInteger(fromYearIdx) ? fromYearIdx : parseInt(fromYearIdx, 10);
   const targetYearIdx = Number.isInteger(toYearIdx) ? toYearIdx : parseInt(toYearIdx, 10);
+  const requestedTargetIndex = Number.isInteger(targetIndex) ? targetIndex : parseInt(targetIndex, 10);
+  const hasTargetIndex = Number.isInteger(requestedTargetIndex);
   if (!Number.isInteger(sourceYearIdx) || !Number.isInteger(targetYearIdx)) return false;
-  if (sourceYearIdx === targetYearIdx && fromQuarterKey === toQuarterKey) return false;
 
   const source = AppState.schedule[sourceYearIdx]?.quarters?.[fromQuarterKey];
   const target = AppState.schedule[targetYearIdx]?.quarters?.[toQuarterKey];
@@ -1529,9 +1583,21 @@ function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, to
 
   const sourceIdx = source.indexOf(code);
   if (sourceIdx === -1) return false;
+  const sameQuarter = sourceYearIdx === targetYearIdx && fromQuarterKey === toQuarterKey;
+  if (sameQuarter && !hasTargetIndex) return false;
 
   const targetLabel = `${QUARTER_LABELS[toQuarterKey] || toQuarterKey} ${quarterCalendarYear(toQuarterKey, AppState.schedule[targetYearIdx].academicStart)}`;
   const sourceLabel = `${QUARTER_LABELS[fromQuarterKey] || fromQuarterKey} ${quarterCalendarYear(fromQuarterKey, AppState.schedule[sourceYearIdx].academicStart)}`;
+
+  if (sameQuarter) {
+    const finalIndex = Math.max(0, Math.min(requestedTargetIndex, source.length - 1));
+    if (finalIndex === sourceIdx) return false;
+    source.splice(sourceIdx, 1);
+    source.splice(finalIndex, 0, code);
+    refreshScheduleAfterManualEdit(`${code} reordered within ${targetLabel}. Requirements, prerequisites, and units rechecked.`);
+    return true;
+  }
+
   const missingGroups = missingPrereqsForDrop(code, toQuarterKey, targetYearIdx);
   if (missingGroups.length > 0) {
     showPrerequisiteDropWarning(code, targetLabel, missingGroups);
@@ -1542,7 +1608,12 @@ function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, to
   const targetCreditsAfterMove = quarterUnits(target) + movedUnits;
   const sourceCreditsAfterMove = quarterUnits(source) - movedUnits;
   source.splice(sourceIdx, 1);
-  target.push(code);
+  if (hasTargetIndex) {
+    const insertIndex = Math.max(0, Math.min(requestedTargetIndex, target.length));
+    target.splice(insertIndex, 0, code);
+  } else {
+    target.push(code);
+  }
 
   refreshScheduleAfterManualEdit(`${code} moved to ${targetLabel}. Requirements, prerequisites, and units rechecked.`);
   const targetOverloaded = targetCreditsAfterMove > 19;
