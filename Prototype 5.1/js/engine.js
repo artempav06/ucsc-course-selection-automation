@@ -1026,13 +1026,16 @@ const Scheduler = {
     }
     if (!profile) return [];
     const termOrder = ["F", "W", "S", "SU"];
+    const selectedSummerYears = Array.isArray(profile.summerYears) && profile.summerYears.length > 0
+      ? new Set(profile.summerYears.map(y => parseInt(y, 10)).filter(Number.isFinite))
+      : null;
     const startYear = this.academicYear(profile.currentTerm || "F", profile.currentYear || 2026);
     const endYear = this.academicYear(profile.targetGradTerm || "S", profile.targetGradYear || (startYear + 4));
     const window = [];
     for (let academicStart = startYear; academicStart <= endYear; academicStart++) {
       for (const term of termOrder) {
-        if (term === "SU" && !profile.includeSummer) continue;
         const calYear = this.calendarYear(term, academicStart);
+        if (term === "SU" && (!profile.includeSummer || (selectedSummerYears && !selectedSummerYears.has(calYear)))) continue;
         if (this.compareTerm(term, calYear, profile.currentTerm || "F", profile.currentYear || 2026) < 0) continue;
         if (this.compareTerm(term, calYear, profile.targetGradTerm || "S", profile.targetGradYear || (startYear + 4)) > 0) continue;
         if (this.isGapTerm(profile, term, calYear)) continue;
@@ -1379,6 +1382,9 @@ const Scheduler = {
   placeIntoQuarters(courses, courseTypeMap, fillerPool, completedCourses, profile) {
     const placed = new Set(completedCourses);
     const includeSummer = profile.includeSummer || false;
+    const summerYears = Array.isArray(profile.summerYears)
+      ? profile.summerYears.map(y => parseInt(y, 10)).filter(Number.isFinite)
+      : null;
     // UCSC's normal maximum load is effectively 20 credits. The UI historically
     // defaulted to 19 to avoid accidental overloads, but many official engineering
     // planners require an occasional 20-credit quarter; treating 19 as a soft
@@ -1393,7 +1399,7 @@ const Scheduler = {
     const startLevel = profile.currentLevel   || 1;
     const studentType = profile.studentType   || "undergrad";
 
-    const schedule = this.buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer);
+    const schedule = this.buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer, summerYears);
     if (schedule.length === 0) return schedule;
 
     // GAP quarter handling. gapYear is a calendar year from the UI, so
@@ -2236,9 +2242,12 @@ const Scheduler = {
 
   // --- Year skeleton builder ---
 
-  buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer) {
+  buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer, summerYears = null) {
     const schedule = [];
     const levelNames = { 1: "Freshman", 2: "Sophomore", 3: "Junior", 4: "Senior", 5: "5th Year" };
+    const selectedSummerYears = Array.isArray(summerYears) && summerYears.length > 0
+      ? new Set(summerYears.map(y => parseInt(y, 10)).filter(Number.isFinite))
+      : null;
     const termOrder = includeSummer ? ["F", "W", "S", "SU"] : ["F", "W", "S"];
     const startIdx = termOrder.indexOf(curTerm);
     const safeStartIdx = startIdx >= 0 ? startIdx : 0;
@@ -2254,7 +2263,7 @@ const Scheduler = {
 
     for (let acad = startAcad; acad <= gradAcad; acad++) {
       const yearNum = acad - startAcad + startLevel;
-      const year = this.makeYearObj(acad, yearNum, studentType, curTerm, gradTerm, includeSummer);
+      const year = this.makeYearObj(acad, yearNum, studentType, curTerm, gradTerm, includeSummer, selectedSummerYears);
       if (acad === startAcad && safeStartIdx > 0) {
         for (let i = 0; i < safeStartIdx; i++) delete year.quarters[termOrder[i]];
       }
@@ -2269,10 +2278,11 @@ const Scheduler = {
     return schedule;
   },
 
-  makeYearObj(academicStart, levelNum, studentType, startTerm, endTerm, includeSummer) {
+  makeYearObj(academicStart, levelNum, studentType, startTerm, endTerm, includeSummer, selectedSummerYears = null) {
     const levelNames = { 1: "Freshman", 2: "Sophomore", 3: "Junior", 4: "Senior", 5: "5th Year" };
     const quarters = { F: [], W: [], S: [] };
-    if (includeSummer) quarters.SU = [];
+    const summerCalendarYear = academicStart + 1;
+    if (includeSummer && (!selectedSummerYears || selectedSummerYears.has(summerCalendarYear))) quarters.SU = [];
     return {
       label: `Year ${levelNum} (${levelNames[levelNum] || "Year " + levelNum})`,
       academicStart,

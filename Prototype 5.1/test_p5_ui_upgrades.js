@@ -85,6 +85,10 @@ function loadApp() {
       openReviewForm,
       showStudentReviewPrompt,
       promptForReviewAfterDownload,
+      scheduleReviewPromptAfterGeneration: (typeof scheduleReviewPromptAfterGeneration === 'function' ? scheduleReviewPromptAfterGeneration : undefined),
+      refreshGradYearDefault,
+      collectSelectedSummerYears: (typeof collectSelectedSummerYears === 'function' ? collectSelectedSummerYears : undefined),
+      summerCalendarYearsInWindow: (typeof summerCalendarYearsInWindow === 'function' ? summerCalendarYearsInWindow : undefined),
       validateCollegeAffiliationBeforeNext: (typeof validateCollegeAffiliationBeforeNext === 'function' ? validateCollegeAffiliationBeforeNext : undefined)
     };`;
   vm.runInNewContext(appCode, context, { filename: 'js/app.js' });
@@ -97,6 +101,29 @@ function testGraduationDurationCountsOnlyFallWinterSpring() {
   assert.strictEqual(__p5.quartersBetween('W', 2027, 'S', 2027), 2, 'Winter→Spring should be 2 planning quarters');
   assert.strictEqual(__p5.quartersBetween('F', 2026, 'F', 2027), 4, 'Fall→next Fall should skip Summer and count 4 F/W/S terms');
   assert.strictEqual(__p5.quartersBetween('SU', 2027, 'S', 2028), 3, 'Summer starts should not add a fourth planning quarter');
+}
+
+function testGraduationDefaultAutoSelectsFourYearSpringTarget() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  document.getElementById('select-current-term').value = 'F';
+  document.getElementById('select-current-year').value = '2026';
+  document.getElementById('select-grad-term').value = 'W';
+  document.getElementById('select-grad-year').value = '2028';
+
+  __p5.refreshGradYearDefault({ force: true });
+
+  assert.strictEqual(document.getElementById('select-grad-term').value, 'S', 'default target term should be Spring');
+  assert.strictEqual(document.getElementById('select-grad-year').value, '2030', 'Fall 2026 default should target Spring 2030');
+}
+
+function testSummerPickerLetsStudentsChooseSpecificSummerYears() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const app = fs.readFileSync(path.join(__dirname, 'js/app.js'), 'utf8');
+  assert(html.includes('id="summer-quarter-panel"'), 'graduation step should include a specific summer-quarter chooser panel');
+  assert(html.includes('id="summer-quarter-options"'), 'summer chooser should have a dynamic options container');
+  assert(app.includes('summerYears'), 'profile collection should store selected summer years');
+  assert(app.includes('collectSelectedSummerYears()'), 'Step 3 should collect selected summer years when summer is enabled');
 }
 
 function testMajorSpecificLowerDivisionSuggestionsDifferByMajor() {
@@ -457,27 +484,36 @@ function testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits() {
   assert(html.includes('special permission'), `warning should mention possible special permission; got ${html}`);
 }
 
-function testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields() {
-  const context = loadApp();
-  const { __p5, document } = context;
+function testNavbarReviewButtonOpensGoogleFormDirectly() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const css = fs.readFileSync(path.join(__dirname, 'css/style.css'), 'utf8');
 
   assert(html.includes('class="nav-review-link"'), 'navbar should include a visible Leave Review button');
-  assert(html.includes("showStudentReviewPrompt('navbar')"), 'navbar review button should open the student review prompt');
+  assert(html.includes('onclick="openReviewForm()"'), 'navbar review button should send students straight to the Google Form');
+  assert(!html.includes("showStudentReviewPrompt('navbar')"), 'navbar review button should not open the review pop-up anymore');
   assert(css.includes('.nav-review-link'), 'review navbar button should have explicit styling');
+}
 
-  __p5.showStudentReviewPrompt('navbar');
+function testReviewPromptIsShortAnonymousAndActionFocused() {
+  const context = loadApp();
+  const { __p5, document } = context;
+
+  __p5.showStudentReviewPrompt('pdf');
   const modal = document.getElementById('modal-warning');
   const body = document.getElementById('warning-content').innerHTML;
-  assert(modal.classList.contains('active'), 'review navbar action should open a modal');
-  assert(body.includes('Overall rating') && body.includes('1–10'), `review prompt should ask for a 1-10 rating; got ${body}`);
-  assert(body.includes('Selected major') && body.includes('student level'), `review prompt should ask contextual student questions; got ${body}`);
-  assert(body.includes('useful and accurate'), `review prompt should ask about schedule usefulness/accuracy; got ${body}`);
-  assert(body.includes('Cool features'), `review prompt should ask for future feature ideas; got ${body}`);
-  assert(body.includes('Optional email'), `review prompt should mention optional follow-up email; got ${body}`);
+  assert(modal.classList.contains('active'), 'download-triggered review action should open a modal');
+  assert(body.includes('Thanks for downloading your schedule'), `download prompt should keep the first thank-you paragraph; got ${body}`);
   assert(body.includes('fully anonymous'), `review prompt should tell students the form is fully anonymous; got ${body}`);
+  assert(body.includes('review-primary-action'), `review prompt should keep a clear form-opening button; got ${body}`);
+  assert(!body.includes('The review form asks for'), `review prompt should not explain every form question; got ${body}`);
+  assert(!body.includes('Overall rating'), `review prompt should not list the rating question anymore; got ${body}`);
   assert(!body.includes('Privacy reminder'), `review prompt should not show the old privacy-reminder label; got ${body}`);
+}
+
+function testReviewPromptSchedulesOneMinuteAfterScheduleGeneration() {
+  const app = fs.readFileSync(path.join(__dirname, 'js/app.js'), 'utf8');
+  assert(app.includes('scheduleReviewPromptAfterGeneration()'), 'schedule generation should arm a delayed review prompt');
+  assert(/setTimeout\(\(\)\s*=>\s*showStudentReviewPrompt\("generated"\),\s*60_?000\)/.test(app), 'generated-schedule prompt should wait one minute before showing');
 }
 
 function testReviewPromptUsesLiveGoogleFormUrlByDefault() {
@@ -511,6 +547,8 @@ function testConfiguredReviewFormOpensSafelyInNewTab() {
 
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
+  testGraduationDefaultAutoSelectsFourYearSpringTarget,
+  testSummerPickerLetsStudentsChooseSpecificSummerYears,
   testMajorSpecificLowerDivisionSuggestionsDifferByMajor,
   testCourseCardsUseRequirementTypeColors,
   testCourseDetailUsesDatabaseCatalogUrlAndNoRmpUi,
@@ -531,7 +569,9 @@ const tests = [
   testDragMoveBlockedWhenPrerequisitesWouldBeMissing,
   testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits,
   testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits,
-  testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields,
+  testNavbarReviewButtonOpensGoogleFormDirectly,
+  testReviewPromptIsShortAnonymousAndActionFocused,
+  testReviewPromptSchedulesOneMinuteAfterScheduleGeneration,
   testReviewPromptUsesLiveGoogleFormUrlByDefault,
   testConfiguredReviewFormOpensSafelyInNewTab
 ];

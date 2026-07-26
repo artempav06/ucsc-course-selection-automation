@@ -26,6 +26,7 @@ const AppState = {
     targetGradTerm: "S",       // target term the student wants to graduate in
     targetGradYear: 2028,      // target calendar year of graduation
     includeSummer: false,
+    summerYears: [],
     maxUnits: 19,
     minUnits: 12,
     concentration: null,
@@ -81,33 +82,26 @@ function reviewSetupInstructionsHtml() {
   `;
 }
 
-function showStudentReviewPrompt(source = "navbar") {
+function showStudentReviewPrompt(source = "generated") {
   const isDownload = source === "pdf" || source === "excel" || source === "download";
-  const title = isDownload ? "Before you go, could you leave a quick review?" : "Leave a student review";
+  const title = isDownload ? "Before you go, could you leave a quick review?" : "Could you leave a quick review?";
   const configured = isReviewFormConfigured();
   const opener = configured
     ? `<button class="btn-link review-primary-action" type="button" onclick="openReviewForm()">Open Review Form</button>`
     : `<button class="btn-link review-primary-action" type="button" onclick="showStudentReviewPrompt('setup')">Setup Needed</button>`;
+  const lead = isDownload
+    ? "Thanks for downloading your schedule!"
+    : "We want to hear from students who use this website.";
 
   showScheduleEditWarning(
     title,
     `
       <div class="schedule-warning-card review-invite-card">
-        <p>${isDownload ? "Thanks for downloading your schedule!" : "We want to hear from students who use this website."} Your honest feedback will help us make the scheduler more accurate, easier to use, and more helpful for future UCSC students.</p>
-        <p>The review form asks for:</p>
-        <ul>
-          <li><strong>Overall rating:</strong> 1–10</li>
-          <li><strong>Selected major</strong> and student level</li>
-          <li>Whether the generated schedule felt useful and accurate</li>
-          <li>What felt confusing, incorrect, or frustrating</li>
-          <li>Cool features students would like us to add</li>
-          <li>Optional email if the student wants follow-up</li>
-        </ul>
+        <p>${lead} Your honest feedback will help us make the scheduler more accurate, easier to use, and more helpful for future UCSC students.</p>
         <p class="anonymous-reminder"><strong>Anonymous feedback:</strong> this Google Form is fully anonymous, so responses are stored without collecting your name or email unless you choose to share contact information in an answer.</p>
         ${configured ? "" : reviewSetupInstructionsHtml()}
-        <div class="review-actions">
+        <div class="review-actions review-actions-centered">
           ${opener}
-          <span class="review-secondary-note">You can also close this window and review later from the top menu.</span>
         </div>
       </div>
     `,
@@ -117,6 +111,10 @@ function showStudentReviewPrompt(source = "navbar") {
 
 function promptForReviewAfterDownload(format = "download") {
   setTimeout(() => showStudentReviewPrompt(format), 350);
+}
+
+function scheduleReviewPromptAfterGeneration() {
+  setTimeout(() => showStudentReviewPrompt("generated"), 60_000);
 }
 
 const FALLBACK_COLLEGE_CORE_REQUIREMENTS = {
@@ -390,6 +388,7 @@ function initWizard() {
     AppState.profile.targetGradTerm = document.getElementById("select-grad-term").value;
     AppState.profile.targetGradYear = parseInt(document.getElementById("select-grad-year").value, 10);
     AppState.profile.includeSummer = document.getElementById("check-summer").checked;
+    AppState.profile.summerYears = AppState.profile.includeSummer ? collectSelectedSummerYears() : [];
 
     const maxUnitsValue = parseInt(document.getElementById("input-max-units")?.value, 10);
     AppState.profile.maxUnits = Number.isFinite(maxUnitsValue)
@@ -438,16 +437,23 @@ function initWizard() {
     });
   }
 
-  // Grad duration hint updates live when user changes grad term/year
+  // Grad duration hint and summer choices update live when user changes graduation preferences.
   ["select-grad-term", "select-grad-year"].forEach(id => {
-    document.getElementById(id)?.addEventListener("change", updateGradDurationHint);
+    document.getElementById(id)?.addEventListener("change", (event) => {
+      event.currentTarget.dataset.userEdited = "true";
+      updateGradDurationHint();
+      renderSummerQuarterChoices();
+    });
   });
   ["select-current-term", "select-current-year"].forEach(id => {
     document.getElementById(id)?.addEventListener("change", () => {
       refreshGradYearDefault();
       updateGradDurationHint();
+      renderSummerQuarterChoices();
     });
   });
+  document.getElementById("check-summer")?.addEventListener("change", renderSummerQuarterChoices);
+  renderSummerQuarterChoices();
 
   // Initialize completed courses checklist & search
   initCompletedCoursesUI();
@@ -513,20 +519,85 @@ function populateYearDropdowns() {
       const opt = document.createElement("option");
       opt.value = y;
       opt.textContent = y;
-      if (y === nowYear + 2) opt.selected = true; // sensible default
+      if (y === nowYear + 4) opt.selected = true; // default to a four-year plan
       gradSel.appendChild(opt);
     }
+    gradSel.value = String(nowYear + 4);
+    gradSel.dataset.autoDefaultYear = String(nowYear + 4);
   }
 }
 
-// Keep the target grad year from being before the current year
-function refreshGradYearDefault() {
+// Default the target graduation picker to a four-year Spring plan unless the
+// student has already intentionally changed it.
+function refreshGradYearDefault(options = {}) {
   const curYear = parseInt(document.getElementById("select-current-year")?.value, 10);
+  const gradTermSel = document.getElementById("select-grad-term");
   const gradSel = document.getElementById("select-grad-year");
   if (!curYear || !gradSel) return;
-  if (parseInt(gradSel.value, 10) < curYear) {
-    gradSel.value = curYear + 2;
+
+  const suggestedYear = curYear + 4;
+  const currentGradYear = parseInt(gradSel.value, 10);
+  const lastAutoDefaultYear = parseInt(gradSel.dataset.autoDefaultYear, 10);
+  const force = Boolean(options && options.force);
+  const shouldAutoDefault = force || !Number.isFinite(currentGradYear) || currentGradYear < curYear || currentGradYear === lastAutoDefaultYear;
+  if (!shouldAutoDefault) return;
+
+  if (gradTermSel) gradTermSel.value = "S";
+  gradSel.value = String(suggestedYear);
+  gradSel.dataset.autoDefaultYear = String(suggestedYear);
+}
+
+function summerCalendarYearsInWindow() {
+  const curTerm = document.getElementById("select-current-term")?.value || "F";
+  const curYear = parseInt(document.getElementById("select-current-year")?.value, 10);
+  const gradTerm = document.getElementById("select-grad-term")?.value || "S";
+  const gradYear = parseInt(document.getElementById("select-grad-year")?.value, 10);
+  if (!Number.isFinite(curYear) || !Number.isFinite(gradYear)) return [];
+
+  const years = [];
+  const startSummer = curTerm === "SU" ? curYear : curYear + 1;
+  const lastSummer = gradTerm === "SU" ? gradYear : gradYear - 1;
+  for (let y = startSummer; y <= lastSummer; y++) years.push(y);
+  return years;
+}
+
+function renderSummerQuarterChoices() {
+  const check = document.getElementById("check-summer");
+  const panel = document.getElementById("summer-quarter-panel");
+  const options = document.getElementById("summer-quarter-options");
+  if (!check || !panel || !options) return;
+  panel.style.display = check.checked ? "block" : "none";
+  if (!check.checked) return;
+
+  const existingChecked = new Set(Array.from(document.querySelectorAll?.(".summer-year-option") || [])
+    .filter(input => input.checked)
+    .map(input => parseInt(input.value, 10))
+    .filter(Number.isFinite));
+  const years = summerCalendarYearsInWindow();
+  options.innerHTML = "";
+  years.forEach(year => {
+    const label = document.createElement("label");
+    label.className = "summer-year-chip";
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.className = "summer-year-option";
+    input.value = String(year);
+    input.checked = existingChecked.size === 0 || existingChecked.has(year);
+    label.appendChild(input);
+    label.appendChild(document.createTextNode(` Summer ${year}`));
+    options.appendChild(label);
+  });
+  if (years.length === 0) {
+    options.innerHTML = `<p class="form-hint">No Summer quarters fall inside this graduation window.</p>`;
   }
+}
+
+function collectSelectedSummerYears() {
+  return Array.from(document.querySelectorAll?.(".summer-year-option") || [])
+    .filter(input => input.checked)
+    .map(input => parseInt(input.value, 10))
+    .filter(Number.isFinite)
+    .sort((a, b) => a - b);
 }
 
 // Show a friendly duration string under the target grad pickers
@@ -1143,6 +1214,7 @@ function generateAndShowSchedule() {
       renderRequirements();
       showValidationAlerts();
       showScheduleAccuracyWarning();
+      scheduleReviewPromptAfterGeneration();
     } catch (err) {
       console.error("Schedule generation error:", err);
       showView("schedule");

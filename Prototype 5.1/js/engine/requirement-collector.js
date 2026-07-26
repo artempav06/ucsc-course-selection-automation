@@ -210,6 +210,9 @@
   function planningQuarterWindow(profile) {
     if (!profile) return null;
     const includeSummer = !!profile.includeSummer;
+    const selectedSummerYears = Array.isArray(profile.summerYears) && profile.summerYears.length > 0
+      ? new Set(profile.summerYears.map(y => parseInt(y, 10)).filter(Number.isFinite))
+      : null;
     const currentTerm = profile.currentTerm || 'F';
     const currentYear = parseInt(profile.currentYear, 10) || new Date().getFullYear();
     const targetTerm = profile.targetGradTerm || 'S';
@@ -245,7 +248,8 @@
     let reachedTarget = false;
     for (let guard = 0; guard < 40; guard++) {
       const key = `${cur.year}-${cur.term}`;
-      if ((cur.term !== 'SU' || includeSummer) && !gapKeys.has(key)) quarters.push(cur.term);
+      const summerAllowed = cur.term !== 'SU' || (includeSummer && (!selectedSummerYears || selectedSummerYears.has(cur.year)));
+      if (summerAllowed && !gapKeys.has(key)) quarters.push(cur.term);
       if (cur.term === targetTerm && cur.year === targetYear) {
         reachedTarget = true;
         break;

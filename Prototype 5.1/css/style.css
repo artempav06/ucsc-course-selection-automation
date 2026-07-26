@@ -1463,10 +1463,19 @@ h1, h2, h3, h4 { line-height: 1.3; }
   margin-top: 14px;
 }
 
+.review-actions-centered {
+  justify-content: center;
+}
+
 .review-primary-action {
   background: #003C6C;
   color: #fff;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 13px 24px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(0, 60, 108, 0.18);
 }
 
 .review-primary-action:hover,
@@ -1991,6 +2000,41 @@ h1, h2, h3, h4 { line-height: 1.3; }
   color: #005A9E;
 }
 
+
+/* ---------- SUMMER QUARTER CHOOSER ---------- */
+
+.summer-quarter-panel {
+  margin-top: 12px;
+  padding: 14px;
+  background: #FFFDF3;
+  border: 1px solid #F1D27A;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(253, 199, 0, 0.14);
+}
+
+.summer-quarter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.summer-year-chip {
+  align-items: center;
+  display: inline-flex;
+  gap: 7px;
+  background: #fff;
+  border: 1px solid #E4C65F;
+  border-radius: 999px;
+  color: #3B3200;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 9px 13px;
+}
+
+.summer-year-chip input {
+  accent-color: #003C6C;
+}
 
 /* ---------- GAP PERIOD ---------- */
 

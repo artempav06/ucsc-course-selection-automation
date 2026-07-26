@@ -36,7 +36,7 @@
       <button
         class="nav-review-link"
         type="button"
-        onclick="showStudentReviewPrompt('navbar')"
+        onclick="openReviewForm()"
         aria-label="Leave feedback about the UCSC Course Selection Automation website"
         title="Leave a quick student review"
       >Leave Review</button>
@@ -310,6 +310,12 @@
           <div class="checkbox-row">
             <input type="checkbox" id="check-summer">
             <label for="check-summer">Include Summer Quarter</label>
+          </div>
+          <div id="summer-quarter-panel" class="summer-quarter-panel" style="display:none" role="dialog" aria-live="polite" aria-label="Choose specific summer quarters">
+            <p class="form-hint"><strong>Choose exactly which Summer quarters you want to include.</strong> Leave all selected if any summer is okay, or uncheck years you do not plan to take classes.</p>
+            <div id="summer-quarter-options" class="summer-quarter-options">
+              <!-- Populated by JS based on your current term and graduation target -->
+            </div>
           </div>
         </div>
 
