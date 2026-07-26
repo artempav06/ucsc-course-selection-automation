@@ -49,7 +49,7 @@ const AppState = {
 // ---------- STUDENT REVIEW / FEEDBACK CONFIG ----------
 // Phase 1 uses a Google Form connected to Google Sheets. Replace this
 // placeholder with Artem's live form link after the form is created.
-const REVIEW_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_GOOGLE_FORM_LINK";
+const REVIEW_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeffqrzPxMwABSSrgUZ7IIN3n43IUoyhx0LmVSFYf2WFc7_mg/viewform?usp=dialog";
 const REVIEW_FORM_PLACEHOLDER = "REPLACE_WITH_YOUR_GOOGLE_FORM_LINK";
 
 function reviewFormUrl() {

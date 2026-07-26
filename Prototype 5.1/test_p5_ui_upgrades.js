@@ -436,15 +436,20 @@ function testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields() {
   assert(body.includes('student ID numbers') && body.includes('sensitive personal information'), `review prompt should warn against sensitive info; got ${body}`);
 }
 
-function testReviewPromptShowsSetupUntilGoogleFormUrlIsConfigured() {
+function testReviewPromptUsesLiveGoogleFormUrlByDefault() {
   const context = loadApp();
   const { __p5, document } = context;
-  assert.strictEqual(__p5.isReviewFormConfigured(), false, 'placeholder review form URL should not count as configured');
+  assert.strictEqual(__p5.isReviewFormConfigured(), true, 'live Google Form URL should count as configured');
   __p5.showStudentReviewPrompt('pdf');
   const body = document.getElementById('warning-content').innerHTML;
   assert(body.includes('Thanks for downloading your schedule'), `download-triggered prompt should thank student after export; got ${body}`);
-  assert(body.includes('Review form setup needed'), `unconfigured form should show setup instructions; got ${body}`);
-  assert(body.includes('Google Sheets'), `setup note should mention Google Sheets storage; got ${body}`);
+  assert(!body.includes('Review form setup needed'), `configured form should not show setup instructions; got ${body}`);
+  __p5.openReviewForm();
+  assert.strictEqual(
+    context.__openedUrl.url,
+    'https://docs.google.com/forms/d/e/1FAIpQLSeffqrzPxMwABSSrgUZ7IIN3n43IUoyhx0LmVSFYf2WFc7_mg/viewform?usp=dialog',
+    'default review action should open Artem\'s live Google Form'
+  );
 }
 
 function testConfiguredReviewFormOpensSafelyInNewTab() {
@@ -481,7 +486,7 @@ const tests = [
   testDragMoveAllowedButWarnsWhenQuarterExceedsNineteenCredits,
   testDragMoveAllowedButWarnsWhenSourceDropsBelowTwelveCredits,
   testReviewPromptIsAvailableFromNavbarAndExplainsGoogleFormFields,
-  testReviewPromptShowsSetupUntilGoogleFormUrlIsConfigured,
+  testReviewPromptUsesLiveGoogleFormUrlByDefault,
   testConfiguredReviewFormOpensSafelyInNewTab
 ];
 
