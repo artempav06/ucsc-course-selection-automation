@@ -55,6 +55,37 @@ function buildContext() {
     addEventListener() {}
   };
   const context = { console, document, window: { scrollTo() {}, open(url, target, features) { context.__openedUrl = { url, target, features }; } }, setTimeout, clearTimeout };
+  context.Scheduler = {
+    buildYearSkeleton(curTerm, curYear, gradTerm, gradYear, startLevel, studentType, includeSummer, summerYears = []) {
+      const termOrder = includeSummer ? ['F', 'W', 'S', 'SU'] : ['F', 'W', 'S'];
+      const selectedSummerYears = Array.isArray(summerYears) && summerYears.length > 0
+        ? new Set(summerYears.map(y => parseInt(y, 10)).filter(Number.isFinite))
+        : null;
+      const academicYearOf = (term, year) => term === 'F' ? year : year - 1;
+      const startAcad = academicYearOf(curTerm, curYear);
+      const gradAcad = academicYearOf(gradTerm, gradYear);
+      const levelNames = { 1: 'Freshman', 2: 'Sophomore', 3: 'Junior', 4: 'Senior', 5: '5th Year' };
+      const schedule = [];
+      for (let acad = startAcad; acad <= gradAcad; acad++) {
+        const levelNum = acad - startAcad + startLevel;
+        const quarters = { F: [], W: [], S: [] };
+        const summerCalendarYear = acad + 1;
+        if (includeSummer && (!selectedSummerYears || selectedSummerYears.has(summerCalendarYear))) quarters.SU = [];
+        const year = { label: `Year ${levelNum} (${levelNames[levelNum] || 'Year ' + levelNum})`, academicStart: acad, levelNum, quarters };
+        if (acad === startAcad) {
+          const startIdx = termOrder.indexOf(curTerm);
+          for (let i = 0; i < Math.max(0, startIdx); i++) delete year.quarters[termOrder[i]];
+        }
+        if (acad === gradAcad) {
+          const gradIdx = termOrder.indexOf(gradTerm);
+          for (let i = (gradIdx >= 0 ? gradIdx : termOrder.length - 1) + 1; i < termOrder.length; i++) delete year.quarters[termOrder[i]];
+          if (year.quarters.SU && gradTerm !== 'SU') delete year.quarters.SU;
+        }
+        schedule.push(year);
+      }
+      return schedule;
+    }
+  };
   context.globalThis = context;
   return context;
 }
@@ -86,6 +117,10 @@ function loadApp() {
       showStudentReviewPrompt,
       promptForReviewAfterDownload,
       scheduleReviewPromptAfterGeneration: (typeof scheduleReviewPromptAfterGeneration === 'function' ? scheduleReviewPromptAfterGeneration : undefined),
+      setPlanningMode: (typeof setPlanningMode === 'function' ? setPlanningMode : undefined),
+      buildBlankScheduleForProfile: (typeof buildBlankScheduleForProfile === 'function' ? buildBlankScheduleForProfile : undefined),
+      startBlankScheduleConstructor: (typeof startBlankScheduleConstructor === 'function' ? startBlankScheduleConstructor : undefined),
+      showBlankScheduleRules: (typeof showBlankScheduleRules === 'function' ? showBlankScheduleRules : undefined),
       refreshGradYearDefault,
       collectSelectedSummerYears: (typeof collectSelectedSummerYears === 'function' ? collectSelectedSummerYears : undefined),
       summerCalendarYearsInWindow: (typeof summerCalendarYearsInWindow === 'function' ? summerCalendarYearsInWindow : undefined),
@@ -545,6 +580,65 @@ function testConfiguredReviewFormOpensSafelyInNewTab() {
   }, 'review form should open safely in a new tab');
 }
 
+function testLandingOffersPlanForMeAndBuildFromScratchChoices() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  assert(html.includes('id="btn-plan-for-me"'), 'landing page should expose a Plan for Me choice');
+  assert(html.includes('id="btn-build-from-scratch"'), 'landing page should expose a Build from Scratch choice');
+  assert(html.includes('Build from Scratch'), 'landing copy should name the blank-schedule constructor option');
+  assert(html.includes('Plan for Me'), 'landing copy should name the automatic schedule option');
+}
+
+function testPlanningModeButtonsSelectWizardMode() {
+  const context = loadApp();
+  const { __p5 } = context;
+  assert.strictEqual(typeof __p5.setPlanningMode, 'function', 'app should expose planning-mode selection helper');
+  __p5.setPlanningMode('blank');
+  assert.strictEqual(__p5.AppState.planningMode, 'blank', 'blank option should store constructor mode');
+  __p5.setPlanningMode('auto');
+  assert.strictEqual(__p5.AppState.planningMode, 'auto', 'auto option should store generated-schedule mode');
+}
+
+function testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty() {
+  const context = loadApp();
+  const { __p5 } = context;
+  assert.strictEqual(typeof __p5.buildBlankScheduleForProfile, 'function', 'blank constructor helper should exist');
+  const profile = {
+    ...__p5.AppState.profile,
+    currentTerm: 'F',
+    currentYear: 2026,
+    currentLevel: 1,
+    studentType: 'undergrad',
+    targetGradTerm: 'S',
+    targetGradYear: 2028,
+    includeSummer: true,
+    summerYears: [2027],
+    gapEnabled: true,
+    gapType: 'quarter',
+    gapTerm: 'W',
+    gapYear: 2027
+  };
+  const blank = __p5.buildBlankScheduleForProfile(profile);
+  const flat = [];
+  blank.forEach((year, yearIdx) => {
+    Object.entries(year.quarters).forEach(([term, courses]) => flat.push({ yearIdx, academicStart: year.academicStart, term, courses }));
+  });
+  assert(flat.some(q => q.term === 'SU' && q.academicStart === 2026), 'selected Summer 2027 should be present as an empty constructor quarter');
+  assert(flat.some(q => q.term === 'W' && q.academicStart === 2026 && q.courses[0] === '_GAP'), 'selected Winter 2027 gap should be preserved');
+  assert(flat.every(q => q.courses.length === 0 || q.courses[0] === '_GAP'), 'constructor schedule should contain no preplanned classes');
+}
+
+function testBlankScheduleRulesPopupIsShortAndActionable() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  assert.strictEqual(typeof __p5.showBlankScheduleRules, 'function', 'constructor should show a basic-rules popup');
+  __p5.showBlankScheduleRules();
+  const body = document.getElementById('warning-content').innerHTML;
+  assert(body.includes('Start with prerequisites'), `rules should mention prerequisites; got ${body}`);
+  assert(body.includes('Aim for 15–17 credits'), `rules should mention Artem's credit-first target; got ${body}`);
+  assert(body.includes('Use + Add Course'), `rules should tell students how to start adding courses; got ${body}`);
+  assert(body.includes('requirements tracker'), `rules should point to live requirement tracking; got ${body}`);
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testGraduationDefaultAutoSelectsFourYearSpringTarget,
@@ -573,7 +667,11 @@ const tests = [
   testReviewPromptIsShortAnonymousAndActionFocused,
   testReviewPromptSchedulesOneMinuteAfterScheduleGeneration,
   testReviewPromptUsesLiveGoogleFormUrlByDefault,
-  testConfiguredReviewFormOpensSafelyInNewTab
+  testConfiguredReviewFormOpensSafelyInNewTab,
+  testLandingOffersPlanForMeAndBuildFromScratchChoices,
+  testPlanningModeButtonsSelectWizardMode,
+  testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty,
+  testBlankScheduleRulesPopupIsShortAndActionable
 ];
 
 let passed = 0;

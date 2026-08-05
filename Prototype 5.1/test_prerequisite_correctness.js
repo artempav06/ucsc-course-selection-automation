@@ -104,12 +104,30 @@ function testMath19ADoesNotForcePrecalculusWhenPlacementAlternativesExist() {
   assert((COURSES['MATH 19A'].prereqs || []).length === 0, 'MATH 19A should not hard-require MATH 3 without placement/AP modeling');
 }
 
+function testMath19BOfficialCoursePrerequisiteAlternativesAreEncoded() {
+  // Official UCSC MATH 19B catalog page, checked 2026-07-26:
+  // https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-19b
+  // "MATH 11A or MATH 19A or MATH 20A or qualifying exam."
+  assert(hasGroup('MATH 19B', ['MATH 11A', 'MATH 19A', 'MATH 20A']), 'MATH 19B should require MATH 11A or MATH 19A or MATH 20A as encoded course alternatives');
+  assert((COURSES['MATH 19B'].officialPrereqText || '').includes('qualifying exam'), 'MATH 19B should preserve the official qualifying exam alternative in officialPrereqText');
+}
+
 function testMath23AOfficialCoursePrerequisiteAlternativesAreEncoded() {
   // Official UCSC MATH 23A catalog page, checked 2026-07-20:
   // https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/lower-division/math-23a
   // "MATH 19B or MATH 20B or qualifying AP exam."
   assert(hasGroup('MATH 23A', ['MATH 19B', 'MATH 20B']), 'MATH 23A should require MATH 19B or MATH 20B as encoded course alternatives');
   assert((COURSES['MATH 23A'].officialPrereqText || '').includes('qualifying AP exam'), 'MATH 23A should preserve the official AP exam alternative in officialPrereqText');
+}
+
+function testCmpmWritingCompositionPrerequisitesAreEncoded() {
+  // Official UCSC CMPM 80J and CMPM 130 pages, checked 2026-07-26:
+  // CMPM 80J: "Satisfaction of the Entry Level Writing and Composition requirements."
+  // CMPM 130: "satisfaction of the Entry Level Writing and Composition requirements."
+  // Local engine models Composition with WRIT 2; WRIT 2 itself requires WRIT 1/WRIT 1E or equivalent.
+  assert(hasGroup('CMPM 80J', ['WRIT 2']), 'CMPM 80J should require WRIT 2 to represent Entry Level Writing and Composition satisfaction');
+  assert(hasGroup('CMPM 130', ['WRIT 2']), 'CMPM 130 should require WRIT 2 to represent Entry Level Writing and Composition satisfaction');
+  assert((COURSES['CMPM 130'].restrictedMajors || []).includes('CSGD_BS'), 'CMPM 130 should preserve official Computer Science: Computer Game Design major restriction');
 }
 
 function testReverseLabCoreqCanShareQuarterWithLecture() {
@@ -163,6 +181,45 @@ function testOfficialCse186PrerequisitesDoNotPreserveStaleConcurrentRequirement(
   assert(!validation.prereqViolations.some(v => v.course === 'CSE 186'), 'CSE 186 should validate once official CSE 101/CSE 101P prerequisite is satisfied');
 }
 
+function testSupportedMajorWritingCompositionOnlyPrerequisitesAreEncoded() {
+  const supported = new Set();
+  for (const major of Object.values(MAJOR_REQUIREMENTS)) {
+    for (const category of major.categories || []) {
+      for (const code of category.courses || []) supported.add(code);
+      for (const group of category.groups || []) for (const code of group.courses || []) supported.add(code);
+    }
+  }
+  const missing = [];
+  for (const code of supported) {
+    const text = COURSES[code]?.officialPrereqText || '';
+    const hasOnlyWritingComposition = /Entry Level Writing and Composition/i.test(text)
+      && !/\b[A-Z]{2,5}\s?\d{1,3}[A-Z]?\b/.test(text);
+    if (hasOnlyWritingComposition && !hasGroup(code, ['WRIT 2'])) missing.push(code);
+  }
+  assert(missing.length === 0, `Supported-major courses whose only official prerequisite is Entry Level Writing and Composition should encode WRIT 2: ${missing.join(', ')}`);
+}
+
+function testSupportedMajorNoEmptyEncodedPrereqsWhenOfficialCourseRefsExist() {
+  const supported = new Set();
+  for (const major of Object.values(MAJOR_REQUIREMENTS)) {
+    for (const category of major.categories || []) {
+      for (const code of category.courses || []) supported.add(code);
+      for (const group of category.groups || []) for (const code of group.courses || []) supported.add(code);
+    }
+  }
+  const intentionalPlacementOrManualCases = new Set(['MATH 19A']);
+  const missing = [];
+  for (const code of supported) {
+    if (intentionalPlacementOrManualCases.has(code)) continue;
+    const text = COURSES[code]?.officialPrereqText || '';
+    const hasOfficialCourseRefs = /\b[A-Z]{2,5}\s?\d{1,3}[A-Z]?\b/.test(text);
+    const prereqs = COURSES[code]?.prereqs || [];
+    const concurrentPrereqs = COURSES[code]?.concurrentPrereqs || [];
+    if (hasOfficialCourseRefs && prereqs.length === 0 && concurrentPrereqs.length === 0) missing.push(code);
+  }
+  assert(missing.length === 0, `Supported-major courses with official course prerequisite references should not have empty encoded prereqs: ${missing.join(', ')}`);
+}
+
 function testSupportedMajorDefaultSchedulesHaveNoPrerequisiteViolations() {
   for (const major of Object.keys(MAJOR_REQUIREMENTS)) {
     const concentration = (CONCENTRATIONS.major[major] || [])[0]?.id || null;
@@ -194,9 +251,13 @@ const tests = [
   testCsBaGeneratedSchedulePlacesCse13sBeforeCse101,
   testValidatorFlagsChronologicalPrerequisiteViolations,
   testMath19ADoesNotForcePrecalculusWhenPlacementAlternativesExist,
+  testMath19BOfficialCoursePrerequisiteAlternativesAreEncoded,
   testMath23AOfficialCoursePrerequisiteAlternativesAreEncoded,
+  testCmpmWritingCompositionPrerequisitesAreEncoded,
   testReverseLabCoreqCanShareQuarterWithLecture,
   testOfficialCse186PrerequisitesDoNotPreserveStaleConcurrentRequirement,
+  testSupportedMajorWritingCompositionOnlyPrerequisitesAreEncoded,
+  testSupportedMajorNoEmptyEncodedPrereqsWhenOfficialCourseRefsExist,
   testSupportedMajorDefaultSchedulesHaveNoPrerequisiteViolations
 ];
 let failed = 0;

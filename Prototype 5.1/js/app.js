@@ -43,8 +43,9 @@ const AppState = {
       americanGovernmentHalfYear: false
     }
   },
-  schedule: null,              // generated schedule
-  validation: null             // validation results
+  schedule: null,              // generated or student-constructed schedule
+  validation: null,            // validation results
+  planningMode: "auto"         // auto | blank
 };
 
 // ---------- STUDENT REVIEW / FEEDBACK CONFIG ----------
@@ -292,13 +293,52 @@ function showView(viewName) {
 
 // ---------- LANDING PAGE ----------
 
+function updatePlanningModeCopy() {
+  const generateBtn = document.getElementById("btn-generate");
+  if (generateBtn && !generateBtn.dataset.originalLabel) {
+    const currentLabel = (generateBtn.textContent || "").trim();
+    const knownModeLabels = new Set(["", "Generate My Schedule", "Start Blank Schedule"]);
+    if (knownModeLabels.has(currentLabel)) {
+      generateBtn.textContent = AppState.planningMode === "blank"
+        ? "Start Blank Schedule"
+        : "Generate My Schedule";
+    }
+  }
+
+  const step4 = document.getElementById("wizard-step-4");
+  const desc = step4?.querySelector?.(".step-desc");
+  if (desc) {
+    desc.textContent = AppState.planningMode === "blank"
+      ? "Choose your focus areas so the live tracker knows what requirements to check, then start from empty quarters."
+      : "Choose your focus areas so the scheduler can personalize your generated plan.";
+  }
+}
+
+function setPlanningMode(mode = "auto") {
+  AppState.planningMode = mode === "blank" ? "blank" : "auto";
+  updatePlanningModeCopy();
+}
+
+function startPlanningWithMode(mode = "auto") {
+  setPlanningMode(mode);
+  showView("wizard");
+  showWizardStep(1);
+}
+
 function initLanding() {
+  const planForMeBtn = document.getElementById("btn-plan-for-me");
+  if (planForMeBtn) {
+    planForMeBtn.addEventListener("click", () => startPlanningWithMode("auto"));
+  }
+
+  const buildFromScratchBtn = document.getElementById("btn-build-from-scratch");
+  if (buildFromScratchBtn) {
+    buildFromScratchBtn.addEventListener("click", () => startPlanningWithMode("blank"));
+  }
+
   const startBtn = document.getElementById("btn-start");
   if (startBtn) {
-    startBtn.addEventListener("click", () => {
-      showView("wizard");
-      showWizardStep(1);
-    });
+    startBtn.addEventListener("click", () => startPlanningWithMode("auto"));
   }
 }
 
@@ -317,6 +357,7 @@ function showWizardStep(step) {
 
   // Update progress bar
   updateWizardProgress(step);
+  updatePlanningModeCopy();
 }
 
 function updateWizardProgress(step) {
@@ -414,7 +455,11 @@ function initWizard() {
   document.getElementById("btn-generate")?.addEventListener("click", () => {
     collectConcentrations();
     AppState.profile.autoSuggest = document.getElementById("check-auto-suggest").checked;
-    generateAndShowSchedule();
+    if (AppState.planningMode === "blank") {
+      startBlankScheduleConstructor();
+    } else {
+      generateAndShowSchedule();
+    }
   });
   document.getElementById("btn-wizard-back-4")?.addEventListener("click", () => showWizardStep(3));
 
@@ -1192,6 +1237,94 @@ function showGenerationError() {
     </div>
   `;
   alertBox.style.display = "block";
+}
+
+function gapQuarterKeysForProfile(profile) {
+  const gapKeys = new Set();
+  if (!profile?.gapEnabled || !profile.gapTerm || !profile.gapYear) return gapKeys;
+  const includeSummer = !!profile.includeSummer;
+  const gapBaseYear = parseInt(profile.gapYear, 10);
+  if (!Number.isFinite(gapBaseYear)) return gapKeys;
+  const addGapQuarter = (term, year) => gapKeys.add(`${year}-${term}`);
+  const nextQuarter = (term, year) => {
+    if (term === "F") return { term: "W", year: year + 1 };
+    if (term === "W") return { term: "S", year };
+    if (term === "S" && includeSummer) return { term: "SU", year };
+    if (term === "S") return { term: "F", year };
+    if (term === "SU") return { term: "F", year };
+    return { term: "F", year };
+  };
+
+  if (profile.gapType === "year") {
+    let cur = { term: profile.gapTerm, year: gapBaseYear };
+    const gapCount = includeSummer ? 4 : 3;
+    for (let i = 0; i < gapCount; i++) {
+      addGapQuarter(cur.term, cur.year);
+      cur = nextQuarter(cur.term, cur.year);
+    }
+  } else {
+    addGapQuarter(profile.gapTerm, gapBaseYear);
+  }
+  return gapKeys;
+}
+
+function buildBlankScheduleForProfile(profile = AppState.profile) {
+  const blank = Scheduler.buildYearSkeleton(
+    profile.currentTerm || "F",
+    profile.currentYear || new Date().getFullYear(),
+    profile.targetGradTerm || "S",
+    profile.targetGradYear || ((profile.currentYear || new Date().getFullYear()) + 4),
+    profile.currentLevel || 1,
+    profile.studentType || "undergrad",
+    !!profile.includeSummer,
+    Array.isArray(profile.summerYears) ? profile.summerYears : []
+  );
+
+  const gapKeys = gapQuarterKeysForProfile(profile);
+  blank.forEach(year => {
+    Object.keys(year.quarters || {}).forEach(term => {
+      const calYear = quarterCalendarYear(term, year.academicStart);
+      if (gapKeys.has(`${calYear}-${term}`)) {
+        year.quarters[term] = ["_GAP"];
+        year.gapQuarters = year.gapQuarters || new Set();
+        year.gapQuarters.add(term);
+      } else {
+        year.quarters[term] = [];
+      }
+    });
+  });
+  blank.courseTypeMap = new Map();
+  blank.isBlankConstructor = true;
+  return blank;
+}
+
+function showBlankScheduleRules() {
+  showScheduleEditWarning(
+    "Build your schedule from scratch",
+    `
+      <div class="schedule-warning-card constructor-rules-card">
+        <p>This starts with empty quarters. We will still track your selected major, GE, UC, completed courses, summer choices, and gap quarters live on the right side.</p>
+        <ul class="constructor-rules-list">
+          <li><strong>Start with prerequisites.</strong> Put required lower-division and prerequisite classes before advanced courses.</li>
+          <li><strong>Aim for 15–17 credits</strong> in normal Fall/Winter/Spring quarters when possible; avoid going over 19 without advisor approval.</li>
+          <li><strong>Use + Add Course</strong> in any non-gap quarter, then swap, remove, or drag classes as you refine the plan.</li>
+          <li><strong>Watch the requirements tracker.</strong> Missing requirements and prerequisite/order warnings update after every edit.</li>
+          <li><strong>Verify official availability.</strong> Check the UCSC Catalog and advising resources before enrolling.</li>
+        </ul>
+      </div>
+    `,
+    "info"
+  );
+}
+
+function startBlankScheduleConstructor() {
+  AppState.schedule = buildBlankScheduleForProfile(AppState.profile);
+  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
+  showView("schedule");
+  renderSchedule();
+  renderRequirements();
+  showValidationAlerts();
+  showBlankScheduleRules();
 }
 
 function generateAndShowSchedule() {

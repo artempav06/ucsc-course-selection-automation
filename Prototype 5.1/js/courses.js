@@ -537,6 +537,9 @@ const COURSES = {
         "AM 114",
         "STAT 131",
         "CSE 107"
+      ],
+      [
+        "WRIT 2"
       ]
     ],
     "ge": null,
@@ -632,7 +635,20 @@ const COURSES = {
     "title": "Senior Thesis Research",
     "units": 5,
     "division": "upper",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "AM 129"
+      ],
+      [
+        "AM 112"
+      ],
+      [
+        "AM 147"
+      ],
+      [
+        "AM 170A"
+      ]
+    ],
     "ge": null,
     "quarters": [
       "F",
@@ -647,7 +663,11 @@ const COURSES = {
       "FREE"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "AM 129 or AM 209, and AM 112, and AM 147, and AM 170A."
+    "officialPrereqText": "AM 129 or AM 209, and AM 112, and AM 147, and AM 170A.",
+    "prereqNotes": [
+      "Official alternative AM 209 is not encoded because no exact current UCSC catalog page/local course entry was found during the 2026-07-26 check.",
+      "Official prerequisite/eligibility text: AM 129 or AM 209, and AM 112, and AM 147, and AM 170A."
+    ]
   },
   "AM 198": {
     "concentrations": [],
@@ -21242,7 +21262,11 @@ const COURSES = {
     "title": "Games as Technical Culture",
     "units": 5,
     "division": "lower",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "WRIT 2"
+      ]
+    ],
     "ge": null,
     "quarters": [
       "F",
@@ -21612,13 +21636,20 @@ const COURSES = {
     "title": "User Interface and User Experience Design",
     "units": 5,
     "division": "upper",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "WRIT 2"
+      ]
+    ],
     "ge": null,
     "quarters": [
       "F",
       "W",
       "S",
       "SU"
+    ],
+    "restrictedMajors": [
+      "CSGD_BS"
     ],
     "enrollmentRestrictions": "Enrollment is restricted to computer science: computer game design majors.",
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-130",
@@ -28090,6 +28121,9 @@ const COURSES = {
       ],
       [
         "CSE 130"
+      ],
+      [
+        "WRIT 2"
       ]
     ],
     "ge": null,
@@ -28561,7 +28595,14 @@ const COURSES = {
     "title": "Capstone Project II",
     "units": 5,
     "division": "upper",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "CSE 121"
+      ],
+      [
+        "CSE 129A"
+      ]
+    ],
     "ge": "PR-E",
     "quarters": [
       "F",
@@ -28575,10 +28616,11 @@ const COURSES = {
       "FREE"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "CSE 121, CSE 121L, and CSE 129A. Previous or concurrent",
+    "officialPrereqText": "CSE 121, CSE 121L, and CSE 129A. Previous or concurrent enrollment in CSE 185.",
     "prereqNotes": [
-      "Official catalog includes prior/concurrent enrollment language. Clear concurrent course requirements are encoded in concurrentPrereqs; ambiguous cases remain noted.",
-      "Official prerequisite/eligibility text: CSE 121, CSE 121L, and CSE 129A. Previous or concurrent"
+      "Official prerequisite references CSE 121L and previous-or-concurrent CSE 185, but no exact current UCSC catalog page/local course entry was found for those codes during the 2026-07-26 check; encoded current local course prerequisites CSE 121 and CSE 129A.",
+      "Official catalog includes prior/concurrent enrollment language. Clear concurrent course requirements are encoded in concurrentPrereqs; ambiguous or missing-local-course cases remain noted.",
+      "Official prerequisite/eligibility text: CSE 121, CSE 121L, and CSE 129A. Previous or concurrent enrollment in CSE 185."
     ]
   },
   "CSE 129C": {
@@ -29930,7 +29972,11 @@ const COURSES = {
     "title": "Senior Thesis",
     "units": 5,
     "division": "upper",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "WRIT 2"
+      ]
+    ],
     "ge": null,
     "quarters": [
       "F",
@@ -34119,6 +34165,9 @@ const COURSES = {
         "ECE 121",
         "ECE 157",
         "ECE 173"
+      ],
+      [
+        "WRIT 2"
       ]
     ],
     "ge": null,
@@ -34149,6 +34198,9 @@ const COURSES = {
     "prereqs": [
       [
         "ECE 129A"
+      ],
+      [
+        "WRIT 2"
       ]
     ],
     "ge": "PR-E",
@@ -34179,6 +34231,9 @@ const COURSES = {
     "prereqs": [
       [
         "ECE 129B"
+      ],
+      [
+        "WRIT 2"
       ]
     ],
     "ge": null,
@@ -35440,7 +35495,11 @@ const COURSES = {
     "title": "Senior Thesis Research",
     "units": 5,
     "division": "upper",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "WRIT 2"
+      ]
+    ],
     "ge": null,
     "quarters": [
       "F",
@@ -73806,7 +73865,13 @@ const COURSES = {
     "title": "Calculus for Science, Engineering, and Mathematics",
     "units": 5,
     "division": "lower",
-    "prereqs": [],
+    "prereqs": [
+      [
+        "MATH 11A",
+        "MATH 19A",
+        "MATH 20A"
+      ]
+    ],
     "ge": "MF",
     "quarters": [
       "F",
