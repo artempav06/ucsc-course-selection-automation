@@ -1,35 +1,40 @@
 # Prototype 4 Current Handoff
 
-_Last updated: 2026-07-20 after Prototype 5 college-core requirement-tracker integration, generated-schedule warning/export cleanup, and focused/full JS regression checks._
+_Last updated: 2026-08-04 after Prototype 5.1 course-search findability fix for Academic History plus generated-schedule add/swap modals._
 
-## Prototype 5 Latest Handoff
+## Prototype 5.1 Latest Handoff
 
-Active workspace is now Prototype 5 at:
+Active workspace is now Prototype 5.1 at:
 
-`/home/artem/projects/ucsc-course-selection-automation/Prototype 5 Website - source code/`
+`/home/artem/projects/ucsc-course-selection-automation/Prototype 5.1/`
 
 Latest batch completed:
 
-- Removed the Word download option from the generated schedule UI; PDF and Excel remain.
-- Added generated-schedule advising warning language with selected-major UCSC Catalog requirement link and course-quarter availability caveat.
-- Added college-core handling as an explicit requirement when a student chooses a UCSC college affiliation: the normalized requirement set now includes `PROFILE:COLLEGE_CORE`, validation exposes `collegeCore` / `allCollegeCoreMet`, `allMet` is blocked when the selected college core is missing, the Requirement Tracker shows a College Core section, and validation alerts surface missing college-core courses.
-- Confirmed college-core placement policy: non-Stevenson college core is planned in freshman Fall; Stevenson plans `STEV 1` in freshman Fall and `STEV 2` in freshman Winter unless already completed.
-- Added regressions in `test_scheduler_requirement_set.js` and `test_ui_profile_flow.js` for all-major college-core requirement availability, affiliation-specific validation, freshman-quarter placement, and Requirement Tracker rendering.
+- Fixed Academic History manual course search so the helper lowercases raw queries itself and exact/compact code queries such as `AM 100` and `AM100` find database courses reliably.
+- Fixed generated-schedule `+ Add Course` and `Swap Course` modal search so intentional typed queries search the whole real-course database by exact/compact code or title instead of hiding matches solely because the default recommendation filters considered the course unavailable for that quarter, missing prerequisites, or profile-restricted.
+- Preserved default empty-query add/swap recommendations as filtered top-30 “available/prereqs met” suggestions; the broadened all-database behavior only activates when the student types a query. Existing FREE placeholder search behavior remains special-cased through `manualFreeCourseSuggestions`.
+- Added `test_course_search_findability.js`, which verifies every non-`FREE` course in `COURSES` is findable by exact code and compact no-space code in Academic History search, generated-schedule add search, and generated-schedule swap search.
 
-Verified from Prototype 5:
+Verified from Prototype 5.1:
 
 ```bash
-node test_scheduler_requirement_set.js      # 10/10 passed
+node test_course_search_findability.js      # 6/6 passed
+node test_manual_free_course_search.js      # 2/2 passed
+node test_phase_a_preferences.js            # 20/20 passed
 node test_ui_profile_flow.js                # 14/14 passed
-node test_requirement_collector.js          # 35/35 passed
 ```
 
-Additional verification already run in this batch:
+Browser smoke from `file:///home/artem/projects/ucsc-course-selection-automation/Prototype%205.1/index.html` verified:
 
-- `for f in test_*.js; do node "$f"; done` progressed through many tests, but timed out at the long suite boundary before `test_requirement_collector.js`; rerunning `test_requirement_collector.js` separately passed.
-- Follow-up explicit run passed: `test_requirement_normalizer.js`, `test_requirement_normalizer_runtime.js`, `test_responsive_css.js`, `test_schedule_policy_audit.js`, `test_schedule_regression.js`, `test_scheduler_requirement_set.js`, `test_smoke.js`, `test_toposort.js`, `test_ui_profile_flow.js`, and `test_warning_triage_diagnostics.js`.
+- Academic History search for `AM100` rendered `AM 100 — Mathematical Methods for Engineers`.
+- Generated-schedule add-course modal search for `CSE140` rendered `CSE 140: Artificial Intelligence` even from a Fall quarter with no completed prerequisites.
+- Generated-schedule swap modal search for `AM100` rendered `AM 100: Mathematical Methods for Engineers`.
 
-Next continuation should start by checking current `git diff` in Prototype 5, then continue from any remaining Artem requests rather than the older Prototype 4 sections below.
+Known unrelated verification note:
+
+- Broad `for f in test_*.js; do node "$f" || exit 1; done` passed through the new search test, credit-first tests, and data validation, then stopped at existing `test_edge_scenarios.js` failure: `CS_BS web schedule can finish in Winter instead of leaving an unplanned final Winter gap before Spring` expected Winter 2030 but got Spring 2030. This search-change batch did not touch generated schedule placement logic.
+
+Next continuation should start by checking current `git diff` in Prototype 5.1, then continue from any remaining Artem requests rather than the older Prototype 4 sections below.
 
 ## Prototype 4 Historical Handoff
 

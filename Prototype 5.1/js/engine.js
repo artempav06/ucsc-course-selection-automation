@@ -2330,6 +2330,23 @@ const Scheduler = {
     return score;
   },
 
+  manualSearchScore(code, course, query) {
+    const q = (query || "").toLowerCase().trim();
+    if (!q || !course) return 0;
+    const queryStripped = q.replace(/\s+/g, "");
+    const codeLower = code.toLowerCase();
+    const codeStripped = codeLower.replace(/\s+/g, "");
+    const titleLower = (course.title || "").toLowerCase();
+    if (codeLower === q) return 1200;
+    if (codeStripped === queryStripped) return 1150;
+    if (codeLower.startsWith(q)) return 1000;
+    if (codeStripped.startsWith(queryStripped)) return 950;
+    if (codeLower.includes(q)) return 800;
+    if (titleLower.startsWith(q)) return 700;
+    if (titleLower.includes(q)) return 500;
+    return 0;
+  },
+
   manualSuggestionReasons(code, profile, replacedCourse, quarter, completedCourses) {
     const course = COURSES[code];
     if (!course) return [];
@@ -2377,20 +2394,25 @@ const Scheduler = {
     for (const [code, c] of Object.entries(COURSES)) {
       if (code === courseCode || placedSet.has(code)) continue;
       if (code.startsWith("FREE")) continue;
-      if (!this.isCourseAllowedForProfile(code, profile)) continue;
-      if (!c.quarters.includes(quarter)) continue;
-      if (!Validator.prereqsMet(c.prereqs, completedSet)) continue;
-      if (q && !code.toLowerCase().includes(q) && !(c.title || "").toLowerCase().includes(q)) continue;
+      const searchScore = this.manualSearchScore(code, c, q);
+      if (q) {
+        if (searchScore <= 0) continue;
+      } else {
+        if (!this.isCourseAllowedForProfile(code, profile)) continue;
+        if (!c.quarters.includes(quarter)) continue;
+        if (!Validator.prereqsMet(c.prereqs, completedSet)) continue;
+      }
       candidates.push({
         code, title: c.title, units: c.units, desc: c.desc,
         ge: c.ge, rmpScore: c.rmpScore || 0, sections: c.section,
         section: c.section, division: c.division,
+        searchScore,
         preferenceScore: this.manualSuggestionScore(code, profile, course),
         reasons: this.manualSuggestionReasons(code, profile, course, quarter, placedCodes)
       });
     }
-    candidates.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
-    return candidates.slice(0, 30);
+    candidates.sort((a, b) => (b.searchScore - a.searchScore) || (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code, undefined, { numeric: true }));
+    return q ? candidates : candidates.slice(0, 30);
   },
 
   manualFreeCourseSuggestions(plannedSet, query) {
@@ -2435,19 +2457,24 @@ const Scheduler = {
     for (const [code, c] of Object.entries(COURSES)) {
       if (plannedSet.has(code)) continue;
       if (code.startsWith("FREE")) continue;
-      if (!this.isCourseAllowedForProfile(code, profile)) continue;
-      if (!c.quarters.includes(quarter)) continue;
-      if (!Validator.prereqsMet(c.prereqs, completedSet)) continue;
-      if (q && !code.toLowerCase().includes(q) && !(c.title || "").toLowerCase().includes(q)) continue;
+      const searchScore = this.manualSearchScore(code, c, q);
+      if (q) {
+        if (searchScore <= 0) continue;
+      } else {
+        if (!this.isCourseAllowedForProfile(code, profile)) continue;
+        if (!c.quarters.includes(quarter)) continue;
+        if (!Validator.prereqsMet(c.prereqs, completedSet)) continue;
+      }
       results.push({
         code, title: c.title, units: c.units, desc: c.desc,
         ge: c.ge, rmpScore: c.rmpScore || 0, section: c.section, division: c.division,
+        searchScore,
         preferenceScore: this.manualSuggestionScore(code, profile, null),
         reasons: this.manualSuggestionReasons(code, profile, null, quarter, placedCodes)
       });
     }
-    results.sort((a, b) => (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code));
-    return results.slice(0, 30);
+    results.sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0) || (b.preferenceScore - a.preferenceScore) || (b.rmpScore - a.rmpScore) || a.code.localeCompare(b.code, undefined, { numeric: true }));
+    return q ? results : results.slice(0, 30);
   },
 
   _countUnits(planCodes, completedSet, profile) {

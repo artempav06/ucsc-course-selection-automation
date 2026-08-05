@@ -1026,23 +1026,27 @@ function initCourseSearch() {
 
 function searchCourses(query) {
   const results = [];
+  const q = (query || "").toLowerCase().trim();
+  const queryStripped = q.replace(/\s+/g, "");
+  if (!q) return results;
   for (const [code, course] of Object.entries(COURSES)) {
     if (code.startsWith("FREE")) continue;
     const codeLower  = code.toLowerCase();
     const titleLower = (course.title || "").toLowerCase();
     // Allow "cse20" to match "CSE 20"
     const codeStripped = codeLower.replace(/\s+/g, "");
-    const queryStripped = query.replace(/\s+/g, "");
 
     let score = 0;
-    if (codeLower.startsWith(query)) score = 100;
+    if (codeLower === q) score = 120;
+    else if (codeStripped === queryStripped) score = 115;
+    else if (codeLower.startsWith(q)) score = 100;
     else if (codeStripped.startsWith(queryStripped)) score = 95;
-    else if (codeLower.includes(query)) score = 80;
-    else if (titleLower.startsWith(query)) score = 70;
-    else if (titleLower.includes(query)) score = 50;
+    else if (codeLower.includes(q)) score = 80;
+    else if (titleLower.startsWith(q)) score = 70;
+    else if (titleLower.includes(q)) score = 50;
     if (score > 0) results.push({ code, course, score });
   }
-  results.sort((a, b) => b.score - a.score);
+  results.sort((a, b) => (b.score - a.score) || a.code.localeCompare(b.code, undefined, { numeric: true }));
   return results;
 }
 
