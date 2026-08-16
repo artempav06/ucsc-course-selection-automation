@@ -28743,6 +28743,38 @@ const COURSES = {
     "rmpScore": 3.4,
     "officialPrereqText": "CSE 120."
   },
+  "CSE 136": {
+    "concentrations": [
+      "cs_systems",
+      "ndt_networks",
+      "tim_systems_eng"
+    ],
+    "title": "Cloud Computing",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CSE 130"
+      ],
+      [
+        "CSE 138"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-136",
+    "desc": "In-depth exploration of distributed systems principles and advanced operating system concepts essential for building and deploying a data center operating system (i.e., a \"cloud\"). Topics include client-server programming, distributed scheduling, virtualization (VMs, Containers), cloud computing frameworks (e.g., Kubernetes, Mesos, Docker), distributed storage, security in distributed systems, middleware for distributed environments, ubiquitous computing, and applications such as the Internet of Things, web services, big data, and peer-to-peer systems.",
+    "section": [
+      "BREADTH_B"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 130 and CSE 138 .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 130 and CSE 138 .",
+      "Official enrollment/restriction text: restricted to juniors and seniors."
+    ],
+    "enrollmentText": "restricted to juniors and seniors."
+  },
   "CSE 138": {
     "concentrations": [
       "ce_networks",

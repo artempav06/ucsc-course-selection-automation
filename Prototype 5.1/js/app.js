@@ -1024,27 +1024,51 @@ function initCourseSearch() {
   });
 }
 
-function searchCourses(query) {
-  const results = [];
-  const q = (query || "").toLowerCase().trim();
-  const queryStripped = q.replace(/\s+/g, "");
-  if (!q) return results;
-  for (const [code, course] of Object.entries(COURSES)) {
-    if (code.startsWith("FREE")) continue;
-    const codeLower  = code.toLowerCase();
-    const titleLower = (course.title || "").toLowerCase();
-    // Allow "cse20" to match "CSE 20"
-    const codeStripped = codeLower.replace(/\s+/g, "");
+function graduateCourseCatalog() {
+  return (typeof GRADUATE_COURSES !== "undefined" && GRADUATE_COURSES) ? GRADUATE_COURSES : {};
+}
 
-    let score = 0;
-    if (codeLower === q) score = 120;
-    else if (codeStripped === queryStripped) score = 115;
-    else if (codeLower.startsWith(q)) score = 100;
-    else if (codeStripped.startsWith(queryStripped)) score = 95;
-    else if (codeLower.includes(q)) score = 80;
-    else if (titleLower.startsWith(q)) score = 70;
-    else if (titleLower.includes(q)) score = 50;
-    if (score > 0) results.push({ code, course, score });
+function courseByCode(code) {
+  return COURSES[code] || graduateCourseCatalog()[code] || null;
+}
+
+function isSearchOnlyCourse(code) {
+  const c = graduateCourseCatalog()[code];
+  return Boolean(c && (c.searchOnly || c.catalogLevel === "graduate" || c.division === "graduate"));
+}
+
+function allSearchableCourses() {
+  return [
+    ...Object.entries(COURSES).map(([code, course]) => ({ code, course, source: "undergraduate" })),
+    ...Object.entries(graduateCourseCatalog()).map(([code, course]) => ({ code, course, source: "graduate" }))
+  ];
+}
+
+function courseSearchScore(code, course, query) {
+  const q = (query || "").toLowerCase().trim();
+  if (!q || !course) return 0;
+  const queryStripped = q.replace(/\s+/g, "");
+  const codeLower  = code.toLowerCase();
+  const titleLower = (course.title || "").toLowerCase();
+  const codeStripped = codeLower.replace(/\s+/g, "");
+  if (codeLower === q) return 120;
+  if (codeStripped === queryStripped) return 115;
+  if (codeLower.startsWith(q)) return 100;
+  if (codeStripped.startsWith(queryStripped)) return 95;
+  if (codeLower.includes(q)) return 80;
+  if (titleLower.startsWith(q)) return 70;
+  if (titleLower.includes(q)) return 50;
+  return 0;
+}
+
+function searchCourses(query) {
+  const q = (query || "").toLowerCase().trim();
+  if (!q) return [];
+  const results = [];
+  for (const { code, course, source } of allSearchableCourses()) {
+    if (code.startsWith("FREE")) continue;
+    const score = courseSearchScore(code, course, q);
+    if (score > 0) results.push({ code, course, score, source });
   }
   results.sort((a, b) => (b.score - a.score) || a.code.localeCompare(b.code, undefined, { numeric: true }));
   return results;
@@ -1056,15 +1080,17 @@ function renderSearchResults(matches, container, input) {
     container.classList.add("active");
     return;
   }
-  container.innerHTML = matches.map(({ code, course }) => {
+  container.innerHTML = matches.map(({ code, course, source }) => {
     const already = AppState.profile.completedCourses.includes(code);
+    const searchOnly = source === "graduate" || isSearchOnlyCourse(code);
     return `
-      <div class="search-result ${already ? "already" : ""}" data-code="${code}">
+      <div class="search-result ${already ? "already" : ""} ${searchOnly ? "search-only" : ""}" data-code="${code}">
         <div class="search-result-main">
-          <strong>${code}</strong> &mdash; ${course.title}
+          <strong>${escHTML(code)}</strong> &mdash; ${escHTML(course.title)}
           <span class="search-result-units">${course.units} units</span>
+          ${searchOnly ? '<span class="search-result-badge search-only-badge">Graduate / search-only</span>' : ""}
         </div>
-        <div class="search-result-meta">${course.desc ? course.desc.slice(0, 80) + (course.desc.length > 80 ? "..." : "") : ""}</div>
+        <div class="search-result-meta">${course.desc ? escHTML(course.desc.slice(0, 80)) + (course.desc.length > 80 ? "..." : "") : ""}</div>
         ${already ? '<div class="search-result-badge">Added</div>' : ""}
       </div>
     `;
@@ -1087,11 +1113,41 @@ function renderSearchResults(matches, container, input) {
 
 // ---------- COMPLETED COURSES STATE ----------
 
+function restrictionWarningHtmlForCourse(code) {
+  const course = courseByCode(code);
+  if (!course || !isSearchOnlyCourse(code)) return "";
+  const warnings = [];
+  warnings.push("Graduate/search-only course: this course is available for manual review/search, but it is not used by the undergraduate automatic scheduler.");
+  const rawPieces = [
+    course.enrollmentText,
+    course.enrollmentRestrictions,
+    course.officialPrereqText,
+    ...(Array.isArray(course.restrictionWarnings) ? course.restrictionWarnings : []),
+    ...(Array.isArray(course.prereqNotes) ? course.prereqNotes : [])
+  ].filter(Boolean);
+  const officialText = [...new Set(rawPieces.map(text => String(text).trim()).filter(Boolean))];
+  if (officialText.length) warnings.push(...officialText);
+  warnings.push("Before relying on it, verify the official UCSC Catalog and ask your advisor/instructor whether you are eligible to enroll.");
+  return `
+    <div class="schedule-warning-card warning-search-only-course">
+      <p><strong>Graduate/search-only course</strong></p>
+      <ul>${warnings.map(w => `<li>${escHTML(w)}</li>`).join("")}</ul>
+    </div>
+  `;
+}
+
+function showSearchOnlyCourseWarning(code) {
+  const html = restrictionWarningHtmlForCourse(code);
+  if (!html) return;
+  showScheduleEditWarning("Review UCSC restriction before using this course", html, "warning");
+}
+
 function addCompletedCourse(code) {
   if (!AppState.profile.completedCourses.includes(code)) {
     AppState.profile.completedCourses.push(code);
   }
   syncCompletedCoursesUI();
+  if (isSearchOnlyCourse(code)) showSearchOnlyCourseWarning(code);
 }
 
 function removeCompletedCourse(code) {
@@ -1113,15 +1169,16 @@ function syncCompletedCoursesUI() {
         <div class="selected-total">${taken.length} course${taken.length === 1 ? "" : "s"} &middot; ${totalUnits} units counted toward your degree</div>
         <div class="selected-chips">
           ${taken.map(code => {
-            const c = COURSES[code];
+            const c = courseByCode(code);
+            const counted = Boolean(COURSES[code]);
             const title = c ? c.title : "Unknown";
             const units = c ? c.units : "?";
             return `
-              <div class="selected-chip" data-code="${code}">
-                <div class="chip-main"><strong>${code}</strong> ${title}</div>
+              <div class="selected-chip ${counted ? "" : "search-only"}" data-code="${escHTML(code)}">
+                <div class="chip-main"><strong>${escHTML(code)}</strong> ${escHTML(title)}${counted ? "" : ' <span class="search-result-badge search-only-badge">Search-only</span>'}</div>
                 <div class="chip-side">
-                  <span class="chip-units">${units} u</span>
-                  <button type="button" class="chip-remove" data-code="${code}" title="Remove">&times;</button>
+                  <span class="chip-units">${units} u${counted ? "" : " not counted"}</span>
+                  <button type="button" class="chip-remove" data-code="${escHTML(code)}" title="Remove">&times;</button>
                 </div>
               </div>
             `;
@@ -1472,7 +1529,7 @@ function renderSchedule() {
 }
 
 function createCourseCard(code, quarterKey, yearIdx, courseIndex = null) {
-  const course = COURSES[code];
+  const course = courseByCode(code);
   const card = document.createElement("div");
   card.className = "course-card";
   card.dataset.code = code;
@@ -1841,7 +1898,7 @@ function moveCourseToQuarter(code, fromQuarterKey, fromYearIdx, toQuarterKey, to
 // ---------- COURSE DETAIL PANEL ----------
 
 function openCourseDetail(code, quarterKey, yearIdx) {
-  const course = COURSES[code];
+  const course = courseByCode(code);
   if (!course) return;
 
   const modal = document.getElementById("modal-course-detail");
@@ -1865,7 +1922,7 @@ function openCourseDetail(code, quarterKey, yearIdx) {
   }
 
   // Sections display
-  const sectionsHtml = course.section.map(s => {
+  const sectionsHtml = (course.section || ["FREE"]).map(s => {
     const c = SECTION_COLORS[s] || SECTION_COLORS["FREE"];
     return `<span class="detail-section-tag" style="background:${c.bg};color:${c.border};border:1px solid ${c.border}">${c.label}</span>`;
   }).join(" ");
@@ -1883,11 +1940,11 @@ function openCourseDetail(code, quarterKey, yearIdx) {
       </div>
       <div class="detail-row">
         <span class="detail-label">Division:</span>
-        <span>${course.division === "upper" ? "Upper Division" : "Lower Division"}</span>
+        <span>${course.division === "graduate" ? "Graduate" : (course.division === "upper" ? "Upper Division" : "Lower Division")}</span>
       </div>
       <div class="detail-row">
         <span class="detail-label">Offered:</span>
-        <span>${course.quarters.map(q => QUARTER_LABELS[q]).join(", ")}</span>
+        <span>${(course.quarters || []).length ? course.quarters.map(q => QUARTER_LABELS[q] || q).join(", ") : "Check UCSC Catalog"}</span>
       </div>
       <div class="detail-row">
         <span class="detail-label">Prerequisites:</span>
@@ -1997,6 +2054,7 @@ function openSwapModal(code, quarterKey, yearIdx) {
           <div class="swap-option-badges">
             <span class="section-badge" style="color:${colors.border}">${colors.label}</span>
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
+            ${r.searchOnly ? '<span class="search-result-badge search-only-badge">Graduate / search-only</span>' : ""}
           </div>
           ${renderSuggestionReasons(r.reasons)}
         </div>
@@ -2060,7 +2118,24 @@ function openAddCourseModal(yearIdx, quarterKey) {
   const renderAddList = (query) => {
     const takenBefore = getCoursesBeforeQuarter(yearIdx, quarterKey);
     const allPlanned  = getAllPlannedCourses();
-    const results     = Scheduler.searchAddable(quarterKey, takenBefore, allPlanned, query, AppState.profile);
+    let results     = Scheduler.searchAddable(quarterKey, takenBefore, allPlanned, query, AppState.profile);
+    const q = String(query || "").trim();
+    if (q) {
+      const plannedSet = new Set(allPlanned);
+      const completedSet = new Set(takenBefore);
+      const graduateMatches = Object.entries(graduateCourseCatalog()).map(([code, course]) => {
+        const searchScore = courseSearchScore(code, course, q);
+        if (searchScore <= 0 || plannedSet.has(code)) return null;
+        if (Array.isArray(course.prereqs) && course.prereqs.length > 0 && !Validator.prereqsMet(course.prereqs, completedSet)) return null;
+        return {
+          code, title: course.title, units: course.units, desc: course.desc,
+          ge: course.ge, rmpScore: course.rmpScore || 0, section: course.section || ["FREE"], division: course.division,
+          searchScore, preferenceScore: 0, searchOnly: true,
+          reasons: [{ id: "graduate_search_only", label: "Graduate / search-only — warning shown before use" }]
+        };
+      }).filter(Boolean);
+      results = [...results, ...graduateMatches].sort((a, b) => (b.searchScore || 0) - (a.searchScore || 0) || a.code.localeCompare(b.code, undefined, { numeric: true }));
+    }
 
     if (results.length === 0) {
       return renderSuggestionEmptyState("add", quarterKey, query);
@@ -2077,6 +2152,7 @@ function openAddCourseModal(yearIdx, quarterKey) {
           <div class="swap-option-badges">
             <span class="section-badge" style="color:${colors.border}">${colors.label}</span>
             ${r.ge ? `<span class="ge-badge">${r.ge}</span>` : ""}
+            ${r.searchOnly ? '<span class="search-result-badge search-only-badge">Graduate / search-only</span>' : ""}
           </div>
           ${renderSuggestionReasons(r.reasons)}
         </div>
@@ -2109,10 +2185,26 @@ function openAddCourseModal(yearIdx, quarterKey) {
 
 function addCourseToQuarter(code, quarterKey, yearIdx) {
   if (getAllPlannedCourses().includes(code)) return;
+  const course = courseByCode(code);
+  if (!course) return;
+  const takenBefore = new Set(getCoursesBeforeQuarter(yearIdx, quarterKey));
+  if (Array.isArray(course.prereqs) && course.prereqs.length > 0 && !Validator.prereqsMet(course.prereqs, takenBefore)) {
+    const missing = course.prereqs
+      .filter(group => !group.some(option => takenBefore.has(option)))
+      .map(group => group.join(" or "))
+      .join("; and ");
+    showScheduleEditWarning(
+      `Prerequisites missing for ${code}`,
+      `<div class="schedule-warning-card warning-prereq"><p><strong>${escHTML(code)}</strong> has encoded prerequisite courses that must appear earlier in the plan.</p><p>Missing: ${escHTML(missing || "an earlier prerequisite")}</p></div>`,
+      "error"
+    );
+    return;
+  }
   AppState.schedule[yearIdx].quarters[quarterKey].push(code);
   closeModal("modal-swap");
 
   refreshScheduleAfterManualEdit(`${code} added. Requirements and units rechecked.`);
+  if (isSearchOnlyCourse(code)) showSearchOnlyCourseWarning(code);
 }
 
 

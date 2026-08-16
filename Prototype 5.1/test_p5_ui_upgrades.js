@@ -92,14 +92,20 @@ function buildContext() {
 
 function loadApp() {
   const context = buildContext();
-  for (const file of ['js/courses.js', 'js/majors.js', 'js/data.js']) {
+  for (const file of ['js/courses.js', 'js/graduate-courses.js', 'js/majors.js', 'js/data.js']) {
     vm.runInNewContext(fs.readFileSync(path.join(__dirname, file), 'utf8'), context, { filename: file });
   }
   const appCode = fs.readFileSync(path.join(__dirname, 'js/app.js'), 'utf8') + `
     ;globalThis.__p5 = {
       AppState,
       COURSES,
+      GRADUATE_COURSES: (typeof GRADUATE_COURSES !== 'undefined' ? GRADUATE_COURSES : undefined),
       MAJOR_REQUIREMENTS,
+      searchCourses,
+      addCompletedCourse,
+      allSearchableCourses: (typeof allSearchableCourses === 'function' ? allSearchableCourses : undefined),
+      courseByCode: (typeof courseByCode === 'function' ? courseByCode : undefined),
+      restrictionWarningHtmlForCourse: (typeof restrictionWarningHtmlForCourse === 'function' ? restrictionWarningHtmlForCourse : undefined),
       quartersBetween,
       commonLowerDivisionSuggestionsForMajor,
       courseVisualType,
@@ -639,6 +645,40 @@ function testBlankScheduleRulesPopupIsShortAndActionable() {
   assert(body.includes('requirements tracker'), `rules should point to live requirement tracking; got ${body}`);
 }
 
+function testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch() {
+  const { __p5 } = loadApp();
+  assert(__p5.COURSES['CSE 136'], 'reviewed undergrad CSE 136 should be merged into the undergraduate scheduler catalog');
+  assert(!__p5.COURSES['CSE 196A'], 'CSE 196A should stay out for now because permission text needs warning QA');
+  assert(!__p5.COURSES['CSE 245'], 'graduate CSE 245 must not be in the undergraduate scheduler COURSES object');
+  assert(__p5.GRADUATE_COURSES && __p5.GRADUATE_COURSES['CSE 245'], 'graduate CSE 245 should live in the separate graduate catalog');
+  assert.strictEqual(__p5.GRADUATE_COURSES['CSE 245'].searchOnly, true, 'graduate courses should be marked searchOnly');
+
+  const results = __p5.searchCourses('CSE 245');
+  assert(results.some(result => result.code === 'CSE 245' && result.source === 'graduate'), 'manual academic-history search should include graduate catalog courses');
+}
+
+function testGraduateRestrictionWarningsUseOfficialCatalogText() {
+  const { __p5 } = loadApp();
+  const course = __p5.courseByCode('CSE 245');
+  assert(course, 'courseByCode should find separate graduate catalog records');
+  const html = __p5.restrictionWarningHtmlForCourse('CSE 245');
+  assert(html.includes('Graduate/search-only course'), `warning should label graduate/search-only courses; got ${html}`);
+  assert(html.includes('Enrollment is restricted to graduate students.'), `warning should preserve official enrollment text; got ${html}`);
+  assert(html.includes('official UCSC Catalog'), `warning should tell students to verify official catalog/advising; got ${html}`);
+}
+
+function testAddingGraduateCompletedCourseWarnsButDoesNotMergeIntoSchedulerCatalog() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  __p5.addCompletedCourse('CSE 245');
+  assert(__p5.AppState.profile.completedCourses.includes('CSE 245'), 'student can manually add searched graduate courses to completed history');
+  assert(!__p5.COURSES['CSE 245'], 'adding a graduate course to history must not mutate undergraduate scheduler COURSES');
+  const selectedHtml = document.getElementById('selected-courses-list').innerHTML;
+  assert(selectedHtml.includes('Computational Models of Discourse and Dialogue'), `completed-course chip should render graduate title from searchable catalog; got ${selectedHtml}`);
+  const warningHtml = document.getElementById('warning-content').innerHTML;
+  assert(warningHtml.includes('Graduate/search-only course'), `manual add should show a warning; got ${warningHtml}`);
+}
+
 const tests = [
   testGraduationDurationCountsOnlyFallWinterSpring,
   testGraduationDefaultAutoSelectsFourYearSpringTarget,
@@ -671,7 +711,10 @@ const tests = [
   testLandingOffersPlanForMeAndBuildFromScratchChoices,
   testPlanningModeButtonsSelectWizardMode,
   testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty,
-  testBlankScheduleRulesPopupIsShortAndActionable
+  testBlankScheduleRulesPopupIsShortAndActionable,
+  testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch,
+  testGraduateRestrictionWarningsUseOfficialCatalogText,
+  testAddingGraduateCompletedCourseWarnsButDoesNotMergeIntoSchedulerCatalog
 ];
 
 let passed = 0;

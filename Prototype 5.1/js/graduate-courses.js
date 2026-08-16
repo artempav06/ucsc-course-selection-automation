@@ -1,0 +1,2720 @@
+// Generated from data/courses-graduate.json. Search-only graduate catalog; not used by automatic scheduler.
+const GRADUATE_COURSES = {
+  "CSE 200": {
+    "concentrations": [],
+    "title": "Research and Teaching in Computer Science and Engineering",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-200",
+    "desc": "Basic teaching techniques for teaching assistants, including responsibilities and rights of teaching assistants, resource materials, computer security, leading discussion or lab sessions, presentation techniques, maintaining class records, electronic handling of homework, and grading. The course examines research and professional training, including use of the library and online databases, technical typesetting, writing journal and conference papers, publishing in computer science and computer engineering, giving talks in seminars and conferences, and ethical issues in science and engineering. Required for all teaching assistants. Formerly CMPS 200 and CMPE 200.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 201": {
+    "concentrations": [],
+    "title": "Analysis of Algorithms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-201",
+    "desc": "Rigorous analysis of the time and space requirements of important algorithms, including worst case, average case, and amortized analysis. Techniques include order-notation, recurrence relations, information-theoretic lower bounds, adversary arguments. Analysis of the key data structures: trees, hash tables, balanced tree schemes, priority queues, Fibonacci and binomial heaps. Algorithmic paradigms such as divide and conquer, dynamic programming, union-find with path compression, augmenting paths. Selected advanced algorithms. Introduction to NP-completeness. (Formerly Computer Science 201.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduate students may enroll in this course if they have completed CSE 101M or CSE 106 and have the consent of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduate students may enroll in this course if they have completed CSE 101M or CSE 106 and have the consent of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 202": {
+    "concentrations": [],
+    "title": "Combinatorial Algorithms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-202",
+    "desc": "Fundamental combinatorial algorithms, graph algorithms, flow problems, matching problems, linear programming, integer programming, NP-completeness, approximation algorithms for optimization problems. (Formerly Computer Science 211.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 201 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 201 ."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 203": {
+    "concentrations": [],
+    "title": "Randomized Algorithms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-203",
+    "desc": "Course on randomized algorithms, meant for graduate students with a good mathematical background. Students need familiarity with discrete math, analysis of algorithms, basic analysis, probability theory, and graph theory.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 . Students need a solid background in analysis of algorithms, discrete math, probability theory, graph theory, and overall mathematical maturity.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 . Students need a solid background in analysis of algorithms, discrete math, probability theory, graph theory, and overall mathematical maturity.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 204": {
+    "concentrations": [],
+    "title": "Computational Models and Complexity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-204",
+    "desc": "Finite automata and regular expressions, universal models of computation, computability and unsolvability, relations between complexity classes, hierarchy theorems, reductions, complete problems for the major complexity classes (L, NL, P, NP, PSPACE). Other topics may include complexity of counting and enumeration problems, complexity of approximation, randomized complexity classes. (Formerly Computer Science 210.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 201 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 201 ."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 205": {
+    "concentrations": [],
+    "title": "Logic in Computer Science",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-205",
+    "desc": "The applications and uses of formal systems to computer science. Covers the syntax and semantics of propositional logic and first-order logic, normal forms, soundness and completeness theorems, Herbrand's theorem, unification and resolution, foundations of logic programming, automated theorem proving. Other topics may include deductive databases, database query languages, nonmonotonic reasoning. (Formerly Computer Science 217.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 206C": {
+    "concentrations": [],
+    "title": "Foundations of Modern Cryptography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206c",
+    "desc": "Focuses on foundational aspects of modern cryptography, namely, private and public key cryptography; digital signatures; pseudorandom generators and functions/permutations; message authentication codes; hash functions; and random oracles, certificates and public-key infrastructures. Also connects the formal concepts with real-world applications. Students are exposed to general concepts of probability theory, number theory, and rigorous proofs. Assumes background on proofs, discrete probability, and modular arithmetic as well as programming in C/C++ or Python. Prerequisite(s): CSE 201 is recommended. Enrollment is restricted to graduate students and requires instructor permission.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 is recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 is recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and requires instructor permission.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and requires instructor permission.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 206G": {
+    "concentrations": [],
+    "title": "Game Theory and Applications in Computer Science and Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206g",
+    "desc": "Covers the fundamentals of game theory with a focus on connections to and applications within CSE. Examines the connection of complexity theory to concepts from game theory, the interaction of agents with differing incentives, and the fundamentals of mechanism design.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or by instructor consent.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students or by instructor consent.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 207": {
+    "concentrations": [],
+    "title": "Graph Algorithms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-207",
+    "desc": "Explores graph theory and algorithms for solving problems in engineering. A review of basic graph concepts and algorithms is followed by topics in network flow, partitioning, spectral analysis of graphs, graph isomorphism, and intractability. (Formerly Computer Engineering 277.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 101 and CSE 102 ; or CSE 106 ; or CSE 201 ; or equivalent.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 101 and CSE 102 ; or CSE 106 ; or CSE 201 ; or equivalent.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 209A": {
+    "concentrations": [],
+    "title": "Modern Algorithmic Toolbox",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-209a",
+    "desc": "Graduate course on the modern algorithmic toolbox, meant for graduate students with a good mathematical background. Students need familiarity with discrete math, analysis of algorithms, basic analysis, probability theory, and graph theory. Class is aimed at students who want to learn more about the central ideas and algorithmic techniques that are used in modern data science applications. Class focuses on the theoretical underpinnings of these algorithms as well as their practical applications and implementation details.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 or equivalent or",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 or equivalent or",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 210A": {
+    "concentrations": [],
+    "title": "Programming Languages",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210a",
+    "desc": "Covers current issues in programming languages. Language topics include object oriented, concurrent, functional, and logic programming, and other programmable applications such as symbolic manipulators and simulation. (Formerly Computer Science 203.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduate students may enroll for this course if they have completed CSE 112 and have the consent of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduate students may enroll for this course if they have completed CSE 112 and have the consent of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 210B": {
+    "concentrations": [],
+    "title": "Advanced Programming Languages",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210b",
+    "desc": "Covers issues in the design, implementation, analysis, and specification of programming languages. Topics include formal semantics (including operational, axiomatic, and denotational semantics), advanced type systems, program analysis (including abstract interpretation and model checking), specification, and verification. (Formerly Computer Science 253.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 210A or equivalent.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 210A or equivalent."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 211": {
+    "concentrations": [],
+    "title": "Compiler Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-211",
+    "desc": "Advanced study of compiler implementation. Topics include compiler structure back end, run-time environments, storage management, garbage collection, register allocation, code generation, basic blocks, control flow, data flow, local and global optimization, interpretation, machine code generation. Students may not receive credit for this course and CSE 110B . Taught in conjunction with CSE 110B . (Formerly Computer Science 204.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 212A": {
+    "concentrations": [],
+    "title": "Software Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212a",
+    "desc": "Introduction to the general principles of software engineering. Covers current and classical topics from both practical and theoretical viewpoints. Topics include software evolution, project management, software inspections, design methods, requirements analysis and specification, software testing, maintenance, software implementation, human interfaces, and software engineering experimentation. (Formerly CMPS 276.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll in this course if they have completed CSE 115A .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll in this course if they have completed CSE 115A .",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 212B": {
+    "concentrations": [],
+    "title": "Software Reuse and Component-Based Software Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212b",
+    "desc": "Detailed study of interlocking business, organizational, and technical issues in large-scale software reuse and component-based software engineering. Topics include architecture, design for reuse, domain engineering, model-driven development, domain-specific kits, components, frameworks, software agents, generators, problem-oriented languages, library design, reuse tools, patterns, and aspects. Assumes prior exposure to software engineering topics. (Formerly Computer Science 279.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 212A or consent of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 212A or consent of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 214": {
+    "concentrations": [],
+    "title": "Principles of Database Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-214",
+    "desc": "Advanced course on principles of database systems. Main topics include overview of the relational data model and relational query languages; recursive queries, datalog, and fixed-points; query processing and optimization; database design, dependencies, normal forms, and the chase procedure. Additional topics may include information integration, complex objects, semistructured data, and XML. (Formerly Computer Science 277.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 or equivalent or consent of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 or equivalent or consent of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 215": {
+    "concentrations": [],
+    "title": "Design and Implementation of Database Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-215",
+    "desc": "Advanced course in implementation techniques for database systems. For students who wish to do research in databases or to learn more about large-scale data processing. Topics include: indexing of complex data; techniques for high-volume concurrency control; query processing and optimization; database recovery; parallel database system architectures; database systems for streaming data; approximate query answering. Additional topics may include: self-managing database systems; advanced query optimization techniques; and query processing techniques for semi-structured data.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 216": {
+    "concentrations": [],
+    "title": "Formal Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-216",
+    "desc": "Mathematical techniques for analyzing systems to prove rigorous guarantees about their behavior. Fundamental algorithms for and advanced topics in modeling, specification, verification, correct-by-construction synthesis, and testing. Applications to hardware/software design, cybersecurity, robotics, machine learning. Course includes a final project.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 101M or equivalent recommended, but not required.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 101M or equivalent recommended, but not required.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll by permission of instructor.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 220": {
+    "concentrations": [],
+    "title": "Computer Architecture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-220",
+    "desc": "Provides a thorough and fundamental treatment of the art of computer architecture. Topics include concepts of von Neumann architectures, methods of evaluating CPU performance, instruction-set design and examples, compiler issues, instruction pipelining, superscalar processors, methods for reduction of branch penalty, memory hierarchies, I/O systems, floating-point arithmetic, and current issues in parallel processing. (Formerly CMPE 202.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll if they have completed CSE 120 and with consent of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll if they have completed CSE 120 and with consent of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 221": {
+    "concentrations": [],
+    "title": "Advanced Microprocessor Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221",
+    "desc": "Introduction to latest advances in computer architecture. Focuses on processor core design. Topics include simultaneous multithreading, thread level speculation, trace caches, novel out-of-order mechanisms, and energy-efficient processor core designs. Final project is modification/enhancement of an out-of-order processor on an FPGA development system. (Formerly Computer Engineering 221.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 220 ; and CSE 125 , CSE 225 , or equivalent Verilog experience. Concurrent",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 220 ; and CSE 125 , CSE 225 , or equivalent Verilog experience. Concurrent",
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 221L": {
+    "concentrations": [],
+    "title": "Advanced Microprocessor Design Laboratory",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221l",
+    "desc": "Laboratory sequence illustrating topics covered in course 221. (Formerly Computer Engineering 221L.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 220 ; and CSE 125 , CSE 225 , or equivalent Verilog experience. Concurrent",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 220 ; and CSE 125 , CSE 225 , or equivalent Verilog experience. Concurrent",
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 222B": {
+    "concentrations": [],
+    "title": "VLSI System-on-a-Chip Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-222b",
+    "desc": "Design methodologies for Application Specific Integrated Circuits (ASICs). Topics include: behavioral specification; logic synthesis; standard-cell libraries; advanced timing analysis; and physical design automation tools. Familiarizes students with real-world tools during the design of a small system-on-a-chip project. Students are encouraged to fabricate and test their chips in an independent study. (Formerly Computer Engineering 223.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 222A or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 222A or permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 226": {
+    "concentrations": [],
+    "title": "Advanced Parallel Processing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-226",
+    "desc": "Introduction to programming advanced parallel computer architecture. Topics may include: SIMD massively parallel processor arrays; streaming parallel coprocessors, such as graphics cards used for general-purpose processing (GPGPU); or other hybrid MIMD/SIMD architectures. Course has programming lab component, a project, and student presentation on related topics. (Formerly Computer Engineering 220.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 228A": {
+    "concentrations": [],
+    "title": "Agile Hardware Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-228a",
+    "desc": "Agile Hardware Design techniques take the best of software engineering methods and apply them to improve hardware design productivity. Agile approaches not only reduce the time to solution, but they can also produce solutions which are better tailored for their target problems. In this synchronous in-person course, these techniques are covered while taking advantage of the Chisel hardware design language which brings the strengths of functional object-oriented programming to hardware design. Course consists of engaging lectures (intermixed coding demos and guest speakers) and progressive design assignments that culminate in a small project.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "equivalent experience in at least two of the following three areas: logic design (Verilog/VHDL e.g. CSE 100 / CSE 100L or CSE 125 /CSE 125L), computer architecture ( CSE 120 / CSE 220 ), advanced programming (functional, object oriented, etc.).",
+    "prereqNotes": [
+      "Official prerequisite text: equivalent experience in at least two of the following three areas: logic design (Verilog/VHDL e.g. CSE 100 / CSE 100L or CSE 125 /CSE 125L), computer architecture ( CSE 120 / CSE 220 ), advanced programming (functional, object oriented, etc.).",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; open to advanced undergraduates with instructor consent.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; open to advanced undergraduates with instructor consent.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 229": {
+    "concentrations": [],
+    "title": "Field-Programmable Gate Arrays Computer-Assisted Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-229",
+    "desc": "Design methods for Field-Programmable Gate Arrays (FGPAs), including algorithms for technology mapping, routability estimation, placement, and routing. The relationship between FPGA architectures and their computer-aided design tools. Course project involves the modification and analysis of an FPGA tool. (Formerly Computer Engineering 229.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or by consent of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students or by consent of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 231": {
+    "concentrations": [],
+    "title": "Advanced Operating Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-231",
+    "desc": "A detailed study of the issues involved in operating systems design and implementation. Readings cover current research topics and systems of historical significance. Topics include (but are not restricted to) process and memory management, protection, security, synchronization, performance evaluation, file systems, distributed systems. (Formerly Computer Science 221.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates by interview only. restricted to) process and memory management, protection, security, synchronization, performance evaluation, file systems, distributed systems.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates by interview only. restricted to) process and memory management, protection, security, synchronization, performance evaluation, file systems, distributed systems.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 232": {
+    "concentrations": [],
+    "title": "Distributed Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232",
+    "desc": "Overview of research topics in distributed computer systems. Topics may include communication paradigms, process management, naming, synchronization and coordination, consistency and replication, fault tolerance, and security. Examples include distributed operating systems, distributed file and object systems, distributed document systems, and peer-to-peer systems. (Formerly Computer Science 232.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 232B": {
+    "concentrations": [],
+    "title": "Stream Processing and Machine Learning Systems Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232b",
+    "desc": "Stream processing enables real-time analysis of continuous data streams, powering applications like fraud detection, smart systems, traffic monitoring, and advertising. Machine learning enhances these applications with intelligent decision-making. This course covers real-time stream processing, batch processing, graph-based processing, and ML system design. Topics include real-time event-driven stream processing, batch and mini-batch stream processing, graph-based stream processing, and key components of ML systems such as scheduling, training, and inference. Course explores platforms like Spark Streaming, Flink, Kafka, Ray, TensorFlow, and PyTorch to understand their integration at scale.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "knowledge in distributed systems or other networking systems class. CSE 138 recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: knowledge in distributed systems or other networking systems class. CSE 138 recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 233": {
+    "concentrations": [],
+    "title": "Advanced Computer Security",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-233",
+    "desc": "Overview of research topics in computer and network security. Topics may include cryptographic operations, security properties and policies, authentication and access control, attacks on computer systems and defenses against them, security in programming languages, and network protocols for security. (Formerly CMPS 223.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or consent of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students or consent of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 234": {
+    "concentrations": [],
+    "title": "Understanding Cryptography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-234",
+    "desc": "Cryptography has become ubiquitous, from light bulbs to atomic weapons. This course provides both a comprehensive introduction to applied cryptography and an additional focus on the human issues caused by bad implementations, bad processes, and broken algorithms. Knowledge of C Programming, Linux, and Virtual machines is required. (Formerly Computer Engineering 236 and Computer Science 236.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 235": {
+    "concentrations": [],
+    "title": "Cyber-Physical Systems Security",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-235",
+    "desc": "Cyber-physical systems now permeate our lives; they include autonomous vehicles, the Internet of things, and modern control of our critical infrastructure such as the power grid. Learning about the threats against these systems and the possible defenses is essential for computer security practitioners. In this course, students read and analyze the latest published research in this area, and work on projects to address new problems.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 237": {
+    "concentrations": [],
+    "title": "Storage Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-237",
+    "desc": "Topics include storage devices, storage architectures, local file systems, high-performance file systems, and next-generation storage devices and architectures; covers issues of performance, reliability, scalability, robustness, and security. (Formerly Computer Science 229.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 239": {
+    "concentrations": [],
+    "title": "Advanced Cloud Computing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239",
+    "desc": "Cloud computing involves designing efficient software systems, as well as the application of computing to support the utilization of large-scale physical infrastructures, whereby resources are rented by users as an utility. Course is an in-depth exploration of distributed and operating systems principles essential for deploying a data center operating system. Topics include client-server programming, distributed scheduling, virtualization, frameworks, distributed storage, security, distributed middleware, and applications such as the IoT, web services, big data, and P2P systems.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 232 . CSE 231 is recommended but not required.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 232 . CSE 231 is recommended but not required.",
+      "Official enrollment/restriction text: Enrollment is restricted to seniors and graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to seniors and graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 239A": {
+    "concentrations": [],
+    "title": "Private Computation on Encrypted Data",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239a",
+    "desc": "Introduction to privacy-preserving computation, focusing on how to build end-to-end privacy-preserving systems. Topics cover different areas of private computation: multiparty computation, FHE, anonymous communication, oblivious RAM/computation, hardware enclaves, structured/searchable encryption, and cryptanalysis topics. The focus is on research papers from both the crypto/security side (with emphasis on definitions, foundations, and formal proofs) and the system side (with emphasis on aspects such as real-world practicality, efficiency, and deployability).",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to graduate students. CSE 108 / CSE 206C or equivalent is preferred but not required. Undergraduates may enroll by permission of",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is restricted to graduate students. CSE 108 / CSE 206C or equivalent is preferred but not required. Undergraduates may enroll by permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 239B": {
+    "concentrations": [],
+    "title": "Advanced Secure AI, Databases and Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239b",
+    "desc": "This advanced security course explores the intersection of cryptography/security and modern computing systems. Students read, analyze, and discuss state-of-the-art research from top-tier AI/DB/System venues (IEEE S&P, USENIX, CCS, SIGMOD, PVLDB, SOSP, OSDI, NSDI, NeurIPS, ICML, ICLR) across the areas of Secure AI (privacy-preserving ML, differential privacy, private training and inference, federated learning, private RAG, model extraction defenses, watermarking, adversarial robustness) and Secure Databases and Systems (secure query processing, oblivious computation, query optimization for secure computation, hardware enclaves, side-channel attacks and defenses, private messaging systems).",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 240": {
+    "concentrations": [],
+    "title": "Artificial Intelligence",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-240",
+    "desc": "Prepares students for doing research in artificial intelligence. Major topics covered are search and heuristics, knowledge representation, planning, deduction and inference, reinforcement learning, associative pattern retrieval, and adaptive search. Discussion includes current research issues in AI problem-solving methods. Individualized projects. (Formerly Computer Science 240.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 241": {
+    "concentrations": [],
+    "title": "Knowledge Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-241",
+    "desc": "Introduction to the acquisition, representation, and application of knowledge in expert systems. Topics include production systems, backward and forward chaining, dependency-directed backtracking, reasoning with uncertainty, certainty factors, fuzzy systems, knowledge representation (rules, frames, and semantic nets), inference engines, and metaknowledge. Discussion includes current research issues in adaptive expert systems. Involves one major project. Undergraduates may enroll in this course if they have completed CSE 140 . (Formerly Computer Science 241.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 242": {
+    "concentrations": [],
+    "title": "Machine Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-242",
+    "desc": "Introduction to machine learning algorithms. Covers learning models from fields of statistical decision theory and pattern recognition, artificial intelligence, and theoretical computer science. Topics include classification learning and the Probably Approximately Correct (PAC) learning framework, density estimation and Bayesian learning, EM, regression, and online learning. Provides an introduction to standard learning methods such as neural networks, decision trees, boosting, nearest neighbor, and support vector machines. Requirements include one major experimental learning project or theoretical paper. Students may not receive credit for both this course and CSE 142. (Formerly CMPS 242.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in the computer science and engineering, computer engineering and computer science master's programs; and students in the following doctoral programs: computer science and engineering, computer engineering, computer science, applied mathematics, applied mathematics and statistics, biomolecular engineering and bioinformatics, electrical and computer engineering, electrical engineering, statistical science, and technology information management.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in the computer science and engineering, computer engineering and computer science master's programs; and students in the following doctoral programs: computer science and engineering, computer engineering, computer science, applied mathematics, applied mathematics and statistics, biomolecular engineering and bioinformatics, electrical and computer engineering, electrical engineering, statistical science, and technology information management.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 243": {
+    "concentrations": [],
+    "title": "Data Mining",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-243",
+    "desc": "Covers the principles, algorithms, and applications of data mining, including mining sequential data, structured data, stream data, text data, spatiotemporal data, biomedical data, and other forms of complex data. Formerly TIM 245.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 244A": {
+    "concentrations": [],
+    "title": "Foundations of Deep Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244a",
+    "desc": "Provides foundations of deep learning algorithms and principles. Topics include neural networks, deep learning principles, deep learning architectures such as convolutional neural networks and recurrent neural networks, autoencoders, generative adversarial networks, and reinforcement learning. ( CSE 244A and CSE 244B formerly offered as one course, CSE 244.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 and familiarity with basic machine learning concepts.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 and familiarity with basic machine learning concepts.",
+      "Official enrollment/restriction text: Enrollment is restricted to computer science and engineering graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to computer science and engineering graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 244B": {
+    "concentrations": [],
+    "title": "Machine Learning for Natural Language Processing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 244A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244b",
+    "desc": "Introduction to machine learning models and algorithms for Natural Language Processing. Covers deep learning approaches and traditional machine learning models. Topics include an introduction to standard neural network learning methods such as feed-forward neural networks, recurrent neural networks, convolutional neural networks, and encoder-decoder models with applications to natural language processing problems such as utterance classification and sequence tagging. Requirements include a midterm, final, programming assignments, and a project. ( CSE 244A and CSE 244B formerly offered as one course, CSE 244.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite: CSE 244A .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite: CSE 244A ."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 244C": {
+    "concentrations": [],
+    "title": "Deep Learning for Advanced Computer Vision",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244c",
+    "desc": "This 10-week course delves deep into advanced computer vision with deep learning, introducing key concepts, applications, and the latest advancements in the field. Specifically, the course covers topics including image basics, convolutional neural network and its applications in different vision tasks (i.e., classification, detection, segmentation and video understanding), Transformer, self-supervised learning, vision language models, and three advanced topics. Upon completion, students should understand basics and cutting-edge advancements in this field and be able to solve real-world vision challenges.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 244A is recommended but not required.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 244A is recommended but not required.",
+      "Official enrollment/restriction text: Enrollment is restricted to CSE graduate students; other graduate students may enroll by permission of the instructor.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to CSE graduate students; other graduate students may enroll by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 245": {
+    "concentrations": [],
+    "title": "Computational Models of Discourse and Dialogue",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245",
+    "desc": "Focuses on classic and current theories and research topics in the computational modeling of discourse and dialogue, with applications to human-computer dialogue interactions; dialogue interaction in computer games and interactive story systems; and processing of human-to-human conversational and dialogue-like language such as e-mails. Topics vary depending on the current research of the instructor(s) and the interests of the students. Students read theoretical and technical papers from journals and conference proceedings and present class lectures. A research project is required.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 246": {
+    "concentrations": [],
+    "title": "Responsible Data Science",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-246",
+    "desc": "Graduate course covering basics of data science literacy and data science ethics. Topics include algorithmic discrimination, fairness, interpretability, privacy, and reproducibility. Key statistical topics such as generalization, causality, curse of dimensionality, and sampling bias are covered.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 247": {
+    "concentrations": [],
+    "title": "Projects in Artificial Intelligence",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247",
+    "desc": "Overview of artificial intelligence (AI) and machine learning (ML) and principles, implementation and deployment pipeline, and approaches in solving domain-related problems. Topics covered through direct instruction, invited guest speakers, reviews of state-of-art research papers, and a team project. Students are given an opportunity to work on a quarter-long AI/ML project to be counted toward their master's degree project requirements. Enrollment is by instructor consent. Prior experience in machine learning and deep learning is required. (Formerly AI: Problem Solving and Intelligent Search.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 247B": {
+    "concentrations": [],
+    "title": "Projects in Computer Science",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247b",
+    "desc": "Students are given an opportunity to work on a quarter-long computer science project to be counted toward their master's degree project requirements. Students work individually or in small teams with instructor supervision on individualized projects. Students cannot receive credit for both CSE 247 and CSE 247B .",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for both CSE 247 and CSE 247B .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for both CSE 247 and CSE 247B .",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 248": {
+    "concentrations": [],
+    "title": "Foundations of Data Science",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-248",
+    "desc": "Examines the mathematical and algorithmic foundations of data science including high dimensional data, probabilistic inequalities, dimensionality reduction, correlation detection, streaming algorithms, and clustering. (Formerly Computer Science 218.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 249": {
+    "concentrations": [],
+    "title": "Large-Scale Web Analytics and Machine Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-249",
+    "desc": "Provides a systematic methodology and corresponding set of methods and analytical tools in stochastic models; reinforcement learning; stochastic (neuro-)dynamic programming; Bayesian graphical models; inference; and social networks used for web analytics and machine learning to achieve business intelligence (BI) and support research and applications in computer science, computer engineering, and electrical engineering, applied mathematics and statistics, business, management, and economics. Includes exposure to Hadoop for large-scale computation. Students should have solid background in probability equivalent to statistics, stochastic, methods, calculus, (and preferably) stochastic processes and optimization, or mathematical maturity and exposure to business intelligence and algorithms. (Formerly TIM 251.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 107 or STAT 131 or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 107 or STAT 131 or permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 250A": {
+    "concentrations": [],
+    "title": "Computer Networks",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250a",
+    "desc": "Issues resulting from organizing communication among autonomous computers. Includes network models and switching techniques; medium access control protocols and local area networks; error control and retransmission strategies; routing algorithms and protocols; congestion control mechanisms and end-to-end protocols; application-level protocols; and application of concepts to wireless and wireline networks, with emphasis on the Internet. (Formerly Computer Engineering 252A.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 250B": {
+    "concentrations": [],
+    "title": "Principles of Computer Communication",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 250A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250b",
+    "desc": "Focuses on the design and analysis of protocols for computer communication. Topics include: the safety, liveliness, and performance of communication protocols for medium access control (MAC); link control; routing and switching; multicasting; and end-to-end transport. Students cannot receive credit for this course and CSE 152 . (Formerly CMPE 252B.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 250A .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 250A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and CSE 152 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and CSE 152 .",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 250C": {
+    "concentrations": [],
+    "title": "High Speed Computer Networks",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 250B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250c",
+    "desc": "Fiber-optic technology; fiber-optic link design; network protocol concepts; coding and error control; high-speed local area and metropolitan area networks; gigabit networks; error and congestion control; photonic networks; research topics. (Formerly Computer Engineering 254.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 250B .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 250B ."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 253": {
+    "concentrations": [],
+    "title": "Network Security",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-253",
+    "desc": "Fundamental mechanisms for network security and their application in widely deployed protocols. In-depth treatment of security mechanism at the data-link, network, and transport layers for both wired and wireless networks. Covers mechanisms for privacy and integrity, and methods for intrusion detection. (Formerly CMPE 253.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 257": {
+    "concentrations": [],
+    "title": "Wireless and Mobile Networks",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-257",
+    "desc": "An interdisciplinary course on wireless communication and mobile computing. Covers the physical aspects of wireless communication but emphasizes higher protocol layers. Topics include cellular networks, packet radio and ad hoc networks, wireless transport protocols, security, and application-level issues. (Formerly Computer Engineering 257.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 250A or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 250A or permission of",
+      "Needs review: contains-permission-or-consent-exception"
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 258": {
+    "concentrations": [],
+    "title": "Spectral Graph Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-258",
+    "desc": "Explores what eigenvalues and eigenvectors of graphs can tell us about their structure, and exploiting this knowledge for algorithmic purposes. It can be thought of as \"Advanced Linear Algebra with examples from Graph Theory.\"",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "linear algebra familiarity.",
+    "prereqNotes": [
+      "Official prerequisite text: linear algebra familiarity.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, undergraduate students with linear algebra familiarity may enroll by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, undergraduate students with linear algebra familiarity may enroll by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 259": {
+    "concentrations": [],
+    "title": "Sensor Networks",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-259",
+    "desc": "Focuses on the networking aspects of sensor networks: protocols at the various layers and how they answer the specific requirements posed by these networks (e.g., data driven, energy efficient, etc.) and their applications (monitoring, tracking, etc.). Explores how physical layer and hardware issues may influence protocol design. (Formerly Computer Engineering 259.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 250A . CSE 257 is recommended as a prerequisite.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 250A . CSE 257 is recommended as a prerequisite.",
+      "Needs review: contains-recommended-language"
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 260": {
+    "concentrations": [],
+    "title": "Computer Graphics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-260",
+    "desc": "Introduces current research and techniques of modeling, 2D/3D transformation, matrix composition, shading algorithms, and rendering to obtain computer-generated imagery. Programming assignments and major project required. Students cannot receive credit for both this course and CSE 160 . (Formerly Computer Science 260.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates by interview only. cannot receive credit for both this course and CSE 160 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates by interview only. cannot receive credit for both this course and CSE 160 .",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 261": {
+    "concentrations": [],
+    "title": "Advanced Visualization",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-261",
+    "desc": "Covers advanced topics in visualization, e.g., tensor-field visualization, uncertainty visualization, information visualization. Topics vary with differing offerings of the course. Course includes lectures, exam, research paper reading/presentation, and projects. Final project is expected to be at a sufficiently advanced level for submission to a conference. Students work individually or in pairs. (Formerly Computer Science 261.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 262": {
+    "concentrations": [],
+    "title": "Computer Animation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-262",
+    "desc": "An in-depth treatment of computer animation, including its origins in conventional animation, 2-D animation, inbetweening, motion control, morphing, graphical motion editors, animation languages, motion blur, simulation of articulated body motion, real-time animation, and special-purpose animation hardware. (Formerly Computer Science 262.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 263": {
+    "concentrations": [],
+    "title": "Data Driven Discovery and Visualization",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-263",
+    "desc": "Explores high-quality interdisciplinary research using socio-economic data and software available on the Internet, and data curation, computation, and visualization to strengthen scientific inquiry to bear on large-scale societal problems. Applications include inequality, poverty, water, energy, environment, health, education, and democracy. Enrollment restricted to graduate students. Enrollment by instructor consent. (Formerly Computer Science 263.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 264": {
+    "concentrations": [],
+    "title": "Computer Vision",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-264",
+    "desc": "Introduces general concepts in computer vision, with an emphasis on geometric 3D reconstruction. Topics include radiometry, photometry, projective geometry, geometric camera model, epipolar geometry, stereo depth reconstruction, corner and edge features, point descriptors and matching, and optical flow. (Formerly Computer Engineering 264.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 265": {
+    "concentrations": [],
+    "title": "Human-Computer Interaction",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-265",
+    "desc": "Theory and hands-on practice to understand what makes user interfaces usable and accessible to diverse individuals. Covers human senses and memory and their design implications, requirement solicitation, user-centered design and prototyping techniques, and expert and user evaluations. Individual research project. Interdisciplinary course for art, social science and engineering graduate students. Students cannot receive credit for this course and CSE 165 .",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and CSE 165 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and CSE 165 .",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 269": {
+    "concentrations": [],
+    "title": "Approximation Algorithms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-269",
+    "desc": "Meant for graduate students with a good mathematical background. Students should be familiar with discrete math, algorithms, calculus/probability, graph theory. Topics include clustering, linear programming, LP duality, semidefinite programming, etc.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students or by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 272": {
+    "concentrations": [],
+    "title": "Information Retrieval",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-272",
+    "desc": "Course covers major topics of information retrieval including: characteristics and representation of text, several important retrieval and ranking models, content recommendation and classification; distributed or federated search, AI semantics and dialog for information access; human factors and interfaces; and evaluation, and domain-specific applications. A research project is required. (Formerly TIM 260.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 277": {
+    "concentrations": [],
+    "title": "Random Process Models in Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-277",
+    "desc": "A first graduate course in stochastic process modeling and analysis with an emphasis on applications in technology management, information systems design, and engineering. (Formerly TIM 207.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to graduate students. Prerequisite: CSE 107 or other undergraduate probability course recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is restricted to graduate students. Prerequisite: CSE 107 or other undergraduate probability course recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 279": {
+    "concentrations": [],
+    "title": "Data Mining and Business Analytics in Knowledge Services",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-279",
+    "desc": "Provides students with systematic methodology and analytical tools in data and text mining and business analytics. Also provides an integrated perspective and examines use of these methods in the field of knowledge services, such as online marketing, sponsored search, health care, financial services, recommender systems, etc. Includes training in the basic elements of stochastic optimization and other algorithmic approaches, such as stochastic dynamic programming, statistics, constrained optimization, and machine learning with exposure to software tools. These methods enable firms to achieve rapid, effective, and profitable optimization of knowledge-services management. (Formerly TIM 209.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280A": {
+    "concentrations": [],
+    "title": "Seminar in Computer Science and Engineering",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280a",
+    "desc": "Weekly seminar covering topics of current research in computer science. Enrollment by permission of instructor. (Formerly CMPS 280A, Seminar in Computer Science Research.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280D": {
+    "concentrations": [],
+    "title": "Seminar in Database Systems",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280d",
+    "desc": "Covers advanced research topics from the recent literature in database systems and related fields. Involves presentations from UCSC students and faculty, and guest talks from researchers in industry and other academic institutions. Enrollment by permission of instructor. (Formerly 280D.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280F": {
+    "concentrations": [],
+    "title": "Seminar on Software Engineering",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280f",
+    "desc": "Weekly seminar covering topics of current research in software engineering. (Formerly CMPS 280G.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280G": {
+    "concentrations": [],
+    "title": "Hardware Systems Collective Seminar",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280g",
+    "desc": "Weekly seminar on advanced topics in all aspects of computer hardware design, tools, and verification. Speakers are primarily guests from industry and academia. (Formerly VLSI/CAD Seminar.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280H": {
+    "concentrations": [],
+    "title": "Seminar in Human Computation Systems",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280h",
+    "desc": "Covers advanced topics and current research in the general area of human computation. Material is drawn from several disciplines that involve or deal with human computation, including computer vision, human-computer interaction, databases, and machine learning. The course comprises presentations from faculty, enrolled students, and external visitors. (Formerly CMPS 280H.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280I": {
+    "concentrations": [],
+    "title": "Seminar on Information Retrieval and Knowledge Management",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280i",
+    "desc": "Seminar series discussing advanced topics in information retrieval and knowledge management. Current research and literature are presented during each meeting. (Formerly 280I.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280J": {
+    "concentrations": [],
+    "title": "Seminar on Computer Graphics",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280j",
+    "desc": "Weekly seminar covering topics of current research in computer graphics. Enrollment restricted to graduate students and by permission of instructor. (Formerly CMPS 280J.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students and by permission of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280K": {
+    "concentrations": [],
+    "title": "Sales and Marketing for Technologists and Engineers",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280k",
+    "desc": "Perspective on the theory, plus examples, and tools useful to technologists and engineers for successfully guiding and supporting sales and marketing endeavors and, thereby, ensuring funding, staffing, product appeal, positive customer relationships, and marketplace success. (Formerly TIM 280M.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280L": {
+    "concentrations": [],
+    "title": "Seminar on Logic in Computer Science",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280l",
+    "desc": "Covers advanced research topics from the recent literature in the uses of logic in computer science with particular emphasis on the applications of logic to the representation and the management of data. Involves presentations from UCSC students and faculty, and guest talks from researchers in other academic institutions or industrial research labs. Enrollment is by permission of the instructor and is restricted to graduate students. (Formerly CMPS 280L.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280M": {
+    "concentrations": [],
+    "title": "Seminar on Machine Learning",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280m",
+    "desc": "Weekly seminar covering topics of current interest in machine learning. Enrollment is by permission of the instructor. Enrollment is restricted to graduate students. (Formerly CMPS 280M.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280N": {
+    "concentrations": [],
+    "title": "Seminar on Networks",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280n",
+    "desc": "Weekly seminar series covering topics of current research in networks and networked systems. Current research work and literature in these areas are discussed. Prerequisite(s): permission of instructor. Enrollment is restricted to graduate students. (Formerly Computer Engineering 280N.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "permission of",
+    "prereqNotes": [
+      "Official prerequisite text: permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280O": {
+    "concentrations": [],
+    "title": "Languages, Systems, and Data Seminar",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280o",
+    "desc": "Covers current research in language-based approaches to security, distributed systems, databases, and formal verification. Students read and present papers from academic journals and conferences. (Formerly Seminar in Applied Programming Languages.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, or by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280P": {
+    "concentrations": [],
+    "title": "Seminar on Parallel Processing",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280p",
+    "desc": "Weekly seminar series covering topics of current research in parallel systems, architectures, and algorithms. Current research work and literature in these areas are discussed. (Formerly Computer Engineering 280P.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280S": {
+    "concentrations": [],
+    "title": "Seminar on Computer Systems",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280s",
+    "desc": "Weekly seminar series covering topics of current research in computer systems. Enrollment by permission of instructor. (Formerly CMPS 280S AND CMPE 280S.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280T": {
+    "concentrations": [],
+    "title": "Seminar on New Technologies",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280t",
+    "desc": "Weekly seminar series in which distinguished speakers from industry, universities, and government discuss current developments in networking and computer technology. The emphasis is on open research questions that may lead to collaborative work with faculty and graduate students. (Formerly Computer Engineering 280T.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280V": {
+    "concentrations": [],
+    "title": "Seminar on Computer Vision",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280v",
+    "desc": "Weekly graduate-level seminar series discussing advanced topics in computer vision and image analysis. Current research and literature presented during each meeting. Enrollment is by permission of the instructor. Enrollment is restricted to graduate students. (Formerly Computer Engineering 280V.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280X": {
+    "concentrations": [],
+    "title": "Seminar in Distributed Systems",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280x",
+    "desc": "Covers advanced research topics from the recent literature in distributed systems and related fields. Involves presentations from UCSC students and faculty. Enrollment is restricted to graduate students and by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 280Z": {
+    "concentrations": [],
+    "title": "Seminar in Natural Language Processing and Dialogue",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280z",
+    "desc": "Covers advanced topics and current research in natural language processing. Focuses on student presentations and seminar participation. Enrollment is restricted to graduate students. Enrollment is by permission of the instructor. (Formerly CMPS 280Z.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 285": {
+    "concentrations": [],
+    "title": "Technical Writing for Engineering Graduates",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-285",
+    "desc": "Writing skills development for graduate engineers. Students produce a major writing project with many subtasks. Exercises includes fellowship application; mathematical and algorithmic description; use of tables and graphs; experiment description; and producing technical web sites, presentations, and posters. Enrollment is restricted to graduate students in biomolecular engineering, computer science and engineering, computer science, and electrical and computer engineering and by permission of the instructor. (Formerly CMPE 285.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in biomolecular engineering, computer science and engineering, computer science, and electrical and computer engineering and by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in biomolecular engineering, computer science and engineering, computer science, and electrical and computer engineering and by permission of the instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290A": {
+    "concentrations": [],
+    "title": "Topics in Algorithms and Complexity Theory: Probabilistic Algorithms and Average Case Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290a",
+    "desc": "Graduate seminar in algorithms and complexity theory on topics from recently published research journal articles and conference proceedings. Topics vary from year to year depending on the current research of the instructor(s) and interests of students. Students read technical papers from relevant journals and conference proceedings and present class lectures. Guest lectures may supplement the student presentations. A research project and/or paper may be required. (Formerly Computer Science 290A.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290C": {
+    "concentrations": [],
+    "title": "Advanced Topics in Machine Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 242"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290c",
+    "desc": "In-depth study of current research topics in machine learning. Topics vary from year to year but include multi-class learning with boosting and SUM algorithms, belief nets, independent component analysis, MCMC sampling, and advanced clustering methods. Students read and present research papers; theoretical homework in addition to a research project. (Formerly Computer Science 290C.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CSE 242 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CSE 242 ."
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290D": {
+    "concentrations": [],
+    "title": "Neural Computation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290d",
+    "desc": "An introduction to the design and analysis of neural network algorithms. Concentrates on large artificial neural networks and their applications in pattern recognition, signal processing, and forecasting and control. Topics include Hopfield and Boltzmann machines, perceptions, multilayer feed forward nets, and multilayer recurrent networks. (Formerly Computer Science 290D.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290E": {
+    "concentrations": [],
+    "title": "Object-Oriented Programming Methodology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ],
+      [
+        "CSE 210A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290e",
+    "desc": "Object-oriented programming methodology is the application of abstract-data types and polymorphism to coding solution. Topics geared to beginning thesis research in this field. (Formerly Computer Science 290E.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 and CSE 210A .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 and CSE 210A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290F": {
+    "concentrations": [],
+    "title": "Applications of Combinatorics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 16"
+      ],
+      [
+        "AM 10"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290f",
+    "desc": "Combinatorial mathematics, including summation methods, working with binomial coefficients, combinatorial sequences (Fibonacci, Stirling, Eulerian, Harmonic, Bernoulli numbers), generating functions and their uses, Bernoulli processes, and other topics in discrete probability. Oriented toward problem solving, applications mainly to computer science, but also physics. (Formerly Computer Science 290F.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 16 and AM 10 .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 16 and AM 10 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and upper-division undergraduates.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and upper-division undergraduates.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290G": {
+    "concentrations": [],
+    "title": "Topics in Software Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290g",
+    "desc": "Research seminar on current topics in software engineering. Topics vary from year to year depending on the current research of the instructor(s) and interests of students. Students read technical papers from relevant journals and conference proceedings. Synthesis and understanding of materials is demonstrated by a required research project. (Formerly Computer Science 290G.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 212A recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 212A recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290H": {
+    "concentrations": [],
+    "title": "Topics in Database Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290h",
+    "desc": "Focuses on current research topics in database systems. Different offerings cover different topics depending on current research of instructor(s) and the interests of students. Students read technical papers from journals and conference proceedings and present class lectures. A research project is required. (Formerly Computer Science 290H.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 180 (or equivalent) or CSE 214 or consent of",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 180 (or equivalent) or CSE 214 or consent of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290J": {
+    "concentrations": [],
+    "title": "Advanced Topics in Computer Graphics and Visual Computing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290j",
+    "desc": "A graduate seminar in computer graphics on topics from recently published research journal articles and conference proceedings. Topics vary from year to year depending on interests of students. Primary areas of interest are likely to be scientific visualization, modeling, rendering, scattered data techniques, wavelets, and color and vision models. Students read technical papers and present class lectures. Guest lecturers supplement the student presentations. A research project is required. (Formerly Computer Science 290B.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290K": {
+    "concentrations": [],
+    "title": "Advanced Topics in Natural Language Processing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290k",
+    "desc": "Teaches participants about current methods and directions in active areas of Natural Language Processing research and applications. Students perform independent research and hone skills with state-of-the-art NLP tools and techniques.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to computer science and engineering, computer engineering, computer science, and technology management graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to computer science and engineering, computer engineering, computer science, and technology management graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290L": {
+    "concentrations": [],
+    "title": "Topics in Crowdsourcing and Collaboration",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290l",
+    "desc": "Explores the foundations of crowdsourcing and computer-mediated collaboration. Covers the algorithmic and statistical foundations of crowdsourcing, introducing and analyzing algorithms, and experimenting with concrete systems. Also, provides an introduction to computational systems for mediating user interaction and collaboration. (Formerly Computer Science 290L.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290M": {
+    "concentrations": [],
+    "title": "Topics in Parallel Computation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290m",
+    "desc": "Investigates selected topics in applied parallel computation. Topics may include numerical methods, artificial intelligence and machine learning algorithms, graphics and image processing, systolic algorithms, and the interplay between hardware and algorithms. Students are encouraged to investigate and discuss the parallelization of their own research. (Formerly Computer Engineering 290M.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290N": {
+    "concentrations": [],
+    "title": "Topics in Computer Performance",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290n",
+    "desc": "Selected topics of current interest in the area of computer system performance. Subjects may include aspects of large systems, performability, computer networks, storage subsystems, and nontraditional approaches and are subject to periodic revision. (Formerly Computer Engineering 290N.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290O": {
+    "concentrations": [],
+    "title": "Algorithmic Foundations of Convex Optimization",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 201"
+      ],
+      [
+        "CSE 242"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290o",
+    "desc": "Focuses on some of the foundational aspects of convex and its relationship to modern machine learning. Discusses positive results--how can you solve convex optimization problems--and negative ones with statements like This family of problems is too hard to be solved in reasonable time. Course is divided into three parts, each exploring a different aspect of convex optimization: 1) algorithmic frameworks; 2) Oracle complexities; 3) the power of randomness. Through this course students are exposed to general concepts of convex geometry, learning theory, and rigorous proofs. (formerly CMPS 290O.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 and CSE 242 .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 and CSE 242 .",
+      "Official enrollment/restriction text: Enrollment is restricted to computer engineering and computer science graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to computer engineering and computer science graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290P": {
+    "concentrations": [],
+    "title": "Data Privacy Via Machine Learning, and Back",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290p",
+    "desc": "Helps students achieve both expository knowledge and expertise in the field of data privacy. Focuses on fundamental techniques used in designing privacy-preserving, machine-learning systems in both academia and in the industry. Students are expected to read and understand recent research papers in the topic. (Formerly Computer Science 290P.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 201 and CSE 242 or equivalent.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 201 and CSE 242 or equivalent.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290Q": {
+    "concentrations": [],
+    "title": "Topics in Programming Languages",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "CSE 210A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290q",
+    "desc": "Current research topics on computer programming languages. Topics vary year to year. Students read papers from current conferences and journals, and present class lectures. A research project is required. (Formerly Computer Science 290Q.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 210A .",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 210A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290S": {
+    "concentrations": [],
+    "title": "Advanced Topics in Computer Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290s",
+    "desc": "Focuses on current research topics in computer systems. Topics vary from year to year depending on the current research of the instructor(s) and the interests of the students. Students read technical papers from current journals and conference proceedings, and present class lectures. A research project is required. (Formerly Computer Science 290S.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CSE 231 recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: CSE 231 recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; qualified undergraduates may enroll with instructor's consent.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; qualified undergraduates may enroll with instructor's consent.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290T": {
+    "concentrations": [],
+    "title": "Topics in Computing for Society",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290t",
+    "desc": "Current research topics on computer technology that is intentionally targeted to benefiting society. Topics vary year to year. Students read papers from current conferences and journals, and present class lectures. A research project is required. (Formerly Computer Science 290T.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 290X": {
+    "concentrations": [],
+    "title": "Cryptography and Computer Security",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290x",
+    "desc": "Research seminar on encryption and related technologies. Topics include theory of codes, random sequences and generators, public key cryptosystems, private key cyphers, key exchange protocols, quantum computing and cryptography. Major project required. Prerequisite: interview with instructor. (Formerly Computer Science 290X.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "interview with",
+    "prereqNotes": [
+      "Official prerequisite text: interview with"
+    ],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 293": {
+    "concentrations": [],
+    "title": "Advanced Topics in Computer Science & Engineering",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-293",
+    "desc": "A graduate seminar on a research topic in computer engineering which varies according to instructor. Possible topics include, but are not limited to, communication networks, data compression, special-purpose architectures, computer arithmetic, software reliability and reusability, systolic arrays.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of instructor.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 296": {
+    "concentrations": [],
+    "title": "Masters Project",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-296",
+    "desc": "Independent completion of a masters project under faculty supervision. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 297A": {
+    "concentrations": [],
+    "title": "Individual Study or Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297a",
+    "desc": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 297B": {
+    "concentrations": [],
+    "title": "Individual Study or Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297b",
+    "desc": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 297C": {
+    "concentrations": [],
+    "title": "Individual Study or Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297c",
+    "desc": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 297F": {
+    "concentrations": [],
+    "title": "Independent Study or Research",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297f",
+    "desc": "Independent study or research under faculty supervision. Although this course may be repeated for credit, not every degree program will accept a repeated course toward degree requirements.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299a",
+    "desc": "Thesis research conducted under faculty supervision. Although the course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299b",
+    "desc": "Thesis research conducted under faculty supervision. Although the course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299c",
+    "desc": "Thesis research conducted under faculty supervision. Although the course may be repeated for credit, not every degree program will accept a repeated course towards degree requirements. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  },
+  "CSE 299F": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299f",
+    "desc": "Independent study or research under faculty supervision. Enrollment is restricted to graduate students. Recommended for part-time students. Students submit petition to sponsoring agency.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "catalogLevel": "graduate",
+    "sourceCatalogYear": "2026-2027"
+  }
+};

@@ -1,0 +1,1199 @@
+{
+  "generatedAt": "2026-08-07T06:29:06.577Z",
+  "sourceCandidates": "candidate-expanded-courses.json",
+  "candidateCount": 117,
+  "buckets": {
+    "passed": 24,
+    "blocked": 0,
+    "warningsOnly": 93
+  },
+  "rows": [
+    {
+      "code": "CSE 136",
+      "title": "Cloud Computing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-136"
+    },
+    {
+      "code": "CSE 196A",
+      "title": "Summer Drone-Intensive Training, Innovation, Entrepreneurship and STEAM Careers",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-196a"
+    },
+    {
+      "code": "CSE 200",
+      "title": "Research and Teaching in Computer Science and Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-200"
+    },
+    {
+      "code": "CSE 201",
+      "title": "Analysis of Algorithms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-201"
+    },
+    {
+      "code": "CSE 202",
+      "title": "Combinatorial Algorithms",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-202"
+    },
+    {
+      "code": "CSE 203",
+      "title": "Randomized Algorithms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-203"
+    },
+    {
+      "code": "CSE 204",
+      "title": "Computational Models and Complexity",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-204"
+    },
+    {
+      "code": "CSE 205",
+      "title": "Logic in Computer Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-205"
+    },
+    {
+      "code": "CSE 206C",
+      "title": "Foundations of Modern Cryptography",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206c"
+    },
+    {
+      "code": "CSE 206G",
+      "title": "Game Theory and Applications in Computer Science and Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206g"
+    },
+    {
+      "code": "CSE 207",
+      "title": "Graph Algorithms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-207"
+    },
+    {
+      "code": "CSE 209A",
+      "title": "Modern Algorithmic Toolbox",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-209a"
+    },
+    {
+      "code": "CSE 210A",
+      "title": "Programming Languages",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210a"
+    },
+    {
+      "code": "CSE 210B",
+      "title": "Advanced Programming Languages",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210b"
+    },
+    {
+      "code": "CSE 211",
+      "title": "Compiler Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-211"
+    },
+    {
+      "code": "CSE 212A",
+      "title": "Software Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212a"
+    },
+    {
+      "code": "CSE 212B",
+      "title": "Software Reuse and Component-Based Software Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212b"
+    },
+    {
+      "code": "CSE 214",
+      "title": "Principles of Database Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-214"
+    },
+    {
+      "code": "CSE 215",
+      "title": "Design and Implementation of Database Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-215"
+    },
+    {
+      "code": "CSE 216",
+      "title": "Formal Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-216"
+    },
+    {
+      "code": "CSE 220",
+      "title": "Computer Architecture",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-220"
+    },
+    {
+      "code": "CSE 221",
+      "title": "Advanced Microprocessor Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221"
+    },
+    {
+      "code": "CSE 221L",
+      "title": "Advanced Microprocessor Design Laboratory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221l"
+    },
+    {
+      "code": "CSE 222B",
+      "title": "VLSI System-on-a-Chip Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-222b"
+    },
+    {
+      "code": "CSE 226",
+      "title": "Advanced Parallel Processing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-226"
+    },
+    {
+      "code": "CSE 228A",
+      "title": "Agile Hardware Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-228a"
+    },
+    {
+      "code": "CSE 229",
+      "title": "Field-Programmable Gate Arrays Computer-Assisted Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-229"
+    },
+    {
+      "code": "CSE 231",
+      "title": "Advanced Operating Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-231"
+    },
+    {
+      "code": "CSE 232",
+      "title": "Distributed Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232"
+    },
+    {
+      "code": "CSE 232B",
+      "title": "Stream Processing and Machine Learning Systems Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232b"
+    },
+    {
+      "code": "CSE 233",
+      "title": "Advanced Computer Security",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-233"
+    },
+    {
+      "code": "CSE 234",
+      "title": "Understanding Cryptography",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-234"
+    },
+    {
+      "code": "CSE 235",
+      "title": "Cyber-Physical Systems Security",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-235"
+    },
+    {
+      "code": "CSE 237",
+      "title": "Storage Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-237"
+    },
+    {
+      "code": "CSE 239",
+      "title": "Advanced Cloud Computing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239"
+    },
+    {
+      "code": "CSE 239A",
+      "title": "Private Computation on Encrypted Data",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239a"
+    },
+    {
+      "code": "CSE 239B",
+      "title": "Advanced Secure AI, Databases and Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239b"
+    },
+    {
+      "code": "CSE 240",
+      "title": "Artificial Intelligence",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-240"
+    },
+    {
+      "code": "CSE 241",
+      "title": "Knowledge Engineering",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-241"
+    },
+    {
+      "code": "CSE 242",
+      "title": "Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-242"
+    },
+    {
+      "code": "CSE 243",
+      "title": "Data Mining",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-243"
+    },
+    {
+      "code": "CSE 244A",
+      "title": "Foundations of Deep Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244a"
+    },
+    {
+      "code": "CSE 244B",
+      "title": "Machine Learning for Natural Language Processing",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244b"
+    },
+    {
+      "code": "CSE 244C",
+      "title": "Deep Learning for Advanced Computer Vision",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244c"
+    },
+    {
+      "code": "CSE 245",
+      "title": "Computational Models of Discourse and Dialogue",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245"
+    },
+    {
+      "code": "CSE 246",
+      "title": "Responsible Data Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-246"
+    },
+    {
+      "code": "CSE 247",
+      "title": "Projects in Artificial Intelligence",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247"
+    },
+    {
+      "code": "CSE 247B",
+      "title": "Projects in Computer Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247b"
+    },
+    {
+      "code": "CSE 248",
+      "title": "Foundations of Data Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-248"
+    },
+    {
+      "code": "CSE 249",
+      "title": "Large-Scale Web Analytics and Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-249"
+    },
+    {
+      "code": "CSE 250A",
+      "title": "Computer Networks",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250a"
+    },
+    {
+      "code": "CSE 250B",
+      "title": "Principles of Computer Communication",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250b"
+    },
+    {
+      "code": "CSE 250C",
+      "title": "High Speed Computer Networks",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250c"
+    },
+    {
+      "code": "CSE 253",
+      "title": "Network Security",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-253"
+    },
+    {
+      "code": "CSE 257",
+      "title": "Wireless and Mobile Networks",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-257"
+    },
+    {
+      "code": "CSE 258",
+      "title": "Spectral Graph Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-258"
+    },
+    {
+      "code": "CSE 259",
+      "title": "Sensor Networks",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-259"
+    },
+    {
+      "code": "CSE 260",
+      "title": "Computer Graphics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-260"
+    },
+    {
+      "code": "CSE 261",
+      "title": "Advanced Visualization",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-261"
+    },
+    {
+      "code": "CSE 262",
+      "title": "Computer Animation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-262"
+    },
+    {
+      "code": "CSE 263",
+      "title": "Data Driven Discovery and Visualization",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-263"
+    },
+    {
+      "code": "CSE 264",
+      "title": "Computer Vision",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-264"
+    },
+    {
+      "code": "CSE 265",
+      "title": "Human-Computer Interaction",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-265"
+    },
+    {
+      "code": "CSE 269",
+      "title": "Approximation Algorithms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-269"
+    },
+    {
+      "code": "CSE 272",
+      "title": "Information Retrieval",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-272"
+    },
+    {
+      "code": "CSE 277",
+      "title": "Random Process Models in Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-277"
+    },
+    {
+      "code": "CSE 279",
+      "title": "Data Mining and Business Analytics in Knowledge Services",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-279"
+    },
+    {
+      "code": "CSE 280A",
+      "title": "Seminar in Computer Science and Engineering",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280a"
+    },
+    {
+      "code": "CSE 280D",
+      "title": "Seminar in Database Systems",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280d"
+    },
+    {
+      "code": "CSE 280F",
+      "title": "Seminar on Software Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280f"
+    },
+    {
+      "code": "CSE 280G",
+      "title": "Hardware Systems Collective Seminar",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280g"
+    },
+    {
+      "code": "CSE 280H",
+      "title": "Seminar in Human Computation Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280h"
+    },
+    {
+      "code": "CSE 280I",
+      "title": "Seminar on Information Retrieval and Knowledge Management",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280i"
+    },
+    {
+      "code": "CSE 280J",
+      "title": "Seminar on Computer Graphics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280j"
+    },
+    {
+      "code": "CSE 280K",
+      "title": "Sales and Marketing for Technologists and Engineers",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280k"
+    },
+    {
+      "code": "CSE 280L",
+      "title": "Seminar on Logic in Computer Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280l"
+    },
+    {
+      "code": "CSE 280M",
+      "title": "Seminar on Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280m"
+    },
+    {
+      "code": "CSE 280N",
+      "title": "Seminar on Networks",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280n"
+    },
+    {
+      "code": "CSE 280O",
+      "title": "Languages, Systems, and Data Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280o"
+    },
+    {
+      "code": "CSE 280P",
+      "title": "Seminar on Parallel Processing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280p"
+    },
+    {
+      "code": "CSE 280S",
+      "title": "Seminar on Computer Systems",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280s"
+    },
+    {
+      "code": "CSE 280T",
+      "title": "Seminar on New Technologies",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280t"
+    },
+    {
+      "code": "CSE 280V",
+      "title": "Seminar on Computer Vision",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280v"
+    },
+    {
+      "code": "CSE 280X",
+      "title": "Seminar in Distributed Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280x"
+    },
+    {
+      "code": "CSE 280Z",
+      "title": "Seminar in Natural Language Processing and Dialogue",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280z"
+    },
+    {
+      "code": "CSE 285",
+      "title": "Technical Writing for Engineering Graduates",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-285"
+    },
+    {
+      "code": "CSE 290A",
+      "title": "Topics in Algorithms and Complexity Theory: Probabilistic Algorithms and Average Case Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290a"
+    },
+    {
+      "code": "CSE 290C",
+      "title": "Advanced Topics in Machine Learning",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290c"
+    },
+    {
+      "code": "CSE 290D",
+      "title": "Neural Computation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290d"
+    },
+    {
+      "code": "CSE 290E",
+      "title": "Object-Oriented Programming Methodology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290e"
+    },
+    {
+      "code": "CSE 290F",
+      "title": "Applications of Combinatorics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290f"
+    },
+    {
+      "code": "CSE 290G",
+      "title": "Topics in Software Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290g"
+    },
+    {
+      "code": "CSE 290H",
+      "title": "Topics in Database Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290h"
+    },
+    {
+      "code": "CSE 290J",
+      "title": "Advanced Topics in Computer Graphics and Visual Computing",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290j"
+    },
+    {
+      "code": "CSE 290K",
+      "title": "Advanced Topics in Natural Language Processing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290k"
+    },
+    {
+      "code": "CSE 290L",
+      "title": "Topics in Crowdsourcing and Collaboration",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290l"
+    },
+    {
+      "code": "CSE 290M",
+      "title": "Topics in Parallel Computation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290m"
+    },
+    {
+      "code": "CSE 290N",
+      "title": "Topics in Computer Performance",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290n"
+    },
+    {
+      "code": "CSE 290O",
+      "title": "Algorithmic Foundations of Convex Optimization",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290o"
+    },
+    {
+      "code": "CSE 290P",
+      "title": "Data Privacy Via Machine Learning, and Back",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290p"
+    },
+    {
+      "code": "CSE 290Q",
+      "title": "Topics in Programming Languages",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290q"
+    },
+    {
+      "code": "CSE 290S",
+      "title": "Advanced Topics in Computer Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290s"
+    },
+    {
+      "code": "CSE 290T",
+      "title": "Topics in Computing for Society",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290t"
+    },
+    {
+      "code": "CSE 290X",
+      "title": "Cryptography and Computer Security",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290x"
+    },
+    {
+      "code": "CSE 293",
+      "title": "Advanced Topics in Computer Science & Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-293"
+    },
+    {
+      "code": "CSE 296",
+      "title": "Masters Project",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-296"
+    },
+    {
+      "code": "CSE 297A",
+      "title": "Individual Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297a"
+    },
+    {
+      "code": "CSE 297B",
+      "title": "Individual Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297b"
+    },
+    {
+      "code": "CSE 297C",
+      "title": "Individual Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297c"
+    },
+    {
+      "code": "CSE 297F",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297f"
+    },
+    {
+      "code": "CSE 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299a"
+    },
+    {
+      "code": "CSE 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299b"
+    },
+    {
+      "code": "CSE 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299c"
+    },
+    {
+      "code": "CSE 299F",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299f"
+    },
+    {
+      "code": "ECE 253",
+      "title": "Introduction to Information Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-253"
+    },
+    {
+      "code": "STAT 266B",
+      "title": "Advanced Statistical Programming in R",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-references-missing-locally",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266b"
+    },
+    {
+      "code": "STAT 266C",
+      "title": "Introduction to Data Wrangling",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-references-missing-locally",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c"
+    }
+  ]
+}
