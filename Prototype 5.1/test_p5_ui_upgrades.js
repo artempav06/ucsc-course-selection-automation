@@ -657,6 +657,16 @@ function testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch() {
   assert(results.some(result => result.code === 'CSE 245' && result.source === 'graduate'), 'manual academic-history search should include graduate catalog courses');
 }
 
+function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
+  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const changedAssets = ['js/courses.js', 'js/app.js', 'js/graduate-courses.js'];
+  for (const asset of changedAssets) {
+    const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
+    assert(match, `${asset} should be loaded with an explicit cache-busting version`);
+    assert(match[1].includes('cse-grad-search-only'), `${asset} cache-buster should change for the CSE graduate/search update so browsers do not reuse old JS`);
+  }
+}
+
 function testGraduateRestrictionWarningsUseOfficialCatalogText() {
   const { __p5 } = loadApp();
   const course = __p5.courseByCode('CSE 245');
@@ -713,6 +723,7 @@ const tests = [
   testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty,
   testBlankScheduleRulesPopupIsShortAndActionable,
   testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch,
+  testChangedSearchCatalogScriptsHaveFreshCacheBusters,
   testGraduateRestrictionWarningsUseOfficialCatalogText,
   testAddingGraduateCompletedCourseWarnsButDoesNotMergeIntoSchedulerCatalog
 ];
