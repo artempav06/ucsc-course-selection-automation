@@ -11,3 +11,9 @@ output/
 # Local editor/OS metadata
 .vscode/
 .idea/
+
+# Local project Brain notes for autonomous handoffs (not committed)
+Brain/
+
+# Catalog scraper raw HTML snapshots are local debug artifacts; parsed JSON evidence is committed instead.
+Prototype 5.1/data/catalog-expansion-lab/official-course-raw-pages/

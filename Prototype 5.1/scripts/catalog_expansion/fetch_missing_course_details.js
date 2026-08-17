@@ -23,7 +23,7 @@ function extractDesc(html) {
 function extractRequirements(html) {
   const req = htmlField(html, 'Requirements');
   const text = req || stripHtml(html);
-  const m = text.match(/Prerequisites?(?:\(s\))?:\s*(.*?)(?=\s(?:Enrollment|Credits|Repeat|General Education|Grading|Fees|Terms|Quarter offered|Instructor|$))/i);
+  const m = text.match(/Prerequisites?(?:\(s\))?:\s*(.*?)(?=\s(?:Credits|Repeat|General Education|Grading|Fees|Terms|Quarter offered|Instructor|$))/i);
   return m ? m[1].trim() : (req && /Prereq/i.test(req) ? req : '');
 }
 function extractEnrollmentText(html) {

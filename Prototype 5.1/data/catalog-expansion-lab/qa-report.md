@@ -1,12 +1,12 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-17T03:01:18.635Z
+Generated: 2026-08-17T05:04:23.015Z
 
 ## Summary
 
-- Candidate count: 161
-- Passed with no warnings: 28
-- Warnings only / human review needed: 131
+- Candidate count: 146
+- Passed with no warnings: 7
+- Warnings only / human review needed: 137
 - Blocked by hard errors: 2
 
 ## Merge readiness
@@ -15,460 +15,436 @@ Not ready to merge: hard QA errors exist.
 
 ## Rows
 
-- ANTH 151D — Introduction to Design Anthropology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-151d
-- ANTH 196Y — Archaeology and the Rise of Nationalism: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-196y
-- ANTH 200 — Theoretical Foundations of Physical Anthropological Research: warnings-only
+- DANM 201 — Recent Methods and Approaches to Digital Arts and Culture: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200
-- ANTH 200A — Cultural Graduate Core Course: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-201
+- DANM 202 — Dialogues and Questions in Digital Arts and Culture: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200a
-- ANTH 200B — Cultural Graduate Core Course: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-202
+- DANM 203 — Professional Development for the Arts: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200b
-- ANTH 201 — Human Evolution: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-203
+- DANM 210 — Project Design Studio: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-201
-- ANTH 202A — Skeletal Biology: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-202a
-- ANTH 208A — Ethnographic Practice: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-210
+- DANM 211 — Critique: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208a
-- ANTH 208C — Design Anthropology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208c
-- ANTH 210R — Religion in American Politics and Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-210r
-- ANTH 211 — Human Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-211
-- ANTH 212 — The Human Life Cycle: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-212
-- ANTH 214 — Culture and Power: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-214
-- ANTH 216 — Methods in Biological Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-216
-- ANTH 219 — Religions, States, Secularities: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-219
-- ANTH 220 — Cartographies of Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-220
-- ANTH 224 — Anthropology of Secularism: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-224
-- ANTH 225 — The Anthropology of Things: Sign, Gift, Commodity, Tool: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-225
-- ANTH 228 — Grant Writing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-228
-- ANTH 229 — Constructing Regions: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-229
-- ANTH 230 — Bodies, Images, Screens: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-230
-- ANTH 231 — Intimacy and Affective Labor: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-231
-- ANTH 232 — Bodies, Knowledge, Practice: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-232
-- ANTH 233 — Politics of Nature: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-233
-- ANTH 234 — Feminist Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-234
-- ANTH 235 — Language and Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-235
-- ANTH 238 — Advanced Topics in Cultural Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-238
-- ANTH 241 — Social Justice: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-241
-- ANTH 243 — Cultures of Capitalism: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-243
-- ANTH 246 — Advanced Readings in Environmental Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-246
-- ANTH 247 — Critical Perspectives on Nutrition: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-247
-- ANTH 248 — Shadowy Dealings: Anthropology of Finance, Money, and Law: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-248
-- ANTH 249 — Ecological Discourses: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-249
-- ANTH 252 — Survey of Cultural Anthropological Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-252
-- ANTH 253 — Advanced Cultural Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-253
-- ANTH 254 — Medicine and Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-254
-- ANTH 255 — Regulating Religion/Sex: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-255
-- ANTH 258 — Experimental Cultures: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-258
-- ANTH 259 — Race in Theory and Ethnography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-259
-- ANTH 260 — Anthropology of Freedom: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-260
-- ANTH 261 — Replication, Mimesis, and Fakery: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-261
-- ANTH 262 — Documenting Cultures: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-262
-- ANTH 263 — Kinship: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-263
-- ANTH 269 — Global History and the Longue Duree: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-269
-- ANTH 270 — History of Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270
-- ANTH 270A — Archaeology Graduate Core Course: History of Archaeological Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270a
-- ANTH 270B — Current Directions in Archaeological Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270b
-- ANTH 272 — Advanced Archaeological Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-272
-- ANTH 273 — Origins of Farming: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-273
-- ANTH 274 — Origins of Complex Societies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-274
-- ANTH 275 — Tutorial in African Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-275
-- ANTH 276A — Advanced Topics in North American Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276a
-- ANTH 276B — Mesoamerican Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276b
-- ANTH 276G — Archaeology of Colonial Borderlands: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276g
-- ANTH 278 — Tutorial on Historical Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-278
-- ANTH 279 — Feminism and Gender in Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-279
-- ANTH 280 — Advanced Ceramic Analysis: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280
-- ANTH 280L — Advanced Ceramic Analysis Laboratory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280l
-- ANTH 281 — Landscape Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-281
-- ANTH 282 — Household Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-282
-- ANTH 283 — Introduction to Geographic Information Systems for Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-283
-- ANTH 284 — Tutorial in Zooarchaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-284
-- ANTH 285 — Osteology of Mammals, Birds, and Fish: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-285
-- ANTH 287 — Advanced Topics in Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287
-- ANTH 287A — Advanced Topics: Indigenous Archaeology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287a
-- ANTH 287B — Advanced Topics: Archaeology in the Age of Big Data: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287b
-- ANTH 290T — Pedagogy of Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-290t
-- ANTH 292 — Graduate Colloquium: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-292
-- ANTH 294N — Comparison of Cultures: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294n
-- ANTH 294R — Advanced Readings in Biological Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294r
-- ANTH 295A — Scientific Method: Biological Anthropology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-295a
-- ANTH 296N — The Body, Narrative, and Creative Practice: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-296n
-- ANTH 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297a
-- ANTH 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297b
-- ANTH 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297c
-- ANTH 297F — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297f
-- ANTH 298 — Advanced Laboratory Apprenticeship: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-298
-- ANTH 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299a
-- ANTH 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299b
-- ANTH 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299c
-- ANTH 299W — Anthropology Dissertation Workshop: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299w
-- APLX 235 — Second Language Teaching: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/aplx-applied-linguistics/200/aplx-235
-- ART 131 — Painting with Fire: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-131
-- ART 136 — Murals and Movements: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-136
-- ART 171 — Art, Food, and Ecology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-171
-- ART 210A — Practice-Based Research Group: Sites: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210a
-- ART 210B — Practice-Based Research Group: Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210b
-- ART 210C — Practice-Based Research Group: Contexts: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210c
-- ART 220 — Methods and Histories: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-220
-- ART 230 — Theory and Practice: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-230
-- ART 240 — Art Pedagogies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-240
-- ART 250 — Writing Matters: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-250
-- ART 257 — Immersive Arts Field Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-257
-- ART 260 — Curatorial Collective: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-260
-- ART 270A — Project Development and Critique I: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270a
-- ART 270B — Project Development and Critique II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270b
-- ART 280 — MFA Project Production: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-280
-- ART 297 — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-297
-- ART 299F — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-299f
-- CHIN 109 — Haunted Justice: Goddess, Ghosts, and Gender in Chinese Folklore: warnings-only
-  - Warnings: review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese/upper-division/chin-109
-- CMMU 297 — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmmu-community-studies/graduate/cmmu-297
-- CRES 141 — Learning with the Land: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-141
-- CRES 143 — Trans Love in a Hopeless Place: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-143
-- CRES 178 — Authoritarianism and Fascism: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-178
-- CRES 190I — Talanoa—Talkin Story: Indigenous, Decolonial Research and Methodologies: warnings-only
-  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190i
-- CRES 190W — Queer & Anti-Colonial Gardening: warnings-only
-  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190w
-- CRES 200 — Black Studies Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-200
-- CRES 201 — Exile & Diaspora: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-201
-- CRES 202 — Ecopoetics and Ecoaesthetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-202
-- CRES 203 — Black Studies Theories: blocked
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-211
+- DANM 212 — Thesis Proposal: blocked
   - Errors: invalid-units
   - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-203
-- CRES 204 — Decolonial Futures: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-212
+- DANM 215 — MFA Exhibition Production: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-204
-- CRES 205 — Critical Indigenous Studies: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-215
+- DANM 216 — Digital Bodies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-205
-- CRES 206 — Studying with Ancestors: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-216
+- DANM 219 — Introduction to Electronics for Artmaking: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-206
-- CRES 207 — Seeing the Earth Before the End of the World: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-219
+- DANM 220 — Introduction to Programming for the Arts: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-207
-- CRES 209 — Ethnographies of Empire: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-220
+- DANM 221 — Mathematics and the Arts: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-209
-- CRES 210 — Sex and the Carceral State: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-221
+- DANM 227 — Projected Light in Performance: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-210
-- CRES 213 — Colonialism, Racial Capitalism and Surveillance: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-227
+- DANM 233 — The Object as Interface: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-213
-- CRES 217 — Indigenous Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-233
+- DANM 241B — Modern Art: Cubism to Pop: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-217
-- CRES 218 — Militarism and Tourism: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-241b
+- DANM 250A — Art and Science: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-218
-- CRES 222 — Experimental Language Poetry: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250a
+- DANM 250B — Socially Engaged Art: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-222
-- CRES 227 — From Oceania to Native California: Indigenous Environmentalisms: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250b
+- DANM 250C — Performance and Embodiment: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-227
-- CRES 243 — Feminism, Race, and the Politics of Knowledge: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250c
+- DANM 250E — Collaborative Research Project Group: Experimental Play: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-243
-- CRES 261 — The Racial and Gendered Economies of Housing: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250e
+- DANM 250F — Film, Moving Image Installation, and Curatorial Lab: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-261
-- CRES 297A — Independent Study: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250f
+- DANM 250G — Research Group: Isaac Julien Studio Lab - London Quarter: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250g
+- DANM 250I — Interdisciplinary Arts Production Lab: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250i
+- DANM 254I — Empirical Approaches to Art Information: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-297a
-- CRSN 100 — Writing Sustainabilities: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-100
-- CRSN 11 — Introduction to Sustainabilities and Social Justice: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-11
-- CRSN 120 — Diverse Perspectives on Sustainability and Justice: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-120
-- CRSN 23 — Campus Natural History Practicum: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-23
-- CRSN 32 — Reading Sci-Fi: Octavia Butler and Ursula LeGuin: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-32
-- CRWN 103 — Summer Project - Science for Social Impact: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-103
-- CRWN 185A — Design your Career: Self-Discovery & Career Planning: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-254i
+- DANM 280 — Seminar in Digital Arts and New Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185a
-- CRWN 185B — Career Launchpad: Career Tools & Strategy for Engineers and Technical Specialists: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-280
+- DANM 281 — Special Topics in Digital Arts and New Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185b
-- CRWN 191 — Marketing for Good: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-191
-- CRWN 290 — Startup Entrepreneurship Academy: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/graduate/crwn-290
-- CRWN 82 — Introduction to Broadcast Operations: KZSC Radio Programming: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-82
-- CSP 200 — Natural Sciences for Coastal Sustainability: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-200
-- CSP 210 — Social Sciences for Coastal Sustainability: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-210
-- CSP 220 — Economics for Coastal Sustainability: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-220
-- CSP 230 — Integrated Problem-Based Discussion: blocked
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-281
+- DANM 297 — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-297
+- DANM 297G — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-297g
+- DANM 299 — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-299
+- EART 170 — Global Seismology: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170
+- EART 292 — Seminar: blocked
   - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-230
-- CSP 231A — CSP Year 1 Capstone Planning & Design Fall: warnings-only
+  - Warnings: review:missing-units
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-292
+- EDUC 200 — Beginning Student Teaching: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231a
-- CSP 231B — CSP Year 1 Capstone Planning & Design Winter: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-200
+- EDUC 201 — Intermediate Student Teaching: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-201
+- EDUC 201A — Intermediate Student Teaching: Single Subject: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-201a
+- EDUC 202A — Advanced Student Teaching: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202a
+- EDUC 202B — Advanced Student Teaching: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202b
+- EDUC 202C — Advanced Student Teaching: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202c
+- EDUC 203 — Teaching English Language Development: Foundations, Approaches, and Strategies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231b
-- CSP 244 — Adaptation and Planning: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-203
+- EDUC 204 — Methods of English Language Development: Single Subject: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-244
-- CSP 271 — Fisheries Ecology: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-271
-- CSP 281A — Hacking for Oceans—Lean Design Methods: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-281a
-- CSP 282 — Quantitative Methods for Coastal Climate Resilience: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-282
-- CSP 290A — Coastal Science and Policy Capstone Project: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290a
-- CSP 290B — Coastal Science and Policy Capstone Project: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290b
-- CSP 290C — Coastal Science and Policy Capstone Project: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290c
-- CSP 291 — Coastal Science and Policy Capstone Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-204
+- EDUC 205 — Teaching, Learning, and Schooling in a Diverse Society: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-291
-- CSP 292 — Special Topics in Coastal Science and Policy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-205
+- EDUC 206 — Teaching, Learning, and Schooling: Single Subject: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-292
-- CSP 293 — Special Topics in Coastal Science and Policy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-206
+- EDUC 207 — Social Foundations of Education: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-293
-- CSP 297 — Independent Study in Coastal Science and Policy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-207
+- EDUC 208 — Portfolio Development: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-297
-- CT 151 — Machine Collaboration: Creativity in Posthuman Practice: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-208
+- EDUC 210 — Health, Safety, and Community: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-151
-- CT 167S — Creative Technologies Sound and Listening Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-210
+- EDUC 211 — Teaching Special Populations in the General Education Classroom: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167s
-- CT 167V — Voice, Labor, and Gender: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-211
+- EDUC 212A — Bilingualism and Biliteracy: History, Politics, Theory, and Practice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167v
-- ENVS 240 — Public Policy and Conservation: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212a
+- EDUC 212B — Bilingualism and Biliteracy: Language, Literacy and Content Instruction: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-240
-- ENVS 250 — Coastal Governance: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212b
+- EDUC 212C — Bilingualism and Biliteracy: Community and School Partnerships: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-250
-- FMST 208 — African(a) Genders and Sexualities: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212c
+- EDUC 213 — Child and Adolescent Development for Educators: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-208
-- FMST 224 — Reproductive Justice: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-213
+- EDUC 214 — Contemporary Issues in Education: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-224
-- SOCY 268A — Science and Justice: Experiments in Collaboration: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-214
+- EDUC 215 — K-12 Ethnic Studies Pedagogy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268a
-- SOCY 268B — Science and Justice Research Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268b
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-215
+- EDUC 216 — UCSC Field-Based Learning Initiative (FBLI): passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-216
+- EDUC 217 — Topics in Elementary Education: Physical Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-217
+- EDUC 218 — Topics in Elementary Education: Visual Arts: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-218
+- EDUC 219 — Topics in Elementary Education: Performing Arts: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-219
+- EDUC 220 — Reading and Language Arts for Elementary Classrooms: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-220
+- EDUC 221 — Science Learning and Teaching in Elementary Classrooms: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-221
+- EDUC 222 — Mathematics Learning and Teaching in Elementary Classrooms: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-222
+- EDUC 225 — Reading Across the Curriculum in Middle School and Secondary: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-225
+- EDUC 226 — English Teaching: Theory and Curriculum: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-226
+- EDUC 227 — English Teaching for Secondary Classrooms: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-227
+- EDUC 228 — Math Education: Research and Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-228
+- EDUC 229 — Teaching Mathematics in the Secondary Classroom: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-229
+- EDUC 230 — Science Education: Research and Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-230
+- EDUC 231 — Teaching Science in the Secondary Classroom: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-231
+- EDUC 232 — Social Science: Theory and Curriculum: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-232
+- EDUC 233 — Social Science Teaching for Secondary Classrooms: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-233
+- EDUC 235 — Introduction to Educational Inquiry: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-235
+- EDUC 236 — Quantitative Research Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-236
+- EDUC 237 — Qualitative Research Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-237
+- EDUC 250 — Teaching and Teachers: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-250
+- EDUC 251 — Analysis of Activity and Interaction in Educational Settings: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-251
+- EDUC 252 — Hermeneutics of Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-252
+- EDUC 253 — Research Design in Mathematics and Science Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-253
+- EDUC 254 — Critical and Alternative Paradigms in Education Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-254
+- EDUC 255 — Intermediate Quantitative Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-255
+- EDUC 256 — Intermediate Qualitative Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-256
+- EDUC 260 — The Teacher and The School: An Investigation of Related Practice, Reform, and Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-260
+- EDUC 261 — Thinking and Learning: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-261
+- EDUC 262 — Social and Cultural Context of Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-262
+- EDUC 263 — Educational Reform: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-263
+- EDUC 264 — Research on Teacher Development and Teacher Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-264
+- EDUC 265 — Teacher as Educational Policy Maker: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-265
+- EDUC 266 — Program Evaluation and Action Research in Educational Reform: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-266
+- EDUC 268 — Schools, Communities, and Families: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-268
+- EDUC 271 — Theoretical Perspectives on Learning and Using Literacy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-271
+- EDUC 272 — Language in Education and Society: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-272
+- EDUC 273 — Language Acquisition, Bilingualism, and Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-273
+- EDUC 274 — Language and Power in Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-274
+- EDUC 276 — Theory and Practice of Writing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-276
+- EDUC 277A — Second-year Doctoral Proseminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277a
+- EDUC 277B — Second-year Doctoral Proseminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277b
+- EDUC 277C — Second-year Doctoral Proseminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277c
+- EDUC 278 — Critical Exploration of Reading Theory and Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-278
+- EDUC 279 — Directed Reading: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-279
+- EDUC 279F — Directed Reading: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-279f
+- EDUC 280 — Language and Literacy Across Disciplines: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-280
+- EDUC 281 — Conceptual Change in Science and Mathematics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-281
+- EDUC 282 — Informal Learning in Sciences and Mathematics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-282
+- EDUC 283 — Equity and Social Justice in Mathematics and Science Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-283
+- EDUC 284 — Gender in Mathematics and Science Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-284
+- EDUC 285 — Culture and Learning: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-285
+- EDUC 286 — Research in STEM Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-286
+- EDUC 287 — Issues in Educational Assessment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-287
+- EDUC 288 — Ethnographies of Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-288
+- EDUC 289 — School Organization: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-289
+- EDUC 290 — CHAT and Educational Practice and Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-290
+- EDUC 291 — Globalization and Transnationalism in Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-291
+- EDUC 292 — Ideology and Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-292
+- EDUC 293A — Research Apprenticeship: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-293a
+- EDUC 293B — Research Apprenticeship: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-293b
+- EDUC 294 — Second-Year Research Project: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-294
+- EDUC 295 — Critical Perspectives on Education: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-295
+- EDUC 296 — Educational Policy and the Context of Teachers' Work: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-296
+- EDUC 297 — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-297
+- EDUC 297F — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-297f
+- EDUC 298 — TA Apprenticeship: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-298
+- EDUC 299 — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-299
+- ESCI 20 — Introduction to Environmental Science: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20
+- ESCI 20L — Introduction to Environmental Science: Santa Cruz Water from Well to Wastewater Treatment: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20l
+- FMST 200 — Feminist Theories: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-200
+- FMST 201 — Topics in Feminist Methodologies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-201
+- FMST 202 — Disciplining Knowledge/Graduate Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-202
+- FMST 203 — Feminist Pedagogies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-203
+- FMST 207 — Topics in Queer/Race Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-207
+- FMST 209 — Comparative Empires: Gender, Slavery, Race: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-209
+- FMST 211 — Sexuality, Race, and Migration in the Americas: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-211
+- FMST 212 — Feminist Theory and the Law: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-212
+- FMST 214 — Topics in Feminist Science Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-214
+- FMST 215 — Postcolonial and Postsocialist Transactional Analytics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-215
+- FMST 216 — Archives/Genders/Histories: An Introduction: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-216
+- FMST 222 — Religion, Feminism, and Sexual Politics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-222
+- FMST 232 — Topics in Postcolonial Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-232
+- FMST 260 — Black Feminist Reconstruction: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-260
+- FMST 270 — Anthropology at Its Interfaces with Feminist, Postcolonial, and Decolonial STS: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-270
+- FMST 290 — Pedagogical Training: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-290
+- FMST 291 — Advising: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-291
+- FMST 297A — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297a
+- FMST 297B — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297b
+- FMST 297F — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297f
+- FMST 299A — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-299a
+- FMST 299B — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-299b
+- OCEA 250 — Field and Laboratory Methods in Coastal and Aquatic Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-250
+- OCEA 267 — Applied Environmental Time Series Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-267
+- SOCD 204 — Ethnographic Writing and Social Documentation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-204
+- THEA 251 — Graduate Student Production: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-251
+- THEA 290A — Research Methods for Performance and Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290a
+- THEA 294 — Future Stages: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-294
