@@ -1,505 +1,362 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-17T06:03:31.770Z
+Generated: 2026-08-17T06:20:28.254Z
 
 ## Summary
 
-- Candidate count: 170
-- Passed with no warnings: 25
-- Warnings only / human review needed: 142
-- Blocked by hard errors: 3
+- Candidate count: 126
+- Passed with no warnings: 33
+- Warnings only / human review needed: 93
+- Blocked by hard errors: 0
 
 ## Merge readiness
 
-Not ready to merge: hard QA errors exist.
+Not ready for automatic merge: no hard schema blockers, but human-review warnings remain.
 
 ## Rows
 
-- FREN 115 — Structures of spoken French: warnings-only
-  - Warnings: review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/fren-french/upper-division/fren-115
-- GAME 200 — Game Design Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-200
-- GAME 201 — Level&#160;Design: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-201
-- GAME 202 — Introduction to Build (Advanced): Physical Computing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-202
-- GAME 210 — Game Art Intensive: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-210
-- GAME 215 — Audio Direction: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-215
-- GAME 221 — Professional Development for Game Makers: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-221
-- GAME 222 — Professional Development for Game Makers II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-222
-- GAME 223 — Professional Development for Games Makers III: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-223
-- GAME 230 — Fundamentals of Game Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-230
-- GAME 231 — Game Technologies: warnings-only
+- HISC 174 — Aliens & Quantum Reality: Does Anybody Really Know What Time (It) Is?: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-174
+- HISC 186 — Quantum Physics and Philosophy: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-186
+- HISC 189 — Neither East nor Europe: A Political History: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-189
+- HISC 203A — Approaches to Critical Inquiry: warnings-only
+  - Warnings: review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-203a
+- HISC 203B — Approaches to History of Consciousness: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-231
-- GAME 232 — Advanced Game Technologies: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-203b
+- HISC 205 — Global Political Thought: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-205
+- HISC 207 — Undisciplining Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-207
+- HISC 208 — Humanism and its Critics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-208
+- HISC 209 — Hegel’s Phenomenology of Spirit: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-209
+- HISC 210 — New Left Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-210
+- HISC 214 — What is a Subject?: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-214
+- HISC 215 — History of Unconsciousness: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-215
+- HISC 216 — Critical Race/Ethnic Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-216
+- HISC 217 — Critical Human Rights Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-217
+- HISC 218 — French Hegel: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-218
+- HISC 219 — Radical Futures and Visual Culture: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-219
+- HISC 220 — Theories of Democracy and Dictatorship: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-220
+- HISC 221 — Surveillance Culture: Privacy, Publicity, Art, and Critical Social Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-221
+- HISC 222B — Theories of Late Capitalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-232
-- GAME 235 — Game Development I: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-222b
+- HISC 223 — Althusser: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-235
-- GAME 236 — Game Development II: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-223
+- HISC 224 — Marx's Capital Vol. 1: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-224
+- HISC 226 — Liberty and Resistance: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-226
+- HISC 227 — Carl Schmitt: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-227
+- HISC 228 — Deleuze and Guattari: A Thousand Plateaus (Readings in Continental Theory): passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-228
+- HISC 229 — Walter Benjamin: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-229
+- HISC 23 — What is Communication?: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-23
+- HISC 230A — Poetry, Language, Thought: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-230a
+- HISC 230B — Poetry, Language, Thought: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-230b
+- HISC 231 — From System to Fragment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-231
+- HISC 232 — Music, Social, Thought: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-232
+- HISC 236 — 20th Century Critical Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-236
+- HISC 237A — Historical Materialism: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-237a
+- HISC 237B — Historical Materialism: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-237b
+- HISC 240 — Basic Principles of University-Level Pedagogy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-240
+- HISC 242A — Violence and Phenomenology: Fanon/Hegel/Sartre: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-242a
+- HISC 242B — Violence and Phenomenology: Fanon/Hegel/Sartre: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-236
-- GAME 238 — Computer Graphics for Games: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-238
-- GAME 240 — Game Usability: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-242b
+- HISC 244 — Racial Capitalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-240
-- GAME 250 — Foundations of Serious Games and Gamification: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-244
+- HISC 246 — Black Radicalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-250
-- GAME 251 — Games User Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-246
+- HISC 248 — Black Critical Theory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-251
-- GAME 252 — Modeling and Simulation: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-248
+- HISC 249 — Black Ecological Thought: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-252
-- GAME 255 — Serious Games Studio I: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-255
-- GAME 256 — Serious Games Studio II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-256
-- GAME 257 — Serious Games Studio III: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-257
-- GAME 270 — Games and Playable Media Studio I: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-249
+- HISC 252 — Poststructuralism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-270
-- GAME 271 — Games and Playable Media Studio II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-271
-- GAME 272 — Games and Playable Media Studio III: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-252
+- HISC 258A — Rethinking Capitalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-272
-- GAME 273 — Game Production Intensive: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-258a
+- HISC 258B — Rethinking Capitalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-273
-- GAME 280A — Games Proseminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-258b
+- HISC 261 — Intellectual History and the Philosophical Canon: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280a
-- GAME 280Y — Games You Should Know: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280y
-- GAME 290A — Advanced Topics in Games: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-290a
-- GCH 198 — Independent Field Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health/upper-division/gch-198
-- GIST 220 — Cartography and Visualization: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-220
-- GIST 230 — Remote Sensing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-230
-- GIST 240 — GIS Development and Programming: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-240
-- GIST 250 — Geospatial Technology Applications: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-250
-- GIST 290A — GISTAR Capstone Project: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290a
-- GIST 290B — GISTAR Capstone Project: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290b
-- GRAD 200 — Academic Writing for Graduate Students: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200
-- GRAD 201 — Oral Communication for Graduate Students: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201
-- GRAD 202 — Reading and Research Skills for Graduate Students: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202
-- GRAD 213 — Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213
-- GRAD 215 — Equitable Course Design for Graduate Student Instructors: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215
-- HAVC 166 — Indigenous Art and Activism: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-166
-- HAVC 175 — Speculative Currents: Art, Oceans, and Imagined Worlds: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-175
-- HAVC 201A — Introduction to Visual Studies and Critical Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-201a
-- HAVC 202 — Introduction to Visual Studies Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-202
-- HAVC 204 — Grant Writing, Pedagogy, and Professional Development: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-204
-- HAVC 205 — Grant Writing in Visual Studies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-205
-- HAVC 212 — Yoruba Visualities and Aesthetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-212
-- HAVC 213 — Theories and Visual Cultures of Iconoclasm: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-213
-- HAVC 220 — Topics in Asian Visual Studies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-220
-- HAVC 222 — The Image of Arhat in China: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-222
-- HAVC 224 — Engaged Buddhism and Visual Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-224
-- HAVC 230 — Race, Aesthetics, and Art in 18th Century Europe: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-230
-- HAVC 231 — Visualizing Waterways and Water Ways: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-231
-- HAVC 232 — The Monument Since 1750 in Relation to Nationhood and the Experience of War: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-232
-- HAVC 233 — Visuality, Blackness, and the Human: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-233
-- HAVC 235 — Photography and History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-235
-- HAVC 236 — Contemporary Art and Theories of Democracy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-236
-- HAVC 240 — Seeing Race: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-240
-- HAVC 241 — Decolonizing Nature: Contemporary Art and Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-241
-- HAVC 242 — Radical Futurisms: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-242
-- HAVC 243 — Alternative Architecture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-243
-- HAVC 244 — Reinventing ''Reinventing Nature:'' Visual Culture and Environmentalism, circa 1995: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-244
-- HAVC 245 — Theories of Representation: Visual Discourses of the Body: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-245
-- HAVC 249 — How to Do Things with Pictures: Media, Culture, and Performance: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-249
-- HAVC 250 — The Cult of Mary in Byzantium: Visualities of Political, Religions, and Gender Constructs: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-250
-- HAVC 260 — Visual Literacy in Spanish America, 1500-1800: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-260
-- HAVC 264 — Contemporary Native American Art: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-264
-- HAVC 270 — Colonial Cultures of Collecting and Display: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-270
-- HAVC 273 — Imaging Colonial Borderlands: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-273
-- HAVC 275 — The Visual Cultures of Travel and Tourism: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-275
-- HAVC 276 — Indigenous Futurisms: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-276
-- HAVC 280 — Visual Studies Issues: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-280
-- HAVC 294 — Teaching-Related Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-294
-- HAVC 295 — Directed Reading: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-295
-- HAVC 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297a
-- HAVC 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297b
-- HAVC 297F — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297f
-- HAVC 299A — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299a
-- HAVC 299B — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299b
-- HCI 200 — Introduction to HCI: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-200
-- HCI 201 — Introduction to HCI Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-201
-- HCI 202A — Introduction to Build: Bootcamp: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202a
-- HCI 202B — Introduction to Build (Advanced): Physical Computing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202b
-- HCI 203 — Introduction to Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-203
-- HCI 220 — Ethics and Activism in Tech and Design: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-220
-- HCI 250 — Participatory Design: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-250
-- HCI 271 — HCI Capstone 1: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-271
-- HCI 272 — HCI Capstone 2: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-272
-- HCI 290 — HCI Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-290
-- HCI 291 — Strategy Innovation for UX Professionals: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291
-- HIS 125 — California History: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-125
-- HIS 137H — History and Cultural Heritage in Africa: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-137h
-- HIS 139N — The Bible Buried Beneath: Biblical Archeology in 19th and 20th Century Palestine: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-139n
-- HIS 190L — Topics in Indigenous History: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-190l
-- HIS 198S — Summer Humanities EXCEL Internship Course: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-198s
-- HIS 200 — Methods and Theories of History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200
-- HIS 200B — Introduction to Research Methods in History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200b
-- HIS 201 — Directed Research Colloquium: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-261
+- HISC 262 — Critical Theory After Habermas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-201
-- HIS 202 — Practicing World History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-262
+- HISC 263 — European Philosophies of Difference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-202
-- HIS 203 — Global Decolonization: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-263
+- HISC 264 — The Idea of Africa: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203
-- HIS 203A — Global History of War and Revolution, 1912-1929: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-264
+- HISC 265A — Biopolitics l: Problematics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203a
-- HIS 204A — History of Gender Research Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-265a
+- HISC 265B — Biopolitics II: Corporealities: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204a
-- HIS 204B — Approaches to Social and Cultural History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-265b
+- HISC 267 — Capital and Democracy in an Age of Finance: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-267
+- HISC 269 — Property and Possession: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204b
-- HIS 204C — Colonialism, Nationalism and Race Research Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-269
+- HISC 271 — Historical Temporalities: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204c
-- HIS 204E — Transnationalism, Borderlands, and History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-271
+- HISC 272 — Deprovincializing Marx: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-272
+- HISC 273 — Introduction to STS: Theory, Method, Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-273
+- HISC 274 — Causality, Language, and Time: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-274
+- HISC 275 — Sovereignties: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-275
+- HISC 276 — Critical STS: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-276
+- HISC 278 — Speculative Ecologies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204e
-- HIS 205 — Diaspora and World History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-278
+- HISC 279 — Earth-Land-Soil: Geophilosophies in Troubled Grounds: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-205
-- HIS 206 — Empire in World History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-279
+- HISC 282 — Art of Independence, Liberation and the Cold War: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-206
-- HIS 208 — An Introduction to Digital Humanities: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-282
+- HISC 283 — Autonomy and Autonomist Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-208
-- HIS 209A — Diaspora as Method: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-283
+- HISC 285 — Topics in Political Theology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-209a
-- HIS 210A — Readings in U.S. History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-285
+- HISC 286 — Meeting the Universe Halfway: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210a
-- HIS 210B — Readings in U.S. History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-286
+- HISC 291 — Advising: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-291
+- HISC 292 — Practicum in Composition: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210b
-- HIS 211A — Research Seminar in Early American History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-292
+- HISC 293A — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293a
+- HISC 293B — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293b
+- HISC 293C — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293c
+- HISC 294A — Ind Study-Teaching: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294a
+- HISC 294B — Ind Study-Teaching: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294b
+- HISC 294C — Ind Study-Teaching: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294c
+- HISC 295 — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295
+- HISC 295A — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295a
+- HISC 295B — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295b
+- HISC 295C — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295c
+- HISC 296 — Special Student Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-296
+- HISC 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297a
+- HISC 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297b
+- HISC 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297c
+- HISC 298 — Doctoral Colloquium: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-298
+- HISC 299A — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299a
+- HISC 299B — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299b
+- HISC 299C — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299c
+- HISC 5 — Time Travel and the Law: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-5
+- HTEC 10 — What Can I Do with My Degree? Humanities-Powered Jobs: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/htec-humanizing-technology-certificate/lower-division/htec-10
+- KRSG 14 — Reading Eco-poetry in Community: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-14
+- KRSG 16 — Reading Du Bois: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-16
+- LALS 134 — Fashioning Latinidades: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-134
+- LALS 146 — Queer Latinidades: Drag & Trans Latinx & Latin American Performances: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-146
+- LALS 194J — Transitional Justice in the Americas: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-194j
+- LALS 200 — Bridging Latin American and Latina/o Studies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211a
-- HIS 211B — Research Seminar in Early American History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200
+- LALS 200A — Power and Structure in the Am&#233;ricas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211b
-- HIS 212A — Citizenship in U.S. History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200a
+- LALS 200B — Cultures and Subjectivities in the Am&#233;ricas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212a
-- HIS 212B — Citizenship in United States History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200b
+- LALS 201 — Research in Practice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212b
-- HIS 214 — California History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-201
+- LALS 202 — Latin/o American Spaces and Modernity: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-214
-- HIS 215A — Topics in American History: U.S. Labor and Working Class History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-202
+- LALS 203 — Latin American Social Movements: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215a
-- HIS 215B — Visions of Progress: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-203
+- LALS 204 — Migration, Borders, and Borderlands: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215b
-- HIS 215C — U.S. Immigration and Ethnic History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-204
+- LALS 205 — Comparison as Method: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215c
-- HIS 216 — Readings in the History of American Religions: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-205
+- LALS 206 — Queer Cuba: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-216
-- HIS 217 — Critical Conversations in Native American History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-206
+- LALS 207 — Youth Cultures, Global Capitalism, and Social Change: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-217
-- HIS 220 — The Atlantic World, 1500-1800: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-207
+- LALS 208 — Politics of Childhood and Youth: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-220
-- HIS 221 — Empires and New Nations in the Americas: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-208
+- LALS 210 — Latina Feminisms: Theory and Practice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-221
-- HIS 222 — Global Sexualities--A Seminar in the Queering of Historiographies: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-210
+- LALS 211 — Paradigms of Race/Color, Sexuality, and Culture in Latin America: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-222
-- HIS 225 — Spanish Colonialism: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-211
+- LALS 212 — Latina/o Ethnographic Practice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-225
-- HIS 227 — Gender and Colonialism: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-212
+- LALS 213 — Historical Methods in LALS: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-227
-- HIS 229 — Worlds of Labor in Asia: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-213
+- LALS 215 — Latina Cultural Studies: Culture, Power, and Coloniality: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229
-- HIS 229A — Pacific Worlds: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229a
-- HIS 230A — Readings in Late Imperial China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-215
+- LALS 219 — Central America: Intellectuals, Histories, and Futures: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-219
+- LALS 220 — Transnational Civil Society: Limits and Possibilities: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230a
-- HIS 230B — Engendering China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-220
+- LALS 225 — Race in the Americas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230b
-- HIS 230C — Readings in 20th-Century China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-225
+- LALS 235 — Sexuality and Migration: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230c
-- HIS 231 — Historicizing the People's Republic of China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-235
+- LALS 240 — Culture and Politics of Human Rights: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-231
-- HIS 238A — Research Methods: China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-240
+- LALS 242 — Globalization, Transnationalism, and Gender in the Americas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238a
-- HIS 238B — Research Methods: China: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-242
+- LALS 244 — Digital Mapping and Human Geographies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238b
-- HIS 242 — Readings in Modern Japan: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-244
+- LALS 245 — Epistemologies of the South: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-242
-- HIS 243 — Transnational Japan: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-245
+- LALS 249 — Whiteness in Latin America: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-243
-- HIS 244 — Gender and Japanese History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-249
+- LALS 258 — Critical Cultural Political Economy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-244
-- HIS 251A — Readings in Modern European History: Environment and Technology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-258
+- LALS 265 — Nature, Societies, and Archives in the Americas: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251a
-- HIS 251B — Readings in Modern European History: Empire: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-265
+- LALS 292 — LALS Graduate Colloquim: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251b
-- HIS 252 — Republicanism and Its Discontents: Universal Projects and Particular Discriminations: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-292
+- LALS 294P — Pedagogical Approaches in Latin American and Latino Studies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-252
-- HIS 255 — Religion and Modernity: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-294p
+- LALS 297A — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-255
-- HIS 257 — Shtetl: Eastern European Jewish Life: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297a
+- LALS 297B — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-257
-- HIS 258A — Zionism and Its Critics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-258a
-- HIS 260 — History and the Spatial Turn: Making Space, Place, and Geography in History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297b
+- LALS 297C — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-260
-- HIS 261 — The Contours of the New Middle East History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297c
+- LALS 299A — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-261
-- HIS 263 — Histories of Science and Medicine in the Global South: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299a
+- LALS 299B — Thesis Resaerch: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-263
-- HIS 265 — History of the Body: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299b
+- LALS 299C — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-265
-- HIS 280A — History Graduate Proseminar: Teaching Pedagogy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299c
+- POLI 243 — Comparative Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280a
-- HIS 280B — History Graduate Proseminar: Research Presentations and Grant Writing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280b
-- HIS 280C — History Graduate Proseminar: Job Market: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280c
-- HIS 283 — Foreign Language Preparation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-283
-- HIS 284 — Qualifying Examination Preparation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-284
-- HIS 285 — Readings in Research Field: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285
-- HIS 285B — Readings in Research Field: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285b
-- HIS 286 — Research Colloquium on Colonialism, Nationalism, and Race: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-286
-- HIS 287 — Research Colloquium on Gender: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-287
-- HIS 288 — Teaching Assistant Preparation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-288
-- HIS 289 — History Colloquium: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-289
-- HIS 294M — Literati, Samurai, and Yangban: A Comparative History of State: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-294m
-- HIS 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297a
-- HIS 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297b
-- HIS 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297c
-- HIS 298A — Constructing a Field: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-298a
-- HIS 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299a
-- HIS 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299b
-- HIS 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299c
-- HIS 3A — Deep History: From the Stone Age to the Rise of Cities: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-3a
-- HIS 72A — History on Screen: The French Revolution in Film: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-72a
-- LIT 201A — Basic Principles of University Pedagogy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-201a
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-243

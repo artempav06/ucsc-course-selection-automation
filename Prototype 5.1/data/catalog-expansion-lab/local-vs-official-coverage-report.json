@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-17T06:08:37.756Z",
+  "generatedAt": "2026-08-17T06:24:05.271Z",
   "sourceIndex": "official-catalog-live-index.json",
-  "localCourseCount": 4325,
-  "localRealCourseCount": 4277,
+  "localCourseCount": 4336,
+  "localRealCourseCount": 4288,
   "localSyntheticCourseCount": 48,
   "officialCourseCount": 6172,
-  "exactLocalRealMatches": 4277,
-  "missingOfficialCourseCount": 1895,
+  "exactLocalRealMatches": 4288,
+  "missingOfficialCourseCount": 1884,
   "localOnlyRealCourseCount": 0,
   "localOnlyBySubject": {},
   "syntheticLocalCodes": [
@@ -59,6 +59,6 @@
     "FREE 29",
     "FREE 30"
   ],
-  "coveragePercentOfOfficial": 69.3,
-  "summary": "Official current catalog has 6172 courses; local DB has 4277 real exact-code courses plus 48 synthetic placeholders; 4277 local real courses exactly match current official codes; 1895 official courses are missing locally."
+  "coveragePercentOfOfficial": 69.48,
+  "summary": "Official current catalog has 6172 courses; local DB has 4288 real exact-code courses plus 48 synthetic placeholders; 4288 local real courses exactly match current official codes; 1884 official courses are missing locally."
 }

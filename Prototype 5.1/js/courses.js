@@ -56878,6 +56878,9 @@ const COURSES = {
     "division": "upper",
     "prereqs": [
       [
+        "WRIT 1"
+      ],
+      [
         "HIS 100"
       ]
     ],
@@ -56892,7 +56895,8 @@ const COURSES = {
     "officialPrereqText": "satisfaction of the Entry Level Writing and Composition requirements, HIS 100, and two additional upper-division history courses, or permission of instructor.",
     "prereqNotes": [
       "Official prerequisite/eligibility text: satisfaction of the Entry Level Writing and Composition requirements, HIS 100, and two additional upper-division history courses, or permission of instructor.",
-      "Official catalog includes non-course eligibility language (Entry Level Writing/Composition), additional broad upper-division history coursework, major restriction, and permission-of-instructor exception. Only the explicit HIS 100 course prerequisite is engine-enforced; the rest is preserved here for review.",
+      "Artem review decision: engine-enforce WRIT 1 as the best local proxy for Entry Level Writing/Composition plus the explicit HIS 100 prerequisite.",
+      "Official catalog also requires two additional upper-division history courses, has a permission-of-instructor exception, and restricts enrollment to junior/senior history majors. Those conditions are preserved here and shown in the detail popup because the current scheduler schema cannot enforce them cleanly.",
       "Official enrollment/restriction text: Enrollment is restricted to junior and senior history majors. Enrollment limited to 20."
     ],
     "enrollmentText": "Enrollment is restricted to junior and senior history majors. Enrollment limited to 20."
@@ -58210,6 +58214,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HISC 5": {
+    "concentrations": [],
+    "title": "Time Travel and the Law",
+    "units": 3,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-5",
+    "desc": "Examines how law, history, and speculative fiction shape what we know—and don’t know— about race, gender, and power. Reading Octavia Butler’s Kindred alongside legal texts and archival theory, course uncovers how archives marginalize and erase the lives and personhood status of systematically oppressed people. Drawing from alternative historical methods like Saidiya Hartman’s critical fabulation, students explore how scholarship can both reimagine missing stories and challenge dominant narratives of memory and agency without reproducing historic violence.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HISC 9": {
     "concentrations": [],
     "title": "Ecological Marxism",
@@ -58272,6 +58293,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HISC 23": {
+    "concentrations": [],
+    "title": "What is Communication?",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-H",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-23",
+    "desc": "We’ve never had more ways to communicate, yet misunderstanding has rarely been greater. This course asks what communication is, how it works, how it breaks down, and why it matters. Examining how it operates within individuals, between people, and across society, students explore how it shapes thought, emotion, and action, drawing on philosophy, social theory, and cultural criticism to show how communication both stabilizes and transforms human life.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HISC 60A": {
     "concentrations": [],
@@ -59660,6 +59698,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HISC 174": {
+    "concentrations": [],
+    "title": "Aliens & Quantum Reality: Does Anybody Really Know What Time (It) Is?",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-174",
+    "desc": "The film Arrival, directed by Denis Villeneuve and based on sci-fi writer Ted Chiang’s “Story of Your Life,” serves as our laboratory for exploring questions of the nature of time, history, memory, free will, determinism, causality, communication, and the meaning of life. Examines questions of aliens, race, gender, colonization, militarism, messianism. Students also learn aspects of physics and linguistics theories, including quantum physics, as we find ourselves face to face with very earthly issues and deep philosophical quandaries.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HISC 185C": {
     "concentrations": [],
     "title": "Comparative Religion: A Critical Introduction",
@@ -59703,6 +59758,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HISC 186": {
+    "concentrations": [],
+    "title": "Quantum Physics and Philosophy",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-186",
+    "desc": "A single book—Meeting the Universe Halfway: Quantum Physics and the Entanglement of Matter & Meaning, written by the professor of this course, a physicist and philosopher—serves as our laboratory for exploring questions of the nature of time, history, memory, free will, agency, and change, among others. In unpacking this book, we take up questions relevant to pressing issues such as: Given that social and political factors influence the making of facts is there any meaningful way to understand truth and objectivity? What is the nature of reality and how do our investigations of it matter?",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HISC 187": {
     "concentrations": [],
     "title": "The Emergence of the Avant-garde from Disenchantment to Dada",
@@ -59723,6 +59795,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HISC 189": {
+    "concentrations": [],
+    "title": "Neither East nor Europe: A Political History",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-189",
+    "desc": "Examines Eastern Europe as a political concept produced through imperial and colonial hierarchies. We interrogate how Eastern Europe has been constructed as backward, other, or in transition, and how these labels reflect broader structures of power. Course analyzes how postsocialist and wartime contexts challenge liberal teleologies with case studies including Romania, Russia, Ukraine, and the Balkans. Students engage with primary sources, literature, cartography, propaganda material, and film, to develop a grounded and critical understanding of the region and its ongoing global significance.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HISC 190": {
     "concentrations": [],
@@ -59774,6 +59863,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HTEC 10": {
+    "concentrations": [],
+    "title": "What Can I Do with My Degree? Humanities-Powered Jobs",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/htec-humanizing-technology-certificate/lower-division/htec-10",
+    "desc": "Shows you why the humanities matter—and why your degree can take you further than you think. Course traces how the humanities grew and explores how those skills translate into exciting 21st-century careers. Along the way, we dive into big questions shaping our world right now and discover how humanistic thinking helps us tackle them. Students meet alumni and explore a variety of career pathways while building professional skills that will boost you throughout your UCSC journey and beyond. By the end, you’ll see how your humanities background isn’t just meaningful—it’s powerful—and how it can guide you toward a career that matches your strengths, passions, and goals.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HTEC 15": {
     "concentrations": [],
@@ -61478,6 +61584,40 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "KRSG 14": {
+    "concentrations": [],
+    "title": "Reading Eco-poetry in Community",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-14",
+    "desc": "This discussion-based seminar has one central goal: reading for the sake of reading. The course offers an introduction to ecopoetry through mindful reading of selected national and local texts. Each week will focus on either a poet who has made an important contribution to ecopoetry or a group of poems reflecting a specific thematic impulse, in order to gain exposure to ecopoetry as a field, to surprise ourselves as readers, and to engage pleasurably with reading poems in a community of readers, regardless of one’s previous experience with reading poetry. To promote reading deeply and mindfully, all texts are read in hard copy, provided at no cost to students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "KRSG 16": {
+    "concentrations": [],
+    "title": "Reading Du Bois",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-16",
+    "desc": "Examines the intellectual and political traditions of W.E.B. Du Bois, dwelling at length on the historiography of his major work, Black Reconstruction in America. The course considers his impact as a philosopher, empirical sociologist, historian, and activist, but is more focused on political readings of his ideas today. Each week is organized around a specific concept in the reading assignment and class meetings include a short introductory lecture followed by student-driven analysis and discussion with emphasis on developing skills and practices of collective reading.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "KRSG 25": {
     "concentrations": [],
     "title": "Transfer Excellence at the Research University",
@@ -63082,6 +63222,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LALS 134": {
+    "concentrations": [],
+    "title": "Fashioning Latinidades",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-134",
+    "desc": "Explores fashion and dress within Latinx and Latin American communities, highlighting their histories, cultures, and creative practices. Students investigate how style expresses identity, politics, cross-cultural exchange, conflict, and artistic innovation. By questioning Eurocentric perspectives, the course offers an expansive view of Latinidades, design, and the body, showing how dress reflects personal, social, and cultural meaning.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LALS 135": {
     "concentrations": [],
     "title": "El Salvador: Expresiones Culturales",
@@ -63208,6 +63365,25 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LALS 146": {
+    "concentrations": [],
+    "title": "Queer Latinidades: Drag & Trans Latinx & Latin American Performances",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-146",
+    "desc": "Explores drag performance and transgender lives in Latin America and among U.S. Latina/o/xs. Using ethnographic, film, and cultural studies approaches, course examines identities like loca, muxe, travesti, and drag queen. Focus areas include performance, displacement, community, and (un)belonging within feminist, queer of color, and trans studies frameworks. The course includes transnational case studies from Brazil, Cuba, Chile, Puerto Rico, and Mexico.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LALS 147": {
     "concentrations": [],
@@ -64102,6 +64278,38 @@ const COURSES = {
       "Official catalog includes non-course eligibility language (placement/AP/test-out/writing/composition). It is preserved here as a note and is not engine-enforced as a course prerequisite.",
       "Official prerequisite/eligibility text: satisfaction of the Entry Level Writing and Composition"
     ]
+  },
+  "LALS 194J": {
+    "concentrations": [],
+    "title": "Transitional Justice in the Americas",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "LALS 100"
+      ],
+      [
+        "LALS 100A"
+      ],
+      [
+        "LALS 100L"
+      ]
+    ],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-194j",
+    "desc": "Provides students with an introduction to the emerging scholarly field of transitional justice. Examines transitional justice in a broad sense and through elected case studies. (Formerly LALS 156, Human Rights and Transitional Justice in the Americas.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "LALS 100, LALS 100A, and LALS 100L. Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
+    "prereqNotes": [
+      "Official prerequisite text: LALS 100, LALS 100A, and LALS 100L. Concurrent enrollment in LALS 194L required. Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors.",
+      "Official catalog requires concurrent enrollment in LALS 194L. The current free-elective schema cannot enforce same-quarter corequisites, so LALS 194L is preserved here as a note rather than encoded as a prior-quarter prerequisite.",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors."
+    ],
+    "enrollmentText": "Enrollment is restricted to junior and senior Latin American and Latino studies majors and combined majors."
   },
   "LALS 194L": {
     "concentrations": [],

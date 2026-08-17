@@ -26070,6 +26070,2688 @@
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "HISC 203A": {
+    "concentrations": [],
+    "title": "Approaches to Critical Inquiry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-203a",
+    "desc": "An introduction to history of consciousness required of all incoming students. The seminar concentrates on theory, methods, and research techniques. Major interpretive approaches drawn from cultural and political analysis are discussed in their application to specific problems in the history of consciousness. Prerequisite(s): first-year standing in the program. See the department office for more information. (Formerly Approaches to History of Consciousness.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "first-year standing in the program. See the department office for more information. (Formerly Approaches to History of Consciousness.)",
+    "prereqNotes": [
+      "Official prerequisite text: first-year standing in the program. See the department office for more information. (Formerly Approaches to History of Consciousness.)",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 203B": {
+    "concentrations": [],
+    "title": "Approaches to History of Consciousness",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-203b",
+    "desc": "Writing-intensive course based on readings in HISC 203A .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "HISC 203A . Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: HISC 203A . Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 205": {
+    "concentrations": [],
+    "title": "Global Political Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-205",
+    "desc": "Seminar anchored in a question fundamental to the history of ideas in the modern history of empire: How to think globally about political thought. Through sustained examinations of classic texts in the history of moral and political philosophy, the seminar explores how the \"global\" itself becomes a universal framework essential to understanding politics worldwide.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 207": {
+    "concentrations": [],
+    "title": "Undisciplining Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-207",
+    "desc": "Deep, critical reading of key authors in contemporary philosophical and social thought, focusing on the undisciplined elements that inform and drive their work. Exploring the reach and potential of thinking that moves beyond fixed theories and conceptual allegiances, course avoids the disciplining and self-referential inertia that generates rigid disciplines, fields, or dogma. What problems and events prompted a specific theoretical intervention? What practices are invited in a text? Course explores how emerging problems can challenge a theory's relevance and inspire our own thinking to creatively engage with change.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 208": {
+    "concentrations": [],
+    "title": "Humanism and its Critics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-208",
+    "desc": "Examines modern humanism and its critics in a trajectory composed of three moments: foundational texts of 19th century humanism and some of their 20th century interpreters, the critiques of humanism launched by structuralist/post-structuralist continental theory in the 1960s that dealt with the essentialization of the human (theoretical anti-humanism), and contemporary critiques that take issue with anthropocentrism (posthumanism/transhumanism). Students consider thematics that have shaped humanism and the controversies surrounding it including questions of secularism, morality, and materialism, essentialism and class/gender/racial identity, anthropocentrism, and universalism. Readings include Feuerbach, Marx, Sartre, Heidegger, Foucault, Althusser, Haraway, Braidotti, and Ferrando.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 209": {
+    "concentrations": [],
+    "title": "Hegel’s Phenomenology of Spirit",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-209",
+    "desc": "Students read Hegel's Phenomenology of Spirit from cover to cover. This book has been critical for many disciplines such as philosophy, politics, psychology, anthropology, sociology",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 210": {
+    "concentrations": [],
+    "title": "New Left Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-210",
+    "desc": "The “New Left” refers to a wave of Leftist organizations, progressive movements, protests and revolts across the globe that emerged between the mid-1950s and the 1970s. It includes the worker and student rebellions of May 1968; Third Worldism, Eurocommunism, and international Maoism; as well as protest movements organized around feminism, gay liberation, civil rights, environmentalism, anti-war and nuclear disarmament. This seminar examines key debates in the intellectual and political formation of the New Left, with an eye to their contemporary relevance for us today.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 214": {
+    "concentrations": [],
+    "title": "What is a Subject?",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-214",
+    "desc": "Examines major streams of theorization about the subject in postwar and contemporary continental and critical theory. Thinkers include Althusser, Badiou, Balibar, Butler, Fanon, Foucault, Honneth, Laclau and Mouffe, Mbembe, Ranciere, and Sartre.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 215": {
+    "concentrations": [],
+    "title": "History of Unconsciousness",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-215",
+    "desc": "There is a history of political consciousness that culminated in the project of enlightenment. There is a history of individual, collective, and political unconscious, which culminated in fascism. These two histories are intertwined, but their outcome is not preconceived. On the contrary, their relationship and integration constitute a field of possibilities for social, political, and human experimentation. This course inquires into the concept of political unconscious by exploring thinkers, such as Kant, Foucault, Adorno, Horkheimer, Freud, Jung, Reich, Fromm, Marcuse, and Klein.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 216": {
+    "concentrations": [],
+    "title": "Critical Race/Ethnic Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-216",
+    "desc": "Explores foundational and emergent theoretical and methodological approaches to the study of race. Issues examined include the production of race within and across various spheres of human activity and how race has shaped notions of difference and commonality in the past and present.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 217": {
+    "concentrations": [],
+    "title": "Critical Human Rights Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-217",
+    "desc": "Addresses about 10 of the significant critiques of human rights discourse published in the past decade by authors, such as Moyn, Douzinas, Fassin, Ticktin, J. Slaughter, D. Chandler, Mamdani, Weitzman, Badiou, and Meister.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 218": {
+    "concentrations": [],
+    "title": "French Hegel",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-218",
+    "desc": "Students expected to locate with fluency and precision their own research projects within the conceptual and methodological frameworks defining the late-20th century constellation of thought to be laid out systematically over the course of the term.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 219": {
+    "concentrations": [],
+    "title": "Radical Futures and Visual Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-219",
+    "desc": "Attempts to break through the pervasive dystopia and catastrophism of the present and open up speculative proposals regarding the not-yet and what's to come. Students critically consider methodologies of futurity among varieties of radical imaginaries grounded in the traditions of the oppressed—including Afrofuturisms, Indigenous, Chicanx/Latinx, multispecies, postcapitalist, and communist proposals—and place them in relation to threatening reactionary, neo-fascist tendencies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 220": {
+    "concentrations": [],
+    "title": "Theories of Democracy and Dictatorship",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-220",
+    "desc": "Although democracy is generally accepted as the best and most legitimate form of government, there is little agreement on what it means and how it should function. This course explores the concept and theories of democracy, with a focus on the “People”—who constitutes the people, how popular will is embodied, and how it may be expressed. Course explores debates about different models of democracy and examines how alternatives to democracy, such as dictatorship, autocracy, and tyranny, have been conceptualized. Also studies democracy and its “others” in relation to a constellation of concepts including power, equality, participation, accountability, resistance, legitimacy, and the rule of law.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 221": {
+    "concentrations": [],
+    "title": "Surveillance Culture: Privacy, Publicity, Art, and Critical Social Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-221",
+    "desc": "Examines how artists and activists are responding by using surveillance technologies to look over \"big brother's\" shoulder and to create greater awareness of privacy issues. Course pays particular attention to metadata, big data, bio-power, and the relationship between various forms of surveillance with respect to privacy, publicity, and free speech.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 222B": {
+    "concentrations": [],
+    "title": "Theories of Late Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-222b",
+    "desc": "Writing-intensive course based on readings in HISC 222A.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "HISC 222A. Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: HISC 222A. Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 223": {
+    "concentrations": [],
+    "title": "Althusser",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-223",
+    "desc": "Through close readings of Althusser's major texts, this course systematically examines the political and philosophical thought of Louis Althusser and analyzes why he is one of the most important thinkers of the 20th century.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 224": {
+    "concentrations": [],
+    "title": "Marx's Capital Vol. 1",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-224",
+    "desc": "Investigates the many layers of Marx's Capital.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 226": {
+    "concentrations": [],
+    "title": "Liberty and Resistance",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-226",
+    "desc": "Examines modern conceptions of liberty from a non-liberal perspective. Proposes to inquire into the concept of liberty as an individual and collective right by exploring its philosophical justifications and criticism in thinkers, such as Kant, Hegel, and Marx.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 227": {
+    "concentrations": [],
+    "title": "Carl Schmitt",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-227",
+    "desc": "Provides a careful contextualization and a critically informed interrogation of the major works of Carl Schmitt, a figure at the center of many contemporary debates in political and legal thought.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 228": {
+    "concentrations": [],
+    "title": "Deleuze and Guattari: A Thousand Plateaus (Readings in Continental Theory)",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-228",
+    "desc": "Students read Deleuze and Guattari’s “A Thousand Plateaus” (1980) to explore its contemporary relevance for mobilizing radical alternatives, for liberating bodies and ecologies, for undoing noxious universalities and majoritarian politics, and for remaking vision, technics, and affect. Course, co-taught by Professor Dimitris Papadopoulos and Professor Maria Puig de la Bellacasa. “A Thousand Plateaus” is examined within the context of poststructuralist thought through a detailed chapter-by-chapter analysis, alongside related works.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 229": {
+    "concentrations": [],
+    "title": "Walter Benjamin",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-229",
+    "desc": "Investigates Walter Benjamin's thought through a close reading of some of the texts in his production that will enable students to address his conceptions of religion, politics, art, and history.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 230A": {
+    "concentrations": [],
+    "title": "Poetry, Language, Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-230a",
+    "desc": "Introduces the relation between philosophy and poetics in some major 20th-century poets and thinkers.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 230B": {
+    "concentrations": [],
+    "title": "Poetry, Language, Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-230b",
+    "desc": "Writing-intensive course based on readings in HISC 230A.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "HISC 230A , or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: HISC 230A , or permission of",
+      "Needs review: contains-permission-or-consent-exception",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 231": {
+    "concentrations": [],
+    "title": "From System to Fragment",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-231",
+    "desc": "Explores the rise and fall of the philosophical system. It proposes to inquire into the origin of the systematic philosophy, its development, its crisis, and its disintegration. This theoretical trajectory will be investigated together with alternative trajectories in thinkers, such as I. Kant, G. Fichte, Novalis, K.W.F. Schlegel, G.W.F. Hegel, M. Stirner, S. Kierkegaard, K. Marx, F. Nietzsche, L. Wittgenstein, T.W. Adorno, W. Benjamin, Empedocles.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 232": {
+    "concentrations": [],
+    "title": "Music, Social, Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-232",
+    "desc": "Examines the various modes through which intellectuals, artists, and other commentators have written about music as a socially situated art as well as the ways they have theorized the social through examinations of musical phenomena. Focus changes with course offering.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 236": {
+    "concentrations": [],
+    "title": "20th Century Critical Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-236",
+    "desc": "Focuses on the critical-theoretical approaches that are associated with an interdisciplinary group of scholars affiliated with the Institute for Social Research, known as the \"Frankfurt School\". Surveys some of their most important contributions to the critique of capitalism, the authoritarian state, instrumental reason, culture, historical progress, law, and social organization. Discusses whether or not these different works fit together into a single tradition called \"critical theory\" and what theoretical and political implications the gesture of such naming entails. Investigates the normative foundations of critique and the philosophical influences that shape them. Course also explores the different \"generations\" of the Frankfurt School and map out the relationship of these thinkers to the traditions of Western Marxism, psychoanalysis, and social theory. Concludes by analyzing the limitations of critical theory and the intellectual challenges it faces in the contemporary world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 237A": {
+    "concentrations": [],
+    "title": "Historical Materialism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-237a",
+    "desc": "Students read landmark works of classical and contemporary Marxism. Writings from Marx, Lenin, Trotsky, Lukacs, Gramsci, Adorno, Benjamin, Sartre, Althusser, Anderson, Jameson, and Zizek are addressed.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 237B": {
+    "concentrations": [],
+    "title": "Historical Materialism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-237b",
+    "desc": "Writing-intensive seminar based on HISC 237A. Students read landmark works of classical and contemporary Marxism. Writings from Marx, Lenin, Trotsky, Lukacs, Gramsci, Adorno, Benjamin, Sartre, Althusser, Anderson, Jameson, and Zizek are discussed.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 240": {
+    "concentrations": [],
+    "title": "Basic Principles of University-Level Pedagogy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-240",
+    "desc": "Provides training for graduate students in university-level pedagogy in general. Under the supervision of the department chair, coordinated by a graduate student with substantial experience as a teaching assistant.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 242A": {
+    "concentrations": [],
+    "title": "Violence and Phenomenology: Fanon/Hegel/Sartre",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-242a",
+    "desc": "Study of the work and influence of Frantz Fanon from a range of viewpoints: existential, phenomenological, psychoanalytic, and political; a variety of genres: film, literature, case history, and critique; and a set of institutional histories: clinical, cultural, and intellectual.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 242B": {
+    "concentrations": [],
+    "title": "Violence and Phenomenology: Fanon/Hegel/Sartre",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-242b",
+    "desc": "Writing intensive course based on readings in HISC 242A.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite: HISC 242A . Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite: HISC 242A . Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 244": {
+    "concentrations": [],
+    "title": "Racial Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-244",
+    "desc": "Includes readings of selected foundational texts in the intellectual lineage now known as \"racial capitalism.\" Focus is on critical appropriation of and/or engagement with Marxism by key thinkers in what is now sometimes known as the \"Black radical tradition.\" Authors may include Karl Marx, W.E.B. DuBois, Eric Williams, Oliver Cox, Walter Rodney, Stuart Hall, Cedric Robinson, Angela Davis, and/or Ruth Wilson Gilmore. Course is organized around the close reading of a set of key texts. In addition to developing knowledge of the substantive topics, the course is organized to facilitate the development of key skills in textual interpretation and analytic argumentation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 246": {
+    "concentrations": [],
+    "title": "Black Radicalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-246",
+    "desc": "Examines the history of black radical intellectual, cultural, political, and/or social movements. May take the form of a survey of different aspects of black radicalism or may focus on a particular individual, groups, period, etc.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 248": {
+    "concentrations": [],
+    "title": "Black Critical Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-248",
+    "desc": "Offers a critical introduction and overview of black critical theory across multiple fields and genres. Beginning with the question of race and ontology, students go on to consider questions of sovereignty and domination, freedom and liberation, identity and difference, and conclude with a study of race and the post-human. Major thinkers studied include: Sylvia Wynter, Achille Mbembe, Frantz Fanon, and W.E.B. DuBois, as well as contemporary figures, such as Frank Wilderson, Fred Moten, and Hortense Spillers.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 249": {
+    "concentrations": [],
+    "title": "Black Ecological Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-249",
+    "desc": "Surveys writings that bridge the divide between Black studies and environmental studies and, by extension, between environmental/ecological and postcolonial/antiracist movements. Considers the work of theorists, historians, and other academics, as well as that of activists engaged in on-the-ground struggle. Encourages an understanding of how colonialism and slavery and their legacies have been intertwined with the destructive ways of inhabiting the earth that have contributed to environmental crises facing the planet today. Draws upon such an understanding to assess present-day forms of critique and mobilization around racism and the environment.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 252": {
+    "concentrations": [],
+    "title": "Poststructuralism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-252",
+    "desc": "French poststructuralism, with particular attention to the main philosophical texts of Jacques Derrida and Michel Foucault. Other representative theorists as well as critics of poststructuralism are studied as time permits.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 258A": {
+    "concentrations": [],
+    "title": "Rethinking Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-258a",
+    "desc": "Readings include works by speakers at UCSC's Rethinking Capitalism Initiative. Topics are: (1) financialization versus commodification (how options-theory has changed capitalism); (2) material markets (how this theory performs); and (3) valuation and contingency (how economies make worlds).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 258B": {
+    "concentrations": [],
+    "title": "Rethinking Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-258b",
+    "desc": "HISC 268A addressed changes in the theory and practice of capitalism as derivatives markets have become increasingly central to it. This course, which can be regarded as either background or sequel, concerns questions that surround recent debates about derivatives from the standpoint of broader developments in law, culture, politics, ethics, ontology, and theology. What would it mean to see questions of contingency and value as a challenge to late-modern understandings of these modes of thought?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 261": {
+    "concentrations": [],
+    "title": "Intellectual History and the Philosophical Canon",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-261",
+    "desc": "How philosophical ideas are formed, transmitted, and transformed over time, and how certain texts come to be treated as \"canonical.\" (Formerly Modern Intellectual History.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 262": {
+    "concentrations": [],
+    "title": "Critical Theory After Habermas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-262",
+    "desc": "Examines key works of Frankfurt School theorist Jurgen Habermas, his followers, and critics, on topics such as the public sphere, the theory of communicative action, power and domination, and religion and secularism.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 263": {
+    "concentrations": [],
+    "title": "European Philosophies of Difference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-263",
+    "desc": "Survey of European philosophies of difference, tracing the evolution of philosophical concepts and frameworks from Nietzsche, Kierkegaard, Bergson, and Heidegger through later 20th-century French post-structuralist, feminist, and Frankfurt School theory.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 264": {
+    "concentrations": [],
+    "title": "The Idea of Africa",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-264",
+    "desc": "Examines the position of Africa in cultural studies and the simultaneous processes of over- and under-representation of the continent that mark enunciations of the global and the local. Themes include defining diaspora, the West as philosophy, and Africa in the global economy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 265A": {
+    "concentrations": [],
+    "title": "Biopolitics l: Problematics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-265a",
+    "desc": "Focuses on the theorization of life and death in relation to power as proposed by 20th-century thinkers. Investigates how a biopolitical problematic has emerged and what insights into politics it offers. Explores the different ways in which thinkers have conceptualized biopolitics and its broader implications.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 265B": {
+    "concentrations": [],
+    "title": "Biopolitics II: Corporealities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-265b",
+    "desc": "Focuses on the exploration of biopolitics and necropolitics on the body. Examines how the body has become deeply integrated into power relations in modern society. Also explores different forms of corporeality that are conduits of political struggle and sites of transgression, resistance, and refusal.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 267": {
+    "concentrations": [],
+    "title": "Capital and Democracy in an Age of Finance",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-267",
+    "desc": "What is the connection between capital accumulation and democracy in an era when creating financial assets has been decoupled from producing goods and services? Democracy can pose a threat to capital accumulation when an accelerated rise in asset values deepens historical inequality; financial markets can pre-empt such threats by becoming suddenly illiquid, thereby bringing on an event of disaccumulation unless/until restoring the confidence that capital markets have in their own continuing appreciation becomes the highest political priority of the state. This course examines what it means–both politically and theoretically–for this consensus to break down.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 269": {
+    "concentrations": [],
+    "title": "Property and Possession",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-269",
+    "desc": "Covers modern conceptions of property and their critique. Inquires into the concept of property as an individual right by exploring its philosophical justifications and criticism in thinkers, such as John Locke, Jean-Jacques Rousseau, Immanuel Kant, G.W. F. Hegel, Pierre-Joseph Proudhon, and Karl Marx.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 271": {
+    "concentrations": [],
+    "title": "Historical Temporalities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-271",
+    "desc": "Explores the critique of the unilinear historical time through the prism of Reinhart Koselleck, Walter Benjamin, and Ernst Bloch's attempts to reconfigure the concepts of time and history. During the course, students investigate how time affects both representation of reality and political praxis.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 272": {
+    "concentrations": [],
+    "title": "Deprovincializing Marx",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-272",
+    "desc": "Course aims to rethink Marx against the grain, from the debate with Russian populists to Capital and the Grundrisse. Investigates formal subsumption not as a historical stage, but as a form that denotes how capitalism encounters, incorporates, and combines existing modes of production without creating a homogeneous world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 273": {
+    "concentrations": [],
+    "title": "Introduction to STS: Theory, Method, Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-273",
+    "desc": "Taught collaboratively by Prof. Dimitris Papadopoulos, Prof. Maria Puig de la Bellacasa, and other faculty with related interests, course offers an in-depth analysis of key debates within science and technology studies (STS), cultural studies of technoscience, and the history and philosophy of science and technology. Explores the roots of core concepts and examines pertinent debates on truth, objectivity and constructivism/realism. Course involves a critical reflection on methods of research and writing, and an engagement with radical theorizing and transformative practice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 274": {
+    "concentrations": [],
+    "title": "Causality, Language, and Time",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-274",
+    "desc": "What is causality? How does it matter for thinking time, history, language, agency? The film Arrival, based on Ted Chiang’s “Story of Your Life,” serves as our laboratory for exploring questions of the nature of causality, time, history, memory, free will, determinism, communication, ethics, justice, and politics. These texts also launch us into a space where questions of race, gender, colonization, militarism, messianism, and more, swirl around us. Course investigates aspects of physics and linguistics theories, as we find ourselves face to face with earthly issues and philosophical quandaries.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 275": {
+    "concentrations": [],
+    "title": "Sovereignties",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-275",
+    "desc": "The guiding thought of this seminar is the question of what is, and is not, sovereign. Exploring a wide range of authors (such as Bodin, Hobbes, Spinoza, Rousseau, Kant, Schmitt, Bataille, and Fanon), this seminar addresses the most salient problems in recent discussions of sovereignty.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 276": {
+    "concentrations": [],
+    "title": "Critical STS",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-276",
+    "desc": "How do science and technology enable or hinder ecological resurgence, cultural articulation, racial justice, and political liberation? Course examines current works from the multidisciplinary field of critical, cultural, and feminist STS (science and technology studies), exploring their relevance for a wide range of research in anthropology, race studies, art, environmental studies, social studies and political theory, history, and philosophy. Beyond engaging with these recent works, students have the opportunity to learn foundational concepts and methods of STS and workshop written work.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 278": {
+    "concentrations": [],
+    "title": "Speculative Ecologies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-278",
+    "desc": "The planetary environmental debacle has exposed the damaging consequences requiring the re-invention of eco-social arrangements. Knowledge fields have responded by assimilating ecological concepts, frameworks, and methods into ways of thinking and acting in the world, sometimes taking the sciences as a normative blueprint for the realignment of social, political, and ethical values. Course identifies the reclaiming of a speculative orientation in research dedicated to creatively fostering a diversity of ecological futures and explores the relevance of speculative thought for research and writing.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 279": {
+    "concentrations": [],
+    "title": "Earth-Land-Soil: Geophilosophies in Troubled Grounds",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-279",
+    "desc": "Explores the grounds for thinking that may be opened by engagements with earth, land, and soil as figures, places, and materialities in contemporary social and cultural theory. Engages with re-emergences of Earth as a ground for shared ecological consciousness and belonging and with critiques of planetary epistemic colonialisms that erase human and non-human experiences and conflicts from Indigenous land relations to the reclaiming of soil materialities. Amid anxieties for the planet’s future, we give attention to tensions between place-based ecological attachments and the perpetuation of nativist and nationalist exclusions, and to how Earth, land, and soil world-makings may appear uneven, unequal and divergent, common and uncommon, as well as inevitably interdependent.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 282": {
+    "concentrations": [],
+    "title": "Art of Independence, Liberation and the Cold War",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-282",
+    "desc": "Explores art movements that played a role in major struggles for independence and liberation from colonial regimes or reflected upon them subsequently. These art movements are examined though international art and media exhibitions. Case studies vary with each course offering. (Formerly HAVC 282.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 283": {
+    "concentrations": [],
+    "title": "Autonomy and Autonomist Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-283",
+    "desc": "What is the meaning of autonomy in the midst of the current socio-ecological crisis? Is autonomist politics possible in the 21st century? The course discusses different dimensions of autonomy–self-determination, self-institution, self-valorization, self-definition—and focuses on the relevance and limits of autonomist politics across different social fields and across a multiplicity of unfolding translocal and transnational struggles. As we de-center, provincialize, and posthumanize autonomism, we examine the meaning of refusal and exodus in a contentious multi-polar geopolitical order and in a manifestly more-than-human world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 285": {
+    "concentrations": [],
+    "title": "Topics in Political Theology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-285",
+    "desc": "Readings focus on the early 20th-century rediscovery of political theology; its use in theorizations of the Holocaust; and its return in 21st-centurty debates on empires, war, terror, enmity, reconciliation, fanaticism, human rights, political economy, and global catastrophe. Students cannot receive credit for this course and HISC 85.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and HISC 85.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and HISC 85.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 286": {
+    "concentrations": [],
+    "title": "Meeting the Universe Halfway",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-286",
+    "desc": "A single book—Meeting the Universe Halfway: Quantum Physics and the Entanglement of Matter & Meaning—serves as our laboratory for exploring questions of the nature of time, history, memory, free will, agency, and change, among others. Course examines questions relevant to pressing issues such as: Given that social and political factors influence the making of facts is there any meaningful way to understand truth and objectivity? What is the nature of reality and how do our investigations of it matter?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 291": {
+    "concentrations": [],
+    "title": "Advising",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-291",
+    "desc": "Independent study formalizing the advisee-adviser relationship. Regular meetings to plan, assess and monitor academic progress, and to evaluate coursework as necessary. May be used to develop general bibliography of background reading and trajectory of study in preparation for the qualifying examination.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: May be used to develop general bibliography of background reading and trajectory of study in preparation for the qualifying examination.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "May be used to develop general bibliography of background reading and trajectory of study in preparation for the qualifying examination.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 292": {
+    "concentrations": [],
+    "title": "Practicum in Composition",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-292",
+    "desc": "A practicum in the genres of scholarly writing, for graduate students working on the composition of their qualifying essay or doctoral dissertation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 293A": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293a",
+    "desc": "Research carried out in field settings, based on a project approved by the responsible faculty. The student must file a prospectus with the department office before undertaking the research and a final report of activities upon return.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 293B": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293b",
+    "desc": "Research carried out in field settings, based on a project approved by the responsible faculty. The student must file a prospectus with the department office before undertaking the research and a final report of activities upon return.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 293C": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-293c",
+    "desc": "Research carried out in field settings, based on a project approved by the responsible faculty. The student must file a prospectus with the department office before undertaking the research and a final report of activities upon return.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 294A": {
+    "concentrations": [],
+    "title": "Ind Study-Teaching",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294a",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 294B": {
+    "concentrations": [],
+    "title": "Ind Study-Teaching",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294b",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 294C": {
+    "concentrations": [],
+    "title": "Ind Study-Teaching",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-294c",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 295": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295",
+    "desc": "Systematic working through a prearranged bibliography which is filed as a final report at the end of the quarter with the signature of the instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 295A": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295a",
+    "desc": "Systematic working through a prearranged bibliography which is filed as a final report at the end of the quarter with the signature of the instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 295B": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295b",
+    "desc": "Systematic working through a prearranged bibliography which is filed as a final report at the end of the quarter with the signature of the instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 295C": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-295c",
+    "desc": "Systematic working through a prearranged bibliography which is filed as a final report at the end of the quarter with the signature of the instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 296": {
+    "concentrations": [],
+    "title": "Special Student Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-296",
+    "desc": "A seminar study group for graduate students focusing each quarter on various problems in the history of consciousness. A statement and evaluation of the work done in the course will be provided each quarter by the students who have participated in the course for that quarter, and reviewed by the responsible faculty.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297a",
+    "desc": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297b",
+    "desc": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-297c",
+    "desc": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 298": {
+    "concentrations": [],
+    "title": "Doctoral Colloquium",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-298",
+    "desc": "Under the supervision of a History of Consciousness faculty member, students finishing their dissertation meet weekly or bi-weekly to read and discuss selected draft chapters, design difficulties and composition problems.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299a",
+    "desc": "Prerequisite(s): advancement to candidacy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "advancement to candidacy.",
+    "prereqNotes": [
+      "Official prerequisite text: advancement to candidacy.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299b",
+    "desc": "Prerequisite(s): advancement to candidacy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "advancement to candidacy.",
+    "prereqNotes": [
+      "Official prerequisite text: advancement to candidacy.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HISC 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/graduate/hisc-299c",
+    "desc": "Prerequisite(s): advancement to candidacy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "advancement to candidacy.",
+    "prereqNotes": [
+      "Official prerequisite text: advancement to candidacy.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 200": {
+    "concentrations": [],
+    "title": "Bridging Latin American and Latina/o Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200",
+    "desc": "Provides historical and analytical foundations for the inter/transdisciplinary and transnational project of bridging the fields of Latin American and Latino studies (area and ethnic studies). Explores social, cultural, economic, and political changes connecting Latin America and U.S. Latina/o communities. Traces the intellectual genealogy of these efforts and how they contribute to each other. Introduces students to LALS' four substantive themes: (1) Transnationalisms, Migrations, and Displacement; (2) Intersectionality, Identities, and Inequalities; (3) Collective Action, Social Movements, and Social Change; and (4) Culture, Power, and Knowledge. Core requirement for students pursuing the Designated Emphasis in Latin American and Latino studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 200A": {
+    "concentrations": [],
+    "title": "Power and Structure in the Am&#233;ricas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200a",
+    "desc": "Examines historical processes and contemporary social, cultural, and political structures in the Am&eacute;ricas. Explores power as a mesh that interweaves relations of exploitation/domination/conflict aimed at controlling different dimensions of social existence. Places particular emphasis on the nature of capitalist development in the Am&eacute;ricas, colonialism, imperialism/anti-imperialism, nationalism/ transnationalism/ plurinationalism, and neoliberalism. Builds a contextual foundation for conceptual inquiry in the department’s four substantive themes. (Formerly Power and Society.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 200B": {
+    "concentrations": [],
+    "title": "Cultures and Subjectivities in the Am&#233;ricas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-200b",
+    "desc": "Introduces theoretical frameworks that explore the relationships between culture, power, and subjectivities. Emphasizes developing interdisciplinary, interpretive, and analytic skills and engages foundational critical approaches including queer theory, border theory, subaltern studies, intersectionality, feminisms, and critical race theory. (Formerly Theories of Culture in the Americas.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 201": {
+    "concentrations": [],
+    "title": "Research in Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-201",
+    "desc": "Problematizes the construction of research approaches in the interdisciplinary field of Latin American and Latino studies, and showcases particular approaches in the social sciences and humanities so students may engage in innovative, transnational research. (Formerly Research in Praxis: Epistemology, Ontology, and Ethics.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 202": {
+    "concentrations": [],
+    "title": "Latin/o American Spaces and Modernity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-202",
+    "desc": "Students engage and discuss texts that examine the relationship between space, narratives, and ideas of the modern nation, along with critical studies that highlight the social effects of imaginaries and representations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 203": {
+    "concentrations": [],
+    "title": "Latin American Social Movements",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-203",
+    "desc": "Grounds students in the social science literature on Latin American social movements, integrating anthropological, sociological, and political science approaches to the field.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 204": {
+    "concentrations": [],
+    "title": "Migration, Borders, and Borderlands",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-204",
+    "desc": "Explores concepts and approaches related to migration; the multiple types of borders that migrants transcend--geopolitical, social, cultural, or interpersonal; and borderland formations constructed in relation to bodies in motion.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 205": {
+    "concentrations": [],
+    "title": "Comparison as Method",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-205",
+    "desc": "Brings together comparative studies of physical and social mobility with a focus on race, migration, and citizenship. Both an articulation and study of comparison, course is organized around three components: comparative borders; comparative migration; and comparative ethnic studies. The questions animating it include: What happens when different histories, places, and peoples are compared? How and why do scholars in the humanities and humanistic social sciences compare? What are the strengths and challenges of a comparative approach? (Formerly offered as Comparative Mobilities.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 206": {
+    "concentrations": [],
+    "title": "Queer Cuba",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-206",
+    "desc": "Seminar that engages social, political, and cultural histories of homosexuality in Cuba, focusing on LGBT ostracism and activism after 1959, with particular attention to the social and economic impact of the developments of the USSR on Cuba's LGBT population.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 207": {
+    "concentrations": [],
+    "title": "Youth Cultures, Global Capitalism, and Social Change",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-207",
+    "desc": "Introduces intellectual histories of youth studies scholarship in the context of Latin American and Latino studies; explores young people's lived experiences of racialized capitalism and globalization; and addresses various forms of youth resistance and the relationship between youth cultures, politics, and social change.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 208": {
+    "concentrations": [],
+    "title": "Politics of Childhood and Youth",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-208",
+    "desc": "Explores how narratives about children, teens, youth, and students are imbued with political significance, and the ways young people are actively engaged in political practices. Considers how representations and lived experiences of youth can serve to reproduce and/or challenge inequalities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 210": {
+    "concentrations": [],
+    "title": "Latina Feminisms: Theory and Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-210",
+    "desc": "Through an interdisciplinary approach, explores Latina feminist social theory and scholarly practice—especially in representation and interpretation of Latina experiences. Examining key texts at different historical junctures, charts how Latinas of varied ethnic, class, sexual, or racialized social locations have constructed oppositional and/or relational theories and alternative epistemologies or political scholarly interventions and, in the process, have problematized borders, identities, cultural expressions, and coalitions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 211": {
+    "concentrations": [],
+    "title": "Paradigms of Race/Color, Sexuality, and Culture in Latin America",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-211",
+    "desc": "Explores foundational texts by Latin American intellectuals that have served to construct and sustain continental, regional, national, and transnational cartographies of identities and the search for lo americano. Examines race/color, sexuality, and culture by tracing their narrative and conceptual (trans)formations in the region and its diaspora. Most texts are read in the original language of publication.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 212": {
+    "concentrations": [],
+    "title": "Latina/o Ethnographic Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-212",
+    "desc": "Explores the social construction of Latino cultures in their varied regional, national-ethic, and gendered contexts. Examines how culture, as a dynamic process constructed with a historical context of hierarchical relations of group power, is interrelated to the structural subordination of Latinos. Focuses on how power relations create a context for the creation of specific Latino cultural expressions and processes.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 213": {
+    "concentrations": [],
+    "title": "Historical Methods in LALS",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-213",
+    "desc": "Seminar introducing graduate students to the “how” of historical research methods, specifically, their application to interdisciplinary investigations in Latin American and Latino Studies. Focuses on different key methods within the broader umbrella of historical research and writing including: the implementation of critical archival approaches, conducting oral histories, digital tools in historical research and dissemination, and public history and interpretation. Also discusses topics of interdisciplinarity in historically grounded and historiographic research/writing, practical organizational strategies for data collection and storage, and the bureaucracy of preparing a research plan that involves work at archives or other institutional contexts.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 215": {
+    "concentrations": [],
+    "title": "Latina Cultural Studies: Culture, Power, and Coloniality",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-215",
+    "desc": "Examines the theories and practices informing the field of Latina cultural studies in the Americas. For students pursuing the Designated Emphasis in Latin American and Latino studies and students with interest in theories of coloniality of power, decolonialism, intercultural and transnational feminist methodologies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 219": {
+    "concentrations": [],
+    "title": "Central America: Intellectuals, Histories, and Futures",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-219",
+    "desc": "Provides students in LALS and related fields with an opportunity to engage theoretical frameworks and examine a range of intellectual currents that have shaped economic, social, and cultural processes in Central America from the late 1800s to the present. Readings include a range of scholarship and critical studies in order to analyze the roles of intellectuals and how their ideas circulated in the isthmus and beyond. Evaluates the roles of institutions, political ideologies, media, and modernity in the constitution and propagation of intellectual networks, how these shape popular attitudes in everyday life, and the futures of the Central American isthmus.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 220": {
+    "concentrations": [],
+    "title": "Transnational Civil Society: Limits and Possibilities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-220",
+    "desc": "Analyzes social, civic, and political actors that come together across borders to constitute transnational civil society, drawing from political sociology, political economy, comparative politics, and anthropology to address collective identity formation, collective action, institutional impacts, and political cultures.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 225": {
+    "concentrations": [],
+    "title": "Race in the Americas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-225",
+    "desc": "Considers historical moments in the development of race in the Americas to understand how race is given meaning and actualized through practices, beliefs, and behaviors. Interrogates theories and racial dynamics in the 19th through 21st centuries to reveal interconnections with constructions of gender and nation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 235": {
+    "concentrations": [],
+    "title": "Sexuality and Migration",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-235",
+    "desc": "Approaches the nexus of sexuality and migration to examine contemporary theories of citizenship, security, violence, and power. Drawing on case studies that center experiences at, around, and across diverse borders throughout the Americas, the course takes an intersectional approach to understand: how migration is embedded in sexual identities and practices; and how sexuality, alongside race, class, and gender, influence who migrates and under what circumstances. Examining how researchers have approached sensitive questions of sexuality, students emerge better prepared to develop future research in the broader thematic fields of transnationalism, migration, and displacement.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 240": {
+    "concentrations": [],
+    "title": "Culture and Politics of Human Rights",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-240",
+    "desc": "Examines cultural, philosophical, and political foundations for human rights and provides students with critical grounding in the major theoretical debates over conceptualizations of human rights in the Americas. Addresses the role of feminist activism and jurisprudence in the expansion of human rights since the Universal Declaration of Human Rights. Addresses challenges of accommodating gender rights, collective rights, and social and economic rights within international human rights framework.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 242": {
+    "concentrations": [],
+    "title": "Globalization, Transnationalism, and Gender in the Americas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-242",
+    "desc": "Explores how globalization, transnationalism, and the social construction of gender are interrelated, contingent, and subject to human agency and resistance. Examines particular configurations of globalization, transnationalism, and gender through the Américas and their implications for race, space, work, social movements, migration, and construction of collective memory.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 244": {
+    "concentrations": [],
+    "title": "Digital Mapping and Human Geographies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-244",
+    "desc": "Explores the utility of geographical information systems (GIS) for social science research. This course has three components: critical discussions of spatial analysis in published research, training in GIS software, and the application of digital mapping to students' research projects.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 245": {
+    "concentrations": [],
+    "title": "Epistemologies of the South",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-245",
+    "desc": "Examines efforts by intellectuals from the Global South, mainly Latin America, to cast off the political, cultural, and epistemological notions imposed by European colonialism and preserved today through the practices of Western/Eurocentric knowledge, to forge their own epistemologies of the South.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 249": {
+    "concentrations": [],
+    "title": "Whiteness in Latin America",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-249",
+    "desc": "Examines whiteness in Latin America as a racial identity, a social condition, a set of cultural practices, a dominant standpoint, and a hyper-valued ideal. Analyzes the meanings and applicability of such concepts as ordinary whiteness, aspirational whiteness, the narcissistic pact of whiteness, the racialization of class, among others. Scrutinizes the intersections of whiteness with class, gender, nation, and language. Readings cover a wide range of Latin American countries and fields including anthropology, sociology, communication, and media and cultural studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Graduate Students Examines whiteness in Latin America as a racial identity, a social condition, a set of cultural practices, a dominant standpoint, and a hyper-valued ideal.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to Graduate Students Examines whiteness in Latin America as a racial identity, a social condition, a set of cultural practices, a dominant standpoint, and a hyper-valued ideal.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 258": {
+    "concentrations": [],
+    "title": "Critical Cultural Political Economy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-258",
+    "desc": "Explores how the divide between cultural studies and political economy can be resolved through a post-disciplinary approach which is attentive to how semiotic and material practices co-constitute contemporary capitalism and an ever-changing set of strategies attempting to manage its multiple contradictions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 265": {
+    "concentrations": [],
+    "title": "Nature, Societies, and Archives in the Americas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-265",
+    "desc": "Graduate students in LALS and related fields discuss interdisciplinary texts on the interconnection between Latin American species and geographies. Takes a historically grounded approach to address a range of topics related to the study of non-human subjects in this hemisphere, such as animals, plants, fungi, and the ecologies that they co-constitute. Topics include: centering non-humans in Latin American history; critical natural histories of the hemisphere; and inhabiting, and producing knowledge about, nature in contemporary América. In addition, students choose their own related topic(s) of interest and complete a series of reflective and iterative writing assignments, culminating in a draft for (optional) future publication.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 292": {
+    "concentrations": [],
+    "title": "LALS Graduate Colloquim",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-292",
+    "desc": "Required for all LALS graduate students in residence, colloquium includes a mix of activities aimed at supporting the development of graduate students as teachers, researchers, and active participants in academic communities. Includes lectures by distinguished speakers, work-in-progress sessions for both faculty and graduate student research, pedagogical theory and practice seminars, and professional development workshops.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 294P": {
+    "concentrations": [],
+    "title": "Pedagogical Approaches in Latin American and Latino Studies",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-294p",
+    "desc": "Provides training for graduate students in university-level pedagogy in general and in the pedagogy of Latin American and Latino studies specifically. Coordinated by a graduate student who has had substantial experience as a teaching assistant, under the supervision of a faculty member.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297a",
+    "desc": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297b",
+    "desc": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-297c",
+    "desc": "Students submit a reading course proposal to a department faculty member who supervises independent study in the field. Faculty and student jointly agree upon reading list. Students expected to meet regularly with faculty to discuss readings. This independent study must focus on a subject not covered by current UCSC graduate curriculum. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299a",
+    "desc": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students and permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 299B": {
+    "concentrations": [],
+    "title": "Thesis Resaerch",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299b",
+    "desc": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students and permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LALS 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/graduate/lals-299c",
+    "desc": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students and permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "LIT 201A": {
     "concentrations": [],
     "title": "Basic Principles of University Pedagogy",
@@ -29448,6 +32130,30 @@
     "searchOnly": true,
     "catalogLevel": "graduate",
     "sourceCatalogYear": "2026-2027"
+  },
+  "POLI 243": {
+    "concentrations": [],
+    "title": "Comparative Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-243",
+    "desc": "Introduces the comparative method in social science. Trains students in the use of this method by examining how scholars have used it to compare across national governments, subnational units, public policies, organizations, social movements, and transnational collective action.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
   },
   "PSYC 201": {
     "concentrations": [],

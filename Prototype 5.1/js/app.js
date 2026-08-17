@@ -1927,6 +1927,22 @@ function openCourseDetail(code, quarterKey, yearIdx) {
     return `<span class="detail-section-tag" style="background:${c.bg};color:${c.border};border:1px solid ${c.border}">${c.label}</span>`;
   }).join(" ");
 
+  const officialRequirementPieces = [
+    course.officialPrereqText ? `Official requirement: ${course.officialPrereqText}` : "",
+    course.enrollmentText ? `Official enrollment/restriction: ${course.enrollmentText}` : "",
+    ...(Array.isArray(course.prereqNotes) ? course.prereqNotes : [])
+  ].map(text => String(text || "").trim()).filter(Boolean);
+  const officialRequirementHtml = officialRequirementPieces.length
+    ? `
+      <div class="detail-official-requirements" role="note" aria-label="Official UCSC requirement notes">
+        <h3>Official UCSC requirement text</h3>
+        <ul>
+          ${[...new Set(officialRequirementPieces)].map(text => `<li>${escHTML(text)}</li>`).join("")}
+        </ul>
+      </div>
+    `
+    : "";
+
   document.getElementById("detail-content").innerHTML = `
     <div class="detail-header">
       <h2>${escHTML(code)}: ${escHTML(course.title)}</h2>
@@ -1961,6 +1977,8 @@ function openCourseDetail(code, quarterKey, yearIdx) {
       <div class="detail-desc">
         <p>${escHTML(course.desc)}</p>
       </div>
+
+      ${officialRequirementHtml}
 
       ${catalogLinkHtml}
 

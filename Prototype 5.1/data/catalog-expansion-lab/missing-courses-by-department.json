@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T06:08:37.756Z",
-  "missingOfficialCourseCount": 1895,
+  "generatedAt": "2026-08-17T06:24:05.271Z",
+  "missingOfficialCourseCount": 1884,
   "departments": [
     {
       "subject": "AM",
@@ -12022,48 +12022,8 @@
       "subject": "HISC",
       "departmentText": "HISC - History of Consciousness",
       "departmentSlug": "hisc-history-of-consciousness",
-      "count": 84,
+      "count": 79,
       "courses": [
-        {
-          "code": "HISC 5",
-          "title": "Time Travel and the Law",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-5",
-          "departmentSlug": "hisc-history-of-consciousness",
-          "departmentText": "HISC - History of Consciousness",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "HISC 23",
-          "title": "What is Communication?",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/lower-division/hisc-23",
-          "departmentSlug": "hisc-history-of-consciousness",
-          "departmentText": "HISC - History of Consciousness",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "HISC 174",
-          "title": "Aliens & Quantum Reality: Does Anybody Really Know What Time (It) Is?",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-174",
-          "departmentSlug": "hisc-history-of-consciousness",
-          "departmentText": "HISC - History of Consciousness",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HISC 186",
-          "title": "Quantum Physics and Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-186",
-          "departmentSlug": "hisc-history-of-consciousness",
-          "departmentText": "HISC - History of Consciousness",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HISC 189",
-          "title": "Neither East nor Europe: A Political History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hisc-history-of-consciousness/upper-division/hisc-189",
-          "departmentSlug": "hisc-history-of-consciousness",
-          "departmentText": "HISC - History of Consciousness",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "HISC 203A",
           "title": "Approaches to Critical Inquiry",
@@ -12747,75 +12707,11 @@
       ]
     },
     {
-      "subject": "HTEC",
-      "departmentText": "HTEC-Humanizing Technology",
-      "departmentSlug": "htec-humanizing-technology-certificate",
-      "count": 1,
-      "courses": [
-        {
-          "code": "HTEC 10",
-          "title": "What Can I Do with My Degree? Humanities-Powered Jobs",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/htec-humanizing-technology-certificate/lower-division/htec-10",
-          "departmentSlug": "htec-humanizing-technology-certificate",
-          "departmentText": "HTEC-Humanizing Technology",
-          "divisionPath": "lower-division"
-        }
-      ]
-    },
-    {
-      "subject": "KRSG",
-      "departmentText": "KRSG - Kresge College",
-      "departmentSlug": "krsg-kresge-college",
-      "count": 2,
-      "courses": [
-        {
-          "code": "KRSG 14",
-          "title": "Reading Eco-poetry in Community",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-14",
-          "departmentSlug": "krsg-kresge-college",
-          "departmentText": "KRSG - Kresge College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "KRSG 16",
-          "title": "Reading Du Bois",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-16",
-          "departmentSlug": "krsg-kresge-college",
-          "departmentText": "KRSG - Kresge College",
-          "divisionPath": "lower-division"
-        }
-      ]
-    },
-    {
       "subject": "LALS",
       "departmentText": "LALS - Latin American and Latino Studies",
       "departmentSlug": "lals-latin-american-and-latino-studies",
-      "count": 38,
+      "count": 35,
       "courses": [
-        {
-          "code": "LALS 134",
-          "title": "Fashioning Latinidades",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-134",
-          "departmentSlug": "lals-latin-american-and-latino-studies",
-          "departmentText": "LALS - Latin American and Latino Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LALS 146",
-          "title": "Queer Latinidades: Drag & Trans Latinx & Latin American Performances",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-146",
-          "departmentSlug": "lals-latin-american-and-latino-studies",
-          "departmentText": "LALS - Latin American and Latino Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LALS 194J",
-          "title": "Transitional Justice in the Americas",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lals-latin-american-and-latino-studies/upper-division/lals-194j",
-          "departmentSlug": "lals-latin-american-and-latino-studies",
-          "departmentText": "LALS - Latin American and Latino Studies",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "LALS 200",
           "title": "Bridging Latin American and Latina/o Studies",
