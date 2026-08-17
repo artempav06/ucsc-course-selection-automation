@@ -1,0 +1,939 @@
+{
+  "generatedAt": "2026-08-17T01:07:43.131Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=STAT",
+  "count": 37,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "STAT 203",
+      "title": "Introduction to Probability Theory",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203",
+      "departmentSlug": "am-applied-mathematics",
+      "departmentText": "AM - Applied Mathematics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduces probability theory and its applications. Requires a multivariate calculus background, but has no measure theoretic content. Topics include: combinatorial analysis; axioms of probability; random variables (discrete and continuous); joint probability distributions; expectation and higher moments; central limit theorem; law of large numbers; and Markov chains. Students cannot receive credit for this course and STAT 131 or CMPE 107 . (Formerly AMS 203.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students, or by permission of the instructor. cannot receive credit for this course and STAT 131 or CMPE 107 .",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 266B",
+      "title": "Advanced Statistical Programming in R",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266b",
+      "departmentSlug": "cse-computer-science-and-engineering",
+      "departmentText": "CSE - Computer Science and Engineering",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Teaches students already familiar with the R language advanced tools such as interactive graphics, interfacing with low-level languages, package construction, debugging, profiling, and parallel computation. (Formerly Applied Math and Statistics 266B and Computer Science 266B.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "Prerequisite(s): STAT 266A or CSE 266A.",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 266A",
+        "CSE 266A"
+      ],
+      "parserFlags": []
+    },
+    {
+      "code": "STAT 266C",
+      "title": "Introduction to Data Wrangling",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c",
+      "departmentSlug": "cse-computer-science-and-engineering",
+      "departmentText": "CSE - Computer Science and Engineering",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Introduces students to concepts and tools associated with data collection, curation, manipulation, and cleaning including an introduction to relational databases and SQL, regular expressions, API usage, and web scraping using Python. (Formerly Applied Math and Statistics 266C and Computer Science 266C.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "Prerequisite(s): STAT 266A or CSE 266A.",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 266A",
+        "CSE 266A"
+      ],
+      "parserFlags": []
+    },
+    {
+      "code": "STAT 200",
+      "title": "Research and Teaching in Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-200",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Focuses on basic teaching techniques for teaching assistants, including responsibilities and rights, leading discussion or lab sessions, presentation techniques, maintaining class records, and grading. Examines research and professional training, including use of library, technical writing, giving seminar and conference talks, and ethical issues in science and engineering.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 202",
+      "title": "Linear Models in SAS",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-202",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Case study-based course teaches statistical linear modeling using the SAS software package. Teaches generalized linear models; linear regression; analysis of variance/covariance; analysis of data with random effects and repeated measures. (Formerly AMS 202.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 108 or STAT 208 , or permission of",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 108",
+        "STAT 208"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 204",
+      "title": "Introduction to Statistical Data Analysis",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-204",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Presents tools for exploratory data analysis (EDA) and statistical modeling in R. Topics include numerical and graphical tools for EDA, linear and logistic regression, ANOVA, PCA, and tools for acquiring and storing large data. No R knowledge is required. Enrollment is restricted to graduate students and by permission of instructor. (Formerly AMS 204.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "restricted to graduate students. Enrollment is restricted to graduate students and by permission of instructor.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 205",
+      "title": "Introduction to Classical Statistical Learning",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to classical statistical inference. Topic include: random variables and distributions; types of convergence; central limit theorems; maximum likelihood estimation; Newton-Raphson, Fisher scoring, Expectation-Maximization, and stochastic gradient algorithms; confidence intervals; hypothesis testing; ridge regression, lasso, and elastic net.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 203 ; or STAT 131 and STAT 132 .",
+      "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 203",
+        "STAT 131",
+        "STAT 132"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 205B",
+      "title": "Intermediate Classical Inference",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205b",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Statistical inference from a frequentist point of view. Properties of random samples; convergence concepts applied to point estimators; principles of statistical inference; obtaining and evaluating point estimators with particular attention to maximum likelihood estimates and their properties; obtaining and evaluating interval estimators; and hypothesis testing methods and their properties. (Formerly AMS 205B.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 203 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 203"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 206",
+      "title": "Applied Bayesian Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduces Bayesian statistical modeling from a practitioner's perspective. Covers basic concepts (e.g., prior-posterior updating, Bayes factors, conjugacy, hierarchical modeling, shrinkage, etc.), computational tools (Markov chain Monte Carlo, Laplace approximations), and Bayesian inference for some specific models widely used in the literature (linear and generalized linear mixed models). (Formerly AMS 206.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 131 or STAT 203 , or by permission of the",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 131",
+        "STAT 203"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 206B",
+      "title": "Intermediate Bayesian Inference",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206b",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Bayesian statistical methods for inference and prediction including: estimation; model selection and prediction; exchangeability; prior, likelihood, posterior, and predictive distributions; coherence and calibration; conjugate analysis; Markov Chain Monte Carlo methods for simulation-based computation; hierarchical modeling; Bayesian model diagnostics, model selection, and sensitivity analysis. (Formerly AMS 206B.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 203 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 203"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 207",
+      "title": "Intermediate Bayesian Statistical Modeling",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-207",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Hierarchical modeling, linear models (regression and analysis of variance) from the Bayesian point of view, intermediate Markov chain Monte Carlo methods, generalized linear models, multivariate models, mixture models, hidden Markov models. (Formerly AMS 207.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 206B .",
+      "enrollmentText": "Enrollment is restricted to graduate students or by permission of instructor.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 206B"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 208",
+      "title": "Linear Statistical Models",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-208",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Theory, methods, and applications of linear statistical models. Review of simple correlation and simple linear regression. Multiple and partial correlation and multiple linear regression. Analysis of variance and covariance. Linear model diagnostics and model selection. Case studies drawn from natural, social, and medical sciences. STAT 205 strongly recommended as a prerequisite. Undergraduates are encouraged to take this class with permission of instructor. (Formerly AMS 256.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 or STAT 205B .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 205B"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 209",
+      "title": "Generalized Linear Models",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-209",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Theory, methods, and applications of generalized linear statistical models; review of linear models; binomial models for binary responses (including logistical regression and probit models); log-linear models for categorical data analysis; and Poisson models for count data. Case studies drawn from social, engineering, and life sciences. (Formerly AMS 274.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 or STAT 205B ; and STAT 206B .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 205B",
+        "STAT 206B"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 221",
+      "title": "Statistical Machine Learning",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-221",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Explores statistical methods in machine learning. Discusses the methodology and algorithms behind modern supervised and unsupervised learning techniques that are commonly applied to complex, high dimensional problems. Course topics include linear and logistic regression, classification, clustering, resampling methods, model selection and regularization, and non-linear regression. Students also gain exposure to popular statistical machine learning algorithms implemented in R. One focus is on understanding the formulation of statistical models and their implementation, and the practical application of learning methods to real-world datasets.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 or STAT 208 or by permission of",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 208"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 222",
+      "title": "Bayesian Nonparametric Methods",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-222",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Theory, methods, and applications of Bayesian nonparametric modeling. Prior probability models for spaces of functions. Dirichlet processes. Polya trees. Nonparametric mixtures. Models for regression, survival analysis, categorical data analysis, and spatial statistics. Examples drawn from social, engineering, and life sciences. (Formerly AMS 241.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 207 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 207"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 223",
+      "title": "Time Series Analysis",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-223",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Graduate level introductory course on time series data and models in the time and frequency domains: descriptive time series methods; the periodogram; basic theory of stationary processes; linear filters; spectral analysis; time series analysis for repeated measurements; ARIMA models; introduction to Bayesian spectral analysis; Bayesian learning, forecasting, and smoothing; introduction to Bayesian Dynamic Linear Models (DLMs); DLM mathematical structure; DLMs for trends and seasonal patterns; and autoregression and time series regression models. (Formerly AMS 223.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 206B , or by permission of",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 206B"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 224",
+      "title": "Bayesian Survival Analysis and Clinical Design",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-224",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to Bayesian statistical methods for survival analysis and clinical trial design: parametric and semiparametric models for survival data, frailty models, cure rate models, the design of clinical studies in phase I/II/III. (Formerly AMS 276.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 206B or STAT 207 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 206B",
+        "STAT 207"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 225",
+      "title": "Multivariate Statistical Methods",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-225",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to statistical methods for analyzing data sets in which two or more variables play the role of outcome or response. Descriptive methods for multivariate data. Matrix algebra and random vectors. The multivariate normal distribution. Likelihood and Bayesian inferences about multivariate mean vectors. Analysis of covariance structure: principle components, factor analysis. Discriminant, classification and cluster analysis.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 or STAT 205B or STAT 208 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 205B",
+        "STAT 208"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 226",
+      "title": "Spatial Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-226",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to the analysis of spatial data: theory of correlation structures and variograms; kriging and Gaussian processes; Markov random fields; fitting models to data; computational techniques; frequentist and Bayesian approaches. (Formerly AMS 245.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 207 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 207"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 227",
+      "title": "Statistical Learning and High Dimensional Data Analysis",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-227",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introductions to statistical learning, modeling, and inference with complex, large, and high-dimensional data. Topics include supervised and unsupervised learning, model selection, dimension reduction, matrix factorization, latent variable models, graphical models, interpretability and causality. Applications in health, social sciences, and engineering.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 and STAT 206B ; or STAT 205B .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 206B",
+        "STAT 205B"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 229",
+      "title": "Advanced Bayesian Computation",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-229",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Teaches some advanced techniques in Bayesian Computation. Topics include Hamiltonian Monte Carlo; slice sampling; sequential Monte Carlo; assumed density filtering; expectation propagation; stochastic gradient descent; approximate Markov chain Monte Carlo; variational inference; and stochastic variational inference. (Formerly AMS 268.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 207 , or by permission of the",
+      "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 207"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 243",
+      "title": "Stochastic Processes",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-243",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Includes probabilistic and statistical analysis of random processes, continuous-time Markov chains, hidden Markov models, point processes, Markov random fields, spatial and spatio-temporal processes, and statistical modeling and inference in stochastic processes. Applications to a variety of fields. (Formerly AMS 263.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 205 ; or STAT 131 and STAT 132 .",
+      "enrollmentText": "Enrollment is restricted to graduate students, undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 205",
+        "STAT 131",
+        "STAT 132"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 244",
+      "title": "Bayesian Decision Theory",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-244",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Explores conceptual and theoretical bases of statistical decision making under uncertainty. Focuses on axiomatic foundations of expected utility, elicitation of subjective probabilities and utilities, and the value of information and modern computational methods for decision problems. (Formerly AMS 221.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 203 or equivalent; and STAT 206 or STAT 206B ; or permission of the",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 203",
+        "STAT 206",
+        "STAT 206B"
+      ],
+      "parserFlags": [
+        "contains-permission-or-consent-exception",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 246",
+      "title": "Probability Theory with Markov Chains",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-246",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to probability theory: probability spaces, expectation as Lebesgue integral, characteristic functions, modes of convergence, conditional probability and expectation, discrete-state Markov chains, stationary distributions, limit theorems, ergodic theorem, continuous-state Markov chains, applications to Markov chain Monte Carlo methods. (Formerly AMS 261.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "STAT 203 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "STAT 203"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 280B",
+      "title": "Seminars in Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280b",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Weekly seminar series covering topics of current research in statistics.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 280D",
+      "title": "Seminar in Bayesian Statistical Methodology",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280d",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Weekly seminar/discussion group on Bayesian statistical methods, covering both analytical and computational approaches. Participants present research progress and finding in semiformal discussions. Students must present their own research on a regular basis. (Formerly AMS 280D.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 285",
+      "title": "Seminar in Career Skills",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-285",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Seminar in career skills for applied mathematicians and statisticians. Learn about professional activities such as the publication process, grant proposals, and the job market.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students, typically within two years of their expected Ph.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 291",
+      "title": "Advanced Topics in Bayesian Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-291",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Advanced study of research topics in the theory, methods, or applications of Bayesian statistics. The specific subject depends on the instructor. Enrollment is restricted to graduate students and by permission of instructor. (Formerly AMS 291.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students and by permission of instructor.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 292",
+      "title": "Advanced Topics in Statistics",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-292",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Advanced study of research topics in the theory, methods, or applications of statistics. The specific subject depends on the instructor. Enrollment is restricted to graduate students and by permission of the instructor.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students and by permission of the instructor.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 296",
+      "title": "Masters Project",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-296",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Independent completion of a masters project under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 297A",
+      "title": "Independent Study or Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297a",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 297B",
+      "title": "Independent Study or Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297b",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 10,
+      "creditsText": "10",
+      "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 297C",
+      "title": "Independent Study or Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297c",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 15,
+      "creditsText": "15",
+      "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 297F",
+      "title": "Independent Study",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297f",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 299A",
+      "title": "Thesis Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299a",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 299B",
+      "title": "Thesis Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299b",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 10,
+      "creditsText": "10",
+      "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "STAT 299C",
+      "title": "Thesis Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299c",
+      "departmentSlug": "stat-statistics",
+      "departmentText": "STAT - Statistics",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 15,
+      "creditsText": "15",
+      "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    }
+  ]
+}

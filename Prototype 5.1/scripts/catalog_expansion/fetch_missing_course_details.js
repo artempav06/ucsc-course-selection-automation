@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const { ROOT, LAB_DIR, parseArgs, stripHtml, fetchUrl, mapLimit, decodeHtml, divisionFrom, mentionedCourseCodes, subjectOf } = require('./common');
+const { ROOT, LAB_DIR, parseArgs, stripHtml, fetchUrl, mapLimit, decodeHtml, divisionFrom, mentionedCourseCodes, subjectOf, departmentMatches } = require('./common');
 
 function htmlField(html, label) {
   const re = new RegExp(`<h4>\\s*${label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*<\\/h4>\\s*<p>([\\s\\S]*?)<\\/p>`, 'i');
@@ -62,10 +62,7 @@ function flagsFor(detail) {
 function chooseTargets(missing, args) {
   let departments = missing.departments || [];
   let courses = departments.flatMap(d => d.courses.map(c => ({ ...c, missingGroupSubject: d.subject })));
-  if (args.department) {
-    const want = String(args.department).toUpperCase();
-    courses = courses.filter(c => subjectOf(c.code) === want || String(c.departmentSlug || '').toUpperCase().includes(want) || String(c.departmentText || '').toUpperCase().includes(want));
-  }
+  if (args.department) courses = courses.filter(c => departmentMatches(c, args.department));
   if (args.limit) courses = courses.slice(0, Number(args.limit));
   return courses;
 }

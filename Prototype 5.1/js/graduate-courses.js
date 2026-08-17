@@ -2716,5 +2716,3527 @@ const GRADUATE_COURSES = {
     "searchOnly": true,
     "catalogLevel": "graduate",
     "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 200A": {
+    "concentrations": [],
+    "title": "Introduction to Graduate Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200a",
+    "desc": "Introduces graduate study in the critical practice of film and digital media. Conducted as a pro-seminar, with faculty presentations and discussion.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 200B": {
+    "concentrations": [],
+    "title": "Theory and Praxis of Film and Digital Media 1",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200b",
+    "desc": "Investigates methods for rhetorical production of written and visual/aural texts. Emphasizes questions about delineation between theory and practice, and provides groundwork in theories relevant to key areas in film, television, and digital media studies.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 200C": {
+    "concentrations": [],
+    "title": "Theory and Praxis of Film and Digital Media 2",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200c",
+    "desc": "Investigates methods for rhetorical production of written and visual/aural texts. Emphasizes interwoven practices of the artist/researcher/teacher, formal and expressive possibilities of hybridized research, and cultural issues raised by integrated methods of inquiry.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 202": {
+    "concentrations": [],
+    "title": "Pedagogy in Film and Digital Media",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-202",
+    "desc": "Prepares students for teaching assistantships and instructor roles. Topics include TAships, designing inclusive course syllabi and lesson plans, active learning, teaching technologies, and classroom environment.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 203": {
+    "concentrations": [],
+    "title": "Professional Development in Film and Digital Media",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-203",
+    "desc": "Prepares graduate students with professional skills in the discipline, such as CV writing, grants research and writing, public presentation, exhibition, publication, and job seeking.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 221": {
+    "concentrations": [],
+    "title": "Audio Arts and Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-221",
+    "desc": "Explores practices and ethics of listening, noticing and audio recording. Students gain expertise with microphones for field recording, studio set-ups, and digital audio editing software, and create original sound works of their own. The course entwines theory and practice, considering various approaches to audio arts across platforms and contexts such as broadcast, podcast, installation, audio essay, performance, and art as social practice, as well as exploring strategies for sound design for audiovisual works.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 222": {
+    "concentrations": [],
+    "title": "Critical Methodologies in Film and Television",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-222",
+    "desc": "Introduces graduate students to critical methodologies in media studies and offers sustained examination of theoretical approaches to media studies. Methodologies may include (but are not limited to) contemporary theory (semiotic, psychoanalytic, ideological), cultural studies, intertextuality, feminist film, and television theory.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 223": {
+    "concentrations": [],
+    "title": "The Film/Video Essay",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-223",
+    "desc": "Focuses on essayistic approaches to scholarship and production, emphasizing relationships between theory and praxis that this mode of production requires.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 224": {
+    "concentrations": [],
+    "title": "Mediating Difference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-224",
+    "desc": "Considers theoretical and strategic, situated difference in the era of (semi-)colonialism, post-colonialism, and globalism, examining theoretical writing alongside media works on the topic.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 225": {
+    "concentrations": [],
+    "title": "Software Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-225",
+    "desc": "Today, our lives are woven into vast software systems that facilitate our family communications, personal relations, jobs, and cultural, economic, political, and social institutions. Course examines these conditions of life and thought using insights from the arts and humanities.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 226": {
+    "concentrations": [],
+    "title": "Queer Theory and Global Film and Media",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-226",
+    "desc": "Examines queer subjectivities, practices, and theories in relation to globalization, transnationalism, and postcoloniality, focusing on film/media produced outside the United States. The course addresses representation and also uses queer theoretical work to engage wider contexts of film/media production, distribution, and exhibition.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 227": {
+    "concentrations": [],
+    "title": "Representing Memory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-227",
+    "desc": "Studio-based hybrid practice/theory to explore problems of historical representation in film, video, and new media and engage with the production of new cinematic/visual forms that take on issues of personal, collective, and national memories.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students Studio-based hybrid practice/theory to explore problems of historical representation in film, video, and new media and engage with the production of new cinematic/visual forms that take on issues of personal, collective, and national memories.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students Studio-based hybrid practice/theory to explore problems of historical representation in film, video, and new media and engage with the production of new cinematic/visual forms that take on issues of personal, collective, and national memories.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 228": {
+    "concentrations": [],
+    "title": "Moving Image Archives and the Frontiers of Information",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-228",
+    "desc": "Explores moving image archives in relation to social movements, technological change, and moving image use and reuse. Theories of memory, information, and technology provide a framework for discussions, site visits, and individual projects.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 229": {
+    "concentrations": [],
+    "title": "Topics in Documentary Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-229",
+    "desc": "Examines the forms, discourses, and practices of documentary film, television, video, and other media in relation to cultural, social, and political history and theory. While the thematic focus varies from term to term, each edition of the course places critical thought and documentary work in conversation around issues central to forms of social knowledge and action.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 230": {
+    "concentrations": [],
+    "title": "Expanded Documentary",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-230",
+    "desc": "Students explore the aesthetic, political, and ethical dimension of new and expanded forms of documentary practice including: new media; database-driven, interactive documentary; participatory media; social media; and documentation-based art practices.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 231": {
+    "concentrations": [],
+    "title": "Topics in Postcolonial Theories, Film, and Media",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-231",
+    "desc": "Explores topics in postcolonial theories and film and media around themes such as colonialism, modernity, and institutions of cinema; colonial histories and national or transnational film and media; race, gender, sexuality and colonialism; the uneven implications, pitfalls, and possibilities of the term postcolonial in relation to film and media.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 232": {
+    "concentrations": [],
+    "title": "Audiovisual Ethnography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-232",
+    "desc": "Students learn the technical and critical skills required for fieldwork-based ethnographic video and audio media production. The course is structured around cumulatively building filmmaking skills with an emphasis on critically informed nonfiction ethnographic observation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to film and digital media, anthropology, or social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to film and digital media, anthropology, or social documentation graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 234": {
+    "concentrations": [],
+    "title": "Toward an Ethics of New Media",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-234",
+    "desc": "Investigates an ethics of new media. Using an intersectional approach, students read thematic units that consider issues of race, class, and gender as they crosscut questions of advanced technological tools and their implementation in modern society.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 235": {
+    "concentrations": [],
+    "title": "Feminist Media Histories",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-235",
+    "desc": "Investigates feminist histories of film, radio, television, video, technology, playable media, and digital culture from the 19th century through the present day. Students learn varied historiographic methodologies and also engage in primary historical research.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 236": {
+    "concentrations": [],
+    "title": "Making...in the Anthropocene",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-236",
+    "desc": "Through readings and assignments, students explore the notions of making and the temporal context of the Anthropocene. Making is broadly defined as any creative production. The Anthropocene and climate change are studied as urgent and compelling context.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 237": {
+    "concentrations": [],
+    "title": "Graduate Critique",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-237",
+    "desc": "Develops fluency in the languages of critical practice as expressed across media. Integrates critical and analytical writing about objects and experiences created by and through electronic and digital media with ongoing, student-driven critiques of audiovisual scholarship.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to film and digital media graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to film and digital media graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 238": {
+    "concentrations": [],
+    "title": "The Politics of Information",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-238",
+    "desc": "Explores the production and perception of information (news, stories, figures, identities, controversies, and complacencies). Students research, analyze, theorize, and define the scope of the politics of information, study the consequences of media(ted) knowledge, and propose possibilities for critical intervention and change.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 239": {
+    "concentrations": [],
+    "title": "Topics in Media Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-239",
+    "desc": "Explores advanced media theory and the methodologies of media analysis. Themes and issues to be drawn from media history; material, popular, or mass cultures; network and information theory; and intellectual, institutional, political, or cultural contexts.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 283": {
+    "concentrations": [],
+    "title": "New Media Art and Digital Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-283",
+    "desc": "A study of new media art in the context of digital culture. Electronic, digital and online technology art are set in critical relation to discourse on history, aesthetics, hypermedia, the interface, hacks, embodiment, robotics, artificial life and other topics.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 284": {
+    "concentrations": [],
+    "title": "Film, Culture, and Modernity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-284",
+    "desc": "Traces the rise of motion picture culture from the late 19th century through the end of the 1920s, looking at film's emerging visual and narrative grammar, its changing cultural status, and its engagement with shifting registers of class, ethnicity, gender, and sexuality.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 295": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-295",
+    "desc": "Directed reading that does not involve a term paper. Students submit petition to course-sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 296F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-296f",
+    "desc": "Independent study with primary advisor for graduate students prior to advancing to candidacy.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297",
+    "desc": "Either study related to a course being taken or a totally independent study. Students submit petition to sponsoring agency. Enrollment restricted to graduate students. May be repeated for credit.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297f",
+    "desc": "Students submit petition to course-sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299a",
+    "desc": "Students submit petition to course sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "FILM 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299b",
+    "desc": "Students submit petition to course sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "GRAD 213": {
+    "concentrations": [],
+    "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213",
+    "desc": "Supports enrolling graduate students and auditing postdoctoral scholars in STEM and Social Science programs to develop mentorship skills that create inclusive research and learning environments in higher education. Mentors engage with recent research and practice evidence-based strategies that help historically marginalized students excel in science through an equity-centered approach. To apply insights from educational research, mentors create mentoring statements that articulate their equity values and the specific strategies they use to enact equity in mentoring. Enrollment is by permission of instructor and prioritizes graduate students in STEM or Social Science discipline. Contact the instructor for a permission code. The instructor will review enrollees as needed to ensure priority is being met. Postdoctoral scholars in these fields may audit the course.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "GRAD 215": {
+    "concentrations": [],
+    "title": "Equitable Course Design for Graduate Student Instructors",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215",
+    "desc": "Supports current and emerging graduate student instructors (GSIs) to discuss and apply research-based frameworks for developing college-level courses that center significant student learning, antiracism, accessibility, and equitable outcomes. To put the insights of educational research into practice, GSIs create the essential components of an original college-level course, including course learning outcomes, assessment plans, an equity-minded syllabus, and an engaging course structure. First priority of enrollment is given to graduate students who have been appointed to teach as GSIs in the upcoming summer sessions. Open on a space-available basis to all other graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [],
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 200": {
+    "concentrations": [],
+    "title": "Algebra I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-200",
+    "desc": "Group theory: subgroups, cosets, normal subgroups, homomorphisms, isomorphisms, quotient groups, free groups, generators and relations, group actions on a set. Sylow theorems, semidirect products, simple groups, nilpotent groups, and solvable groups. Ring theory: Chinese remainder theorem, prime ideals, localization. Euclidean domains, PIDs, UFDs, polynomial rings. Prerequisite(s): MATH 111A and MATH 117 are recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 201": {
+    "concentrations": [],
+    "title": "Algebra II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-201",
+    "desc": "Vector spaces, linear transformations, eigenvalues and eigenvectors, the Jordan canonical form, bilinear forms, quadratic forms, real symmetric forms and real symmetric matrices, orthogonal transformations and orthogonal matrices, Euclidean space, Hermitian forms and Hermitian matrices, Hermitian spaces, unitary transformations and unitary matrices, skewsymmetric forms, tensor products of vector spaces, tensor algebras, symmetric algebras, exterior algebras, Clifford algebras and spin groups.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 is recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 is recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 202": {
+    "concentrations": [],
+    "title": "Algebra III",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-202",
+    "desc": "Module theory: Submodules, quotient modules, module homomorphisms, generators of modules, direct sums, free modules, torsion modules, modules over PIDs, and applications to rational and Jordan canonical forms. Field theory: field extensions, algebraic and transcendental extensions, splitting fields, algebraic closures, separable and normal extensions, the Galois theory, finite fields, Galois theory of polynomials.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 201 is recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 201 is recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 203": {
+    "concentrations": [],
+    "title": "Algebra IV",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 200",
+        "MATH 201"
+      ],
+      [
+        "MATH 202"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-203",
+    "desc": "Topics include tensor product of modules over rings, projective modules and injective modules, Jacobson radical, Wedderburns' theorem, category theory, Noetherian rings, Artinian rings, affine varieties, projective varieties, Hilbert's Nullstellensatz, prime spectrum, Zariski topology, discrete valuation rings, and Dedekind domains.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , and MATH 202 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , and MATH 202 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 204": {
+    "concentrations": [],
+    "title": "Analysis I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-204",
+    "desc": "Completeness and compactness for real line; sequences and infinite series of functions; Fourier series; calculus on Euclidean space and the implicit function theorem; metric spaces and the contracting mapping theorem; the Arzela-Ascoli theorem; basics of general topological spaces; the Baire category theorem; Urysohn's lemma; and Tychonoff's theorem.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): MATH 105A and MATH 105B are recommended as preparation.Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): MATH 105A and MATH 105B are recommended as preparation.Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 205": {
+    "concentrations": [],
+    "title": "Analysis II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 204"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-205",
+    "desc": "Lebesgue measure theory, abstract measure theory, measurable functions, integration, space of absolutely integrable functions, dominated convergence theorem, convergence in measure, Riesz representation theorem, product measure and Fubini 's theorem. L p spaces, derivative of a measure, the Radon-Nikodym theorem, and the fundamental theorem of calculus.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 206": {
+    "concentrations": [],
+    "title": "Analysis III",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-206",
+    "desc": "Banach spaces, Hahn-Banach theorem, uniform boundedness theorem, the open mapping and closed graph theorems, weak and weak* topology, the Banach-Alaoglu theorem, Hilbert spaces, self-adjoint operators, compact operators, spectral theory, Fredholm operators, spaces of distributions and the Fourier transform, and Sobolev spaces.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 and MATH 205 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 and MATH 205 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 207": {
+    "concentrations": [],
+    "title": "Complex Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-207",
+    "desc": "Holomorphic and harmonic functions, Cauchy's integral theorem, the maximum principle and its consequences, conformal mapping, analytic continuation, the Riemann mapping theorem.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 103 is recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 103 is recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 208": {
+    "concentrations": [],
+    "title": "Manifolds I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-208",
+    "desc": "Definition of manifolds; the tangent bundle; the inverse function theorem and the implicit function theorem; transversality; Sard's theorem and the Whitney embedding theorem; vector fields, flows, and the Lie bracket; Frobenius's theorem. MATH 204 recommended for preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 209": {
+    "concentrations": [],
+    "title": "Manifolds II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-209",
+    "desc": "Tensor algebra. Differential forms and associated formalism of pullback, wedge product, exterior derivative, Stokes theorem, integration. Cartan's formula for Lie derivative. Cohomology via differential forms. The Poincar\u00e9 lemma and the Mayer-Vietoris sequence. Theorems of deRham and Hodge.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 208 . MATH 201 is recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 208 . MATH 201 is recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 210": {
+    "concentrations": [],
+    "title": "Manifolds III",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-210",
+    "desc": "The fundamental group, covering space theory and van Kampen's theorem (with a discussion of free and amalgamated products of groups), CW complexes, higher homotopy groups, cellular and singular cohomology, the Eilenberg-Steenrod axioms, computational tools including Mayer-Vietoris, cup products, Poincar\u00e9 duality, the Lefschetz fixed point theorem, the exact homotopy sequence of a fibration and the Hurewicz isomorphism theorem, and remarks on characteristic classes.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 208 and MATH 209 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 208 and MATH 209 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 211": {
+    "concentrations": [],
+    "title": "Algebraic Topology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-211",
+    "desc": "Continuation of MATH 210. Topics include theory of characteristic classes of vector bundles, cobordism theory, and homotopy theory.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , and MATH 202 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , and MATH 202 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 212": {
+    "concentrations": [],
+    "title": "Differential Geometry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 208"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-212",
+    "desc": "Principal bundles, associated bundles and vector bundles, connections and curvature on principal and vector bundles. More advanced topics include: introduction to cohomology, the Chern-Weil construction and characteristic classes, the Gauss-Bonnet theorem or Hodge theory, eigenvalue estimates for Beltrami Laplacian, and comparison theorems in Riemannian geometry.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 208 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 208 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 213A": {
+    "concentrations": [],
+    "title": "Partial Differential Equations I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213a",
+    "desc": "First of the two PDE courses covering basically Part I in Evans' book; Partial Differential Equations; which includes transport equations; Laplace equations; heat equations; wave equations; characteristics of nonlinear first-order PDE; Hamilton-Jacobi equations; conservation laws; some methods for solving equations in closed form; and the Cauchy-Kovalevskaya theorem.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 213B": {
+    "concentrations": [],
+    "title": "Partial Differential Equations II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213b",
+    "desc": "Second course of the PDE series covering basically most of Part II in Evans' book and some topics in nonlinear PDE including Sobolev spaces, Sobolev inequalities, existence, regularity and a priori estimates of solutions to second order elliptic PDE, parabolic equations, hyperbolic equations and systems of conservation laws, and calculus of variations and its applications to PDE.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 106 , MATH 107 , and MATH 213A are recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 106 , MATH 107 , and MATH 213A are recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 214": {
+    "concentrations": [],
+    "title": "Theory of Finite Groups",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-214",
+    "desc": "Nilpotent groups, solvable groups, Hall subgroups, the Frattini subgroup, the Fitting subgroup, the Schur-Zassenhaus theorem, fusion in p-subgroups, the transfer map, Frobenius theorem on normal p-complements.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 and MATH 201 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 and MATH 201 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 215": {
+    "concentrations": [],
+    "title": "Operator Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-215",
+    "desc": "Operators on Banach spaces and Hilbert spaces. The spectral theorem. Compact and Fredholm operators. Other special classes of operators.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 , MATH 205 , MATH 206 , and MATH 207 are recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 , MATH 205 , MATH 206 , and MATH 207 are recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 216": {
+    "concentrations": [],
+    "title": "Advanced Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-216",
+    "desc": "Topics include: the Lebesgue set, the Marcinkiewicz interpolation theorem, singular integrals, the Calderon-Zygmund theorem, Hardy Littlewood-Sobolev theorem, pseudodifferential operators, compensated compactness, concentration compactness, and applications to PDE.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 , MATH 205 , and MATH 206 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 , MATH 205 , and MATH 206 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 217": {
+    "concentrations": [],
+    "title": "Advanced Elliptic Partial Differential Equations",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-217",
+    "desc": "Topics include elliptic equations, existence of weak solutions, the Lax-Milgram theorem, interior and boundary regularity, maximum principles, the Harnack inequality, eigenvalues for symmetric and non-symmetric elliptic operators, calculus of variations (first variation: Euler-Lagrange equations, second variation: existence of minimizers). Other topics covered as time permits.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 , MATH 205 , and MATH 206 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 , MATH 205 , and MATH 206 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 218": {
+    "concentrations": [],
+    "title": "Advanced Parabolic and Hyperbolic Partial Differential Equations",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 205"
+      ],
+      [
+        "MATH 206"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-218",
+    "desc": "Topics include: linear evolution equations, second order parabolic equations, maximum principles, second order hyperbolic equations, propagation of singularities, hyperbolic systems of first order, semigroup theory, systems of conservation laws, Riemann problem, simple waves, rarefaction waves, shock waves, Riemann invariants, and entropy criteria. Other topics covered as time permits.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 205 and MATH 206 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 205 and MATH 206 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 219": {
+    "concentrations": [],
+    "title": "Nonlinear Functional Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-219",
+    "desc": "Topological methods in nonlinear partial differential equations, including degree theory, bifurcation theory, and monotonicity. Topics also include variational methods in the solution of nonlinear partial differential equations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 220A": {
+    "concentrations": [],
+    "title": "Representation Theory I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220a",
+    "desc": "Lie groups and Lie algebras, and their finite dimensional representations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , and MATH 202 . MATH 225A and MATH 227 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , and MATH 202 . MATH 225A and MATH 227 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 220B": {
+    "concentrations": [],
+    "title": "Representation Theory II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 220A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220b",
+    "desc": "Lie groups and Lie algebras, and their finite dimensional representations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 220A .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 220A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 222A": {
+    "concentrations": [],
+    "title": "Algebraic Number Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222a",
+    "desc": "Topics include algebraic integers, completions, different and discriminant, cyclotomic fields, parallelotopes, the ideal function, ideles and adeles, elementary properties of zeta functions and L-series, local class field theory, global class field theory. MATH 200, MATH 201 , and MATH 202 are recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 222B": {
+    "concentrations": [],
+    "title": "Algebraic Number Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222b",
+    "desc": "Topics include geometric methods in number theory, finiteness theorems, analogues of Riemann-Roch for algebraic fields (after A. Weil), inverse Galois problem (Belyi theorem) and consequences.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 223A": {
+    "concentrations": [],
+    "title": "Algebraic Geometry I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223a",
+    "desc": "Topics include examples of algebraic varieties, elements of commutative algebra, local properties of algebraic varieties, line bundles and sheaf cohomology, theory of algebraic curves. Weekly problem solving. MATH 200, MATH 201 , MATH 202 , and MATH 208 are recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 223B": {
+    "concentrations": [],
+    "title": "Algebraic Geometry II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223b",
+    "desc": "A continuation of course 223A. Topics include theory of schemes and sheaf cohomology, formulation of the Riemann-Roch theorem, birational maps, theory of surfaces. Weekly problem solving. MATH 223A is recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 225A": {
+    "concentrations": [],
+    "title": "Lie Algebras",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225a",
+    "desc": "Basic concepts of Lie algebras. Engel's theorem, Lie's theorem, Weyl's theorem are proved. Root space decomposition for semi-simple algebras, root systems and the classification theorem for semi-simple algebras over the complex numbers. Isomorphism and conjugacy theorems.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 201 and MATH 202 recommended as preparation",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 201 and MATH 202 recommended as preparation",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 225B": {
+    "concentrations": [],
+    "title": "Infinite Dimensional Lie Algebras",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 225A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225b",
+    "desc": "Finite dimensional semi-simple Lie algebras: PBW theorem, generators and relations, highest weight representations, Weyl character formula. Infinite dimensional Lie algebras: Heisenberg algebras, Virasoro algebras, loop algebras, affine Kac-Moody algebras, vertex operator representations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 225A .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 225A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 226A": {
+    "concentrations": [],
+    "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226a",
+    "desc": "Introduction to the infinite-dimensional Lie algebras that arise in modern mathematics and mathematical physics: Heisenberg and Virasoro algebras, representations of the Heisenberg algebra, Verma modules over the Virasoro algebra, the Kac determinant formula, and unitary and discrete series representations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 226B": {
+    "concentrations": [],
+    "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226b",
+    "desc": "Continuation of MATH 226A: Kac-Moody and affine Lie algebras and their representations, integrable modules, representations via vertex operators, modular invariance of characters, and introduction to vertex operator algebras.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 227": {
+    "concentrations": [],
+    "title": "Lie Groups",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 200",
+        "MATH 201",
+        "MATH 204"
+      ],
+      [
+        "MATH 208"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-227",
+    "desc": "Lie groups and algebras, the exponential map, the adjoint action, Lie's three theorems, Lie subgroups, the maximal torus theorem, the Weyl group, some topology of Lie groups, some representation theory: Schur's Lemma, the Peter-Weyl theorem, roots, weights, classification of Lie groups, the classical groups.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , MATH 204 , and MATH 208 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , MATH 204 , and MATH 208 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 228": {
+    "concentrations": [],
+    "title": "Lie Incidence Geometries",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-228",
+    "desc": "Linear incidence geometry is introduced. Linear and classical groups are reviewed, and geometries associated with projective and polar spaces are introduced. Characterizations are obtained.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 229": {
+    "concentrations": [],
+    "title": "Kac-Moody Algebras",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-229",
+    "desc": "Theory of Kac-Moody algebras and their representations. The Weil-Kac character formula. Emphasis on representations of affine superalgebras by vertex operators. Connections to combinatorics, PDE, the monster group. The Virasoro algebra.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 232": {
+    "concentrations": [],
+    "title": "Morse Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-232",
+    "desc": "Classical Morse Theory. The fundamental theorems relating critical points to the topology of a manifold are treated in detail. The Bott Periodicity Theorem. A specialized course offered once every few years.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 208 , MATH 209 , MATH 210 , MATH 211 , and MATH 212 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 208 , MATH 209 , MATH 210 , MATH 211 , and MATH 212 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 233": {
+    "concentrations": [],
+    "title": "Random Matrix Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-233",
+    "desc": "Classical matrix ensembles; Wigner semi-circle law; method of moments. Gaussian ensembles. Method of orthogonal polynomials; Gaudin lemma. Distribution functions for spacings and largest eigenvalue. Asymptotics and Riemann-Hilbert problem. Painleve theory and the Tracy-Widom distribution. Selberg's Integral. Matrix ensembles related to classical groups; symmetric functions theory. Averages of characteristic polynomials. Fundamentals of free probability theory. Overview of connections with physics, combinatorics, and number theory.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 103, MATH 204 , and MATH 205 ; MATH 117 recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 103, MATH 204 , and MATH 205 ; MATH 117 recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 234": {
+    "concentrations": [],
+    "title": "Riemann Surfaces",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-234",
+    "desc": "Riemann surfaces, conformal maps, harmonic forms, holomorphic forms, the Riemann-Roch theorem, the theory of moduli.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 235": {
+    "concentrations": [],
+    "title": "Dynamical Systems Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 203"
+      ],
+      [
+        "MATH 208"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-235",
+    "desc": "An introduction to the qualitative theory of systems of ordinary differential equations. Structural stability, critical elements, stable manifolds, generic properties, bifurcations of generic arcs.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 203 and MATH 208 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 203 and MATH 208 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 238": {
+    "concentrations": [],
+    "title": "Elliptic Functions and Modular Forms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-238",
+    "desc": "The course, aimed at second-year graduate students, will cover the basic facts about elliptic functions and modular forms. The goal is to provide the student with foundations suitable for further work in advanced number theory, in conformal field theory, and in the theory of Riemann surfaces.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , MATH 202 , and either MATH 207 or MATH 103A are recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , MATH 202 , and either MATH 207 or MATH 103A are recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 239": {
+    "concentrations": [],
+    "title": "Homological Algebra",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-239",
+    "desc": "Homology and cohomology theories have proven to be powerful tools in many fields (topology, geometry, number theory, algebra). Independent of the field, these theories use the common language of homological algebra. The aim of this course is to acquaint the participants with basic concepts of category theory and homological algebra, as follows: chain complexes, homology, homotopy, several (co)homology theories (topological spaces, manifolds, groups, algebras, Lie groups), projective and injective resolutions, derived functors (Ext and Tor). Depending on time, spectral sequences or derived categories may also be treated. MATH 200 and MATH 202 strongly recommended.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 240A": {
+    "concentrations": [],
+    "title": "Representations of Finite Groups I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240a",
+    "desc": "Introduces ordinary representation theory of finite groups (over the complex numbers). Main topics are characters, orthogonality relations, character tables, induction and restriction, Frobenius reciprocity, Mackey's formula, Clifford theory, Schur indicator, Schur index, Artin's and Brauer's induction theorems. Recommended: successful completion of MATH 200- MATH 202 .",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 240B": {
+    "concentrations": [],
+    "title": "Representations of Finite Groups II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240b",
+    "desc": "Introduces modular representation theory of finite groups (over a field of positive characteristic). Main topics are Grothendieck groups, Brauer characters, Brauer character table, projective covers, Brauer-Cartan triangle, relative projectivity, vertices, sources, Green correspondence, Green's indecomposability theorem. Recommended completion of MATH 200- MATH 203 and MATH 240A .",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , MATH 202 , MATH 203 , and MATH 240A recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , MATH 202 , MATH 203 , and MATH 240A recommended.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 246": {
+    "concentrations": [],
+    "title": "Representations of Algebras",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "MATH 200",
+        "MATH 201"
+      ],
+      [
+        "MATH 202"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-246",
+    "desc": "Material includes associative algebras and their modules; projective and injective modules; projective covers; injective hulls; Krull-Schmidt Theorem; Cartan matrix; semisimple algebras and modules; radical, simple algebras; symmetric algebras; quivers and their representations; Morita Theory; and basic algebras.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 200 , MATH 201 , and MATH 202 .",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 200 , MATH 201 , and MATH 202 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 248": {
+    "concentrations": [],
+    "title": "Symplectic Geometry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-248",
+    "desc": "Basic definitions. Darboux theorem. Basic examples: cotangent bundles, K\u00e4hler manifolds and co-adjoint orbits. Normal form theorems. Hamiltonian group actions, moment maps. Reduction by symmetry groups. Atiyah-Guillemin-Sternberg convexity. Introduction to Floer homological methods. Relations with other geometries including contact, Poisson, and K\u00e4hler geometry.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 204 ; MATH 208 and MATH 209 are recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 204 ; MATH 208 and MATH 209 are recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 249A": {
+    "concentrations": [],
+    "title": "Mechanics I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249a",
+    "desc": "Covers symplectic geometry and classical Hamiltonian dynamics. Some of the key subjects are the Darboux theorem, Poisson brackets, Hamiltonian and Langrangian systems, Legendre transformations, variational principles, Hamilton-Jacobi theory, geodesic equations, and an introduction to Poisson geometry. MATH 208 and MATH 209 are recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 249B": {
+    "concentrations": [],
+    "title": "Mechanics II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249b",
+    "desc": "Hamiltonian dynamics with symmetry. Key topics center around the momentum map and the theory of reduction in both the symplectic and Poisson context. Applications are taken from geometry, rigid body dynamics, and continuum mechanics. MATH 249A is recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 249C": {
+    "concentrations": [],
+    "title": "Mechanics III",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249c",
+    "desc": "Introduces students to active research topics tailored according to the interests of the students. Possible subjects are complete integrability and Kac-Moody Lie algebras; Smale's topological program and bifurcation theory; KAM theory, stability and chaos; relativity; quantization. MATH 249B is recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 252": {
+    "concentrations": [],
+    "title": "Fluid Mechanics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-252",
+    "desc": "First covers a basic introduction to fluid dynamics equations and then focuses on different aspects of the solutions to the Navier-Stokes equations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "MATH 106 and MATH 107 are recommended as preparation.",
+    "prereqNotes": [
+      "Official prerequisite text: MATH 106 and MATH 107 are recommended as preparation.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 254": {
+    "concentrations": [],
+    "title": "Geometric Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-254",
+    "desc": "Introduction to some basics in geometric analysis through the discussions of two fundamental problems in geometry: the resolution of the Yamabe problem and the study of harmonic maps. The analytic aspects of these problems include Sobolev spaces, best constants in Sobolev inequalities, and regularity and a priori estimates of systems of elliptic PDE.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 256": {
+    "concentrations": [],
+    "title": "Algebraic Curves",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-256",
+    "desc": "Introduction to compact Riemann surfaces and algebraic geometry via an in-depth study of complex algebraic curves.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate mathematics and physics students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate mathematics and physics students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 260": {
+    "concentrations": [],
+    "title": "Combinatorics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-260",
+    "desc": "Combinatorial mathematics, including summation methods, binomial coefficients, combinatorial sequences (Fibonacci, Stirling, Eulerian, harmonic, Bernoulli numbers), generating functions and their uses, Bernoulli processes and other topics in discrete probability. Oriented toward problem solving applications. Applications to statistical physics and computer science.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 264": {
+    "concentrations": [],
+    "title": "Inverse Problems and Integral Geometry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-264",
+    "desc": "Concepts of inverse problem and ill-posedness on the Hilbert scale. Approaches to inversion, regularization and implementation. In Euclidean geometry: Radon transform; X-ray transform; attenuated X-ray transform (Novikov's inversion formula); weighted transforms. Same topics in different geometric contexts: homogeneous spaces, manifolds with boundary. Non-linear problems: boundary rigidity, lens rigidity, inverse problems for connections. MATH 148, MATH 204 , MATH 205 , MATH 206 , and MATH 208 , are recommended for preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 280": {
+    "concentrations": [],
+    "title": "Topics in Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-280",
+    "desc": "",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 281": {
+    "concentrations": [],
+    "title": "Topics in Algebra",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-281",
+    "desc": "",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 282": {
+    "concentrations": [],
+    "title": "Topics in Geometry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-282",
+    "desc": "",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 283": {
+    "concentrations": [],
+    "title": "Topics in Combinatorial Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-283",
+    "desc": "",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 284": {
+    "concentrations": [],
+    "title": "Topics in Dynamics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-284",
+    "desc": "",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 285": {
+    "concentrations": [],
+    "title": "Topics in Partial Differential Equations",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-285",
+    "desc": "Topics such as derivation of the Navier-Stokes equations. Examples of flows including water waves, vortex motion, and boundary layers. Introductory functional analysis of the Navier-Stokes equation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 286": {
+    "concentrations": [],
+    "title": "Topics in Number Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-286",
+    "desc": "Topics in number theory, selected by instructor. Possibilities include modular and automorphic forms, elliptic curves, algebraic number theory, local fields, the trace formula. May also cover related areas of arithmetic algebraic geometry, harmonic analysis, and representation theory. Courses 200, 201, 202, and 205 are recommended as preparation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 287": {
+    "concentrations": [],
+    "title": "Topics in Topology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-287",
+    "desc": "Topics in topology, selected by the instructor. Possibilities include generalized (co)homology theory including K-theory, group actions on manifolds, equivariant and orbifold cohomology theory.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 288A": {
+    "concentrations": [],
+    "title": "Pedagogy of Mathematics",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288a",
+    "desc": "Prepares graduate students to become successful Teaching Assistants in mathematics courses. Topics include class management, assessment creation, evaluation and grading, student interaction, introduction to teaching and learning strategies, innovation in education, use of technology, and best practices that promote diversity and inclusion.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 288B": {
+    "concentrations": [],
+    "title": "Pedagogy of Mathematics",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288b",
+    "desc": "Prepares graduate students to become successful Graduate Student Instructors in mathematics. Topics include class management, assessment creation, evaluation and grading, student interaction, introduction to teaching and learning strategies, innovation in education, use of technology, and best practices that promote diversity and inclusion.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 296": {
+    "concentrations": [],
+    "title": "Special Student Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-296",
+    "desc": "Students and staff studying in an area where there is no specific course offering at that time.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297a",
+    "desc": "Either study related to a course being taken or a totally independent study. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297b",
+    "desc": "Either study related to a course being taken or a totally independent study. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297c",
+    "desc": "Either study related to a course being taken or a totally independent study. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 298": {
+    "concentrations": [],
+    "title": "Master's Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-298",
+    "desc": "Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299a",
+    "desc": "Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299b",
+    "desc": "Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MATH 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299c",
+    "desc": "Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MSE 200": {
+    "concentrations": [],
+    "title": "Introduction to Materials Science and Engineering",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-200",
+    "desc": "Introduction to graduate studies in materials science and engineering. Provides overview of the areas of specialization of the academic program as well as research opportunities and facilities at UC Santa Cruz. Covers fundamental methods of the discipline. Summarizes areas of employment of graduates in materials science and engineering.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to grad students in the Materials, Science, and Engineering program.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to grad students in the Materials, Science, and Engineering program.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MSE 280": {
+    "concentrations": [],
+    "title": "Colloquium in Materials Science and Engineering",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-280",
+    "desc": "Talks about current research topics in materials science and engineering presented by faculty members, visiting scientists, and graduate students. Students who present a seminar receive a letter grade; other students who attend receive a Satisfactory (S) or No Credit (NC) grade. Course is repeatable.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in the MSE program or by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in the MSE program or by permission of instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "MSE 290": {
+    "concentrations": [],
+    "title": "Research Rotation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-290",
+    "desc": "Two quarters of rotations with research groups for first year MSE Ph.D. students. Aim is to expose incoming Ph.D. students to research groups and their projects so they can make an informed decision on which research group to join. Each rotation will require a short (~5 page) report on the research of said group. The two rotations may be taken from the same instructor. Enrollment is restricted to MSE graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to MSE graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to MSE graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "SOCD 293": {
+    "concentrations": [],
+    "title": "Studies and Practice for Social Documentation, Filmmaking, and New Media",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-293",
+    "desc": "This thematic, graduate-level, hybrid, production/critical studies course provides opportunities to learn specific technical skills while engaging in the analysis and critical interpretations of cinema, social documentary, animation, art, television, and new media. Technical topics may include animation; motion graphics; interactive web media; and installation, editing, cinematography, and sound.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in social documentation. restricted to film and digital media graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in social documentation. restricted to film and digital media graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 200": {
+    "concentrations": [],
+    "title": "Research and Teaching in Statistics",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-200",
+    "desc": "Focuses on basic teaching techniques for teaching assistants, including responsibilities and rights, leading discussion or lab sessions, presentation techniques, maintaining class records, and grading. Examines research and professional training, including use of library, technical writing, giving seminar and conference talks, and ethical issues in science and engineering.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 202": {
+    "concentrations": [],
+    "title": "Linear Models in SAS",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-202",
+    "desc": "Case study-based course teaches statistical linear modeling using the SAS software package. Teaches generalized linear models; linear regression; analysis of variance/covariance; analysis of data with random effects and repeated measures. (Formerly AMS 202.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 108 or STAT 208 , or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 108 or STAT 208 , or permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 203": {
+    "concentrations": [],
+    "title": "Introduction to Probability Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203",
+    "desc": "Introduces probability theory and its applications. Requires a multivariate calculus background, but has no measure theoretic content. Topics include: combinatorial analysis; axioms of probability; random variables (discrete and continuous); joint probability distributions; expectation and higher moments; central limit theorem; law of large numbers; and Markov chains. Students cannot receive credit for this course and STAT 131 or CMPE 107 . (Formerly AMS 203.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, or by permission of the instructor. cannot receive credit for this course and STAT 131 or CMPE 107 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, or by permission of the instructor. cannot receive credit for this course and STAT 131 or CMPE 107 .",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 204": {
+    "concentrations": [],
+    "title": "Introduction to Statistical Data Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-204",
+    "desc": "Presents tools for exploratory data analysis (EDA) and statistical modeling in R. Topics include numerical and graphical tools for EDA, linear and logistic regression, ANOVA, PCA, and tools for acquiring and storing large data. No R knowledge is required. Enrollment is restricted to graduate students and by permission of instructor. (Formerly AMS 204.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students. Enrollment is restricted to graduate students and by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students. Enrollment is restricted to graduate students and by permission of instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 205": {
+    "concentrations": [],
+    "title": "Introduction to Classical Statistical Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 203"
+      ],
+      [
+        "STAT 131"
+      ],
+      [
+        "STAT 132"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205",
+    "desc": "Introduction to classical statistical inference. Topic include: random variables and distributions; types of convergence; central limit theorems; maximum likelihood estimation; Newton-Raphson, Fisher scoring, Expectation-Maximization, and stochastic gradient algorithms; confidence intervals; hypothesis testing; ridge regression, lasso, and elastic net.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 203 ; or STAT 131 and STAT 132 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 203 ; or STAT 131 and STAT 132 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 205B": {
+    "concentrations": [],
+    "title": "Intermediate Classical Inference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 203"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205b",
+    "desc": "Statistical inference from a frequentist point of view. Properties of random samples; convergence concepts applied to point estimators; principles of statistical inference; obtaining and evaluating point estimators with particular attention to maximum likelihood estimates and their properties; obtaining and evaluating interval estimators; and hypothesis testing methods and their properties. (Formerly AMS 205B.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 203 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 203 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 206": {
+    "concentrations": [],
+    "title": "Applied Bayesian Statistics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206",
+    "desc": "Introduces Bayesian statistical modeling from a practitioner's perspective. Covers basic concepts (e.g., prior-posterior updating, Bayes factors, conjugacy, hierarchical modeling, shrinkage, etc.), computational tools (Markov chain Monte Carlo, Laplace approximations), and Bayesian inference for some specific models widely used in the literature (linear and generalized linear mixed models). (Formerly AMS 206.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 131 or STAT 203 , or by permission of the",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 131 or STAT 203 , or by permission of the",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 206B": {
+    "concentrations": [],
+    "title": "Intermediate Bayesian Inference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 203"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206b",
+    "desc": "Bayesian statistical methods for inference and prediction including: estimation; model selection and prediction; exchangeability; prior, likelihood, posterior, and predictive distributions; coherence and calibration; conjugate analysis; Markov Chain Monte Carlo methods for simulation-based computation; hierarchical modeling; Bayesian model diagnostics, model selection, and sensitivity analysis. (Formerly AMS 206B.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 203 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 203 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 207": {
+    "concentrations": [],
+    "title": "Intermediate Bayesian Statistical Modeling",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 206B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-207",
+    "desc": "Hierarchical modeling, linear models (regression and analysis of variance) from the Bayesian point of view, intermediate Markov chain Monte Carlo methods, generalized linear models, multivariate models, mixture models, hidden Markov models. (Formerly AMS 207.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 206B .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 206B .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students or by permission of instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 208": {
+    "concentrations": [],
+    "title": "Linear Statistical Models",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 205",
+        "STAT 205B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-208",
+    "desc": "Theory, methods, and applications of linear statistical models. Review of simple correlation and simple linear regression. Multiple and partial correlation and multiple linear regression. Analysis of variance and covariance. Linear model diagnostics and model selection. Case studies drawn from natural, social, and medical sciences. STAT 205 strongly recommended as a prerequisite. Undergraduates are encouraged to take this class with permission of instructor. (Formerly AMS 256.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 or STAT 205B .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 or STAT 205B .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 209": {
+    "concentrations": [],
+    "title": "Generalized Linear Models",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 205",
+        "STAT 205B"
+      ],
+      [
+        "STAT 206B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-209",
+    "desc": "Theory, methods, and applications of generalized linear statistical models; review of linear models; binomial models for binary responses (including logistical regression and probit models); log-linear models for categorical data analysis; and Poisson models for count data. Case studies drawn from social, engineering, and life sciences. (Formerly AMS 274.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 or STAT 205B ; and STAT 206B .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 or STAT 205B ; and STAT 206B .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 221": {
+    "concentrations": [],
+    "title": "Statistical Machine Learning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-221",
+    "desc": "Explores statistical methods in machine learning. Discusses the methodology and algorithms behind modern supervised and unsupervised learning techniques that are commonly applied to complex, high dimensional problems. Course topics include linear and logistic regression, classification, clustering, resampling methods, model selection and regularization, and non-linear regression. Students also gain exposure to popular statistical machine learning algorithms implemented in R. One focus is on understanding the formulation of statistical models and their implementation, and the practical application of learning methods to real-world datasets.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 or STAT 208 or by permission of",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 or STAT 208 or by permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 222": {
+    "concentrations": [],
+    "title": "Bayesian Nonparametric Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 207"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-222",
+    "desc": "Theory, methods, and applications of Bayesian nonparametric modeling. Prior probability models for spaces of functions. Dirichlet processes. Polya trees. Nonparametric mixtures. Models for regression, survival analysis, categorical data analysis, and spatial statistics. Examples drawn from social, engineering, and life sciences. (Formerly AMS 241.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 207 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 207 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 223": {
+    "concentrations": [],
+    "title": "Time Series Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-223",
+    "desc": "Graduate level introductory course on time series data and models in the time and frequency domains: descriptive time series methods; the periodogram; basic theory of stationary processes; linear filters; spectral analysis; time series analysis for repeated measurements; ARIMA models; introduction to Bayesian spectral analysis; Bayesian learning, forecasting, and smoothing; introduction to Bayesian Dynamic Linear Models (DLMs); DLM mathematical structure; DLMs for trends and seasonal patterns; and autoregression and time series regression models. (Formerly AMS 223.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 206B , or by permission of",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 206B , or by permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 224": {
+    "concentrations": [],
+    "title": "Bayesian Survival Analysis and Clinical Design",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 206B",
+        "STAT 207"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-224",
+    "desc": "Introduction to Bayesian statistical methods for survival analysis and clinical trial design: parametric and semiparametric models for survival data, frailty models, cure rate models, the design of clinical studies in phase I/II/III. (Formerly AMS 276.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 206B or STAT 207 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 206B or STAT 207 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 225": {
+    "concentrations": [],
+    "title": "Multivariate Statistical Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 205",
+        "STAT 205B",
+        "STAT 208"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-225",
+    "desc": "Introduction to statistical methods for analyzing data sets in which two or more variables play the role of outcome or response. Descriptive methods for multivariate data. Matrix algebra and random vectors. The multivariate normal distribution. Likelihood and Bayesian inferences about multivariate mean vectors. Analysis of covariance structure: principle components, factor analysis. Discriminant, classification and cluster analysis.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 or STAT 205B or STAT 208 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 or STAT 205B or STAT 208 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 226": {
+    "concentrations": [],
+    "title": "Spatial Statistics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 207"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-226",
+    "desc": "Introduction to the analysis of spatial data: theory of correlation structures and variograms; kriging and Gaussian processes; Markov random fields; fitting models to data; computational techniques; frequentist and Bayesian approaches. (Formerly AMS 245.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 207 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 207 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 227": {
+    "concentrations": [],
+    "title": "Statistical Learning and High Dimensional Data Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 205"
+      ],
+      [
+        "STAT 206B"
+      ],
+      [
+        "STAT 205B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-227",
+    "desc": "Introductions to statistical learning, modeling, and inference with complex, large, and high-dimensional data. Topics include supervised and unsupervised learning, model selection, dimension reduction, matrix factorization, latent variable models, graphical models, interpretability and causality. Applications in health, social sciences, and engineering.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 and STAT 206B ; or STAT 205B .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 and STAT 206B ; or STAT 205B .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 229": {
+    "concentrations": [],
+    "title": "Advanced Bayesian Computation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-229",
+    "desc": "Teaches some advanced techniques in Bayesian Computation. Topics include Hamiltonian Monte Carlo; slice sampling; sequential Monte Carlo; assumed density filtering; expectation propagation; stochastic gradient descent; approximate Markov chain Monte Carlo; variational inference; and stochastic variational inference. (Formerly AMS 268.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 207 , or by permission of the",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 207 , or by permission of the",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll by permission of the instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 243": {
+    "concentrations": [],
+    "title": "Stochastic Processes",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 205"
+      ],
+      [
+        "STAT 131"
+      ],
+      [
+        "STAT 132"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-243",
+    "desc": "Includes probabilistic and statistical analysis of random processes, continuous-time Markov chains, hidden Markov models, point processes, Markov random fields, spatial and spatio-temporal processes, and statistical modeling and inference in stochastic processes. Applications to a variety of fields. (Formerly AMS 263.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 205 ; or STAT 131 and STAT 132 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 205 ; or STAT 131 and STAT 132 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, undergraduates may enroll by permission of the instructor if they've completed STAT 131 and STAT 132 (subject to instructor verification).",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 244": {
+    "concentrations": [],
+    "title": "Bayesian Decision Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-244",
+    "desc": "Explores conceptual and theoretical bases of statistical decision making under uncertainty. Focuses on axiomatic foundations of expected utility, elicitation of subjective probabilities and utilities, and the value of information and modern computational methods for decision problems. (Formerly AMS 221.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 203 or equivalent; and STAT 206 or STAT 206B ; or permission of the",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 203 or equivalent; and STAT 206 or STAT 206B ; or permission of the",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 246": {
+    "concentrations": [],
+    "title": "Probability Theory with Markov Chains",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "STAT 203"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-246",
+    "desc": "Introduction to probability theory: probability spaces, expectation as Lebesgue integral, characteristic functions, modes of convergence, conditional probability and expectation, discrete-state Markov chains, stationary distributions, limit theorems, ergodic theorem, continuous-state Markov chains, applications to Markov chain Monte Carlo methods. (Formerly AMS 261.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "STAT 203 .",
+    "prereqNotes": [
+      "Official prerequisite text: STAT 203 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 266B": {
+    "concentrations": [],
+    "title": "Advanced Statistical Programming in R",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266b",
+    "desc": "Teaches students already familiar with the R language advanced tools such as interactive graphics, interfacing with low-level languages, package construction, debugging, profiling, and parallel computation. (Formerly Applied Math and Statistics 266B and Computer Science 266B.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): STAT 266A or CSE 266A.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): STAT 266A or CSE 266A."
+    ],
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 266C": {
+    "concentrations": [],
+    "title": "Introduction to Data Wrangling",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c",
+    "desc": "Introduces students to concepts and tools associated with data collection, curation, manipulation, and cleaning including an introduction to relational databases and SQL, regular expressions, API usage, and web scraping using Python. (Formerly Applied Math and Statistics 266C and Computer Science 266C.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): STAT 266A or CSE 266A.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): STAT 266A or CSE 266A."
+    ],
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 280B": {
+    "concentrations": [],
+    "title": "Seminars in Statistics",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280b",
+    "desc": "Weekly seminar series covering topics of current research in statistics.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 280D": {
+    "concentrations": [],
+    "title": "Seminar in Bayesian Statistical Methodology",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280d",
+    "desc": "Weekly seminar/discussion group on Bayesian statistical methods, covering both analytical and computational approaches. Participants present research progress and finding in semiformal discussions. Students must present their own research on a regular basis. (Formerly AMS 280D.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 285": {
+    "concentrations": [],
+    "title": "Seminar in Career Skills",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-285",
+    "desc": "Seminar in career skills for applied mathematicians and statisticians. Learn about professional activities such as the publication process, grant proposals, and the job market.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, typically within two years of their expected Ph.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, typically within two years of their expected Ph.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 291": {
+    "concentrations": [],
+    "title": "Advanced Topics in Bayesian Statistics",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-291",
+    "desc": "Advanced study of research topics in the theory, methods, or applications of Bayesian statistics. The specific subject depends on the instructor. Enrollment is restricted to graduate students and by permission of instructor. (Formerly AMS 291.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and by permission of instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 292": {
+    "concentrations": [],
+    "title": "Advanced Topics in Statistics",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-292",
+    "desc": "Advanced study of research topics in the theory, methods, or applications of statistics. The specific subject depends on the instructor. Enrollment is restricted to graduate students and by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and by permission of the instructor.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 296": {
+    "concentrations": [],
+    "title": "Masters Project",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-296",
+    "desc": "Independent completion of a masters project under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 297A": {
+    "concentrations": [],
+    "title": "Independent Study or Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297a",
+    "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 297B": {
+    "concentrations": [],
+    "title": "Independent Study or Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297b",
+    "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 297C": {
+    "concentrations": [],
+    "title": "Independent Study or Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297c",
+    "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297f",
+    "desc": "Independent study or research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299a",
+    "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299b",
+    "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
+  },
+  "STAT 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299c",
+    "desc": "Thesis research under faculty supervision. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "searchOnly": true,
+    "sourceCatalogYear": "2026-2027"
   }
 };

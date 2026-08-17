@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const { ROOT, LAB_DIR, parseArgs, loadLocalCourses, mentionedCourseCodes, subjectOf } = require('./common');
+const { ROOT, LAB_DIR, parseArgs, loadLocalCourses, mentionedCourseCodes, subjectOf, departmentMatches } = require('./common');
 
 function prereqNotes(detail) {
   const notes = [];
@@ -66,10 +66,7 @@ async function main() {
   const detailsPayload = JSON.parse(fs.readFileSync(detailsPath, 'utf8'));
   const localCourses = loadLocalCourses();
   let details = detailsPayload.details || [];
-  if (args.department) {
-    const want = String(args.department).toUpperCase();
-    details = details.filter(d => subjectOf(d.code) === want || String(d.departmentSlug || '').toUpperCase().includes(want) || String(d.departmentText || '').toUpperCase().includes(want));
-  }
+  if (args.department) details = details.filter(d => departmentMatches(d, args.department));
   if (args.limit) details = details.slice(0, Number(args.limit));
   const candidateCodes = new Set(details.map(d => d.code));
   const rows = details.map(d => candidateFromDetail(d, localCourses, candidateCodes));

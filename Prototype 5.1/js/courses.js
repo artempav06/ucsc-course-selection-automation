@@ -103198,5 +103198,81 @@ const COURSES = {
       "FREE"
     ],
     "rmpScore": 0
+  },
+  "FILM 171B": {
+    "concentrations": [],
+    "title": "Immersive Sound Design",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "FILM 171A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b",
+    "desc": "Introduces students to the creative and technical practices of spatial audio. Through deep listening exercises, hands-on labs, and project-based work, the course explores how sound shapes perception, meaning, and experience across cinematic and virtual environments. Students learn foundational principles of immersive audio including spatialization, object-based mixing, and Dolby Atmos, while developing practical skills in field recording, sound design, DAW editing, and composing to picture.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "FILM 171A . Interested students who do not meet prerequisites can contact",
+    "prereqNotes": [
+      "Official prerequisite text: FILM 171A . Interested students who do not meet prerequisites can contact"
+    ]
+  },
+  "FILM 80E": {
+    "concentrations": [],
+    "title": "Eco-Media",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e",
+    "desc": "Long extinct species coming back to life from melting ice caps, humanity seeking refuge in manmade ecologies, and extreme weather events ravaging global landscapes. These all belong to the ecological imaginary of 21st century cinema/media. With the aid of new technologies and CGI, films increasingly stretch the boundaries of cinematic time and space across deep pasts, vast futures, and previously unmappable territories in order to project visions of humanity under constant threat by factors of its own making. This course explores what we can learn about human-nature relations and environmental concerns from moving images, differently from other disciplines. While the focus is mostly on eco-cinema, course also looks at broader eco-media and our ways of knowing the world.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "FILM 80H": {
+    "concentrations": [],
+    "title": "A History of Animation",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h",
+    "desc": "Introductory study of animation as both art and industry, tracing its development from pre-cinematic origins to contemporary digital media. Through a combination of historical overview and critical analysis, students consider animation\u2019s evolving aesthetic forms, technologies, and cultural contexts, with emphasis on Western traditions and the U.S. industry. Students engage with works from major studios as well as independent and experimental artists, deepening their understanding of the medium\u2019s history and practice.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "MSE 1": {
+    "concentrations": [],
+    "title": "Materials and Human Civilization",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1",
+    "desc": "Introduction to the profound impact of materials on the rise of human civilization across the globe through the Stone, Bronze, Iron and Silicon Ages. Discusses the relationship between the microscopic structure and science of materials, their formation, and their performance, including the transition over time of materials production from art to science. Surveys the key roles of new materials for medicine, energy, and modern communication and computer technologies in the modern era.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   }
 };

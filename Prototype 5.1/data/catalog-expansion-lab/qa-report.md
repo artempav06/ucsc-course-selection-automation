@@ -1,344 +1,473 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-07T06:29:06.577Z
+Generated: 2026-08-17T01:07:43.935Z
 
 ## Summary
 
-- Candidate count: 117
-- Passed with no warnings: 24
-- Warnings only / human review needed: 93
-- Blocked by hard errors: 0
+- Candidate count: 153
+- Passed with no warnings: 7
+- Warnings only / human review needed: 142
+- Blocked by hard errors: 4
 
 ## Merge readiness
 
-Not ready for automatic merge: no hard schema blockers, but human-review warnings remain.
+Not ready to merge: hard QA errors exist.
 
 ## Rows
 
-- CSE 136 — Cloud Computing: warnings-only
+- FILM 171B — Immersive Sound Design: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b
+- FILM 200A — Introduction to Graduate Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-136
-- CSE 196A — Summer Drone-Intensive Training, Innovation, Entrepreneurship and STEAM Careers: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-196a
-- CSE 200 — Research and Teaching in Computer Science and Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200a
+- FILM 200B — Theory and Praxis of Film and Digital Media 1: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-200
-- CSE 201 — Analysis of Algorithms: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200b
+- FILM 200C — Theory and Praxis of Film and Digital Media 2: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-201
-- CSE 202 — Combinatorial Algorithms: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-202
-- CSE 203 — Randomized Algorithms: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200c
+- FILM 202 — Pedagogy in Film and Digital Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-203
-- CSE 204 — Computational Models and Complexity: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-204
-- CSE 205 — Logic in Computer Science: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-202
+- FILM 203 — Professional Development in Film and Digital Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-205
-- CSE 206C — Foundations of Modern Cryptography: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206c
-- CSE 206G — Game Theory and Applications in Computer Science and Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-203
+- FILM 221 — Audio Arts and Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206g
-- CSE 207 — Graph Algorithms: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-207
-- CSE 209A — Modern Algorithmic Toolbox: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-209a
-- CSE 210A — Programming Languages: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-221
+- FILM 222 — Critical Methodologies in Film and Television: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210a
-- CSE 210B — Advanced Programming Languages: warnings-only
-  - Warnings: review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210b
-- CSE 211 — Compiler Design: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-222
+- FILM 223 — The Film/Video Essay: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-211
-- CSE 212A — Software Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-223
+- FILM 224 — Mediating Difference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212a
-- CSE 212B — Software Reuse and Component-Based Software Engineering: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212b
-- CSE 214 — Principles of Database Systems: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-214
-- CSE 215 — Design and Implementation of Database Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-224
+- FILM 225 — Software Studies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-215
-- CSE 216 — Formal Methods: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-216
-- CSE 220 — Computer Architecture: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-225
+- FILM 226 — Queer Theory and Global Film and Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-220
-- CSE 221 — Advanced Microprocessor Design: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221
-- CSE 221L — Advanced Microprocessor Design Laboratory: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221l
-- CSE 222B — VLSI System-on-a-Chip Design: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-222b
-- CSE 226 — Advanced Parallel Processing: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-226
+- FILM 227 — Representing Memory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-226
-- CSE 228A — Agile Hardware Design: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-228a
-- CSE 229 — Field-Programmable Gate Arrays Computer-Assisted Design: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-227
+- FILM 228 — Moving Image Archives and the Frontiers of Information: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-229
-- CSE 231 — Advanced Operating Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-228
+- FILM 229 — Topics in Documentary Studies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-231
-- CSE 232 — Distributed Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-229
+- FILM 230 — Expanded Documentary: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232
-- CSE 232B — Stream Processing and Machine Learning Systems Design: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232b
-- CSE 233 — Advanced Computer Security: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-230
+- FILM 231 — Topics in Postcolonial Theories, Film, and Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-233
-- CSE 234 — Understanding Cryptography: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-231
+- FILM 232 — Audiovisual Ethnography: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-234
-- CSE 235 — Cyber-Physical Systems Security: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-232
+- FILM 234 — Toward an Ethics of New Media: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-235
-- CSE 237 — Storage Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-234
+- FILM 235 — Feminist Media Histories: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-237
-- CSE 239 — Advanced Cloud Computing: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239
-- CSE 239A — Private Computation on Encrypted Data: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239a
-- CSE 239B — Advanced Secure AI, Databases and Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-235
+- FILM 236 — Making...in the Anthropocene: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239b
-- CSE 240 — Artificial Intelligence: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-236
+- FILM 237 — Graduate Critique: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-240
-- CSE 241 — Knowledge Engineering: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-241
-- CSE 242 — Machine Learning: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-237
+- FILM 238 — The Politics of Information: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-242
-- CSE 243 — Data Mining: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-238
+- FILM 239 — Topics in Media Theory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-243
-- CSE 244A — Foundations of Deep Learning: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-239
+- FILM 283 — New Media Art and Digital Culture: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244a
-- CSE 244B — Machine Learning for Natural Language Processing: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244b
-- CSE 244C — Deep Learning for Advanced Computer Vision: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244c
-- CSE 245 — Computational Models of Discourse and Dialogue: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-283
+- FILM 284 — Film, Culture, and Modernity: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245
-- CSE 246 — Responsible Data Science: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-284
+- FILM 295 — Directed Reading: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-246
-- CSE 247 — Projects in Artificial Intelligence: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247
-- CSE 247B — Projects in Computer Science: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-295
+- FILM 296F — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-296f
+- FILM 297 — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247b
-- CSE 248 — Foundations of Data Science: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297
+- FILM 297F — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-248
-- CSE 249 — Large-Scale Web Analytics and Machine Learning: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-249
-- CSE 250A — Computer Networks: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297f
+- FILM 299A — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250a
-- CSE 250B — Principles of Computer Communication: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299a
+- FILM 299B — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250b
-- CSE 250C — High Speed Computer Networks: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250c
-- CSE 253 — Network Security: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-253
-- CSE 257 — Wireless and Mobile Networks: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-257
-- CSE 258 — Spectral Graph Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-258
-- CSE 259 — Sensor Networks: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299b
+- FILM 80E — Eco-Media: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e
+- FILM 80H — A History of Animation: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h
+- GRAD 200 — Academic Writing for Graduate Students: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200
+- GRAD 201 — Oral Communication for Graduate Students: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201
+- GRAD 202 — Reading and Research Skills for Graduate Students: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202
+- GRAD 213 — Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213
+- GRAD 215 — Equitable Course Design for Graduate Student Instructors: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215
+- MATH 139 — Mathematical Problems in Machine Learning: warnings-only
   - Warnings: review:contains-recommended-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-259
-- CSE 260 — Computer Graphics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-139
+- MATH 200 — Algebra I: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-260
-- CSE 261 — Advanced Visualization: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-261
-- CSE 262 — Computer Animation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-262
-- CSE 263 — Data Driven Discovery and Visualization: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-263
-- CSE 264 — Computer Vision: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-264
-- CSE 265 — Human-Computer Interaction: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-265
-- CSE 269 — Approximation Algorithms: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-269
-- CSE 272 — Information Retrieval: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-272
-- CSE 277 — Random Process Models in Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-200
+- MATH 201 — Algebra II: warnings-only
   - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-277
-- CSE 279 — Data Mining and Business Analytics in Knowledge Services: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-279
-- CSE 280A — Seminar in Computer Science and Engineering: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280a
-- CSE 280D — Seminar in Database Systems: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280d
-- CSE 280F — Seminar on Software Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280f
-- CSE 280G — Hardware Systems Collective Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280g
-- CSE 280H — Seminar in Human Computation Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280h
-- CSE 280I — Seminar on Information Retrieval and Knowledge Management: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280i
-- CSE 280J — Seminar on Computer Graphics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280j
-- CSE 280K — Sales and Marketing for Technologists and Engineers: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280k
-- CSE 280L — Seminar on Logic in Computer Science: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280l
-- CSE 280M — Seminar on Machine Learning: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280m
-- CSE 280N — Seminar on Networks: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280n
-- CSE 280O — Languages, Systems, and Data Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280o
-- CSE 280P — Seminar on Parallel Processing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280p
-- CSE 280S — Seminar on Computer Systems: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280s
-- CSE 280T — Seminar on New Technologies: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280t
-- CSE 280V — Seminar on Computer Vision: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280v
-- CSE 280X — Seminar in Distributed Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280x
-- CSE 280Z — Seminar in Natural Language Processing and Dialogue: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280z
-- CSE 285 — Technical Writing for Engineering Graduates: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-285
-- CSE 290A — Topics in Algorithms and Complexity Theory: Probabilistic Algorithms and Average Case Analysis: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290a
-- CSE 290C — Advanced Topics in Machine Learning: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290c
-- CSE 290D — Neural Computation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290d
-- CSE 290E — Object-Oriented Programming Methodology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290e
-- CSE 290F — Applications of Combinatorics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290f
-- CSE 290G — Topics in Software Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-201
+- MATH 202 — Algebra III: warnings-only
   - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290g
-- CSE 290H — Topics in Database Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-202
+- MATH 203 — Algebra IV: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-203
+- MATH 204 — Analysis I: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-204
+- MATH 205 — Analysis II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-205
+- MATH 206 — Analysis III: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-206
+- MATH 207 — Complex Analysis: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-207
+- MATH 208 — Manifolds I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-208
+- MATH 209 — Manifolds II: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-209
+- MATH 210 — Manifolds III: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-210
+- MATH 211 — Algebraic Topology: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-211
+- MATH 212 — Differential Geometry: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-212
+- MATH 213A — Partial Differential Equations I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213a
+- MATH 213B — Partial Differential Equations II: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213b
+- MATH 214 — Theory of Finite Groups: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-214
+- MATH 215 — Operator Theory: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-215
+- MATH 216 — Advanced Analysis: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-216
+- MATH 217 — Advanced Elliptic Partial Differential Equations: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-217
+- MATH 218 — Advanced Parabolic and Hyperbolic Partial Differential Equations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-218
+- MATH 219 — Nonlinear Functional Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-219
+- MATH 220A — Representation Theory I: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220a
+- MATH 220B — Representation Theory II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220b
+- MATH 222A — Algebraic Number Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222a
+- MATH 222B — Algebraic Number Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222b
+- MATH 223A — Algebraic Geometry I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223a
+- MATH 223B — Algebraic Geometry II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223b
+- MATH 225A — Lie Algebras: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225a
+- MATH 225B — Infinite Dimensional Lie Algebras: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225b
+- MATH 226A — Infinite Dimensional Lie Algebras and Quantum Field Theory I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226a
+- MATH 226B — Infinite Dimensional Lie Algebras and Quantum Field Theory II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226b
+- MATH 227 — Lie Groups: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-227
+- MATH 228 — Lie Incidence Geometries: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-228
+- MATH 229 — Kac-Moody Algebras: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-229
+- MATH 232 — Morse Theory: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-232
+- MATH 233 — Random Matrix Theory: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-233
+- MATH 234 — Riemann Surfaces: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-234
+- MATH 235 — Dynamical Systems Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-235
+- MATH 238 — Elliptic Functions and Modular Forms: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-238
+- MATH 239 — Homological Algebra: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-239
+- MATH 240A — Representations of Finite Groups I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240a
+- MATH 240B — Representations of Finite Groups II: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240b
+- MATH 246 — Representations of Algebras: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-246
+- MATH 248 — Symplectic Geometry: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-248
+- MATH 249A — Mechanics I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249a
+- MATH 249B — Mechanics II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249b
+- MATH 249C — Mechanics III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249c
+- MATH 252 — Fluid Mechanics: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-252
+- MATH 254 — Geometric Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-254
+- MATH 256 — Algebraic Curves: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-256
+- MATH 260 — Combinatorics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-260
+- MATH 264 — Inverse Problems and Integral Geometry: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-264
+- MATH 280 — Topics in Analysis: warnings-only
+  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-280
+- MATH 281 — Topics in Algebra: warnings-only
+  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-281
+- MATH 282 — Topics in Geometry: warnings-only
+  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-282
+- MATH 283 — Topics in Combinatorial Theory: warnings-only
+  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-283
+- MATH 284 — Topics in Dynamics: warnings-only
+  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-284
+- MATH 285 — Topics in Partial Differential Equations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-285
+- MATH 286 — Topics in Number Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-286
+- MATH 287 — Topics in Topology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-287
+- MATH 288A — Pedagogy of Mathematics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288a
+- MATH 288B — Pedagogy of Mathematics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288b
+- MATH 292 — Seminar: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-292
+- MATH 296 — Special Student Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-296
+- MATH 297A — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297a
+- MATH 297B — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297b
+- MATH 297C — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297c
+- MATH 298 — Master's Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-298
+- MATH 299A — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299a
+- MATH 299B — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299b
+- MATH 299C — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299c
+- MSE 1 — Materials and Human Civilization: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1
+- MSE 200 — Introduction to Materials Science and Engineering: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-200
+- MSE 280 — Colloquium in Materials Science and Engineering: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-280
+- MSE 290 — Research Rotation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-290
+- SOCD 293 — Studies and Practice for Social Documentation, Filmmaking, and New Media: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-293
+- STAT 200 — Research and Teaching in Statistics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-200
+- STAT 202 — Linear Models in SAS: warnings-only
   - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290h
-- CSE 290J — Advanced Topics in Computer Graphics and Visual Computing: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290j
-- CSE 290K — Advanced Topics in Natural Language Processing: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-202
+- STAT 203 — Introduction to Probability Theory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290k
-- CSE 290L — Topics in Crowdsourcing and Collaboration: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203
+- STAT 204 — Introduction to Statistical Data Analysis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290l
-- CSE 290M — Topics in Parallel Computation: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-204
+- STAT 205 — Introduction to Classical Statistical Learning: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290m
-- CSE 290N — Topics in Computer Performance: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205
+- STAT 205B — Intermediate Classical Inference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290n
-- CSE 290O — Algorithmic Foundations of Convex Optimization: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205b
+- STAT 206 — Applied Bayesian Statistics: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206
+- STAT 206B — Intermediate Bayesian Inference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290o
-- CSE 290P — Data Privacy Via Machine Learning, and Back: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290p
-- CSE 290Q — Topics in Programming Languages: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206b
+- STAT 207 — Intermediate Bayesian Statistical Modeling: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290q
-- CSE 290S — Advanced Topics in Computer Systems: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290s
-- CSE 290T — Topics in Computing for Society: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-207
+- STAT 208 — Linear Statistical Models: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290t
-- CSE 290X — Cryptography and Computer Security: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290x
-- CSE 293 — Advanced Topics in Computer Science & Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-208
+- STAT 209 — Generalized Linear Models: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-293
-- CSE 296 — Masters Project: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-296
-- CSE 297A — Individual Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297a
-- CSE 297B — Individual Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297b
-- CSE 297C — Individual Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297c
-- CSE 297F — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297f
-- CSE 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299a
-- CSE 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299b
-- CSE 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299c
-- CSE 299F — Thesis Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-209
+- STAT 221 — Statistical Machine Learning: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-221
+- STAT 222 — Bayesian Nonparametric Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299f
-- ECE 253 — Introduction to Information Theory: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-222
+- STAT 223 — Time Series Analysis: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-223
+- STAT 224 — Bayesian Survival Analysis and Clinical Design: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-253
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-224
+- STAT 225 — Multivariate Statistical Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-225
+- STAT 226 — Spatial Statistics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-226
+- STAT 227 — Statistical Learning and High Dimensional Data Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-227
+- STAT 229 — Advanced Bayesian Computation: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-229
+- STAT 243 — Stochastic Processes: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-243
+- STAT 244 — Bayesian Decision Theory: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-244
+- STAT 246 — Probability Theory with Markov Chains: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-246
 - STAT 266B — Advanced Statistical Programming in R: warnings-only
   - Warnings: review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
   - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266b
 - STAT 266C — Introduction to Data Wrangling: warnings-only
   - Warnings: review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
   - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c
+- STAT 280B — Seminars in Statistics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280b
+- STAT 280D — Seminar in Bayesian Statistical Methodology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280d
+- STAT 285 — Seminar in Career Skills: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-285
+- STAT 291 — Advanced Topics in Bayesian Statistics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-291
+- STAT 292 — Advanced Topics in Statistics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-292
+- STAT 296 — Masters Project: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-296
+- STAT 297A — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297a
+- STAT 297B — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297b
+- STAT 297C — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297c
+- STAT 297F — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297f
+- STAT 299A — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299a
+- STAT 299B — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299b
+- STAT 299C — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299c

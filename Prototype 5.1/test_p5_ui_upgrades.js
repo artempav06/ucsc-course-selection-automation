@@ -657,13 +657,36 @@ function testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch() {
   assert(results.some(result => result.code === 'CSE 245' && result.source === 'graduate'), 'manual academic-history search should include graduate catalog courses');
 }
 
+function testNextDepartmentCleanUndergradCoursesAreSearchable() {
+  const { __p5 } = loadApp();
+  for (const code of ['FILM 80E', 'FILM 80H', 'FILM 171B', 'MSE 1']) {
+    assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA`);
+    assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'undergraduate'), `${code} should be findable in manual academic-history search`);
+  }
+  assert(!__p5.COURSES['MATH 139'], 'warning-only undergrad MATH 139 should remain staged for review instead of being auto-merged');
+}
+
+function testNextDepartmentGraduateCoursesStaySearchOnly() {
+  const { __p5 } = loadApp();
+  for (const code of ['FILM 296F', 'GRAD 213', 'STAT 200', 'MATH 200', 'MSE 200']) {
+    assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
+    assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
+    assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
+    assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'graduate'), `${code} should be findable through manual typed search`);
+  }
+  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292']) {
+    assert(!__p5.COURSES[blocked], `${blocked} has invalid units and must not enter COURSES`);
+    assert(!__p5.GRADUATE_COURSES[blocked], `${blocked} has invalid units and must not enter graduate search-only catalog`);
+  }
+}
+
 function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const changedAssets = ['js/courses.js', 'js/app.js', 'js/graduate-courses.js'];
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('cse-grad-search-only'), `${asset} cache-buster should change for the CSE graduate/search update so browsers do not reuse old JS`);
+    assert(match[1].includes('five-dept-catalog'), `${asset} cache-buster should change for the five-department catalog update so browsers do not reuse old JS`);
   }
 }
 
@@ -723,6 +746,8 @@ const tests = [
   testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty,
   testBlankScheduleRulesPopupIsShortAndActionable,
   testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch,
+  testNextDepartmentCleanUndergradCoursesAreSearchable,
+  testNextDepartmentGraduateCoursesStaySearchOnly,
   testChangedSearchCatalogScriptsHaveFreshCacheBusters,
   testGraduateRestrictionWarningsUseOfficialCatalogText,
   testAddingGraduateCompletedCourseWarnsButDoesNotMergeIntoSchedulerCatalog

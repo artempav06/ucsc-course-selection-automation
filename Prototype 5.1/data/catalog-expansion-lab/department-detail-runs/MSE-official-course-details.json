@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-08-17T01:07:42.545Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=MSE",
+  "count": 4,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "MSE 1",
+      "title": "Materials and Human Civilization",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1",
+      "departmentSlug": "mse-materials-science-and-engineering",
+      "departmentText": "MSE-Materials Science and Engineering",
+      "divisionPath": "lower-division",
+      "division": "lower",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to the profound impact of materials on the rise of human civilization across the globe through the Stone, Bronze, Iron and Silicon Ages. Discusses the relationship between the microscopic structure and science of materials, their formation, and their performance, including the transition over time of materials production from art to science. Surveys the key roles of new materials for medicine, energy, and modern communication and computer technologies in the modern era.",
+      "ge": "SI",
+      "quarterText": "Spring",
+      "quarters": [
+        "S"
+      ],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "MSE 200",
+      "title": "Introduction to Materials Science and Engineering",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-200",
+      "departmentSlug": "mse-materials-science-and-engineering",
+      "departmentText": "MSE-Materials Science and Engineering",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Introduction to graduate studies in materials science and engineering. Provides overview of the areas of specialization of the academic program as well as research opportunities and facilities at UC Santa Cruz. Covers fundamental methods of the discipline. Summarizes areas of employment of graduates in materials science and engineering.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to grad students in the Materials, Science, and Engineering program.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "MSE 280",
+      "title": "Colloquium in Materials Science and Engineering",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-280",
+      "departmentSlug": "mse-materials-science-and-engineering",
+      "departmentText": "MSE-Materials Science and Engineering",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Talks about current research topics in materials science and engineering presented by faculty members, visiting scientists, and graduate students. Students who present a seminar receive a letter grade; other students who attend receive a Satisfactory (S) or No Credit (NC) grade. Course is repeatable.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students in the MSE program or by permission of instructor.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "MSE 290",
+      "title": "Research Rotation",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-290",
+      "departmentSlug": "mse-materials-science-and-engineering",
+      "departmentText": "MSE-Materials Science and Engineering",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Two quarters of rotations with research groups for first year MSE Ph.D. students. Aim is to expose incoming Ph.D. students to research groups and their projects so they can make an informed decision on which research group to join. Each rotation will require a short (~5 page) report on the research of said group. The two rotations may be taken from the same instructor. Enrollment is restricted to MSE graduate students.",
+      "ge": "",
+      "quarterText": "Fall, Winter, Spring",
+      "quarters": [
+        "F",
+        "W",
+        "S"
+      ],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to MSE graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    }
+  ]
+}

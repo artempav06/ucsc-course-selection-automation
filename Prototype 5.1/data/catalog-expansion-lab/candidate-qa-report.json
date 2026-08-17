@@ -1,1177 +1,1483 @@
 {
-  "generatedAt": "2026-08-07T06:29:06.577Z",
+  "generatedAt": "2026-08-17T01:07:43.935Z",
   "sourceCandidates": "candidate-expanded-courses.json",
-  "candidateCount": 117,
+  "candidateCount": 153,
   "buckets": {
-    "passed": 24,
-    "blocked": 0,
-    "warningsOnly": 93
+    "passed": 7,
+    "blocked": 4,
+    "warningsOnly": 142
   },
   "rows": [
     {
-      "code": "CSE 136",
-      "title": "Cloud Computing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-136"
-    },
-    {
-      "code": "CSE 196A",
-      "title": "Summer Drone-Intensive Training, Innovation, Entrepreneurship and STEAM Careers",
+      "code": "FILM 171B",
+      "title": "Immersive Sound Design",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-196a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b"
     },
     {
-      "code": "CSE 200",
-      "title": "Research and Teaching in Computer Science and Engineering",
+      "code": "FILM 200A",
+      "title": "Introduction to Graduate Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-200"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200a"
     },
     {
-      "code": "CSE 201",
-      "title": "Analysis of Algorithms",
+      "code": "FILM 200B",
+      "title": "Theory and Praxis of Film and Digital Media 1",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-201"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200b"
     },
     {
-      "code": "CSE 202",
-      "title": "Combinatorial Algorithms",
+      "code": "FILM 200C",
+      "title": "Theory and Praxis of Film and Digital Media 2",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200c"
+    },
+    {
+      "code": "FILM 202",
+      "title": "Pedagogy in Film and Digital Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-202"
+    },
+    {
+      "code": "FILM 203",
+      "title": "Professional Development in Film and Digital Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-203"
+    },
+    {
+      "code": "FILM 221",
+      "title": "Audio Arts and Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-221"
+    },
+    {
+      "code": "FILM 222",
+      "title": "Critical Methodologies in Film and Television",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-222"
+    },
+    {
+      "code": "FILM 223",
+      "title": "The Film/Video Essay",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-223"
+    },
+    {
+      "code": "FILM 224",
+      "title": "Mediating Difference",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-224"
+    },
+    {
+      "code": "FILM 225",
+      "title": "Software Studies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-225"
+    },
+    {
+      "code": "FILM 226",
+      "title": "Queer Theory and Global Film and Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-226"
+    },
+    {
+      "code": "FILM 227",
+      "title": "Representing Memory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-227"
+    },
+    {
+      "code": "FILM 228",
+      "title": "Moving Image Archives and the Frontiers of Information",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-228"
+    },
+    {
+      "code": "FILM 229",
+      "title": "Topics in Documentary Studies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-229"
+    },
+    {
+      "code": "FILM 230",
+      "title": "Expanded Documentary",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-230"
+    },
+    {
+      "code": "FILM 231",
+      "title": "Topics in Postcolonial Theories, Film, and Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-231"
+    },
+    {
+      "code": "FILM 232",
+      "title": "Audiovisual Ethnography",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-232"
+    },
+    {
+      "code": "FILM 234",
+      "title": "Toward an Ethics of New Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-234"
+    },
+    {
+      "code": "FILM 235",
+      "title": "Feminist Media Histories",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-235"
+    },
+    {
+      "code": "FILM 236",
+      "title": "Making...in the Anthropocene",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-236"
+    },
+    {
+      "code": "FILM 237",
+      "title": "Graduate Critique",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-237"
+    },
+    {
+      "code": "FILM 238",
+      "title": "The Politics of Information",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-238"
+    },
+    {
+      "code": "FILM 239",
+      "title": "Topics in Media Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-239"
+    },
+    {
+      "code": "FILM 283",
+      "title": "New Media Art and Digital Culture",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-283"
+    },
+    {
+      "code": "FILM 284",
+      "title": "Film, Culture, and Modernity",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-284"
+    },
+    {
+      "code": "FILM 295",
+      "title": "Directed Reading",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-295"
+    },
+    {
+      "code": "FILM 296F",
+      "title": "Independent Study",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-202"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-296f"
     },
     {
-      "code": "CSE 203",
-      "title": "Randomized Algorithms",
+      "code": "FILM 297",
+      "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297"
     },
     {
-      "code": "CSE 204",
-      "title": "Computational Models and Complexity",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-204"
-    },
-    {
-      "code": "CSE 205",
-      "title": "Logic in Computer Science",
+      "code": "FILM 297F",
+      "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-205"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297f"
     },
     {
-      "code": "CSE 206C",
-      "title": "Foundations of Modern Cryptography",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206c"
-    },
-    {
-      "code": "CSE 206G",
-      "title": "Game Theory and Applications in Computer Science and Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-206g"
-    },
-    {
-      "code": "CSE 207",
-      "title": "Graph Algorithms",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-207"
-    },
-    {
-      "code": "CSE 209A",
-      "title": "Modern Algorithmic Toolbox",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-209a"
-    },
-    {
-      "code": "CSE 210A",
-      "title": "Programming Languages",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210a"
-    },
-    {
-      "code": "CSE 210B",
-      "title": "Advanced Programming Languages",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-210b"
-    },
-    {
-      "code": "CSE 211",
-      "title": "Compiler Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-211"
-    },
-    {
-      "code": "CSE 212A",
-      "title": "Software Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212a"
-    },
-    {
-      "code": "CSE 212B",
-      "title": "Software Reuse and Component-Based Software Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-212b"
-    },
-    {
-      "code": "CSE 214",
-      "title": "Principles of Database Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-214"
-    },
-    {
-      "code": "CSE 215",
-      "title": "Design and Implementation of Database Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-215"
-    },
-    {
-      "code": "CSE 216",
-      "title": "Formal Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-216"
-    },
-    {
-      "code": "CSE 220",
-      "title": "Computer Architecture",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-220"
-    },
-    {
-      "code": "CSE 221",
-      "title": "Advanced Microprocessor Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-prior-or-concurrent-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221"
-    },
-    {
-      "code": "CSE 221L",
-      "title": "Advanced Microprocessor Design Laboratory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-prior-or-concurrent-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-221l"
-    },
-    {
-      "code": "CSE 222B",
-      "title": "VLSI System-on-a-Chip Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-222b"
-    },
-    {
-      "code": "CSE 226",
-      "title": "Advanced Parallel Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-226"
-    },
-    {
-      "code": "CSE 228A",
-      "title": "Agile Hardware Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-228a"
-    },
-    {
-      "code": "CSE 229",
-      "title": "Field-Programmable Gate Arrays Computer-Assisted Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-229"
-    },
-    {
-      "code": "CSE 231",
-      "title": "Advanced Operating Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-231"
-    },
-    {
-      "code": "CSE 232",
-      "title": "Distributed Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232"
-    },
-    {
-      "code": "CSE 232B",
-      "title": "Stream Processing and Machine Learning Systems Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-232b"
-    },
-    {
-      "code": "CSE 233",
-      "title": "Advanced Computer Security",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-233"
-    },
-    {
-      "code": "CSE 234",
-      "title": "Understanding Cryptography",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-234"
-    },
-    {
-      "code": "CSE 235",
-      "title": "Cyber-Physical Systems Security",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-235"
-    },
-    {
-      "code": "CSE 237",
-      "title": "Storage Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-237"
-    },
-    {
-      "code": "CSE 239",
-      "title": "Advanced Cloud Computing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239"
-    },
-    {
-      "code": "CSE 239A",
-      "title": "Private Computation on Encrypted Data",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239a"
-    },
-    {
-      "code": "CSE 239B",
-      "title": "Advanced Secure AI, Databases and Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-239b"
-    },
-    {
-      "code": "CSE 240",
-      "title": "Artificial Intelligence",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-240"
-    },
-    {
-      "code": "CSE 241",
-      "title": "Knowledge Engineering",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-241"
-    },
-    {
-      "code": "CSE 242",
-      "title": "Machine Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-242"
-    },
-    {
-      "code": "CSE 243",
-      "title": "Data Mining",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-243"
-    },
-    {
-      "code": "CSE 244A",
-      "title": "Foundations of Deep Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244a"
-    },
-    {
-      "code": "CSE 244B",
-      "title": "Machine Learning for Natural Language Processing",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244b"
-    },
-    {
-      "code": "CSE 244C",
-      "title": "Deep Learning for Advanced Computer Vision",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-244c"
-    },
-    {
-      "code": "CSE 245",
-      "title": "Computational Models of Discourse and Dialogue",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245"
-    },
-    {
-      "code": "CSE 246",
-      "title": "Responsible Data Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-246"
-    },
-    {
-      "code": "CSE 247",
-      "title": "Projects in Artificial Intelligence",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247"
-    },
-    {
-      "code": "CSE 247B",
-      "title": "Projects in Computer Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-247b"
-    },
-    {
-      "code": "CSE 248",
-      "title": "Foundations of Data Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-248"
-    },
-    {
-      "code": "CSE 249",
-      "title": "Large-Scale Web Analytics and Machine Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-249"
-    },
-    {
-      "code": "CSE 250A",
-      "title": "Computer Networks",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250a"
-    },
-    {
-      "code": "CSE 250B",
-      "title": "Principles of Computer Communication",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250b"
-    },
-    {
-      "code": "CSE 250C",
-      "title": "High Speed Computer Networks",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-250c"
-    },
-    {
-      "code": "CSE 253",
-      "title": "Network Security",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-253"
-    },
-    {
-      "code": "CSE 257",
-      "title": "Wireless and Mobile Networks",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-257"
-    },
-    {
-      "code": "CSE 258",
-      "title": "Spectral Graph Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-258"
-    },
-    {
-      "code": "CSE 259",
-      "title": "Sensor Networks",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-259"
-    },
-    {
-      "code": "CSE 260",
-      "title": "Computer Graphics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-260"
-    },
-    {
-      "code": "CSE 261",
-      "title": "Advanced Visualization",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-261"
-    },
-    {
-      "code": "CSE 262",
-      "title": "Computer Animation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-262"
-    },
-    {
-      "code": "CSE 263",
-      "title": "Data Driven Discovery and Visualization",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-263"
-    },
-    {
-      "code": "CSE 264",
-      "title": "Computer Vision",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-264"
-    },
-    {
-      "code": "CSE 265",
-      "title": "Human-Computer Interaction",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-265"
-    },
-    {
-      "code": "CSE 269",
-      "title": "Approximation Algorithms",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-269"
-    },
-    {
-      "code": "CSE 272",
-      "title": "Information Retrieval",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-272"
-    },
-    {
-      "code": "CSE 277",
-      "title": "Random Process Models in Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-277"
-    },
-    {
-      "code": "CSE 279",
-      "title": "Data Mining and Business Analytics in Knowledge Services",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-279"
-    },
-    {
-      "code": "CSE 280A",
-      "title": "Seminar in Computer Science and Engineering",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280a"
-    },
-    {
-      "code": "CSE 280D",
-      "title": "Seminar in Database Systems",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280d"
-    },
-    {
-      "code": "CSE 280F",
-      "title": "Seminar on Software Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280f"
-    },
-    {
-      "code": "CSE 280G",
-      "title": "Hardware Systems Collective Seminar",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280g"
-    },
-    {
-      "code": "CSE 280H",
-      "title": "Seminar in Human Computation Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280h"
-    },
-    {
-      "code": "CSE 280I",
-      "title": "Seminar on Information Retrieval and Knowledge Management",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280i"
-    },
-    {
-      "code": "CSE 280J",
-      "title": "Seminar on Computer Graphics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280j"
-    },
-    {
-      "code": "CSE 280K",
-      "title": "Sales and Marketing for Technologists and Engineers",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280k"
-    },
-    {
-      "code": "CSE 280L",
-      "title": "Seminar on Logic in Computer Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280l"
-    },
-    {
-      "code": "CSE 280M",
-      "title": "Seminar on Machine Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280m"
-    },
-    {
-      "code": "CSE 280N",
-      "title": "Seminar on Networks",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280n"
-    },
-    {
-      "code": "CSE 280O",
-      "title": "Languages, Systems, and Data Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280o"
-    },
-    {
-      "code": "CSE 280P",
-      "title": "Seminar on Parallel Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280p"
-    },
-    {
-      "code": "CSE 280S",
-      "title": "Seminar on Computer Systems",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280s"
-    },
-    {
-      "code": "CSE 280T",
-      "title": "Seminar on New Technologies",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280t"
-    },
-    {
-      "code": "CSE 280V",
-      "title": "Seminar on Computer Vision",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280v"
-    },
-    {
-      "code": "CSE 280X",
-      "title": "Seminar in Distributed Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280x"
-    },
-    {
-      "code": "CSE 280Z",
-      "title": "Seminar in Natural Language Processing and Dialogue",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-280z"
-    },
-    {
-      "code": "CSE 285",
-      "title": "Technical Writing for Engineering Graduates",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-285"
-    },
-    {
-      "code": "CSE 290A",
-      "title": "Topics in Algorithms and Complexity Theory: Probabilistic Algorithms and Average Case Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290a"
-    },
-    {
-      "code": "CSE 290C",
-      "title": "Advanced Topics in Machine Learning",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290c"
-    },
-    {
-      "code": "CSE 290D",
-      "title": "Neural Computation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290d"
-    },
-    {
-      "code": "CSE 290E",
-      "title": "Object-Oriented Programming Methodology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290e"
-    },
-    {
-      "code": "CSE 290F",
-      "title": "Applications of Combinatorics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290f"
-    },
-    {
-      "code": "CSE 290G",
-      "title": "Topics in Software Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290g"
-    },
-    {
-      "code": "CSE 290H",
-      "title": "Topics in Database Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290h"
-    },
-    {
-      "code": "CSE 290J",
-      "title": "Advanced Topics in Computer Graphics and Visual Computing",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290j"
-    },
-    {
-      "code": "CSE 290K",
-      "title": "Advanced Topics in Natural Language Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290k"
-    },
-    {
-      "code": "CSE 290L",
-      "title": "Topics in Crowdsourcing and Collaboration",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290l"
-    },
-    {
-      "code": "CSE 290M",
-      "title": "Topics in Parallel Computation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290m"
-    },
-    {
-      "code": "CSE 290N",
-      "title": "Topics in Computer Performance",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290n"
-    },
-    {
-      "code": "CSE 290O",
-      "title": "Algorithmic Foundations of Convex Optimization",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290o"
-    },
-    {
-      "code": "CSE 290P",
-      "title": "Data Privacy Via Machine Learning, and Back",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290p"
-    },
-    {
-      "code": "CSE 290Q",
-      "title": "Topics in Programming Languages",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290q"
-    },
-    {
-      "code": "CSE 290S",
-      "title": "Advanced Topics in Computer Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290s"
-    },
-    {
-      "code": "CSE 290T",
-      "title": "Topics in Computing for Society",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290t"
-    },
-    {
-      "code": "CSE 290X",
-      "title": "Cryptography and Computer Security",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-290x"
-    },
-    {
-      "code": "CSE 293",
-      "title": "Advanced Topics in Computer Science & Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-293"
-    },
-    {
-      "code": "CSE 296",
-      "title": "Masters Project",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-296"
-    },
-    {
-      "code": "CSE 297A",
-      "title": "Individual Study or Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297a"
-    },
-    {
-      "code": "CSE 297B",
-      "title": "Individual Study or Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297b"
-    },
-    {
-      "code": "CSE 297C",
-      "title": "Individual Study or Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297c"
-    },
-    {
-      "code": "CSE 297F",
-      "title": "Independent Study or Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-297f"
-    },
-    {
-      "code": "CSE 299A",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299a"
-    },
-    {
-      "code": "CSE 299B",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299b"
-    },
-    {
-      "code": "CSE 299C",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299c"
-    },
-    {
-      "code": "CSE 299F",
+      "code": "FILM 299A",
       "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-299f"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299a"
     },
     {
-      "code": "ECE 253",
-      "title": "Introduction to Information Theory",
+      "code": "FILM 299B",
+      "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-253"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299b"
+    },
+    {
+      "code": "FILM 80E",
+      "title": "Eco-Media",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e"
+    },
+    {
+      "code": "FILM 80H",
+      "title": "A History of Animation",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h"
+    },
+    {
+      "code": "GRAD 200",
+      "title": "Academic Writing for Graduate Students",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200"
+    },
+    {
+      "code": "GRAD 201",
+      "title": "Oral Communication for Graduate Students",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201"
+    },
+    {
+      "code": "GRAD 202",
+      "title": "Reading and Research Skills for Graduate Students",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202"
+    },
+    {
+      "code": "GRAD 213",
+      "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213"
+    },
+    {
+      "code": "GRAD 215",
+      "title": "Equitable Course Design for Graduate Student Instructors",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215"
+    },
+    {
+      "code": "MATH 139",
+      "title": "Mathematical Problems in Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-139"
+    },
+    {
+      "code": "MATH 200",
+      "title": "Algebra I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-200"
+    },
+    {
+      "code": "MATH 201",
+      "title": "Algebra II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-201"
+    },
+    {
+      "code": "MATH 202",
+      "title": "Algebra III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-202"
+    },
+    {
+      "code": "MATH 203",
+      "title": "Algebra IV",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-203"
+    },
+    {
+      "code": "MATH 204",
+      "title": "Analysis I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-204"
+    },
+    {
+      "code": "MATH 205",
+      "title": "Analysis II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-205"
+    },
+    {
+      "code": "MATH 206",
+      "title": "Analysis III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-206"
+    },
+    {
+      "code": "MATH 207",
+      "title": "Complex Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-207"
+    },
+    {
+      "code": "MATH 208",
+      "title": "Manifolds I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-208"
+    },
+    {
+      "code": "MATH 209",
+      "title": "Manifolds II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-209"
+    },
+    {
+      "code": "MATH 210",
+      "title": "Manifolds III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-210"
+    },
+    {
+      "code": "MATH 211",
+      "title": "Algebraic Topology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-211"
+    },
+    {
+      "code": "MATH 212",
+      "title": "Differential Geometry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-212"
+    },
+    {
+      "code": "MATH 213A",
+      "title": "Partial Differential Equations I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213a"
+    },
+    {
+      "code": "MATH 213B",
+      "title": "Partial Differential Equations II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213b"
+    },
+    {
+      "code": "MATH 214",
+      "title": "Theory of Finite Groups",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-214"
+    },
+    {
+      "code": "MATH 215",
+      "title": "Operator Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-215"
+    },
+    {
+      "code": "MATH 216",
+      "title": "Advanced Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-216"
+    },
+    {
+      "code": "MATH 217",
+      "title": "Advanced Elliptic Partial Differential Equations",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-217"
+    },
+    {
+      "code": "MATH 218",
+      "title": "Advanced Parabolic and Hyperbolic Partial Differential Equations",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-218"
+    },
+    {
+      "code": "MATH 219",
+      "title": "Nonlinear Functional Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-219"
+    },
+    {
+      "code": "MATH 220A",
+      "title": "Representation Theory I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220a"
+    },
+    {
+      "code": "MATH 220B",
+      "title": "Representation Theory II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220b"
+    },
+    {
+      "code": "MATH 222A",
+      "title": "Algebraic Number Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222a"
+    },
+    {
+      "code": "MATH 222B",
+      "title": "Algebraic Number Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222b"
+    },
+    {
+      "code": "MATH 223A",
+      "title": "Algebraic Geometry I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223a"
+    },
+    {
+      "code": "MATH 223B",
+      "title": "Algebraic Geometry II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223b"
+    },
+    {
+      "code": "MATH 225A",
+      "title": "Lie Algebras",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225a"
+    },
+    {
+      "code": "MATH 225B",
+      "title": "Infinite Dimensional Lie Algebras",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225b"
+    },
+    {
+      "code": "MATH 226A",
+      "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226a"
+    },
+    {
+      "code": "MATH 226B",
+      "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226b"
+    },
+    {
+      "code": "MATH 227",
+      "title": "Lie Groups",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-227"
+    },
+    {
+      "code": "MATH 228",
+      "title": "Lie Incidence Geometries",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-228"
+    },
+    {
+      "code": "MATH 229",
+      "title": "Kac-Moody Algebras",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-229"
+    },
+    {
+      "code": "MATH 232",
+      "title": "Morse Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-232"
+    },
+    {
+      "code": "MATH 233",
+      "title": "Random Matrix Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-233"
+    },
+    {
+      "code": "MATH 234",
+      "title": "Riemann Surfaces",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-234"
+    },
+    {
+      "code": "MATH 235",
+      "title": "Dynamical Systems Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-235"
+    },
+    {
+      "code": "MATH 238",
+      "title": "Elliptic Functions and Modular Forms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-238"
+    },
+    {
+      "code": "MATH 239",
+      "title": "Homological Algebra",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-239"
+    },
+    {
+      "code": "MATH 240A",
+      "title": "Representations of Finite Groups I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240a"
+    },
+    {
+      "code": "MATH 240B",
+      "title": "Representations of Finite Groups II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240b"
+    },
+    {
+      "code": "MATH 246",
+      "title": "Representations of Algebras",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-246"
+    },
+    {
+      "code": "MATH 248",
+      "title": "Symplectic Geometry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-248"
+    },
+    {
+      "code": "MATH 249A",
+      "title": "Mechanics I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249a"
+    },
+    {
+      "code": "MATH 249B",
+      "title": "Mechanics II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249b"
+    },
+    {
+      "code": "MATH 249C",
+      "title": "Mechanics III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249c"
+    },
+    {
+      "code": "MATH 252",
+      "title": "Fluid Mechanics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-252"
+    },
+    {
+      "code": "MATH 254",
+      "title": "Geometric Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-254"
+    },
+    {
+      "code": "MATH 256",
+      "title": "Algebraic Curves",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-256"
+    },
+    {
+      "code": "MATH 260",
+      "title": "Combinatorics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-260"
+    },
+    {
+      "code": "MATH 264",
+      "title": "Inverse Problems and Integral Geometry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-264"
+    },
+    {
+      "code": "MATH 280",
+      "title": "Topics in Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "missing-description",
+        "review:missing-description",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-280"
+    },
+    {
+      "code": "MATH 281",
+      "title": "Topics in Algebra",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "missing-description",
+        "review:missing-description",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-281"
+    },
+    {
+      "code": "MATH 282",
+      "title": "Topics in Geometry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "missing-description",
+        "review:missing-description",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-282"
+    },
+    {
+      "code": "MATH 283",
+      "title": "Topics in Combinatorial Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "missing-description",
+        "review:missing-description",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-283"
+    },
+    {
+      "code": "MATH 284",
+      "title": "Topics in Dynamics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "missing-description",
+        "review:missing-description",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-284"
+    },
+    {
+      "code": "MATH 285",
+      "title": "Topics in Partial Differential Equations",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-285"
+    },
+    {
+      "code": "MATH 286",
+      "title": "Topics in Number Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-286"
+    },
+    {
+      "code": "MATH 287",
+      "title": "Topics in Topology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-287"
+    },
+    {
+      "code": "MATH 288A",
+      "title": "Pedagogy of Mathematics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288a"
+    },
+    {
+      "code": "MATH 288B",
+      "title": "Pedagogy of Mathematics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288b"
+    },
+    {
+      "code": "MATH 292",
+      "title": "Seminar",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-292"
+    },
+    {
+      "code": "MATH 296",
+      "title": "Special Student Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-296"
+    },
+    {
+      "code": "MATH 297A",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297a"
+    },
+    {
+      "code": "MATH 297B",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297b"
+    },
+    {
+      "code": "MATH 297C",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297c"
+    },
+    {
+      "code": "MATH 298",
+      "title": "Master's Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-298"
+    },
+    {
+      "code": "MATH 299A",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299a"
+    },
+    {
+      "code": "MATH 299B",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299b"
+    },
+    {
+      "code": "MATH 299C",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299c"
+    },
+    {
+      "code": "MSE 1",
+      "title": "Materials and Human Civilization",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1"
+    },
+    {
+      "code": "MSE 200",
+      "title": "Introduction to Materials Science and Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-200"
+    },
+    {
+      "code": "MSE 280",
+      "title": "Colloquium in Materials Science and Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-280"
+    },
+    {
+      "code": "MSE 290",
+      "title": "Research Rotation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-290"
+    },
+    {
+      "code": "SOCD 293",
+      "title": "Studies and Practice for Social Documentation, Filmmaking, and New Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-293"
+    },
+    {
+      "code": "STAT 200",
+      "title": "Research and Teaching in Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-200"
+    },
+    {
+      "code": "STAT 202",
+      "title": "Linear Models in SAS",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-202"
+    },
+    {
+      "code": "STAT 203",
+      "title": "Introduction to Probability Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203"
+    },
+    {
+      "code": "STAT 204",
+      "title": "Introduction to Statistical Data Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-204"
+    },
+    {
+      "code": "STAT 205",
+      "title": "Introduction to Classical Statistical Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205"
+    },
+    {
+      "code": "STAT 205B",
+      "title": "Intermediate Classical Inference",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205b"
+    },
+    {
+      "code": "STAT 206",
+      "title": "Applied Bayesian Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206"
+    },
+    {
+      "code": "STAT 206B",
+      "title": "Intermediate Bayesian Inference",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206b"
+    },
+    {
+      "code": "STAT 207",
+      "title": "Intermediate Bayesian Statistical Modeling",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-207"
+    },
+    {
+      "code": "STAT 208",
+      "title": "Linear Statistical Models",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-208"
+    },
+    {
+      "code": "STAT 209",
+      "title": "Generalized Linear Models",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-209"
+    },
+    {
+      "code": "STAT 221",
+      "title": "Statistical Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-221"
+    },
+    {
+      "code": "STAT 222",
+      "title": "Bayesian Nonparametric Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-222"
+    },
+    {
+      "code": "STAT 223",
+      "title": "Time Series Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-223"
+    },
+    {
+      "code": "STAT 224",
+      "title": "Bayesian Survival Analysis and Clinical Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-224"
+    },
+    {
+      "code": "STAT 225",
+      "title": "Multivariate Statistical Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-225"
+    },
+    {
+      "code": "STAT 226",
+      "title": "Spatial Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-226"
+    },
+    {
+      "code": "STAT 227",
+      "title": "Statistical Learning and High Dimensional Data Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-227"
+    },
+    {
+      "code": "STAT 229",
+      "title": "Advanced Bayesian Computation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-229"
+    },
+    {
+      "code": "STAT 243",
+      "title": "Stochastic Processes",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-243"
+    },
+    {
+      "code": "STAT 244",
+      "title": "Bayesian Decision Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-244"
+    },
+    {
+      "code": "STAT 246",
+      "title": "Probability Theory with Markov Chains",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-246"
     },
     {
       "code": "STAT 266B",
@@ -1194,6 +1500,136 @@
         "official-course-prereq-text-not-encoded"
       ],
       "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c"
+    },
+    {
+      "code": "STAT 280B",
+      "title": "Seminars in Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280b"
+    },
+    {
+      "code": "STAT 280D",
+      "title": "Seminar in Bayesian Statistical Methodology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280d"
+    },
+    {
+      "code": "STAT 285",
+      "title": "Seminar in Career Skills",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-285"
+    },
+    {
+      "code": "STAT 291",
+      "title": "Advanced Topics in Bayesian Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-291"
+    },
+    {
+      "code": "STAT 292",
+      "title": "Advanced Topics in Statistics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-292"
+    },
+    {
+      "code": "STAT 296",
+      "title": "Masters Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-296"
+    },
+    {
+      "code": "STAT 297A",
+      "title": "Independent Study or Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297a"
+    },
+    {
+      "code": "STAT 297B",
+      "title": "Independent Study or Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297b"
+    },
+    {
+      "code": "STAT 297C",
+      "title": "Independent Study or Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297c"
+    },
+    {
+      "code": "STAT 297F",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297f"
+    },
+    {
+      "code": "STAT 299A",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299a"
+    },
+    {
+      "code": "STAT 299B",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299b"
+    },
+    {
+      "code": "STAT 299C",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299c"
     }
   ]
 }

@@ -148,4 +148,16 @@ function divisionFrom(code, divisionPath) {
 }
 function mentionedCourseCodes(text) { return [...new Set([...String(text || '').matchAll(/\b[A-Z]{2,5}\s+\d+[A-Z]?\b/g)].map(m => normalizeCode(m[0])))]; }
 
-module.exports = { ROOT, LAB_DIR, BASE, COURSES_ROOT, parseArgs, ensureLab, decodeHtml, stripHtml, fetchUrl, mapLimit, parseLinks, normalizeCode, courseCodeFromText, courseCodeFromUrl, departmentLinksFromCoursesRoot, courseLinksFromDepartmentPage, loadLocalCourses, isSyntheticCourse, subjectOf, divisionFrom, mentionedCourseCodes };
+function departmentMatches(row, requestedDepartment) {
+  const want = String(requestedDepartment || '').toUpperCase().trim();
+  if (!want) return true;
+  if (subjectOf(row.code).toUpperCase() === want) return true;
+
+  const slug = String(row.departmentSlug || '').toUpperCase();
+  const text = String(row.departmentText || '').toUpperCase();
+  const escaped = want.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const departmentPrefix = new RegExp(`^${escaped}(?:\\b|[-_\\s])`);
+  return departmentPrefix.test(slug) || departmentPrefix.test(text);
+}
+
+module.exports = { ROOT, LAB_DIR, BASE, COURSES_ROOT, parseArgs, ensureLab, decodeHtml, stripHtml, fetchUrl, mapLimit, parseLinks, normalizeCode, courseCodeFromText, courseCodeFromUrl, departmentLinksFromCoursesRoot, courseLinksFromDepartmentPage, loadLocalCourses, isSyntheticCourse, subjectOf, divisionFrom, mentionedCourseCodes, departmentMatches };

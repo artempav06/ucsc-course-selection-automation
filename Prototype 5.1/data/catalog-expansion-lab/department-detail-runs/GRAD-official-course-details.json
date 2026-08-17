@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-08-17T01:07:42.772Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=GRAD",
+  "count": 5,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "GRAD 200",
+      "title": "Academic Writing for Graduate Students",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200",
+      "departmentSlug": "grad-graduate",
+      "departmentText": "GRAD-Graduate",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": null,
+      "creditsText": "0",
+      "desc": "Introduces best practices in academic writing including issues of citation, plagiarism, and structure in research. Students receive feedback from instructors and peers in order to encourage a \"writing process\" and an awareness of student/faculty roles.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "missing-units",
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "GRAD 201",
+      "title": "Oral Communication for Graduate Students",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201",
+      "departmentSlug": "grad-graduate",
+      "departmentText": "GRAD-Graduate",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": null,
+      "creditsText": "0",
+      "desc": "Focuses on understanding and being understood in seminar style classroom environments, including academic conversation techniques, pronunciation as needed, and using/identifying evidence in discussion. Introduces U.S. classroom approaches to presentation and student-centered teaching and learning.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "missing-units",
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "GRAD 202",
+      "title": "Reading and Research Skills for Graduate Students",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202",
+      "departmentSlug": "grad-graduate",
+      "departmentText": "GRAD-Graduate",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": null,
+      "creditsText": "0",
+      "desc": "Introduces reading strategies and techniques, including skimming and scanning, note-taking, and text analysis to improve critical reading skills. Also introduces students to UCSC library resources as well as the basic research skills of gathering and analyzing evidence.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to international graduate students in the Graduate Preparation Program.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "missing-units",
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "GRAD 213",
+      "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213",
+      "departmentSlug": "grad-graduate",
+      "departmentText": "GRAD-Graduate",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Supports enrolling graduate students and auditing postdoctoral scholars in STEM and Social Science programs to develop mentorship skills that create inclusive research and learning environments in higher education. Mentors engage with recent research and practice evidence-based strategies that help historically marginalized students excel in science through an equity-centered approach. To apply insights from educational research, mentors create mentoring statements that articulate their equity values and the specific strategies they use to enact equity in mentoring. Enrollment is by permission of instructor and prioritizes graduate students in STEM or Social Science discipline. Contact the instructor for a permission code. The instructor will review enrollees as needed to ensure priority is being met. Postdoctoral scholars in these fields may audit the course.",
+      "ge": "",
+      "quarterText": "Fall, Winter, Spring",
+      "quarters": [
+        "F",
+        "W",
+        "S"
+      ],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "GRAD 215",
+      "title": "Equitable Course Design for Graduate Student Instructors",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215",
+      "departmentSlug": "grad-graduate",
+      "departmentText": "GRAD-Graduate",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Supports current and emerging graduate student instructors (GSIs) to discuss and apply research-based frameworks for developing college-level courses that center significant student learning, antiracism, accessibility, and equitable outcomes. To put the insights of educational research into practice, GSIs create the essential components of an original college-level course, including course learning outcomes, assessment plans, an equity-minded syllabus, and an engaging course structure. First priority of enrollment is given to graduate students who have been appointed to teach as GSIs in the upcoming summer sessions. Open on a space-available basis to all other graduate students.",
+      "ge": "",
+      "quarterText": "Fall, Spring",
+      "quarters": [
+        "F",
+        "S"
+      ],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    }
+  ]
+}

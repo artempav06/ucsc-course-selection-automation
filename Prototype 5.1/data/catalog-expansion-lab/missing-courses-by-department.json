@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-07T06:26:02.428Z",
-  "missingOfficialCourseCount": 1978,
+  "generatedAt": "2026-08-17T00:12:07.793Z",
+  "missingOfficialCourseCount": 1977,
   "departments": [
     {
       "subject": "AM",
@@ -4754,16 +4754,8 @@
       "subject": "CSE",
       "departmentText": "CSE - Computer Science and Engineering",
       "departmentSlug": "cse-computer-science-and-engineering",
-      "count": 113,
+      "count": 112,
       "courses": [
-        {
-          "code": "CSE 136",
-          "title": "Cloud Computing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/upper-division/cse-136",
-          "departmentSlug": "cse-computer-science-and-engineering",
-          "departmentText": "CSE - Computer Science and Engineering",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "CSE 196A",
           "title": "Summer Drone-Intensive Training, Innovation, Entrepreneurship and STEAM Careers",
