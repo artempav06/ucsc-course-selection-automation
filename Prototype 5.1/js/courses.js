@@ -1,10 +1,3 @@
-// ============================================================
-// courses.js  --  UCSC Course Selection Automation
-// Prototype 4 official catalog prerequisite sync.
-// Source of truth for prerequisite text: current UCSC General Catalog exact course pages.
-// Generated/updated by scripts/apply_artem_verified_course_statuses.js after Artem's #6 spreadsheet verification.
-// ============================================================
-
 const COURSES = {
   "AM 3": {
     "concentrations": [],
@@ -11730,6 +11723,42 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "BIOL 20A and BIOE 20B and BIOE 20C; or ENVS 23 and ENVS 24."
   },
+  "BIOE 119L": {
+    "concentrations": [],
+    "title": "Plant Biotechnology Lab for a Changing World",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "BIOL 20A",
+        "BIOL 105",
+        "BIOE 106"
+      ],
+      [
+        "BIOE 20B",
+        "BIOL 105",
+        "BIOE 106"
+      ],
+      [
+        "BIOE 20C",
+        "BIOL 105",
+        "BIOE 106"
+      ]
+    ],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-119l",
+    "desc": "In-person CURE-style lab course that explores modern methods of plant breeding. A CURE is a Course-based Undergraduate Research Experience, meaning students learn by actively doing research. Topics cover the history and motivations for plant breeding, plant propagation, tissue culture, CRISPR/Cas9 genome editing, simple bioinformatic tools, transformation methods, PCR-based genotyping, and plant phenotyping. (Formerly BIOE 119, Plant Biotechnology for a Changing World.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): BIOL 20A, BIOE 20B and BIOE 20C, BIOL 105, or BIOE 106; or permission of the instructor. BIOE 16 and BIOE 137/BIOE 137L are recommended but not required.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: encoded the course-required path as (BIOL 20A + BIOE 20B + BIOE 20C) OR BIOL 105 OR BIOE 106 using prerequisite groups; instructor permission and recommended BIOE 16/BIOE 137/BIOE 137L are preserved as notes only.",
+      "Prerequisite(s): BIOL 20A, BIOE 20B and BIOE 20C, BIOL 105, or BIOE 106; or permission of the instructor. BIOE 16 and BIOE 137/BIOE 137L are recommended but not required."
+    ]
+  },
   "BIOE 120": {
     "concentrations": [],
     "title": "Marine Botany",
@@ -14196,6 +14225,35 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "BIOL 10": {
+    "concentrations": [],
+    "title": "Fundamentals of Biology",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-10",
+    "desc": "Review of basic biochemical and biological principles, preparing students for BIOL 20A . Draws connections between chemistry concepts and their importance in biology. Covers basic structure of DNA and proteins, functions of genes, DNA replication and expression, chromosomes, key cellular components.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): previous or concurrent enrollment in CHEM 3A or CHEM 4A.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: official previous-or-concurrent CHEM 3A/CHEM 4A requirement is encoded as concurrentPrereqs so manual validation can allow same-quarter or earlier chemistry.",
+      "Official prerequisite/eligibility text: Prerequisite(s): previous or concurrent enrollment in CHEM 3A or CHEM 4A."
+    ],
+    "concurrentPrereqs": [
+      [
+        "CHEM 3A",
+        "CHEM 4A"
+      ]
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to frosh and sophomore majors and proposed majors in biology, biochemistry and molecular biology, biotechnology, biomolecular engineering and bioinformatics, ecology and evolutionary biology, global and community health, human biology, marine biology, molecular cell and developmental biology, and neuroscience."
+  },
   "BIOL 15": {
     "concentrations": [],
     "title": "Undergraduate Research Reports",
@@ -14323,6 +14381,26 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "BIOL 26": {
+    "concentrations": [],
+    "title": "Frosh/Soph Seminar in Molecular & Cell Biology",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-26",
+    "desc": "Overview of molecular and cell biology for students considering MCD biology and related majors. Talks by MCDB faculty on their labs’ biomedical research programs and by scientists and clinicians on careers in the field. Overview of MCDB majors.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "(none found/ none listed)",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: no course prerequisite is listed; enrollment restriction is preserved for UI warning/review rather than blocking the undergrad engine."
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to first-year and sophomore proposed majors in biochemistry and molecular biology, biomolecular engineering and bioinformatics, cognitive science, ecology and evolution, global and community health (B.S.), marine biology, microbiology, molecular cell and developmental biology, neuroscience, biology B.A, biology B.S., biotechnology."
   },
   "BIOL 80A": {
     "concentrations": [],
@@ -19660,23 +19738,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CLNI 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: International and Global Perspectives",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clni-college-nine/lower-division/clni-1",
-      "desc": "College Nine core course. Builds academic literacy\u2014analysis, critical thinking, metacognition, and self-efficacy\u2014while addressing large-scale political, cultural, and economic issues and global citizenship.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: International and Global Perspectives",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/clni-college-nine/lower-division/clni-1",
+    "desc": "College Nine core course. Builds academic literacy—analysis, critical thinking, metacognition, and self-efficacy—while addressing large-scale political, cultural, and economic issues and global citizenship.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CLNI 1A": {
     "concentrations": [],
@@ -21496,6 +21574,48 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "CMPM 118S": {
+    "concentrations": [],
+    "title": "Research Pathway: Summer Vertically Integrated Project",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-118s",
+    "desc": "Students work with faculty to develop the technical and research skills required to contribute to the lab’s research goals. These courses include peer and near-peer mentorship, skill building/technical training, literature review, and authentic research activities. Enrollment is by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "CMPM 119": {
+    "concentrations": [],
+    "title": "Accessible Game Design and Evaluation",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CMPM 80K"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-119",
+    "desc": "Teaches students to design, develop, and evaluate games for diverse user populations including players with disabilities. Through hands-on prototyping and rigorous playtesting methodologies, students learn to implement technical accessibility features using industry-standard development tools and frameworks.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite: CMPM 80K. Programming experience (C#, JavaScript, or Python) is recommended. Enrollment is restricted to Computer Game Design proposed and declared majors.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: CMPM 80K is required; programming experience is recommended only and is not engine-enforced. Major restriction is preserved as official text.",
+      "Prerequisite: CMPM 80K. Programming experience (C#, JavaScript, or Python) is recommended. Enrollment is restricted to Computer Game Design proposed and declared majors."
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to Computer Game Design proposed and declared majors."
+  },
   "CMPM 120": {
     "concentrations": [],
     "title": "Game Development Experience",
@@ -22100,6 +22220,57 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "CMPM 171, or by"
   },
+  "CMPM 173": {
+    "concentrations": [],
+    "title": "Computational Media Prototyping",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CMPM 120"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-173",
+    "desc": "Introduces multiple methods for prototyping computational media projects and challenges students to use these in response to design briefs. Students work in teams to develop mini-projects that may be included in their portfolios along with statements of individual contributions to group efforts.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CMPM 120. Enrollment is restricted to juniors and seniors.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: CMPM 120 is the explicit course prerequisite; junior/senior restriction is preserved as official text."
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors."
+  },
+  "CMPM 174": {
+    "concentrations": [],
+    "title": "Computational Media Project",
+    "units": 7,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CMPM 130"
+      ],
+      [
+        "CMPM 173"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-174",
+    "desc": "Students work in teams on building the Minimum Viable Product (MVP) for a computational media project. The focus is on designing a production plan, and executing it through an iterative process. Projects may cover the entire range of computational media, from interactive art installations to mobile apps.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CMPM 130 and CMPM 173. Enrollment is restricted to juniors and seniors.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: CMPM 130 and CMPM 173 are both explicit course prerequisites; junior/senior restriction is preserved as official text."
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors."
+  },
   "CMPM 176": {
     "concentrations": [],
     "title": "Game Systems",
@@ -22441,23 +22612,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "COWL 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Imagining Justice",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cowl-cowell-college/lower-division/cowl-1",
-      "desc": "Cowell College core course. Builds academic literacy while examining the emergence and development of key concepts of justice: procedures, rights, and reparation.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Imagining Justice",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cowl-cowell-college/lower-division/cowl-1",
+    "desc": "Cowell College core course. Builds academic literacy while examining the emergence and development of key concepts of justice: procedures, rights, and reparation.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "COWL 1A": {
     "concentrations": [],
@@ -25270,23 +25441,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CRSN 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Environment and Society",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-1",
-      "desc": "Rachel Carson College core course. Builds academic literacy within Rachel Carson's tradition of investigating relationships between environment and society.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Environment and Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-1",
+    "desc": "Rachel Carson College core course. Builds academic literacy within Rachel Carson's tradition of investigating relationships between environment and society.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CRSN 1A": {
     "concentrations": [],
@@ -26049,23 +26220,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "CRWN 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Ethical and Societal Implications of Emerging Technologies",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-1",
-      "desc": "Crown College core course. Builds academic literacy while examining how technological revolutions happen, transform societies, and generate new ideological narratives.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Ethical and Societal Implications of Emerging Technologies",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-1",
+    "desc": "Crown College core course. Builds academic literacy while examining how technological revolutions happen, transform societies, and generate new ideological narratives.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "CRWN 1A": {
     "concentrations": [],
@@ -34857,6 +35028,34 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "CSE 13E or ECE 13; and ECE 103 and ECE 103L."
   },
+  "ECE 168": {
+    "concentrations": [],
+    "title": "Electric Motor Drives",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ECE 176"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168",
+    "desc": "Analysis of mechanical systems and motor drives. Physics-based models of common types of electric motors; dc, permanent-magnet ac, and induction. Theory of three-phase bridge converters. Average and detailed modeling and simulation of motor drive systems. In some quarters, the course will be taught in conjunction with ECE 268 . Students cannot receive credit for this course and ECE 268 .",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): ECE 176. Enrollment is restricted to juniors and seniors.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: ECE 176 is the explicit course prerequisite; junior/senior restriction is preserved as official text."
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to juniors and seniors."
+  },
   "ECE 169": {
     "concentrations": [
       "ee_power_energy"
@@ -35479,6 +35678,40 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "PHYS 5C or PHYS 15C and PHYS 5N; or PHYS 6C and PHYS 6N."
+  },
+  "ECE 186": {
+    "concentrations": [],
+    "title": "Entrepreneurship I",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-186",
+    "desc": "Guides students through the process of creating a new high-growth technology company. Students learn how to create a strategic vision and define the product(s) that can achieve the vision; validate the vision and product with target customers; identify the growth rates, size and competitive landscape of thei serviceable target market; and build a team with the requisite skills to achieve the strategic vision. Students create the pro forma income statements, balance sheets and cash flow statements to determine the financing requirements of their new company, and create a \"Pitch\" summarizing their vision, to be used for raising institutional investment. There are no required prerequisites, but students should be proficient in using spreadsheets, such as Excel or Numbers.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "ECE 187": {
+    "concentrations": [],
+    "title": "Entrepreneurship II",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-187",
+    "desc": "Guides students through the process of securing financing for their new high-growth technology company. Discusses the various types and sources of financing, the financing and due diligence processes, the expectations of institutional investors and the underlying drivers for those expectations. Students also analyze the implications of the various terms and conditions of a financing term sheet to understand the typical negotiation options available when negotiating terms with investors. Course also reviews the required set of legal documents required to close a financing round. ECE 186 , Entrepreneurship I, is highly recommended but not required. Students must be fluent in the use of spreadsheets, including doing optimization on them.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "ECE 193": {
     "concentrations": [],
@@ -41980,6 +42213,40 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "FILM 80E": {
+    "concentrations": [],
+    "title": "Eco-Media",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e",
+    "desc": "Long extinct species coming back to life from melting ice caps, humanity seeking refuge in manmade ecologies, and extreme weather events ravaging global landscapes. These all belong to the ecological imaginary of 21st century cinema/media. With the aid of new technologies and CGI, films increasingly stretch the boundaries of cinematic time and space across deep pasts, vast futures, and previously unmappable territories in order to project visions of humanity under constant threat by factors of its own making. This course explores what we can learn about human-nature relations and environmental concerns from moving images, differently from other disciplines. While the focus is mostly on eco-cinema, course also looks at broader eco-media and our ways of knowing the world.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "FILM 80H": {
+    "concentrations": [],
+    "title": "A History of Animation",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h",
+    "desc": "Introductory study of animation as both art and industry, tracing its development from pre-cinematic origins to contemporary digital media. Through a combination of historical overview and critical analysis, students consider animation’s evolving aesthetic forms, technologies, and cultural contexts, with emphasis on Western traditions and the U.S. industry. Students engage with works from major studios as well as independent and experimental artists, deepening their understanding of the medium’s history and practice.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "FILM 80M": {
     "concentrations": [],
     "title": "Understanding Media",
@@ -42937,6 +43204,29 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "FILM 170A or FILM 170B."
+  },
+  "FILM 171B": {
+    "concentrations": [],
+    "title": "Immersive Sound Design",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "FILM 171A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b",
+    "desc": "Introduces students to the creative and technical practices of spatial audio. Through deep listening exercises, hands-on labs, and project-based work, the course explores how sound shapes perception, meaning, and experience across cinematic and virtual environments. Students learn foundational principles of immersive audio including spatialization, object-based mixing, and Dolby Atmos, while developing practical skills in field recording, sound design, DAW editing, and composing to picture.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "FILM 171A . Interested students who do not meet prerequisites can contact",
+    "prereqNotes": [
+      "Official prerequisite text: FILM 171A . Interested students who do not meet prerequisites can contact"
+    ]
   },
   "FILM 171C": {
     "concentrations": [],
@@ -45650,6 +45940,159 @@ const COURSES = {
       "S"
     ],
     "desc": "Any course of the student's choice.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U1": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U2": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U3": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U4": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U5": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U6": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U7": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U8": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0
+  },
+  "FREE 1U9": {
+    "title": "Free Elective (1 unit)",
+    "units": 1,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
     "section": [
       "FREE"
     ],
@@ -59014,23 +59457,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "JRLC 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Social Justice and Community",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jrlc-john-r-lewis-college/lower-division/jrlc-1",
-      "desc": "John R. Lewis College (College Ten) core course. Builds academic literacy around the theme of social justice and community, including identity formation, inequality, and environmental injustice.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Social Justice and Community",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/jrlc-john-r-lewis-college/lower-division/jrlc-1",
+    "desc": "John R. Lewis College (College Ten) core course. Builds academic literacy around the theme of social justice and community, including identity formation, inequality, and environmental injustice.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "JRLC 1A": {
     "concentrations": [],
@@ -59673,23 +60116,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "KRSG 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Learning in Community",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-1",
-      "desc": "Kresge College core course. Builds academic literacy framed by three questions\u2014how, why, and from whom we learn\u2014with peer-to-peer learning, an oral history project, and a creative project. (Formerly 'Power and Representation.')",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Learning in Community",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/krsg-kresge-college/lower-division/krsg-1",
+    "desc": "Kresge College core course. Builds academic literacy framed by three questions—how, why, and from whom we learn—with peer-to-peer learning, an oral history project, and a creative project. (Formerly 'Power and Representation.')",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "KRSG 1A": {
     "concentrations": [],
@@ -74988,6 +75431,30 @@ const COURSES = {
       "Official prerequisite/eligibility text: MATH 100 or CSE 101; MATH 110 is recommended as preparation."
     ]
   },
+  "MATH 139": {
+    "concentrations": [],
+    "title": "Mathematical Problems in Machine Learning",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "MATH 100"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-139",
+    "desc": "Covers essential mathematical foundations of machine learning, including functional analysis, eigenvalue decomposition, neural networks, kernel methods, and Universal Representation Theorems, with applications to modeling and classification problems.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisites: MATH 100 . Experience in coding (e.g. MATH 152 ) is recommended.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: MATH 100 is the required prerequisite; coding experience such as MATH 152 is recommended only and is not engine-enforced.",
+      "Official prerequisite/eligibility text: Prerequisites: MATH 100 . Experience in coding (e.g. MATH 152 ) is recommended."
+    ]
+  },
   "MATH 140": {
     "concentrations": [],
     "title": "Industrial Mathematics",
@@ -75421,23 +75888,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "MERR 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Reading Ourselves, Reading the World",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/merr-merrill-college/lower-division/merr-1",
-      "desc": "Merrill College core course. Builds academic literacy within Merrill's intellectual tradition of investigating social change and social justice.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Reading Ourselves, Reading the World",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/merr-merrill-college/lower-division/merr-1",
+    "desc": "Merrill College core course. Builds academic literacy within Merrill's intellectual tradition of investigating social change and social justice.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "MERR 1A": {
     "concentrations": [],
@@ -76639,6 +77106,25 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "MSE 1": {
+    "concentrations": [],
+    "title": "Materials and Human Civilization",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1",
+    "desc": "Introduction to the profound impact of materials on the rise of human civilization across the globe through the Stone, Bronze, Iron and Silicon Ages. Discusses the relationship between the microscopic structure and science of materials, their formation, and their performance, including the transition over time of materials production from art to science. Surveys the key roles of new materials for medicine, energy, and modern communication and computer technologies in the modern era.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "MUSC 1C": {
     "concentrations": [],
@@ -80313,23 +80799,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "OAKS 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Communicating Diversity for a Just Society",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-1",
-      "desc": "Oakes College core course. Builds academic literacy while considering the intersections between reading, personal and social identities, and social justice.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Communicating Diversity for a Just Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-1",
+    "desc": "Oakes College core course. Builds academic literacy while considering the intersections between reading, personal and social identities, and social justice.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "OAKS 1A": {
     "concentrations": [],
@@ -84726,6 +85212,36 @@ const COURSES = {
       "Official prerequisite/eligibility text: Previous or concurrent"
     ]
   },
+  "PHYS 6P": {
+    "concentrations": [],
+    "title": "Preparation for Physics 6",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [
+      [
+        "MATH 11A",
+        "MATH 16A",
+        "MATH 19A",
+        "MATH 20A",
+        "AM 15A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-6p",
+    "desc": "Physics 6P prepares students for success in the Physics 6 series. Reviews most-often-used problem-solving skills for work in subsequent physics classes. Examples using the force and conservation laws of physics connect how these laws are highlighted in other fields of science. Introduces physics as a collaborative discipline with effective methods for group work as well as individual study.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): MATH 11A or MATH 16A or MATH 19A or MATH 20A or AM 15A.",
+    "prereqNotes": [
+      "Reviewed by Hermes after Artem guidance: encoded the official calculus alternatives. AM 15A is preserved from official text even though it is not in the current official/live local catalog index, so validation may warn until that historical/equivalent course is modeled.",
+      "Prerequisite(s): MATH 11A or MATH 16A or MATH 19A or MATH 20A or AM 15A."
+    ]
+  },
   "PHYS 7A": {
     "concentrations": [],
     "title": "Elementary Physics I",
@@ -84924,6 +85440,40 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "PHYS 80C": {
+    "concentrations": [],
+    "title": "The Cosmos",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80c",
+    "desc": "Covers the grand picture of the cosmos through a descriptive and interactive presentation on universal origin and cosmological evolution at a level appropriate for non-science majors. Topics such as the building blocks of the cosmos, the fundamental forces, cosmological models, relativity and quantum mechanics are covered at a conceptual level. The course provides an overview of our place within the cosmos, and studies how we have learned what we know about it, and what we are still actively studying using the scientific method.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "PHYS 80S": {
+    "concentrations": [],
+    "title": "Physics in Sports and Recreation",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80s",
+    "desc": "Examines how principles of physics are at play in common sports and recreational activities. Course is designed for students with no specialized background in math or physics. Considers applications of kinematics, Newton's laws, conservation laws, rotational mechanics, and some elementary fluid dynamics. Presents examples of the role of these scientific principles in real-world athletic contexts and explores how principles of scientific reasoning can help athletes distinguish between sound and unsound advice.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "PHYS 80U": {
     "concentrations": [],
@@ -85820,6 +86370,30 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "PHYS 5C or PHYS 15C, and PHYS 5N, or PHYS 6C and PHYS 6N."
   },
+  "PHYS 161": {
+    "concentrations": [],
+    "title": "Quantum Materials Research Laboratory",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PHYS 102",
+        "CHEM 163A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-161",
+    "desc": "Introduction to hypothesis driven laboratory research in the field of quantum materials. Students engage in a supportive research immersion experience, where they work on their own projects to gain training and education in experimental approaches to materials synthesis and characterization. In particular, they measure and interpret structural, electrical, magnetic, and other thermodynamic properties in target materials. Science communication are prioritized, culminating in a Quantum Materials Symposium during finals week where students give oral presentations of their research.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): PHYS 102 or or CHEM 163A .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): PHYS 102 or or CHEM 163A ."
+    ]
+  },
   "PHYS 171": {
     "concentrations": [],
     "title": "General Relativity, Black Holes, and Cosmology",
@@ -86016,6 +86590,25 @@ const COURSES = {
       "Official catalog includes non-course eligibility language (placement/AP/test-out/writing/composition). It is preserved here as a note and is not engine-enforced as a course prerequisite.",
       "Official prerequisite/eligibility text: Entry Level Writing and Composition"
     ]
+  },
+  "PHYS 197": {
+    "concentrations": [],
+    "title": "Summer Intensive Research in Physics",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-197",
+    "desc": "Students participate in activities of a research group within the Physics Department. Students learn how to formulate research questions, devise experimental or theoretical strategies to answer them, conduct theoretical derivations or data collection and analysis, formulate the results, and then present the results to their peers. Enrollment is by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "PHYS 199": {
     "concentrations": [],
@@ -88297,23 +88890,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "PRTR 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Arts of Reading",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-1",
-      "desc": "Porter College core course. Builds academic literacy within Porter's tradition of investigating how the arts and humanities contribute to a good life, a just society, and a flourishing world.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Arts of Reading",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-1",
+    "desc": "Porter College core course. Builds academic literacy within Porter's tradition of investigating how the arts and humanities contribute to a good life, a just society, and a flourishing world.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "PRTR 1A": {
     "concentrations": [],
@@ -96973,23 +97566,23 @@ const COURSES = {
     "rmpScore": 0
   },
   "STEV 1": {
-      "concentrations": [],
-      "title": "Academic Literacy and Ethos: Self and Society",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": null,
-      "quarters": [
-          "F"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-1",
-      "desc": "Stevenson College core course (part 1 of a required two-quarter sequence). Builds academic literacy while examining the roots of modern society through diverse religious texts and major classical and modern philosophical works.",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to college members."
+    "concentrations": [],
+    "title": "Academic Literacy and Ethos: Self and Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-1",
+    "desc": "Stevenson College core course (part 1 of a required two-quarter sequence). Builds academic literacy while examining the roots of modern society through diverse religious texts and major classical and modern philosophical works.",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to college members."
   },
   "STEV 1A": {
     "concentrations": [],
@@ -97035,23 +97628,23 @@ const COURSES = {
     "officialPrereqText": "(none found/ none listed)"
   },
   "STEV 2": {
-      "concentrations": [],
-      "title": "Self and Society 2",
-      "units": 5,
-      "division": "lower",
-      "prereqs": [],
-      "ge": "TA",
-      "quarters": [
-          "W"
-      ],
-      "enrollmentRestrictions": "Enrollment is restricted to first-year and sophomore college members.",
-      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-2",
-      "desc": "Stevenson College core course (part 2 of 2), winter quarter. Continues analytical writing, critical reading, and effective speaking while exploring conflicts in modern society: colonization, race, gender, class, and cultural conflict. (Formerly 81A.)",
-      "section": [
-          "COLLEGE_CORE"
-      ],
-      "rmpScore": 0,
-      "officialPrereqText": "Enrollment is restricted to first-year and sophomore college members."
+    "concentrations": [],
+    "title": "Self and Society 2",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [
+      "W"
+    ],
+    "enrollmentRestrictions": "Enrollment is restricted to first-year and sophomore college members.",
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stev-stevenson-college/lower-division/stev-2",
+    "desc": "Stevenson College core course (part 2 of 2), winter quarter. Continues analytical writing, critical reading, and effective speaking while exploring conflicts in modern society: colonization, race, gender, class, and cultural conflict. (Formerly 81A.)",
+    "section": [
+      "COLLEGE_CORE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to first-year and sophomore college members."
   },
   "STEV 10": {
     "concentrations": [],
@@ -103045,234 +103638,5 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
-  },
-  "FREE 1U1": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U2": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U3": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U4": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U5": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U6": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U7": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U8": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FREE 1U9": {
-    "title": "Free Elective (1 unit)",
-    "units": 1,
-    "division": "lower",
-    "prereqs": [],
-    "ge": null,
-    "quarters": [
-      "F",
-      "W",
-      "S"
-    ],
-    "desc": "Any 1-unit course, seminar, activity, or placeholder credit to help plan a balanced quarter.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0
-  },
-  "FILM 171B": {
-    "concentrations": [],
-    "title": "Immersive Sound Design",
-    "units": 5,
-    "division": "upper",
-    "prereqs": [
-      [
-        "FILM 171A"
-      ]
-    ],
-    "ge": null,
-    "quarters": [],
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b",
-    "desc": "Introduces students to the creative and technical practices of spatial audio. Through deep listening exercises, hands-on labs, and project-based work, the course explores how sound shapes perception, meaning, and experience across cinematic and virtual environments. Students learn foundational principles of immersive audio including spatialization, object-based mixing, and Dolby Atmos, while developing practical skills in field recording, sound design, DAW editing, and composing to picture.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "FILM 171A . Interested students who do not meet prerequisites can contact",
-    "prereqNotes": [
-      "Official prerequisite text: FILM 171A . Interested students who do not meet prerequisites can contact"
-    ]
-  },
-  "FILM 80E": {
-    "concentrations": [],
-    "title": "Eco-Media",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": "PE-E",
-    "quarters": [],
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e",
-    "desc": "Long extinct species coming back to life from melting ice caps, humanity seeking refuge in manmade ecologies, and extreme weather events ravaging global landscapes. These all belong to the ecological imaginary of 21st century cinema/media. With the aid of new technologies and CGI, films increasingly stretch the boundaries of cinematic time and space across deep pasts, vast futures, and previously unmappable territories in order to project visions of humanity under constant threat by factors of its own making. This course explores what we can learn about human-nature relations and environmental concerns from moving images, differently from other disciplines. While the focus is mostly on eco-cinema, course also looks at broader eco-media and our ways of knowing the world.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "",
-    "prereqNotes": []
-  },
-  "FILM 80H": {
-    "concentrations": [],
-    "title": "A History of Animation",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": "IM",
-    "quarters": [],
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h",
-    "desc": "Introductory study of animation as both art and industry, tracing its development from pre-cinematic origins to contemporary digital media. Through a combination of historical overview and critical analysis, students consider animation\u2019s evolving aesthetic forms, technologies, and cultural contexts, with emphasis on Western traditions and the U.S. industry. Students engage with works from major studios as well as independent and experimental artists, deepening their understanding of the medium\u2019s history and practice.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "",
-    "prereqNotes": []
-  },
-  "MSE 1": {
-    "concentrations": [],
-    "title": "Materials and Human Civilization",
-    "units": 5,
-    "division": "lower",
-    "prereqs": [],
-    "ge": "SI",
-    "quarters": [
-      "S"
-    ],
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1",
-    "desc": "Introduction to the profound impact of materials on the rise of human civilization across the globe through the Stone, Bronze, Iron and Silicon Ages. Discusses the relationship between the microscopic structure and science of materials, their formation, and their performance, including the transition over time of materials production from art to science. Surveys the key roles of new materials for medicine, energy, and modern communication and computer technologies in the modern era.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "",
-    "prereqNotes": []
   }
 };

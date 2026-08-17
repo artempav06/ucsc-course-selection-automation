@@ -1,800 +1,2049 @@
 {
-  "generatedAt": "2026-08-17T01:07:43.935Z",
+  "generatedAt": "2026-08-17T01:36:54.961Z",
   "sourceCandidates": "candidate-expanded-courses.json",
-  "candidateCount": 153,
+  "candidateCount": 370,
   "buckets": {
-    "passed": 7,
+    "passed": 81,
     "blocked": 4,
-    "warningsOnly": 142
+    "warningsOnly": 285
   },
   "rows": [
     {
-      "code": "FILM 171B",
-      "title": "Immersive Sound Design",
+      "code": "BIOE 119L",
+      "title": "Plant Biotechnology Lab for a Changing World",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-119l"
+    },
+    {
+      "code": "BIOE 200A",
+      "title": "Scientific Skills",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200a"
+    },
+    {
+      "code": "BIOE 200B",
+      "title": "Advanced Organismal Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200b"
+    },
+    {
+      "code": "BIOE 200C",
+      "title": "Evolutionary Ecology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200c"
+    },
+    {
+      "code": "BIOE 200D",
+      "title": "Foundations in Ecology & Evolutionary Biology",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200d"
     },
     {
-      "code": "FILM 200A",
-      "title": "Introduction to Graduate Study",
+      "code": "BIOE 203",
+      "title": "Introductory Seminar in Ecology and Evolutionary Biology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-203"
     },
     {
-      "code": "FILM 200B",
-      "title": "Theory and Praxis of Film and Digital Media 1",
+      "code": "BIOE 208",
+      "title": "Marine Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-208"
     },
     {
-      "code": "FILM 200C",
-      "title": "Theory and Praxis of Film and Digital Media 2",
+      "code": "BIOE 215",
+      "title": "Advanced Seminar in Ecology and Evolutionary Biology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-200c"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-215"
     },
     {
-      "code": "FILM 202",
-      "title": "Pedagogy in Film and Digital Media",
+      "code": "BIOE 238",
+      "title": "Modeling Evolution and Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-202"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-238"
     },
     {
-      "code": "FILM 203",
-      "title": "Professional Development in Film and Digital Media",
+      "code": "BIOE 239",
+      "title": "Mathematical Modeling and Data Science in Ecology and Evolution",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-239"
     },
     {
-      "code": "FILM 221",
-      "title": "Audio Arts and Methods",
+      "code": "BIOE 245",
+      "title": "Plant Ecology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245"
+    },
+    {
+      "code": "BIOE 245L",
+      "title": "Field Methods in Plant Ecology Laboratory",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-221"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245l"
     },
     {
-      "code": "FILM 222",
-      "title": "Critical Methodologies in Film and Television",
+      "code": "BIOE 247",
+      "title": "Community Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-222"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-247"
     },
     {
-      "code": "FILM 223",
-      "title": "The Film/Video Essay",
+      "code": "BIOE 258L",
+      "title": "Experimental Marine Ecology",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-258l"
+    },
+    {
+      "code": "BIOE 262",
+      "title": "Facilitating Change in Coastal Science Policy",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-223"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-262"
     },
     {
-      "code": "FILM 224",
-      "title": "Mediating Difference",
+      "code": "BIOE 271",
+      "title": "Disciplinary Communication for Biologists",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-224"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-271"
     },
     {
-      "code": "FILM 225",
-      "title": "Software Studies",
+      "code": "BIOE 272",
+      "title": "Population Genetics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-225"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-272"
     },
     {
-      "code": "FILM 226",
-      "title": "Queer Theory and Global Film and Media",
+      "code": "BIOE 276",
+      "title": "Data Science for Ecology and Evolutionary Biology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-226"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-276"
     },
     {
-      "code": "FILM 227",
-      "title": "Representing Memory",
+      "code": "BIOE 281A",
+      "title": "Topics in Basic and Applied Marine Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-227"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281a"
     },
     {
-      "code": "FILM 228",
-      "title": "Moving Image Archives and the Frontiers of Information",
+      "code": "BIOE 281B",
+      "title": "Topics in Molecular Evolution",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-228"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281b"
     },
     {
-      "code": "FILM 229",
-      "title": "Topics in Documentary Studies",
+      "code": "BIOE 281C",
+      "title": "Topics in Physiological Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-229"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281c"
     },
     {
-      "code": "FILM 230",
-      "title": "Expanded Documentary",
+      "code": "BIOE 281D",
+      "title": "Topics in Global Change Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-230"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281d"
     },
     {
-      "code": "FILM 231",
-      "title": "Topics in Postcolonial Theories, Film, and Media",
+      "code": "BIOE 281E",
+      "title": "Topics in Freshwater Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-231"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281e"
     },
     {
-      "code": "FILM 232",
-      "title": "Audiovisual Ethnography",
+      "code": "BIOE 281F",
+      "title": "Ecological Research Topics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-232"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281f"
     },
     {
-      "code": "FILM 234",
-      "title": "Toward an Ethics of New Media",
+      "code": "BIOE 281G",
+      "title": "Topics in Sexual Selection and Social Behavior",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-234"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281g"
     },
     {
-      "code": "FILM 235",
-      "title": "Feminist Media Histories",
+      "code": "BIOE 281H",
+      "title": "Topics in Comparative Marine Physiology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-235"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281h"
     },
     {
-      "code": "FILM 236",
-      "title": "Making...in the Anthropocene",
+      "code": "BIOE 281I",
+      "title": "Topics in Disease Ecology, Population Biology, and Conservation",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-236"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281i"
     },
     {
-      "code": "FILM 237",
-      "title": "Graduate Critique",
+      "code": "BIOE 281J",
+      "title": "Topics in Evolutionary Genomics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-237"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281j"
     },
     {
-      "code": "FILM 238",
-      "title": "The Politics of Information",
+      "code": "BIOE 281K",
+      "title": "Topics in Plant Evolution",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-238"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281k"
     },
     {
-      "code": "FILM 239",
-      "title": "Topics in Media Theory",
+      "code": "BIOE 281L",
+      "title": "Topics in Behavioral and Evolutionary Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-239"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281l"
     },
     {
-      "code": "FILM 283",
-      "title": "New Media Art and Digital Culture",
+      "code": "BIOE 281M",
+      "title": "Topics in Host-Microbe Population Genomics",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281m"
+    },
+    {
+      "code": "BIOE 281N",
+      "title": "Topics in Marine Vertebrate Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-283"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281n"
     },
     {
-      "code": "FILM 284",
-      "title": "Film, Culture, and Modernity",
+      "code": "BIOE 281O",
+      "title": "Topics in Plant-Water Relations",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-284"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281o"
     },
     {
-      "code": "FILM 295",
-      "title": "Directed Reading",
+      "code": "BIOE 281P",
+      "title": "Topics in Plant Population Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-295"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281p"
     },
     {
-      "code": "FILM 296F",
+      "code": "BIOE 281Q",
+      "title": "Topics in Coastal and Marine Ecology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281q"
+    },
+    {
+      "code": "BIOE 281R",
+      "title": "Topics in Marine Ecology and Evolutionary Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281r"
+    },
+    {
+      "code": "BIOE 281S",
+      "title": "Topics in Ancient DNA and Paleogenomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281s"
+    },
+    {
+      "code": "BIOE 281T",
+      "title": "Topics in Evolutionary Developmental Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281t"
+    },
+    {
+      "code": "BIOE 281U",
+      "title": "Topics in Invertebrate Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281u"
+    },
+    {
+      "code": "BIOE 281V",
+      "title": "Topics in Behavioral Ecology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281v"
+    },
+    {
+      "code": "BIOE 281W",
+      "title": "Topics in Exercise and Environmental Physiology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281w"
+    },
+    {
+      "code": "BIOE 281X",
+      "title": "Topics in Behavioral Ecology of Large Marine Vertebrates",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281x"
+    },
+    {
+      "code": "BIOE 281Y",
+      "title": "Topics in Climate Change Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281y"
+    },
+    {
+      "code": "BIOE 281Z",
+      "title": "Conservation Science in a Changing World",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281z"
+    },
+    {
+      "code": "BIOE 286",
+      "title": "Experimental Design and Data Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286"
+    },
+    {
+      "code": "BIOE 286L",
+      "title": "Experimental Design and Data Analysis Lab",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286l"
+    },
+    {
+      "code": "BIOE 294",
+      "title": "Ecology, Evolutionary Biology Seminar",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-294"
+    },
+    {
+      "code": "BIOE 297A",
       "title": "Independent Study",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-296f"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297a"
     },
     {
-      "code": "FILM 297",
+      "code": "BIOE 297B",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297b"
+    },
+    {
+      "code": "BIOE 297C",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297c"
+    },
+    {
+      "code": "BIOE 297F",
       "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297f"
     },
     {
-      "code": "FILM 297F",
-      "title": "Independent Study",
+      "code": "BIOE 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299a"
+    },
+    {
+      "code": "BIOE 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299b"
+    },
+    {
+      "code": "BIOE 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299c"
+    },
+    {
+      "code": "BIOL 10",
+      "title": "Fundamentals of Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-10"
+    },
+    {
+      "code": "BIOL 200A",
+      "title": "Critical Analysis of Scientific Literature",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-297f"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200a"
     },
     {
-      "code": "FILM 299A",
+      "code": "BIOL 200B",
+      "title": "Advanced Molecular Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200b"
+    },
+    {
+      "code": "BIOL 200C",
+      "title": "Advanced Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200c"
+    },
+    {
+      "code": "BIOL 200D",
+      "title": "Developmental Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200d"
+    },
+    {
+      "code": "BIOL 200E",
+      "title": "Experimental Design",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200e"
+    },
+    {
+      "code": "BIOL 200F",
+      "title": "Logic and Approaches to Scientific Discovery",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200f"
+    },
+    {
+      "code": "BIOL 201",
+      "title": "RNA Processing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-201"
+    },
+    {
+      "code": "BIOL 203",
+      "title": "Ribosomes and Translation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-203"
+    },
+    {
+      "code": "BIOL 204",
+      "title": "Chromatin",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-204"
+    },
+    {
+      "code": "BIOL 205",
+      "title": "Epigenetics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-205"
+    },
+    {
+      "code": "BIOL 206",
+      "title": "Introduction to Stem Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-206"
+    },
+    {
+      "code": "BIOL 206L",
+      "title": "Current Protocols in Stem Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-206l"
+    },
+    {
+      "code": "BIOL 208",
+      "title": "Cellular Signaling Mechanisms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-208"
+    },
+    {
+      "code": "BIOL 214",
+      "title": "Advances in Cancer Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-214"
+    },
+    {
+      "code": "BIOL 215",
+      "title": "Applied Statistics for Molecular, Cell, and Developmental Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-215"
+    },
+    {
+      "code": "BIOL 217",
+      "title": "Influence of Environment and Experience on Brain Development",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-217"
+    },
+    {
+      "code": "BIOL 218",
+      "title": "CRISPR/Cas Technologies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-218"
+    },
+    {
+      "code": "BIOL 220",
+      "title": "STEM Outreach",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-220"
+    },
+    {
+      "code": "BIOL 221",
+      "title": "Intro to Science Communication: Public Speaking and Science Writing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-221"
+    },
+    {
+      "code": "BIOL 226",
+      "title": "Neural Plasticity and Cognitive Neuroscience",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-226"
+    },
+    {
+      "code": "BIOL 227",
+      "title": "Studying Brain Development: From Stem Cells to Neural Circuits",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-227"
+    },
+    {
+      "code": "BIOL 228",
+      "title": "Developmental Neurobiology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-228"
+    },
+    {
+      "code": "BIOL 230",
+      "title": "Grant Writing in the Biomedical Sciences",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-230"
+    },
+    {
+      "code": "BIOL 247",
+      "title": "Stem Cell Research: Scientific, Ethical, Social, and Legal Issues",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-247"
+    },
+    {
+      "code": "BIOL 26",
+      "title": "Frosh/Soph Seminar in Molecular & Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-26"
+    },
+    {
+      "code": "BIOL 280A",
+      "title": "Topics in Research on Molecular Genetics of Yeast",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280a"
+    },
+    {
+      "code": "BIOL 280B",
+      "title": "Chromatin Structure and Transcriptional Regulation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280b"
+    },
+    {
+      "code": "BIOL 280C",
+      "title": "Mammalian Brain Development",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280c"
+    },
+    {
+      "code": "BIOL 280D",
+      "title": "Muscle Biology and Gene Regulation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280d"
+    },
+    {
+      "code": "BIOL 280E",
+      "title": "Meiotic Chromosome Dynamics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280e"
+    },
+    {
+      "code": "BIOL 280F",
+      "title": "Development of Vertebrate Neural Connections",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280f"
+    },
+    {
+      "code": "BIOL 280G",
+      "title": "Molecular Mechanisms of Behavioral Development and Evolution",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280g"
+    },
+    {
+      "code": "BIOL 280H",
+      "title": "Topics on Research into Chromatin and Transcription",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280h"
+    },
+    {
+      "code": "BIOL 280I",
+      "title": "Epigenetic Gene Silencing and Insulators",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280i"
+    },
+    {
+      "code": "BIOL 280J",
+      "title": "Structures of Macromolecular Complexes",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280j"
+    },
+    {
+      "code": "BIOL 280K",
+      "title": "Topics in Cell Cycle Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280k"
+    },
+    {
+      "code": "BIOL 280L",
+      "title": "Development",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280l"
+    },
+    {
+      "code": "BIOL 280M",
+      "title": "Post-Transcriptional Control of Mammalian Gene Expression",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280m"
+    },
+    {
+      "code": "BIOL 280N",
+      "title": "Long Noncoding RNA and the Immune System",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280n"
+    },
+    {
+      "code": "BIOL 280O",
+      "title": "Translation Regulation by RNA structure",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280o"
+    },
+    {
+      "code": "BIOL 280P",
+      "title": "Quality Control in Gene Expression",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280p"
+    },
+    {
+      "code": "BIOL 280Q",
+      "title": "Telomeres and Telomerase",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280q"
+    },
+    {
+      "code": "BIOL 280R",
+      "title": "Gene regulation in C. elegans and human parasitic namtodes",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280r"
+    },
+    {
+      "code": "BIOL 280S",
+      "title": "Stem Cell Genomics and Neurodevelopment",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280s"
+    },
+    {
+      "code": "BIOL 280T",
+      "title": "Cancer Stem Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280t"
+    },
+    {
+      "code": "BIOL 280U",
+      "title": "Discussions on the Development of the &lt;I&gt;Drosophila&lt;/I&gt; Embryo",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280u"
+    },
+    {
+      "code": "BIOL 280V",
+      "title": "Translational pediatric genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280v"
+    },
+    {
+      "code": "BIOL 280W",
+      "title": "Development, Connectivity, and Genetic Identity of Neural Circuits",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280w"
+    },
+    {
+      "code": "BIOL 280X",
+      "title": "RNA-mediated epigenetic inheritance",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280x"
+    },
+    {
+      "code": "BIOL 280Y",
+      "title": "Activity-Dependent Synaptic Plasticity",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280y"
+    },
+    {
+      "code": "BIOL 280Z",
+      "title": "Prostate Development and Cancer Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280z"
+    },
+    {
+      "code": "BIOL 281A",
+      "title": "Host Responses to Respiratory Viral Infections",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281a"
+    },
+    {
+      "code": "BIOL 281B",
+      "title": "Mucosal Immunology and Microbiology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281b"
+    },
+    {
+      "code": "BIOL 281C",
+      "title": "Lentiviral Replication",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281c"
+    },
+    {
+      "code": "BIOL 288",
+      "title": "Pedagogy in STEM",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-288"
+    },
+    {
+      "code": "BIOL 289",
+      "title": "Practice of Science",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-289"
+    },
+    {
+      "code": "BIOL 290",
+      "title": "Career Planning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-290"
+    },
+    {
+      "code": "BIOL 291",
+      "title": "Molecular, Cellular, and Developmental Biology Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-291"
+    },
+    {
+      "code": "BIOL 292",
+      "title": "MCD Seminar",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
+      ],
+      "warnings": [
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-292"
+    },
+    {
+      "code": "BIOL 296",
+      "title": "Laboratory Research in Molecular, Cell, and Developmental Biology",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-296"
+    },
+    {
+      "code": "BIOL 297A",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297a"
+    },
+    {
+      "code": "BIOL 297B",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297b"
+    },
+    {
+      "code": "BIOL 297C",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297c"
+    },
+    {
+      "code": "BIOL 297F",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297f"
+    },
+    {
+      "code": "BIOL 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299a"
+    },
+    {
+      "code": "BIOL 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299b"
+    },
+    {
+      "code": "BIOL 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299c"
+    },
+    {
+      "code": "BIOL 299F",
       "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299f"
     },
     {
-      "code": "FILM 299B",
+      "code": "BME 201",
+      "title": "Scientific Writing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-201"
+    },
+    {
+      "code": "BME 215",
+      "title": "Applied Gene Technology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-215"
+    },
+    {
+      "code": "BME 218",
+      "title": "Mathematics of the Mind",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-218"
+    },
+    {
+      "code": "BME 228",
+      "title": "Protein Design and Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-228"
+    },
+    {
+      "code": "BME 229",
+      "title": "Protein and Cell Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-229"
+    },
+    {
+      "code": "BME 230B",
+      "title": "Advanced Computational Genomics and Systems Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-230b"
+    },
+    {
+      "code": "BME 232",
+      "title": "Evolutionary Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-232"
+    },
+    {
+      "code": "BME 237",
+      "title": "Applied RNA Bioinformatics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-237"
+    },
+    {
+      "code": "BME 263",
+      "title": "Applied Visualization and Analysis of Scientific Data",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-263"
+    },
+    {
+      "code": "BME 272",
+      "title": "Precision&#160;Medicine",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-272"
+    },
+    {
+      "code": "BME 273",
+      "title": "Stem Cell Epi/Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-273"
+    },
+    {
+      "code": "BME 275",
+      "title": "Entrepreneurship in Biotechnology",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-275"
+    },
+    {
+      "code": "BME 278",
+      "title": "Stem Cell Biology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-278"
+    },
+    {
+      "code": "BME 280B",
+      "title": "Seminar on Bioinformatics and Bioengineering",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-280b"
+    },
+    {
+      "code": "BME 281A",
+      "title": "Seminar on Processive Enzymes and Nanopores",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281a"
+    },
+    {
+      "code": "BME 281C",
+      "title": "Seminar in Cancer Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281c"
+    },
+    {
+      "code": "BME 281D",
+      "title": "Seminar on Protein Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281d"
+    },
+    {
+      "code": "BME 281E",
+      "title": "Seminar in Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281e"
+    },
+    {
+      "code": "BME 281F",
+      "title": "Blood Cell Development",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281f"
+    },
+    {
+      "code": "BME 281G",
+      "title": "Seminar on Cell Fate Decisions",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281g"
+    },
+    {
+      "code": "BME 281H",
+      "title": "Live Cell Biotechnology Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281h"
+    },
+    {
+      "code": "BME 281J",
+      "title": "Seminar in Computational Genomics and Biomedicine",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281j"
+    },
+    {
+      "code": "BME 281L",
+      "title": "Seminar in Computational Genetics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281l"
+    },
+    {
+      "code": "BME 281M",
+      "title": "Seminar on Chromosome Biology and Function",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281m"
+    },
+    {
+      "code": "BME 281N",
+      "title": "Seminar in Transcriptomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281n"
+    },
+    {
+      "code": "BME 281P",
+      "title": "Seminar on Nanotechnology and Biosensors",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281p"
+    },
+    {
+      "code": "BME 281R",
+      "title": "Seminar in Stem Cell Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281r"
+    },
+    {
+      "code": "BME 281S",
+      "title": "Seminar in Computational Functional Genomics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281s"
+    },
+    {
+      "code": "BME 281T",
+      "title": "Seminar in Neuroengineering and Systems Neuroscience",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281t"
+    },
+    {
+      "code": "BME 281V",
+      "title": "Immunogenomics Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281v"
+    },
+    {
+      "code": "BME 281X",
+      "title": "Microbial Symbiosis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281x"
+    },
+    {
+      "code": "BME 281Y",
+      "title": "Seminar on Protein Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281y"
+    },
+    {
+      "code": "BME 281Z",
+      "title": "Seminar in Population and Evolutionary Genomics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281z"
+    },
+    {
+      "code": "BME 288",
+      "title": "Bioethics in the 21st Century: Science, Business, and Society",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-288"
+    },
+    {
+      "code": "BME 293",
+      "title": "Seminar in Biomolecular Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-293"
+    },
+    {
+      "code": "BME 296",
+      "title": "Research in Bioinformatics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-296"
+    },
+    {
+      "code": "BME 297A",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297a"
+    },
+    {
+      "code": "BME 297B",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297b"
+    },
+    {
+      "code": "BME 297C",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297c"
+    },
+    {
+      "code": "BME 297F",
+      "title": "Independent Study or Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297f"
+    },
+    {
+      "code": "BME 299A",
       "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/graduate/film-299b"
-    },
-    {
-      "code": "FILM 80E",
-      "title": "Eco-Media",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299a"
     },
     {
-      "code": "FILM 80H",
-      "title": "A History of Animation",
+      "code": "BME 299B",
+      "title": "Thesis Research",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299b"
     },
     {
-      "code": "GRAD 200",
-      "title": "Academic Writing for Graduate Students",
-      "status": "blocked",
-      "errors": [
-        "invalid-units"
-      ],
-      "warnings": [
-        "review:missing-units",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200"
-    },
-    {
-      "code": "GRAD 201",
-      "title": "Oral Communication for Graduate Students",
-      "status": "blocked",
-      "errors": [
-        "invalid-units"
-      ],
-      "warnings": [
-        "review:missing-units",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201"
-    },
-    {
-      "code": "GRAD 202",
-      "title": "Reading and Research Skills for Graduate Students",
-      "status": "blocked",
-      "errors": [
-        "invalid-units"
-      ],
-      "warnings": [
-        "review:missing-units",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202"
-    },
-    {
-      "code": "GRAD 213",
-      "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
+      "code": "BME 299C",
+      "title": "Thesis Research",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299c"
     },
     {
-      "code": "GRAD 215",
-      "title": "Equitable Course Design for Graduate Student Instructors",
+      "code": "CHEM 200A",
+      "title": "Advanced Biochemistry: Biophysical Methods",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200a"
     },
     {
-      "code": "MATH 139",
-      "title": "Mathematical Problems in Machine Learning",
-      "status": "warnings-only",
+      "code": "CHEM 200B",
+      "title": "Advanced Biochemistry: Macromolecular Structure and Function",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-139"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200b"
     },
     {
-      "code": "MATH 200",
-      "title": "Algebra I",
-      "status": "warnings-only",
+      "code": "CHEM 200C",
+      "title": "Advanced Biochemistry: Enzyme Mechanisms and Kinetics",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-200"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200c"
     },
     {
-      "code": "MATH 201",
-      "title": "Algebra II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-201"
-    },
-    {
-      "code": "MATH 202",
-      "title": "Algebra III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-202"
-    },
-    {
-      "code": "MATH 203",
-      "title": "Algebra IV",
+      "code": "CHEM 222",
+      "title": "Career Success in Industrial Science/ Engineering",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-222"
     },
     {
-      "code": "MATH 204",
-      "title": "Analysis I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-204"
-    },
-    {
-      "code": "MATH 205",
-      "title": "Analysis II",
+      "code": "CHEM 230",
+      "title": "Grant Writing in Biomedical Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-205"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-230"
     },
     {
-      "code": "MATH 206",
-      "title": "Analysis III",
-      "status": "warnings-only",
+      "code": "CHEM 234",
+      "title": "Bioinorganic Chemistry",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-206"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-234"
     },
     {
-      "code": "MATH 207",
-      "title": "Complex Analysis",
-      "status": "warnings-only",
+      "code": "CHEM 238",
+      "title": "Topics in Biophysical Chemistry",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-207"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-238"
     },
     {
-      "code": "MATH 208",
-      "title": "Manifolds I",
+      "code": "CHEM 242A",
+      "title": "Modern Physical Organic Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-208"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242a"
     },
     {
-      "code": "MATH 209",
-      "title": "Manifolds II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-209"
-    },
-    {
-      "code": "MATH 210",
-      "title": "Manifolds III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-210"
-    },
-    {
-      "code": "MATH 211",
-      "title": "Algebraic Topology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-211"
-    },
-    {
-      "code": "MATH 212",
-      "title": "Differential Geometry",
+      "code": "CHEM 242B",
+      "title": "Modern Synthetic Methods in Organic Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-212"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242b"
     },
     {
-      "code": "MATH 213A",
-      "title": "Partial Differential Equations I",
+      "code": "CHEM 242C",
+      "title": "Spectroscopy and Applied Analytical Methods",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242c"
     },
     {
-      "code": "MATH 213B",
-      "title": "Partial Differential Equations II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-213b"
-    },
-    {
-      "code": "MATH 214",
-      "title": "Theory of Finite Groups",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-214"
-    },
-    {
-      "code": "MATH 215",
-      "title": "Operator Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-215"
-    },
-    {
-      "code": "MATH 216",
-      "title": "Advanced Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-216"
-    },
-    {
-      "code": "MATH 217",
-      "title": "Advanced Elliptic Partial Differential Equations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-217"
-    },
-    {
-      "code": "MATH 218",
-      "title": "Advanced Parabolic and Hyperbolic Partial Differential Equations",
+      "code": "CHEM 244",
+      "title": "Organic Free Radical Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-218"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-244"
     },
     {
-      "code": "MATH 219",
-      "title": "Nonlinear Functional Analysis",
+      "code": "CHEM 247",
+      "title": "Using DFT Computational Methods to Study Molecular Structure and Reactivity",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-219"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-247"
     },
     {
-      "code": "MATH 220A",
-      "title": "Representation Theory I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220a"
-    },
-    {
-      "code": "MATH 220B",
-      "title": "Representation Theory II",
+      "code": "CHEM 256A",
+      "title": "Advanced Topics in Inorganic Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-220b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256a"
     },
     {
-      "code": "MATH 222A",
-      "title": "Algebraic Number Theory",
+      "code": "CHEM 256B",
+      "title": "Advanced Topics in Inorganic Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256b"
     },
     {
-      "code": "MATH 222B",
-      "title": "Algebraic Number Theory",
+      "code": "CHEM 256C",
+      "title": "Advanced Topics in Inorganic Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-222b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256c"
     },
     {
-      "code": "MATH 223A",
-      "title": "Algebraic Geometry I",
+      "code": "CHEM 256D",
+      "title": "X-ray Crystallography",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256d"
     },
     {
-      "code": "MATH 223B",
-      "title": "Algebraic Geometry II",
+      "code": "CHEM 261",
+      "title": "Foundations of Spectroscopy",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-223b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-261"
     },
     {
-      "code": "MATH 225A",
-      "title": "Lie Algebras",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225a"
-    },
-    {
-      "code": "MATH 225B",
-      "title": "Infinite Dimensional Lie Algebras",
+      "code": "CHEM 262",
+      "title": "Statistical Mechanics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-225b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-262"
     },
     {
-      "code": "MATH 226A",
-      "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory I",
+      "code": "CHEM 263",
+      "title": "Quantum Mechanics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-263"
     },
     {
-      "code": "MATH 226B",
-      "title": "Infinite Dimensional Lie Algebras and Quantum Field Theory II",
+      "code": "CHEM 264",
+      "title": "Computational Materials",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-226b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-264"
     },
     {
-      "code": "MATH 227",
-      "title": "Lie Groups",
+      "code": "CHEM 265",
+      "title": "Computer Simulation in Statistical Mechanics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-265"
+    },
+    {
+      "code": "CHEM 268",
+      "title": "Solid State and Materials Chemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-227"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-268"
     },
     {
-      "code": "MATH 228",
-      "title": "Lie Incidence Geometries",
+      "code": "CHEM 269",
+      "title": "Electrochemistry",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-228"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-269"
     },
     {
-      "code": "MATH 229",
-      "title": "Kac-Moody Algebras",
+      "code": "CHEM 271",
+      "title": "Chemical Biology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-229"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-271"
     },
     {
-      "code": "MATH 232",
-      "title": "Morse Theory",
+      "code": "CHEM 272",
+      "title": "Mass Spectrometry: Fundamentals and Applications",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-272"
+    },
+    {
+      "code": "CHEM 274",
+      "title": "Proseminar in Synthetic and Polymer Chemistry",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-274"
+    },
+    {
+      "code": "CHEM 275",
+      "title": "Proseminar in Biological Inorganic Chemistry",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-275"
+    },
+    {
+      "code": "CHEM 280",
+      "title": "Proseminar in Materials Chemistry",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-280"
+    },
+    {
+      "code": "CHEM 282",
+      "title": "Proseminar: Synthetic Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-282"
+    },
+    {
+      "code": "CHEM 284",
+      "title": "Proseminar in Synthetic Organic Chemistry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-284"
+    },
+    {
+      "code": "CHEM 285",
+      "title": "Proseminar: Photobiochemistry and Photobiology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-285"
+    },
+    {
+      "code": "CHEM 286",
+      "title": "Proseminar in Natural Products Chemistry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-286"
+    },
+    {
+      "code": "CHEM 288",
+      "title": "Proseminar in Bioinorganic Chemistry",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-288"
+    },
+    {
+      "code": "CHEM 291",
+      "title": "Chemistry and Biochemistry Research Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-291"
+    },
+    {
+      "code": "CHEM 292",
+      "title": "Preparing Scientific Presentations",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-292"
+    },
+    {
+      "code": "CHEM 296",
+      "title": "Teaching Chemistry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-296"
+    },
+    {
+      "code": "CHEM 297A",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297a"
+    },
+    {
+      "code": "CHEM 297B",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297b"
+    },
+    {
+      "code": "CHEM 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299a"
+    },
+    {
+      "code": "CHEM 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299b"
+    },
+    {
+      "code": "CHEM 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299c"
+    },
+    {
+      "code": "CMPM 118S",
+      "title": "Research Pathway: Summer Vertically Integrated Project",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-118s"
+    },
+    {
+      "code": "CMPM 119",
+      "title": "Accessible Game Design and Evaluation",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -803,305 +2052,1471 @@
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-232"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-119"
     },
     {
-      "code": "MATH 233",
-      "title": "Random Matrix Theory",
+      "code": "CMPM 173",
+      "title": "Computational Media Prototyping",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-173"
+    },
+    {
+      "code": "CMPM 174",
+      "title": "Computational Media Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-174"
+    },
+    {
+      "code": "CMPM 201",
+      "title": "Introduction to Computational Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-201"
+    },
+    {
+      "code": "CMPM 202",
+      "title": "Computation Media Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-202"
+    },
+    {
+      "code": "CMPM 203",
+      "title": "Computational Media Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-203"
+    },
+    {
+      "code": "CMPM 204",
+      "title": "Computational Media Project Definition",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-204"
+    },
+    {
+      "code": "CMPM 205",
+      "title": "Bridging the Disciplines: Writing and Synthesis for Computational Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-205"
+    },
+    {
+      "code": "CMPM 206",
+      "title": "Computational Media Research Preparation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-206"
+    },
+    {
+      "code": "CMPM 230",
+      "title": "Data Science in Computational Experiences",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-230"
+    },
+    {
+      "code": "CMPM 232",
+      "title": "Psychology of Play",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-232"
+    },
+    {
+      "code": "CMPM 233",
+      "title": "Evaluating Computational Media Interfaces",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-233"
+    },
+    {
+      "code": "CMPM 235",
+      "title": "User Evaluation of Technology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-235"
+    },
+    {
+      "code": "CMPM 237",
+      "title": "Advanced&#160;Topics&#160;in&#160;Human-Robot&#160;Interaction",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-237"
+    },
+    {
+      "code": "CMPM 243",
+      "title": "Social Computing Research: Design, Algorithms, and Incentives",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-243"
+    },
+    {
+      "code": "CMPM 244",
+      "title": "Artificial Intelligence in Games",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-244"
+    },
+    {
+      "code": "CMPM 248",
+      "title": "Interactive Storytelling",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-248"
+    },
+    {
+      "code": "CMPM 255",
+      "title": "Games for Impact Studio I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-255"
+    },
+    {
+      "code": "CMPM 256",
+      "title": "Games for Impact Studio II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-256"
+    },
+    {
+      "code": "CMPM 265",
+      "title": "Generative Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-265"
+    },
+    {
+      "code": "CMPM 268",
+      "title": "Immersive Analytics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-268"
+    },
+    {
+      "code": "CMPM 269",
+      "title": "Machine Learning for Creativity and Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-269"
+    },
+    {
+      "code": "CMPM 280C",
+      "title": "Computational Media Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280c"
+    },
+    {
+      "code": "CMPM 280F",
+      "title": "Seminar&#160;in&#160;Creative&#160;Coding&#160;and&#160;Computational&#160;Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280f"
+    },
+    {
+      "code": "CMPM 280G",
+      "title": "Seminar in Generative Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280g"
+    },
+    {
+      "code": "CMPM 280H",
+      "title": "Seminar in Human-Computer Interaction and Computational Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280h"
+    },
+    {
+      "code": "CMPM 280I",
+      "title": "Human&#160;Computer&#160;Interaction&#160;Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280i"
+    },
+    {
+      "code": "CMPM 280K",
+      "title": "Seminar in Interactive Systems for Individuals with Special Needs",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280k"
+    },
+    {
+      "code": "CMPM 280P",
+      "title": "Seminar in Player Experience and Modeling",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280p"
+    },
+    {
+      "code": "CMPM 280R",
+      "title": "Topics&#160;in&#160;Human-Robot&#160;Interaction",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280r"
+    },
+    {
+      "code": "CMPM 280S",
+      "title": "Seminar Topics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280s"
+    },
+    {
+      "code": "CMPM 280W",
+      "title": "Seminar in Digital Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280w"
+    },
+    {
+      "code": "CMPM 280X",
+      "title": "Expressive AI",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280x"
+    },
+    {
+      "code": "CMPM 290A",
+      "title": "Topics in Computational Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290a"
+    },
+    {
+      "code": "CMPM 290J",
+      "title": "Playable Media",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290j"
+    },
+    {
+      "code": "CMPM 290K",
+      "title": "Social and Emotional Approaches to Human Computer Interaction",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290k"
+    },
+    {
+      "code": "CMPM 290P",
+      "title": "Topics in Computational Cinematography",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290p"
+    },
+    {
+      "code": "CMPM 296",
+      "title": "Masters Project",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-296"
+    },
+    {
+      "code": "CMPM 297A",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297a"
+    },
+    {
+      "code": "CMPM 297B",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297b"
+    },
+    {
+      "code": "CMPM 297C",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297c"
+    },
+    {
+      "code": "CMPM 297F",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297f"
+    },
+    {
+      "code": "CMPM 297G",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297g"
+    },
+    {
+      "code": "CMPM 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299a"
+    },
+    {
+      "code": "CMPM 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299b"
+    },
+    {
+      "code": "CMPM 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299c"
+    },
+    {
+      "code": "CSE 245",
+      "title": "Computational Models of Discourse and Dialogue",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245"
+    },
+    {
+      "code": "ECE 168",
+      "title": "Electric Motor Drives",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168"
+    },
+    {
+      "code": "ECE 186",
+      "title": "Entrepreneurship I",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-186"
+    },
+    {
+      "code": "ECE 187",
+      "title": "Entrepreneurship II",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-187"
+    },
+    {
+      "code": "ECE 200",
+      "title": "Research and Teaching in Electrical Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-200"
+    },
+    {
+      "code": "ECE 201",
+      "title": "Introduction to Nanotechnology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-201"
+    },
+    {
+      "code": "ECE 203",
+      "title": "Nanocharacterization of Materials",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-203"
+    },
+    {
+      "code": "ECE 204",
+      "title": "Bioelectronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-204"
+    },
+    {
+      "code": "ECE 205",
+      "title": "Fundamentals of Nanoelectronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-205"
+    },
+    {
+      "code": "ECE 207",
+      "title": "Nanomaterials and Nanometer-Scale Devices",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-207"
+    },
+    {
+      "code": "ECE 210",
+      "title": "Brain-Inspired Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-210"
+    },
+    {
+      "code": "ECE 218",
+      "title": "Mechatronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-218"
+    },
+    {
+      "code": "ECE 220",
+      "title": "Introduction to Imaging Instrumentation: Physics, Engineering, and Application",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-220"
+    },
+    {
+      "code": "ECE 221",
+      "title": "Advanced Analog Integrated Circuits",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-recommended-language",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-221"
+    },
+    {
+      "code": "ECE 222",
+      "title": "High-Speed Low-Power Integrated Circuit Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-222"
+    },
+    {
+      "code": "ECE 223",
+      "title": "Advanced Solid-State Devices",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-223"
+    },
+    {
+      "code": "ECE 224",
+      "title": "Device Electronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-224"
+    },
+    {
+      "code": "ECE 225",
+      "title": "Semiconductor Processing and Bandgap Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-225"
+    },
+    {
+      "code": "ECE 226",
+      "title": "CMOS Radio Frequency Integrated Circuit Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-226"
+    },
+    {
+      "code": "ECE 227",
+      "title": "Fundamentals of Semiconductor Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-227"
+    },
+    {
+      "code": "ECE 228",
+      "title": "Engineering of Thin Film Deposition",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-228"
+    },
+    {
+      "code": "ECE 229",
+      "title": "Quantum Electronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-229"
+    },
+    {
+      "code": "ECE 230",
+      "title": "Optical Fiber Communication",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-230"
+    },
+    {
+      "code": "ECE 231",
+      "title": "Optical Electronics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-231"
+    },
+    {
+      "code": "ECE 232",
+      "title": "Integrated Biophotonics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-232"
+    },
+    {
+      "code": "ECE 236",
+      "title": "Optics and Microscopy",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-236"
+    },
+    {
+      "code": "ECE 237",
+      "title": "Image Processing and Reconstruction",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-237"
+    },
+    {
+      "code": "ECE 238",
+      "title": "Medical Image Formation, Presentation, and Assessment",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-238"
+    },
+    {
+      "code": "ECE 250",
+      "title": "Digital Signal Processing",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-250"
+    },
+    {
+      "code": "ECE 251",
+      "title": "Principles of Digital Communications",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-251"
+    },
+    {
+      "code": "ECE 252",
+      "title": "Wireless Communications",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-252"
+    },
+    {
+      "code": "ECE 253",
+      "title": "Introduction to Information Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-253"
+    },
+    {
+      "code": "ECE 254",
+      "title": "Radar, Synthetic Aperture Radar, and ISAR",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-254"
+    },
+    {
+      "code": "ECE 255",
+      "title": "Error Control Coding",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-255"
+    },
+    {
+      "code": "ECE 256",
+      "title": "Statistical Signal Processing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-256"
+    },
+    {
+      "code": "ECE 257",
+      "title": "Signal Processing with Machine Learning",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-257"
+    },
+    {
+      "code": "ECE 258",
+      "title": "Introduction to Inverse Problems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-258"
+    },
+    {
+      "code": "ECE 263",
+      "title": "Small-Scale UAV Theory and Practice",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-recommended-language",
         "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
+        "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-233"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-263"
     },
     {
-      "code": "MATH 234",
-      "title": "Riemann Surfaces",
+      "code": "ECE 264",
+      "title": "Visual Navigation for Autonomous Vehicles",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-264"
+    },
+    {
+      "code": "ECE 268",
+      "title": "Electric Motor Drives",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-234"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-268"
     },
     {
-      "code": "MATH 235",
-      "title": "Dynamical Systems Theory",
+      "code": "ECE 269",
+      "title": "Electric Machinery and Control",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-235"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-269"
     },
     {
-      "code": "MATH 238",
-      "title": "Elliptic Functions and Modular Forms",
+      "code": "ECE 270",
+      "title": "Advanced Power Electronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-270"
+    },
+    {
+      "code": "ECE 271",
+      "title": "Integrated Analog Electronics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-271"
+    },
+    {
+      "code": "ECE 273",
+      "title": "Signal Integrity in PCB Design",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-273"
+    },
+    {
+      "code": "ECE 275",
+      "title": "Energy Market, Policy, and Modeling",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-275"
+    },
+    {
+      "code": "ECE 279",
+      "title": "Optimization and Control for Electric Power Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-279"
+    },
+    {
+      "code": "ECE 280A",
+      "title": "Current Topics in Applied Microscopy and Neuronal Imaging",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280a"
+    },
+    {
+      "code": "ECE 280B",
+      "title": "Seminar on Integrated Bioelectronics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280b"
+    },
+    {
+      "code": "ECE 280C",
+      "title": "Seminar on Control",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280c"
+    },
+    {
+      "code": "ECE 280D",
+      "title": "Graduate Research Seminar",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280d"
+    },
+    {
+      "code": "ECE 280N",
+      "title": "Seminar on Nanophotonics and Lab-on-Chip Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280n"
+    },
+    {
+      "code": "ECE 280O",
+      "title": "Seminar on Applied Optics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280o"
+    },
+    {
+      "code": "ECE 280Z",
+      "title": "Seminar on Smart Grids and Data Analytics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280z"
+    },
+    {
+      "code": "ECE 283",
+      "title": "Special Topics in Electrical and Computer Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-283"
+    },
+    {
+      "code": "ECE 290",
+      "title": "ECE Graduate Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-290"
+    },
+    {
+      "code": "ECE 291",
+      "title": "Tomorrow's Professors, Engineers, and Entrepreneurs",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-291"
+    },
+    {
+      "code": "ECE 293",
+      "title": "Advanced Topics in Electrical and Computer Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-293"
+    },
+    {
+      "code": "ECE 296",
+      "title": "Master Project",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-296"
+    },
+    {
+      "code": "ECE 297A",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297a"
+    },
+    {
+      "code": "ECE 297B",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297b"
+    },
+    {
+      "code": "ECE 297C",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297c"
+    },
+    {
+      "code": "ECE 297F",
+      "title": "Independent Study or Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297f"
+    },
+    {
+      "code": "ECE 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299a"
+    },
+    {
+      "code": "ECE 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299b"
+    },
+    {
+      "code": "ECE 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299c"
+    },
+    {
+      "code": "ECON 272",
+      "title": "Evolutionary Game Theory",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-recommended-language",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-272"
+    },
+    {
+      "code": "METX 200",
+      "title": "Interdisciplinary Approaches in Environmental Toxicology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-200"
+    },
+    {
+      "code": "PHIL 246",
+      "title": "Ethics, Nature, and Natural Selection",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-246"
+    },
+    {
+      "code": "PHYS 161",
+      "title": "Quantum Materials Research Laboratory",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-161"
+    },
+    {
+      "code": "PHYS 197",
+      "title": "Summer Intensive Research in Physics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-197"
+    },
+    {
+      "code": "PHYS 202",
+      "title": "Introduction to Teaching in Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-202"
+    },
+    {
+      "code": "PHYS 205",
+      "title": "Introduction to Research in Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-205"
+    },
+    {
+      "code": "PHYS 210",
+      "title": "Classical Mechanics and Thermal Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-210"
+    },
+    {
+      "code": "PHYS 212",
+      "title": "Electromagnetism I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-212"
+    },
+    {
+      "code": "PHYS 214",
+      "title": "Electromagnetism II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-214"
+    },
+    {
+      "code": "PHYS 215",
+      "title": "Introduction to Non-Relativistic Quantum Mechanics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-215"
+    },
+    {
+      "code": "PHYS 216",
+      "title": "Advanced Topics in Non-Relativistic Quantum Mechanics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-216"
+    },
+    {
+      "code": "PHYS 217",
+      "title": "Quantum Field Theory I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-238"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-217"
     },
     {
-      "code": "MATH 239",
-      "title": "Homological Algebra",
+      "code": "PHYS 218",
+      "title": "Quantum Field Theory II",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-239"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-218"
     },
     {
-      "code": "MATH 240A",
-      "title": "Representations of Finite Groups I",
+      "code": "PHYS 219",
+      "title": "Statistical Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-219"
     },
     {
-      "code": "MATH 240B",
-      "title": "Representations of Finite Groups II",
+      "code": "PHYS 220",
+      "title": "Theory of Many-Body Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-recommended-language",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-220"
+    },
+    {
+      "code": "PHYS 221A",
+      "title": "Introduction to Particle Physics I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-prior-or-concurrent-language",
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-240b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-221a"
     },
     {
-      "code": "MATH 246",
-      "title": "Representations of Algebras",
+      "code": "PHYS 221B",
+      "title": "Introduction to Particle Physics II",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-246"
-    },
-    {
-      "code": "MATH 248",
-      "title": "Symplectic Geometry",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
+        "review:contains-prior-or-concurrent-language",
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-248"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-221b"
     },
     {
-      "code": "MATH 249A",
-      "title": "Mechanics I",
+      "code": "PHYS 222",
+      "title": "Quantum Field Theory III",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-222"
     },
     {
-      "code": "MATH 249B",
-      "title": "Mechanics II",
+      "code": "PHYS 224",
+      "title": "Particle Astrophysics and Cosmology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-224"
     },
     {
-      "code": "MATH 249C",
-      "title": "Mechanics III",
+      "code": "PHYS 226",
+      "title": "General Relativity",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-249c"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-226"
     },
     {
-      "code": "MATH 252",
-      "title": "Fluid Mechanics",
+      "code": "PHYS 231",
+      "title": "Introduction to Condensed Matter Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-recommended-language",
+        "review:contains-permission-or-consent-exception",
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-252"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-231"
     },
     {
-      "code": "MATH 254",
-      "title": "Geometric Analysis",
+      "code": "PHYS 232",
+      "title": "Condensed Matter Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-254"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-232"
     },
     {
-      "code": "MATH 256",
-      "title": "Algebraic Curves",
+      "code": "PHYS 233",
+      "title": "Advanced Condensed Matter Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-256"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-233"
     },
     {
-      "code": "MATH 260",
-      "title": "Combinatorics",
+      "code": "PHYS 234",
+      "title": "Soft Condensed Matter Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-260"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-234"
     },
     {
-      "code": "MATH 264",
-      "title": "Inverse Problems and Integral Geometry",
+      "code": "PHYS 240",
+      "title": "Polymer Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-264"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-240"
     },
     {
-      "code": "MATH 280",
-      "title": "Topics in Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-280"
-    },
-    {
-      "code": "MATH 281",
-      "title": "Topics in Algebra",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-281"
-    },
-    {
-      "code": "MATH 282",
-      "title": "Topics in Geometry",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-282"
-    },
-    {
-      "code": "MATH 283",
-      "title": "Topics in Combinatorial Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-283"
-    },
-    {
-      "code": "MATH 284",
-      "title": "Topics in Dynamics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description",
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-284"
-    },
-    {
-      "code": "MATH 285",
-      "title": "Topics in Partial Differential Equations",
+      "code": "PHYS 242",
+      "title": "Computational Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-285"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-242"
     },
     {
-      "code": "MATH 286",
-      "title": "Topics in Number Theory",
+      "code": "PHYS 251",
+      "title": "Group Theory and Modern Physics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-286"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-251"
     },
     {
-      "code": "MATH 287",
-      "title": "Topics in Topology",
+      "code": "PHYS 261",
+      "title": "Fundamentals of Mesoscopic Systems",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-261"
+    },
+    {
+      "code": "PHYS 262",
+      "title": "Phase Transformations in Materials",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-287"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-262"
     },
     {
-      "code": "MATH 288A",
-      "title": "Pedagogy of Mathematics",
+      "code": "PHYS 290",
+      "title": "Special Topics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-290"
     },
     {
-      "code": "MATH 288B",
-      "title": "Pedagogy of Mathematics",
+      "code": "PHYS 291A",
+      "title": "Cosmology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-288b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291a"
     },
     {
-      "code": "MATH 292",
+      "code": "PHYS 291B",
+      "title": "X-rays and Magnetism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291b"
+    },
+    {
+      "code": "PHYS 291C",
+      "title": "Developments in Theoretical Particle Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291c"
+    },
+    {
+      "code": "PHYS 291D",
+      "title": "Experimental High-Energy Collider Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291d"
+    },
+    {
+      "code": "PHYS 291E",
+      "title": "Applied Physics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291e"
+    },
+    {
+      "code": "PHYS 291F",
+      "title": "Experimental High-Energy and Particle Astrophysics Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291f"
+    },
+    {
+      "code": "PHYS 291G",
+      "title": "Condensed Matter Physics Research Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291g"
+    },
+    {
+      "code": "PHYS 291H",
+      "title": "Physics Education and Communication Seminar",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291h"
+    },
+    {
+      "code": "PHYS 292",
       "title": "Seminar",
       "status": "blocked",
       "errors": [
@@ -1111,525 +3526,112 @@
         "review:missing-units",
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-292"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292"
     },
     {
-      "code": "MATH 296",
-      "title": "Special Student Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-296"
-    },
-    {
-      "code": "MATH 297A",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297a"
-    },
-    {
-      "code": "MATH 297B",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297b"
-    },
-    {
-      "code": "MATH 297C",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-297c"
-    },
-    {
-      "code": "MATH 298",
-      "title": "Master's Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-298"
-    },
-    {
-      "code": "MATH 299A",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299a"
-    },
-    {
-      "code": "MATH 299B",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299b"
-    },
-    {
-      "code": "MATH 299C",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-299c"
-    },
-    {
-      "code": "MSE 1",
-      "title": "Materials and Human Civilization",
+      "code": "PHYS 292F",
+      "title": "Seminar",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292f"
     },
     {
-      "code": "MSE 200",
-      "title": "Introduction to Materials Science and Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-200"
-    },
-    {
-      "code": "MSE 280",
-      "title": "Colloquium in Materials Science and Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-280"
-    },
-    {
-      "code": "MSE 290",
-      "title": "Research Rotation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/graduate/mse-290"
-    },
-    {
-      "code": "SOCD 293",
-      "title": "Studies and Practice for Social Documentation, Filmmaking, and New Media",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-293"
-    },
-    {
-      "code": "STAT 200",
-      "title": "Research and Teaching in Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-200"
-    },
-    {
-      "code": "STAT 202",
-      "title": "Linear Models in SAS",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-202"
-    },
-    {
-      "code": "STAT 203",
-      "title": "Introduction to Probability Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203"
-    },
-    {
-      "code": "STAT 204",
-      "title": "Introduction to Statistical Data Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-204"
-    },
-    {
-      "code": "STAT 205",
-      "title": "Introduction to Classical Statistical Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205"
-    },
-    {
-      "code": "STAT 205B",
-      "title": "Intermediate Classical Inference",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-205b"
-    },
-    {
-      "code": "STAT 206",
-      "title": "Applied Bayesian Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206"
-    },
-    {
-      "code": "STAT 206B",
-      "title": "Intermediate Bayesian Inference",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-206b"
-    },
-    {
-      "code": "STAT 207",
-      "title": "Intermediate Bayesian Statistical Modeling",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-207"
-    },
-    {
-      "code": "STAT 208",
-      "title": "Linear Statistical Models",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-208"
-    },
-    {
-      "code": "STAT 209",
-      "title": "Generalized Linear Models",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-209"
-    },
-    {
-      "code": "STAT 221",
-      "title": "Statistical Machine Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-221"
-    },
-    {
-      "code": "STAT 222",
-      "title": "Bayesian Nonparametric Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-222"
-    },
-    {
-      "code": "STAT 223",
-      "title": "Time Series Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-223"
-    },
-    {
-      "code": "STAT 224",
-      "title": "Bayesian Survival Analysis and Clinical Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-224"
-    },
-    {
-      "code": "STAT 225",
-      "title": "Multivariate Statistical Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-225"
-    },
-    {
-      "code": "STAT 226",
-      "title": "Spatial Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-226"
-    },
-    {
-      "code": "STAT 227",
-      "title": "Statistical Learning and High Dimensional Data Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-227"
-    },
-    {
-      "code": "STAT 229",
-      "title": "Advanced Bayesian Computation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-229"
-    },
-    {
-      "code": "STAT 243",
-      "title": "Stochastic Processes",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-243"
-    },
-    {
-      "code": "STAT 244",
-      "title": "Bayesian Decision Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-244"
-    },
-    {
-      "code": "STAT 246",
-      "title": "Probability Theory with Markov Chains",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-246"
-    },
-    {
-      "code": "STAT 266B",
-      "title": "Advanced Statistical Programming in R",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:prerequisite-references-missing-locally",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266b"
-    },
-    {
-      "code": "STAT 266C",
-      "title": "Introduction to Data Wrangling",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:prerequisite-references-missing-locally",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-266c"
-    },
-    {
-      "code": "STAT 280B",
-      "title": "Seminars in Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280b"
-    },
-    {
-      "code": "STAT 280D",
-      "title": "Seminar in Bayesian Statistical Methodology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-280d"
-    },
-    {
-      "code": "STAT 285",
-      "title": "Seminar in Career Skills",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-285"
-    },
-    {
-      "code": "STAT 291",
-      "title": "Advanced Topics in Bayesian Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-291"
-    },
-    {
-      "code": "STAT 292",
-      "title": "Advanced Topics in Statistics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-292"
-    },
-    {
-      "code": "STAT 296",
-      "title": "Masters Project",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-296"
-    },
-    {
-      "code": "STAT 297A",
-      "title": "Independent Study or Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297a"
-    },
-    {
-      "code": "STAT 297B",
-      "title": "Independent Study or Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297b"
-    },
-    {
-      "code": "STAT 297C",
-      "title": "Independent Study or Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297c"
-    },
-    {
-      "code": "STAT 297F",
+      "code": "PHYS 297A",
       "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-297f"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297a"
     },
     {
-      "code": "STAT 299A",
+      "code": "PHYS 297B",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297b"
+    },
+    {
+      "code": "PHYS 297C",
+      "title": "Independent Study",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297c"
+    },
+    {
+      "code": "PHYS 298",
+      "title": "Theoretical and Experimental Research Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-298"
+    },
+    {
+      "code": "PHYS 299A",
       "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299a"
     },
     {
-      "code": "STAT 299B",
+      "code": "PHYS 299B",
       "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299b"
     },
     {
-      "code": "STAT 299C",
+      "code": "PHYS 299C",
       "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-299c"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299c"
+    },
+    {
+      "code": "PHYS 6P",
+      "title": "Preparation for Physics 6",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-references-missing-locally",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-6p"
+    },
+    {
+      "code": "PHYS 80C",
+      "title": "The Cosmos",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80c"
+    },
+    {
+      "code": "PHYS 80S",
+      "title": "Physics in Sports and Recreation",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80s"
     }
   ]
 }

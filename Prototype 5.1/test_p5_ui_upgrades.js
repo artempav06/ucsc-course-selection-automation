@@ -659,22 +659,29 @@ function testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch() {
 
 function testNextDepartmentCleanUndergradCoursesAreSearchable() {
   const { __p5 } = loadApp();
-  for (const code of ['FILM 80E', 'FILM 80H', 'FILM 171B', 'MSE 1']) {
-    assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA`);
+  const fiveDepartmentCleanCodes = ['FILM 80E', 'FILM 80H', 'FILM 171B', 'MSE 1'];
+  const sevenDepartmentCleanCodes = ['CMPM 118S', 'ECE 186', 'ECE 187', 'PHYS 80C', 'PHYS 80S', 'PHYS 161', 'PHYS 197'];
+  const reviewedWarningUndergradCodes = ['MATH 139', 'BIOE 119L', 'BIOL 10', 'BIOL 26', 'CMPM 119', 'CMPM 173', 'CMPM 174', 'ECE 168', 'PHYS 6P'];
+  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes]) {
+    assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA or Hermes prerequisite review`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'undergraduate'), `${code} should be findable in manual academic-history search`);
   }
-  assert(!__p5.COURSES['MATH 139'], 'warning-only undergrad MATH 139 should remain staged for review instead of being auto-merged');
+  assert.strictEqual(JSON.stringify(__p5.COURSES['MATH 139'].prereqs), JSON.stringify([['MATH 100']]), 'MATH 139 should enforce only MATH 100; recommended coding/MATH 152 should not be encoded as required');
+  assert.strictEqual(JSON.stringify(__p5.COURSES['CMPM 119'].prereqs), JSON.stringify([['CMPM 80K']]), 'CMPM 119 should enforce CMPM 80K while leaving programming experience as recommended text only');
+  assert.strictEqual(JSON.stringify(__p5.COURSES['PHYS 6P'].prereqs), JSON.stringify([['MATH 11A', 'MATH 16A', 'MATH 19A', 'MATH 20A', 'AM 15A']]), 'PHYS 6P should preserve official calculus prerequisite alternatives');
 }
 
 function testNextDepartmentGraduateCoursesStaySearchOnly() {
   const { __p5 } = loadApp();
-  for (const code of ['FILM 296F', 'GRAD 213', 'STAT 200', 'MATH 200', 'MSE 200']) {
+  const fiveDepartmentGradCodes = ['FILM 296F', 'GRAD 213', 'STAT 200', 'MATH 200', 'MSE 200'];
+  const sevenDepartmentGradCodes = ['PHYS 202', 'CHEM 200A', 'BME 201', 'BIOE 200A', 'BIOL 200A', 'ECE 200', 'CMPM 201'];
+  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes]) {
     assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
     assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
     assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'graduate'), `${code} should be findable through manual typed search`);
   }
-  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292']) {
+  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292', 'BIOE 281M', 'BIOE 294', 'BIOL 292', 'PHYS 292']) {
     assert(!__p5.COURSES[blocked], `${blocked} has invalid units and must not enter COURSES`);
     assert(!__p5.GRADUATE_COURSES[blocked], `${blocked} has invalid units and must not enter graduate search-only catalog`);
   }
@@ -686,7 +693,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('five-dept-catalog'), `${asset} cache-buster should change for the five-department catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('reviewed-undergrad-catalog'), `${asset} cache-buster should change for the reviewed undergraduate catalog update so browsers do not reuse old JS`);
   }
 }
 

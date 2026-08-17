@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T00:12:07.793Z",
-  "missingOfficialCourseCount": 1977,
+  "generatedAt": "2026-08-17T02:13:11.497Z",
+  "missingOfficialCourseCount": 1957,
   "departments": [
     {
       "subject": "AM",
@@ -1832,16 +1832,8 @@
       "subject": "BIOE",
       "departmentText": "BIOE - Biology Ecology and Evolutionary",
       "departmentSlug": "bioe-biology-ecology-and-evolutionary",
-      "count": 54,
+      "count": 53,
       "courses": [
-        {
-          "code": "BIOE 119L",
-          "title": "Plant Biotechnology Lab for a Changing World",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-119l",
-          "departmentSlug": "bioe-biology-ecology-and-evolutionary",
-          "departmentText": "BIOE - Biology Ecology and Evolutionary",
-          "divisionPath": "100"
-        },
         {
           "code": "BIOE 200A",
           "title": "Scientific Skills",
@@ -2404,24 +2396,8 @@
       "subject": "BIOL",
       "departmentText": "BIOL - Biology Molecular Cell and Developmental",
       "departmentSlug": "biol-biology-molecular-cell-and-developmental",
-      "count": 69,
+      "count": 67,
       "courses": [
-        {
-          "code": "BIOL 10",
-          "title": "Fundamentals of Biology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-10",
-          "departmentSlug": "biol-biology-molecular-cell-and-developmental",
-          "departmentText": "BIOL - Biology Molecular Cell and Developmental",
-          "divisionPath": "1-99"
-        },
-        {
-          "code": "BIOL 26",
-          "title": "Frosh/Soph Seminar in Molecular & Cell Biology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-26",
-          "departmentSlug": "biol-biology-molecular-cell-and-developmental",
-          "departmentText": "BIOL - Biology Molecular Cell and Developmental",
-          "divisionPath": "1-99"
-        },
         {
           "code": "BIOL 200A",
           "title": "Critical Analysis of Scientific Literature",
@@ -3890,50 +3866,8 @@
       "subject": "CMPM",
       "departmentText": "CMPM - Computational Media",
       "departmentSlug": "cmpm-computational-media",
-      "count": 47,
+      "count": 43,
       "courses": [
-        {
-          "code": "CMPM 118S",
-          "title": "Research Pathway: Summer Vertically Integrated Project",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-118s",
-          "departmentSlug": "cmpm-computational-media",
-          "departmentText": "CMPM - Computational Media",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CMPM 119",
-          "title": "Accessible Game Design and Evaluation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-119",
-          "departmentSlug": "cmpm-computational-media",
-          "departmentText": "CMPM - Computational Media",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CMPM 173",
-          "title": "Computational Media Prototyping",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-173",
-          "departmentSlug": "cmpm-computational-media",
-          "departmentText": "CMPM - Computational Media",
-          "divisionPath": "upper-division",
-          "alternatePages": [
-            {
-              "code": "CMPM 173",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-173",
-              "departmentSlug": "cmpm-computational-media",
-              "departmentText": "CMPM - Computational Media",
-              "divisionPath": "upper-division"
-            }
-          ]
-        },
-        {
-          "code": "CMPM 174",
-          "title": "Computational Media Project",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-174",
-          "departmentSlug": "cmpm-computational-media",
-          "departmentText": "CMPM - Computational Media",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "CMPM 201",
           "title": "Introduction to Computational Media",
@@ -7180,60 +7114,8 @@
       "subject": "ECE",
       "departmentText": "ECE - Electrical and Computer Engineering",
       "departmentSlug": "ece-electrical-and-computer-engineering",
-      "count": 63,
+      "count": 60,
       "courses": [
-        {
-          "code": "ECE 168",
-          "title": "Electric Motor Drives",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168",
-          "departmentSlug": "ece-electrical-and-computer-engineering",
-          "departmentText": "ECE - Electrical and Computer Engineering",
-          "divisionPath": "upper-division",
-          "alternatePages": [
-            {
-              "code": "ECE 168",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168",
-              "departmentSlug": "ece-electrical-and-computer-engineering",
-              "departmentText": "ECE - Electrical and Computer Engineering",
-              "divisionPath": "upper-division"
-            },
-            {
-              "code": "ECE 168",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168",
-              "departmentSlug": "ece-electrical-and-computer-engineering",
-              "departmentText": "ECE - Electrical and Computer Engineering",
-              "divisionPath": "upper-division"
-            }
-          ]
-        },
-        {
-          "code": "ECE 186",
-          "title": "Entrepreneurship I",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-186",
-          "departmentSlug": "ece-electrical-and-computer-engineering",
-          "departmentText": "ECE - Electrical and Computer Engineering",
-          "divisionPath": "upper-division",
-          "alternatePages": [
-            {
-              "code": "ECE 186",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-186",
-              "departmentSlug": "ece-electrical-and-computer-engineering",
-              "departmentText": "ECE - Electrical and Computer Engineering",
-              "divisionPath": "upper-division"
-            }
-          ]
-        },
-        {
-          "code": "ECE 187",
-          "title": "Entrepreneurship II",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-187",
-          "departmentSlug": "ece-electrical-and-computer-engineering",
-          "departmentText": "ECE - Electrical and Computer Engineering",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "ECE 200",
           "title": "Research and Teaching in Electrical Engineering",
@@ -10422,32 +10304,8 @@
       "subject": "FILM",
       "departmentText": "FILM - Film and Digital Media",
       "departmentSlug": "film-film-and-digital-media",
-      "count": 34,
+      "count": 31,
       "courses": [
-        {
-          "code": "FILM 80E",
-          "title": "Eco-Media",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80e",
-          "departmentSlug": "film-film-and-digital-media",
-          "departmentText": "FILM - Film and Digital Media",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "FILM 80H",
-          "title": "A History of Animation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/lower-division/film-80h",
-          "departmentSlug": "film-film-and-digital-media",
-          "departmentText": "FILM - Film and Digital Media",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "FILM 171B",
-          "title": "Immersive Sound Design",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/film-film-and-digital-media/upper-division/film-171b",
-          "departmentSlug": "film-film-and-digital-media",
-          "departmentText": "FILM - Film and Digital Media",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "FILM 200A",
           "title": "Introduction to Graduate Study",
@@ -14908,16 +14766,8 @@
       "subject": "MATH",
       "departmentText": "MATH - Mathematics",
       "departmentSlug": "math-mathematics",
-      "count": 72,
+      "count": 71,
       "courses": [
-        {
-          "code": "MATH 139",
-          "title": "Mathematical Problems in Machine Learning",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/upper-division/math-139",
-          "departmentSlug": "math-mathematics",
-          "departmentText": "MATH - Mathematics",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "MATH 200",
           "title": "Algebra I",
@@ -16674,16 +16524,8 @@
       "subject": "MSE",
       "departmentText": "MSE-Materials Science and Engineering",
       "departmentSlug": "mse-materials-science-and-engineering",
-      "count": 4,
+      "count": 3,
       "courses": [
-        {
-          "code": "MSE 1",
-          "title": "Materials and Human Civilization",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/mse-materials-science-and-engineering/lower-division/mse-1",
-          "departmentSlug": "mse-materials-science-and-engineering",
-          "departmentText": "MSE-Materials Science and Engineering",
-          "divisionPath": "lower-division"
-        },
         {
           "code": "MSE 200",
           "title": "Introduction to Materials Science and Engineering",
@@ -18336,48 +18178,8 @@
       "subject": "PHYS",
       "departmentText": "PHYS - Physics",
       "departmentSlug": "phys-physics",
-      "count": 47,
+      "count": 42,
       "courses": [
-        {
-          "code": "PHYS 6P",
-          "title": "Preparation for Physics 6",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-6p",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PHYS 80C",
-          "title": "The Cosmos",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80c",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PHYS 80S",
-          "title": "Physics in Sports and Recreation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80s",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PHYS 161",
-          "title": "Quantum Materials Research Laboratory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-161",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "PHYS 197",
-          "title": "Summer Intensive Research in Physics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-197",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "PHYS 202",
           "title": "Introduction to Teaching in Physics",
