@@ -1,21 +1,13 @@
 {
-  "generatedAt": "2026-08-17T02:23:42.503Z",
-  "missingOfficialCourseCount": 1957,
+  "generatedAt": "2026-08-17T04:50:33.883Z",
+  "missingOfficialCourseCount": 1908,
   "departments": [
     {
       "subject": "AM",
       "departmentText": "AM - Applied Mathematics",
       "departmentSlug": "am-applied-mathematics",
-      "count": 34,
+      "count": 33,
       "courses": [
-        {
-          "code": "AM 180",
-          "title": "Reading Research Papers in Applied Mathematics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/upper-division/am-180",
-          "departmentSlug": "am-applied-mathematics",
-          "departmentText": "AM - Applied Mathematics",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "AM 200",
           "title": "Teaching in Applied Mathematics",
@@ -444,34 +436,8 @@
       "subject": "ANTH",
       "departmentText": "ANTH - Anthropology",
       "departmentSlug": "anth-anthropology",
-      "count": 81,
+      "count": 79,
       "courses": [
-        {
-          "code": "ANTH 151D",
-          "title": "Introduction to Design Anthropology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-151d",
-          "departmentSlug": "anth-anthropology",
-          "departmentText": "ANTH - Anthropology",
-          "divisionPath": "100",
-          "alternatePages": [
-            {
-              "code": "ANTH 151D",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-151d",
-              "departmentSlug": "anth-anthropology",
-              "departmentText": "ANTH - Anthropology",
-              "divisionPath": "100"
-            }
-          ]
-        },
-        {
-          "code": "ANTH 196Y",
-          "title": "Archaeology and the Rise of Nationalism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-196y",
-          "departmentSlug": "anth-anthropology",
-          "departmentText": "ANTH - Anthropology",
-          "divisionPath": "100"
-        },
         {
           "code": "ANTH 200",
           "title": "Theoretical Foundations of Physical Anthropological Research",
@@ -1290,32 +1256,8 @@
       "subject": "ART",
       "departmentText": "ART - Art",
       "departmentSlug": "art-art",
-      "count": 17,
+      "count": 14,
       "courses": [
-        {
-          "code": "ART 131",
-          "title": "Painting with Fire",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-131",
-          "departmentSlug": "art-art",
-          "departmentText": "ART - Art",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ART 136",
-          "title": "Murals and Movements",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-136",
-          "departmentSlug": "art-art",
-          "departmentText": "ART - Art",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ART 171",
-          "title": "Art, Food, and Ecology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-171",
-          "departmentSlug": "art-art",
-          "departmentText": "ART - Art",
-          "divisionPath": "100"
-        },
         {
           "code": "ART 210A",
           "title": "Practice-Based Research Group: Sites",
@@ -1505,99 +1447,11 @@
       ]
     },
     {
-      "subject": "ARTG",
-      "departmentText": "ARTG - Art & Design: Games + Playable Media",
-      "departmentSlug": "artg-art-and-design-games-and-playable-media",
-      "count": 7,
-      "courses": [
-        {
-          "code": "ARTG 93",
-          "title": "Participation in a Changing World",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/lower-division/artg-93",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "ARTG 110",
-          "title": "Game Engines for Artists",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-110",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ARTG 111",
-          "title": "MateREALITIES: Sculptural Components of Games and Interactive Artworks",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-111",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ARTG 129C",
-          "title": "Special Topics in Game Design: Craft Refinement",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129c",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ARTG 129P",
-          "title": "Special Topics in Game Design: Performance & Exhibition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129p",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ARTG 129S",
-          "title": "Special Topics in Game Design: Social Interventions",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129s",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ARTG 190",
-          "title": "Open Source Afro Hair Library Contributor Studio",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-190",
-          "departmentSlug": "artg-art-and-design-games-and-playable-media",
-          "departmentText": "ARTG - Art & Design: Games + Playable Media",
-          "divisionPath": "100"
-        }
-      ]
-    },
-    {
       "subject": "ASTR",
       "departmentText": "ASTR - Astronomy and Astrophysics",
       "departmentSlug": "astr-astronomy-and-astrophysics",
-      "count": 29,
+      "count": 26,
       "courses": [
-        {
-          "code": "ASTR 49",
-          "title": "Cultural Astronomy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/1-99/astr-49",
-          "departmentSlug": "astr-astronomy-and-astrophysics",
-          "departmentText": "ASTR - Astronomy and Astrophysics",
-          "divisionPath": "1-99"
-        },
-        {
-          "code": "ASTR 116",
-          "title": "Fundamentals of Astrobiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-116",
-          "departmentSlug": "astr-astronomy-and-astrophysics",
-          "departmentText": "ASTR - Astronomy and Astrophysics",
-          "divisionPath": "100"
-        },
-        {
-          "code": "ASTR 125",
-          "title": "Machining for Physics and Astronomy Instrumentation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-125",
-          "departmentSlug": "astr-astronomy-and-astrophysics",
-          "departmentText": "ASTR - Astronomy and Astrophysics",
-          "divisionPath": "100"
-        },
         {
           "code": "ASTR 202",
           "title": "Astrophysics I",
@@ -3831,22 +3685,6 @@
       ]
     },
     {
-      "subject": "CHIN",
-      "departmentText": "CHIN - Chinese",
-      "departmentSlug": "chin-chinese",
-      "count": 1,
-      "courses": [
-        {
-          "code": "CHIN 109",
-          "title": "Haunted Justice: Goddess, Ghosts, and Gender in Chinese Folklore",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese/upper-division/chin-109",
-          "departmentSlug": "chin-chinese",
-          "departmentText": "CHIN - Chinese",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
       "subject": "CMMU",
       "departmentText": "CMMU - Community Studies",
       "departmentSlug": "cmmu-community-studies",
@@ -4328,48 +4166,8 @@
       "subject": "CRES",
       "departmentText": "CRES - Critical Race and Ethnic Studies",
       "departmentSlug": "cres-critical-race-and-ethnic-studies",
-      "count": 23,
+      "count": 18,
       "courses": [
-        {
-          "code": "CRES 141",
-          "title": "Learning with the Land",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-141",
-          "departmentSlug": "cres-critical-race-and-ethnic-studies",
-          "departmentText": "CRES - Critical Race and Ethnic Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRES 143",
-          "title": "Trans Love in a Hopeless Place",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-143",
-          "departmentSlug": "cres-critical-race-and-ethnic-studies",
-          "departmentText": "CRES - Critical Race and Ethnic Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRES 178",
-          "title": "Authoritarianism and Fascism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-178",
-          "departmentSlug": "cres-critical-race-and-ethnic-studies",
-          "departmentText": "CRES - Critical Race and Ethnic Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRES 190I",
-          "title": "Talanoa—Talkin Story: Indigenous, Decolonial Research and Methodologies",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190i",
-          "departmentSlug": "cres-critical-race-and-ethnic-studies",
-          "departmentText": "CRES - Critical Race and Ethnic Studies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRES 190W",
-          "title": "Queer & Anti-Colonial Gardening",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190w",
-          "departmentSlug": "cres-critical-race-and-ethnic-studies",
-          "departmentText": "CRES - Critical Race and Ethnic Studies",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "CRES 200",
           "title": "Black Studies Methods",
@@ -4547,99 +4345,11 @@
       ]
     },
     {
-      "subject": "CRSN",
-      "departmentText": "CRSN - Carson College",
-      "departmentSlug": "crsn-carson-college",
-      "count": 5,
-      "courses": [
-        {
-          "code": "CRSN 11",
-          "title": "Introduction to Sustainabilities and Social Justice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-11",
-          "departmentSlug": "crsn-carson-college",
-          "departmentText": "CRSN - Carson College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "CRSN 23",
-          "title": "Campus Natural History Practicum",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-23",
-          "departmentSlug": "crsn-carson-college",
-          "departmentText": "CRSN - Carson College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "CRSN 32",
-          "title": "Reading Sci-Fi: Octavia Butler and Ursula LeGuin",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-32",
-          "departmentSlug": "crsn-carson-college",
-          "departmentText": "CRSN - Carson College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "CRSN 100",
-          "title": "Writing Sustainabilities",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-100",
-          "departmentSlug": "crsn-carson-college",
-          "departmentText": "CRSN - Carson College",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRSN 120",
-          "title": "Diverse Perspectives on Sustainability and Justice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-120",
-          "departmentSlug": "crsn-carson-college",
-          "departmentText": "CRSN - Carson College",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
       "subject": "CRWN",
       "departmentText": "CRWN - Crown College",
       "departmentSlug": "crwn-crown-college",
-      "count": 6,
+      "count": 1,
       "courses": [
-        {
-          "code": "CRWN 82",
-          "title": "Introduction to Broadcast Operations: KZSC Radio Programming",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-82",
-          "departmentSlug": "crwn-crown-college",
-          "departmentText": "CRWN - Crown College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "CRWN 103",
-          "title": "Summer Project - Science for Social Impact",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-103",
-          "departmentSlug": "crwn-crown-college",
-          "departmentText": "CRWN - Crown College",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRWN 185A",
-          "title": "Design your Career: Self-Discovery & Career Planning",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185a",
-          "departmentSlug": "crwn-crown-college",
-          "departmentText": "CRWN - Crown College",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRWN 185B",
-          "title": "Career Launchpad: Career Tools & Strategy for Engineers and Technical Specialists",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185b",
-          "departmentSlug": "crwn-crown-college",
-          "departmentText": "CRWN - Crown College",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CRWN 191",
-          "title": "Marketing for Good",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-191",
-          "departmentSlug": "crwn-crown-college",
-          "departmentText": "CRWN - Crown College",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "CRWN 290",
           "title": "Startup Entrepreneurship Academy",
@@ -6217,38 +5927,6 @@
       ]
     },
     {
-      "subject": "CT",
-      "departmentText": "CT - Creative Technologies",
-      "departmentSlug": "ct-creative-technologies",
-      "count": 3,
-      "courses": [
-        {
-          "code": "CT 151",
-          "title": "Machine Collaboration: Creativity in Posthuman Practice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-151",
-          "departmentSlug": "ct-creative-technologies",
-          "departmentText": "CT - Creative Technologies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CT 167S",
-          "title": "Creative Technologies Sound and Listening Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167s",
-          "departmentSlug": "ct-creative-technologies",
-          "departmentText": "CT - Creative Technologies",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "CT 167V",
-          "title": "Voice, Labor, and Gender",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167v",
-          "departmentSlug": "ct-creative-technologies",
-          "departmentText": "CT - Creative Technologies",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
       "subject": "DANM",
       "departmentText": "DANM - Digital Arts and New Media",
       "departmentSlug": "danm-digital-arts-and-new-media",
@@ -6520,24 +6198,8 @@
       "subject": "EART",
       "departmentText": "EART - Earth Sciences",
       "departmentSlug": "eart-earth-sciences",
-      "count": 62,
+      "count": 60,
       "courses": [
-        {
-          "code": "EART 114",
-          "title": "Environmental Geophysics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-114",
-          "departmentSlug": "eart-earth-sciences",
-          "departmentText": "EART - Earth Sciences",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "EART 122",
-          "title": "Air Pollution",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-122",
-          "departmentSlug": "eart-earth-sciences",
-          "departmentText": "EART - Earth Sciences",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "EART 170",
           "title": "Global Seismology",
@@ -7826,24 +7488,8 @@
       "subject": "ECON",
       "departmentText": "ECON - Economics",
       "departmentSlug": "econ-economics",
-      "count": 69,
+      "count": 67,
       "courses": [
-        {
-          "code": "ECON 126",
-          "title": "Health Care Markets",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-126",
-          "departmentSlug": "econ-economics",
-          "departmentText": "ECON - Economics",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "ECON 193S",
-          "title": "Summer Transforming Futures Experiential Learning",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-193s",
-          "departmentSlug": "econ-economics",
-          "departmentText": "ECON - Economics",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "ECON 200",
           "title": "Microeconomic Analysis",
@@ -9832,34 +9478,8 @@
       "subject": "ENVS",
       "departmentText": "ENVS - Environmental Studies",
       "departmentSlug": "envs-environmental-studies",
-      "count": 34,
+      "count": 32,
       "courses": [
-        {
-          "code": "ENVS 107D",
-          "title": "Natural History Field Quarter: Communicating the Natural World",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d",
-          "departmentSlug": "envs-environmental-studies",
-          "departmentText": "ENVS - Environmental Studies",
-          "divisionPath": "upper-division",
-          "alternatePages": [
-            {
-              "code": "ENVS 107D",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d",
-              "departmentSlug": "envs-environmental-studies",
-              "departmentText": "ENVS - Environmental Studies",
-              "divisionPath": "upper-division"
-            }
-          ]
-        },
-        {
-          "code": "ENVS 124",
-          "title": "Intro to Urban Ecology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-124",
-          "departmentSlug": "envs-environmental-studies",
-          "departmentText": "ENVS - Environmental Studies",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "ENVS 201A",
           "title": "Research Approaches in Environmental Studies",
@@ -14017,32 +13637,6 @@
           "departmentSlug": "ling-linguistics",
           "departmentText": "LING - Linguistics",
           "divisionPath": "graduate"
-        }
-      ]
-    },
-    {
-      "subject": "LIT",
-      "departmentText": "ASTR - Astronomy and Astrophysics",
-      "departmentSlug": "astr-astronomy-and-astrophysics",
-      "count": 1,
-      "courses": [
-        {
-          "code": "LIT 167O",
-          "title": "Aliens: Science and Fiction",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o",
-          "departmentSlug": "astr-astronomy-and-astrophysics",
-          "departmentText": "ASTR - Astronomy and Astrophysics",
-          "divisionPath": "upper-division",
-          "alternatePages": [
-            {
-              "code": "LIT 167O",
-              "title": "Aliens: Science and Fiction",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o",
-              "departmentSlug": "lit-literature",
-              "departmentText": "LIT - Literature",
-              "divisionPath": "upper-division"
-            }
-          ]
         }
       ]
     },
@@ -19206,64 +18800,8 @@
       "subject": "PSYC",
       "departmentText": "PSYC - Psychology",
       "departmentSlug": "psyc-psychology",
-      "count": 61,
+      "count": 54,
       "courses": [
-        {
-          "code": "PSYC 50",
-          "title": "Human Sexuality",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-50",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PSYC 51",
-          "title": "The Future is Not Set: AI, Data, and Society",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-51",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PSYC 139M",
-          "title": "Music Cognition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139m",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "PSYC 139Z",
-          "title": "Multisensory Cognition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139z",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "PSYC 140C",
-          "title": "Indigenous Land, Identity and Well-being",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140c",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "PSYC 159L",
-          "title": "The Social Psychology of Collective Action",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159l",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "PSYC 193S",
-          "title": "Field Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193s",
-          "departmentSlug": "psyc-psychology",
-          "departmentText": "PSYC - Psychology",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "PSYC 201",
           "title": "Teaching in Psychology",

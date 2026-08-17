@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-08-17T03:01:18.450Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=CT",
+  "count": 3,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "CT 151",
+      "title": "Machine Collaboration: Creativity in Posthuman Practice",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-151",
+      "departmentSlug": "ct-creative-technologies",
+      "departmentText": "CT - Creative Technologies",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Introduction to machine intelligence and creativity, contextualized historically and applied to contemporary problems, ranging from commercial “AI,” large language models, opaque and transparent algorithms for representation and creativity, and arts practices vulnerable to exploitation by corporate and state practices of information and data. How should consumers and producers of technology interpret AI production, as art , as design, and as entertainment? Students survey practices and outcomes of machine creativity for cultural production writ large, synthesizing them in collaborative scholarship and curation.",
+      "ge": "IM",
+      "quarterText": "Winter",
+      "quarters": [
+        "W"
+      ],
+      "officialPrereqText": "CT 11 .",
+      "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "CT 11"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "CT 167S",
+      "title": "Creative Technologies Sound and Listening Seminar",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167s",
+      "departmentSlug": "ct-creative-technologies",
+      "departmentText": "CT - Creative Technologies",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Studio seminar elective covering a range of topics on sound and listening. Includes a practical component on recording, editing and composing using emerging audio software and is complemented by theoretical research into historical and contemporary theories of sound, listening, social practice, and the environment. (Formerly CT 165.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "CT 101 .",
+      "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "CT 101"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "CT 167V",
+      "title": "Voice, Labor, and Gender",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167v",
+      "departmentSlug": "ct-creative-technologies",
+      "departmentText": "CT - Creative Technologies",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "This course is focused on voice, labor, and gender. Students research various forms of assistive technologies with a special focus on voice-based interactive platforms. Themes of automation, feminized labor, machine learning, and biotechnology are examined against a backdrop of a post-pandemic landscape. Students analyze and engage with science fiction, documentary, interactive media, and games. Each class includes seminar discussions, film screenings, creative prompts, and collaborative and participatory exercises based on assigned readings.",
+      "ge": "",
+      "quarterText": "Fall, Winter, Spring",
+      "quarters": [
+        "F",
+        "W",
+        "S"
+      ],
+      "officialPrereqText": "CT 10 and CT 11 .",
+      "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "CT 10",
+        "CT 11"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    }
+  ]
+}

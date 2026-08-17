@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-08-17T03:01:16.715Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=CRWN",
+  "count": 6,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "CRWN 82",
+      "title": "Introduction to Broadcast Operations: KZSC Radio Programming",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-82",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "lower-division",
+      "division": "lower",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Practical application of technical and creative skills in the KZSC studios. Production of audio content and promotional materials for broadcast. Critical evaluation in a workshop setting. Assignments require original research, professional writing, and the operation of complex technology. Enrollment is by permission of the instructor.",
+      "ge": "PR-C",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRWN 103",
+      "title": "Summer Project - Science for Social Impact",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-103",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 10,
+      "creditsText": "10",
+      "desc": "Students work in small, collaborative teams to understand how scientific approaches can be leveraged to assess, design, and implement social impact. Specifically, the work is done with a partner organization, Social Alpha, which provides hands-on and real-life experience in health, climate and livelihood sectors. Enrollment is by permission of the instructor. Students will be asked to fill out a form to ensure that students have the skills and commitment to contribute to the projects.",
+      "ge": "PR-E",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRWN 185A",
+      "title": "Design your Career: Self-Discovery & Career Planning",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185a",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 3,
+      "creditsText": "3",
+      "desc": "Guides students through self-discovery and career planning to build fulfilling professional paths. Using frameworks like Ikigai and tools such as Focus2, students explore values, strengths, and interests to identify career options aligned with industry trends. The course emphasizes practical skills, from crafting résumés, cover letters, and LinkedIn profiles to mapping networks and conducting informational interviews. Students create personalized strategies for gaining experience during college, leveraging warm networks and job-shadowing opportunities. By the end, they’ll have a toolkit and actionable plan to confidently navigate their career journeys.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to frosh and sophomore students because it is designed to map out their career pathway so that they can maximize the training opportunities offered by the university as they progress toward their degrees.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "CRWN 185B",
+      "title": "Career Launchpad: Career Tools & Strategy for Engineers and Technical Specialists",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185b",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 1,
+      "creditsText": "1",
+      "desc": "This 1-credit workshop-style course helps engineering and technical students that are getting ready to look for internships or jobs, polish r&eacute;sum&eacute;s, prepare for interviews, and develop targeted job search strategies. Through peer reviews, mock interviews, and networking exercises, students build confidence and practical tools, including leveraging AI for job sourcing. By course end, students produce a professional portfolio and a career plan to compete effectively in today’s job market.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to juniors and seniors in engineering and other technical majors because it requires having acquired substantial set of technical skills and/or experience that can potentially match the demand in tech.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "CRWN 191",
+      "title": "Marketing for Good",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-191",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Marketing for Good is a service-learning course. Student teams are matched with real-world clients, establish their needs through interviews, and develop a marketing plan. This plan may include branding, logo design, messaging, digital storytelling (through video, film or photography), website and social media campaigns, and more. During its execution, students take on roles and responsibilities that mirror the industry such the rols of writer, art director, product marketing head, and marketing strategist. Thus, students experience the totality of a marketing project, getting a firsthand understanding of how marketing teams work and how they can scale as the size of the team grows.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "Prerequisite(s): CRWN 91 .",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [
+        "CRWN 91"
+      ],
+      "parserFlags": []
+    },
+    {
+      "code": "CRWN 290",
+      "title": "Startup Entrepreneurship Academy",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/graduate/crwn-290",
+      "departmentSlug": "crwn-crown-college",
+      "departmentText": "CRWN - Crown College",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Eight-week program offered over UC Santa Cruz's summer session. Graduate students bring an idea for a prototype (typically related to their graduate work) and are assigned to mentors with startup experience to provide feedback and help develop their business models. Students learn who their core and tertiary customers are, the marketing processes required for initial adoption and downstream sustainability, the data that will be required by future partnerships and users, and core project management, financial, legal, and marketing resources needed for new companies. Students also learn to assess intellectual property and risk and to identify financing and other key resources early.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    }
+  ]
+}

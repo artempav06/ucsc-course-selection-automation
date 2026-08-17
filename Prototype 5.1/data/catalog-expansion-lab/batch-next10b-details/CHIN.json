@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-08-17T03:01:13.479Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=CHIN",
+  "count": 1,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "CHIN 109",
+      "title": "Haunted Justice: Goddess, Ghosts, and Gender in Chinese Folklore",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese/upper-division/chin-109",
+      "departmentSlug": "chin-chinese",
+      "departmentText": "CHIN - Chinese",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Explores Chinese folklore, focusing on justice, gender, and the supernatural. Students analyze identities, spirits, and legends to examine societal norms, especially regarding women. The course includes literature, myth, and drama, with materials read and reflections written in Chinese.",
+      "ge": "ER",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "Prerequisite(s): CHIN 6 or equivalent proficiency.",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [
+        "CHIN 6"
+      ],
+      "parserFlags": []
+    }
+  ]
+}

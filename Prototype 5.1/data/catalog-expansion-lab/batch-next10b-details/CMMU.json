@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-08-17T03:01:13.805Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=CMMU",
+  "count": 1,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "CMMU 297",
+      "title": "Independent Study",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmmu-community-studies/graduate/cmmu-297",
+      "departmentSlug": "cmmu-community-studies",
+      "departmentText": "CMMU - Community Studies",
+      "divisionPath": "graduate",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Either study related to a course being taken or a totally independent study. Designed for graduate students. Students submit petition to sponsoring agency.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    }
+  ]
+}

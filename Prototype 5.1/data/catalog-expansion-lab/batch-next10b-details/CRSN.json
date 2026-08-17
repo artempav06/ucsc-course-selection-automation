@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-08-17T03:01:16.169Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=CRSN",
+  "count": 5,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "CRSN 11",
+      "title": "Introduction to Sustainabilities and Social Justice",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-11",
+      "departmentSlug": "crsn-carson-college",
+      "departmentText": "CRSN - Carson College",
+      "divisionPath": "lower-division",
+      "division": "lower",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Lower-division introduction to the sustainabilities and social justice minor. Students grapple with the complex and interconnected challenges of the climate crisis, settler colonialism, and racial capitalism as theoretical lenses to explore the different ways “sustainability” as a term is taken up and used in different contexts for different goals.",
+      "ge": "PE-E",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRSN 23",
+      "title": "Campus Natural History Practicum",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-23",
+      "departmentSlug": "crsn-carson-college",
+      "departmentText": "CRSN - Carson College",
+      "divisionPath": "lower-division",
+      "division": "lower",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Develop practical skills and knowledge in naturalist observation. Acquire an overview of the field of natural history, particularly applied to the UCSC campus. Document an evolving and multidimensional personal experience of natural spaces, including, but not limited to, wilderness. (Formerly KRSG 3.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRSN 32",
+      "title": "Reading Sci-Fi: Octavia Butler and Ursula LeGuin",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-32",
+      "departmentSlug": "crsn-carson-college",
+      "departmentText": "CRSN - Carson College",
+      "divisionPath": "lower-division",
+      "division": "lower",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Discussion-based seminar where students read works by two key figures in science fiction: Octavia Butler. Ursula K. LeGuin. Students reflect on the social commentary and speculative futures these books offer in a time of global climate change; the impact of these authors on science fiction and environmental thinking; the unique power and possibilities of science fiction genre itself; and how to cultivate a lasting reading practice based on pleasure, not obligation. Emphasis is placed on developing skills and practices of collaborative reading and reflection. To promote reading deeply and mindfully, all texts are read in hard copy, provided at no cost to students. (Disability Resource Center digital accommodations will be provided as needed.) (Formerly Kresge College 12, Reading Science Fiction: Octavia Butler and Ursula LeGuin.)",
+      "ge": "PR-E",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRSN 100",
+      "title": "Writing Sustainabilities",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-100",
+      "departmentSlug": "crsn-carson-college",
+      "departmentText": "CRSN - Carson College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "What is the role of writing in the environmental justice movement? What is the role of art and narrative during times of global change? In this interdisciplinary creative nonfiction course, students explore the expansive and exciting genre of creative nonfiction. This course is structured as a writing workshop class, which means our central activity throughout the quarter will be writing nonfiction essays and sharing them with the class in a generative, community-oriented setting. No previous creative nonfiction writing experience is necessary, just a willingness to explore writing, take risks, and attend to the work of others with care.",
+      "ge": "PR-C",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "CRSN 120",
+      "title": "Diverse Perspectives on Sustainability and Justice",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-120",
+      "departmentSlug": "crsn-carson-college",
+      "departmentText": "CRSN - Carson College",
+      "divisionPath": "upper-division",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Examines environmental justice movements across the hemispheric Americas, with a focus on how power, inequality, and resistance shape struggles over land, water, and sustainability. Case studies show how Indigenous peoples, rural communities, and grassroots organizations confront extractivism, privatization, state violence, and unsustainable development. Students engage with concepts of sovereignty, migration, sustainability, and more-than-human relations, while reflecting on their own positionalities.",
+      "ge": "PE-E",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    }
+  ]
+}

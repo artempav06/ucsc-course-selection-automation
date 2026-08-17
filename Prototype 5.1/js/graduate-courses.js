@@ -14732,13 +14732,11 @@ const GRADUATE_COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
     "prereqNotes": [
       "Official enrollment/restriction text: Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
-      "Needs review: contains-major-or-enrollment-condition",
-      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+      "Needs review: contains-major-or-enrollment-condition"
     ],
-    "enrollmentText": "Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
-    "catalogLevel": "graduate",
     "searchOnly": true
   },
   "ENVS 247": {
@@ -14782,13 +14780,11 @@ const GRADUATE_COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
     "prereqNotes": [
       "Official enrollment/restriction text: Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
-      "Needs review: contains-major-or-enrollment-condition",
-      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+      "Needs review: contains-major-or-enrollment-condition"
     ],
-    "enrollmentText": "Enrollment is restricted to environmental studies graduate students. Enrollment is restricted to coastal science and policy graduate students.",
-    "catalogLevel": "graduate",
     "searchOnly": true
   },
   "ENVS 263": {
@@ -22717,5 +22713,2956 @@ const GRADUATE_COURSES = {
     "enrollmentText": "restricted to graduate students.",
     "searchOnly": true,
     "sourceCatalogYear": "2026-2027"
+  },
+  "ANTH 200": {
+    "concentrations": [],
+    "title": "Theoretical Foundations of Physical Anthropological Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200",
+    "desc": "Provides historical and theoretical foundation of physical anthropology. Grounds students in the changing frameworks and perspectives during the last 150 years regarding questions in human biology, evolution, nature, and culture, by examining texts and scientific journals.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 200A": {
+    "concentrations": [],
+    "title": "Cultural Graduate Core Course",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200a",
+    "desc": "Introduces history, ethnography, and theory of cultural anthropology with emphasis on awareness of construction of anthropological canon and areas of conflict within it, leading up to contemporary debates on a variety of issues. Two-term course: students must enroll in both quarters.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to anthropology graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to anthropology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 200B": {
+    "concentrations": [],
+    "title": "Cultural Graduate Core Course",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200b",
+    "desc": "Introduces history, ethnography, and theory of cultural anthropology with emphasis on awareness of construction of anthropological canon and areas of conflict within it, leading up to contemporary debates on a variety of issues. Multiple-term course; students must enroll in both quarters to receive academic credit.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to anthropology graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to anthropology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 201": {
+    "concentrations": [],
+    "title": "Human Evolution",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-201",
+    "desc": "Provides an overview of the first five million years of human evolution and a framework for studying evolution and reconstructing the human past. Emphasizes that all lines of evidence must be included: hominid fossils, archaeology, paleoecology, and molecular data.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 202A": {
+    "concentrations": [],
+    "title": "Skeletal Biology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-202a",
+    "desc": "Focuses on human skeletal biology, the identification of elements, physiology of hard tissue formation, growth, and maintenance. Students are required to show competence in skeletal identification to pass this class.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ANTH 102A or permission of",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ANTH 102A or permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 208A": {
+    "concentrations": [],
+    "title": "Ethnographic Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208a",
+    "desc": "Introduces graduate students to the practice of fieldwork. Students design and carry out a quarter-long research project exploring a range of methods and producing an analytical case study. Readings and discussion emphasize both methodological critique and successful implementation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to anthropology graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to anthropology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 208C": {
+    "concentrations": [],
+    "title": "Design Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208c",
+    "desc": "Introduces the principles, approaches, methods, and professional dimensions of design anthropology. Emphasis is on collaborative methods and development of new methods for ethnographic research, analysis, and communication. Through a quarter-long research project, students develop non-academic professional skills, including portfolio materials. Students cannot receive credit for this course and ANTH 196R .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "cannot receive credit for this course and ANTH 196R .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: cannot receive credit for this course and ANTH 196R ."
+    ],
+    "searchOnly": true
+  },
+  "ANTH 210R": {
+    "concentrations": [],
+    "title": "Religion in American Politics and Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-210r",
+    "desc": "Introduces dominant discourses about major American religions and their role in public life with particular attention to intersecting differences, such as race, sex/gender, and disability and to shifting religious/political boundaries. Visual and textual media, political commentary, and popular ethnographies are analyzed.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 211": {
+    "concentrations": [],
+    "title": "Human Ecology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-211",
+    "desc": "Reviews environmental, physiological, behavioral, and cultural ways that humans interact with their physical surroundings. Effects of human culture on the environment, and of the environment on the shape of human culture will be emphasized.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 212": {
+    "concentrations": [],
+    "title": "The Human Life Cycle",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-212",
+    "desc": "Examines the human life cycle using an evolutionary framework. Examines key aspects of the human life stages using findings and concepts from developmental biology, physiology, nutrition, evolutionary ecology, and life history theory. These stages include: gestation, infancy, childhood, juvenile and adolescent periods, and senescence. Each stage of the life cycle is compared and contrasted with the developmental life of nonhuman primates and mammals. Other related topics include developmental plasticity and epigenetics.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 214": {
+    "concentrations": [],
+    "title": "Culture and Power",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-214",
+    "desc": "Takes the many strands of scholarship on power relations between individuals within the context of institutions and conceptualizes how individuals come to exist through power relations, and how power is fundamental to social being.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 216": {
+    "concentrations": [],
+    "title": "Methods in Biological Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-216",
+    "desc": "Deepens students' understanding of methods applied in biological anthropology research. (Formerly Methods in Physical Anthropology.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 219": {
+    "concentrations": [],
+    "title": "Religions, States, Secularities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-219",
+    "desc": "Examines theories and case studies at the intersection of religion, states, and secularity. Topics include: secularism as a political doctrine; state and social regulation of religion and religious normativity; secular cultural practices; and lines of secular/religious entanglement and conflict.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 220": {
+    "concentrations": [],
+    "title": "Cartographies of Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-220",
+    "desc": "Examines, theoretically and ethnographically, how societies and their cultures are created and reified through spatializing practices, including border-making, mapping, landscape aesthetics, globalization, time/history/memory, movement, and other locating activities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 224": {
+    "concentrations": [],
+    "title": "Anthropology of Secularism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-224",
+    "desc": "Examines secularism as a practice of government with a concomitant set of ethics. Topics include: the notion of religion necessary for secularism; forms of moral and political inclusion/exclusion enacted by secular governance; and the kind of ethical subject secularism engenders. (Formerly course 255.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 225": {
+    "concentrations": [],
+    "title": "The Anthropology of Things: Sign, Gift, Commodity, Tool",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-225",
+    "desc": "Examines some approaches used by anthropologists and other thinkers to bring things into focus: as gifts, signs, commodities, and tools. Explores whether, by taking things seriously, anthropologists might learn to be empirical in new ways. Students cannot receive credit for this course and ANTH 196F.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196F.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196F.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 228": {
+    "concentrations": [],
+    "title": "Grant Writing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-228",
+    "desc": "Devoted entirely to writing grant proposals. Students either work on their graduate education fellowships or their doctoral dissertation grants or both. Reading materials consist of granting agency documents plus examples of successful applications.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to anthropology graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to anthropology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 229": {
+    "concentrations": [],
+    "title": "Constructing Regions",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-229",
+    "desc": "Discusses centrality of the idea of regions in studies of culture, the history of locating social theory, and debates about area studies. Students develop area of transregional bibliographies. Primarily for second- or third-year anthropology graduate students reading area literatures.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 230": {
+    "concentrations": [],
+    "title": "Bodies, Images, Screens",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-230",
+    "desc": "Visuality as epistemology, image-consumption, and the political and representational possibilities stemming from digitization and the World Wide Web are increasingly important issues in the humane sciences. Offers historical and critical background and the possibility of hands-on practice using visual material in current research.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 231": {
+    "concentrations": [],
+    "title": "Intimacy and Affective Labor",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-231",
+    "desc": "Examines recent work on the role of intimacy and affective labor in value production, political mobilization, and transnational capital linkages. Special attention given to how these terms are invoked to answer methodological and narrative concerns in ethnographic writing.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 232": {
+    "concentrations": [],
+    "title": "Bodies, Knowledge, Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-232",
+    "desc": "Contemporary social theory and science both focus on bodies as critical sites of inquiry and the production of knowledge. Explores these theoretical intersections and constructions of the body with new ethnographic works. Questions how race, gender, and culture are inscribed through bodily practice, imagery, and phenomenology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 233": {
+    "concentrations": [],
+    "title": "Politics of Nature",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-233",
+    "desc": "Advanced graduate seminar in environmental anthropology and science and technology studies, focusing on how nature is produced in the modern world and what political and practical significance this has in different contexts.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 234": {
+    "concentrations": [],
+    "title": "Feminist Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-234",
+    "desc": "Examines how feminist anthropology creates its objects of knowledge by focusing on questions of method and representation. The class reads across these traditional objects--women and gender, for example--to highlight the epistemological and political stakes of feminist work in anthropology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 235": {
+    "concentrations": [],
+    "title": "Language and Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-235",
+    "desc": "An examination of language system and language use in relationship to cultural contexts of communication in Western and non-Western societies. Also examines the complex role which linguistic inquiry and models have played in broader theories of culture.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 238": {
+    "concentrations": [],
+    "title": "Advanced Topics in Cultural Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-238",
+    "desc": "Advanced topics in cultural anthropology. Current topics in anthropological theory and ethnography taught on a rotating basis by various faculty members. Precise focus of each seminar varies and will be announced by the department.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 241": {
+    "concentrations": [],
+    "title": "Social Justice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-241",
+    "desc": "Explores theoretical and methodological issues in the field of social justice with an emphasis on ethnographic analysis. Topics include: rights, obligations, justice, equality, compensation, and ethics.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 243": {
+    "concentrations": [],
+    "title": "Cultures of Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-243",
+    "desc": "Introduction to selected themes in political economy, stressing the work of Marx. Topics include the development of capitalism, colonialism, dependency, world systems, state formation, class consciousness, commodity fetishism, the nature of late capitalism, post-modernism, and the aesthetics of mass culture. Through political economy's interlocutors, raises questions about gender, race and ethnicity, and post-structuralist critiques.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 246": {
+    "concentrations": [],
+    "title": "Advanced Readings in Environmental Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-246",
+    "desc": "Survey of history and topics of contemporary interest in environmental anthropology, including political ecology, environmental history, ethnoecology, and multi-species anthropology. Additional advanced readings on contemporary environmental anthropology research. Students cannot receive credit for this course and ANTH 146.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to Anthropology graduate students or by permission of the instructor. cannot receive credit for this course and ANTH 146.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Anthropology graduate students or by permission of the instructor. cannot receive credit for this course and ANTH 146.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 247": {
+    "concentrations": [],
+    "title": "Critical Perspectives on Nutrition",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-247",
+    "desc": "Examines emerging critiques on the science, communication, and practice of nutrition using multidisciplinary approaches. Special attention is given to the effects of modern nutrition.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 248": {
+    "concentrations": [],
+    "title": "Shadowy Dealings: Anthropology of Finance, Money, and Law",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-248",
+    "desc": "Moves from a brief introduction to classic economic anthropology to recent work on histories of money and capitalism and cultures of financial markets, of accounting, and of legal and illegal trading practices",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 249": {
+    "concentrations": [],
+    "title": "Ecological Discourses",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-249",
+    "desc": "Explores narratives of nature and their practical consequences in contests over wild places and their resources. Readings focus on the histories of forests and on analytic frameworks—ecology, social history, interpretation, cultural studies—with which to investigate competing constructions of the environment.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 252": {
+    "concentrations": [],
+    "title": "Survey of Cultural Anthropological Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-252",
+    "desc": "Major figures, ideas, and writing in 19th- and 20th-century cultural anthropology surveyed. Students cannot receive credit for this course and ANTH 152 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 152 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 152 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 253": {
+    "concentrations": [],
+    "title": "Advanced Cultural Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-253",
+    "desc": "Examines cultural anthropology's interdisciplinary practices of knowledge formation at an advanced level. Drawing on various types of theoretical texts, the course elaborates on the relationship between culture and power, taking up different themes each time it is taught.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 254": {
+    "concentrations": [],
+    "title": "Medicine and Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-254",
+    "desc": "Surveys medicine cross-culturally, with particular focus on power, tradition, and theories of embodiment. Students cannot receive credit for this course and ANTH 134 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 134 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 134 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 255": {
+    "concentrations": [],
+    "title": "Regulating Religion/Sex",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-255",
+    "desc": "First examines the regulation of religion and the normalization of sex/sexuality as parallel modalities of secular rule in the production of modern citizens and subjects. Ultimately inquires into the relationship between proper religion and proper sexuality in secular state formations. (Formerly course 259.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 258": {
+    "concentrations": [],
+    "title": "Experimental Cultures",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-258",
+    "desc": "Addresses the use of experiments in anthropological research, theory, and writing.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 259": {
+    "concentrations": [],
+    "title": "Race in Theory and Ethnography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-259",
+    "desc": "Explores theoretical and methodological approaches to the cross-cultural study of race, with an emphasis on historical and ethnographic analysis. Main approaches considered include Foucauldian, Gramscian, diaspora theory, and the everyday poetics and politics of race. (Formerly course 246.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 260": {
+    "concentrations": [],
+    "title": "Anthropology of Freedom",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-260",
+    "desc": "Examines conceptualizations and practices of freedom across geographical space and historical time. Readings drawn from Greek philosophy, Islamic, Christian, and Buddhist religious traditions. Enlightenment philosophy, liberal and neo-thought, and contemporary ethnographies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 261": {
+    "concentrations": [],
+    "title": "Replication, Mimesis, and Fakery",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-261",
+    "desc": "Replicas, copies, and fakes anchored conceptually by the authentic/original enable the marketing of cultural commodities like arts and crafts, especially since the advent of photography. Course explores these commercial and signifying processes in the global art and culture market.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 262": {
+    "concentrations": [],
+    "title": "Documenting Cultures",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-262",
+    "desc": "Follows the history of film and ethnography, media and methodology into the birth of cinema and anthropology in the early 20th century. Students learn theories of representation and media, conduct ethnographic research, and prepare a short film.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 263": {
+    "concentrations": [],
+    "title": "Kinship",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-263",
+    "desc": "Provides a critical survey of debates, old and new, in the study of kinship. Readings range from classical treatments to recent reformulations that use kinship as a lens for exploring intimacy, memory, futurity, embodiment, commodification, and power. Students cannot receive credit for this course and ANTH 163.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 163.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 163.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 269": {
+    "concentrations": [],
+    "title": "Global History and the Longue Duree",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-269",
+    "desc": "Emerging anthropological approaches to global history. Considers both 500-year and much longer historical frameworks. For the former, the evidence of documents, both European and non-European, is particularly important. For the latter, archaeological and evolutionary approaches are essential. Students cannot receive credit for this course and ANTH 196H.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196H.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196H.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 270": {
+    "concentrations": [],
+    "title": "History of Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270",
+    "desc": "Historical review of prehistoric archaeology from antiquarianism to the present. Emphasis on the development of archaeological theory, its relation to evolutionary and anthropological theory, and themes ongoing over time. Students cannot receive credit for this course and ANTH 170.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 170.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 170.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 270A": {
+    "concentrations": [],
+    "title": "Archaeology Graduate Core Course: History of Archaeological Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270a",
+    "desc": "Historical overview of archaeology, concentrating on archaeological practice in the English-speaking world from the late 19th through the 21st Centuries. Emphasis is on development of archaeological theory in its social context; its relation to evolutionary and anthropological theory; and themes ongoing over time. Students cannot receive credit for this course and ANTH 270 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 270 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 270 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 270B": {
+    "concentrations": [],
+    "title": "Current Directions in Archaeological Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ANTH 270A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270b",
+    "desc": "Provides an in-depth understanding of current trends in archaeological thought, and enables students to place issues of archaeological interpretation into broader historical and theoretical frameworks. This course is a follow-up to ANTH 270, but not a substitute.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ANTH 270A .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ANTH 270A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 272": {
+    "concentrations": [],
+    "title": "Advanced Archaeological Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-272",
+    "desc": "Introduces graduate students to archaeological research design. Topics include: middle range theory; multistage research strategies; sampling strategies and appropriate field methodology; and issues specific to particular scales of archaeological analysis (artifact, household, site, region).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 273": {
+    "concentrations": [],
+    "title": "Origins of Farming",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-273",
+    "desc": "Survey of the ecological and archaeological evidence for the origins of plant and animal domestication in Africa, Eurasia, and the Americas. Discussion will center on the preconditions of this drastic alteration in human ecology and its consequences in transforming human societies. Students cannot receive credit for this course and ANTH 173.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 173.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 173.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 274": {
+    "concentrations": [],
+    "title": "Origins of Complex Societies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-274",
+    "desc": "The origins of complex society: the transition from egalitarian foraging societies to the hierarchical, economically specialized societies often referred to as states or civilizations. Focuses on both Old World and New World cultures. Students may not receive credit for this course and ANTH 174.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 275": {
+    "concentrations": [],
+    "title": "Tutorial in African Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-275",
+    "desc": "Graduate tutorial on the archaeology of precolonial African kingdoms and states. Particular attention paid toward the origins of social inequality and the evolution of centralized politics. Students cannot receive credit for this course and ANTH 175.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 175.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 175.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 276A": {
+    "concentrations": [],
+    "title": "Advanced Topics in North American Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276a",
+    "desc": "In-depth examination of development of Native cultures in North America from end of last ice age to time of European contact. Focuses on specific regional trajectories and problems of social change.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 276B": {
+    "concentrations": [],
+    "title": "Mesoamerican Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276b",
+    "desc": "Examines the pre-Columbian cultures of Mesoamerica and reviews the archaeological and ethnohistorical evidence related to the origins and development of cultures including the Olmec, Maya, Zapotec, Mixtec, and Aztec. Students cannot receive credit for this course and ANTH 176B.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 176B.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 176B.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 276G": {
+    "concentrations": [],
+    "title": "Archaeology of Colonial Borderlands",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276g",
+    "desc": "This seminar draws from readings in archaeology, history, and Native American/Indigenous studies to assess borderlands throughout colonial-era North America as important arenas of change and continuity for indigenous societies, including indigenous technologies, foodways, gender roles, governance, and much more.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 278": {
+    "concentrations": [],
+    "title": "Tutorial on Historical Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-278",
+    "desc": "Tutorial on archaeology of European colonialism and the early-modern world. Focuses on the nature of European colonial expanison in New and Old Worlds; culture contact and change; and power and resistance in colonial societies. Students cannot receive credit for this course and ANTH 178 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 178 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 178 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 279": {
+    "concentrations": [],
+    "title": "Feminism and Gender in Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-279",
+    "desc": "Considers feminist perspectives on the human past; archaeologists' perspectives on feminist theory; and the impact of gender, feminist, and critical social theory on the archaeological profession. Students cannot receive credit for this course and ANTH 194C.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 194C.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 194C.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 280": {
+    "concentrations": [],
+    "title": "Advanced Ceramic Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280",
+    "desc": "Advanced graduate seminar that focuses on techniques and theories used to bridge the gap between the recovery of ceramic remains from archaeological contexts and their interpretation with respect to various anthropological issues and problems. Students cannot receive credit for this course and ANTH 180.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 180.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 180.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 280L": {
+    "concentrations": [],
+    "title": "Advanced Ceramic Analysis Laboratory",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280l",
+    "desc": "Emphasizes advanced techniques of ceramic analysis, including materials selection and processing, hand-building, and open-pit firings. Standard techniques for describing and measuring formal and technological attributes of pottery also presented. Students cannot receive credit for this course and ANTH 180L.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 180L.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 180L.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 281": {
+    "concentrations": [],
+    "title": "Landscape Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-281",
+    "desc": "\"Landscape\" has emerged as a unifying concept for the interpretation of such archaeological features at multiple scales of analysis. This course answers these and other questions by examining how \"landscapes\" have been tackled archaeologically from multiple perspectives (settlement archaeology, \"off-site\" archaeology, and approaches building on ideas about culture, ideology and power).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 282": {
+    "concentrations": [],
+    "title": "Household Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-282",
+    "desc": "Explores the theoretical and methodological challenges faced by archaeologists excavating ancient households. Students examine the social, economic, and political characteristics of households and investigate how they intersect and support the social and physical aspects of communities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 283": {
+    "concentrations": [],
+    "title": "Introduction to Geographic Information Systems for Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-283",
+    "desc": "Practical laboratory in geographic information systems with a specific focus on anthropological questions and development. Students learn basic spatial analyses and carry them out on research datasets. This course also emphasizes the incorporation of spatial modeling in research design. To participate, students are required to sign up for an account in ESRI (freely available to all UCSC students). Enrollment is restricted to anthropology majors. Enrollment is limited to 20 students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. Enrollment is restricted to anthropology majors.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. Enrollment is restricted to anthropology majors.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 284": {
+    "concentrations": [],
+    "title": "Tutorial in Zooarchaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-284",
+    "desc": "Lectures and seminar on archaeological faunal analysis. Topics include: mammalian evolution and osteology; vertebrate taphonomy; reconstruction of human diet from faunal remains; foraging strategy theory; data collection and management; and methods of quantitative analysis. Students cannot receive credit for this course and ANTH 184.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 184.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 184.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 285": {
+    "concentrations": [],
+    "title": "Osteology of Mammals, Birds, and Fish",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-285",
+    "desc": "Practicum in vertebrate osteology, covering all larger mammal species of central California, plus selected bird and fish species, and topics in evolution and ecology of selected taxa. Students cannot receive credit for this course and ANTH 185.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 185.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 185.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 287": {
+    "concentrations": [],
+    "title": "Advanced Topics in Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287",
+    "desc": "A graduate seminar on advanced theoretical or methodological topics pertinent to advanced graduate student and faculty interests.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students or by consent of instructor.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students or by consent of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 287A": {
+    "concentrations": [],
+    "title": "Advanced Topics: Indigenous Archaeology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287a",
+    "desc": "Traces the development of indigenous archaeology primarily in North America. Topics include: the Native American Graves Protection and Repatriation Act (NAGPRA) and issues of cultural patrimony; postcolonialism; decolonizing methodologies; community-based research; oral sources and other ways of knowing the past; and future directions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 287B": {
+    "concentrations": [],
+    "title": "Advanced Topics: Archaeology in the Age of Big Data",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287b",
+    "desc": "Explores the impact that the ever-growing digital archaeological toolkit has on the research process. Covers specific and keystone developments such as access to big data, spatial modeling, aerial photography, satellite remote sensing, and the recent developments in virtual reality and artificial intelligence.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to Graduate Students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Graduate Students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 290T": {
+    "concentrations": [],
+    "title": "Pedagogy of Anthropology",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-290t",
+    "desc": "Provides training in scientifically backed educational practices for new Anthropology TAs. Through reading, class discussion and activities, we explore different methods of teaching and ways to conceptualize pedagogy. Includes teaching theories; survey of educational tools and techniques; and lesson planning.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to anthropology graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to anthropology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 292": {
+    "concentrations": [],
+    "title": "Graduate Colloquium",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-292",
+    "desc": "Designed to offer an institutionalized mechanism for the presentation of research papers and teaching efforts by faculty and advanced graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 294N": {
+    "concentrations": [],
+    "title": "Comparison of Cultures",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294n",
+    "desc": "Seminar for students interested in theories and methodology of social and cultural anthropology devoted to critical discussion of different methods of comparison practiced in anthropology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 294R": {
+    "concentrations": [],
+    "title": "Advanced Readings in Biological Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294r",
+    "desc": "Introduces literature relevant to students' research emphases and allows for discussion of new scientific publications.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 295A": {
+    "concentrations": [],
+    "title": "Scientific Method: Biological Anthropology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-295a",
+    "desc": "The first core course of the Biological Anthropology Graduate Program. Students learn the principles and methods by which research projects in biological anthropology are devised and executed. Students cannot receive credit for this course and ANTH 195A.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 195A.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 195A.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 296N": {
+    "concentrations": [],
+    "title": "The Body, Narrative, and Creative Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-296n",
+    "desc": "Seminar proposing that arts, such as dance, weaving, and creative writing, and the cultivation of more traditional scholarly works can and should be pursued together. The pursuit of such research-creation is a social justice practice that values many ways of knowing and can lead to emotionally compelling and politically effective communication. Students are introduced to concepts and debates from crip theory, feminist, queer, and critical race studies, performance studies, and narrative theory. They also participate in workshops using body-centered writing, moment work, visual arts, and embodied listening to produce creation-scholarship in a medium of their choice. Taught in conjunction with ANTH 196N ; students cannot receive credit for this course and ANTH 196N .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196N .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and ANTH 196N .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297a",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297b",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297c",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297f",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 298": {
+    "concentrations": [],
+    "title": "Advanced Laboratory Apprenticeship",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-298",
+    "desc": "Supervised tutorial in specialized analytic methods in archaeology or physical anthropology. Students collaborate on laboratory research with a departmental mentor or, with advisor's consent, with researchers on or off campus, preparing a manuscript for publication or an extensive literature review. Permission of instructor required. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ANTH 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299a",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299b",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299c",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ANTH 299W": {
+    "concentrations": [],
+    "title": "Anthropology Dissertation Workshop",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299w",
+    "desc": "Designed to help anthropology Ph.D. students make progress on their dissertation writing. It is a three-hour seminar in workshop format. Each week students share their work-in-progress and the class provides constructive feedback. Discussions with the instructor and students on topics relevant to dissertation writing are also held. Course is offered for satisfactory/unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate anthropology Ph.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate anthropology Ph.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "APLX 235": {
+    "concentrations": [],
+    "title": "Second Language Teaching",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/aplx-applied-linguistics/200/aplx-235",
+    "desc": "Helps novice instructors learn about the theory and practice of language teaching and learning. Focuses on current methods used in communicatively oriented classrooms. Topics include: listening comprehension, grammar, vocabulary, reading, writing, and testing/assessment. Students cannot receive credit for this course and course 135. (Formerly Language Studies 201.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and course 135.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and course 135.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 210A": {
+    "concentrations": [],
+    "title": "Practice-Based Research Group: Sites",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210a",
+    "desc": "The first in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) In this site-specific course, students apply research to site work and art practice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 210B": {
+    "concentrations": [],
+    "title": "Practice-Based Research Group: Systems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ART 210A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210b",
+    "desc": "The second in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students develop their research through the lens of systems and relationships.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 210A .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 210A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 210C": {
+    "concentrations": [],
+    "title": "Practice-Based Research Group: Contexts",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210c",
+    "desc": "Third in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students engage with questions of context and community.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ART 220": {
+    "concentrations": [],
+    "title": "Methods and Histories",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-220",
+    "desc": "First-year seminar on methods of the field. Topics include: strategies for artists working in the field, social and environmental art research methods, histories and case studies (artists, projects, and issues).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 230": {
+    "concentrations": [],
+    "title": "Theory and Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ART 220"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-230",
+    "desc": "First- or second-year graduate seminar focusing on contemporary theory as it relates to social and environmental art practice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 220 .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 220 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 240": {
+    "concentrations": [],
+    "title": "Art Pedagogies",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-240",
+    "desc": "First-year seminar course introducing and exploring pedagogical methods and approaches in art education and in art practice. The teachings of Paolo Freire and others serve as working models to construct open and respectful learning environments both in and outside the classroom.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 250": {
+    "concentrations": [],
+    "title": "Writing Matters",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-250",
+    "desc": "First-year seminar course focusing on research and writing skills as a dimension of project-based art practice and as support for planning a thesis. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 257": {
+    "concentrations": [],
+    "title": "Immersive Arts Field Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-257",
+    "desc": "Immersive site-specific field research over the span of a four-day (24 hours/overnight) field trip utilizing public lands of California, via the UC Natural Reserve System. Students engage and relate to a specific place while exploring concepts of site-specificity and develop their own new inquiries about a place by experiencing it physically and by learning about contemporary art concepts through topics of land use. Students also reflect upon the multiple factors that constitute a \"site\" and how they present possibilities for creative engagement, learn research method skills and approaches that are unique to each site historically, politically, culturally, and environmentally. Due to the rigor of the course, students must submit an application demonstrating the commitment and preparation necessary for successful completion of the class. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 260": {
+    "concentrations": [],
+    "title": "Curatorial Collective",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-260",
+    "desc": "Second-year seminar course focusing on exhibition, curatorial questions, and practices as they relate to presenting final thesis work for public reception. Covers practical, theoretical, and historical considerations for artists and researchers in the process of preparing for presenting the outcome of MFA research. Students examine multiple modalities for presentation and exhibition and address issues of diversity and access in exhibition and curatorial practices. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 270A": {
+    "concentrations": [],
+    "title": "Project Development and Critique I",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ART 210A",
+        "ART 210B",
+        "ART 210C"
+      ],
+      [
+        "ART 220"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270a",
+    "desc": "First in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly, and interdisciplinary dialogue about their projects and the work of fellow students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 210A , ART 210B , ART 210C , and ART 220 .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 210A , ART 210B , ART 210C , and ART 220 .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 270B": {
+    "concentrations": [],
+    "title": "Project Development and Critique II",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ART 270A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270b",
+    "desc": "Second in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly and interdisciplinary dialogue about their projects and the work of fellow students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 270A .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 270A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 280": {
+    "concentrations": [],
+    "title": "MFA Project Production",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [
+      [
+        "ART 270A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-280",
+    "desc": "Students produce their final project in conjunction with refining and completing their written thesis. Critique, tutorials, and directed study in writing and studio production leads to the presentation of their project.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 270A .",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 270A .",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "ART 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-297",
+    "desc": "Independent study or research for graduate students. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "ART 299F": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-299f",
+    "desc": "Students complete work toward their final thesis project production with the guidance and supervision of a faculty member. Students obtain permission from the faculty member and submit petition to the sponsoring agency. Enrollment is restricted to graduate students in environmental art and social practice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students in environmental art and social practice.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in environmental art and social practice.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CMMU 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmmu-community-studies/graduate/cmmu-297",
+    "desc": "Either study related to a course being taken or a totally independent study. Designed for graduate students. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "CRES 200": {
+    "concentrations": [],
+    "title": "Black Studies Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-200",
+    "desc": "Exploration of interdisciplinary research methodology—a broader set of scientific beliefs, approaches, inquiries, theories, and analytics—relevant to the study of Black communities. Students read, explore, and engage in particular methods—approaches to data collection and analyses—emphasizing various forms of ethnographic research. Course also examines other approaches to the study of Blackness, such as historical/archival, cultural studies and discursive analyses, and mixed methods.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 201": {
+    "concentrations": [],
+    "title": "Exile & Diaspora",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-201",
+    "desc": "Explores \"subaltern\" narratives of diaspora exile in order to interrogate the condition of exile and its interwoven, often contradictory relations to many diasporic formations that endure in the 20th and 21st centuries. Students explore the various origins of diaspora and forms of exile emergent from chattel slavery, colonialism, war, racism, xenophobia, political dissidence, and dispossession, informing an understanding of these broader global machinations, and the experiences of those exiled and in diaspora themselves.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 202": {
+    "concentrations": [],
+    "title": "Ecopoetics and Ecoaesthetics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-202",
+    "desc": "Considers theories of race, place, gender, and climate through the overlapping burgeoning fields of ecopoetics and ecoaesthetics. Reflects on how the environment, climate crises, and various ecologies inform contemporary experimental poetry, film, music, dance, visual art, performance, and community activism of the 20th and 21st centuries.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 204": {
+    "concentrations": [],
+    "title": "Decolonial Futures",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-204",
+    "desc": "Critical examination of anti-colonial social movements, Indigenous thought and praxis, and the possibilities and limits of the concept of decolonization.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 205": {
+    "concentrations": [],
+    "title": "Critical Indigenous Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-205",
+    "desc": "Examines a variety of theories and methods relevant to Indigenous studies through a sustained critical engagement with key concepts and salient themes and by tending to questions of power and resistance in the context of anti-colonial struggle and Indigenous resilience as exercised among communities across Turtle Island and Oceania, but also beyond.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 206": {
+    "concentrations": [],
+    "title": "Studying with Ancestors",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-206",
+    "desc": "This seminar is an experiment in reclaiming a small patch of the university as a space for studying with ancestors. Reflects on how practices of ancestral relation have informed anti-colonial rebellions and subsequent struggles against racial capitalism. Also investigates how European colonial modernity reproduces itself through the brutal regulation of ancestral knowledge. A transnational archive of art, seed, film, and social theory guides students in thinking collectively about their own practices of study—and how they might channel or divert the currents of the past.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 207": {
+    "concentrations": [],
+    "title": "Seeing the Earth Before the End of the World",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-207",
+    "desc": "A study of practices of ecological engagement that disrupt colonial paradigms of apprehending land and its relation to time. How to see the earth—really see it—even as it’s pressed upon by serial disasters that racial capitalism engenders? Working with Indigenous and diasporic archives of knowing, students ask how normative temporalities organize ecological perception. Reflecting on various visions of decolonization, students learn from liberatory ways of engaging histories of environmental damage—and consider how activists and artists enact reparative relations to land, even as it's marked for ruin.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 209": {
+    "concentrations": [],
+    "title": "Ethnographies of Empire",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-209",
+    "desc": "Studies ethnography in contexts of war, empire, and militarism. Includes readings of ethnographies that chronicle the contours of colonial violence and asks: What work does ethnography do? What work must it do? In our timeline of genocide and endless militarism, does ethnography matter and why? Course studies not only the work of those subject to the colonial state violence, but also the work of the interview itself and the ethics of research methods.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 210": {
+    "concentrations": [],
+    "title": "Sex and the Carceral State",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-210",
+    "desc": "The expansion of the state's carceral capacity over the course of the 20th century and into the present has been intimately connected to ideas about sex, gender. This course examines the ways that sex has been a target of the carceral state at the same time that policing and incarceration have shaped our understanding of sexuality and gender. Rather than focusing solely on repression, course also examines how feminists and queer activists have challenged carceral logics and practices and imagined expansive forms of freedom, justice, and safety.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 213": {
+    "concentrations": [],
+    "title": "Colonialism, Racial Capitalism and Surveillance",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-213",
+    "desc": "Course asks students to consider surveillance technologies beyond the history of modernity and the rise of bureaucratic governance as well as the framework of liberal understandings of the right to privacy. Instead, students examine the ways colonialism and racial capitalism are structured within surveillance technologies, or violent modes of \"seeing\" that contribute to the brutal genocide, dehumanization, containment, extraction, and enslavement of bodies and land.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 217": {
+    "concentrations": [],
+    "title": "Indigenous Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-217",
+    "desc": "Examines key questions in Indigenous studies through a variety of methods, theories, histories, and issues regarding Indigenous peoples and a critical study of power in the context of anti-colonial struggle across Turtle Island and Oceania, but also beyond.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 218": {
+    "concentrations": [],
+    "title": "Militarism and Tourism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-218",
+    "desc": "Positioning tourism and militarism as central sites of inquiry for feminist and ethnic studies, course draws from literature on colonialism and empire to illuminate how tourism functions and how tourists move, in sites of past and present warfare.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 222": {
+    "concentrations": [],
+    "title": "Experimental Language Poetry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-222",
+    "desc": "In-depth study of 20th- and 21st-century poetry emerging in and expanding from experimental movements of the 1960s-1970s and onward. Focuses on works by clusters of poets (i.e. press mates, regional, literary movements), on a particular theme (i.e. ecological, racial, sexual), using a particular poetic practice (i.e. ritual, transmission, divination), or a combination of these areas. The course involves reading poetry, talking about poetry, writing poetry, and discussing your own original poetry with peers in generative writing workshops.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 227": {
+    "concentrations": [],
+    "title": "From Oceania to Native California: Indigenous Environmentalisms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-227",
+    "desc": "Examines Indigenous environmentalist struggles and contemporary movements to protect land and water here in California and in Oceania. We look at three Indigenous-women-led movements to protect land and water: Run4Salmon, Sogorea Te Land Trust, and Protect Mauna Kea.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 243": {
+    "concentrations": [],
+    "title": "Feminism, Race, and the Politics of Knowledge",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-243",
+    "desc": "Course takes as its central topic the institutional politics of feminist and critical race knowledges in the post-1960s United States university. Considers these fields' complex and contradictory relation to disciplinarity, the university's primary or default mode of arranging and legitimizing knowledge formations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 261": {
+    "concentrations": [],
+    "title": "The Racial and Gendered Economies of Housing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-261",
+    "desc": "Explores the political and libidinal economic dimensions of the housing market and their relation as analytics to explain the development of the housing market over the 20th and 21st centuries. Explores the interdependence of political and libidinal factors in influencing the operation and management of housing markets from public and private entities. Course pays special attention to the role of race (in addition to other determinants of difference: gender, class, etc.) in structuring housing’s libidinal and political economies. Students cannot receive credit for this course and CRES 161 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and CRES 161 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and CRES 161 .",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRES 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-297a",
+    "desc": "Independent study and research under faculty supervision. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CRWN 290": {
+    "concentrations": [],
+    "title": "Startup Entrepreneurship Academy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/graduate/crwn-290",
+    "desc": "Eight-week program offered over UC Santa Cruz's summer session. Graduate students bring an idea for a prototype (typically related to their graduate work) and are assigned to mentors with startup experience to provide feedback and help develop their business models. Students learn who their core and tertiary customers are, the marketing processes required for initial adoption and downstream sustainability, the data that will be required by future partnerships and users, and core project management, financial, legal, and marketing resources needed for new companies. Students also learn to assess intellectual property and risk and to identify financing and other key resources early.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "CSP 200": {
+    "concentrations": [],
+    "title": "Natural Sciences for Coastal Sustainability",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-200",
+    "desc": "Provides a basic foundation in the natural sciences including the environment (atmosphere, land, water, sea), species populations, ecosystems and biodiversity, and their relevance to sustainability issues of the coastal zone.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "concurrent",
+    "enrollmentText": "Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: concurrent",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 210": {
+    "concentrations": [],
+    "title": "Social Sciences for Coastal Sustainability",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-210",
+    "desc": "Provides a basic foundation in the social sciences, through systematic study of communities, institutions, and entire societies. Examines the relevance of sociological theory, social interactions and relationships, social inequality, and social change to sustainability issues of the coastal zone.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "concurrent",
+    "enrollmentText": "Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: concurrent",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 220": {
+    "concentrations": [],
+    "title": "Economics for Coastal Sustainability",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-220",
+    "desc": "Builds a foundation of economic concepts pertaining to the environment and explores tools for environmental valuation. Investigates the role for government action related to the environment, including estimation of costs and benefits for regulations and related policies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "concurrent",
+    "enrollmentText": "Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: concurrent",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in the coastal science and policy program, or by permission of the instructor.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 231A": {
+    "concentrations": [],
+    "title": "CSP Year 1 Capstone Planning & Design Fall",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231a",
+    "desc": "Students learn and apply methods for designing scalable solutions to complex problems, focusing on sustainability challenges and opportunities in coastal areas. Sessions primarily involve peer-review and feedback on student progress in planning their individual Coastal Science and Policy (CSP) capstone project. The capstone project must engage with a real-world partner(s) on a scalable opportunity for solving a critical problem in coastal areas (from land to sea). Faculty lead mini-lectures as needed. Course stresses learning-by-doing: weekly assignments have students work outside of class on steps or skills in the design process and then the student shares their work in the following class to gain peer insights. Students should expect to do the reading and a substantial assignment each week BEFORE the class session meets.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to Coastal Science and Policy M.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to Coastal Science and Policy M.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 231B": {
+    "concentrations": [],
+    "title": "CSP Year 1 Capstone Planning & Design Winter",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231b",
+    "desc": "Picks up where the fall capstone planning seminar ended. Students continue designing capstone project for pursuing a scalable solution to a complex and pressing coastal sustainability problem. Winter focus is learning and applying strategies and methods to: (a) co-create a capstone project with a non-academic partner in the government, non-governmental or private sector; and (b) develop and submit successful funding proposals for the project. Methods learned apply broadly to collaborative, solutions-oriented work that may be pursued after graduation. Weekly assignments mean working outside of class on steps or skills for co-creating and fundraising with partners and then sharing work for peer-review in class in the next week. Expect to do the reading and weekly assignments before each week's seminar session. Instructor provides separate instructions for weekly assignments.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to Coastal Science and Policy M.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to Coastal Science and Policy M.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 244": {
+    "concentrations": [],
+    "title": "Adaptation and Planning",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-244",
+    "desc": "Introduces students to conceptual frameworks for developing solutions to coastal sustainability problems, and drawing on knowledge and skills gained in previous coastal science and policy courses to perform an integrated assessment of a coastal sustainability problem. This class is offered for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "restricted to coastal science and policy graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to coastal science and policy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 271": {
+    "concentrations": [],
+    "title": "Fisheries Ecology",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-271",
+    "desc": "Overview of current topics in fisheries ecology and management. Students learn about basic ecological concepts as they apply to fisheries management systems. Specific topics include: fisheries systems, alternative management controls, history of fisheries management, whether fisheries are sustainable, fisheries-induced evolution, population structure and portfolio effects, and ecosystem-based management. The course aims to provide students with an overview of topics in fisheries ecology through a combination of lectures, current literature, and case studies. Students explore controversies and hot topics in fisheries science through discussion and review of literature. (Formerly CSP 281B.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is intended for students in the programs of Coastal Science and Policy, Environmental Studies, Ecology and Evolutionary Biology, Ocean Sciences, and Science Communication. There are no formal prerequisites, but undergraduate students are strongly encouraged to contact the instructor regarding prior coursework.",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is intended for students in the programs of Coastal Science and Policy, Environmental Studies, Ecology and Evolutionary Biology, Ocean Sciences, and Science Communication. There are no formal prerequisites, but undergraduate students are strongly encouraged to contact the instructor regarding prior coursework.",
+      "Needs review: contains-permission-or-consent-exception"
+    ],
+    "searchOnly": true
+  },
+  "CSP 281A": {
+    "concentrations": [],
+    "title": "Hacking for Oceans—Lean Design Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-281a",
+    "desc": "One-quarter graduate-level class in which multidisciplinary student teams of four address problem or challenges provided by real-world sponsors or identified by student groups. Teams learn how to apply the Lean Launchpad and Lean Startup methodologies to discover and validate customer needs and to continually build prototypes to test whether they understood the problem and solution. Weekly assignments involve working outside of class on steps or skills in the design process and then sharing it for peer-review in class. Involves reading and a substantial assignment each week before the next week's session on that topic. Taught in conjunction with ENVS 155 . Students cannot receive credit for this course and ENVS 155 . Graduate students are required to submit an additional culminating report such as a funding proposal to support next steps in their team's solution, a critical analysis of the Lean Design Method, or a policy analysis regarding scalable adoption of the solution. Enrollment is by instructor consent. Application and interview in winter quarter for spring quarter course is required.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "cannot receive credit for this course and ENVS 155 .",
+    "prereqNotes": [
+      "Official enrollment/restriction text: cannot receive credit for this course and ENVS 155 ."
+    ],
+    "searchOnly": true
+  },
+  "CSP 282": {
+    "concentrations": [],
+    "title": "Quantitative Methods for Coastal Climate Resilience",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": "SR",
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-282",
+    "desc": "Focuses on quantitative methods and skills for coastal climate resilience, using data science, statistics, data visualization, and geospatial analysis. Prepares students through hands-on work and real-world case studies. The course uses lectures, python notebooks, and examples of coastal hazard risks and data analysis and representation. No previous programming or geospatial modeling experience is necessary.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "searchOnly": true
+  },
+  "CSP 290A": {
+    "concentrations": [],
+    "title": "Coastal Science and Policy Capstone Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290a",
+    "desc": "First of three independent research courses during which students work closely with partner institutions and faculty co-mentors to generate alternative, interdisciplinary-based solutions to coastal sustainability problems. Provides experience in a real-world, collaborative, problem-solving environment. This class is offered for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Concurrent",
+    "enrollmentText": "restricted to coastal science and policy graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Concurrent",
+      "Official enrollment/restriction text: restricted to coastal science and policy graduate students.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 290B": {
+    "concentrations": [],
+    "title": "Coastal Science and Policy Capstone Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290b",
+    "desc": "Second of three independent research courses during which students work closely with partner institutions and faculty co-mentors to generate alternative, interdisciplinary-based solutions to coastal sustainability problems. Provides experience in a real-world, collaborative, problem-solving environment. Offered for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Concurrent",
+    "enrollmentText": "restricted to coastal science and policy graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Concurrent",
+      "Official enrollment/restriction text: restricted to coastal science and policy graduate students.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 290C": {
+    "concentrations": [],
+    "title": "Coastal Science and Policy Capstone Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290c",
+    "desc": "Third of three independent research courses during which students work closely with partner institutions and faculty co-mentors to generate alternative, interdisciplinary-based solutions to coastal sustainability problems. Provides experience in a real-world, collaborative, problem-solving environment. Offered for Satisfactory/Unsatisfactory grading only.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Concurrent",
+    "enrollmentText": "restricted to coastal science and policy graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Concurrent",
+      "Official enrollment/restriction text: restricted to coastal science and policy graduate students.",
+      "Needs review: contains-prior-or-concurrent-language",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 291": {
+    "concentrations": [],
+    "title": "Coastal Science and Policy Capstone Seminar",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-291",
+    "desc": "Interactive workshop format to share and get feedback on students' capstone projects. Topics by quarter include, but are not limited to: fall–project progress and challenges, midterm report preparation (due winter term); winter–sharpen capstone’s theory of change, outcomes and communications; spring–prepare capstone deliverables, final written/oral reports, rehearse public-facing presentation. Additional topics may include career and networking skill-building, and exposure to real-world collaborative initiatives on coastal sustainability issues. Offered for Satisfactory/Unsatisfactory grading only. Concurrent with implementation of students’ yearlong capstone projects (CSP 290A, CSP 290B, and CSP 290C).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to coastal science and policy graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to coastal science and policy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 292": {
+    "concentrations": [],
+    "title": "Special Topics in Coastal Science and Policy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-292",
+    "desc": "Seminar in which students present, discuss, and gain feedback on a current special topic in the interdisciplinary arena of coastal science and policy. The special topic can involve identification of current problems, relevant research and practice, and/or design of solutions in coastal science and policy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 293": {
+    "concentrations": [],
+    "title": "Special Topics in Coastal Science and Policy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-293",
+    "desc": "Intensive seminar in which students present, discuss, and gain feedback on a current special topic in the interdisciplinary arena of coastal science and policy. The special topic can involve identification of current problems, relevant research and practice, and/or design of solutions in coastal science and policy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students; qualified undergraduates may enroll by permission of instructor.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; qualified undergraduates may enroll by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "CSP 297": {
+    "concentrations": [],
+    "title": "Independent Study in Coastal Science and Policy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-297",
+    "desc": "Independent study and research under faculty supervision. The student, guided by a faculty member, pursues in-depth learning about a specific coastal science and policy problem, opportunity or solution. Students submit petition to sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "FMST 208": {
+    "concentrations": [],
+    "title": "African(a) Genders and Sexualities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-208",
+    "desc": "Examines a number of classic and new critical texts in the field of African(a) Feminism and Sexuality. Focuses on how African(a) scholars have had to theorize genders and sexualities through an intersectional lens that takes into account questions of decoloniality and freedom. How might we rethink issues of oppression and domination in relationship to race, nation, sex, gender, and sexuality in the global Black world using the tools provided by Africa(a) scholars?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "FMST 224": {
+    "concentrations": [],
+    "title": "Reproductive Justice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-224",
+    "desc": "Explores practices of reproductive labor, care and justice, centering global south and transnational perspectives. Readings draw from ethnography alongside critical race, feminist, and queer theory to trouble the concepts of the body, agency, and freedom that have shaped dominant discourses of reproductive politics such as, the \"right to choose,\" along with secular liberal frameworks of justice more broadly. Aims to expand vision of what is possible and necessary in our contemporary moment of heightened contestation over reproductive life and rights.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "SOCY 268A": {
+    "concentrations": [],
+    "title": "Science and Justice: Experiments in Collaboration",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268a",
+    "desc": "Considers the practical and epistemological necessity of collaborative research in the development of new sciences and technologies that are attentive to questions of ethics and justice. Enrollment is by permission of instructor. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
+  },
+  "SOCY 268B": {
+    "concentrations": [],
+    "title": "Science and Justice Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268b",
+    "desc": "Provides in-depth instruction in conducting collaborative interdisciplinary research. Students produce a final research project that explores how this training might generate research that is more responsive to the links between questions of knowledge and questions of justice. Prerequisite(s): SOCY 268A , BME 268A, FMST 268A, or ANTH 267A. Enrollment is restricted to graduate students and by permission of the instructor.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "SOCY 268A , BME 268A, FMST 268A, or ANTH 267A.",
+    "enrollmentText": "Enrollment is restricted to graduate students and by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: SOCY 268A , BME 268A, FMST 268A, or ANTH 267A.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition"
+    ],
+    "searchOnly": true
   }
 };

@@ -1,166 +1,819 @@
 {
-  "generatedAt": "2026-08-17T02:25:51.392Z",
+  "generatedAt": "2026-08-17T03:01:18.635Z",
   "sourceCandidates": "candidate-expanded-courses.json",
-  "candidateCount": 358,
+  "candidateCount": 161,
   "buckets": {
-    "passed": 73,
+    "passed": 28,
     "blocked": 2,
-    "warningsOnly": 283
+    "warningsOnly": 131
   },
   "rows": [
     {
-      "code": "AM 180",
-      "title": "Reading Research Papers in Applied Mathematics",
+      "code": "ANTH 151D",
+      "title": "Introduction to Design Anthropology",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-151d"
+    },
+    {
+      "code": "ANTH 196Y",
+      "title": "Archaeology and the Rise of Nationalism",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-196y"
+    },
+    {
+      "code": "ANTH 200",
+      "title": "Theoretical Foundations of Physical Anthropological Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/upper-division/am-180"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200"
     },
     {
-      "code": "AM 200",
-      "title": "Teaching in Applied Mathematics",
+      "code": "ANTH 200A",
+      "title": "Cultural Graduate Core Course",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-200"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200a"
     },
     {
-      "code": "AM 211",
-      "title": "Foundations of Applied Mathematics",
+      "code": "ANTH 200B",
+      "title": "Cultural Graduate Core Course",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-211"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-200b"
     },
     {
-      "code": "AM 212",
-      "title": "Advanced Methods of Applied Mathematics",
+      "code": "ANTH 201",
+      "title": "Human Evolution",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-201"
     },
     {
-      "code": "AM 212A",
-      "title": "Applied Partial Differential Equations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212a"
-    },
-    {
-      "code": "AM 212B",
-      "title": "Applied Mathematical Methods II",
+      "code": "ANTH 202A",
+      "title": "Skeletal Biology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-permission-or-consent-exception",
         "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-202a"
     },
     {
-      "code": "AM 213A",
-      "title": "Numerical Linear Algebra",
+      "code": "ANTH 208A",
+      "title": "Ethnographic Practice",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-213a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208a"
     },
     {
-      "code": "AM 213B",
-      "title": "Numerical Methods for the Solution of Differential Equations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-213b"
-    },
-    {
-      "code": "AM 215",
-      "title": "Stochastic Modeling in Biology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-215"
-    },
-    {
-      "code": "AM 216",
-      "title": "Stochastic Differential Equations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-216"
-    },
-    {
-      "code": "AM 217",
-      "title": "Introduction to Fluid Dynamics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-217"
-    },
-    {
-      "code": "AM 224",
-      "title": "Applied Dynamical Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-224"
-    },
-    {
-      "code": "AM 227",
-      "title": "Waves, Instabilities, and Turbulence in Fluids",
+      "code": "ANTH 208C",
+      "title": "Design Anthropology",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-227"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-208c"
     },
     {
-      "code": "AM 229",
-      "title": "Convex Optimization",
+      "code": "ANTH 210R",
+      "title": "Religion in American Politics and Culture",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-229"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-210r"
     },
     {
-      "code": "AM 230",
-      "title": "Numerical Optimization",
+      "code": "ANTH 211",
+      "title": "Human Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-230"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-211"
     },
     {
-      "code": "AM 232",
-      "title": "Applied Optimal Control",
+      "code": "ANTH 212",
+      "title": "The Human Life Cycle",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-212"
+    },
+    {
+      "code": "ANTH 214",
+      "title": "Culture and Power",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-214"
+    },
+    {
+      "code": "ANTH 216",
+      "title": "Methods in Biological Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-216"
+    },
+    {
+      "code": "ANTH 219",
+      "title": "Religions, States, Secularities",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-219"
+    },
+    {
+      "code": "ANTH 220",
+      "title": "Cartographies of Culture",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-220"
+    },
+    {
+      "code": "ANTH 224",
+      "title": "Anthropology of Secularism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-224"
+    },
+    {
+      "code": "ANTH 225",
+      "title": "The Anthropology of Things: Sign, Gift, Commodity, Tool",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-225"
+    },
+    {
+      "code": "ANTH 228",
+      "title": "Grant Writing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-228"
+    },
+    {
+      "code": "ANTH 229",
+      "title": "Constructing Regions",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-229"
+    },
+    {
+      "code": "ANTH 230",
+      "title": "Bodies, Images, Screens",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-230"
+    },
+    {
+      "code": "ANTH 231",
+      "title": "Intimacy and Affective Labor",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-231"
+    },
+    {
+      "code": "ANTH 232",
+      "title": "Bodies, Knowledge, Practice",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-232"
+    },
+    {
+      "code": "ANTH 233",
+      "title": "Politics of Nature",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-233"
+    },
+    {
+      "code": "ANTH 234",
+      "title": "Feminist Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-234"
+    },
+    {
+      "code": "ANTH 235",
+      "title": "Language and Culture",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-235"
+    },
+    {
+      "code": "ANTH 238",
+      "title": "Advanced Topics in Cultural Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-238"
+    },
+    {
+      "code": "ANTH 241",
+      "title": "Social Justice",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-241"
+    },
+    {
+      "code": "ANTH 243",
+      "title": "Cultures of Capitalism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-243"
+    },
+    {
+      "code": "ANTH 246",
+      "title": "Advanced Readings in Environmental Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-246"
+    },
+    {
+      "code": "ANTH 247",
+      "title": "Critical Perspectives on Nutrition",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-247"
+    },
+    {
+      "code": "ANTH 248",
+      "title": "Shadowy Dealings: Anthropology of Finance, Money, and Law",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-248"
+    },
+    {
+      "code": "ANTH 249",
+      "title": "Ecological Discourses",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-249"
+    },
+    {
+      "code": "ANTH 252",
+      "title": "Survey of Cultural Anthropological Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-252"
+    },
+    {
+      "code": "ANTH 253",
+      "title": "Advanced Cultural Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-253"
+    },
+    {
+      "code": "ANTH 254",
+      "title": "Medicine and Culture",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-254"
+    },
+    {
+      "code": "ANTH 255",
+      "title": "Regulating Religion/Sex",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-255"
+    },
+    {
+      "code": "ANTH 258",
+      "title": "Experimental Cultures",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-258"
+    },
+    {
+      "code": "ANTH 259",
+      "title": "Race in Theory and Ethnography",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-259"
+    },
+    {
+      "code": "ANTH 260",
+      "title": "Anthropology of Freedom",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-260"
+    },
+    {
+      "code": "ANTH 261",
+      "title": "Replication, Mimesis, and Fakery",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-261"
+    },
+    {
+      "code": "ANTH 262",
+      "title": "Documenting Cultures",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-262"
+    },
+    {
+      "code": "ANTH 263",
+      "title": "Kinship",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-263"
+    },
+    {
+      "code": "ANTH 269",
+      "title": "Global History and the Longue Duree",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-269"
+    },
+    {
+      "code": "ANTH 270",
+      "title": "History of Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270"
+    },
+    {
+      "code": "ANTH 270A",
+      "title": "Archaeology Graduate Core Course: History of Archaeological Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270a"
+    },
+    {
+      "code": "ANTH 270B",
+      "title": "Current Directions in Archaeological Theory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-270b"
+    },
+    {
+      "code": "ANTH 272",
+      "title": "Advanced Archaeological Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-272"
+    },
+    {
+      "code": "ANTH 273",
+      "title": "Origins of Farming",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-273"
+    },
+    {
+      "code": "ANTH 274",
+      "title": "Origins of Complex Societies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-274"
+    },
+    {
+      "code": "ANTH 275",
+      "title": "Tutorial in African Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-275"
+    },
+    {
+      "code": "ANTH 276A",
+      "title": "Advanced Topics in North American Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276a"
+    },
+    {
+      "code": "ANTH 276B",
+      "title": "Mesoamerican Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276b"
+    },
+    {
+      "code": "ANTH 276G",
+      "title": "Archaeology of Colonial Borderlands",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-276g"
+    },
+    {
+      "code": "ANTH 278",
+      "title": "Tutorial on Historical Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-278"
+    },
+    {
+      "code": "ANTH 279",
+      "title": "Feminism and Gender in Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-279"
+    },
+    {
+      "code": "ANTH 280",
+      "title": "Advanced Ceramic Analysis",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280"
+    },
+    {
+      "code": "ANTH 280L",
+      "title": "Advanced Ceramic Analysis Laboratory",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-280l"
+    },
+    {
+      "code": "ANTH 281",
+      "title": "Landscape Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-281"
+    },
+    {
+      "code": "ANTH 282",
+      "title": "Household Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-282"
+    },
+    {
+      "code": "ANTH 283",
+      "title": "Introduction to Geographic Information Systems for Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-283"
+    },
+    {
+      "code": "ANTH 284",
+      "title": "Tutorial in Zooarchaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-284"
+    },
+    {
+      "code": "ANTH 285",
+      "title": "Osteology of Mammals, Birds, and Fish",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-285"
+    },
+    {
+      "code": "ANTH 287",
+      "title": "Advanced Topics in Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287"
+    },
+    {
+      "code": "ANTH 287A",
+      "title": "Advanced Topics: Indigenous Archaeology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287a"
+    },
+    {
+      "code": "ANTH 287B",
+      "title": "Advanced Topics: Archaeology in the Age of Big Data",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-287b"
+    },
+    {
+      "code": "ANTH 290T",
+      "title": "Pedagogy of Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-290t"
+    },
+    {
+      "code": "ANTH 292",
+      "title": "Graduate Colloquium",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-292"
+    },
+    {
+      "code": "ANTH 294N",
+      "title": "Comparison of Cultures",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294n"
+    },
+    {
+      "code": "ANTH 294R",
+      "title": "Advanced Readings in Biological Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-294r"
+    },
+    {
+      "code": "ANTH 295A",
+      "title": "Scientific Method: Biological Anthropology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-295a"
+    },
+    {
+      "code": "ANTH 296N",
+      "title": "The Body, Narrative, and Creative Practice",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-296n"
+    },
+    {
+      "code": "ANTH 297A",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297a"
+    },
+    {
+      "code": "ANTH 297B",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297b"
+    },
+    {
+      "code": "ANTH 297C",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297c"
+    },
+    {
+      "code": "ANTH 297F",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-297f"
+    },
+    {
+      "code": "ANTH 298",
+      "title": "Advanced Laboratory Apprenticeship",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-298"
+    },
+    {
+      "code": "ANTH 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299a"
+    },
+    {
+      "code": "ANTH 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299b"
+    },
+    {
+      "code": "ANTH 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299c"
+    },
+    {
+      "code": "ANTH 299W",
+      "title": "Anthropology Dissertation Workshop",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/graduate/anth-299w"
+    },
+    {
+      "code": "APLX 235",
+      "title": "Second Language Teaching",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/aplx-applied-linguistics/200/aplx-235"
+    },
+    {
+      "code": "ART 131",
+      "title": "Painting with Fire",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -168,1860 +821,619 @@
         "review:prerequisite-references-missing-locally",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-232"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-131"
     },
     {
-      "code": "AM 234",
-      "title": "Machine Learning and Artificial Intelligence in Genomics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-234"
-    },
-    {
-      "code": "AM 238",
-      "title": "Fundamentals of Uncertainty Quantification in Computational Science and Engineering",
+      "code": "ART 136",
+      "title": "Murals and Movements",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
+        "review:prerequisite-references-missing-locally",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-238"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-136"
     },
     {
-      "code": "AM 250",
-      "title": "An Introduction to High Performance Computing",
+      "code": "ART 171",
+      "title": "Art, Food, and Ecology",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-171"
+    },
+    {
+      "code": "ART 210A",
+      "title": "Practice-Based Research Group: Sites",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-250"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210a"
     },
     {
-      "code": "AM 260",
-      "title": "Computational Fluid Dynamics",
+      "code": "ART 210B",
+      "title": "Practice-Based Research Group: Systems",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-260"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210b"
     },
     {
-      "code": "AM 261",
-      "title": "Advanced Scientific Machine Learning",
+      "code": "ART 210C",
+      "title": "Practice-Based Research Group: Contexts",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210c"
+    },
+    {
+      "code": "ART 220",
+      "title": "Methods and Histories",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-261"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-220"
     },
     {
-      "code": "AM 273",
-      "title": "System Identification for Aerial Robotic Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-273"
-    },
-    {
-      "code": "AM 275",
-      "title": "Magnetohydrodynamics",
+      "code": "ART 230",
+      "title": "Theory and Practice",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-275"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-230"
     },
     {
-      "code": "AM 280A",
-      "title": "Seminar in Mathematical and Computational Biology",
+      "code": "ART 240",
+      "title": "Art Pedagogies",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-240"
     },
     {
-      "code": "AM 280B",
-      "title": "Seminar in Applied Mathematical Modeling",
+      "code": "ART 250",
+      "title": "Writing Matters",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-250"
     },
     {
-      "code": "AM 280C",
-      "title": "Seminar in Geophysical and Astrophysical Fluid Dynamics",
+      "code": "ART 257",
+      "title": "Immersive Arts Field Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280c"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-257"
     },
     {
-      "code": "AM 296",
-      "title": "Masters Project",
+      "code": "ART 260",
+      "title": "Curatorial Collective",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-296"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-260"
     },
     {
-      "code": "AM 297A",
-      "title": "Independent Study or Research",
+      "code": "ART 270A",
+      "title": "Project Development and Critique I",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270a"
     },
     {
-      "code": "AM 297B",
-      "title": "Independent Study or Research",
+      "code": "ART 270B",
+      "title": "Project Development and Critique II",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270b"
     },
     {
-      "code": "AM 297C",
-      "title": "Independent Study or Research",
+      "code": "ART 280",
+      "title": "MFA Project Production",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297c"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-280"
     },
     {
-      "code": "AM 297F",
+      "code": "ART 297",
       "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297f"
-    },
-    {
-      "code": "AM 299A",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299a"
-    },
-    {
-      "code": "AM 299B",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299b"
-    },
-    {
-      "code": "AM 299C",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299c"
-    },
-    {
-      "code": "ARTG 110",
-      "title": "Game Engines for Artists",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-110"
-    },
-    {
-      "code": "ARTG 111",
-      "title": "MateREALITIES: Sculptural Components of Games and Interactive Artworks",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-111"
-    },
-    {
-      "code": "ARTG 129C",
-      "title": "Special Topics in Game Design: Craft Refinement",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129c"
-    },
-    {
-      "code": "ARTG 129P",
-      "title": "Special Topics in Game Design: Performance & Exhibition",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129p"
-    },
-    {
-      "code": "ARTG 129S",
-      "title": "Special Topics in Game Design: Social Interventions",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129s"
-    },
-    {
-      "code": "ARTG 190",
-      "title": "Open Source Afro Hair Library Contributor Studio",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-190"
-    },
-    {
-      "code": "ARTG 93",
-      "title": "Participation in a Changing World",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/lower-division/artg-93"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-297"
     },
     {
-      "code": "ASTR 116",
-      "title": "Fundamentals of Astrobiology",
+      "code": "ART 299F",
+      "title": "Thesis Research",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-299f"
+    },
+    {
+      "code": "CHIN 109",
+      "title": "Haunted Justice: Goddess, Ghosts, and Gender in Chinese Folklore",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-116"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese/upper-division/chin-109"
     },
     {
-      "code": "ASTR 125",
-      "title": "Machining for Physics and Astronomy Instrumentation",
+      "code": "CMMU 297",
+      "title": "Independent Study",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-125"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cmmu-community-studies/graduate/cmmu-297"
     },
     {
-      "code": "ASTR 202",
-      "title": "Astrophysics I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-202"
-    },
-    {
-      "code": "ASTR 204",
-      "title": "Astrophysics II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-204"
-    },
-    {
-      "code": "ASTR 205",
-      "title": "Introduction to Astronomical Research and Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-205"
-    },
-    {
-      "code": "ASTR 206",
-      "title": "Introduction to Research Mentoring",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-206"
-    },
-    {
-      "code": "ASTR 214",
-      "title": "Special Topics in Galactic and Extragalactic Astronomy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-214"
-    },
-    {
-      "code": "ASTR 215",
-      "title": "Research Practicum for Astrophysics",
+      "code": "CRES 141",
+      "title": "Learning with the Land",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-215"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-141"
     },
     {
-      "code": "ASTR 220A",
-      "title": "Stars and Planets I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-220a"
-    },
-    {
-      "code": "ASTR 222",
-      "title": "Stars and Planets II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-222"
-    },
-    {
-      "code": "ASTR 225",
-      "title": "High-Energy Astrophysics",
+      "code": "CRES 143",
+      "title": "Trans Love in a Hopeless Place",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-225"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-143"
     },
     {
-      "code": "ASTR 230",
-      "title": "Diffuse Matter in Space",
+      "code": "CRES 178",
+      "title": "Authoritarianism and Fascism",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-230"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-178"
     },
     {
-      "code": "ASTR 233",
-      "title": "Galaxies and Cosmology I",
+      "code": "CRES 190I",
+      "title": "Talanoa—Talkin Story: Indigenous, Decolonial Research and Methodologies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-placement-exam-or-writing-requirement",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190i"
+    },
+    {
+      "code": "CRES 190W",
+      "title": "Queer & Anti-Colonial Gardening",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-placement-exam-or-writing-requirement",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190w"
+    },
+    {
+      "code": "CRES 200",
+      "title": "Black Studies Methods",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-233"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-200"
     },
     {
-      "code": "ASTR 234",
-      "title": "Statistical Techniques in Astronomy",
+      "code": "CRES 201",
+      "title": "Exile & Diaspora",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-234"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-201"
     },
     {
-      "code": "ASTR 240A",
-      "title": "Galaxies and Cosmology II",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-240a"
-    },
-    {
-      "code": "ASTR 257",
-      "title": "Observational Astronomy",
+      "code": "CRES 202",
+      "title": "Ecopoetics and Ecoaesthetics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-257"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-202"
     },
     {
-      "code": "ASTR 260",
-      "title": "Instrumentation for Astronomy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-260"
-    },
-    {
-      "code": "ASTR 289",
-      "title": "Adaptive Optics and Its Application",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-289"
-    },
-    {
-      "code": "ASTR 292",
-      "title": "Seminar",
+      "code": "CRES 203",
+      "title": "Black Studies Theories",
       "status": "blocked",
       "errors": [
         "invalid-units"
       ],
       "warnings": [
-        "review:missing-units"
+        "review:missing-units",
+        "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-292"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-203"
     },
     {
-      "code": "ASTR 293",
-      "title": "Current Literature in Astrophysics",
+      "code": "CRES 204",
+      "title": "Decolonial Futures",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-293"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-204"
     },
     {
-      "code": "ASTR 294",
-      "title": "Pedagogy of Astrophysical Research",
+      "code": "CRES 205",
+      "title": "Critical Indigenous Studies",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-294"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-205"
     },
     {
-      "code": "ASTR 297A",
+      "code": "CRES 206",
+      "title": "Studying with Ancestors",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-206"
+    },
+    {
+      "code": "CRES 207",
+      "title": "Seeing the Earth Before the End of the World",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-207"
+    },
+    {
+      "code": "CRES 209",
+      "title": "Ethnographies of Empire",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-209"
+    },
+    {
+      "code": "CRES 210",
+      "title": "Sex and the Carceral State",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-210"
+    },
+    {
+      "code": "CRES 213",
+      "title": "Colonialism, Racial Capitalism and Surveillance",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-213"
+    },
+    {
+      "code": "CRES 217",
+      "title": "Indigenous Politics",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-217"
+    },
+    {
+      "code": "CRES 218",
+      "title": "Militarism and Tourism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-218"
+    },
+    {
+      "code": "CRES 222",
+      "title": "Experimental Language Poetry",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-222"
+    },
+    {
+      "code": "CRES 227",
+      "title": "From Oceania to Native California: Indigenous Environmentalisms",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-227"
+    },
+    {
+      "code": "CRES 243",
+      "title": "Feminism, Race, and the Politics of Knowledge",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-243"
+    },
+    {
+      "code": "CRES 261",
+      "title": "The Racial and Gendered Economies of Housing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-261"
+    },
+    {
+      "code": "CRES 297A",
       "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/graduate/cres-297a"
     },
     {
-      "code": "ASTR 297B",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297b"
-    },
-    {
-      "code": "ASTR 297C",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297c"
-    },
-    {
-      "code": "ASTR 297D",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297d"
-    },
-    {
-      "code": "ASTR 299A",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299a"
-    },
-    {
-      "code": "ASTR 299B",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299b"
-    },
-    {
-      "code": "ASTR 299C",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299c"
-    },
-    {
-      "code": "ASTR 49",
-      "title": "Cultural Astronomy",
+      "code": "CRSN 100",
+      "title": "Writing Sustainabilities",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/1-99/astr-49"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-100"
     },
     {
-      "code": "EART 114",
-      "title": "Environmental Geophysics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-114"
-    },
-    {
-      "code": "EART 122",
-      "title": "Air Pollution",
+      "code": "CRSN 11",
+      "title": "Introduction to Sustainabilities and Social Justice",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-122"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-11"
     },
     {
-      "code": "EART 170",
-      "title": "Global Seismology",
-      "status": "warnings-only",
+      "code": "CRSN 120",
+      "title": "Diverse Perspectives on Sustainability and Justice",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-120"
     },
     {
-      "code": "EART 203",
-      "title": "Introductory Teaching Seminar",
+      "code": "CRSN 23",
+      "title": "Campus Natural History Practicum",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-23"
+    },
+    {
+      "code": "CRSN 32",
+      "title": "Reading Sci-Fi: Octavia Butler and Ursula LeGuin",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-32"
+    },
+    {
+      "code": "CRWN 103",
+      "title": "Summer Project - Science for Social Impact",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-103"
+    },
+    {
+      "code": "CRWN 185A",
+      "title": "Design your Career: Self-Discovery & Career Planning",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185a"
     },
     {
-      "code": "EART 204",
-      "title": "Earth and Planetary Sciences Foundations",
+      "code": "CRWN 185B",
+      "title": "Career Launchpad: Career Tools & Strategy for Engineers and Technical Specialists",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-204"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185b"
     },
     {
-      "code": "EART 206",
-      "title": "Great Papers in the Earth Sciences",
+      "code": "CRWN 191",
+      "title": "Marketing for Good",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-191"
+    },
+    {
+      "code": "CRWN 290",
+      "title": "Startup Entrepreneurship Academy",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/graduate/crwn-290"
+    },
+    {
+      "code": "CRWN 82",
+      "title": "Introduction to Broadcast Operations: KZSC Radio Programming",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-82"
+    },
+    {
+      "code": "CSP 200",
+      "title": "Natural Sciences for Coastal Sustainability",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-206"
-    },
-    {
-      "code": "EART 207",
-      "title": "Tectonics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-207"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-200"
     },
     {
-      "code": "EART 208",
-      "title": "Methods in Paleoclimatology",
+      "code": "CSP 210",
+      "title": "Social Sciences for Coastal Sustainability",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-208"
-    },
-    {
-      "code": "EART 216",
-      "title": "Astrobiology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-216"
-    },
-    {
-      "code": "EART 219",
-      "title": "Advanced Scientific Programing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-219"
-    },
-    {
-      "code": "EART 220",
-      "title": "Ground Water Modeling",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-220"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-210"
     },
     {
-      "code": "EART 225",
-      "title": "Statistics and Data Analysis in the Geosciences",
+      "code": "CSP 220",
+      "title": "Economics for Coastal Sustainability",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-225"
-    },
-    {
-      "code": "EART 227",
-      "title": "Measuring Earth's 4.5 Billion Year History",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-227"
-    },
-    {
-      "code": "EART 229",
-      "title": "Isotopic Methods in Environmental Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-229"
-    },
-    {
-      "code": "EART 230",
-      "title": "Applications of Isotopes in Earth and Environmental Sciences",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-230"
-    },
-    {
-      "code": "EART 240",
-      "title": "Communicating Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-240"
-    },
-    {
-      "code": "EART 252",
-      "title": "Hydroclimatology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-252"
-    },
-    {
-      "code": "EART 254",
-      "title": "The Climate System",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-254"
-    },
-    {
-      "code": "EART 258",
-      "title": "Deep Time Paleoclimates",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-258"
-    },
-    {
-      "code": "EART 262",
-      "title": "Planetary Interiors",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-262"
-    },
-    {
-      "code": "EART 263",
-      "title": "Planetary Surfaces",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-263"
-    },
-    {
-      "code": "EART 264",
-      "title": "Planetary Atmospheres",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-264"
-    },
-    {
-      "code": "EART 265",
-      "title": "Order of Magnitude Estimation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-265"
-    },
-    {
-      "code": "EART 266",
-      "title": "Geologic Signal Processing and Inverse Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-266"
-    },
-    {
-      "code": "EART 268",
-      "title": "History and Geochemistry of the Solar System",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-268"
-    },
-    {
-      "code": "EART 270",
-      "title": "Global Seismology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-270"
-    },
-    {
-      "code": "EART 271",
-      "title": "Current Research Topics in Deep Earth Processes",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-271"
-    },
-    {
-      "code": "EART 272",
-      "title": "Geophysical Fluid Dynamics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-272"
-    },
-    {
-      "code": "EART 273",
-      "title": "Earthquake Physics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-273"
-    },
-    {
-      "code": "EART 274",
-      "title": "Crustal Deformation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-274"
-    },
-    {
-      "code": "EART 278A",
-      "title": "Theoretical Seismology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-278a"
-    },
-    {
-      "code": "EART 280D",
-      "title": "Short Course in Atmospheric/Climate Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-280d"
-    },
-    {
-      "code": "EART 290A",
-      "title": "Hidden Curriculum",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290a"
-    },
-    {
-      "code": "EART 290B",
-      "title": "Topics in Glaciology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290b"
-    },
-    {
-      "code": "EART 290C",
-      "title": "Topics in Geophysics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290c"
-    },
-    {
-      "code": "EART 290D",
-      "title": "Petrology and Plate Tectonics",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290d"
-    },
-    {
-      "code": "EART 290E",
-      "title": "Topics in Planetary Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290e"
-    },
-    {
-      "code": "EART 290F",
-      "title": "Topics in Coastal Processes",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290f"
-    },
-    {
-      "code": "EART 290G",
-      "title": "Topics in Global Tectonics",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290g"
-    },
-    {
-      "code": "EART 290H",
-      "title": "Topics in Hydrogeology",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290h"
-    },
-    {
-      "code": "EART 290I",
-      "title": "Topics in Geomorphology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290i"
-    },
-    {
-      "code": "EART 290J",
-      "title": "Intersections of Geodynamics and Climate",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290j"
-    },
-    {
-      "code": "EART 290K",
-      "title": "Paleontology Seminar",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290k"
-    },
-    {
-      "code": "EART 290L",
-      "title": "Topics in Climate Change",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290l"
-    },
-    {
-      "code": "EART 290M",
-      "title": "Topics in Atmospheric Science",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290m"
-    },
-    {
-      "code": "EART 290N",
-      "title": "Topics in Mineral Physics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290n"
-    },
-    {
-      "code": "EART 290O",
-      "title": "Topics in Hydrology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290o"
-    },
-    {
-      "code": "EART 290P",
-      "title": "Interdisciplinary Topics in the Earth Sciences",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290p"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-220"
     },
     {
-      "code": "EART 290Q",
-      "title": "Topics in Outer Solar System",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290q"
-    },
-    {
-      "code": "EART 290R",
-      "title": "Topics in the Chemistry and Physics of the Earth",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290r"
-    },
-    {
-      "code": "EART 290T",
-      "title": "Current Research Topics in Paleoceanography and Paleoclimatology",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290t"
-    },
-    {
-      "code": "EART 290U",
-      "title": "Topics in Thermochronology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290u"
-    },
-    {
-      "code": "EART 290X",
-      "title": "Topics in Modeling Planetary Interiors",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290x"
-    },
-    {
-      "code": "EART 292",
-      "title": "Seminar",
+      "code": "CSP 230",
+      "title": "Integrated Problem-Based Discussion",
       "status": "blocked",
       "errors": [
         "invalid-units"
       ],
       "warnings": [
-        "review:missing-units"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-292"
-    },
-    {
-      "code": "EART 293",
-      "title": "Graduate Research Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-293"
-    },
-    {
-      "code": "EART 296",
-      "title": "Special Student Seminar",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-296"
-    },
-    {
-      "code": "EART 297A",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297a"
-    },
-    {
-      "code": "EART 297B",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297b"
-    },
-    {
-      "code": "EART 297C",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297c"
-    },
-    {
-      "code": "EART 298",
-      "title": "Earth Sciences Internship",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-298"
-    },
-    {
-      "code": "EART 299A",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299a"
-    },
-    {
-      "code": "EART 299B",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299b"
-    },
-    {
-      "code": "EART 299C",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299c"
-    },
-    {
-      "code": "ECON 126",
-      "title": "Health Care Markets",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-126"
-    },
-    {
-      "code": "ECON 193S",
-      "title": "Summer Transforming Futures Experiential Learning",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-193s"
-    },
-    {
-      "code": "ECON 200",
-      "title": "Microeconomic Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-200"
-    },
-    {
-      "code": "ECON 201",
-      "title": "Applications in Microeconomics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-201"
-    },
-    {
-      "code": "ECON 202",
-      "title": "Macroeconomic Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-202"
-    },
-    {
-      "code": "ECON 204A",
-      "title": "Advanced Microeconomic Theory I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204a"
-    },
-    {
-      "code": "ECON 204B",
-      "title": "Advanced Microeconomic Theory II",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204b"
-    },
-    {
-      "code": "ECON 204C",
-      "title": "Advanced Microeconomic Theory III",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204c"
-    },
-    {
-      "code": "ECON 205A",
-      "title": "Advanced Macroeconomic Theory I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205a"
-    },
-    {
-      "code": "ECON 205B",
-      "title": "Advanced Macroeconomic Theory II",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205b"
-    },
-    {
-      "code": "ECON 205C",
-      "title": "Advanced Macroeconomic Theory III",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205c"
-    },
-    {
-      "code": "ECON 210A",
-      "title": "Mathematical Methods for Economic Analysis",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-210a"
-    },
-    {
-      "code": "ECON 210B",
-      "title": "Mathematical Methods for Economic Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-210b"
-    },
-    {
-      "code": "ECON 211A",
-      "title": "Advanced Econometrics I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211a"
-    },
-    {
-      "code": "ECON 211B",
-      "title": "Advanced Econometrics II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211b"
-    },
-    {
-      "code": "ECON 211C",
-      "title": "Advanced Econometrics III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211c"
-    },
-    {
-      "code": "ECON 212",
-      "title": "Empirical Project in Econometrics",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-212"
-    },
-    {
-      "code": "ECON 217",
-      "title": "Applied Econometric Analysis II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-217"
-    },
-    {
-      "code": "ECON 220A",
-      "title": "Development Economics I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-220a"
-    },
-    {
-      "code": "ECON 220B",
-      "title": "Development Economics II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-220b"
-    },
-    {
-      "code": "ECON 221A",
-      "title": "Advanced Methods in Macroeconomics I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221a"
-    },
-    {
-      "code": "ECON 221B",
-      "title": "Advanced Methods in Macroeconomics II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221b"
-    },
-    {
-      "code": "ECON 221C",
-      "title": "Advanced Methods in Macroeconomics III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221c"
-    },
-    {
-      "code": "ECON 222",
-      "title": "Data Science and Applied Microeconomics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-222"
-    },
-    {
-      "code": "ECON 224",
-      "title": "Economic Applications of Machine Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-224"
-    },
-    {
-      "code": "ECON 231",
-      "title": "International Financial Management",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-231"
-    },
-    {
-      "code": "ECON 233",
-      "title": "Finance I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-233"
-    },
-    {
-      "code": "ECON 234",
-      "title": "Financial Institutions and Markets",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-234"
-    },
-    {
-      "code": "ECON 235",
-      "title": "Corporate Finance",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-235"
-    },
-    {
-      "code": "ECON 236",
-      "title": "Financial Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-236"
-    },
-    {
-      "code": "ECON 238",
-      "title": "Market Design: Theory and Pragmatics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-238"
-    },
-    {
-      "code": "ECON 239",
-      "title": "Current Topics in Finance",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-239"
-    },
-    {
-      "code": "ECON 240A",
-      "title": "International Trade I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-240a"
-    },
-    {
-      "code": "ECON 240B",
-      "title": "International Trade II",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-240b"
-    },
-    {
-      "code": "ECON 241A",
-      "title": "Advanced International Finance I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241a"
-    },
-    {
-      "code": "ECON 241B",
-      "title": "Advanced International Finance II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241b"
-    },
-    {
-      "code": "ECON 241C",
-      "title": "Advanced International Finance III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241c"
-    },
-    {
-      "code": "ECON 249A",
-      "title": "International Trade and Development Policy I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-249a"
-    },
-    {
-      "code": "ECON 249B",
-      "title": "International Trade and Development Policy II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-249b"
-    },
-    {
-      "code": "ECON 250A",
-      "title": "Applied Microeconomics I",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250a"
-    },
-    {
-      "code": "ECON 250B",
-      "title": "Applied Microeconomics II",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250b"
-    },
-    {
-      "code": "ECON 250C",
-      "title": "Applied Microeconomics III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250c"
-    },
-    {
-      "code": "ECON 259A",
-      "title": "Cost-Benefit Analysis",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-259a"
-    },
-    {
-      "code": "ECON 259B",
-      "title": "Public Policy Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-259b"
-    },
-    {
-      "code": "ECON 270A",
-      "title": "Advanced Topics in Microeconomics I",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-270a"
-    },
-    {
-      "code": "ECON 270B",
-      "title": "Advanced Topics in Microeconomics II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-270b"
-    },
-    {
-      "code": "ECON 272",
-      "title": "Evolutionary Game Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-recommended-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-272"
-    },
-    {
-      "code": "ECON 273",
-      "title": "Research Skills for Economists",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-273"
-    },
-    {
-      "code": "ECON 274",
-      "title": "Macroeconomics Workshop",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-274"
-    },
-    {
-      "code": "ECON 275",
-      "title": "Applied Microeconomics Workshop",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-275"
-    },
-    {
-      "code": "ECON 276",
-      "title": "Behavioral, Experimental, and Theoretical Economics Workshop",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-276"
-    },
-    {
-      "code": "ECON 280A",
-      "title": "Applied Economics Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-280a"
-    },
-    {
-      "code": "ECON 280G",
-      "title": "Economics Guest Seminar Series",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-280g"
-    },
-    {
-      "code": "ECON 290",
-      "title": "Topics in International Economics",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-290"
-    },
-    {
-      "code": "ECON 291",
-      "title": "Workshop in Applied Economics",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-291"
-    },
-    {
-      "code": "ECON 293",
-      "title": "Field Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-293"
-    },
-    {
-      "code": "ECON 294A",
-      "title": "Applied Economics and Finance Laboratory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-294a"
-    },
-    {
-      "code": "ECON 294B",
-      "title": "Applied Economics and Finance Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-294b"
-    },
-    {
-      "code": "ECON 295",
-      "title": "Directed Reading",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-295"
-    },
-    {
-      "code": "ECON 296A",
-      "title": "Third Year Ph.D. Seminar",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-296a"
-    },
-    {
-      "code": "ECON 297A",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297a"
-    },
-    {
-      "code": "ECON 297B",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297b"
-    },
-    {
-      "code": "ECON 297C",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297c"
-    },
-    {
-      "code": "ECON 297H",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297h"
-    },
-    {
-      "code": "ECON 298A",
-      "title": "Master's Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298a"
-    },
-    {
-      "code": "ECON 298B",
-      "title": "Master's Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298b"
-    },
-    {
-      "code": "ECON 298C",
-      "title": "Master's Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298c"
-    },
-    {
-      "code": "ECON 299A",
-      "title": "Doctoral Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299a"
-    },
-    {
-      "code": "ECON 299B",
-      "title": "Doctoral Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299b"
-    },
-    {
-      "code": "ECON 299C",
-      "title": "Doctoral Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299c"
-    },
-    {
-      "code": "ENVS 107D",
-      "title": "Natural History Field Quarter: Communicating the Natural World",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
+        "review:missing-units",
         "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-230"
     },
     {
-      "code": "ENVS 124",
-      "title": "Intro to Urban Ecology",
+      "code": "CSP 231A",
+      "title": "CSP Year 1 Capstone Planning & Design Fall",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-124"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231a"
     },
     {
-      "code": "ENVS 201A",
-      "title": "Research Approaches in Environmental Studies",
+      "code": "CSP 231B",
+      "title": "CSP Year 1 Capstone Planning & Design Winter",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-201a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-231b"
     },
     {
-      "code": "ENVS 210",
-      "title": "Political Ecological Thought and Environment",
+      "code": "CSP 244",
+      "title": "Adaptation and Planning",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-210"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-244"
     },
     {
-      "code": "ENVS 215A",
-      "title": "Geographic Information Systems and Environmental Applications",
+      "code": "CSP 271",
+      "title": "Fisheries Ecology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-271"
+    },
+    {
+      "code": "CSP 281A",
+      "title": "Hacking for Oceans—Lean Design Methods",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-281a"
+    },
+    {
+      "code": "CSP 282",
+      "title": "Quantitative Methods for Coastal Climate Resilience",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-282"
+    },
+    {
+      "code": "CSP 290A",
+      "title": "Coastal Science and Policy Capstone Project",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -2029,37 +1441,11 @@
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290a"
     },
     {
-      "code": "ENVS 215B",
-      "title": "Intermediate Geographic Information Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-prior-or-concurrent-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215b"
-    },
-    {
-      "code": "ENVS 215C",
-      "title": "Advanced Geographic Information Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-prior-or-concurrent-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215c"
-    },
-    {
-      "code": "ENVS 215L",
-      "title": "Exercises in Geographic Information Systems",
+      "code": "CSP 290B",
+      "title": "Coastal Science and Policy Capstone Project",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -2067,35 +1453,89 @@
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215l"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290b"
     },
     {
-      "code": "ENVS 220",
-      "title": "Conservation Biology",
+      "code": "CSP 290C",
+      "title": "Coastal Science and Policy Capstone Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-290c"
+    },
+    {
+      "code": "CSP 291",
+      "title": "Coastal Science and Policy Capstone Seminar",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-220"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-291"
     },
     {
-      "code": "ENVS 230",
-      "title": "Agroecology and Sustainable Agriculture",
+      "code": "CSP 292",
+      "title": "Special Topics in Coastal Science and Policy",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-230"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-292"
     },
     {
-      "code": "ENVS 235",
-      "title": "Social Theories of Nature",
-      "status": "passed",
+      "code": "CSP 293",
+      "title": "Special Topics in Coastal Science and Policy",
+      "status": "warnings-only",
       "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-235"
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-293"
+    },
+    {
+      "code": "CSP 297",
+      "title": "Independent Study in Coastal Science and Policy",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/csp-coastal-science-and-policy/graduate/csp-297"
+    },
+    {
+      "code": "CT 151",
+      "title": "Machine Collaboration: Creativity in Posthuman Practice",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-151"
+    },
+    {
+      "code": "CT 167S",
+      "title": "Creative Technologies Sound and Listening Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167s"
+    },
+    {
+      "code": "CT 167V",
+      "title": "Voice, Labor, and Gender",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167v"
     },
     {
       "code": "ENVS 240",
@@ -2108,16 +1548,6 @@
       "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-240"
     },
     {
-      "code": "ENVS 247",
-      "title": "Regional Approaches to Environmental Policy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-247"
-    },
-    {
       "code": "ENVS 250",
       "title": "Coastal Governance",
       "status": "warnings-only",
@@ -2128,666 +1558,38 @@
       "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-250"
     },
     {
-      "code": "ENVS 263",
-      "title": "Plant Disease Ecology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-263"
-    },
-    {
-      "code": "ENVS 265",
-      "title": "Data Science for the Environment",
+      "code": "FMST 208",
+      "title": "African(a) Genders and Sexualities",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-265"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-208"
     },
     {
-      "code": "ENVS 268",
-      "title": "Biogeochemistry and the Global Environment",
+      "code": "FMST 224",
+      "title": "Reproductive Justice",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-268"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-224"
     },
     {
-      "code": "ENVS 271",
-      "title": "Valuing the Environment",
+      "code": "SOCY 268A",
+      "title": "Science and Justice: Experiments in Collaboration",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-271"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268a"
     },
     {
-      "code": "ENVS 272",
-      "title": "Qualitative Field Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-272"
-    },
-    {
-      "code": "ENVS 280",
-      "title": "Advanced Topics in Environmental Studies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-280"
-    },
-    {
-      "code": "ENVS 283",
-      "title": "Environmental Studies Internship",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-283"
-    },
-    {
-      "code": "ENVS 290",
-      "title": "Interdisciplinary Research Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290"
-    },
-    {
-      "code": "ENVS 290L",
-      "title": "Graduate Research Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290l"
-    },
-    {
-      "code": "ENVS 291",
-      "title": "Advanced Readings in Environmental Studies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291"
-    },
-    {
-      "code": "ENVS 291C",
-      "title": "Advanced Readings in Risk and Public Policy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291c"
-    },
-    {
-      "code": "ENVS 291D",
-      "title": "Advanced Readings in Tropical Ecology, Agriculture, and Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291d"
-    },
-    {
-      "code": "ENVS 291M",
-      "title": "Advanced Readings in Biogeochemistry",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291m"
-    },
-    {
-      "code": "ENVS 291P",
-      "title": "Advanced Readings in Environmental History and Anthropology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291p"
-    },
-    {
-      "code": "ENVS 292",
-      "title": "Topics in Research in Environmental Studies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-292"
-    },
-    {
-      "code": "ENVS 297A",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297a"
-    },
-    {
-      "code": "ENVS 297B",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297b"
-    },
-    {
-      "code": "ENVS 297C",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297c"
-    },
-    {
-      "code": "ENVS 297F",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297f"
-    },
-    {
-      "code": "ENVS 299A",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299a"
-    },
-    {
-      "code": "ENVS 299B",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299b"
-    },
-    {
-      "code": "ENVS 299C",
-      "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299c"
-    },
-    {
-      "code": "GAME 200",
-      "title": "Game Design Systems",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-200"
-    },
-    {
-      "code": "GAME 201",
-      "title": "Level&#160;Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-201"
-    },
-    {
-      "code": "GAME 202",
-      "title": "Introduction to Build (Advanced): Physical Computing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-202"
-    },
-    {
-      "code": "GAME 210",
-      "title": "Game Art Intensive",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-210"
-    },
-    {
-      "code": "GAME 215",
-      "title": "Audio Direction",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-215"
-    },
-    {
-      "code": "GAME 221",
-      "title": "Professional Development for Game Makers",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-221"
-    },
-    {
-      "code": "GAME 222",
-      "title": "Professional Development for Game Makers II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-222"
-    },
-    {
-      "code": "GAME 223",
-      "title": "Professional Development for Games Makers III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-223"
-    },
-    {
-      "code": "GAME 230",
-      "title": "Fundamentals of Game Engineering",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-230"
-    },
-    {
-      "code": "GAME 231",
-      "title": "Game Technologies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-231"
-    },
-    {
-      "code": "GAME 232",
-      "title": "Advanced Game Technologies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-232"
-    },
-    {
-      "code": "GAME 235",
-      "title": "Game Development I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-235"
-    },
-    {
-      "code": "GAME 236",
-      "title": "Game Development II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-236"
-    },
-    {
-      "code": "GAME 238",
-      "title": "Computer Graphics for Games",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-238"
-    },
-    {
-      "code": "GAME 240",
-      "title": "Game Usability",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-240"
-    },
-    {
-      "code": "GAME 250",
-      "title": "Foundations of Serious Games and Gamification",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-250"
-    },
-    {
-      "code": "GAME 251",
-      "title": "Games User Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-251"
-    },
-    {
-      "code": "GAME 252",
-      "title": "Modeling and Simulation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-252"
-    },
-    {
-      "code": "GAME 255",
-      "title": "Serious Games Studio I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-255"
-    },
-    {
-      "code": "GAME 256",
-      "title": "Serious Games Studio II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-256"
-    },
-    {
-      "code": "GAME 257",
-      "title": "Serious Games Studio III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-257"
-    },
-    {
-      "code": "GAME 270",
-      "title": "Games and Playable Media Studio I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-270"
-    },
-    {
-      "code": "GAME 271",
-      "title": "Games and Playable Media Studio II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-271"
-    },
-    {
-      "code": "GAME 272",
-      "title": "Games and Playable Media Studio III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-272"
-    },
-    {
-      "code": "GAME 273",
-      "title": "Game Production Intensive",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-273"
-    },
-    {
-      "code": "GAME 280A",
-      "title": "Games Proseminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280a"
-    },
-    {
-      "code": "GAME 280Y",
-      "title": "Games You Should Know",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280y"
-    },
-    {
-      "code": "GAME 290A",
-      "title": "Advanced Topics in Games",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-290a"
-    },
-    {
-      "code": "HCI 200",
-      "title": "Introduction to HCI",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-200"
-    },
-    {
-      "code": "HCI 201",
-      "title": "Introduction to HCI Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-201"
-    },
-    {
-      "code": "HCI 202A",
-      "title": "Introduction to Build: Bootcamp",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202a"
-    },
-    {
-      "code": "HCI 202B",
-      "title": "Introduction to Build (Advanced): Physical Computing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202b"
-    },
-    {
-      "code": "HCI 203",
-      "title": "Introduction to Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-203"
-    },
-    {
-      "code": "HCI 220",
-      "title": "Ethics and Activism in Tech and Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-220"
-    },
-    {
-      "code": "HCI 250",
-      "title": "Participatory Design",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-250"
-    },
-    {
-      "code": "HCI 271",
-      "title": "HCI Capstone 1",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-271"
-    },
-    {
-      "code": "HCI 272",
-      "title": "HCI Capstone 2",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-272"
-    },
-    {
-      "code": "HCI 290",
-      "title": "HCI Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-290"
-    },
-    {
-      "code": "HCI 291",
-      "title": "Strategy Innovation for UX Professionals",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291"
-    },
-    {
-      "code": "LIT 167O",
-      "title": "Aliens: Science and Fiction",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o"
-    },
-    {
-      "code": "NLP 201",
-      "title": "Natural Language Processing I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-201"
-    },
-    {
-      "code": "NLP 202",
-      "title": "Natural Language Processing II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-202"
-    },
-    {
-      "code": "NLP 203",
-      "title": "Natural Language Processing III",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-203"
-    },
-    {
-      "code": "NLP 220",
-      "title": "Data Science and Machine Learning Fundamentals",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-220"
-    },
-    {
-      "code": "NLP 243",
-      "title": "Deep Learning for Natural Language Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-243"
-    },
-    {
-      "code": "NLP 244",
-      "title": "Advanced Machine Learning for Natural Language Processing",
+      "code": "SOCY 268B",
+      "title": "Science and Justice Research Seminar",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -2795,746 +1597,7 @@
         "review:prerequisite-references-missing-locally",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-244"
-    },
-    {
-      "code": "NLP 245",
-      "title": "Conversational Agents",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-references-missing-locally",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-245"
-    },
-    {
-      "code": "NLP 255",
-      "title": "Topics in Applied Natural Language Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-references-missing-locally",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-255"
-    },
-    {
-      "code": "NLP 267",
-      "title": "Machine Translation",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-prior-or-concurrent-language",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-267"
-    },
-    {
-      "code": "NLP 270",
-      "title": "Linguistic Models of Syntax and Semantics for Computer Scientists",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-270"
-    },
-    {
-      "code": "NLP 271A",
-      "title": "Capstone I: Recent Research in NLP",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-271a"
-    },
-    {
-      "code": "NLP 271B",
-      "title": "Capstone II: Natural Language Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-271b"
-    },
-    {
-      "code": "NLP 280",
-      "title": "Seminar in Natural Language Processing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-280"
-    },
-    {
-      "code": "OCEA 213",
-      "title": "Biogeochemical Cycles",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-213"
-    },
-    {
-      "code": "OCEA 280",
-      "title": "Marine Geology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-280"
-    },
-    {
-      "code": "PHYS 224",
-      "title": "Particle Astrophysics and Cosmology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-224"
-    },
-    {
-      "code": "PSYC 139M",
-      "title": "Music Cognition",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-placement-exam-or-writing-requirement",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139m"
-    },
-    {
-      "code": "PSYC 139Z",
-      "title": "Multisensory Cognition",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-placement-exam-or-writing-requirement",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139z"
-    },
-    {
-      "code": "PSYC 140C",
-      "title": "Indigenous Land, Identity and Well-being",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140c"
-    },
-    {
-      "code": "PSYC 159L",
-      "title": "The Social Psychology of Collective Action",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-placement-exam-or-writing-requirement",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159l"
-    },
-    {
-      "code": "PSYC 193S",
-      "title": "Field Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193s"
-    },
-    {
-      "code": "PSYC 201",
-      "title": "Teaching in Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201"
-    },
-    {
-      "code": "PSYC 201A",
-      "title": "Teaching in Psychology I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201a"
-    },
-    {
-      "code": "PSYC 202M",
-      "title": "Introduction to Matlab",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202m"
-    },
-    {
-      "code": "PSYC 202R",
-      "title": "Introduction to R",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202r"
-    },
-    {
-      "code": "PSYC 204",
-      "title": "Quantitative Data Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-204"
-    },
-    {
-      "code": "PSYC 205",
-      "title": "Categorical Data Analysis",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-permission-or-consent-exception",
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-205"
-    },
-    {
-      "code": "PSYC 210",
-      "title": "The Experimental Method in Social Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-210"
-    },
-    {
-      "code": "PSYC 211A",
-      "title": "Proseminar: Social Justice and the Individual",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211a"
-    },
-    {
-      "code": "PSYC 211B",
-      "title": "Social Justice, Society, and Policy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211b"
-    },
-    {
-      "code": "PSYC 211C",
-      "title": "Communicating in Social Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211c"
-    },
-    {
-      "code": "PSYC 213",
-      "title": "Special Topics in Social Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-213"
-    },
-    {
-      "code": "PSYC 214A",
-      "title": "Multivariate Techniques for Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214a"
-    },
-    {
-      "code": "PSYC 214B",
-      "title": "Advanced Multivariate Techniques for Psychology",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214b"
-    },
-    {
-      "code": "PSYC 215",
-      "title": "Production and Comprehension of Spontaneous Communication",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-215"
-    },
-    {
-      "code": "PSYC 220",
-      "title": "Special Topics in Human Memory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-220"
-    },
-    {
-      "code": "PSYC 221",
-      "title": "Visual Perception",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-221"
-    },
-    {
-      "code": "PSYC 222",
-      "title": "Topics in Lexical Organization",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-222"
-    },
-    {
-      "code": "PSYC 224A",
-      "title": "Proseminar: Cognitive I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224a"
-    },
-    {
-      "code": "PSYC 224B",
-      "title": "Proseminar: Cognitive II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224b"
-    },
-    {
-      "code": "PSYC 224C",
-      "title": "Proseminar: Cognitive III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224c"
-    },
-    {
-      "code": "PSYC 225A",
-      "title": "Introduction to Developmental Research I",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225a"
-    },
-    {
-      "code": "PSYC 225B",
-      "title": "Introduction to Developmental Research II",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225b"
-    },
-    {
-      "code": "PSYC 225C",
-      "title": "Introduction to Developmental Research III",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225c"
-    },
-    {
-      "code": "PSYC 227",
-      "title": "Contemporary Issues in Psychology of Language",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-227"
-    },
-    {
-      "code": "PSYC 230",
-      "title": "Research in Cognitive Psychology Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-230"
-    },
-    {
-      "code": "PSYC 231",
-      "title": "Research in Social Psychology Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-231"
-    },
-    {
-      "code": "PSYC 232",
-      "title": "Evolution of Cognition",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-232"
-    },
-    {
-      "code": "PSYC 235",
-      "title": "Infant Development in Contexts",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-235"
-    },
-    {
-      "code": "PSYC 242",
-      "title": "Research in Developmental Psychology Seminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-242"
-    },
-    {
-      "code": "PSYC 244A",
-      "title": "Proseminar I: Cognitive and Language Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244a"
-    },
-    {
-      "code": "PSYC 244B",
-      "title": "Proseminar II: Social and Personality Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244b"
-    },
-    {
-      "code": "PSYC 246",
-      "title": "Cultural Diversity in Human Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-246"
-    },
-    {
-      "code": "PSYC 247",
-      "title": "Special Topics in Developmental Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-247"
-    },
-    {
-      "code": "PSYC 248",
-      "title": "Survey Methods",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-248"
-    },
-    {
-      "code": "PSYC 249",
-      "title": "Field Methodologies and Social Ethnography",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-249"
-    },
-    {
-      "code": "PSYC 250",
-      "title": "Prejudice and Social Relations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-250"
-    },
-    {
-      "code": "PSYC 251",
-      "title": "Feminist Theory and Social Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-251"
-    },
-    {
-      "code": "PSYC 252",
-      "title": "Special Topics in Cognitive Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-252"
-    },
-    {
-      "code": "PSYC 253",
-      "title": "Theory and Research in Intergroup Relations",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-253"
-    },
-    {
-      "code": "PSYC 254",
-      "title": "Psychology of Gender",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-254"
-    },
-    {
-      "code": "PSYC 255",
-      "title": "Qualitative Inquiry in Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-255"
-    },
-    {
-      "code": "PSYC 256",
-      "title": "Psychology of Social Class and Economic Justice",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-256"
-    },
-    {
-      "code": "PSYC 261",
-      "title": "Participatory Action Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-261"
-    },
-    {
-      "code": "PSYC 264",
-      "title": "Transnational Feminism, Development, and Psychology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-264"
-    },
-    {
-      "code": "PSYC 290B",
-      "title": "Advanced Developmental Research and Writing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290b"
-    },
-    {
-      "code": "PSYC 290C",
-      "title": "Professional Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290c"
-    },
-    {
-      "code": "PSYC 290E",
-      "title": "Grant Writing for Psychologists",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290e"
-    },
-    {
-      "code": "PSYC 293",
-      "title": "Field Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-293"
-    },
-    {
-      "code": "PSYC 297A",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297a"
-    },
-    {
-      "code": "PSYC 297B",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297b"
-    },
-    {
-      "code": "PSYC 297C",
-      "title": "Independent Study",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297c"
-    },
-    {
-      "code": "PSYC 297F",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297f"
-    },
-    {
-      "code": "PSYC 299A",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299a"
-    },
-    {
-      "code": "PSYC 299B",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299b"
-    },
-    {
-      "code": "PSYC 299C",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "missing-description",
-        "review:missing-description"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299c"
-    },
-    {
-      "code": "PSYC 50",
-      "title": "Human Sexuality",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-50"
-    },
-    {
-      "code": "PSYC 51",
-      "title": "The Future is Not Set: AI, Data, and Society",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-51"
-    },
-    {
-      "code": "STAT 203",
-      "title": "Introduction to Probability Theory",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-268b"
     }
   ]
 }

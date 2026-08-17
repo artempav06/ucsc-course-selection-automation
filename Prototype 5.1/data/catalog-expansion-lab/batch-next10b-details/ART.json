@@ -1,0 +1,442 @@
+{
+  "generatedAt": "2026-08-17T03:01:13.011Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=ART",
+  "count": 17,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "ART 131",
+      "title": "Painting with Fire",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-131",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "100",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Advanced studio-painting course exploring thematic development using the broad topic of fire as a starting point. Course is divided into four thematic units: color temperature, ecology, experimental process, and independent directions. The visual ideas of abstraction, representation, and metaphor are used to sharpen analytical skills and personal vision across all units, while interrogating associations with fire from the personal to the global.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "One from ART 20J , ART 130 , ART 133 , ART 137 , ART 138 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+      "enrollmentText": "Enrollment is restricted to art majors.",
+      "repeatText": "Yes",
+      "mentionedCourses": [
+        "ART 20J",
+        "ART 130",
+        "ART 133",
+        "ART 137",
+        "ART 138",
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L",
+        "ART 26"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 136",
+      "title": "Murals and Movements",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-136",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "100",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Production course guiding students through the collaborative design and production of large-scale public murals while examining the relationship between muralism and social movements across the Americas. Through hands-on studio practice, research, and fieldwork, students explore how murals have functioned as forms of political expression, public memory, cultural resistance, and community storytelling within struggles for social justice. The course considers muralism’s role in movements connected to labor, migration, Indigenous sovereignty, racial justice, and collective identity. Students develop technical and conceptual skills in collaborative design and large-scale painting while contributing to a collective public artwork.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 20J , and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+      "enrollmentText": "Enrollment is restricted to art majors and proposed art majors.",
+      "repeatText": "Yes",
+      "mentionedCourses": [
+        "ART 20J",
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L",
+        "ART 26"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 171",
+      "title": "Art, Food, and Ecology",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-171",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "100",
+      "division": "upper",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "How can eating become an artistic, ecological, and political practice? This studio course examines food as a sculptural, relational, and environmental medium. Through shared meals, cooking sessions, field visits, and studio-based translation of gastronomic experiences into artistic forms, students investigate how taste, agriculture, and planetary systems intersect. Emphasis is placed on agroecology, environmental justice, and the digestive system as a site of learning and perception.",
+      "ge": "PE-E",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "ART 210A",
+      "title": "Practice-Based Research Group: Sites",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210a",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "The first in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) In this site-specific course, students apply research to site work and art practice.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 210B",
+      "title": "Practice-Based Research Group: Systems",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210b",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "The second in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students develop their research through the lens of systems and relationships.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 210A .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "ART 210A"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 210C",
+      "title": "Practice-Based Research Group: Contexts",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-210c",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Third in the required core course sequence taken by students in the first year of the environmental art and social practice M.F.A. The sequence offers students a graduated learning opportunity to engage in practice-based research in the field. The concept of practice-based research involves \"an original investigation undertaken in order to gain new knowledge partly by means of practice and the outcomes of that practice.\" (Sydney) Students engage with questions of context and community.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "ART 220",
+      "title": "Methods and Histories",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-220",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "First-year seminar on methods of the field. Topics include: strategies for artists working in the field, social and environmental art research methods, histories and case studies (artists, projects, and issues).",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 230",
+      "title": "Theory and Practice",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-230",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "First- or second-year graduate seminar focusing on contemporary theory as it relates to social and environmental art practice.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 220 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "ART 220"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 240",
+      "title": "Art Pedagogies",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-240",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "First-year seminar course introducing and exploring pedagogical methods and approaches in art education and in art practice. The teachings of Paolo Freire and others serve as working models to construct open and respectful learning environments both in and outside the classroom.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 250",
+      "title": "Writing Matters",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-250",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "First-year seminar course focusing on research and writing skills as a dimension of project-based art practice and as support for planning a thesis. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 257",
+      "title": "Immersive Arts Field Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-257",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Immersive site-specific field research over the span of a four-day (24 hours/overnight) field trip utilizing public lands of California, via the UC Natural Reserve System. Students engage and relate to a specific place while exploring concepts of site-specificity and develop their own new inquiries about a place by experiencing it physically and by learning about contemporary art concepts through topics of land use. Students also reflect upon the multiple factors that constitute a \"site\" and how they present possibilities for creative engagement, learn research method skills and approaches that are unique to each site historically, politically, culturally, and environmentally. Due to the rigor of the course, students must submit an application demonstrating the commitment and preparation necessary for successful completion of the class. Enrollment is restricted to graduate students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 260",
+      "title": "Curatorial Collective",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-260",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Second-year seminar course focusing on exhibition, curatorial questions, and practices as they relate to presenting final thesis work for public reception. Covers practical, theoretical, and historical considerations for artists and researchers in the process of preparing for presenting the outcome of MFA research. Students examine multiple modalities for presentation and exhibition and address issues of diversity and access in exhibition and curatorial practices. This course can be taken for Satisfactory/Unsatisfactory grading only.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 270A",
+      "title": "Project Development and Critique I",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270a",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "First in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly, and interdisciplinary dialogue about their projects and the work of fellow students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 210A , ART 210B , ART 210C , and ART 220 .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "ART 210A",
+        "ART 210B",
+        "ART 210C",
+        "ART 220"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 270B",
+      "title": "Project Development and Critique II",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-270b",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Second in a sequence of two second-year courses, continuing the focus on students' production and critique. Through peer discussions students continue to deepen their ability to engage in conceptual, scholarly and interdisciplinary dialogue about their projects and the work of fellow students.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 270A .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "ART 270A"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 280",
+      "title": "MFA Project Production",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-280",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Students produce their final project in conjunction with refining and completing their written thesis. Critique, tutorials, and directed study in writing and studio production leads to the presentation of their project.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "ART 270A .",
+      "enrollmentText": "Enrollment is restricted to graduate students.",
+      "repeatText": "",
+      "mentionedCourses": [
+        "ART 270A"
+      ],
+      "parserFlags": [
+        "contains-major-or-enrollment-condition"
+      ]
+    },
+    {
+      "code": "ART 297",
+      "title": "Independent Study",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-297",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Independent study or research for graduate students. Students submit petition to sponsoring agency.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found"
+      ]
+    },
+    {
+      "code": "ART 299F",
+      "title": "Thesis Research",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/200/art-299f",
+      "departmentSlug": "art-art",
+      "departmentText": "ART - Art",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 2,
+      "creditsText": "2",
+      "desc": "Students complete work toward their final thesis project production with the guidance and supervision of a faculty member. Students obtain permission from the faculty member and submit petition to the sponsoring agency. Enrollment is restricted to graduate students in environmental art and social practice.",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students in environmental art and social practice.",
+      "repeatText": "Yes",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    }
+  ]
+}

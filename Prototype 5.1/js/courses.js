@@ -33275,42 +33275,6 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "EART 110B."
   },
-  "EART 170": {
-    "concentrations": [],
-    "title": "Global Seismology",
-    "units": 5,
-    "division": "upper",
-    "prereqs": [
-      [
-        "MATH 11B",
-        "MATH 19B",
-        "EART 110C",
-        "EART 111"
-      ],
-      [
-        "PHYS 6A",
-        "PHYS 5A",
-        "EART 110C",
-        "EART 111"
-      ]
-    ],
-    "ge": null,
-    "quarters": [],
-    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170",
-    "desc": "Introduction to quantitative earthquake and global Earth structure seismology. Topics include basic elasticity, the seismic wave equation, wave characteristics, seismic ray theory, wave reflection, surface waves, normal modes, earthquake and source theory, and seismic signal processing. Students engage in both analytical exercises and coding assignments. The three-hour laboratory component provides practical experience through hands-on exercises in imaging the Earth's interior and seismic data analysis. Students cannot receive credit for this course and EART 270.",
-    "section": [
-      "FREE"
-    ],
-    "rmpScore": 0,
-    "officialPrereqText": "Prerequisite(s): MATH 11B or MATH 19B , and PHYS 6A or PHYS 5A ; or EART 110C ; or EART 111 . Exceptions can be granted upon request.",
-    "prereqNotes": [
-      "Official prerequisite text: Prerequisite(s): MATH 11B or MATH 19B , and PHYS 6A or PHYS 5A ; or EART 110C ; or EART 111 . Exceptions can be granted upon request.",
-      "Official enrollment/restriction text: cannot receive credit for this course and EART 270.",
-      "Official prerequisite logic is (MATH 11B or MATH 19B plus PHYS 6A or PHYS 5A) OR EART 110C OR EART 111; represented using duplicated EART alternatives because the engine supports grouped alternatives, not nested OR branches.",
-      "Official exception/request language and no-credit-with EART 270 text are preserved as notes/warnings only."
-    ],
-    "enrollmentText": "cannot receive credit for this course and EART 270."
-  },
   "EART 172": {
     "concentrations": [],
     "title": "Geophysical Fluid Dynamics",
@@ -104313,5 +104277,567 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "ANTH 151D": {
+    "concentrations": [],
+    "title": "Introduction to Design Anthropology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ANTH 2"
+      ]
+    ],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-151d",
+    "desc": "This hands-on, immersive, collaborative course introduces students to “design anthropology,” a field of research and analysis that integrates ethnographic methods with principles and approaches drawn from the arts, business, science and technology studies, computer science, engineering, and other related fields. The course covers major debates, methods, and professional opportunities in design anthropology through readings, practical exercises, group activities, and a quarter-long research project that will mimic the design process used by professionals. Students work on collaborative research project through all stages from project development to research to analysis to presentation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): ANTH 2 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): ANTH 2 ."
+    ]
+  },
+  "ANTH 196Y": {
+    "concentrations": [],
+    "title": "Archaeology and the Rise of Nationalism",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/anth-anthropology/100/anth-196y",
+    "desc": "How is archaeology different when it is used to perpetuate narratives that states construct of themselves? This seminar investigates the co-creation of nation states across the world and the professionalization of archaeology. Through case studies, students examine how archaeology was co-opted into the narratives of nation-building and how these processes have shaped national branding to the present.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "ART 131": {
+    "concentrations": [],
+    "title": "Painting with Fire",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ART 20J",
+        "ART 130",
+        "ART 133",
+        "ART 137",
+        "ART 138"
+      ],
+      [
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L"
+      ],
+      [
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-131",
+    "desc": "Advanced studio-painting course exploring thematic development using the broad topic of fire as a starting point. Course is divided into four thematic units: color temperature, ecology, experimental process, and independent directions. The visual ideas of abstraction, representation, and metaphor are used to sharpen analytical skills and personal vision across all units, while interrogating associations with fire from the personal to the global.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "One from ART 20J , ART 130 , ART 133 , ART 137 , ART 138 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+    "enrollmentText": "Enrollment is restricted to art majors.",
+    "prereqNotes": [
+      "Official prerequisite text: One from ART 20J , ART 130 , ART 133 , ART 137 , ART 138 ; and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+      "Official enrollment/restriction text: Enrollment is restricted to art majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official prerequisite requires one painting course from ART 20J/130/133/137/138 and two distinct non-painting lower-division studios from ART 15/20G/20H/20I/20K/20L/26. The engine cannot enforce distinct-course counting inside repeated alternative groups, so ART 26 is preserved in the official text note but not encoded because it is not in the local/current catalog.",
+      "Official art-major enrollment restriction is preserved as a note/warning only."
+    ]
+  },
+  "ART 136": {
+    "concentrations": [],
+    "title": "Murals and Movements",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ART 20J"
+      ],
+      [
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L"
+      ],
+      [
+        "ART 15",
+        "ART 20G",
+        "ART 20H",
+        "ART 20I",
+        "ART 20K",
+        "ART 20L"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-136",
+    "desc": "Production course guiding students through the collaborative design and production of large-scale public murals while examining the relationship between muralism and social movements across the Americas. Through hands-on studio practice, research, and fieldwork, students explore how murals have functioned as forms of political expression, public memory, cultural resistance, and community storytelling within struggles for social justice. The course considers muralism’s role in movements connected to labor, migration, Indigenous sovereignty, racial justice, and collective identity. Students develop technical and conceptual skills in collaborative design and large-scale painting while contributing to a collective public artwork.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ART 20J , and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+    "enrollmentText": "Enrollment is restricted to art majors and proposed art majors.",
+    "prereqNotes": [
+      "Official prerequisite text: ART 20J , and two non-painting lower-division studios from ART 15 , ART 20G , ART 20H , ART 20I , ART 20K , ART 20L , ART 26.",
+      "Official enrollment/restriction text: Enrollment is restricted to art majors and proposed art majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official prerequisite requires ART 20J and two distinct non-painting lower-division studios from ART 15/20G/20H/20I/20K/20L/26. The engine cannot enforce distinct-course counting inside repeated alternative groups, so ART 26 is preserved in the official text note but not encoded because it is not in the local/current catalog.",
+      "Official art/proposed-art-major enrollment restriction is preserved as a note/warning only."
+    ]
+  },
+  "ART 171": {
+    "concentrations": [],
+    "title": "Art, Food, and Ecology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/art-art/100/art-171",
+    "desc": "How can eating become an artistic, ecological, and political practice? This studio course examines food as a sculptural, relational, and environmental medium. Through shared meals, cooking sessions, field visits, and studio-based translation of gastronomic experiences into artistic forms, students investigate how taste, agriculture, and planetary systems intersect. Emphasis is placed on agroecology, environmental justice, and the digestive system as a site of learning and perception.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CHIN 109": {
+    "concentrations": [],
+    "title": "Haunted Justice: Goddess, Ghosts, and Gender in Chinese Folklore",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CHIN 6"
+      ]
+    ],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/chin-chinese/upper-division/chin-109",
+    "desc": "Explores Chinese folklore, focusing on justice, gender, and the supernatural. Students analyze identities, spirits, and legends to examine societal norms, especially regarding women. The course includes literature, myth, and drama, with materials read and reflections written in Chinese.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CHIN 6 or equivalent proficiency.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CHIN 6 or equivalent proficiency.",
+      "Official equivalent-proficiency alternative is preserved as a note/warning only; CHIN 6 is the schedulable course prerequisite path."
+    ]
+  },
+  "CRES 141": {
+    "concentrations": [],
+    "title": "Learning with the Land",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-141",
+    "desc": "A sustained inquiry into the place of land in the process of learning. Drawing from Indigenous and diasporic ways of knowing, this course invites students to shift normative paradigms of study--so as to learn with the land and not only about it. With some instruction conducted outdoors, students deepen their relation to their local surroundings--and think critically about how they have been formed by colonial histories. The course examines the role of land in various visions of decolonization. Students build sociohistorical literacy in land struggles of the past and present.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRES 143": {
+    "concentrations": [],
+    "title": "Trans Love in a Hopeless Place",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "CC, ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-143",
+    "desc": "How to practice trans love in dark times? In defiance of global fascisms that trump themselves up by driving trans folks to the horizon of death or expulsion, this course dedicates time to experiments in trans* living—ranging from the formation of networks of mutual aid to pursuits of gender-bending fugitivity from captivity. Studying primarily with trans of color histories, course reflects on various arts of creating alternative worlds in which—even without many of the privileges of legal recognition—it is possible to love those whom white supremacist culture deems categorically unloveable.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRES 178": {
+    "concentrations": [],
+    "title": "Authoritarianism and Fascism",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-178",
+    "desc": "Delves into the historical, political, and social dimensions of the contemporary far right movement by considering authoritarianism and fascism as ongoing features of the modern political state. The course also studies anti-fascist and anti-colonial movements and their importance for both challenging autocratic regimes and reimagining the world anew.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRES 190I": {
+    "concentrations": [],
+    "title": "Talanoa—Talkin Story: Indigenous, Decolonial Research and Methodologies",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CRES 10"
+      ],
+      [
+        "CRES 100"
+      ],
+      [
+        "CRES 101"
+      ],
+      [
+        "WRIT 2"
+      ]
+    ],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190i",
+    "desc": "Senior seminar focusing on to the epistemological and historical frameworks of Indigenous and decolonial research and methodologies, emphasizing settler colonialisms, self-determination, and decolonization here in Turtle Island and transnationally with a focus on Native California.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CRES 10 , CRES 100 , and CRES 101 ; and satisfaction of the Entry Level Writing and Composition requirements.",
+    "enrollmentText": "Enrollment is restricted to senior critical race and ethnic studies majors.",
+    "prereqNotes": [
+      "Official prerequisite text: CRES 10 , CRES 100 , and CRES 101 ; and satisfaction of the Entry Level Writing and Composition requirements.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior critical race and ethnic studies majors.",
+      "Needs review: contains-placement-exam-or-writing-requirement",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official Entry Level Writing and Composition requirement is represented locally by WRIT 2 for scheduler enforcement. Senior/major restriction is preserved as a note/warning only."
+    ]
+  },
+  "CRES 190W": {
+    "concentrations": [],
+    "title": "Queer & Anti-Colonial Gardening",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CRES 10"
+      ],
+      [
+        "CRES 100"
+      ],
+      [
+        "CRES 101"
+      ],
+      [
+        "WRIT 2"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/cres-critical-race-and-ethnic-studies/upper-division/cres-190w",
+    "desc": "A collective study of dispersed forms of resistance to colonial models of agriculture, including the logics of the plantation economy. Students engage disparate traditions of gardening—from the imperially ambitious collections of Kew to the creole gardens of enslaved people in the Caribbean. Course investigates how non-normative practices of gardening challenge the classificatory order of sexual, racial, and species difference that colonial horticulture maintains as a hard norm. Also considers how gardens have acted as both an expression and site of queer and trans desire.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CRES 10 , CRES 100 and CRES 101 ; satisfaction of the Entry Level Writing and Composition requirements.",
+    "enrollmentText": "Enrollment is restricted to senior CRES majors.",
+    "prereqNotes": [
+      "Official prerequisite text: CRES 10 , CRES 100 and CRES 101 ; satisfaction of the Entry Level Writing and Composition requirements.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior CRES majors.",
+      "Needs review: contains-placement-exam-or-writing-requirement",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official Entry Level Writing and Composition requirement is represented locally by WRIT 2 for scheduler enforcement. Senior/major restriction is preserved as a note/warning only."
+    ]
+  },
+  "CRSN 100": {
+    "concentrations": [],
+    "title": "Writing Sustainabilities",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-100",
+    "desc": "What is the role of writing in the environmental justice movement? What is the role of art and narrative during times of global change? In this interdisciplinary creative nonfiction course, students explore the expansive and exciting genre of creative nonfiction. This course is structured as a writing workshop class, which means our central activity throughout the quarter will be writing nonfiction essays and sharing them with the class in a generative, community-oriented setting. No previous creative nonfiction writing experience is necessary, just a willingness to explore writing, take risks, and attend to the work of others with care.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRSN 11": {
+    "concentrations": [],
+    "title": "Introduction to Sustainabilities and Social Justice",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-11",
+    "desc": "Lower-division introduction to the sustainabilities and social justice minor. Students grapple with the complex and interconnected challenges of the climate crisis, settler colonialism, and racial capitalism as theoretical lenses to explore the different ways “sustainability” as a term is taken up and used in different contexts for different goals.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRSN 120": {
+    "concentrations": [],
+    "title": "Diverse Perspectives on Sustainability and Justice",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/upper-division/crsn-120",
+    "desc": "Examines environmental justice movements across the hemispheric Americas, with a focus on how power, inequality, and resistance shape struggles over land, water, and sustainability. Case studies show how Indigenous peoples, rural communities, and grassroots organizations confront extractivism, privatization, state violence, and unsustainable development. Students engage with concepts of sovereignty, migration, sustainability, and more-than-human relations, while reflecting on their own positionalities.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRSN 23": {
+    "concentrations": [],
+    "title": "Campus Natural History Practicum",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-23",
+    "desc": "Develop practical skills and knowledge in naturalist observation. Acquire an overview of the field of natural history, particularly applied to the UCSC campus. Document an evolving and multidimensional personal experience of natural spaces, including, but not limited to, wilderness. (Formerly KRSG 3.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRSN 32": {
+    "concentrations": [],
+    "title": "Reading Sci-Fi: Octavia Butler and Ursula LeGuin",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crsn-carson-college/lower-division/crsn-32",
+    "desc": "Discussion-based seminar where students read works by two key figures in science fiction: Octavia Butler. Ursula K. LeGuin. Students reflect on the social commentary and speculative futures these books offer in a time of global climate change; the impact of these authors on science fiction and environmental thinking; the unique power and possibilities of science fiction genre itself; and how to cultivate a lasting reading practice based on pleasure, not obligation. Emphasis is placed on developing skills and practices of collaborative reading and reflection. To promote reading deeply and mindfully, all texts are read in hard copy, provided at no cost to students. (Disability Resource Center digital accommodations will be provided as needed.) (Formerly Kresge College 12, Reading Science Fiction: Octavia Butler and Ursula LeGuin.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRWN 103": {
+    "concentrations": [],
+    "title": "Summer Project - Science for Social Impact",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-103",
+    "desc": "Students work in small, collaborative teams to understand how scientific approaches can be leveraged to assess, design, and implement social impact. Specifically, the work is done with a partner organization, Social Alpha, which provides hands-on and real-life experience in health, climate and livelihood sectors. Enrollment is by permission of the instructor. Students will be asked to fill out a form to ensure that students have the skills and commitment to contribute to the projects.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CRWN 185A": {
+    "concentrations": [],
+    "title": "Design your Career: Self-Discovery & Career Planning",
+    "units": 3,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185a",
+    "desc": "Guides students through self-discovery and career planning to build fulfilling professional paths. Using frameworks like Ikigai and tools such as Focus2, students explore values, strengths, and interests to identify career options aligned with industry trends. The course emphasizes practical skills, from crafting résumés, cover letters, and LinkedIn profiles to mapping networks and conducting informational interviews. Students create personalized strategies for gaining experience during college, leveraging warm networks and job-shadowing opportunities. By the end, they’ll have a toolkit and actionable plan to confidently navigate their career journeys.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to frosh and sophomore students because it is designed to map out their career pathway so that they can maximize the training opportunities offered by the university as they progress toward their degrees.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to frosh and sophomore students because it is designed to map out their career pathway so that they can maximize the training opportunities offered by the university as they progress toward their degrees.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official frosh/sophomore enrollment restriction is preserved as a note/warning only."
+    ]
+  },
+  "CRWN 185B": {
+    "concentrations": [],
+    "title": "Career Launchpad: Career Tools & Strategy for Engineers and Technical Specialists",
+    "units": 1,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-185b",
+    "desc": "This 1-credit workshop-style course helps engineering and technical students that are getting ready to look for internships or jobs, polish r&eacute;sum&eacute;s, prepare for interviews, and develop targeted job search strategies. Through peer reviews, mock interviews, and networking exercises, students build confidence and practical tools, including leveraging AI for job sourcing. By course end, students produce a professional portfolio and a career plan to compete effectively in today’s job market.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "enrollmentText": "Enrollment is restricted to juniors and seniors in engineering and other technical majors because it requires having acquired substantial set of technical skills and/or experience that can potentially match the demand in tech.",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to juniors and seniors in engineering and other technical majors because it requires having acquired substantial set of technical skills and/or experience that can potentially match the demand in tech.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official junior/senior engineering-or-technical-major enrollment restriction is preserved as a note/warning only."
+    ]
+  },
+  "CRWN 191": {
+    "concentrations": [],
+    "title": "Marketing for Good",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CRWN 91"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/upper-division/crwn-191",
+    "desc": "Marketing for Good is a service-learning course. Student teams are matched with real-world clients, establish their needs through interviews, and develop a marketing plan. This plan may include branding, logo design, messaging, digital storytelling (through video, film or photography), website and social media campaigns, and more. During its execution, students take on roles and responsibilities that mirror the industry such the rols of writer, art director, product marketing head, and marketing strategist. Thus, students experience the totality of a marketing project, getting a firsthand understanding of how marketing teams work and how they can scale as the size of the team grows.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): CRWN 91 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): CRWN 91 ."
+    ]
+  },
+  "CRWN 82": {
+    "concentrations": [],
+    "title": "Introduction to Broadcast Operations: KZSC Radio Programming",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/crwn-crown-college/lower-division/crwn-82",
+    "desc": "Practical application of technical and creative skills in the KZSC studios. Production of audio content and promotional materials for broadcast. Critical evaluation in a workshop setting. Assignments require original research, professional writing, and the operation of complex technology. Enrollment is by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": ""
+  },
+  "CT 151": {
+    "concentrations": [],
+    "title": "Machine Collaboration: Creativity in Posthuman Practice",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CT 11"
+      ]
+    ],
+    "ge": "IM",
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-151",
+    "desc": "Introduction to machine intelligence and creativity, contextualized historically and applied to contemporary problems, ranging from commercial “AI,” large language models, opaque and transparent algorithms for representation and creativity, and arts practices vulnerable to exploitation by corporate and state practices of information and data. How should consumers and producers of technology interpret AI production, as art , as design, and as entertainment? Students survey practices and outcomes of machine creativity for cultural production writ large, synthesizing them in collaborative scholarship and curation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CT 11 .",
+    "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+    "prereqNotes": [
+      "Official prerequisite text: CT 11 .",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior creative technologies majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official junior/senior creative technologies major restriction is preserved as a note/warning only."
+    ]
+  },
+  "CT 167S": {
+    "concentrations": [],
+    "title": "Creative Technologies Sound and Listening Seminar",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CT 101"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167s",
+    "desc": "Studio seminar elective covering a range of topics on sound and listening. Includes a practical component on recording, editing and composing using emerging audio software and is complemented by theoretical research into historical and contemporary theories of sound, listening, social practice, and the environment. (Formerly CT 165.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CT 101 .",
+    "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+    "prereqNotes": [
+      "Official prerequisite text: CT 101 .",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior creative technologies majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official junior/senior creative technologies major restriction is preserved as a note/warning only."
+    ]
+  },
+  "CT 167V": {
+    "concentrations": [],
+    "title": "Voice, Labor, and Gender",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "CT 10"
+      ],
+      [
+        "CT 11"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ct-creative-technologies/upper-division/ct-167v",
+    "desc": "This course is focused on voice, labor, and gender. Students research various forms of assistive technologies with a special focus on voice-based interactive platforms. Themes of automation, feminized labor, machine learning, and biotechnology are examined against a backdrop of a post-pandemic landscape. Students analyze and engage with science fiction, documentary, interactive media, and games. Each class includes seminar discussions, film screenings, creative prompts, and collaborative and participatory exercises based on assigned readings.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "CT 10 and CT 11 .",
+    "enrollmentText": "Enrollment is restricted to junior and senior creative technologies majors.",
+    "prereqNotes": [
+      "Official prerequisite text: CT 10 and CT 11 .",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior creative technologies majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official junior/senior creative technologies major restriction is preserved as a note/warning only."
+    ]
   }
 };

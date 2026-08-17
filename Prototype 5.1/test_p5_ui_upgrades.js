@@ -662,8 +662,9 @@ function testNextDepartmentCleanUndergradCoursesAreSearchable() {
   const fiveDepartmentCleanCodes = ['FILM 80E', 'FILM 80H', 'FILM 171B', 'MSE 1'];
   const sevenDepartmentCleanCodes = ['CMPM 118S', 'ECE 186', 'ECE 187', 'PHYS 80C', 'PHYS 80S', 'PHYS 161', 'PHYS 197'];
   const reviewedWarningUndergradCodes = ['MATH 139', 'BIOE 119L', 'BIOL 10', 'BIOL 26', 'CMPM 119', 'CMPM 173', 'CMPM 174', 'ECE 168', 'PHYS 6P'];
-  const nextTenUndergradCodes = ['AM 180', 'ARTG 110', 'ARTG 111', 'ARTG 129C', 'ARTG 129P', 'ARTG 129S', 'ARTG 190', 'ARTG 93', 'ASTR 116', 'ASTR 125', 'ASTR 49', 'EART 114', 'EART 122', 'EART 170', 'ECON 126', 'ECON 193S', 'ENVS 107D', 'ENVS 124', 'LIT 167O', 'PSYC 139M', 'PSYC 139Z', 'PSYC 140C', 'PSYC 159L', 'PSYC 193S', 'PSYC 50', 'PSYC 51'];
-  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes]) {
+  const nextTenUndergradCodes = ['AM 180', 'ARTG 110', 'ARTG 111', 'ARTG 129C', 'ARTG 129P', 'ARTG 129S', 'ARTG 190', 'ARTG 93', 'ASTR 116', 'ASTR 125', 'ASTR 49', 'EART 114', 'EART 122', 'ECON 126', 'ECON 193S', 'ENVS 107D', 'ENVS 124', 'LIT 167O', 'PSYC 139M', 'PSYC 139Z', 'PSYC 140C', 'PSYC 159L', 'PSYC 193S', 'PSYC 50', 'PSYC 51'];
+  const nextTenBUndergradCodes = ['ANTH 151D', 'ANTH 196Y', 'ART 131', 'ART 136', 'ART 171', 'CHIN 109', 'CRES 141', 'CRES 143', 'CRES 178', 'CRES 190I', 'CRES 190W', 'CRSN 11', 'CRSN 23', 'CRSN 32', 'CRSN 100', 'CRSN 120', 'CRWN 82', 'CRWN 103', 'CRWN 185A', 'CRWN 185B', 'CRWN 191', 'CT 151', 'CT 167S', 'CT 167V'];
+  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes, ...nextTenBUndergradCodes]) {
     assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA or Hermes prerequisite review`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'undergraduate'), `${code} should be findable in manual academic-history search`);
   }
@@ -681,13 +682,14 @@ function testNextDepartmentGraduateCoursesStaySearchOnly() {
   const fiveDepartmentGradCodes = ['FILM 296F', 'GRAD 213', 'STAT 200', 'MATH 200', 'MSE 200'];
   const sevenDepartmentGradCodes = ['PHYS 202', 'CHEM 200A', 'BME 201', 'BIOE 200A', 'BIOL 200A', 'ECE 200', 'CMPM 201'];
   const nextTenGradCodes = ['GAME 201', 'AM 200', 'ASTR 202', 'EART 203', 'ECON 200', 'ENVS 201A', 'PSYC 201', 'HCI 201', 'NLP 202'];
-  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes]) {
+  const nextTenBGradCodes = ['ANTH 200', 'APLX 235', 'ART 210A', 'CMMU 297', 'CRES 200', 'CRWN 290', 'CSP 200'];
+  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes]) {
     assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
     assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
     assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'graduate'), `${code} should be findable through manual typed search`);
   }
-  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292', 'BIOE 281M', 'BIOE 294', 'BIOL 292', 'PHYS 292', 'ASTR 292', 'EART 292']) {
+  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292', 'BIOE 281M', 'BIOE 294', 'BIOL 292', 'PHYS 292', 'ASTR 292', 'EART 292', 'CRES 203', 'CSP 230']) {
     assert(!__p5.COURSES[blocked], `${blocked} has invalid units and must not enter COURSES`);
     assert(!__p5.GRADUATE_COURSES[blocked], `${blocked} has invalid units and must not enter graduate search-only catalog`);
   }
@@ -699,7 +701,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('next10-catalog'), `${asset} cache-buster should change for the next-10 catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('next10b-catalog'), `${asset} cache-buster should change for the next-10b catalog update so browsers do not reuse old JS`);
   }
 }
 

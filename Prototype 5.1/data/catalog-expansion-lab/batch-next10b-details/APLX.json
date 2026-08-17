@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-17T03:01:11.710Z",
+  "source": "missing-courses-by-department.json",
+  "mode": "department=APLX",
+  "count": 1,
+  "rawPagesSaved": true,
+  "details": [
+    {
+      "code": "APLX 235",
+      "title": "Second Language Teaching",
+      "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/aplx-applied-linguistics/200/aplx-235",
+      "departmentSlug": "aplx-applied-linguistics",
+      "departmentText": "APLX - Applied Linguistics",
+      "divisionPath": "200",
+      "division": "graduate",
+      "fetchStatus": 200,
+      "units": 5,
+      "creditsText": "5",
+      "desc": "Helps novice instructors learn about the theory and practice of language teaching and learning. Focuses on current methods used in communicatively oriented classrooms. Topics include: listening comprehension, grammar, vocabulary, reading, writing, and testing/assessment. Students cannot receive credit for this course and course 135. (Formerly Language Studies 201.)",
+      "ge": "",
+      "quarterText": "",
+      "quarters": [],
+      "officialPrereqText": "",
+      "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and course 135.",
+      "repeatText": "",
+      "mentionedCourses": [],
+      "parserFlags": [
+        "no-official-prereq-text-found",
+        "contains-major-or-enrollment-condition"
+      ]
+    }
+  ]
+}
