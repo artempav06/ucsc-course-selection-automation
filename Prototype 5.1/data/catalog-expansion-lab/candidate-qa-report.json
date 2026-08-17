@@ -1,66 +1,393 @@
 {
-  "generatedAt": "2026-08-17T05:04:23.015Z",
+  "generatedAt": "2026-08-17T06:03:31.770Z",
   "sourceCandidates": "candidate-expanded-courses.json",
-  "candidateCount": 146,
+  "candidateCount": 170,
   "buckets": {
-    "passed": 7,
-    "blocked": 2,
-    "warningsOnly": 137
+    "passed": 25,
+    "blocked": 3,
+    "warningsOnly": 142
   },
   "rows": [
     {
-      "code": "DANM 201",
-      "title": "Recent Methods and Approaches to Digital Arts and Culture",
+      "code": "FREN 115",
+      "title": "Structures of spoken French",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fren-french/upper-division/fren-115"
+    },
+    {
+      "code": "GAME 200",
+      "title": "Game Design Systems",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-201"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-200"
     },
     {
-      "code": "DANM 202",
-      "title": "Dialogues and Questions in Digital Arts and Culture",
+      "code": "GAME 201",
+      "title": "Level&#160;Design",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-202"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-201"
     },
     {
-      "code": "DANM 203",
-      "title": "Professional Development for the Arts",
+      "code": "GAME 202",
+      "title": "Introduction to Build (Advanced): Physical Computing",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-202"
     },
     {
-      "code": "DANM 210",
-      "title": "Project Design Studio",
+      "code": "GAME 210",
+      "title": "Game Art Intensive",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-210"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-210"
     },
     {
-      "code": "DANM 211",
-      "title": "Critique",
+      "code": "GAME 215",
+      "title": "Audio Direction",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-211"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-215"
     },
     {
-      "code": "DANM 212",
-      "title": "Thesis Proposal",
+      "code": "GAME 221",
+      "title": "Professional Development for Game Makers",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-221"
+    },
+    {
+      "code": "GAME 222",
+      "title": "Professional Development for Game Makers II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-222"
+    },
+    {
+      "code": "GAME 223",
+      "title": "Professional Development for Games Makers III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-223"
+    },
+    {
+      "code": "GAME 230",
+      "title": "Fundamentals of Game Engineering",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-230"
+    },
+    {
+      "code": "GAME 231",
+      "title": "Game Technologies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-231"
+    },
+    {
+      "code": "GAME 232",
+      "title": "Advanced Game Technologies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-232"
+    },
+    {
+      "code": "GAME 235",
+      "title": "Game Development I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-235"
+    },
+    {
+      "code": "GAME 236",
+      "title": "Game Development II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-236"
+    },
+    {
+      "code": "GAME 238",
+      "title": "Computer Graphics for Games",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-238"
+    },
+    {
+      "code": "GAME 240",
+      "title": "Game Usability",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-240"
+    },
+    {
+      "code": "GAME 250",
+      "title": "Foundations of Serious Games and Gamification",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-250"
+    },
+    {
+      "code": "GAME 251",
+      "title": "Games User Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-251"
+    },
+    {
+      "code": "GAME 252",
+      "title": "Modeling and Simulation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-252"
+    },
+    {
+      "code": "GAME 255",
+      "title": "Serious Games Studio I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-255"
+    },
+    {
+      "code": "GAME 256",
+      "title": "Serious Games Studio II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-256"
+    },
+    {
+      "code": "GAME 257",
+      "title": "Serious Games Studio III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-257"
+    },
+    {
+      "code": "GAME 270",
+      "title": "Games and Playable Media Studio I",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-270"
+    },
+    {
+      "code": "GAME 271",
+      "title": "Games and Playable Media Studio II",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-271"
+    },
+    {
+      "code": "GAME 272",
+      "title": "Games and Playable Media Studio III",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-272"
+    },
+    {
+      "code": "GAME 273",
+      "title": "Game Production Intensive",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-273"
+    },
+    {
+      "code": "GAME 280A",
+      "title": "Games Proseminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280a"
+    },
+    {
+      "code": "GAME 280Y",
+      "title": "Games You Should Know",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280y"
+    },
+    {
+      "code": "GAME 290A",
+      "title": "Advanced Topics in Games",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-290a"
+    },
+    {
+      "code": "GCH 198",
+      "title": "Independent Field Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health/upper-division/gch-198"
+    },
+    {
+      "code": "GIST 220",
+      "title": "Cartography and Visualization",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-220"
+    },
+    {
+      "code": "GIST 230",
+      "title": "Remote Sensing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-230"
+    },
+    {
+      "code": "GIST 240",
+      "title": "GIS Development and Programming",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-240"
+    },
+    {
+      "code": "GIST 250",
+      "title": "Geospatial Technology Applications",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-250"
+    },
+    {
+      "code": "GIST 290A",
+      "title": "GISTAR Capstone Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290a"
+    },
+    {
+      "code": "GIST 290B",
+      "title": "GISTAR Capstone Project",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290b"
+    },
+    {
+      "code": "GRAD 200",
+      "title": "Academic Writing for Graduate Students",
       "status": "blocked",
       "errors": [
         "invalid-units"
@@ -69,1162 +396,502 @@
         "review:missing-units",
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-212"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-200"
     },
     {
-      "code": "DANM 215",
-      "title": "MFA Exhibition Production",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-215"
-    },
-    {
-      "code": "DANM 216",
-      "title": "Digital Bodies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-216"
-    },
-    {
-      "code": "DANM 219",
-      "title": "Introduction to Electronics for Artmaking",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-219"
-    },
-    {
-      "code": "DANM 220",
-      "title": "Introduction to Programming for the Arts",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-220"
-    },
-    {
-      "code": "DANM 221",
-      "title": "Mathematics and the Arts",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-221"
-    },
-    {
-      "code": "DANM 227",
-      "title": "Projected Light in Performance",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-227"
-    },
-    {
-      "code": "DANM 233",
-      "title": "The Object as Interface",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-233"
-    },
-    {
-      "code": "DANM 241B",
-      "title": "Modern Art: Cubism to Pop",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-241b"
-    },
-    {
-      "code": "DANM 250A",
-      "title": "Art and Science",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250a"
-    },
-    {
-      "code": "DANM 250B",
-      "title": "Socially Engaged Art",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250b"
-    },
-    {
-      "code": "DANM 250C",
-      "title": "Performance and Embodiment",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250c"
-    },
-    {
-      "code": "DANM 250E",
-      "title": "Collaborative Research Project Group: Experimental Play",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250e"
-    },
-    {
-      "code": "DANM 250F",
-      "title": "Film, Moving Image Installation, and Curatorial Lab",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250f"
-    },
-    {
-      "code": "DANM 250G",
-      "title": "Research Group: Isaac Julien Studio Lab - London Quarter",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250g"
-    },
-    {
-      "code": "DANM 250I",
-      "title": "Interdisciplinary Arts Production Lab",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-250i"
-    },
-    {
-      "code": "DANM 254I",
-      "title": "Empirical Approaches to Art Information",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-254i"
-    },
-    {
-      "code": "DANM 280",
-      "title": "Seminar in Digital Arts and New Media",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-280"
-    },
-    {
-      "code": "DANM 281",
-      "title": "Special Topics in Digital Arts and New Media",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-281"
-    },
-    {
-      "code": "DANM 297",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-297"
-    },
-    {
-      "code": "DANM 297G",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-297g"
-    },
-    {
-      "code": "DANM 299",
-      "title": "Thesis Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/danm-digital-arts-and-new-media/graduate/danm-299"
-    },
-    {
-      "code": "EART 170",
-      "title": "Global Seismology",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-exception-waiver-or-petition-language",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170"
-    },
-    {
-      "code": "EART 292",
-      "title": "Seminar",
+      "code": "GRAD 201",
+      "title": "Oral Communication for Graduate Students",
       "status": "blocked",
       "errors": [
         "invalid-units"
       ],
       "warnings": [
-        "review:missing-units"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-292"
-    },
-    {
-      "code": "EDUC 200",
-      "title": "Beginning Student Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
+        "review:missing-units",
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-200"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-201"
     },
     {
-      "code": "EDUC 201",
-      "title": "Intermediate Student Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
+      "code": "GRAD 202",
+      "title": "Reading and Research Skills for Graduate Students",
+      "status": "blocked",
+      "errors": [
+        "invalid-units"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-201"
-    },
-    {
-      "code": "EDUC 201A",
-      "title": "Intermediate Student Teaching: Single Subject",
-      "status": "warnings-only",
-      "errors": [],
       "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-201a"
-    },
-    {
-      "code": "EDUC 202A",
-      "title": "Advanced Student Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202a"
-    },
-    {
-      "code": "EDUC 202B",
-      "title": "Advanced Student Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202b"
-    },
-    {
-      "code": "EDUC 202C",
-      "title": "Advanced Student Teaching",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-202c"
-    },
-    {
-      "code": "EDUC 203",
-      "title": "Teaching English Language Development: Foundations, Approaches, and Strategies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
+        "review:missing-units",
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-202"
     },
     {
-      "code": "EDUC 204",
-      "title": "Methods of English Language Development: Single Subject",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-204"
-    },
-    {
-      "code": "EDUC 205",
-      "title": "Teaching, Learning, and Schooling in a Diverse Society",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-205"
-    },
-    {
-      "code": "EDUC 206",
-      "title": "Teaching, Learning, and Schooling: Single Subject",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-206"
-    },
-    {
-      "code": "EDUC 207",
-      "title": "Social Foundations of Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-207"
-    },
-    {
-      "code": "EDUC 208",
-      "title": "Portfolio Development",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-208"
-    },
-    {
-      "code": "EDUC 210",
-      "title": "Health, Safety, and Community",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-210"
-    },
-    {
-      "code": "EDUC 211",
-      "title": "Teaching Special Populations in the General Education Classroom",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-211"
-    },
-    {
-      "code": "EDUC 212A",
-      "title": "Bilingualism and Biliteracy: History, Politics, Theory, and Practice",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212a"
-    },
-    {
-      "code": "EDUC 212B",
-      "title": "Bilingualism and Biliteracy: Language, Literacy and Content Instruction",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212b"
-    },
-    {
-      "code": "EDUC 212C",
-      "title": "Bilingualism and Biliteracy: Community and School Partnerships",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-212c"
-    },
-    {
-      "code": "EDUC 213",
-      "title": "Child and Adolescent Development for Educators",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-213"
-    },
-    {
-      "code": "EDUC 214",
-      "title": "Contemporary Issues in Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-214"
-    },
-    {
-      "code": "EDUC 215",
-      "title": "K-12 Ethnic Studies Pedagogy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-215"
-    },
-    {
-      "code": "EDUC 216",
-      "title": "UCSC Field-Based Learning Initiative (FBLI)",
+      "code": "GRAD 213",
+      "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-216"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213"
     },
     {
-      "code": "EDUC 217",
-      "title": "Topics in Elementary Education: Physical Education",
+      "code": "GRAD 215",
+      "title": "Equitable Course Design for Graduate Student Instructors",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215"
+    },
+    {
+      "code": "HAVC 166",
+      "title": "Indigenous Art and Activism",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-166"
+    },
+    {
+      "code": "HAVC 175",
+      "title": "Speculative Currents: Art, Oceans, and Imagined Worlds",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-175"
+    },
+    {
+      "code": "HAVC 201A",
+      "title": "Introduction to Visual Studies and Critical Theory",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-217"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-201a"
     },
     {
-      "code": "EDUC 218",
-      "title": "Topics in Elementary Education: Visual Arts",
+      "code": "HAVC 202",
+      "title": "Introduction to Visual Studies Methods",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-218"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-202"
     },
     {
-      "code": "EDUC 219",
-      "title": "Topics in Elementary Education: Performing Arts",
+      "code": "HAVC 204",
+      "title": "Grant Writing, Pedagogy, and Professional Development",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-219"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-204"
     },
     {
-      "code": "EDUC 220",
-      "title": "Reading and Language Arts for Elementary Classrooms",
+      "code": "HAVC 205",
+      "title": "Grant Writing in Visual Studies",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-220"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-205"
     },
     {
-      "code": "EDUC 221",
-      "title": "Science Learning and Teaching in Elementary Classrooms",
+      "code": "HAVC 212",
+      "title": "Yoruba Visualities and Aesthetics",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-221"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-212"
     },
     {
-      "code": "EDUC 222",
-      "title": "Mathematics Learning and Teaching in Elementary Classrooms",
+      "code": "HAVC 213",
+      "title": "Theories and Visual Cultures of Iconoclasm",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-222"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-213"
     },
     {
-      "code": "EDUC 225",
-      "title": "Reading Across the Curriculum in Middle School and Secondary",
+      "code": "HAVC 220",
+      "title": "Topics in Asian Visual Studies",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-225"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-220"
     },
     {
-      "code": "EDUC 226",
-      "title": "English Teaching: Theory and Curriculum",
+      "code": "HAVC 222",
+      "title": "The Image of Arhat in China",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-226"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-222"
     },
     {
-      "code": "EDUC 227",
-      "title": "English Teaching for Secondary Classrooms",
+      "code": "HAVC 224",
+      "title": "Engaged Buddhism and Visual Culture",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-227"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-224"
     },
     {
-      "code": "EDUC 228",
-      "title": "Math Education: Research and Practice",
+      "code": "HAVC 230",
+      "title": "Race, Aesthetics, and Art in 18th Century Europe",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-228"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-230"
     },
     {
-      "code": "EDUC 229",
-      "title": "Teaching Mathematics in the Secondary Classroom",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-229"
-    },
-    {
-      "code": "EDUC 230",
-      "title": "Science Education: Research and Practice",
+      "code": "HAVC 231",
+      "title": "Visualizing Waterways and Water Ways",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-230"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-231"
     },
     {
-      "code": "EDUC 231",
-      "title": "Teaching Science in the Secondary Classroom",
+      "code": "HAVC 232",
+      "title": "The Monument Since 1750 in Relation to Nationhood and the Experience of War",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-231"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-232"
     },
     {
-      "code": "EDUC 232",
-      "title": "Social Science: Theory and Curriculum",
+      "code": "HAVC 233",
+      "title": "Visuality, Blackness, and the Human",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-232"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-233"
     },
     {
-      "code": "EDUC 233",
-      "title": "Social Science Teaching for Secondary Classrooms",
+      "code": "HAVC 235",
+      "title": "Photography and History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-233"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-235"
     },
     {
-      "code": "EDUC 235",
-      "title": "Introduction to Educational Inquiry",
+      "code": "HAVC 236",
+      "title": "Contemporary Art and Theories of Democracy",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-235"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-236"
     },
     {
-      "code": "EDUC 236",
-      "title": "Quantitative Research Methods",
+      "code": "HAVC 240",
+      "title": "Seeing Race",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-236"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-240"
     },
     {
-      "code": "EDUC 237",
-      "title": "Qualitative Research Methods",
+      "code": "HAVC 241",
+      "title": "Decolonizing Nature: Contemporary Art and Ecology",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-237"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-241"
     },
     {
-      "code": "EDUC 250",
-      "title": "Teaching and Teachers",
+      "code": "HAVC 242",
+      "title": "Radical Futurisms",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-250"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-242"
     },
     {
-      "code": "EDUC 251",
-      "title": "Analysis of Activity and Interaction in Educational Settings",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-251"
-    },
-    {
-      "code": "EDUC 252",
-      "title": "Hermeneutics of Education",
+      "code": "HAVC 243",
+      "title": "Alternative Architecture",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-252"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-243"
     },
     {
-      "code": "EDUC 253",
-      "title": "Research Design in Mathematics and Science Education",
+      "code": "HAVC 244",
+      "title": "Reinventing ''Reinventing Nature:'' Visual Culture and Environmentalism, circa 1995",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-253"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-244"
     },
     {
-      "code": "EDUC 254",
-      "title": "Critical and Alternative Paradigms in Education Research",
+      "code": "HAVC 245",
+      "title": "Theories of Representation: Visual Discourses of the Body",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-254"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-245"
     },
     {
-      "code": "EDUC 255",
-      "title": "Intermediate Quantitative Methods",
-      "status": "warnings-only",
+      "code": "HAVC 249",
+      "title": "How to Do Things with Pictures: Media, Culture, and Performance",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded",
-        "official-course-prereq-text-not-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-255"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-249"
     },
     {
-      "code": "EDUC 256",
-      "title": "Intermediate Qualitative Analysis",
+      "code": "HAVC 250",
+      "title": "The Cult of Mary in Byzantium: Visualities of Political, Religions, and Gender Constructs",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-256"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-250"
     },
     {
-      "code": "EDUC 260",
-      "title": "The Teacher and The School: An Investigation of Related Practice, Reform, and Research",
+      "code": "HAVC 260",
+      "title": "Visual Literacy in Spanish America, 1500-1800",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-260"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-260"
     },
     {
-      "code": "EDUC 261",
-      "title": "Thinking and Learning",
+      "code": "HAVC 264",
+      "title": "Contemporary Native American Art",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-261"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-264"
     },
     {
-      "code": "EDUC 262",
-      "title": "Social and Cultural Context of Education",
+      "code": "HAVC 270",
+      "title": "Colonial Cultures of Collecting and Display",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-262"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-270"
     },
     {
-      "code": "EDUC 263",
-      "title": "Educational Reform",
+      "code": "HAVC 273",
+      "title": "Imaging Colonial Borderlands",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-263"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-273"
     },
     {
-      "code": "EDUC 264",
-      "title": "Research on Teacher Development and Teacher Education",
+      "code": "HAVC 275",
+      "title": "The Visual Cultures of Travel and Tourism",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-264"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-275"
     },
     {
-      "code": "EDUC 265",
-      "title": "Teacher as Educational Policy Maker",
+      "code": "HAVC 276",
+      "title": "Indigenous Futurisms",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-276"
+    },
+    {
+      "code": "HAVC 280",
+      "title": "Visual Studies Issues",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-265"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-280"
     },
     {
-      "code": "EDUC 266",
-      "title": "Program Evaluation and Action Research in Educational Reform",
-      "status": "warnings-only",
+      "code": "HAVC 294",
+      "title": "Teaching-Related Independent Study",
+      "status": "passed",
       "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-266"
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-294"
     },
     {
-      "code": "EDUC 268",
-      "title": "Schools, Communities, and Families",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-268"
-    },
-    {
-      "code": "EDUC 271",
-      "title": "Theoretical Perspectives on Learning and Using Literacy",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-271"
-    },
-    {
-      "code": "EDUC 272",
-      "title": "Language in Education and Society",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-272"
-    },
-    {
-      "code": "EDUC 273",
-      "title": "Language Acquisition, Bilingualism, and Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-273"
-    },
-    {
-      "code": "EDUC 274",
-      "title": "Language and Power in Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-274"
-    },
-    {
-      "code": "EDUC 276",
-      "title": "Theory and Practice of Writing",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-276"
-    },
-    {
-      "code": "EDUC 277A",
-      "title": "Second-year Doctoral Proseminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277a"
-    },
-    {
-      "code": "EDUC 277B",
-      "title": "Second-year Doctoral Proseminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277b"
-    },
-    {
-      "code": "EDUC 277C",
-      "title": "Second-year Doctoral Proseminar",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition",
-        "review:prerequisite-logic-not-auto-encoded"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-277c"
-    },
-    {
-      "code": "EDUC 278",
-      "title": "Critical Exploration of Reading Theory and Practice",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-278"
-    },
-    {
-      "code": "EDUC 279",
+      "code": "HAVC 295",
       "title": "Directed Reading",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-279"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-295"
     },
     {
-      "code": "EDUC 279F",
-      "title": "Directed Reading",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-279f"
-    },
-    {
-      "code": "EDUC 280",
-      "title": "Language and Literacy Across Disciplines",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-280"
-    },
-    {
-      "code": "EDUC 281",
-      "title": "Conceptual Change in Science and Mathematics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-281"
-    },
-    {
-      "code": "EDUC 282",
-      "title": "Informal Learning in Sciences and Mathematics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-282"
-    },
-    {
-      "code": "EDUC 283",
-      "title": "Equity and Social Justice in Mathematics and Science Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-283"
-    },
-    {
-      "code": "EDUC 284",
-      "title": "Gender in Mathematics and Science Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-284"
-    },
-    {
-      "code": "EDUC 285",
-      "title": "Culture and Learning",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-285"
-    },
-    {
-      "code": "EDUC 286",
-      "title": "Research in STEM Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-286"
-    },
-    {
-      "code": "EDUC 287",
-      "title": "Issues in Educational Assessment",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-287"
-    },
-    {
-      "code": "EDUC 288",
-      "title": "Ethnographies of Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-288"
-    },
-    {
-      "code": "EDUC 289",
-      "title": "School Organization",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-289"
-    },
-    {
-      "code": "EDUC 290",
-      "title": "CHAT and Educational Practice and Research",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-290"
-    },
-    {
-      "code": "EDUC 291",
-      "title": "Globalization and Transnationalism in Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-291"
-    },
-    {
-      "code": "EDUC 292",
-      "title": "Ideology and Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-292"
-    },
-    {
-      "code": "EDUC 293A",
-      "title": "Research Apprenticeship",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-293a"
-    },
-    {
-      "code": "EDUC 293B",
-      "title": "Research Apprenticeship",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-293b"
-    },
-    {
-      "code": "EDUC 294",
-      "title": "Second-Year Research Project",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-294"
-    },
-    {
-      "code": "EDUC 295",
-      "title": "Critical Perspectives on Education",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-295"
-    },
-    {
-      "code": "EDUC 296",
-      "title": "Educational Policy and the Context of Teachers' Work",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-296"
-    },
-    {
-      "code": "EDUC 297",
+      "code": "HAVC 297A",
       "title": "Independent Study",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-297"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297a"
     },
     {
-      "code": "EDUC 297F",
+      "code": "HAVC 297B",
       "title": "Independent Study",
       "status": "passed",
       "errors": [],
       "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-297f"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297b"
     },
     {
-      "code": "EDUC 298",
-      "title": "TA Apprenticeship",
+      "code": "HAVC 297F",
+      "title": "Independent Study",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-298"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297f"
     },
     {
-      "code": "EDUC 299",
+      "code": "HAVC 299A",
       "title": "Thesis Research",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/educ-education/graduate/educ-299"
-    },
-    {
-      "code": "ESCI 20",
-      "title": "Introduction to Environmental Science",
-      "status": "passed",
-      "errors": [],
-      "warnings": [],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20"
-    },
-    {
-      "code": "ESCI 20L",
-      "title": "Introduction to Environmental Science: Santa Cruz Water from Well to Wastewater Treatment",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
-        "review:contains-prior-or-concurrent-language",
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299a"
+    },
+    {
+      "code": "HAVC 299B",
+      "title": "Thesis Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299b"
+    },
+    {
+      "code": "HCI 200",
+      "title": "Introduction to HCI",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-200"
+    },
+    {
+      "code": "HCI 201",
+      "title": "Introduction to HCI Methods",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-201"
+    },
+    {
+      "code": "HCI 202A",
+      "title": "Introduction to Build: Bootcamp",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202a"
+    },
+    {
+      "code": "HCI 202B",
+      "title": "Introduction to Build (Advanced): Physical Computing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202b"
+    },
+    {
+      "code": "HCI 203",
+      "title": "Introduction to Research",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-203"
+    },
+    {
+      "code": "HCI 220",
+      "title": "Ethics and Activism in Tech and Design",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20l"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-220"
     },
     {
-      "code": "FMST 200",
-      "title": "Feminist Theories",
+      "code": "HCI 250",
+      "title": "Participatory Design",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-200"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-250"
     },
     {
-      "code": "FMST 201",
-      "title": "Topics in Feminist Methodologies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-201"
-    },
-    {
-      "code": "FMST 202",
-      "title": "Disciplining Knowledge/Graduate Research",
+      "code": "HCI 271",
+      "title": "HCI Capstone 1",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
@@ -1232,259 +899,808 @@
         "review:prerequisite-logic-not-auto-encoded",
         "official-course-prereq-text-not-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-202"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-271"
     },
     {
-      "code": "FMST 203",
-      "title": "Feminist Pedagogies",
+      "code": "HCI 272",
+      "title": "HCI Capstone 2",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-272"
+    },
+    {
+      "code": "HCI 290",
+      "title": "HCI Seminar",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-203"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-290"
     },
     {
-      "code": "FMST 207",
-      "title": "Topics in Queer/Race Studies",
+      "code": "HCI 291",
+      "title": "Strategy Innovation for UX Professionals",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291"
+    },
+    {
+      "code": "HIS 125",
+      "title": "California History",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-125"
+    },
+    {
+      "code": "HIS 137H",
+      "title": "History and Cultural Heritage in Africa",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-137h"
+    },
+    {
+      "code": "HIS 139N",
+      "title": "The Bible Buried Beneath: Biblical Archeology in 19th and 20th Century Palestine",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-139n"
+    },
+    {
+      "code": "HIS 190L",
+      "title": "Topics in Indigenous History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-permission-or-consent-exception",
+        "review:contains-placement-exam-or-writing-requirement",
+        "review:contains-major-or-enrollment-condition",
+        "review:prerequisite-logic-not-auto-encoded",
+        "official-course-prereq-text-not-encoded"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-190l"
+    },
+    {
+      "code": "HIS 198S",
+      "title": "Summer Humanities EXCEL Internship Course",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-198s"
+    },
+    {
+      "code": "HIS 200",
+      "title": "Methods and Theories of History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-207"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200"
     },
     {
-      "code": "FMST 209",
-      "title": "Comparative Empires: Gender, Slavery, Race",
+      "code": "HIS 200B",
+      "title": "Introduction to Research Methods in History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-209"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200b"
     },
     {
-      "code": "FMST 211",
-      "title": "Sexuality, Race, and Migration in the Americas",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-211"
-    },
-    {
-      "code": "FMST 212",
-      "title": "Feminist Theory and the Law",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-212"
-    },
-    {
-      "code": "FMST 214",
-      "title": "Topics in Feminist Science Studies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-214"
-    },
-    {
-      "code": "FMST 215",
-      "title": "Postcolonial and Postsocialist Transactional Analytics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-215"
-    },
-    {
-      "code": "FMST 216",
-      "title": "Archives/Genders/Histories: An Introduction",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-216"
-    },
-    {
-      "code": "FMST 222",
-      "title": "Religion, Feminism, and Sexual Politics",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-222"
-    },
-    {
-      "code": "FMST 232",
-      "title": "Topics in Postcolonial Studies",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-232"
-    },
-    {
-      "code": "FMST 260",
-      "title": "Black Feminist Reconstruction",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-260"
-    },
-    {
-      "code": "FMST 270",
-      "title": "Anthropology at Its Interfaces with Feminist, Postcolonial, and Decolonial STS",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-270"
-    },
-    {
-      "code": "FMST 290",
-      "title": "Pedagogical Training",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-290"
-    },
-    {
-      "code": "FMST 291",
-      "title": "Advising",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-291"
-    },
-    {
-      "code": "FMST 297A",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297a"
-    },
-    {
-      "code": "FMST 297B",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297b"
-    },
-    {
-      "code": "FMST 297F",
-      "title": "Independent Study",
-      "status": "warnings-only",
-      "errors": [],
-      "warnings": [
-        "review:contains-major-or-enrollment-condition"
-      ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-297f"
-    },
-    {
-      "code": "FMST 299A",
-      "title": "Thesis Research",
+      "code": "HIS 201",
+      "title": "Directed Research Colloquium",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-299a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-201"
     },
     {
-      "code": "FMST 299B",
-      "title": "Thesis Research",
+      "code": "HIS 202",
+      "title": "Practicing World History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-202"
+    },
+    {
+      "code": "HIS 203",
+      "title": "Global Decolonization",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203"
+    },
+    {
+      "code": "HIS 203A",
+      "title": "Global History of War and Revolution, 1912-1929",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203a"
+    },
+    {
+      "code": "HIS 204A",
+      "title": "History of Gender Research Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204a"
+    },
+    {
+      "code": "HIS 204B",
+      "title": "Approaches to Social and Cultural History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204b"
+    },
+    {
+      "code": "HIS 204C",
+      "title": "Colonialism, Nationalism and Race Research Seminar",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204c"
+    },
+    {
+      "code": "HIS 204E",
+      "title": "Transnationalism, Borderlands, and History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition",
         "review:prerequisite-logic-not-auto-encoded"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fmst-feminist-studies/graduate/fmst-299b"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204e"
     },
     {
-      "code": "OCEA 250",
-      "title": "Field and Laboratory Methods in Coastal and Aquatic Science",
+      "code": "HIS 205",
+      "title": "Diaspora and World History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-250"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-205"
     },
     {
-      "code": "OCEA 267",
-      "title": "Applied Environmental Time Series Analysis",
+      "code": "HIS 206",
+      "title": "Empire in World History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-267"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-206"
     },
     {
-      "code": "SOCD 204",
-      "title": "Ethnographic Writing and Social Documentation",
+      "code": "HIS 208",
+      "title": "An Introduction to Digital Humanities",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-204"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-208"
     },
     {
-      "code": "THEA 251",
-      "title": "Graduate Student Production",
+      "code": "HIS 209A",
+      "title": "Diaspora as Method",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-251"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-209a"
     },
     {
-      "code": "THEA 290A",
-      "title": "Research Methods for Performance and Practice",
+      "code": "HIS 210A",
+      "title": "Readings in U.S. History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290a"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210a"
     },
     {
-      "code": "THEA 294",
-      "title": "Future Stages",
+      "code": "HIS 210B",
+      "title": "Readings in U.S. History",
       "status": "warnings-only",
       "errors": [],
       "warnings": [
         "review:contains-major-or-enrollment-condition"
       ],
-      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-294"
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210b"
+    },
+    {
+      "code": "HIS 211A",
+      "title": "Research Seminar in Early American History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211a"
+    },
+    {
+      "code": "HIS 211B",
+      "title": "Research Seminar in Early American History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211b"
+    },
+    {
+      "code": "HIS 212A",
+      "title": "Citizenship in U.S. History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212a"
+    },
+    {
+      "code": "HIS 212B",
+      "title": "Citizenship in United States History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212b"
+    },
+    {
+      "code": "HIS 214",
+      "title": "California History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-214"
+    },
+    {
+      "code": "HIS 215A",
+      "title": "Topics in American History: U.S. Labor and Working Class History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215a"
+    },
+    {
+      "code": "HIS 215B",
+      "title": "Visions of Progress",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215b"
+    },
+    {
+      "code": "HIS 215C",
+      "title": "U.S. Immigration and Ethnic History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215c"
+    },
+    {
+      "code": "HIS 216",
+      "title": "Readings in the History of American Religions",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-216"
+    },
+    {
+      "code": "HIS 217",
+      "title": "Critical Conversations in Native American History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-217"
+    },
+    {
+      "code": "HIS 220",
+      "title": "The Atlantic World, 1500-1800",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-220"
+    },
+    {
+      "code": "HIS 221",
+      "title": "Empires and New Nations in the Americas",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-221"
+    },
+    {
+      "code": "HIS 222",
+      "title": "Global Sexualities--A Seminar in the Queering of Historiographies",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-222"
+    },
+    {
+      "code": "HIS 225",
+      "title": "Spanish Colonialism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-225"
+    },
+    {
+      "code": "HIS 227",
+      "title": "Gender and Colonialism",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-227"
+    },
+    {
+      "code": "HIS 229",
+      "title": "Worlds of Labor in Asia",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229"
+    },
+    {
+      "code": "HIS 229A",
+      "title": "Pacific Worlds",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229a"
+    },
+    {
+      "code": "HIS 230A",
+      "title": "Readings in Late Imperial China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230a"
+    },
+    {
+      "code": "HIS 230B",
+      "title": "Engendering China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230b"
+    },
+    {
+      "code": "HIS 230C",
+      "title": "Readings in 20th-Century China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230c"
+    },
+    {
+      "code": "HIS 231",
+      "title": "Historicizing the People's Republic of China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-231"
+    },
+    {
+      "code": "HIS 238A",
+      "title": "Research Methods: China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238a"
+    },
+    {
+      "code": "HIS 238B",
+      "title": "Research Methods: China",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238b"
+    },
+    {
+      "code": "HIS 242",
+      "title": "Readings in Modern Japan",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-242"
+    },
+    {
+      "code": "HIS 243",
+      "title": "Transnational Japan",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-243"
+    },
+    {
+      "code": "HIS 244",
+      "title": "Gender and Japanese History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-244"
+    },
+    {
+      "code": "HIS 251A",
+      "title": "Readings in Modern European History: Environment and Technology",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251a"
+    },
+    {
+      "code": "HIS 251B",
+      "title": "Readings in Modern European History: Empire",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251b"
+    },
+    {
+      "code": "HIS 252",
+      "title": "Republicanism and Its Discontents: Universal Projects and Particular Discriminations",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-252"
+    },
+    {
+      "code": "HIS 255",
+      "title": "Religion and Modernity",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-255"
+    },
+    {
+      "code": "HIS 257",
+      "title": "Shtetl: Eastern European Jewish Life",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-257"
+    },
+    {
+      "code": "HIS 258A",
+      "title": "Zionism and Its Critics",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-258a"
+    },
+    {
+      "code": "HIS 260",
+      "title": "History and the Spatial Turn: Making Space, Place, and Geography in History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-260"
+    },
+    {
+      "code": "HIS 261",
+      "title": "The Contours of the New Middle East History",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-261"
+    },
+    {
+      "code": "HIS 263",
+      "title": "Histories of Science and Medicine in the Global South",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-263"
+    },
+    {
+      "code": "HIS 265",
+      "title": "History of the Body",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-265"
+    },
+    {
+      "code": "HIS 280A",
+      "title": "History Graduate Proseminar: Teaching Pedagogy",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280a"
+    },
+    {
+      "code": "HIS 280B",
+      "title": "History Graduate Proseminar: Research Presentations and Grant Writing",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280b"
+    },
+    {
+      "code": "HIS 280C",
+      "title": "History Graduate Proseminar: Job Market",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280c"
+    },
+    {
+      "code": "HIS 283",
+      "title": "Foreign Language Preparation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-283"
+    },
+    {
+      "code": "HIS 284",
+      "title": "Qualifying Examination Preparation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-284"
+    },
+    {
+      "code": "HIS 285",
+      "title": "Readings in Research Field",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285"
+    },
+    {
+      "code": "HIS 285B",
+      "title": "Readings in Research Field",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285b"
+    },
+    {
+      "code": "HIS 286",
+      "title": "Research Colloquium on Colonialism, Nationalism, and Race",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-286"
+    },
+    {
+      "code": "HIS 287",
+      "title": "Research Colloquium on Gender",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-287"
+    },
+    {
+      "code": "HIS 288",
+      "title": "Teaching Assistant Preparation",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-288"
+    },
+    {
+      "code": "HIS 289",
+      "title": "History Colloquium",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-289"
+    },
+    {
+      "code": "HIS 294M",
+      "title": "Literati, Samurai, and Yangban: A Comparative History of State",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-294m"
+    },
+    {
+      "code": "HIS 297A",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297a"
+    },
+    {
+      "code": "HIS 297B",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297b"
+    },
+    {
+      "code": "HIS 297C",
+      "title": "Independent Study",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297c"
+    },
+    {
+      "code": "HIS 298A",
+      "title": "Constructing a Field",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-298a"
+    },
+    {
+      "code": "HIS 299A",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299a"
+    },
+    {
+      "code": "HIS 299B",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299b"
+    },
+    {
+      "code": "HIS 299C",
+      "title": "Thesis Research",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299c"
+    },
+    {
+      "code": "HIS 3A",
+      "title": "Deep History: From the Stone Age to the Rise of Cities",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-3a"
+    },
+    {
+      "code": "HIS 72A",
+      "title": "History on Screen: The French Revolution in Film",
+      "status": "passed",
+      "errors": [],
+      "warnings": [],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-72a"
+    },
+    {
+      "code": "LIT 201A",
+      "title": "Basic Principles of University Pedagogy",
+      "status": "warnings-only",
+      "errors": [],
+      "warnings": [
+        "review:contains-major-or-enrollment-condition"
+      ],
+      "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-201a"
     }
   ]
 }

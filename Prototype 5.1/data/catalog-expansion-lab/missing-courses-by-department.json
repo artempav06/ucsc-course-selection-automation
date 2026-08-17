@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-17T05:02:48.511Z",
-  "missingOfficialCourseCount": 1908,
+  "generatedAt": "2026-08-17T06:08:37.756Z",
+  "missingOfficialCourseCount": 1895,
   "departments": [
     {
       "subject": "AM",
@@ -9877,50 +9877,6 @@
       ]
     },
     {
-      "subject": "ESCI",
-      "departmentText": "ESCI - Environmental Sciences",
-      "departmentSlug": "esci-environmental-sciences",
-      "count": 2,
-      "courses": [
-        {
-          "code": "ESCI 20",
-          "title": "Introduction to Environmental Science",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20",
-          "departmentSlug": "esci-environmental-sciences",
-          "departmentText": "ESCI - Environmental Sciences",
-          "divisionPath": "lower-division",
-          "alternatePages": [
-            {
-              "code": "ESCI 20",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20",
-              "departmentSlug": "esci-environmental-sciences",
-              "departmentText": "ESCI - Environmental Sciences",
-              "divisionPath": "lower-division"
-            }
-          ]
-        },
-        {
-          "code": "ESCI 20L",
-          "title": "",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20l",
-          "departmentSlug": "esci-environmental-sciences",
-          "departmentText": "ESCI - Environmental Sciences",
-          "divisionPath": "lower-division",
-          "alternatePages": [
-            {
-              "code": "ESCI 20L",
-              "title": "Introduction to Environmental Science: Santa Cruz Water from Well to Wastewater Treatment",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/esci-environmental-sciences/lower-division/esci-20l",
-              "departmentSlug": "esci-environmental-sciences",
-              "departmentText": "ESCI - Environmental Sciences",
-              "divisionPath": "lower-division"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "subject": "FILM",
       "departmentText": "FILM - Film and Digital Media",
       "departmentSlug": "film-film-and-digital-media",
@@ -10435,22 +10391,6 @@
       ]
     },
     {
-      "subject": "FREN",
-      "departmentText": "FREN - French",
-      "departmentSlug": "fren-french",
-      "count": 1,
-      "courses": [
-        {
-          "code": "FREN 115",
-          "title": "Structures of spoken French",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fren-french/upper-division/fren-115",
-          "departmentSlug": "fren-french",
-          "departmentText": "FREN - French",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
       "subject": "GAME",
       "departmentText": "GAME - Games and Playable Media",
       "departmentSlug": "game-games-and-playable-media",
@@ -10863,22 +10803,6 @@
       ]
     },
     {
-      "subject": "GCH",
-      "departmentText": "GCH-Global and Community Health",
-      "departmentSlug": "gch-global-community-health",
-      "count": 1,
-      "courses": [
-        {
-          "code": "GCH 198",
-          "title": "Independent Field Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health/upper-division/gch-198",
-          "departmentSlug": "gch-global-community-health",
-          "departmentText": "GCH-Global and Community Health",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
       "subject": "GIST",
       "departmentText": "GIST-Geographic Info Systems, Science, & Technologies",
       "departmentSlug": "gist-geographic-info-systems-science-and-technologies",
@@ -11040,24 +10964,8 @@
       "subject": "HAVC",
       "departmentText": "HAVC - History of Art and Visual Culture",
       "departmentSlug": "havc-history-of-art-and-visual-culture",
-      "count": 39,
+      "count": 37,
       "courses": [
-        {
-          "code": "HAVC 166",
-          "title": "Indigenous Art and Activism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-166",
-          "departmentSlug": "havc-history-of-art-and-visual-culture",
-          "departmentText": "HAVC - History of Art and Visual Culture",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HAVC 175",
-          "title": "Speculative Currents: Art, Oceans, and Imagined Worlds",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-175",
-          "departmentSlug": "havc-history-of-art-and-visual-culture",
-          "departmentText": "HAVC - History of Art and Visual Culture",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "HAVC 201A",
           "title": "Introduction to Visual Studies and Critical Theory",
@@ -11482,64 +11390,8 @@
       "subject": "HIS",
       "departmentText": "HIS - History",
       "departmentSlug": "his-history",
-      "count": 78,
+      "count": 71,
       "courses": [
-        {
-          "code": "HIS 3A",
-          "title": "Deep History: From the Stone Age to the Rise of Cities",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-3a",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "HIS 72A",
-          "title": "History on Screen: The French Revolution in Film",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-72a",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "HIS 125",
-          "title": "California History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-125",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HIS 137H",
-          "title": "History and Cultural Heritage in Africa",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-137h",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HIS 139N",
-          "title": "The Bible Buried Beneath: Biblical Archeology in 19th and 20th Century Palestine",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-139n",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HIS 190L",
-          "title": "Topics in Indigenous History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-190l",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "HIS 198S",
-          "title": "Summer Humanities EXCEL Internship Course",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-198s",
-          "departmentSlug": "his-history",
-          "departmentText": "HIS - History",
-          "divisionPath": "upper-division"
-        },
         {
           "code": "HIS 200",
           "title": "Methods and Theories of History",

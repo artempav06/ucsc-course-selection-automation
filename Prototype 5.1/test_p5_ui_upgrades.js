@@ -703,7 +703,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('next10c-catalog'), `${asset} cache-buster should change for the next-10c catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('next10d-catalog'), `${asset} cache-buster should change for the next-10d catalog update so browsers do not reuse old JS`);
   }
 }
 

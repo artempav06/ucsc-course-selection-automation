@@ -48152,6 +48152,34 @@ const COURSES = {
       "Official prerequisite/eligibility text: FREN 6 or placement by assessment."
     ]
   },
+  "FREN 115": {
+    "concentrations": [],
+    "title": "Structures of spoken French",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "FREN 3"
+      ],
+      [
+        "LING 50",
+        "APLX 80"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/fren-french/upper-division/fren-115",
+    "desc": "Spoken French refers to spontaneous everyday French speech; in France, everyday spoken French presents numerous differences from the normative written variety and has long been considered “faulty” and inferior to “standard” French. Linguists, however, see spoken French as a legitimate linguistic system in and of itself, and it is the subject of vibrant research activity. Gaining familiarity with the structures of spoken French is key for second-language speakers of French who wish to communicate and interact successfully and naturally. This course, taught in English, offers a survey of structures and features that distinguish everyday spoken French from normative/standard written French.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "FREN 3 or equivalent; and LING 50 or APLX 80.",
+    "prereqNotes": [
+      "Official prerequisite text: FREN 3 or equivalent; and LING 50 or APLX 80.",
+      "Official catalog allows equivalent preparation for FREN 3; equivalency is preserved as a note and is not engine-enforced."
+    ]
+  },
   "FREN 120": {
     "concentrations": [],
     "title": "French Linguistics",
@@ -48572,6 +48600,25 @@ const COURSES = {
       "Official catalog includes non-course eligibility language (placement/AP/test-out/writing/composition). It is preserved here as a note and is not engine-enforced as a course prerequisite.",
       "Official prerequisite/eligibility text: GCH 1, and satisfaction of the Entry Level Writing and Composition"
     ]
+  },
+  "GCH 198": {
+    "concentrations": [],
+    "title": "Independent Field Study",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gch-global-community-health/upper-division/gch-198",
+    "desc": "Provides for individual programs of study on topics related to global and community health either by means other than the usual supervision in person, or when the student is doing all or most of the coursework off campus. With permission of the department, may be repeated for credit, or two or three courses taken concurrently. Students submit petition to sponsoring agency",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "GCH 199A": {
     "concentrations": [],
@@ -51191,6 +51238,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HAVC 166": {
+    "concentrations": [],
+    "title": "Indigenous Art and Activism",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-166",
+    "desc": "Examines how indigenous artists and activists visually respond to issues related to land and sovereignty. Looks at a broad range of media used by indigenous creative practitioners, including documentary filmmaking, printmaking, photography, and performance. (Formerly HAVC 186I.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HAVC 170": {
     "concentrations": [],
     "title": "Art of the Body in Oceania",
@@ -51236,6 +51300,23 @@ const COURSES = {
       "Official catalog includes recommended/advisory language. It is preserved here as a note and is not engine-enforced.",
       "Official prerequisite/eligibility text: Prior coursework related to Oceania recommended."
     ]
+  },
+  "HAVC 175": {
+    "concentrations": [],
+    "title": "Speculative Currents: Art, Oceans, and Imagined Worlds",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/upper-division/havc-175",
+    "desc": "Explores how artists and writers use speculative forms to imagine radical futures. Focusing on Indigenous futurisms, oceanic imaginaries, and global speculative art, the course examines resistance to colonialism, climate change, gender and tech ethics, and world-building across visual media. Students analyze and discuss artworks that engage imagination, critique, and alternative visions of the past, present, and future.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HAVC 176": {
     "concentrations": [],
@@ -52785,6 +52866,25 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HIS 3A": {
+    "concentrations": [],
+    "title": "Deep History: From the Stone Age to the Rise of Cities",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-3a",
+    "desc": "How do we write history about a human past so distant that it preceded the invention of writing, itself? What forms of evidence and historiographical methods do we employ to reconstruct this past and what choices—literary, philosophical, political and others—do we make when we try to represent it? How does history differ from paleoanthropology, archeology, genomics, and other modes of reconstructing the deep past? How did human evolution and environmental factors impact the emergence of important cultural developments? The course explores these questions through a careful, comparative analysis of several highly influential attempts to write “deep history.”",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HIS 4": {
     "concentrations": [],
     "title": "History of the Present: Investigating the Historical Origins of Contemporary Problems",
@@ -53524,6 +53624,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HIS 72A": {
+    "concentrations": [],
+    "title": "History on Screen: The French Revolution in Film",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/lower-division/his-72a",
+    "desc": "Traces the history of France from 1500-present through film. Course includes light reading, watching one film per week, and weekly discussions of the films. A lecture introducing the historical context and key developments tracing the course of French history precede each film. Lecture attendance is required. Course begins with the Renaissance and French rural history, then explores the Wars of Religion, the Enlightenment, the French Revolution, 19th-century Paris, World Wars I and II, decolonization, and the making of a multicultural contemporary French society.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HIS 74": {
     "concentrations": [],
@@ -54619,6 +54736,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HIS 125": {
+    "concentrations": [],
+    "title": "California History",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-125",
+    "desc": "California had a multi-ethnic indigenous society for thousands of years prior to European arrival. Course traces the persistent multi-ethnic quality of the region as it became part of the Spanish empire, Mexico, and the United States. Considers the many diasporas that have shaped California's steady connection to the world, especially to Mexico and other nations that border the Pacific.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HIS 128": {
     "concentrations": [],
     "title": "Chicana/Chicano History",
@@ -54745,6 +54879,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "HIS 137H": {
+    "concentrations": [],
+    "title": "History and Cultural Heritage in Africa",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-137h",
+    "desc": "Students learn about the complex historical and contemporary dimensions of the United Nations Educational, Scientific and Cultural Organization program for cultural heritage worldwide. Examines UNESCO World Heritage Sites, with a focus on Africa, particularly Senegal. Far from being static monuments or relics of distant times, these sites represent living landscapes where historical narratives, cultural practices, and political realities intersect. Nominated UNESCO places of heritage in Senegal are approached as a lens to examine the continent's deep and diverse pre-colonial past and its ongoing negotiations with memory, identity, and global recognition.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "HIS 139C": {
     "concentrations": [],
     "title": "Queer Pasts: A Radical Telling of LGBTQ History in the United States",
@@ -54849,6 +55000,25 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HIS 139N": {
+    "concentrations": [],
+    "title": "The Bible Buried Beneath: Biblical Archeology in 19th and 20th Century Palestine",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-139n",
+    "desc": "Examines the Palestinian-Israeli conflict through the perspective of 19th- and 20th-century biblical archeology. Students learn about the political manipulations of archeology by examining British interests in controlling the “Holy Land” of Palestine; the creation and re-creation of new holy sites; and the role of France, Germany, America, and Britain in shaping our understanding of the region. Students also learn about how Jordan, Israel, and Palestine have also utilized archeology for claims to the land. Each class focuses on important holy sites in Christianity, Judaism, and Islam and the archeological projects in and around them.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HIS 140B": {
     "concentrations": [],
@@ -56701,6 +56871,32 @@ const COURSES = {
       "Official prerequisite/eligibility text: satisfaction of the Entry Level Writing and Composition"
     ]
   },
+  "HIS 190L": {
+    "concentrations": [],
+    "title": "Topics in Indigenous History",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "HIS 100"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-190l",
+    "desc": "A senior seminar course that discusses the characteristics of settler colonialism and its effects on Indigenous peoples both locally and abroad, including in the contiguous United States, Hawai’i, Canada, and Australia. Discusses violence of the colonial past and how it has repercussions into the present. Students craft their own research projects.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "satisfaction of the Entry Level Writing and Composition requirements, HIS 100, and two additional upper-division history courses, or permission of instructor.",
+    "prereqNotes": [
+      "Official prerequisite/eligibility text: satisfaction of the Entry Level Writing and Composition requirements, HIS 100, and two additional upper-division history courses, or permission of instructor.",
+      "Official catalog includes non-course eligibility language (Entry Level Writing/Composition), additional broad upper-division history coursework, major restriction, and permission-of-instructor exception. Only the explicit HIS 100 course prerequisite is engine-enforced; the rest is preserved here for review.",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior history majors. Enrollment limited to 20."
+    ],
+    "enrollmentText": "Enrollment is restricted to junior and senior history majors. Enrollment limited to 20."
+  },
   "HIS 190N": {
     "concentrations": [],
     "title": "Topics in African History",
@@ -57929,6 +58125,25 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "HIS 198S": {
+    "concentrations": [],
+    "title": "Summer Humanities EXCEL Internship Course",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-S",
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/upper-division/his-198s",
+    "desc": "This hybrid 10-credit course pairs an intensive Summer Humanities EXCEL internship with a practicum that helps students turn workplace experience into humanities-based analysis. Students treat the internship as a site of inquiry, applying humanistic methods to project-based work and documenting learning through field notes, work products, professional interactions, and supervisor feedback. Weekly work moves from description to interpretation and evidence-based claims, connecting site observations to course concepts on institutions, public humanities, and community engagement ethics. Internships require 20–25 hours per week plus readings, discussion, reflection, and a final presentation. Enrollment is limited to Summer Humanities EXCEL students with instructor permission.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "HIS 199": {
     "concentrations": [],

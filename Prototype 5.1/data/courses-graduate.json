@@ -22526,17 +22526,7 @@
     "title": "Game Technologies",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 230"
-      ],
-      [
-        "GAME 235"
-      ],
-      [
-        "GAME 236"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-231",
@@ -22545,9 +22535,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 230 ; or GAME 235 and GAME 236 .",
+    "officialPrereqText": "GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted to graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 230 ; or GAME 235 and GAME 236 .",
+      "Official prerequisite text: GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted to graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22561,17 +22551,7 @@
     "title": "Advanced Game Technologies",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 230"
-      ],
-      [
-        "GAME 235"
-      ],
-      [
-        "GAME 236"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-232",
@@ -22580,9 +22560,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 230 ; or GAME 235 and GAME 236 .",
+    "officialPrereqText": "GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 230 ; or GAME 235 and GAME 236 .",
+      "Official prerequisite text: GAME 230 ; or GAME 235 and GAME 236 . Enrollment is restricted graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22620,11 +22600,7 @@
     "title": "Game Development II",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 235"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-236",
@@ -22633,9 +22609,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 235 .",
+    "officialPrereqText": "GAME 235 . Enrollment is restricted to graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 235 .",
+      "Official prerequisite text: GAME 235 . Enrollment is restricted to graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22649,12 +22625,7 @@
     "title": "Computer Graphics for Games",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 230",
-        "GAME 235"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-238",
@@ -22663,9 +22634,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 230 or GAME 235 .",
+    "officialPrereqText": "GAME 230 or GAME 235 . Enrollment is restricted to graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 230 or GAME 235 .",
+      "Official prerequisite text: GAME 230 or GAME 235 . Enrollment is restricted to graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22775,14 +22746,7 @@
     "title": "Serious Games Studio I",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 200",
-        "GAME 230",
-        "GAME 236",
-        "GAME 250"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-255",
@@ -22791,9 +22755,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 200 , or GAME 230 , or GAME 236 , or GAME 250 .",
+    "officialPrereqText": "GAME 200 , or GAME 230 , or GAME 236 , or GAME 250 . Enrollment is restricted to graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 200 , or GAME 230 , or GAME 236 , or GAME 250 .",
+      "Official prerequisite text: GAME 200 , or GAME 230 , or GAME 236 , or GAME 250 . Enrollment is restricted to graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22807,11 +22771,7 @@
     "title": "Serious Games Studio II",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 255"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-256",
@@ -22820,9 +22780,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 255 .",
+    "officialPrereqText": "GAME 255 . Enrollment is restricted to graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 255 .",
+      "Official prerequisite text: GAME 255 . Enrollment is restricted to graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22836,11 +22796,7 @@
     "title": "Serious Games Studio III",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 256"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-257",
@@ -22849,9 +22805,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 256 .",
+    "officialPrereqText": "GAME 256 . Enrollment is restricted to serious games graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 256 .",
+      "Official prerequisite text: GAME 256 . Enrollment is restricted to serious games graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to serious games graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -22889,11 +22845,7 @@
     "title": "Games and Playable Media Studio II",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "GAME 270"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-271",
@@ -22902,9 +22854,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "GAME 270 .",
+    "officialPrereqText": "GAME 270 . Enrollment is restricted to games and playable media graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: GAME 270 .",
+      "Official prerequisite text: GAME 270 . Enrollment is restricted to games and playable media graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to games and playable media graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -23033,6 +22985,160 @@
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "GIST 220": {
+    "concentrations": [],
+    "title": "Cartography and Visualization",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-220",
+    "desc": "Theory, practice, and principles of cartography. Technical introduction to graphic representation and visualization of geographic information. Lectures cover compilation and classification of geospatial datasets, the role of scale and projections in thematic maps, and theory and practice in cartographic symbolization, visualization, and communication.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ENVS 215A and ENVS 215B and ENVS 215C . Enrollment is restricted to GIST graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: ENVS 215A and ENVS 215B and ENVS 215C . Enrollment is restricted to GIST graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to GIST graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to GIST graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "GIST 230": {
+    "concentrations": [],
+    "title": "Remote Sensing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-230",
+    "desc": "Remote sensing is the study of the Earth's land, water, atmospheric and human-made features using imaging devices on both airborne and spaceborne platforms. The course includes the study of electromagnetic energy and the methods used to extract useful information from remotely sensed images. Students develop a strong understanding of the tools and techniques used to display, process, and analyze remotely sensed data as well as develop analytical workflows to derive remotely sensed products for a broad range of applications. Lab work involves image interpretation using aerial photographs and computer-based digital image processing.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students enrolled in the GISTAR M.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students enrolled in the GISTAR M.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "GIST 240": {
+    "concentrations": [],
+    "title": "GIS Development and Programming",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-240",
+    "desc": "Introduction to the foundational concepts, techniques, and skills of computer programming needed to tackle complex analyses and automate geoprocessing workflows in a geographic information system (GIS). Emphasis is on object-oriented programming and developing basic programming skills using the Python scripting language. Students learn essential programming concepts needed for processing spatial data variables and expressions, data typing, data structures, conditional branching, looping, functions, input/output, data manipulation, and debugging. Students also develop geoprocessing programs to edit, query, manipulate, and analyze spatial data (both vector and raster data) with ArcPy and other modules like NumPy, SciPy, and Pandas. No prior programming experience is required.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "GIST 250": {
+    "concentrations": [],
+    "title": "Geospatial Technology Applications",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-250",
+    "desc": "Variable-subject course focused on specific systems such as 3D/CAD systems and drone technologies, field-based advanced GPS and surveying systems, and server/infrastructure development and management. As a variable subject course, objectives vary depending on the specified subject.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students enrolled in the Geographic Info Systems, Science, & Technologies program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "GIST 290A": {
+    "concentrations": [],
+    "title": "GISTAR Capstone Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290a",
+    "desc": "Students begin the independent completion of their master’s capstone project under the supervision of a GISTAR advisor, in collaboration with affiliated faculty or partnering research organizations. The course focuses on defining a project scope, establishing research questions, designing a geospatial workflow, and preparing the technical and analytical foundation for an applied GIS or remote sensing project. Students develop a formal project proposal and produce initial results that will guide their work in the second capstone course. Enrollment is restricted to GIST graduate students. Enrollment is restricted to GISTAR M.A. students who have completed their core courses. Enrollment requires a permission number. Email envsgpc@ucsc.edu.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to GIST graduate students. Enrollment is restricted to GISTAR M.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to GIST graduate students. Enrollment is restricted to GISTAR M.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "GIST 290B": {
+    "concentrations": [],
+    "title": "GISTAR Capstone Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/gist-geographic-info-systems-science-and-technologies/graduate/gist-290b",
+    "desc": "Students continue and complete their master’s capstone project with ongoing mentorship from their GISTAR advisor, supported by affiliated faculty or collaborating research organizations. Emphasis is placed on advanced data processing, spatial analysis, visualization, and synthesis of results. Students finalize a professional-quality written report and deliver an oral or public presentation of their work. The course culminates in a polished, practice-ready GIS project that demonstrates mastery of geospatial methods and applied problem-solving. This course is restricted to GISTAR M.A. students who have already taken GIST 290A. A permission number is required to enroll in this course. To start a request for a permission number, please email envsgpc@ucsc.edu.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to GISTAR M.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to GISTAR M.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "GRAD 213": {
     "concentrations": [],
     "title": "Equity-Minded Mentoring in Higher Education: Fostering Inclusive Research and Learning Environments",
@@ -23048,13 +23154,15 @@
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-213",
     "desc": "Supports enrolling graduate students and auditing postdoctoral scholars in STEM and Social Science programs to develop mentorship skills that create inclusive research and learning environments in higher education. Mentors engage with recent research and practice evidence-based strategies that help historically marginalized students excel in science through an equity-centered approach. To apply insights from educational research, mentors create mentoring statements that articulate their equity values and the specific strategies they use to enact equity in mentoring. Enrollment is by permission of instructor and prioritizes graduate students in STEM or Social Science discipline. Contact the instructor for a permission code. The instructor will review enrollees as needed to ensure priority is being met. Postdoctoral scholars in these fields may audit the course.",
     "section": [
-      "FREE"
+      "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
     "officialPrereqText": "",
-    "prereqNotes": [],
-    "searchOnly": true,
-    "sourceCatalogYear": "2026-2027"
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
   },
   "GRAD 215": {
     "concentrations": [],
@@ -23070,13 +23178,920 @@
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/grad-graduate/graduate/grad-215",
     "desc": "Supports current and emerging graduate student instructors (GSIs) to discuss and apply research-based frameworks for developing college-level courses that center significant student learning, antiracism, accessibility, and equitable outcomes. To put the insights of educational research into practice, GSIs create the essential components of an original college-level course, including course learning outcomes, assessment plans, an equity-minded syllabus, and an engaging course structure. First priority of enrollment is given to graduate students who have been appointed to teach as GSIs in the upcoming summer sessions. Open on a space-available basis to all other graduate students.",
     "section": [
-      "FREE"
+      "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
     "officialPrereqText": "",
-    "prereqNotes": [],
-    "searchOnly": true,
-    "sourceCatalogYear": "2026-2027"
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 201A": {
+    "concentrations": [],
+    "title": "Introduction to Visual Studies and Critical Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-201a",
+    "desc": "Introduces the visual studies discipline, providing students with an overview of the field's development, its primary texts, and its issues of central concern. Features intensive readings and student-led discussions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 202": {
+    "concentrations": [],
+    "title": "Introduction to Visual Studies Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-202",
+    "desc": "Examines research methods and approaches in a variety of materials, cultures, periods, and subjects that are relevant in the discipline of visual studies. Discussions focus on research and readings by history of art and visual culture faculty who share practices, experiences, and advice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 204": {
+    "concentrations": [],
+    "title": "Grant Writing, Pedagogy, and Professional Development",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-204",
+    "desc": "Students work on grants for educational support, dissertation funding, or both; learn about effective, accessible, and equity-minded TA- and GSI-related pedagogy (including developing course content, logistics, assessment, and grading criteria); and cultivate professional skills in relation to the publication process, CV preparation, and gaining employment in academia and beyond. (Formerly Grant Writing.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to visual studies graduate students or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to visual studies graduate students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 205": {
+    "concentrations": [],
+    "title": "Grant Writing in Visual Studies",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-205",
+    "desc": "Devoted to grant-writing. Students work on composing and peer-reviewing research proposals, personal statements, bibliographies, CVs, and writing samples. Readings include literature on grant-writing and scholarly writing in the humanities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to visual studies students or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to visual studies students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 212": {
+    "concentrations": [],
+    "title": "Yoruba Visualities and Aesthetics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-212",
+    "desc": "Yoruba conceptions of visuality are explored and compared to seeing through Western eyes. Critical reading focuses on Western and Yoruba scholars' work on visualities and complementary theoretical writings on Yoruba aesthetics and philosophy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 213": {
+    "concentrations": [],
+    "title": "Theories and Visual Cultures of Iconoclasm",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-213",
+    "desc": "Examines theories that attempt to explain iconoclasm, the willful destruction of religious or political objects, by applying the theory (including theories of cultural heritage) to various case studies. The universal aspect of iconoclasm and the differences in understanding and practice are explored.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 220": {
+    "concentrations": [],
+    "title": "Topics in Asian Visual Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-220",
+    "desc": "Examines selected and changing topics in the visual studies of Asia. The specific topic varies with each offering to keep up with recent directions in scholarship.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 222": {
+    "concentrations": [],
+    "title": "The Image of Arhat in China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-222",
+    "desc": "Indian Buddhist sage-monks (arhats) are portrayed in China in ways that represent a remarkable variety of visual/historical/practice traditions. This seminar examines these depictions and explores the ranges of means and functions attached to this theme.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 224": {
+    "concentrations": [],
+    "title": "Engaged Buddhism and Visual Culture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-224",
+    "desc": "Begins with an analysis of photography and films capturing the Gandhian and Dalit movement in India. Students then read key Buddhist texts on engaged Buddhism, and look at the rise of engaged Buddhism in Southeast Asia in the 1960s and how it impacted modern and contemporary art in Southeast Asia and its diaspora.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 230": {
+    "concentrations": [],
+    "title": "Race, Aesthetics, and Art in 18th Century Europe",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-230",
+    "desc": "Looks at the 18th-century connections of theories of beauty to practices of art-making, the production of knowledge about the natural world, and the construction of race. Students discuss not only the debates of this era but the impacts they have made on the study of visual culture.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 231": {
+    "concentrations": [],
+    "title": "Visualizing Waterways and Water Ways",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-231",
+    "desc": "Examines visual culture from 1500 to the present in conversation with texts about the relationship between material practices and water spaces. This aquatic focus allows us to learn together across a broad range of materials, periods, and geographies, calling into question static boundaries.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 232": {
+    "concentrations": [],
+    "title": "The Monument Since 1750 in Relation to Nationhood and the Experience of War",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-232",
+    "desc": "Investigates modern monuments (1750 to present) and the creation or maintenance of a nation, especially in terms of war and its immediate aftermath. Destruction or alteration of monuments and production of anti- or counter-monuments are also examined.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 233": {
+    "concentrations": [],
+    "title": "Visuality, Blackness, and the Human",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-233",
+    "desc": "Focuses on recent scholarly approaches engaged with the representation of African-American culture and identity, with a specific emphasis in the visualization of blackness. Utilizing a cross-disciplinary approach, students explore the evolving critical discourses concerned with blackness and the human. (Formerly Topics in Contemporary Art and Visual Culture.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 235": {
+    "concentrations": [],
+    "title": "Photography and History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-235",
+    "desc": "Investigates the complex relationship between photography and history. Considers the evolving perceptions of photography's capacity to capture reality, the discursive means by which photographic truths are produced, and the utility of photographs as primary evidence.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 236": {
+    "concentrations": [],
+    "title": "Contemporary Art and Theories of Democracy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-236",
+    "desc": "Interdisciplinary approach to the study of democratic political theory of the last two decades and its relation to contemporary art practice with an emphasis on activist art, public art, and theories of speech and performance.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 240": {
+    "concentrations": [],
+    "title": "Seeing Race",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-240",
+    "desc": "Investigates how discursive systems racialized the sight of various racial and ethnic groups in 19th- and 20th-century U.S. society. Focuses on the construction and maintenance of racial values systems and on the historically specific ways in which an eclectic assortment of visual artifacts have been read by groups over time. Considers the visual and material implications of race-based sight.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 241": {
+    "concentrations": [],
+    "title": "Decolonizing Nature: Contemporary Art and Ecology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-241",
+    "desc": "Considers how visual culture intersects with environment. Considers how, in the age of neoliberal globalization, documentary and neo-conceptual practices confront the biopolitics of climate change; the financialization and rights of nature; climate refugees; and indigenous ecologies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 242": {
+    "concentrations": [],
+    "title": "Radical Futurisms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-242",
+    "desc": "Examines and compares radical futurisms-Indigenous, Afro, Chicanx/Latinx, multispecies, Postcapitalist-and situates them in relation to experimental visual cultural, media, and aesthetic practices, asking critical and creative speculative questions about what comes after end-of-world narratives.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 243": {
+    "concentrations": [],
+    "title": "Alternative Architecture",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-243",
+    "desc": "Focuses on what is commonly left out of architectural history: the ephemeral, informal, illegal, and uncertain. Topics include: anonymous and collective architecture; temporary interventions; everyday urbanism; and vestigial urban spaces. These topics are understood through theories of space as socially produced (Henri Lefebvre, Michel de Certeau, among others), and through cultural movements and manifestoes (Situationist International, Aesthetics of Hunger, etc.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 244": {
+    "concentrations": [],
+    "title": "Reinventing ''Reinventing Nature:'' Visual Culture and Environmentalism, circa 1995",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-244",
+    "desc": "Departing from an interdisciplinary seminar held at the UC Humanities Research Institute in 1994 entitled \"Reinventing Nature,\" course engages discourses around ecology, technology, environmental politics, and visual representation that emerged in the 1990s through debates about the idea of nature.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 245": {
+    "concentrations": [],
+    "title": "Theories of Representation: Visual Discourses of the Body",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-245",
+    "desc": "How do representations of the body gain ideological purchase and agency as they unfold over time? This course explores the way humans have been visualized, including critical interrogations of gender, ethnic, and racial discourses. (Formerly Race and Representation.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 249": {
+    "concentrations": [],
+    "title": "How to Do Things with Pictures: Media, Culture, and Performance",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-249",
+    "desc": "An interdisciplinary exploration of the performative dimensions of art, visual culture, and new media. Investigates theories of performance and action across multiple fields and considers their relevance to themes, problems, and contexts of interest to those enrolled.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 250": {
+    "concentrations": [],
+    "title": "The Cult of Mary in Byzantium: Visualities of Political, Religions, and Gender Constructs",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-250",
+    "desc": "Through the study of the Byzantine cult of Mary, we examine diverse modalities in the construction and interaction of political, religious, and gender values, and we investigate the interrelated role of images, rituals, and text in human experience, expression, and communication.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 260": {
+    "concentrations": [],
+    "title": "Visual Literacy in Spanish America, 1500-1800",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-260",
+    "desc": "Visual literacy is considered as a particular predicament of colonial societies. Students consider the legibility of artifacts in colonial Spanish American contexts given its culturally diverse audiences and examine specific instances of (mis)interpreted images and transcultured representations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 264": {
+    "concentrations": [],
+    "title": "Contemporary Native American Art",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-264",
+    "desc": "Seminar focusing on the work of contemporary Native American artists. Students explore ecological activism, the relationship of Native artists with the art market and factors that shape artistic production, and what it means to be an Indigenous artist.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 270": {
+    "concentrations": [],
+    "title": "Colonial Cultures of Collecting and Display",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-270",
+    "desc": "Examines collections and exhibitions of colonized people, places, and objects through primary sources, theoretical texts, and analytical case studies (with some emphasis on Oceania). Focuses on visual discourses of race, science, religious conversion, colonial settlement, nation-building, education, and entertainment.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 273": {
+    "concentrations": [],
+    "title": "Imaging Colonial Borderlands",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-273",
+    "desc": "Considers 18th-century to 21st-century colonialisms, especially in Oceania. Concentrates on representations conditioned by particular cross-cultural engagements in colonial peripheries rather than focusing on metropolitan representations. Explores the construction and transgression of rigidly defined colonial identity categories, as expressed in visual/material form. (Formerly offered as Imaging Colonial Peripheries and Borderlands.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 275": {
+    "concentrations": [],
+    "title": "The Visual Cultures of Travel and Tourism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-275",
+    "desc": "Explores the visual cultures of travel and tourism with some focus on Oceania. Travel and tourism are implicated in the histories of colonialism, ethnography, and globalization, and offer rich sites for critical engagement with theories of transnationalism, imperialism, diaspora, and identity.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 276": {
+    "concentrations": [],
+    "title": "Indigenous Futurisms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-276",
+    "desc": "This graduate seminar dives into the speculative, ancestral, and artistic currents of Indigenous Futurisms. Course examines a wide range of artists, theories, and texts to illuminate how Indigenous Futurisms, as a movement, fractures colonial notions of linear time that are predicated on capitalism and settler logics. Topics include: speculative sovereignty, digital art, climate futures, planetary thought, and virtual worlds as sites of Indigenous resistance. Students engage foundational theory alongside contemporary artistic practices, with sustained attention to decolonial/anti-colonial ethics.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 280": {
+    "concentrations": [],
+    "title": "Visual Studies Issues",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-280",
+    "desc": "Examines selected and changing issues in visual studies. The specific issue varies with each offering to keep pace with recent directions in scholarship.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 294": {
+    "concentrations": [],
+    "title": "Teaching-Related Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-294",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 295": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-295",
+    "desc": "Directed reading that does not involve a term paper. Students submit petition to course-sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297a",
+    "desc": "Independent study or research for graduate students. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297b",
+    "desc": "Independent study or research for graduate students. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-297f",
+    "desc": "Students submit petition to course-sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299a",
+    "desc": "Students submit petition to course sponsoring agency. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HAVC 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/havc-history-of-art-and-visual-culture/graduate/havc-299b",
+    "desc": "Students submit petition to course sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
   },
   "HCI 200": {
     "concentrations": [],
@@ -23253,16 +24268,7 @@
     "title": "HCI Capstone 1",
     "units": 5,
     "division": "graduate",
-    "prereqs": [
-      [
-        "HCI 200",
-        "HCI 201"
-      ],
-      [
-        "HCI 202A",
-        "HCI 202B"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-271",
@@ -23271,9 +24277,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "HCI 200, HCI 201 , and either HCI 202A or HCI 202B.",
+    "officialPrereqText": "HCI 200, HCI 201 , and either HCI 202A or HCI 202B. Enrollment is restricted to human computer interaction graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: HCI 200, HCI 201 , and either HCI 202A or HCI 202B.",
+      "Official prerequisite text: HCI 200, HCI 201 , and either HCI 202A or HCI 202B. Enrollment is restricted to human computer interaction graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to human computer interaction graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -23287,11 +24293,7 @@
     "title": "HCI Capstone 2",
     "units": 10,
     "division": "graduate",
-    "prereqs": [
-      [
-        "HCI 271"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-272",
@@ -23300,9 +24302,9 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "HCI 271.",
+    "officialPrereqText": "HCI 271. Enrollment is restricted to human computer interaction graduate students.",
     "prereqNotes": [
-      "Official prerequisite text: HCI 271.",
+      "Official prerequisite text: HCI 271. Enrollment is restricted to human computer interaction graduate students.",
       "Official enrollment/restriction text: Enrollment is restricted to human computer interaction graduate students.",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
@@ -23340,15 +24342,7 @@
     "title": "Strategy Innovation for UX Professionals",
     "units": 2,
     "division": "graduate",
-    "prereqs": [
-      [
-        "HCI 200",
-        "HCI 201"
-      ],
-      [
-        "HCI 290"
-      ]
-    ],
+    "prereqs": [],
     "ge": null,
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291",
@@ -23357,14 +24351,1746 @@
       "GRADUATE_SEARCH_ONLY"
     ],
     "rmpScore": 0,
-    "officialPrereqText": "HCI 200, HCI 201 , and HCI 290.",
+    "officialPrereqText": "HCI 200, HCI 201 , and HCI 290. Enrollment is restricted to human computer interaction graduate students or by permission of the",
     "prereqNotes": [
-      "Official prerequisite text: HCI 200, HCI 201 , and HCI 290.",
+      "Official prerequisite text: HCI 200, HCI 201 , and HCI 290. Enrollment is restricted to human computer interaction graduate students or by permission of the",
       "Official enrollment/restriction text: Enrollment is restricted to human computer interaction graduate students or by permission of the instructor.",
+      "Needs review: contains-permission-or-consent-exception",
       "Needs review: contains-major-or-enrollment-condition",
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
     ],
     "enrollmentText": "Enrollment is restricted to human computer interaction graduate students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 200": {
+    "concentrations": [],
+    "title": "Methods and Theories of History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200",
+    "desc": "An overview of theories, methods, and philosophies concerning the nature and production of history. Topics vary with instructor.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate history students and others by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate history students and others by permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 200B": {
+    "concentrations": [],
+    "title": "Introduction to Research Methods in History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-200b",
+    "desc": "This team-taught seminar introduces graduate students to the \"how\" of historical research. Designed to offer concrete, practical skills toward accomplishing an intensive research project, this course covers topic development, efficient reading strategies, research methods, and interpretive approaches. The seminar features professors from the Department of History, who expose students to the \"hidden curriculum\" of research-intensive scholarly work. Students also train in habits of note-taking, research planning, and inclusive discussion as well as facilitation techniques.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 201": {
+    "concentrations": [],
+    "title": "Directed Research Colloquium",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-201",
+    "desc": "Having already prepared a bibliography and research prospectus in a graduate research seminar, students will undertake further research on their projects, write a 25–30 page research paper, and present their work to their fellow students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "history graduate research seminar. Enrollment is restricted to graduate history students.",
+    "prereqNotes": [
+      "Official prerequisite text: history graduate research seminar. Enrollment is restricted to graduate history students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate history students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate history students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 202": {
+    "concentrations": [],
+    "title": "Practicing World History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-202",
+    "desc": "Because world history surfaces in curriculums at all educational levels, this seminar interrogates its value. Why do historians advocate world (and transnational) history? How do historians actually practice it? What are the pitfalls? Can global perspectives apply to localized subjects?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 203": {
+    "concentrations": [],
+    "title": "Global Decolonization",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203",
+    "desc": "Focuses on the histories and theories of decolonization in the mid-to-late 20th century, particularly, interactions among anticolonial movements, how Cold War era antagonisms inflected the process of decolonization, and efforts to forge Afro-Asian unity and/or a nonalignment movement.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 203A": {
+    "concentrations": [],
+    "title": "Global History of War and Revolution, 1912-1929",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-203a",
+    "desc": "Provides graduate students with an introduction to the key interpretations and controversies in the global history of the 1900-1930 period, one marked by a world war, a reconfiguration of empires and the emergence of anti-colonial nationalisms, an accelerated pace of social change in many places in the world, and several revolutions and popular uprisings with significant global impact.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 204A": {
+    "concentrations": [],
+    "title": "History of Gender Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204a",
+    "desc": "Introduction to theories and methods employed in gendered historical research. Readings are drawn from a range of chronological, national, and thematic fields and explore the intersection of gender analysis with such historical problems as the body and sexuality, modernity, national identity, and production/consumption.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 204B": {
+    "concentrations": [],
+    "title": "Approaches to Social and Cultural History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204b",
+    "desc": "Graduate reading course focusing on both classic and contemporary approaches to social and cultural history. Readings induce: Bakhtin, Benjamin, Foucault, Auerbach, and Berlin, and a variety of more recent studies in social, cultural, and intellectual history. Course not limited to graduate students in History.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 204C": {
+    "concentrations": [],
+    "title": "Colonialism, Nationalism and Race Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204c",
+    "desc": "Research seminar introducing theories and methods of the comparative histories of race, ethnicity, colonialism, and nationalism.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 204E": {
+    "concentrations": [],
+    "title": "Transnationalism, Borderlands, and History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-204e",
+    "desc": "Graduate seminar exploring the history of Canada-United States-Mexico borderlands. Approaches and arguments compare nation-state centered histories with narratives that construct the North American borderlands as places wrought from a multiplicity of overlapping indigenous, imperial, national, transnational, and global forces.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 205": {
+    "concentrations": [],
+    "title": "Diaspora and World History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-205",
+    "desc": "Examines the histories and historiography concerning diaspora. This area of study includes populations from Asia, Africa, Europe, and the Americas. Students study the histories of diasporic populations, and the questions, theory, and methods that scholars use to approach the subject.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 206": {
+    "concentrations": [],
+    "title": "Empire in World History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-206",
+    "desc": "Introduces the study of empire (as opposed to nations, regions, or continents) as an approach to world history and to recent historiographical trends in the history of empires.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, Introduces the study of empire (as opposed to nations, regions, or continents) as an approach to world history and to recent historiographical trends in the history of empires.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, Introduces the study of empire (as opposed to nations, regions, or continents) as an approach to world history and to recent historiographical trends in the history of empires.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 208": {
+    "concentrations": [],
+    "title": "An Introduction to Digital Humanities",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-208",
+    "desc": "Critically examines how digital processes are changing scholarly practice and pedagogy in the humanities. Students experiment with how digital media can impact research and communication for textual scholars, museum professionals, archivists, librarians, public historians and educators.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 209A": {
+    "concentrations": [],
+    "title": "Diaspora as Method",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-209a",
+    "desc": "Explores diaspora as a category of experience, imagination, and analysis. Tracks the field's interdisciplinary influences and how it has generated a new vocabulary and new tools to uncover fixed and bounded ideas of time, place, and actors in many inquiries. Course aims to rearrange geographies, chronologies, and agencies by avoiding simplistic narratives about globalization and the end of the nation-state by facilitating transnational, cross-regional, long-historical, intercultural, or intersectional approaches to discover new interpretative possibilities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 210A": {
+    "concentrations": [],
+    "title": "Readings in U.S. History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210a",
+    "desc": "Introduction to major themes and controversies in the interpretation of U.S. history. Readings cover both chronological eras and topical subjects, often in a comparative context: colonial and early national periods.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 210B": {
+    "concentrations": [],
+    "title": "Readings in U.S. History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-210b",
+    "desc": "Introduction to major themes and controversies in the interpretation of U.S. history. Readings cover both chronological eras and topical subjects, often in a comparative context: 19th century.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 211A": {
+    "concentrations": [],
+    "title": "Research Seminar in Early American History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211a",
+    "desc": "First quarter of a two-quarter introduction to research in early American history (1550-1820). Readings include both historiographically definitive texts as well as recent scholarship reflecting the field's developments. Students complete analyses of historical sources, brief critical essays, and a significant research project. HIS 211A is not a prerequisite to HIS 211B .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 211B": {
+    "concentrations": [],
+    "title": "Research Seminar in Early American History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-211b",
+    "desc": "Second quarter of a two-quarter introduction to research in early American history (1550-1820). Readings include both historiographically definitive texts as well as recent scholarship reflecting the field's developments. Students complete analyses of historical sources, brief critical essays, and a significant research project. HIS 211A is not a prerequisite to HIS 211B .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 212A": {
+    "concentrations": [],
+    "title": "Citizenship in U.S. History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212a",
+    "desc": "A reading-intensive graduate seminar in United States history that examines citizenship and its exclusions, grounded in race, gender, sexuality, age, and disability. This seminar also explores how forms of belonging intersected with evolving understandings of nationalism and sovereignty.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 212B": {
+    "concentrations": [],
+    "title": "Citizenship in United States History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-212b",
+    "desc": "A reading-intensive graduate seminar in United States history examining citizenship and its exclusions, grounded in race, gender, sexuality, age, and disability. The course also explores how forms of belonging intersected with evolving understandings of nationalism and sovereignty.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to history graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to history graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 214": {
+    "concentrations": [],
+    "title": "California History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-214",
+    "desc": "Concerns the history and historiography of California from indigenous dominion to the present. Considers the distinctive ways in which California has led the nation and globe in economic, political, and social change, while remaining a multiethnic borderland.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 215A": {
+    "concentrations": [],
+    "title": "Topics in American History: U.S. Labor and Working Class History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215a",
+    "desc": "Addresses topics in history of working people, the labor movement broadly defined, and political-economic change in the U.S. Topics include race, ethnic and gender dynamics, and U.S. labor and working-class history in global context.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 215B": {
+    "concentrations": [],
+    "title": "Visions of Progress",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215b",
+    "desc": "Explores the emergence of the welfare/regulatory state in the United States from the 1870s to World War I, examining different schools of historical thought about this period.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 215C": {
+    "concentrations": [],
+    "title": "U.S. Immigration and Ethnic History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-215c",
+    "desc": "Introduces key issues and debates in United States immigration and ethnic history. Topics include causes of immigration; constructions of race, gender and ethnicity; assimilation; transnationalism; and forces shaping immigration policy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 216": {
+    "concentrations": [],
+    "title": "Readings in the History of American Religions",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-216",
+    "desc": "Research in the history of religions in the United States. Addresses topics, such as the rise of evangelicalism; class, race, and religious diversity; gender and power; modernity; and civil religion through analyses of visual and literary texts, iconography, ritual, theology, and praxis.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 217": {
+    "concentrations": [],
+    "title": "Critical Conversations in Native American History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-217",
+    "desc": "Overview of key historical texts focusing on the Native American experience, with particular focus on scholarship that seeks to decolonize Western methodologies and research practices. Readings explore such topics as decolonization, indigenous identity, sovereignty, repatriation efforts, gender and sexuality, and historical memory. The format consists of discussions of readings. Students give oral presentations on the readings, and write book reviews and a final historiographical paper.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 220": {
+    "concentrations": [],
+    "title": "The Atlantic World, 1500-1800",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-220",
+    "desc": "Explores the economic, social, and cultural history of early America in terms of its Atlantic connections and intersection with the cultures of early modern Europe, Africa, and Latin America. Builds upon previous work in early America and early modern Europe, challenging students both to work comparatively and to break out of traditional geographic models.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 221": {
+    "concentrations": [],
+    "title": "Empires and New Nations in the Americas",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-221",
+    "desc": "Compares the history of the colonial and 19th-century Americans through a world-history perspective. Focuses on the interrelated themes of indigenous histories, slavery and other forms of servitude, commodity production, and the meaning of equality and freedom in new nations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 222": {
+    "concentrations": [],
+    "title": "Global Sexualities--A Seminar in the Queering of Historiographies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-222",
+    "desc": "Explores the history of sexuality covering diverse time periods, peoples, and regions. Examines methods and theories used in the study of sexuality. Readings draw from the Americas, Middle East, Africa, Europe, and Austro-Asia, as well as topics in queer and LGBTQ2 studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 225": {
+    "concentrations": [],
+    "title": "Spanish Colonialism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-225",
+    "desc": "Reading-intensive graduate seminar with emphasis on theoretical and historiographical questions regarding the field of Spanish colonialism in the Americas. Students encouraged to engage in discussions of comparative colonialisms.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 227": {
+    "concentrations": [],
+    "title": "Gender and Colonialism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-227",
+    "desc": "Explores the relationship between colonialism and gender. Examines the construction of gender categories (in conjunction with race) in the context of colonial conquest and rule; contested definitions of motherhood, domesticity, and citizenship; and regulation of sexuality.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 229": {
+    "concentrations": [],
+    "title": "Worlds of Labor in Asia",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229",
+    "desc": "Introduces students to important debates in labor studies in Asia. Studies the relationship between labor, capitalism, and imperialism. Also interrogates the relevance or irrelevance of Asia as a concept from the standpoint of labor.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 229A": {
+    "concentrations": [],
+    "title": "Pacific Worlds",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-229a",
+    "desc": "This seminar examines the Pacific as a deep source of culture, knowledge, exploitation, and conflict. Such a perspective not only centers the spaces and peoples of Oceania, Asia, and the Americas, but also highlights a diverse sea-based geography of interactions and processes, such as seafaring, fishing, trade, labor, colonialism, capitalism, knowledge production, militarization, and decolonization. Readings include long-historical, transregional, interdisciplinary, and intercultural perspectives.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 230A": {
+    "concentrations": [],
+    "title": "Readings in Late Imperial China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230a",
+    "desc": "Survey of the major works on and historiographical controversies about Qing Dynasty (1644–1911) China.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 230B": {
+    "concentrations": [],
+    "title": "Engendering China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230b",
+    "desc": "Reading seminar on the history of Chinese gender, focusing on the Qing dynasty (1644 to 1911) to the present. Topics include marriage and family, sexuality, work, the gendered language of politics, and major reform movements.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 230C": {
+    "concentrations": [],
+    "title": "Readings in 20th-Century China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-230c",
+    "desc": "A survey of major Western-language works and historiographical controversies in Chinese history from 1900 to the present. Weekly readings emphasize particular social and political movements as well as long-term changes in urban and rural society.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 231": {
+    "concentrations": [],
+    "title": "Historicizing the People's Republic of China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-231",
+    "desc": "An overview of the scholarly literature on the People's Republic of China. Readings include works by historians as well as by social scientists. Students consider what kinds of questions historians have and can ask.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 238A": {
+    "concentrations": [],
+    "title": "Research Methods: China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238a",
+    "desc": "An introduction for graduate students to the use of major research tools and sources in Chinese history since 1600, with a focus on 20th-century materials. Students complete a series of bibliographical exercises and prepare a research prospectus.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 238B": {
+    "concentrations": [],
+    "title": "Research Methods: China",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-238b",
+    "desc": "Building on the research and bibliographic skills developed in course 228A, students develop a research topic and write a paper of 20-30 pages using primary sources as appropriate in English, Chinese, and/or Japanese.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 242": {
+    "concentrations": [],
+    "title": "Readings in Modern Japan",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-242",
+    "desc": "A graduate course intended to give students a fundamental understanding of the major themes in the study of modern Japanese history. Central themes include modernity and modernization, colonialism, postwar recovery, gender, race, and nationalism.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 243": {
+    "concentrations": [],
+    "title": "Transnational Japan",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-243",
+    "desc": "Examines how Japanese history has been forged across, outside, and beyond the boundaries of the modern nation-state of Japan. Considers how Japan has transformed the world. Students debate how the world made Japan and how Japan re-made the world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 244": {
+    "concentrations": [],
+    "title": "Gender and Japanese History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-244",
+    "desc": "Examines—through primary and secondary sources—constructions of gender (masculine, feminine, and transgender) in Japanese society over the past several centuries, focusing on the modern era.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 251A": {
+    "concentrations": [],
+    "title": "Readings in Modern European History: Environment and Technology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251a",
+    "desc": "Introduces major themes and problems in recent historiographical trends in environmental history and the history of technology. Examines the role of environment and technology in the making of Europe and European societies' engagement with the world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 251B": {
+    "concentrations": [],
+    "title": "Readings in Modern European History: Empire",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-251b",
+    "desc": "The history of empire has emerged as one of the most influential and fastest growing areas of inquiry within the field of modern European history. This course introduces students to recent debates and trends in imperial, colonial, and postcolonial history.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 252": {
+    "concentrations": [],
+    "title": "Republicanism and Its Discontents: Universal Projects and Particular Discriminations",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-252",
+    "desc": "Focuses on the histories and theories of republicanism and liberalism by investigating the tension between universal ideologies and discriminatory practices. Focuses on France and the United States, but Algeria, Syria, and Turkey will also be covered.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 255": {
+    "concentrations": [],
+    "title": "Religion and Modernity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-255",
+    "desc": "Examines the significance of religion and secularism in the modern period. How did modernity and the concept of the secular transform various religions and how, in turn, did these religions help to create modernity.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 257": {
+    "concentrations": [],
+    "title": "Shtetl: Eastern European Jewish Life",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-257",
+    "desc": "For several centuries, the shtetl functioned as the center of Jewish life in Eastern Europe. Alternately mythologized and pathologized, the shtetl continues to exist as an imaginary space that defines and distorts the historical image of Eastern European Jewish life. Students cannot receive credit for this course and HIS 196M .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and HIS 196M .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and HIS 196M .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 258A": {
+    "concentrations": [],
+    "title": "Zionism and Its Critics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-258a",
+    "desc": "Zionism is one of the most complex—and heavily contested—political and ideological movements of the modern period. To its supporters, Zionism has represented the national liberation movement of the Jewish people, a haven for Jews against antisemitism, including the Holocaust, an opportunity to establish a socialist state at the vanguard of worldwide revolution, a vehicle for Jewish cultural renaissance, and/or a crucial stage in God’s messianic plan. To its critics, Zionism has represented a form of racism and settler colonialism that has led to the oppression of Palestinians including the Nakba, an internalization of antisemitism, a reactionary betrayal of socialist ideals, and/or the heretical substitution of nationalism for Judaism.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 260": {
+    "concentrations": [],
+    "title": "History and the Spatial Turn: Making Space, Place, and Geography in History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-260",
+    "desc": "Explores the making of space, place, and geography in a body of recent historical work. Explores key theoretical work interrogating the significance of space as a critical element of social theory and historical consideration. Proceeds through three thematic units: questions of colonial economy in South Asia; spaces of empires and its end in the Eastern Mediterranean; and histories of infrastructure.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 261": {
+    "concentrations": [],
+    "title": "The Contours of the New Middle East History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-261",
+    "desc": "Explores the history and historiography of the modern Middle East through recent historical scholarship. Examines the new theoretical approaches that frame inquiries into the region's history and how contemporary historians are reinterpreting familiar questions and themes.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 263": {
+    "concentrations": [],
+    "title": "Histories of Science and Medicine in the Global South",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-263",
+    "desc": "Focuses on the histories of science and medicine in the Global South. While these fields have historically been dominated by scholarship focusing on Europe and North America, in recent years, work produced by scholars of the Global South has begun to reshape these fields. This seminar critically considers the body of historical scholarship with an eye toward the following questions: Are there common themes that define this body of historiography? What do works that fall within this genre have to teach us about other bodies of cultural, political and economic historical work? How is it productive to think with the Global South as a category of analysis?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 265": {
+    "concentrations": [],
+    "title": "History of the Body",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-265",
+    "desc": "A multidisciplinary history of the body from late antiquity to the present. Topics include: medical and religious constructions; the raced, gendered, and sexualized body; adornment and performance markers; power and control through the body; body parts; and the body's permeability.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 280A": {
+    "concentrations": [],
+    "title": "History Graduate Proseminar: Teaching Pedagogy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280a",
+    "desc": "Devoted to professionalism and socialization of history graduate students. Includes formal and informal meetings with faculty and other graduate students. Topics include TAships, designing course syllabi, pedagogy, teaching technologies, and teaching in different venues.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 280B": {
+    "concentrations": [],
+    "title": "History Graduate Proseminar: Research Presentations and Grant Writing",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280b",
+    "desc": "Devoted to professionalism and socialization of history graduate students. Topics include discussion of researching grants; effective CV writing; successful grant applications and publication proposals; and conference paper and panel proposals. Required for first-year graduate students; however, open to all history graduate students as needed.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 280C": {
+    "concentrations": [],
+    "title": "History Graduate Proseminar: Job Market",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-280c",
+    "desc": "Devoted to professionalism and socialization of history graduate students. Includes formal and informal meetings with faculty and other graduate students. Topics include researching position; preparing a CV and the job-application letter; preparing for an interview; practice interview; preparing a job talk and/or teaching presentation; and practice job talk.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 283": {
+    "concentrations": [],
+    "title": "Foreign Language Preparation",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-283",
+    "desc": "Independent study course in which history graduate student reads selected texts to fulfill foreign language requirement. Student meets with instructor to discuss readings, deepening his knowledge of the foreign language. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 284": {
+    "concentrations": [],
+    "title": "Qualifying Examination Preparation",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-284",
+    "desc": "Independent study course designed to help students prepare for qualifying exams. Students meet on regular basis with one or more members of qualifying examination committee to monitor preparation for exam. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 285": {
+    "concentrations": [],
+    "title": "Readings in Research Field",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285",
+    "desc": "Independent study focusing on selected texts or authors in history or historical theory. Students meet on regular basis with instructor to discuss readings and deepen their knowledge of a particular author or historical theory. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 285B": {
+    "concentrations": [],
+    "title": "Readings in Research Field",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-285b",
+    "desc": "Independent study focusing on selected texts or authors in history or historical theory. Students meet on regular basis with instructor to discuss readings. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 286": {
+    "concentrations": [],
+    "title": "Research Colloquium on Colonialism, Nationalism, and Race",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-286",
+    "desc": "Acquaints students with the department's thematic research clusters in their field to coordinate training in historical research. Students meet on a regular basis with a faculty member of a particular cluster to discuss most important readings in the field. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 287": {
+    "concentrations": [],
+    "title": "Research Colloquium on Gender",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-287",
+    "desc": "Acquaints students with the department's thematic research clusters in their field to coordinate training in historical research. Students meet on a regular basis with a faculty member of this cluster to discuss most important readings in their field. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 288": {
+    "concentrations": [],
+    "title": "Teaching Assistant Preparation",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-288",
+    "desc": "Independent study designed to help history graduate students prepare to teach in an area of history outside their specialization. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 289": {
+    "concentrations": [],
+    "title": "History Colloquium",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-289",
+    "desc": "Independent study designed to foster departmental and cross-disciplinary participation in campus talks, colloquia, conferences, and events. Students submit petition to sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 294M": {
+    "concentrations": [],
+    "title": "Literati, Samurai, and Yangban: A Comparative History of State",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-294m",
+    "desc": "Critically examines the formation of political elites in East Asia. Compares literati in Ming and Qing China; samurai in Tokugawa, Japan; and yangban in Joeson, Korea. Each group occupied specific roles and functions in their state and society but differed in scale and character. Students cannot receive credit for this course and HIS 194M .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and HIS 194M .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and HIS 194M .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297a",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297b",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-297c",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 298A": {
+    "concentrations": [],
+    "title": "Constructing a Field",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-298a",
+    "desc": "Required course for all first-year graduate students in the History Department. Course helps students situate themselves within the field of history by developing a research agenda in relation to the historiography on their geographical and thematic areas of interest, prepares students to embark on research during the summer after the first year, and equips them with a tentative reading list to guide their preparation for the Qualifying Exam. Course content varies according to the interests and needs of students. Students complete the course with a primary or secondary adviser.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to history graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to history graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299a",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299b",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "HIS 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/his-history/graduate/his-299c",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "LIT 201A": {
+    "concentrations": [],
+    "title": "Basic Principles of University Pedagogy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-201a",
+    "desc": "Introduction to the skills and knowledge required for success working as a teaching assistant in the Humanities. In each module, students engage with pedagogical strategies and practical teaching techniques that will prepare them to facilitate inclusive and engaging discussion sections and provide equitable feedback on student work in Humanities courses. In addition, students learn basic elements of course design that prepare them for putting together a syllabus based on equity and inclusion while maintaining the level of rigor necessary in a university classroom. This is done through a combination of in-class lectures, presentations, group discussions, role-plays, readings, and graded assignments.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
     "catalogLevel": "graduate",
     "searchOnly": true
   },
