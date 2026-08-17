@@ -1,13 +1,13 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-17T01:36:54.961Z
+Generated: 2026-08-17T02:25:51.392Z
 
 ## Summary
 
-- Candidate count: 370
-- Passed with no warnings: 81
-- Warnings only / human review needed: 285
-- Blocked by hard errors: 4
+- Candidate count: 358
+- Passed with no warnings: 73
+- Warnings only / human review needed: 283
+- Blocked by hard errors: 2
 
 ## Merge readiness
 
@@ -15,1036 +15,1006 @@ Not ready to merge: hard QA errors exist.
 
 ## Rows
 
-- BIOE 119L — Plant Biotechnology Lab for a Changing World: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/100/bioe-119l
-- BIOE 200A — Scientific Skills: warnings-only
+- AM 180 — Reading Research Papers in Applied Mathematics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200a
-- BIOE 200B — Advanced Organismal Biology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/upper-division/am-180
+- AM 200 — Teaching in Applied Mathematics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200b
-- BIOE 200C — Evolutionary Ecology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-200
+- AM 211 — Foundations of Applied Mathematics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200c
-- BIOE 200D — Foundations in Ecology & Evolutionary Biology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-200d
-- BIOE 203 — Introductory Seminar in Ecology and Evolutionary Biology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-211
+- AM 212 — Advanced Methods of Applied Mathematics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-203
-- BIOE 208 — Marine Ecology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212
+- AM 212A — Applied Partial Differential Equations: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-208
-- BIOE 215 — Advanced Seminar in Ecology and Evolutionary Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-215
-- BIOE 238 — Modeling Evolution and Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-238
-- BIOE 239 — Mathematical Modeling and Data Science in Ecology and Evolution: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-239
-- BIOE 245 — Plant Ecology: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245
-- BIOE 245L — Field Methods in Plant Ecology Laboratory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-245l
-- BIOE 247 — Community Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-247
-- BIOE 258L — Experimental Marine Ecology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-258l
-- BIOE 262 — Facilitating Change in Coastal Science Policy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-262
-- BIOE 271 — Disciplinary Communication for Biologists: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-271
-- BIOE 272 — Population Genetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-272
-- BIOE 276 — Data Science for Ecology and Evolutionary Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-276
-- BIOE 281A — Topics in Basic and Applied Marine Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281a
-- BIOE 281B — Topics in Molecular Evolution: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281b
-- BIOE 281C — Topics in Physiological Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281c
-- BIOE 281D — Topics in Global Change Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281d
-- BIOE 281E — Topics in Freshwater Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281e
-- BIOE 281F — Ecological Research Topics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281f
-- BIOE 281G — Topics in Sexual Selection and Social Behavior: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281g
-- BIOE 281H — Topics in Comparative Marine Physiology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281h
-- BIOE 281I — Topics in Disease Ecology, Population Biology, and Conservation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281i
-- BIOE 281J — Topics in Evolutionary Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281j
-- BIOE 281K — Topics in Plant Evolution: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281k
-- BIOE 281L — Topics in Behavioral and Evolutionary Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281l
-- BIOE 281M — Topics in Host-Microbe Population Genomics: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281m
-- BIOE 281N — Topics in Marine Vertebrate Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281n
-- BIOE 281O — Topics in Plant-Water Relations: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281o
-- BIOE 281P — Topics in Plant Population Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281p
-- BIOE 281Q — Topics in Coastal and Marine Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281q
-- BIOE 281R — Topics in Marine Ecology and Evolutionary Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281r
-- BIOE 281S — Topics in Ancient DNA and Paleogenomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281s
-- BIOE 281T — Topics in Evolutionary Developmental Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281t
-- BIOE 281U — Topics in Invertebrate Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281u
-- BIOE 281V — Topics in Behavioral Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281v
-- BIOE 281W — Topics in Exercise and Environmental Physiology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281w
-- BIOE 281X — Topics in Behavioral Ecology of Large Marine Vertebrates: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281x
-- BIOE 281Y — Topics in Climate Change Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281y
-- BIOE 281Z — Conservation Science in a Changing World: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-281z
-- BIOE 286 — Experimental Design and Data Analysis: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286
-- BIOE 286L — Experimental Design and Data Analysis Lab: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-286l
-- BIOE 294 — Ecology, Evolutionary Biology Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-294
-- BIOE 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297a
-- BIOE 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297b
-- BIOE 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297c
-- BIOE 297F — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-297f
-- BIOE 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299a
-- BIOE 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299b
-- BIOE 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bioe-biology-ecology-and-evolutionary/200/bioe-299c
-- BIOL 10 — Fundamentals of Biology: warnings-only
-  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-10
-- BIOL 200A — Critical Analysis of Scientific Literature: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200a
-- BIOL 200B — Advanced Molecular Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200b
-- BIOL 200C — Advanced Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200c
-- BIOL 200D — Developmental Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200d
-- BIOL 200E — Experimental Design: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200e
-- BIOL 200F — Logic and Approaches to Scientific Discovery: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-200f
-- BIOL 201 — RNA Processing: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-201
-- BIOL 203 — Ribosomes and Translation: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-203
-- BIOL 204 — Chromatin: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-204
-- BIOL 205 — Epigenetics: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-205
-- BIOL 206 — Introduction to Stem Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-206
-- BIOL 206L — Current Protocols in Stem Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-206l
-- BIOL 208 — Cellular Signaling Mechanisms: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-208
-- BIOL 214 — Advances in Cancer Biology: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-214
-- BIOL 215 — Applied Statistics for Molecular, Cell, and Developmental Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-215
-- BIOL 217 — Influence of Environment and Experience on Brain Development: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-217
-- BIOL 218 — CRISPR/Cas Technologies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-218
-- BIOL 220 — STEM Outreach: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-220
-- BIOL 221 — Intro to Science Communication: Public Speaking and Science Writing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-221
-- BIOL 226 — Neural Plasticity and Cognitive Neuroscience: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-226
-- BIOL 227 — Studying Brain Development: From Stem Cells to Neural Circuits: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-227
-- BIOL 228 — Developmental Neurobiology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-228
-- BIOL 230 — Grant Writing in the Biomedical Sciences: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-230
-- BIOL 247 — Stem Cell Research: Scientific, Ethical, Social, and Legal Issues: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-247
-- BIOL 26 — Frosh/Soph Seminar in Molecular & Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/1-99/biol-26
-- BIOL 280A — Topics in Research on Molecular Genetics of Yeast: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280a
-- BIOL 280B — Chromatin Structure and Transcriptional Regulation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280b
-- BIOL 280C — Mammalian Brain Development: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280c
-- BIOL 280D — Muscle Biology and Gene Regulation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280d
-- BIOL 280E — Meiotic Chromosome Dynamics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280e
-- BIOL 280F — Development of Vertebrate Neural Connections: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280f
-- BIOL 280G — Molecular Mechanisms of Behavioral Development and Evolution: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280g
-- BIOL 280H — Topics on Research into Chromatin and Transcription: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280h
-- BIOL 280I — Epigenetic Gene Silencing and Insulators: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280i
-- BIOL 280J — Structures of Macromolecular Complexes: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280j
-- BIOL 280K — Topics in Cell Cycle Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280k
-- BIOL 280L — Development: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280l
-- BIOL 280M — Post-Transcriptional Control of Mammalian Gene Expression: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280m
-- BIOL 280N — Long Noncoding RNA and the Immune System: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280n
-- BIOL 280O — Translation Regulation by RNA structure: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280o
-- BIOL 280P — Quality Control in Gene Expression: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280p
-- BIOL 280Q — Telomeres and Telomerase: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280q
-- BIOL 280R — Gene regulation in C. elegans and human parasitic namtodes: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280r
-- BIOL 280S — Stem Cell Genomics and Neurodevelopment: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280s
-- BIOL 280T — Cancer Stem Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280t
-- BIOL 280U — Discussions on the Development of the &lt;I&gt;Drosophila&lt;/I&gt; Embryo: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280u
-- BIOL 280V — Translational pediatric genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280v
-- BIOL 280W — Development, Connectivity, and Genetic Identity of Neural Circuits: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280w
-- BIOL 280X — RNA-mediated epigenetic inheritance: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280x
-- BIOL 280Y — Activity-Dependent Synaptic Plasticity: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280y
-- BIOL 280Z — Prostate Development and Cancer Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-280z
-- BIOL 281A — Host Responses to Respiratory Viral Infections: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281a
-- BIOL 281B — Mucosal Immunology and Microbiology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281b
-- BIOL 281C — Lentiviral Replication: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-281c
-- BIOL 288 — Pedagogy in STEM: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-288
-- BIOL 289 — Practice of Science: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-289
-- BIOL 290 — Career Planning: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-290
-- BIOL 291 — Molecular, Cellular, and Developmental Biology Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-291
-- BIOL 292 — MCD Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-292
-- BIOL 296 — Laboratory Research in Molecular, Cell, and Developmental Biology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-296
-- BIOL 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297a
-- BIOL 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297b
-- BIOL 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297c
-- BIOL 297F — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-297f
-- BIOL 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299a
-- BIOL 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299b
-- BIOL 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299c
-- BIOL 299F — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/biol-biology-molecular-cell-and-developmental/200/biol-299f
-- BME 201 — Scientific Writing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-201
-- BME 215 — Applied Gene Technology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-215
-- BME 218 — Mathematics of the Mind: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-218
-- BME 228 — Protein Design and Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-228
-- BME 229 — Protein and Cell Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-229
-- BME 230B — Advanced Computational Genomics and Systems Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-230b
-- BME 232 — Evolutionary Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-232
-- BME 237 — Applied RNA Bioinformatics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-237
-- BME 263 — Applied Visualization and Analysis of Scientific Data: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-263
-- BME 272 — Precision&#160;Medicine: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-272
-- BME 273 — Stem Cell Epi/Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-273
-- BME 275 — Entrepreneurship in Biotechnology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-275
-- BME 278 — Stem Cell Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-278
-- BME 280B — Seminar on Bioinformatics and Bioengineering: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-280b
-- BME 281A — Seminar on Processive Enzymes and Nanopores: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281a
-- BME 281C — Seminar in Cancer Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281c
-- BME 281D — Seminar on Protein Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281d
-- BME 281E — Seminar in Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281e
-- BME 281F — Blood Cell Development: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281f
-- BME 281G — Seminar on Cell Fate Decisions: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281g
-- BME 281H — Live Cell Biotechnology Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281h
-- BME 281J — Seminar in Computational Genomics and Biomedicine: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281j
-- BME 281L — Seminar in Computational Genetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281l
-- BME 281M — Seminar on Chromosome Biology and Function: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281m
-- BME 281N — Seminar in Transcriptomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281n
-- BME 281P — Seminar on Nanotechnology and Biosensors: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281p
-- BME 281R — Seminar in Stem Cell Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281r
-- BME 281S — Seminar in Computational Functional Genomics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281s
-- BME 281T — Seminar in Neuroengineering and Systems Neuroscience: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281t
-- BME 281V — Immunogenomics Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281v
-- BME 281X — Microbial Symbiosis: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281x
-- BME 281Y — Seminar on Protein Design: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281y
-- BME 281Z — Seminar in Population and Evolutionary Genomics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-281z
-- BME 288 — Bioethics in the 21st Century: Science, Business, and Society: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-288
-- BME 293 — Seminar in Biomolecular Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-293
-- BME 296 — Research in Bioinformatics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-296
-- BME 297A — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297a
-- BME 297B — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297b
-- BME 297C — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297c
-- BME 297F — Independent Study or Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-297f
-- BME 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299a
-- BME 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299b
-- BME 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/bme-biomolecular-engineering/200/bme-299c
-- CHEM 200A — Advanced Biochemistry: Biophysical Methods: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200a
-- CHEM 200B — Advanced Biochemistry: Macromolecular Structure and Function: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200b
-- CHEM 200C — Advanced Biochemistry: Enzyme Mechanisms and Kinetics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-200c
-- CHEM 222 — Career Success in Industrial Science/ Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-222
-- CHEM 230 — Grant Writing in Biomedical Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-230
-- CHEM 234 — Bioinorganic Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-234
-- CHEM 238 — Topics in Biophysical Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-238
-- CHEM 242A — Modern Physical Organic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242a
-- CHEM 242B — Modern Synthetic Methods in Organic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242b
-- CHEM 242C — Spectroscopy and Applied Analytical Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-242c
-- CHEM 244 — Organic Free Radical Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-244
-- CHEM 247 — Using DFT Computational Methods to Study Molecular Structure and Reactivity: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-247
-- CHEM 256A — Advanced Topics in Inorganic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256a
-- CHEM 256B — Advanced Topics in Inorganic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256b
-- CHEM 256C — Advanced Topics in Inorganic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256c
-- CHEM 256D — X-ray Crystallography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-256d
-- CHEM 261 — Foundations of Spectroscopy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-261
-- CHEM 262 — Statistical Mechanics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-262
-- CHEM 263 — Quantum Mechanics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-263
-- CHEM 264 — Computational Materials: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-264
-- CHEM 265 — Computer Simulation in Statistical Mechanics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-265
-- CHEM 268 — Solid State and Materials Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-268
-- CHEM 269 — Electrochemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-269
-- CHEM 271 — Chemical Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-271
-- CHEM 272 — Mass Spectrometry: Fundamentals and Applications: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-272
-- CHEM 274 — Proseminar in Synthetic and Polymer Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-274
-- CHEM 275 — Proseminar in Biological Inorganic Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-275
-- CHEM 280 — Proseminar in Materials Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-280
-- CHEM 282 — Proseminar: Synthetic Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-282
-- CHEM 284 — Proseminar in Synthetic Organic Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-284
-- CHEM 285 — Proseminar: Photobiochemistry and Photobiology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-285
-- CHEM 286 — Proseminar in Natural Products Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-286
-- CHEM 288 — Proseminar in Bioinorganic Chemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-288
-- CHEM 291 — Chemistry and Biochemistry Research Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-291
-- CHEM 292 — Preparing Scientific Presentations: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-292
-- CHEM 296 — Teaching Chemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-296
-- CHEM 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297a
-- CHEM 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-297b
-- CHEM 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299a
-- CHEM 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299b
-- CHEM 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/chem-chemistry-and-biochemistry/200/chem-299c
-- CMPM 118S — Research Pathway: Summer Vertically Integrated Project: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-118s
-- CMPM 119 — Accessible Game Design and Evaluation: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-119
-- CMPM 173 — Computational Media Prototyping: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-173
-- CMPM 174 — Computational Media Project: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/upper-division/cmpm-174
-- CMPM 201 — Introduction to Computational Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-201
-- CMPM 202 — Computation Media Research: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-202
-- CMPM 203 — Computational Media Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-203
-- CMPM 204 — Computational Media Project Definition: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-204
-- CMPM 205 — Bridging the Disciplines: Writing and Synthesis for Computational Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-205
-- CMPM 206 — Computational Media Research Preparation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-206
-- CMPM 230 — Data Science in Computational Experiences: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-230
-- CMPM 232 — Psychology of Play: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-232
-- CMPM 233 — Evaluating Computational Media Interfaces: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-233
-- CMPM 235 — User Evaluation of Technology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-235
-- CMPM 237 — Advanced&#160;Topics&#160;in&#160;Human-Robot&#160;Interaction: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-237
-- CMPM 243 — Social Computing Research: Design, Algorithms, and Incentives: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-243
-- CMPM 244 — Artificial Intelligence in Games: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-244
-- CMPM 248 — Interactive Storytelling: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-248
-- CMPM 255 — Games for Impact Studio I: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-255
-- CMPM 256 — Games for Impact Studio II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-256
-- CMPM 265 — Generative Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-265
-- CMPM 268 — Immersive Analytics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-268
-- CMPM 269 — Machine Learning for Creativity and Design: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-269
-- CMPM 280C — Computational Media Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280c
-- CMPM 280F — Seminar&#160;in&#160;Creative&#160;Coding&#160;and&#160;Computational&#160;Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280f
-- CMPM 280G — Seminar in Generative Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280g
-- CMPM 280H — Seminar in Human-Computer Interaction and Computational Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280h
-- CMPM 280I — Human&#160;Computer&#160;Interaction&#160;Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280i
-- CMPM 280K — Seminar in Interactive Systems for Individuals with Special Needs: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280k
-- CMPM 280P — Seminar in Player Experience and Modeling: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280p
-- CMPM 280R — Topics&#160;in&#160;Human-Robot&#160;Interaction: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280r
-- CMPM 280S — Seminar Topics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280s
-- CMPM 280W — Seminar in Digital Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280w
-- CMPM 280X — Expressive AI: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-280x
-- CMPM 290A — Topics in Computational Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290a
-- CMPM 290J — Playable Media: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290j
-- CMPM 290K — Social and Emotional Approaches to Human Computer Interaction: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290k
-- CMPM 290P — Topics in Computational Cinematography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-290p
-- CMPM 296 — Masters Project: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-296
-- CMPM 297A — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297a
-- CMPM 297B — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297b
-- CMPM 297C — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297c
-- CMPM 297F — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297f
-- CMPM 297G — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-297g
-- CMPM 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299a
-- CMPM 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299b
-- CMPM 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cmpm-computational-media/graduate/cmpm-299c
-- CSE 245 — Computational Models of Discourse and Dialogue: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/cse-computer-science-and-engineering/graduate/cse-245
-- ECE 168 — Electric Motor Drives: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-168
-- ECE 186 — Entrepreneurship I: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-186
-- ECE 187 — Entrepreneurship II: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/upper-division/ece-187
-- ECE 200 — Research and Teaching in Electrical Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-200
-- ECE 201 — Introduction to Nanotechnology: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-201
-- ECE 203 — Nanocharacterization of Materials: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-203
-- ECE 204 — Bioelectronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-204
-- ECE 205 — Fundamentals of Nanoelectronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-205
-- ECE 207 — Nanomaterials and Nanometer-Scale Devices: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-207
-- ECE 210 — Brain-Inspired Machine Learning: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-210
-- ECE 218 — Mechatronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-218
-- ECE 220 — Introduction to Imaging Instrumentation: Physics, Engineering, and Application: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-220
-- ECE 221 — Advanced Analog Integrated Circuits: warnings-only
-  - Warnings: review:contains-recommended-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-221
-- ECE 222 — High-Speed Low-Power Integrated Circuit Design: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-222
-- ECE 223 — Advanced Solid-State Devices: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-223
-- ECE 224 — Device Electronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-224
-- ECE 225 — Semiconductor Processing and Bandgap Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-225
-- ECE 226 — CMOS Radio Frequency Integrated Circuit Design: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-226
-- ECE 227 — Fundamentals of Semiconductor Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-227
-- ECE 228 — Engineering of Thin Film Deposition: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-228
-- ECE 229 — Quantum Electronics: warnings-only
-  - Warnings: review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-229
-- ECE 230 — Optical Fiber Communication: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-230
-- ECE 231 — Optical Electronics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-231
-- ECE 232 — Integrated Biophotonics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-232
-- ECE 236 — Optics and Microscopy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-236
-- ECE 237 — Image Processing and Reconstruction: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-237
-- ECE 238 — Medical Image Formation, Presentation, and Assessment: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-238
-- ECE 250 — Digital Signal Processing: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-250
-- ECE 251 — Principles of Digital Communications: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-251
-- ECE 252 — Wireless Communications: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-252
-- ECE 253 — Introduction to Information Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-253
-- ECE 254 — Radar, Synthetic Aperture Radar, and ISAR: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-254
-- ECE 255 — Error Control Coding: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-255
-- ECE 256 — Statistical Signal Processing: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-256
-- ECE 257 — Signal Processing with Machine Learning: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-257
-- ECE 258 — Introduction to Inverse Problems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-258
-- ECE 263 — Small-Scale UAV Theory and Practice: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-263
-- ECE 264 — Visual Navigation for Autonomous Vehicles: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-264
-- ECE 268 — Electric Motor Drives: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-268
-- ECE 269 — Electric Machinery and Control: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-269
-- ECE 270 — Advanced Power Electronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-270
-- ECE 271 — Integrated Analog Electronics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-271
-- ECE 273 — Signal Integrity in PCB Design: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-273
-- ECE 275 — Energy Market, Policy, and Modeling: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-275
-- ECE 279 — Optimization and Control for Electric Power Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-279
-- ECE 280A — Current Topics in Applied Microscopy and Neuronal Imaging: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280a
-- ECE 280B — Seminar on Integrated Bioelectronics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280b
-- ECE 280C — Seminar on Control: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280c
-- ECE 280D — Graduate Research Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280d
-- ECE 280N — Seminar on Nanophotonics and Lab-on-Chip Systems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280n
-- ECE 280O — Seminar on Applied Optics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280o
-- ECE 280Z — Seminar on Smart Grids and Data Analytics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-280z
-- ECE 283 — Special Topics in Electrical and Computer Engineering: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-283
-- ECE 290 — ECE Graduate Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-290
-- ECE 291 — Tomorrow's Professors, Engineers, and Entrepreneurs: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-291
-- ECE 293 — Advanced Topics in Electrical and Computer Engineering: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212a
+- AM 212B — Applied Mathematical Methods II: warnings-only
   - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-293
-- ECE 296 — Master Project: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-296
-- ECE 297A — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297a
-- ECE 297B — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297b
-- ECE 297C — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297c
-- ECE 297F — Independent Study or Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-297f
-- ECE 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299a
-- ECE 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299b
-- ECE 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ece-electrical-and-computer-engineering/graduate/ece-299c
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-212b
+- AM 213A — Numerical Linear Algebra: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-213a
+- AM 213B — Numerical Methods for the Solution of Differential Equations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-213b
+- AM 215 — Stochastic Modeling in Biology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-215
+- AM 216 — Stochastic Differential Equations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-216
+- AM 217 — Introduction to Fluid Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-217
+- AM 224 — Applied Dynamical Systems: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-224
+- AM 227 — Waves, Instabilities, and Turbulence in Fluids: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-227
+- AM 229 — Convex Optimization: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-229
+- AM 230 — Numerical Optimization: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-230
+- AM 232 — Applied Optimal Control: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-232
+- AM 234 — Machine Learning and Artificial Intelligence in Genomics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-234
+- AM 238 — Fundamentals of Uncertainty Quantification in Computational Science and Engineering: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-238
+- AM 250 — An Introduction to High Performance Computing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-250
+- AM 260 — Computational Fluid Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-260
+- AM 261 — Advanced Scientific Machine Learning: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-261
+- AM 273 — System Identification for Aerial Robotic Systems: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-273
+- AM 275 — Magnetohydrodynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-275
+- AM 280A — Seminar in Mathematical and Computational Biology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280a
+- AM 280B — Seminar in Applied Mathematical Modeling: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280b
+- AM 280C — Seminar in Geophysical and Astrophysical Fluid Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-280c
+- AM 296 — Masters Project: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-296
+- AM 297A — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297a
+- AM 297B — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297b
+- AM 297C — Independent Study or Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297c
+- AM 297F — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-297f
+- AM 299A — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299a
+- AM 299B — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299b
+- AM 299C — Thesis Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/graduate/am-299c
+- ARTG 110 — Game Engines for Artists: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-110
+- ARTG 111 — MateREALITIES: Sculptural Components of Games and Interactive Artworks: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-111
+- ARTG 129C — Special Topics in Game Design: Craft Refinement: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129c
+- ARTG 129P — Special Topics in Game Design: Performance & Exhibition: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129p
+- ARTG 129S — Special Topics in Game Design: Social Interventions: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129s
+- ARTG 190 — Open Source Afro Hair Library Contributor Studio: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-190
+- ARTG 93 — Participation in a Changing World: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/lower-division/artg-93
+- ASTR 116 — Fundamentals of Astrobiology: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-116
+- ASTR 125 — Machining for Physics and Astronomy Instrumentation: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-125
+- ASTR 202 — Astrophysics I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-202
+- ASTR 204 — Astrophysics II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-204
+- ASTR 205 — Introduction to Astronomical Research and Teaching: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-205
+- ASTR 206 — Introduction to Research Mentoring: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-206
+- ASTR 214 — Special Topics in Galactic and Extragalactic Astronomy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-214
+- ASTR 215 — Research Practicum for Astrophysics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-215
+- ASTR 220A — Stars and Planets I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-220a
+- ASTR 222 — Stars and Planets II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-222
+- ASTR 225 — High-Energy Astrophysics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-225
+- ASTR 230 — Diffuse Matter in Space: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-230
+- ASTR 233 — Galaxies and Cosmology I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-233
+- ASTR 234 — Statistical Techniques in Astronomy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-234
+- ASTR 240A — Galaxies and Cosmology II: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-240a
+- ASTR 257 — Observational Astronomy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-257
+- ASTR 260 — Instrumentation for Astronomy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-260
+- ASTR 289 — Adaptive Optics and Its Application: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-289
+- ASTR 292 — Seminar: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-292
+- ASTR 293 — Current Literature in Astrophysics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-293
+- ASTR 294 — Pedagogy of Astrophysical Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-294
+- ASTR 297A — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297a
+- ASTR 297B — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297b
+- ASTR 297C — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297c
+- ASTR 297D — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-297d
+- ASTR 299A — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299a
+- ASTR 299B — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299b
+- ASTR 299C — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/200/astr-299c
+- ASTR 49 — Cultural Astronomy: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/1-99/astr-49
+- EART 114 — Environmental Geophysics: warnings-only
+  - Warnings: review:contains-recommended-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-114
+- EART 122 — Air Pollution: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-122
+- EART 170 — Global Seismology: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170
+- EART 203 — Introductory Teaching Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-203
+- EART 204 — Earth and Planetary Sciences Foundations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-204
+- EART 206 — Great Papers in the Earth Sciences: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-206
+- EART 207 — Tectonics: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-207
+- EART 208 — Methods in Paleoclimatology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-208
+- EART 216 — Astrobiology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-216
+- EART 219 — Advanced Scientific Programing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-219
+- EART 220 — Ground Water Modeling: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-220
+- EART 225 — Statistics and Data Analysis in the Geosciences: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-225
+- EART 227 — Measuring Earth's 4.5 Billion Year History: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-227
+- EART 229 — Isotopic Methods in Environmental Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-229
+- EART 230 — Applications of Isotopes in Earth and Environmental Sciences: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-230
+- EART 240 — Communicating Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-240
+- EART 252 — Hydroclimatology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-252
+- EART 254 — The Climate System: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-254
+- EART 258 — Deep Time Paleoclimates: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-258
+- EART 262 — Planetary Interiors: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-262
+- EART 263 — Planetary Surfaces: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-263
+- EART 264 — Planetary Atmospheres: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-264
+- EART 265 — Order of Magnitude Estimation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-265
+- EART 266 — Geologic Signal Processing and Inverse Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-266
+- EART 268 — History and Geochemistry of the Solar System: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-268
+- EART 270 — Global Seismology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-270
+- EART 271 — Current Research Topics in Deep Earth Processes: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-271
+- EART 272 — Geophysical Fluid Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-272
+- EART 273 — Earthquake Physics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-273
+- EART 274 — Crustal Deformation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-274
+- EART 278A — Theoretical Seismology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-278a
+- EART 280D — Short Course in Atmospheric/Climate Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-280d
+- EART 290A — Hidden Curriculum: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290a
+- EART 290B — Topics in Glaciology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290b
+- EART 290C — Topics in Geophysics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290c
+- EART 290D — Petrology and Plate Tectonics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290d
+- EART 290E — Topics in Planetary Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290e
+- EART 290F — Topics in Coastal Processes: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290f
+- EART 290G — Topics in Global Tectonics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290g
+- EART 290H — Topics in Hydrogeology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290h
+- EART 290I — Topics in Geomorphology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290i
+- EART 290J — Intersections of Geodynamics and Climate: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290j
+- EART 290K — Paleontology Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290k
+- EART 290L — Topics in Climate Change: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290l
+- EART 290M — Topics in Atmospheric Science: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290m
+- EART 290N — Topics in Mineral Physics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290n
+- EART 290O — Topics in Hydrology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290o
+- EART 290P — Interdisciplinary Topics in the Earth Sciences: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290p
+- EART 290Q — Topics in Outer Solar System: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290q
+- EART 290R — Topics in the Chemistry and Physics of the Earth: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290r
+- EART 290T — Current Research Topics in Paleoceanography and Paleoclimatology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290t
+- EART 290U — Topics in Thermochronology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290u
+- EART 290X — Topics in Modeling Planetary Interiors: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-290x
+- EART 292 — Seminar: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-292
+- EART 293 — Graduate Research Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-293
+- EART 296 — Special Student Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-296
+- EART 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297a
+- EART 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297b
+- EART 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-297c
+- EART 298 — Earth Sciences Internship: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-298
+- EART 299A — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299a
+- EART 299B — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299b
+- EART 299C — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/graduate/eart-299c
+- ECON 126 — Health Care Markets: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-126
+- ECON 193S — Summer Transforming Futures Experiential Learning: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-193s
+- ECON 200 — Microeconomic Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-200
+- ECON 201 — Applications in Microeconomics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-201
+- ECON 202 — Macroeconomic Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-202
+- ECON 204A — Advanced Microeconomic Theory I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204a
+- ECON 204B — Advanced Microeconomic Theory II: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204b
+- ECON 204C — Advanced Microeconomic Theory III: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-204c
+- ECON 205A — Advanced Macroeconomic Theory I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205a
+- ECON 205B — Advanced Macroeconomic Theory II: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205b
+- ECON 205C — Advanced Macroeconomic Theory III: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-205c
+- ECON 210A — Mathematical Methods for Economic Analysis: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-210a
+- ECON 210B — Mathematical Methods for Economic Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-210b
+- ECON 211A — Advanced Econometrics I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211a
+- ECON 211B — Advanced Econometrics II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211b
+- ECON 211C — Advanced Econometrics III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-211c
+- ECON 212 — Empirical Project in Econometrics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-212
+- ECON 217 — Applied Econometric Analysis II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-217
+- ECON 220A — Development Economics I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-220a
+- ECON 220B — Development Economics II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-220b
+- ECON 221A — Advanced Methods in Macroeconomics I: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221a
+- ECON 221B — Advanced Methods in Macroeconomics II: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221b
+- ECON 221C — Advanced Methods in Macroeconomics III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-221c
+- ECON 222 — Data Science and Applied Microeconomics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-222
+- ECON 224 — Economic Applications of Machine Learning: warnings-only
+  - Warnings: review:contains-recommended-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-224
+- ECON 231 — International Financial Management: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-231
+- ECON 233 — Finance I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-233
+- ECON 234 — Financial Institutions and Markets: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-234
+- ECON 235 — Corporate Finance: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-235
+- ECON 236 — Financial Engineering: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-236
+- ECON 238 — Market Design: Theory and Pragmatics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-238
+- ECON 239 — Current Topics in Finance: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-239
+- ECON 240A — International Trade I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-240a
+- ECON 240B — International Trade II: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-240b
+- ECON 241A — Advanced International Finance I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241a
+- ECON 241B — Advanced International Finance II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241b
+- ECON 241C — Advanced International Finance III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-241c
+- ECON 249A — International Trade and Development Policy I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-249a
+- ECON 249B — International Trade and Development Policy II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-249b
+- ECON 250A — Applied Microeconomics I: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250a
+- ECON 250B — Applied Microeconomics II: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250b
+- ECON 250C — Applied Microeconomics III: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-250c
+- ECON 259A — Cost-Benefit Analysis: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-259a
+- ECON 259B — Public Policy Analysis: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-259b
+- ECON 270A — Advanced Topics in Microeconomics I: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-270a
+- ECON 270B — Advanced Topics in Microeconomics II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-270b
 - ECON 272 — Evolutionary Game Theory: warnings-only
   - Warnings: review:contains-recommended-language; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
   - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-272
-- METX 200 — Interdisciplinary Approaches in Environmental Toxicology: warnings-only
+- ECON 273 — Research Skills for Economists: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-200
-- PHIL 246 — Ethics, Nature, and Natural Selection: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-246
-- PHYS 161 — Quantum Materials Research Laboratory: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-161
-- PHYS 197 — Summer Intensive Research in Physics: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/upper-division/phys-197
-- PHYS 202 — Introduction to Teaching in Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-202
-- PHYS 205 — Introduction to Research in Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-205
-- PHYS 210 — Classical Mechanics and Thermal Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-210
-- PHYS 212 — Electromagnetism I: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-212
-- PHYS 214 — Electromagnetism II: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-214
-- PHYS 215 — Introduction to Non-Relativistic Quantum Mechanics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-215
-- PHYS 216 — Advanced Topics in Non-Relativistic Quantum Mechanics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-216
-- PHYS 217 — Quantum Field Theory I: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-273
+- ECON 274 — Macroeconomics Workshop: warnings-only
   - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-217
-- PHYS 218 — Quantum Field Theory II: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-274
+- ECON 275 — Applied Microeconomics Workshop: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-275
+- ECON 276 — Behavioral, Experimental, and Theoretical Economics Workshop: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-276
+- ECON 280A — Applied Economics Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-218
-- PHYS 219 — Statistical Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-280a
+- ECON 280G — Economics Guest Seminar Series: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-219
-- PHYS 220 — Theory of Many-Body Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-280g
+- ECON 290 — Topics in International Economics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-290
+- ECON 291 — Workshop in Applied Economics: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-291
+- ECON 293 — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-293
+- ECON 294A — Applied Economics and Finance Laboratory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-220
-- PHYS 221A — Introduction to Particle Physics I: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-294a
+- ECON 294B — Applied Economics and Finance Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-294b
+- ECON 295 — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-295
+- ECON 296A — Third Year Ph.D. Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-296a
+- ECON 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297a
+- ECON 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297b
+- ECON 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297c
+- ECON 297H — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-297h
+- ECON 298A — Master's Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298a
+- ECON 298B — Master's Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298b
+- ECON 298C — Master's Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-298c
+- ECON 299A — Doctoral Thesis Research: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299a
+- ECON 299B — Doctoral Thesis Research: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299b
+- ECON 299C — Doctoral Thesis Research: warnings-only
+  - Warnings: review:contains-exception-waiver-or-petition-language; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/graduate/econ-299c
+- ENVS 107D — Natural History Field Quarter: Communicating the Natural World: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d
+- ENVS 124 — Intro to Urban Ecology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-124
+- ENVS 201A — Research Approaches in Environmental Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-201a
+- ENVS 210 — Political Ecological Thought and Environment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-210
+- ENVS 215A — Geographic Information Systems and Environmental Applications: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215a
+- ENVS 215B — Intermediate Geographic Information Systems: warnings-only
   - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-221a
-- PHYS 221B — Introduction to Particle Physics II: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215b
+- ENVS 215C — Advanced Geographic Information Systems: warnings-only
   - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-221b
-- PHYS 222 — Quantum Field Theory III: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215c
+- ENVS 215L — Exercises in Geographic Information Systems: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-215l
+- ENVS 220 — Conservation Biology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-222
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-220
+- ENVS 230 — Agroecology and Sustainable Agriculture: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-230
+- ENVS 235 — Social Theories of Nature: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-235
+- ENVS 240 — Public Policy and Conservation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-240
+- ENVS 247 — Regional Approaches to Environmental Policy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-247
+- ENVS 250 — Coastal Governance: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-250
+- ENVS 263 — Plant Disease Ecology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-263
+- ENVS 265 — Data Science for the Environment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-265
+- ENVS 268 — Biogeochemistry and the Global Environment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-268
+- ENVS 271 — Valuing the Environment: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-271
+- ENVS 272 — Qualitative Field Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-272
+- ENVS 280 — Advanced Topics in Environmental Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-280
+- ENVS 283 — Environmental Studies Internship: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-283
+- ENVS 290 — Interdisciplinary Research Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290
+- ENVS 290L — Graduate Research Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-290l
+- ENVS 291 — Advanced Readings in Environmental Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291
+- ENVS 291C — Advanced Readings in Risk and Public Policy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291c
+- ENVS 291D — Advanced Readings in Tropical Ecology, Agriculture, and Development: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291d
+- ENVS 291M — Advanced Readings in Biogeochemistry: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291m
+- ENVS 291P — Advanced Readings in Environmental History and Anthropology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-291p
+- ENVS 292 — Topics in Research in Environmental Studies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-292
+- ENVS 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297a
+- ENVS 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297b
+- ENVS 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297c
+- ENVS 297F — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-297f
+- ENVS 299A — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299a
+- ENVS 299B — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299b
+- ENVS 299C — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/graduate/envs-299c
+- GAME 200 — Game Design Systems: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-200
+- GAME 201 — Level&#160;Design: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-201
+- GAME 202 — Introduction to Build (Advanced): Physical Computing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-202
+- GAME 210 — Game Art Intensive: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-210
+- GAME 215 — Audio Direction: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-215
+- GAME 221 — Professional Development for Game Makers: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-221
+- GAME 222 — Professional Development for Game Makers II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-222
+- GAME 223 — Professional Development for Games Makers III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-223
+- GAME 230 — Fundamentals of Game Engineering: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-230
+- GAME 231 — Game Technologies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-231
+- GAME 232 — Advanced Game Technologies: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-232
+- GAME 235 — Game Development I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-235
+- GAME 236 — Game Development II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-236
+- GAME 238 — Computer Graphics for Games: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-238
+- GAME 240 — Game Usability: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-240
+- GAME 250 — Foundations of Serious Games and Gamification: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-250
+- GAME 251 — Games User Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-251
+- GAME 252 — Modeling and Simulation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-252
+- GAME 255 — Serious Games Studio I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-255
+- GAME 256 — Serious Games Studio II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-256
+- GAME 257 — Serious Games Studio III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-257
+- GAME 270 — Games and Playable Media Studio I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-270
+- GAME 271 — Games and Playable Media Studio II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-271
+- GAME 272 — Games and Playable Media Studio III: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-272
+- GAME 273 — Game Production Intensive: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-273
+- GAME 280A — Games Proseminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280a
+- GAME 280Y — Games You Should Know: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-280y
+- GAME 290A — Advanced Topics in Games: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/game-games-and-playable-media/graduate/game-290a
+- HCI 200 — Introduction to HCI: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-200
+- HCI 201 — Introduction to HCI Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-201
+- HCI 202A — Introduction to Build: Bootcamp: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202a
+- HCI 202B — Introduction to Build (Advanced): Physical Computing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-202b
+- HCI 203 — Introduction to Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-203
+- HCI 220 — Ethics and Activism in Tech and Design: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-220
+- HCI 250 — Participatory Design: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-250
+- HCI 271 — HCI Capstone 1: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-271
+- HCI 272 — HCI Capstone 2: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-272
+- HCI 290 — HCI Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-290
+- HCI 291 — Strategy Innovation for UX Professionals: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/hci-human-computer-interaction/graduate/hci-291
+- LIT 167O — Aliens: Science and Fiction: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o
+- NLP 201 — Natural Language Processing I: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-201
+- NLP 202 — Natural Language Processing II: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-202
+- NLP 203 — Natural Language Processing III: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-203
+- NLP 220 — Data Science and Machine Learning Fundamentals: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-220
+- NLP 243 — Deep Learning for Natural Language Processing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-243
+- NLP 244 — Advanced Machine Learning for Natural Language Processing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-244
+- NLP 245 — Conversational Agents: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-245
+- NLP 255 — Topics in Applied Natural Language Processing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-255
+- NLP 267 — Machine Translation: warnings-only
+  - Warnings: review:contains-prior-or-concurrent-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-267
+- NLP 270 — Linguistic Models of Syntax and Semantics for Computer Scientists: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-270
+- NLP 271A — Capstone I: Recent Research in NLP: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-271a
+- NLP 271B — Capstone II: Natural Language Processing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-271b
+- NLP 280 — Seminar in Natural Language Processing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/nlp-natural-language-processing/graduate/nlp-280
+- OCEA 213 — Biogeochemical Cycles: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-213
+- OCEA 280 — Marine Geology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-280
 - PHYS 224 — Particle Astrophysics and Cosmology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
   - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-224
-- PHYS 226 — General Relativity: warnings-only
+- PSYC 139M — Music Cognition: warnings-only
+  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139m
+- PSYC 139Z — Multisensory Cognition: warnings-only
+  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139z
+- PSYC 140C — Indigenous Land, Identity and Well-being: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140c
+- PSYC 159L — The Social Psychology of Collective Action: warnings-only
+  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159l
+- PSYC 193S — Field Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-226
-- PHYS 231 — Introduction to Condensed Matter Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193s
+- PSYC 201 — Teaching in Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201
+- PSYC 201A — Teaching in Psychology I: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-201a
+- PSYC 202M — Introduction to Matlab: warnings-only
   - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-231
-- PHYS 232 — Condensed Matter Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202m
+- PSYC 202R — Introduction to R: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-232
-- PHYS 233 — Advanced Condensed Matter Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-202r
+- PSYC 204 — Quantitative Data Analysis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-233
-- PHYS 234 — Soft Condensed Matter Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-234
-- PHYS 240 — Polymer Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-240
-- PHYS 242 — Computational Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-242
-- PHYS 251 — Group Theory and Modern Physics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-251
-- PHYS 261 — Fundamentals of Mesoscopic Systems: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-204
+- PSYC 205 — Categorical Data Analysis: warnings-only
   - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-261
-- PHYS 262 — Phase Transformations in Materials: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-205
+- PSYC 210 — The Experimental Method in Social Psychology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-262
-- PHYS 290 — Special Topics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-210
+- PSYC 211A — Proseminar: Social Justice and the Individual: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-290
-- PHYS 291A — Cosmology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211a
+- PSYC 211B — Social Justice, Society, and Policy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291a
-- PHYS 291B — X-rays and Magnetism: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211b
+- PSYC 211C — Communicating in Social Psychology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291b
-- PHYS 291C — Developments in Theoretical Particle Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-211c
+- PSYC 213 — Special Topics in Social Psychology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291c
-- PHYS 291D — Experimental High-Energy Collider Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-213
+- PSYC 214A — Multivariate Techniques for Psychology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291d
-- PHYS 291E — Applied Physics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214a
+- PSYC 214B — Advanced Multivariate Techniques for Psychology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-214b
+- PSYC 215 — Production and Comprehension of Spontaneous Communication: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291e
-- PHYS 291F — Experimental High-Energy and Particle Astrophysics Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-215
+- PSYC 220 — Special Topics in Human Memory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291f
-- PHYS 291G — Condensed Matter Physics Research Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-220
+- PSYC 221 — Visual Perception: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291g
-- PHYS 291H — Physics Education and Communication Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-291h
-- PHYS 292 — Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292
-- PHYS 292F — Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292f
-- PHYS 297A — Independent Study: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-221
+- PSYC 222 — Topics in Lexical Organization: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297a
-- PHYS 297B — Independent Study: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-222
+- PSYC 224A — Proseminar: Cognitive I: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297b
-- PHYS 297C — Independent Study: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224a
+- PSYC 224B — Proseminar: Cognitive II: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-297c
-- PHYS 298 — Theoretical and Experimental Research Project: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224b
+- PSYC 224C — Proseminar: Cognitive III: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-298
-- PHYS 299A — Thesis Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-224c
+- PSYC 225A — Introduction to Developmental Research I: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299a
-- PHYS 299B — Thesis Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225a
+- PSYC 225B — Introduction to Developmental Research II: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299b
-- PHYS 299C — Thesis Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225b
+- PSYC 225C — Introduction to Developmental Research III: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-299c
-- PHYS 6P — Preparation for Physics 6: warnings-only
-  - Warnings: review:prerequisite-references-missing-locally; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-6p
-- PHYS 80C — The Cosmos: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80c
-- PHYS 80S — Physics in Sports and Recreation: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/lower-division/phys-80s
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-225c
+- PSYC 227 — Contemporary Issues in Psychology of Language: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-227
+- PSYC 230 — Research in Cognitive Psychology Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-230
+- PSYC 231 — Research in Social Psychology Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-231
+- PSYC 232 — Evolution of Cognition: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-232
+- PSYC 235 — Infant Development in Contexts: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-235
+- PSYC 242 — Research in Developmental Psychology Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-242
+- PSYC 244A — Proseminar I: Cognitive and Language Development: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244a
+- PSYC 244B — Proseminar II: Social and Personality Development: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-244b
+- PSYC 246 — Cultural Diversity in Human Development: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-246
+- PSYC 247 — Special Topics in Developmental Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-247
+- PSYC 248 — Survey Methods: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-248
+- PSYC 249 — Field Methodologies and Social Ethnography: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-249
+- PSYC 250 — Prejudice and Social Relations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-250
+- PSYC 251 — Feminist Theory and Social Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-251
+- PSYC 252 — Special Topics in Cognitive Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-252
+- PSYC 253 — Theory and Research in Intergroup Relations: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-253
+- PSYC 254 — Psychology of Gender: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-254
+- PSYC 255 — Qualitative Inquiry in Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-255
+- PSYC 256 — Psychology of Social Class and Economic Justice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-256
+- PSYC 261 — Participatory Action Research: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-261
+- PSYC 264 — Transnational Feminism, Development, and Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-264
+- PSYC 290B — Advanced Developmental Research and Writing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290b
+- PSYC 290C — Professional Development: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290c
+- PSYC 290E — Grant Writing for Psychologists: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-290e
+- PSYC 293 — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-293
+- PSYC 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297a
+- PSYC 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297b
+- PSYC 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297c
+- PSYC 297F — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-297f
+- PSYC 299A — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299a
+- PSYC 299B — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299b
+- PSYC 299C — Thesis Research: warnings-only
+  - Warnings: missing-description; review:missing-description
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/graduate/psyc-299c
+- PSYC 50 — Human Sexuality: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-50
+- PSYC 51 — The Future is Not Set: AI, Data, and Society: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-51
+- STAT 203 — Introduction to Probability Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/stat-statistics/graduate/stat-203

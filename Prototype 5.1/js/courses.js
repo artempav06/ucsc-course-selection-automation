@@ -623,6 +623,35 @@ const COURSES = {
       "Official prerequisite/eligibility text: AM 20; and AM 30; and previous or concurrent"
     ]
   },
+  "AM 180": {
+    "concentrations": [],
+    "title": "Reading Research Papers in Applied Mathematics",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [
+      [
+        "AM 100",
+        "AM 114",
+        "AM 129"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/am-applied-mathematics/upper-division/am-180",
+    "desc": "Introduces students to current research literature in various fields of applied mathematics. Students are assigned to read each week one recent research paper by an AM faculty or adjunct faculty, and must prepare questions on the topic to discuss with the faculty.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "AM 100 or AM 114 or AM 129 .",
+    "prereqNotes": [
+      "Official prerequisite text: AM 100 or AM 114 or AM 129 .",
+      "Official enrollment/restriction text: Enrollment is restricted to applied mathematics majors and minors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official enrollment restriction is preserved as a note/warning only; it is not encoded as a hard scheduler prerequisite."
+    ],
+    "enrollmentText": "Enrollment is restricted to applied mathematics majors and minors."
+  },
   "AM 195": {
     "concentrations": [],
     "title": "Senior Thesis Research",
@@ -9469,6 +9498,79 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "ARTG 93": {
+    "concentrations": [],
+    "title": "Participation in a Changing World",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/lower-division/artg-93",
+    "desc": "Performance, Play, & Design faculty and guest speakers examine the topic of the art of participation in the current moment. The course consists of recorded lectures, recorded interviews, and discussion sections all aiming to help students refine a critical creative voice. Each lecture features the art of working artists and designers while the corresponding interview helps ground the conceptual into professionalized language to introduce students into contemporary discourse around these topics.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "ARTG 110": {
+    "concentrations": [],
+    "title": "Game Engines for Artists",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ARTG 40"
+      ],
+      [
+        "ARTG 50"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-110",
+    "desc": "Introduces and develops methods in visual scripting, programming, and other algorithmic processes from a creative-design framework, for the purposes of creating interactive media and digital games. Presents the basics and design history of several established game engines currently utilized for developing 2D and 3D interactive artworks, centered around a series of projects. Via guided exploration and critical practice, the course provides a baseline understanding of common conventions and affordances shared across a range of game development tools. Previous programming experience is not required.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ARTG 40 and ARTG 50.",
+    "prereqNotes": [
+      "Official prerequisite text: ARTG 40 and ARTG 50.",
+      "Official enrollment/restriction text: Enrollment is restricted to declared AGPM majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official enrollment restriction to declared AGPM majors is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to declared AGPM majors."
+  },
+  "ARTG 111": {
+    "concentrations": [],
+    "title": "MateREALITIES: Sculptural Components of Games and Interactive Artworks",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-111",
+    "desc": "Students are introduced to contemporary sculptural and material techniques in pursuit of fabricating their own interactive artworks, game pieces, and props. Students prototype and realize a series of projects that allow them an opportunity to integrate new material strategies into the physical components of their creative practice. Material and sculptural discourses and techniques introduced vary based on instructor and offering. In addition to the studio component, the course has light seminar lectures, discussion, and critique components as students complete material experiments toward a final physical project.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Art and Design: Games + Playable Media majors, theater majors and minors, and dance minors, or by instructor permission.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official major/minor/instructor-permission enrollment language is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to Art and Design: Games + Playable Media majors, theater majors and minors, and dance minors, or by instructor permission."
+  },
   "ARTG 118": {
     "concentrations": [],
     "title": "Character Creation for Video Games",
@@ -9567,6 +9669,72 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "ARTG 80G, ARTG 80H, and ARTG 80I."
+  },
+  "ARTG 129C": {
+    "concentrations": [],
+    "title": "Special Topics in Game Design: Craft Refinement",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129c",
+    "desc": "Courses in this series address a rotating set of specialized topics in the expanding field of game design and interactive performance and media artworks. Craft Refinement topic courses engage primarily with the development, construction, and/or formal design of a variety of interactive artworks. Each offering provides an opportunity to strengthen a creative practice by developing projects in conversation with course-specific concepts, methods, approaches and/or frameworks, centering around the \"making\" process. Details about the specific topic can be found in the Class Notes section.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Art and Design: Games and Playable Media declared majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official declared-major enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to Art and Design: Games and Playable Media declared majors."
+  },
+  "ARTG 129P": {
+    "concentrations": [],
+    "title": "Special Topics in Game Design: Performance & Exhibition",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129p",
+    "desc": "Courses in this series address a rotating set of specialized topics in the expanding field of game design and interactive performance and media artworks. Performance + Exhibition topic courses focus on the production, installation, and/or presentation of interactive and/or performance media artworks to a range of audiences via different potential platforms. Each offering provides an opportunity to strengthen a creative practice by developing projects in conversation with course-specific concepts, methods, approaches and/or frameworks, centering around designing artworks in direct relationship to the audience, players, and/or participants. Details about the specific topic can be found in the Class Notes section.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Art and Design: Games and Playable Media declared majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official declared-major enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to Art and Design: Games and Playable Media declared majors."
+  },
+  "ARTG 129S": {
+    "concentrations": [],
+    "title": "Special Topics in Game Design: Social Interventions",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-129s",
+    "desc": "Courses in this series address a rotating set of specialized topics in the expanding field of game design and interactive performance and media artworks. Social Intervention topic courses approach and explore interactive artworks as possibility spaces for new dynamics, persuasive intervention, active resistance and social change. Each offering provides an opportunity to strengthen a creative practice by developing projects in conversation with course-specific concepts, methods, approaches and/or frameworks, centering around critical expression. Details about the specific topic can be found in the Class Notes section.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to Art and Design: Games and Playable Media declared majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official declared-major enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to Art and Design: Games and Playable Media declared majors."
   },
   "ARTG 131": {
     "concentrations": [],
@@ -10031,6 +10199,28 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "ARTG 190": {
+    "concentrations": [],
+    "title": "Open Source Afro Hair Library Contributor Studio",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/artg-art-and-design-games-and-playable-media/100/artg-190",
+    "desc": "Introduces students to open-source development. Students explore the aesthetic, cultural, and technical goals of the Open Source Afro Hair Library, identifying opportunities for development and proposing contributions aligned with their skills and interests. Through research, case studies, and hands-on projects, students develop critical thinking, communication, and design skills while learning to navigate collaborative, open-source ecosystems. The course culminates in a professional presentation emphasizing both process and impact. No programming experience required; strong skills in art, design, research, and/or writing is recommended. Students from all disciplines are welcome. (Formerly ARTG 90, Open Source Contributor Studio.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sophomores, juniors, and seniors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official sophomore/junior/senior enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to sophomores, juniors, and seniors."
+  },
   "ARTG 199": {
     "concentrations": [],
     "title": "Tutorial",
@@ -10465,6 +10655,28 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "PHYS 5A or PHYS 15A."
   },
+  "ASTR 49": {
+    "concentrations": [],
+    "title": "Cultural Astronomy",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/1-99/astr-49",
+    "desc": "Over time, many cultures have developed rich relationships with the night sky, with important implications for timekeeping, agriculture, navigation, and views about the nature of the universe and humanity’s place within it. This course explores the sky through the lens of several different historical traditions. Students analyze similarities and differences between these interpretations of naked-eye astronomy in the context of their historical origins. As the search for life beyond Earth intensifies, students are asked to explore how cultural comparisons may be used to add humanistic rigor to the scientific field of astrobiology. No prior knowledge of astronomy is required.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: may be used to add humanistic rigor to the scientific field of astrobiology."
+    ],
+    "enrollmentText": "may be used to add humanistic rigor to the scientific field of astrobiology."
+  },
   "ASTR 111": {
     "concentrations": [],
     "title": "Order-of-Magnitude Astrophysics",
@@ -10566,6 +10778,33 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "MATH 22 or MATH 23A, PHYS 5B or PHYS 6B, and PHYS 102."
   },
+  "ASTR 116": {
+    "concentrations": [],
+    "title": "Fundamentals of Astrobiology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PHYS 5B",
+        "PHYS 6B"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-116",
+    "desc": "Introduces students to the fundamentals of astrobiology by providing an overview of the basic physical, chemical, and biological processes that are relevant to the study of the origin, evolution, and distribution of life in the universe. Students investigate the definition of life, its origin and evolution on Earth, the physical properties that make Earth amenable to life, and the generalization of those properties to objects in the solar system and beyond. Students are expected to have declared a science major within the Division of Physical and Biological Sciences at UCSC and have completed their lower-division pre-requisites for that major. Exceptions require instructor approval.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "PHYS 5B or PHYS 6B. Exceptions require instructor approval.",
+    "prereqNotes": [
+      "Official prerequisite text: PHYS 5B or PHYS 6B . Exceptions require",
+      "Official exception/instructor-approval language is preserved as a note/warning only."
+    ]
+  },
   "ASTR 117": {
     "concentrations": [],
     "title": "High Energy Astrophysics",
@@ -10656,6 +10895,28 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "MATH 11A or MATH 19A or MATH 20A or AM 15A."
+  },
+  "ASTR 125": {
+    "concentrations": [],
+    "title": "Machining for Physics and Astronomy Instrumentation",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/astr-astronomy-and-astrophysics/100/astr-125",
+    "desc": "Students work with a professional machinist to learn the fundamentals of metal machining in the context of building scientific instruments. The class takes place at the University of California Observatories Machine Shop, where students receive group instruction on machining and then work independently to machine parts, including parts that they will use in their own physics and astronomy research. Enrollment is by instructor permission and is for students who are doing experimental physics and astronomy research at UCSC over the summer.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official instructor-permission/research-student enrollment language appears in the description and is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is by instructor permission and is for students who are doing experimental physics and astronomy research at UCSC over the summer."
   },
   "ASTR 136": {
     "concentrations": [],
@@ -32028,6 +32289,41 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "MATH 21 or AM 10; plus one of the following series: MATH 19A and MATH 19B (strongly preferred); or MATH 11A and MATH 11B; or AM 15A and AM 15B."
   },
+  "EART 114": {
+    "concentrations": [],
+    "title": "Environmental Geophysics",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "EART 5",
+        "EART 10",
+        "EART 20"
+      ],
+      [
+        "MATH 11B",
+        "MATH 19B"
+      ],
+      [
+        "PHYS 5A",
+        "PHYS 6A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-114",
+    "desc": "Overview of geophysical methods for characterizing the subsurface, with emphasis on applications from mapping groundwater resources to imaging Earth’s crust. Topics include seismic reflection/refraction, GPS/GNSS, gravity, magnetics, resistivity, and ground/ice penetrating radar.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): EART 5 or EART 10 or EART 20 ; and MATH 11B or MATH 19B ; and PHYS 5A or PHYS 6A required. PHYS 5B or PHYS 6B ; and PHYS 5C or PHYS 6C recommended.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): EART 5 or EART 10 or EART 20 ; and MATH 11B or MATH 19B ; and PHYS 5A or PHYS 6A required. PHYS 5B or PHYS 6B ; and PHYS 5C or PHYS 6C recommended.",
+      "Needs review: contains-recommended-language",
+      "Official PHYS 5B/6B and PHYS 5C/6C preparation is recommended only and is not encoded as a hard prerequisite."
+    ]
+  },
   "EART 116": {
     "concentrations": [],
     "title": "Hydrology",
@@ -32260,6 +32556,30 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "MATH 11B or MATH 19B or AM 15B; and CHEM 1A or CHEM 3B or CHEM 4B; and PHYS 5B or PHYS 6B."
+  },
+  "EART 122": {
+    "concentrations": [],
+    "title": "Air Pollution",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ESCI 100A",
+        "EART 110A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-122",
+    "desc": "Introduces students to the chemistry and physics of air pollution with primary emphasis on understanding the main types of air pollutants, from where they originate, how they are removed, how to control their sources, measurement techniques, and their health effects. (Formerly ESCI 122.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): ESCI 100A or EART 110A .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): ESCI 100A or EART 110A ."
+    ]
   },
   "EART 124": {
     "concentrations": [],
@@ -32954,6 +33274,42 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "EART 110B."
+  },
+  "EART 170": {
+    "concentrations": [],
+    "title": "Global Seismology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "MATH 11B",
+        "MATH 19B",
+        "EART 110C",
+        "EART 111"
+      ],
+      [
+        "PHYS 6A",
+        "PHYS 5A",
+        "EART 110C",
+        "EART 111"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/eart-earth-sciences/upper-division/eart-170",
+    "desc": "Introduction to quantitative earthquake and global Earth structure seismology. Topics include basic elasticity, the seismic wave equation, wave characteristics, seismic ray theory, wave reflection, surface waves, normal modes, earthquake and source theory, and seismic signal processing. Students engage in both analytical exercises and coding assignments. The three-hour laboratory component provides practical experience through hands-on exercises in imaging the Earth's interior and seismic data analysis. Students cannot receive credit for this course and EART 270.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): MATH 11B or MATH 19B , and PHYS 6A or PHYS 5A ; or EART 110C ; or EART 111 . Exceptions can be granted upon request.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): MATH 11B or MATH 19B , and PHYS 6A or PHYS 5A ; or EART 110C ; or EART 111 . Exceptions can be granted upon request.",
+      "Official enrollment/restriction text: cannot receive credit for this course and EART 270.",
+      "Official prerequisite logic is (MATH 11B or MATH 19B plus PHYS 6A or PHYS 5A) OR EART 110C OR EART 111; represented using duplicated EART alternatives because the engine supports grouped alternatives, not nested OR branches.",
+      "Official exception/request language and no-credit-with EART 270 text are preserved as notes/warnings only."
+    ],
+    "enrollmentText": "cannot receive credit for this course and EART 270."
   },
   "EART 172": {
     "concentrations": [],
@@ -37026,6 +37382,38 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "ECON 1 and ECON 2. Related coursework in history also helpful."
   },
+  "ECON 126": {
+    "concentrations": [],
+    "title": "Health Care Markets",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PE-H",
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-126",
+    "desc": "Examines health care provision and health insurance through lens of economics and strategy. Eexplores three key aspects of the health care system: insurance plans, physician visits, and hospital care. In each area, historical and policy contexts are introduced, the behaviors of consumers and providers explored through theory and empirics, and the implications for policy and practice discussed.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Current or previous passing enrollment in ECON 1 or ECON 20. Basic knowledge of calculus and derivatives (e.g., AM 11A, MATH 11A, MATH 19A) is recommended but not required.",
+    "prereqNotes": [
+      "Official prerequisite text: current of previous passing",
+      "Official enrollment/restriction text: Enrollment is restricted to sophomores, juniors, and seniors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official calculus preparation is recommended only and is not encoded as a hard prerequisite.",
+      "Official sophomore/junior/senior enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to sophomores, juniors, and seniors.",
+    "concurrentPrereqs": [
+      [
+        "ECON 1",
+        "ECON 20"
+      ]
+    ]
+  },
   "ECON 128": {
     "concentrations": [
       "tim_finance_econ"
@@ -38107,6 +38495,25 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "ECON 100A, ECON 100B and ECON 113. Students submit petition to sponsoring agency."
+  },
+  "ECON 193S": {
+    "concentrations": [],
+    "title": "Summer Transforming Futures Experiential Learning",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-S",
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/econ-economics/upper-division/econ-193s",
+    "desc": "This course is open to students in the Transforming Futures program administered by the Institute for Social Transformation. Students work individually with their internship partners under the guidance of the course instructor and coordinators. The program enables students to pursue meaningful and career-advancing summer internships while creating impact alongside organizations advancing social good and equity. Students strengthen their professional and leadership skills, expand their professional networks, and establish pathways toward future career goals. Enrollment in this course requires permission from the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "ECON 194": {
     "concentrations": [],
@@ -39991,6 +40398,46 @@ const COURSES = {
       "Official prerequisite/eligibility text: concurrent"
     ]
   },
+  "ENVS 107D": {
+    "concentrations": [],
+    "title": "Natural History Field Quarter: Communicating the Natural World",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "WRIT 1"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-107d",
+    "desc": "Intensive 20-credit course with multiweek field trips. Students apply naturalist skills to scientific inquiry, ecosystem management, and communication, and cultivate leadership and professional skills for outdoor careers. Compelling narratives are essential to address current environmental challenges. In ENVS 107D , students develop professional communication skills including: informative and captivating writing, scientific notetaking, classroom and outdoor teaching, and nature illustration. With extensive feedback, students complete multiple oral presentations and written assignments structured to develop their voice and the power of their communications. Prerequisite(s): satisfaction of the ELWR requirements; and concurrent enrollment in ENVS 107A , ENVS 107B , and ENVS 107C . Course is open to all majors, but ENVS majors must also have previously passed ENVS 100 and ENVS 100L . Satisfies senior comprehensive requirement for environmental studies majors by prior approval. Enrollment is by application in fall quarter. See https://norriscenter.ucsc.edu/ for details.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Satisfaction of the ELWR requirements; and concurrent enrollment in ENVS 107A, ENVS 107B, and ENVS 107C. Course is open to all majors, but ENVS majors must also have previously passed ENVS 100 and ENVS 100L. Satisfies senior comprehensive requirement for environmental studies majors by prior approval. Enrollment is by application in fall quarter.",
+    "prereqNotes": [
+      "Official prerequisite text: satisfaction of the ELWR requirements; and concurrent",
+      "Needs review: contains-prior-or-concurrent-language",
+      "ELWR is represented locally as WRIT 1 completion/equivalent.",
+      "Official ENVS-major-only ENVS 100/100L prior-passing condition, senior-comprehensive approval, and application requirement are preserved as notes/warnings only because they are conditional/non-mechanical."
+    ],
+    "concurrentPrereqs": [
+      [
+        "ENVS 107A"
+      ],
+      [
+        "ENVS 107B"
+      ],
+      [
+        "ENVS 107C"
+      ]
+    ],
+    "enrollmentText": "Course is open to all majors, but ENVS majors must also have previously passed ENVS 100 and ENVS 100L. Satisfies senior comprehensive requirement for environmental studies majors by prior approval. Enrollment is by application in fall quarter."
+  },
   "ENVS 108": {
     "concentrations": [],
     "title": "General Entomology",
@@ -40245,6 +40692,38 @@ const COURSES = {
       "Official catalog includes prior/concurrent enrollment language. Clear concurrent course requirements are encoded in concurrentPrereqs; ambiguous cases remain noted.",
       "Official prerequisite/eligibility text: Previous or concurrent"
     ]
+  },
+  "ENVS 124": {
+    "concentrations": [],
+    "title": "Intro to Urban Ecology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ENVS 24"
+      ],
+      [
+        "ENVS 100"
+      ]
+    ],
+    "ge": "PE-E",
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/envs-environmental-studies/upper-division/envs-124",
+    "desc": "More than half of the world's human population lives in an urban setting. Population projections suggest two out of three people will live in cities by 2050. Increasing urbanization will give rise to novel ecosystems consisting of complex human-nature interactions. Through readings of primary scientific literature, lectures, and short excursions in and around campus, this class examines how urbanization alters natural ecosystem dynamics and what that means for the ecosystem services we rely on. Course uses an interdisciplinary lens to examine topics such as urban biodiversity, pollution, climate change, and the urban/rural interface. Explores sustainable urban development as a strategy to help slow global environmental degradation.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "ENVS 24 and ENVS 100 ,",
+    "prereqNotes": [
+      "Official prerequisite text: ENVS 24 and ENVS 100 ,",
+      "Official enrollment/restriction text: Enrollment is restricted to environmental studies, plant sciences, and environmental sciences majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official major enrollment restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to environmental studies, plant sciences, and environmental sciences majors."
   },
   "ENVS 130A": {
     "concentrations": [],
@@ -71465,6 +71944,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 167O": {
+    "concentrations": [],
+    "title": "Aliens: Science and Fiction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o",
+    "desc": "Explores how astrobiology and literature (especially science fiction) have been linked culturally as each explores ideas about alien life. As planetary astronomy has refined our ability to detect and image exoplanets beyond our own solar system, the question of the existence of life on or around exoplanets has gained a renewed urgency. The principal challenge of this course is how to imagine aliens that are scientifically coherent while also capturing the true variety and difference suggested by astrobiology. The course also provides a philosophical and literary introduction to the scientific method, and a scientific framework for evaluating public imaginaries about alien life.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 168A": {
     "concentrations": [],
     "title": "The Culture of Islamic Law",
@@ -89901,6 +90397,40 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "PSYC 50": {
+    "concentrations": [],
+    "title": "Human Sexuality",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-H",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-50",
+    "desc": "Provides an opportunity to explore the science of human sexuality in a formal educational space. Covers such topics as variations of sexual behavior (what counts as sex), representations of sex (what we see in accessible media), motivations and sexual desire (why we have sex), sexual fantasies (what kind of sex we desire), sexual development (from both biological and psychological perspectives), sexual anatomy and arousal, sexual orientation and sexual identity, relationships and intimacy, sexual violence and dysfunction, reproductive justice, and diversity of sexuality across history and culture.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "PSYC 51": {
+    "concentrations": [],
+    "title": "The Future is Not Set: AI, Data, and Society",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PE-T",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/lower-division/psyc-51",
+    "desc": "Students learn with a team of experts about the principles for ethical AI and data science in various contexts. In addition, they become familiar with facets of the impact on real-world situations, grow the capacity to propose novel approaches for ethical decision-making in data science for the public good, and reflect on the role of data use and AI in shaping society, identity, and power relations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "PSYC 100": {
     "concentrations": [],
     "title": "Research Methods in Psychology",
@@ -91363,6 +91893,37 @@ const COURSES = {
       "Official prerequisite/eligibility text: PSYC 100, and satisfaction of the Entry Level Writing and Composition"
     ]
   },
+  "PSYC 139M": {
+    "concentrations": [],
+    "title": "Music Cognition",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PSYC 100"
+      ],
+      [
+        "WRIT 2"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139m",
+    "desc": "Seminar course examining music through the lens of cognitive psychology. While technical aspects of music will be discussed, course does not presuppose musical training or knowledge of music theory. Topics include the perception of music, the effect of music and musical training on cognitive processes, the embodiment of rhythm and dance, aesthetic experiences, music therapy, and more. Satisfies the senior seminar and senior comprehensive requirements.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements.",
+    "prereqNotes": [
+      "Official prerequisite text: PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior cognitive science and psychology majors.",
+      "Needs review: contains-placement-exam-or-writing-requirement",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official Entry Level Writing and Composition requirement is represented locally by WRIT 2 for scheduler enforcement. Senior/major restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to senior cognitive science and psychology majors."
+  },
   "PSYC 139N": {
     "concentrations": [],
     "title": "Diversity in Cognitive Psychology",
@@ -91546,6 +92107,37 @@ const COURSES = {
       "Official prerequisite/eligibility text: PSYC 100 and satisfaction of the Entry Level Writing and Composition"
     ]
   },
+  "PSYC 139Z": {
+    "concentrations": [],
+    "title": "Multisensory Cognition",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PSYC 100"
+      ],
+      [
+        "WRIT 2"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-139z",
+    "desc": "Explores how the brain constructs a unified experience of the world by integrating information across multiple sensory modalities. Behavioral evidence, neural mechanisms, and computational models are used to explain how perception and memory emerge from an inherently multisensory brain. Satisfies seminar requirement. Satisfies senior comprehensive requirement.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements.",
+    "prereqNotes": [
+      "Official prerequisite text: PSYC 100 and satisfaction of the Entry Level Writing and Composition requirements.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior cognitive science and psychology majors.",
+      "Needs review: contains-placement-exam-or-writing-requirement",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official Entry Level Writing and Composition requirement is represented locally by WRIT 2 for scheduler enforcement. Senior/major restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to senior cognitive science and psychology majors."
+  },
   "PSYC 140B": {
     "concentrations": [],
     "title": "African American Psychology",
@@ -91570,6 +92162,29 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "PSYC 100."
+  },
+  "PSYC 140C": {
+    "concentrations": [],
+    "title": "Indigenous Land, Identity and Well-being",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PSYC 100"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-140c",
+    "desc": "Psychologists have long established the importance of identity as a source of wellbeing and motivator of collective action. A major gap within this research is the lack of consideration for the intrinsic relationship between Indigenous identity and land. In this course, students learn how the well-being of Indigenous peoples is intimately linked to the well-being of their homelands. Students examine this topic using interdisciplinary approaches from social psychology, cultural psychology and Indigenous studies. Discussions include: the relationship between Indigenous land, identity and well-being; how settler colonialism has sought to undermine those relations; and the actions Indigenous peoples are taking to restore, reconnect, and care for their homelands.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): PSYC 100 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): PSYC 100 ."
+    ]
   },
   "PSYC 140F": {
     "concentrations": [],
@@ -92361,6 +92976,37 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "PSYC 159L": {
+    "concentrations": [],
+    "title": "The Social Psychology of Collective Action",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PSYC 100"
+      ],
+      [
+        "WRIT 2"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-159l",
+    "desc": "When do people decide to protest or join a movement, and what stops others from doing so? Which forms of protest are effective, and how do we define successful collective action? What is effective allyship? In what ways do repression and cultural context shape the trajectory and outcomes of social movements? This senior seminar examines the foundations of collective action from a social psychological perspective. Course engages with classic and contemporary research in social psychology, connecting these theories to real-world cases in the United States and internationally. Satisfies the senior seminar and senior comprehensive requirements.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements.",
+    "prereqNotes": [
+      "Official prerequisite text: PSYC 100 , and satisfaction of the Entry Level Writing and Composition requirements.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior cognitive science and psychology majors.",
+      "Needs review: contains-placement-exam-or-writing-requirement",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official Entry Level Writing and Composition requirement is represented locally by WRIT 2 for scheduler enforcement. Senior/major restriction is preserved as a note/warning only."
+    ],
+    "enrollmentText": "Enrollment is restricted to senior cognitive science and psychology majors."
+  },
   "PSYC 159P": {
     "concentrations": [],
     "title": "Race, Ethnicity, and Environmental Inequality",
@@ -92952,6 +93598,35 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "PSYC 100."
+  },
+  "PSYC 193S": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "PSYC 100"
+      ]
+    ],
+    "ge": "PR-S",
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/psyc-psychology/upper-division/psyc-193s",
+    "desc": "Series designed to provide advanced psychology undergraduates opportunity to apply what they have learned in the classroom to direct experience in a community agency. Students earn academic credit by working at a variety of psychology-related settings where they are trained and supervised by a professional within the agency. Faculty provides guidance on the students' academic work to connect psychological theories with the hands-on experience. A two-quarter commitment. Students submit petition to sponsoring agency. Prerequisite(s): PSYC 100 . Enrollment is restricted to junior and senior cognitive science and psychology majors.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "PSYC 100 .",
+    "prereqNotes": [
+      "Official prerequisite text: PSYC 100 .",
+      "Official enrollment/restriction text: Enrollment is restricted to junior and senior cognitive science and psychology majors.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Official junior/senior cognitive science/psychology major enrollment restriction and two-quarter field-study/petition context are preserved as notes/warnings only."
+    ],
+    "enrollmentText": "Enrollment is restricted to junior and senior cognitive science and psychology majors."
   },
   "PSYC 194A": {
     "concentrations": [],

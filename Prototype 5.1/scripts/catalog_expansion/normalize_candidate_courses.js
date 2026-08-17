@@ -19,7 +19,7 @@ function simpleGroupsFromPrereqText(text) {
   const parseText = String(text || '').replace(/^\s*Prerequisite(?:\(s\)|s)?:\s*/i, '').trim();
   const lower = parseText.toLowerCase();
   if (!parseText) return { groups: [], confidence: 'no-prereq-text' };
-  if (/[()]/.test(parseText) || /previous or concurrent|prior or concurrent|concurrent|placement|mpe|exam|ap |ib |entry level writing|composition|writing|permission|consent|instructor|major|restricted|recommended|equivalent/.test(lower)) {
+  if (/[()]/.test(parseText) || /previous or concurrent|prior or concurrent|concurrent|placement|mpe|exam|ap |ib |entry level writing|composition|writing|permission|consent|instructor|major|restricted|recommended|equivalent|exception|exceptions|waiver|petition/.test(lower)) {
     return { groups: [], confidence: 'manual-review-required' };
   }
   const groups = [];

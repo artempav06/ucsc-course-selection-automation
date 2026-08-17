@@ -56,6 +56,7 @@ function flagsFor(detail) {
   if (/permission|consent|instructor/.test(p)) flags.push('contains-permission-or-consent-exception');
   if (/previous or concurrent|prior or concurrent|previously or concurrently|concurrent/.test(p)) flags.push('contains-prior-or-concurrent-language');
   if (/placement|mpe|exam|test[- ]?out|ap |ib |entry level writing|composition|writing/.test(p)) flags.push('contains-placement-exam-or-writing-requirement');
+  if (/exception|exceptions|waiver|petition/.test(p)) flags.push('contains-exception-waiver-or-petition-language');
   if (/major|majors|restricted|enrollment is restricted/.test((p + ' ' + detail.enrollmentText).toLowerCase())) flags.push('contains-major-or-enrollment-condition');
   return flags;
 }
