@@ -66454,6 +66454,31 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LING 134": {
+    "concentrations": [],
+    "title": "Languages of Central Eurasia: Writing Systems, Policy, and Identity",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "LING 50"
+      ]
+    ],
+    "ge": "CC",
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-134",
+    "desc": "Examines how the innate human faculty for language intersects with the invented technology of writing in the entangled historical and cultural landscape of Central Eurasia. Students analyze the linguistic structures and orthographic evolutions of Turkic, Mongolic, and Tungusic peoples, and examine how migration, trade, and 21st-century geopolitics drive linguistic change and identity.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): LING 50 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): LING 50 ."
+    ]
+  },
   "LING 135": {
     "concentrations": [],
     "title": "Language and Racialization",
@@ -66918,6 +66943,27 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "LING 50."
+  },
+  "LING 177": {
+    "concentrations": [],
+    "title": "Computational Cognitive Modeling—Building Minds with Code",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "SI",
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-177",
+    "desc": "Pprovides a hands-on introduction to the field of computational cognitive science, focusing on the challenge of human sentence comprehension. Students embark on a project-based journey to faithfully recreate the classic 1990 neural network model by St. John and McClelland, a foundational paper on natural language interpretation, computation, and learning. The course is divided into two parts. In Part I: The Foundations, students acquire some of the essential skills necessary for computational cognitive science. In Part II: The Replication Project, these skills are applied in a deep dive into the St. John and McClelland paper.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LING 180": {
     "concentrations": [],
@@ -67384,6 +67430,57 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 60B": {
+    "concentrations": [],
+    "title": "Introduction to Anime Studies",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60b",
+    "desc": "Explores the impact of anime by analyzing several major productions from the 21st century. Anime is often grouped by demographics and our class investigates the significance and flexibility of these groupings. Course asks: What is the shōnen power fantasy and why is it so important? How are historical figures/events incorporated into fictional storytelling? How does anime approach gender/sexuality? This survey course serves as an introduction to the growing field of anime studies and provides students with the tools for close reading visual texts across cultures.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 60C": {
+    "concentrations": [],
+    "title": "Banned Books",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60c",
+    "desc": "Literature is dangerous. Around the world and throughout history, people have stood up—fists raised, sometimes shouting—against certain books, taking their concerns to boards of education and legislative bodies to legally remove titles deemed controversial from school curriculums and libraries. This course introduces students to literary interpretation and analysis through the topic of banned books across the globe.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 60X": {
+    "concentrations": [],
+    "title": "Kamasutra, Tantra, and Sex in Ancient India",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60x",
+    "desc": "Few texts in the Sanskrit tradition or in world literature have aroused as much interest or suspicion as the Kamasutra; few concepts from Indian premodernity are as confused or exoticized as that of tantra; and few topics are as controversial as sexuality in our contemporary world. This course seeks to explore all three of these phenomena—the Kamasutra, tantra, and sexuality—to grasp their genesis, their meanings in different historical and cultural settings (especially ancient India), and their salience in our moment. Emphasis is placed on frameworks for understanding these phenomena, whether in light of psychoanalysis, forms of power and resistance, visual culture, or Orientalism.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 61C": {
     "concentrations": [],
@@ -68363,6 +68460,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 81L": {
+    "concentrations": [],
+    "title": "The Lord of the Rings",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-81l",
+    "desc": "Discover the imaginative world and literary form of Tolkien’s 1100-page Lord of the Rings. Get to know the species, landscapes, languages, mythologies, songs, legends, rituals, customs, alliances, animosities, and more. Learn how to connect the book’s form and style to earlier literary traditions and explore why Tolkien’s mid-20th century medieval fantasy still speaks so powerfully to us now. What can Middle-Earth teach us about our own cultural stories, our fraught relationship to nature and technology, the dangers of power, the practice of hope, and the living of a good life?",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 87": {
     "concentrations": [],
     "title": "Introduction to Literary Topics",
@@ -68384,6 +68498,43 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 87B": {
+    "concentrations": [],
+    "title": "One Great Book",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87b",
+    "desc": "Focuses on the slow, reflective reading of a single, stimulating book in the community of others. Meets once weekly for a short lecture providing context, with most of class time devoted to small-group discussion. Students assessed by small-group work in class, a group presentation, and final reading quiz. Chosen book is usually a novel; title varies every quarter and may be a classic work or a contemporary one. May be repeated for credit.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 87H": {
+    "concentrations": [],
+    "title": "What Can I Do with My Degree? Humanities-Powered Jobs",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87h",
+    "desc": "Course shows why the humanities matter—and why your degree can take you further than you think. Traces how the humanities grew and explores how those skills translate into exciting 21st-century careers. Students dive into big questions shaping the world now and discover how humanistic thinking helps tackle them. Students also meet alumni and explore a variety of career pathways while building professional skills that will boost them throughout their UCSC journey and beyond. By the end, students will see how their humanities background isn’t just meaningful—it’s powerful—and how it can guide them toward a career that matches their strengths, passions, and goals.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 90": {
     "concentrations": [
@@ -69061,6 +69212,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 112S": {
+    "concentrations": [],
+    "title": "Samuel Johnson",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-112s",
+    "desc": "Samuel Johnson was the greatest man of letters in 18th-century England. A voracious reader, Johnson dropped out of college because he was poor. He made a sparse living as a journalist, wrote a novel, compiled the first dictionary of the English language. He edited the works of Shakespeare and established enduring principles for criticism. His last major project was a series of essays about 52 poets, combining biography and literary criticism in ways that no one had ever done. Course follows the arc of Johnson’s life through his varied and prolific writings, giving special attention to the ways he understood the relationship between life and literature.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 114A": {
     "concentrations": [],
     "title": "Orlando Furioso",
@@ -69291,6 +69459,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 116J": {
+    "concentrations": [],
+    "title": "Religions of India",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-116j",
+    "desc": "Introduces students to religious cultures of premodern India—Jainism, Hinduism, Buddhism, Tantrism, and Sikhism—from an interdisciplinary but primarily historical perspective. The focus is on those religious orders that took hold before or at the cusp of Islamic expansion into the Indian subcontinent. Major themes of the course are value, power, and sociality, including techniques of control (both of the self and the other). Emphasis is on historical change and the making and unmaking of inherited traditions in different eras from antiquity to the late medieval period. Questions regarding language, scripture, canons, spiritual practices, and religious boundaries are central, as are the possibilities of dialogue. Distribution requirements:Global, Poetry, Pre- 1750.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 117A": {
     "concentrations": [],
@@ -70092,6 +70277,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 126R": {
+    "concentrations": [],
+    "title": "Race and Speculative Fiction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-126r",
+    "desc": "Explores how contemporary speculative fiction and film imagine the futures of race, class, and gender as lived realities and social locations transformed by interconnected crises. Course takes “speculative fiction” to encompass science fiction, fantasy, horror, the weird, and experimental utopian writing. The course is organized around five thematic clusters: the ethics of utopian and dystopian worlds; surrealism and the commodity form; climate catastrophe; the politics of migration and borderlands; and imagining collective futures against pervasive dystopian narratives. Distribution requirement: Global.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 126T": {
     "concentrations": [],
     "title": "Time Travel Narratives",
@@ -70219,6 +70421,40 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 130E": {
+    "concentrations": [],
+    "title": "Nature and Myth",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130e",
+    "desc": "Examines the cross-cultural pollination of aetiological myths about nature and natural phenomena in ancient Near East and Mediterranean literature. Ancient Mesopotamian literature–from the Hurrian Hymns to Gilgamesh to Enheduanna’s “Hymn to Inanna”–left an indelible impression on later civilizations’ cosmologies. By reading these earlier myths alongside ancient Greek and Roman mythology, students gain a deeper understanding of the Classics’ Near-Eastern influences. Distribution requirement: Pre- 1750. (General Education Code(s): TA.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 130M": {
+    "concentrations": [],
+    "title": "Witchcraft & Magic",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130m",
+    "desc": "Explores witchcraft and magic as cultural constructions that reflect and shape societal values, fears, and aspirations across time and place. After all, what is witchcraft and what is magic? The witch is a both a historical figure, and a cultural icon crafted through centuries of literature, art, and film. This course delves into the witch and her practices examining her evolution as a symbol shaped by social and political forces. Course investigates how she has been represented across visual and literary culture, understanding her as a symbol of shifting gender, class, and power relations. Distribution requirement: Pre-1750.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 131A": {
     "concentrations": [],
@@ -70519,6 +70755,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 133L": {
+    "concentrations": [],
+    "title": "Women Behaving Badly in East Asian Fiction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-133l",
+    "desc": "Explores the “bad behavior” of women characters in East Asian women’s literature. These novels interrogate presiding systems of power in specific East Asian cultures via attention to the female body, which both endures social conditioning and resists it through heightened sensitivity and rich, speculative interiority. These women, through their body epistemology, make waves ranging from interpersonal disruptions to subversive political/societal resistance. Reading in conversation with critical theory, social and historical context, and translation theory. Distribution requirement: Global.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 134A": {
     "concentrations": [],
     "title": "Caribbean Literature",
@@ -70818,6 +71071,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 139C": {
+    "concentrations": [],
+    "title": "Diasporic Literature and Film of California",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "CC",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-139c",
+    "desc": "Survey of diasporic literature and film in California, with a focus on works from the 1960s to the present. Course involves reading texts and watching films that seek to showcase, investigate, and question what it means to be a part of diaspora and an ethnic group. Investigates how literature and film of the diaspora can both reflect and subvert conventions and practices of its country of origin. These works uncover and challenge stereotypes and unsettle conventional understandings of California history and society. In addition, these works provide insight into global and crosscultural exchanges between California and other regions of the world. Distribution Requirement: Global.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 141A": {
     "concentrations": [],
@@ -71157,6 +71427,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 148B": {
+    "concentrations": [],
+    "title": "The Harlem Renaissance and its Afterlives",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-148b",
+    "desc": "Introduces the literature, culture, and afterlives of the Harlem Renaissance, proceeding through major works of poetry, fiction, photography, social documentary, and criticism. Students read successors such as Richard Wright alongside international writers, including Aimé and Suzanne Césaire, considering how Harlem-era debates about race, art, and politics resonate across time and space. Particular attention is given to literary form and the history of Black political movements, the uses of dialect and folklore, the politics of racial representation, Harlem as cultural capital, and the relationship of the Harlem Renaissance to emergent Black internationalist political and literary movements. Distribution requirements: Poetry, Research. (Formerly The Harlem Renaissance.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 148I": {
     "concentrations": [],
     "title": "Toni Morrison's Americas",
@@ -71391,6 +71678,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 149K": {
+    "concentrations": [],
+    "title": "Literature and Social Movements: Writing on Rioting",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-149k",
+    "desc": "When does a protest become a riot, and who decides? This course examines social movements and storytelling in the U.S., exploring how mass upheaval is documented and reimagined. We cover more than a century of rioting/writing, from early 20th-century labor riots and lynch mobs, through the Civil Rights era and the movement's neoliberal cooption, to the 2020 George Floyd uprisings and the January 6 Capitol riot. Using a multi-genre archive—from news and legal documents to poetry, film, and memes—we dissect the discursive boundary between “protest” and “riot,” the politics of race and identification, and how disorder fuels new political forms. Distribution requirement: Research.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 150D": {
     "concentrations": [],
     "title": "The Power of Writing: Books and Libraries 600-1500",
@@ -71516,6 +71820,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 151M": {
+    "concentrations": [],
+    "title": "German Drama",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-151m",
+    "desc": "Introduces students to major periods in German literature through a survey of dramatic works produced in German speaking countries from the late 18th century to the end of the 20th century. The course focuses on the historical, social, and cultural context of the works from the Sturm und Drang period through the contemporary moment. Authors include JW Goethe, Friedrich Schiller, Gerhart Hauptmann, and Elfriede Jelinek. Readings and discussion will be in English. Distribution requirement: Research.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 154B": {
     "concentrations": [],
@@ -71771,6 +72092,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "LIT 155P": {
+    "concentrations": [],
+    "title": "Gangsters and Destiny: French Film Noir",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-155p",
+    "desc": "Mid-twentieth century French films plunged audiences into a shadowy world of doomed gangsters, weary antiheroes, and deadly femmes fatales. Why did so bleak a vision capture the national imagination—and transform global cinema? This course probes French film noir’s stylistic signatures, its roots in war, empire, and inequality, and its entanglement with Hollywood. Students learn to “read” cinema as cultural text, developing vocabulary and tools to analyze how films refract and reimagine the world.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "LIT 156A": {
     "concentrations": [],
@@ -72937,6 +73275,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 167N": {
+    "concentrations": [],
+    "title": "Looking for Life in Space, from 1000 BCE to the Present",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "TA",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167n",
+    "desc": "People have suspected that there were critters out in space since the beginning of history. This course asks students to explore what various premodern people and cultures thought about life in space. That will mean looking closely at how we, and they, think about “life” and “space,” two ill-defined concepts at the heart of astrobiology. In this course, students practice premodern strategies for investigating life in space and learn to use premodern theories as a resource for coming up with solutions to difficult problems in modern astrobiology. Distribution requirement: Global, Pre-1750.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 167O": {
     "concentrations": [],
     "title": "Aliens: Science and Fiction",
@@ -72947,6 +73302,40 @@ const COURSES = {
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167o",
     "desc": "Explores how astrobiology and literature (especially science fiction) have been linked culturally as each explores ideas about alien life. As planetary astronomy has refined our ability to detect and image exoplanets beyond our own solar system, the question of the existence of life on or around exoplanets has gained a renewed urgency. The principal challenge of this course is how to imagine aliens that are scientifically coherent while also capturing the true variety and difference suggested by astrobiology. The course also provides a philosophical and literary introduction to the scientific method, and a scientific framework for evaluating public imaginaries about alien life.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 167P": {
+    "concentrations": [],
+    "title": "Literature and Social Movements for Health Justice",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "ER",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167p",
+    "desc": "What would it mean for all people to have “health justice\"? This course examines the idea of health justice from the perspective of 20th- and 21st-century U.S. struggles over access to care and against medical discrimination. By interweaving the historical context of various bellwether moments in the long struggle for health justice with literary texts and works of art, students in this course learn how to analyze literature and art within its historical and social context, learn from movement history, and develop a theory of health justice for our current moment. Distribution requirement: Research.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "LIT 167W": {
+    "concentrations": [],
+    "title": "Wildfire in the West: Literature, Art, Theory",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PE-E",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167w",
+    "desc": "Investigates wildfire as an ecological reality and a cultural symbol shaping narratives of the American West. Considers how a range of writers, artists, filmmakers, and theorists envision fire in terms of destruction and renewal, natural processes and human impacts. Theoretical readings emphasize the significance of fire within the context of settler colonialism and Indigenous land practices.",
     "section": [
       "FREE"
     ],
@@ -74389,6 +74778,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "LIT 188Y": {
+    "concentrations": [],
+    "title": "Cómics latinoamericanos",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-188y",
+    "desc": "Spanish-based class studying and enjoying a historically organized sample of Latin/o American comics from the mid-20th century to now. The comics come from Chile, Argentina, Bolivia, Brazil, Mexico, and USA. Course considers their formal, historical, and cultural features and value. This course it taught in Spanish. Distribution requirement: Global.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "LIT 188Z": {
     "concentrations": [],
     "title": "Literatura de España",
@@ -74928,6 +75334,32 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "LIT 101."
   },
+  "LIT 190AA": {
+    "concentrations": [],
+    "title": "The Afterlife: Visions, Prophecies, and Fiction",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "LIT 101"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190aa",
+    "desc": "The course explores the intersection between fiction, religious visions of the afterlife, and theories of meaning in the pre-modern Mediterranean. We will examine how this otherworldly literature addresses questions of meaning and interpretation as well as of social and political anxieties, crisscrossing individual and public spheres. We’ll read diverse genres of texts engaging with this subject matter–epic poems, accounts of visions and near-death experiences, and prophetic revelations–while discussing modern theorists’ views on these hybrid textual genres. Distribution requirement(s): Global, Poetry, Pre- 1750.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "LIT 101, and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior literature majors.",
+    "prereqNotes": [
+      "Official catalog includes non-course Entry Level Writing/Composition eligibility. It is preserved here as a note and is not engine-enforced as a course prerequisite.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior literature majors.",
+      "Official prerequisite/eligibility text: LIT 101, and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior literature majors."
+    ],
+    "enrollmentText": "Enrollment is restricted to senior literature majors."
+  },
   "LIT 190F": {
     "concentrations": [],
     "title": "Studies in Poetry",
@@ -75062,6 +75494,32 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "LIT 101."
+  },
+  "LIT 190M": {
+    "concentrations": [],
+    "title": "Women Novelists",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "LIT 101"
+      ]
+    ],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190m",
+    "desc": "Students read novels by women from 1700 through the present day. The course may focus on a single author or multiple authors. Readings include critical, historical, and theoretical texts. Topics vary by offering; see the Class Search for the current topic. Distribution requirement: Senior Seminar.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "LIT 101, and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior literature majors.",
+    "prereqNotes": [
+      "Official catalog includes non-course Entry Level Writing/Composition eligibility. It is preserved here as a note and is not engine-enforced as a course prerequisite.",
+      "Official enrollment/restriction text: Enrollment is restricted to senior literature majors.",
+      "Official prerequisite/eligibility text: LIT 101, and satisfaction of the Entry Level Writing and Composition requirements. Enrollment is restricted to senior literature majors."
+    ],
+    "enrollmentText": "Enrollment is restricted to senior literature majors."
   },
   "LIT 190N": {
     "concentrations": [],
@@ -78287,6 +78745,31 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "METX 131": {
+    "concentrations": [],
+    "title": "Food Microbiology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "BIOL 20A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-131",
+    "desc": "Broad introduction to the microbiology of food fermentation, preservation, and spoilage. Students explore the history, science, and culture (pun intended) of the bacteria and fungi that are used to influence the quality, sensory perception, and health benefits of foods as well as the microbes that spoil or contaminate food.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisites: BIOL 20A .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisites: BIOL 20A ."
+    ]
+  },
   "METX 133": {
     "concentrations": [],
     "title": "Medical Microbiology",
@@ -78469,6 +78952,33 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "BIOL 20A."
+  },
+  "METX 150L": {
+    "concentrations": [],
+    "title": "Microbial Life in Extreme Environments: Field and Lab Methods",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "BIOL 20A"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-150l",
+    "desc": "An experiential field/laboratory microbiology course that explores the boundaries of life inhabiting extreme environments, for example, hot springs, hypersaline and alkaline soda lakes, deserts, and volcanic ecosystems. The course includes a multi-day field trip for sample collection. Extensive laboratory work focused on culturing and isolating extremophilic microbes and characterizing their genomes and metagenomes. Students learn professional scientific communication skills such as scientific writing and presentations. It is recommended that students complete METX 100 and/or METX 150 prior to enrollment. Prerequisite(s): BIOL 20A . Enrollment is by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "BIOL 20A. Enrollment is by permission of the instructor.",
+    "prereqNotes": [
+      "Official catalog includes instructor permission/consent language. It is preserved here as a note and is not treated as a normal schedulable prerequisite path.",
+      "Official catalog recommends METX 100 and/or METX 150 prior to enrollment; recommendation is preserved as a note and not engine-enforced.",
+      "Official prerequisite/eligibility text: BIOL 20A. Enrollment is by permission of the instructor."
+    ]
   },
   "METX 195": {
     "concentrations": [],
@@ -81140,6 +81650,23 @@ const COURSES = {
       "Official prerequisite/eligibility text: MUSC 80F or MUSC 81M, and satisfaction of the Entry Level Writing and Composition"
     ]
   },
+  "MUSC 105X": {
+    "concentrations": [],
+    "title": "Music and Aural Diversity",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-105x",
+    "desc": "Invites students to advance aural diversity (diversity of hearing-listening) as the foundational conceptualization and argumentation for sound, hearing-listening, and music, sound arts, and other sound-related arts, putting audience and community of aurally diverse listeners first and foremost. The objective is for students to challenge the tacit assumptions in sound and hearing-listening-related matters, with the focus on music, sound arts, and arts in general, which are still widely based on the ‘normal’ and idealized hearing. Students engage in original research, resulting in scholarly and artistic presentations.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "MUSC 120": {
     "concentrations": [],
     "title": "Seminar in Music Composition",
@@ -82131,6 +82658,23 @@ const COURSES = {
       "Official catalog includes prior/concurrent enrollment language. Clear concurrent course requirements are encoded in concurrentPrereqs; ambiguous cases remain noted.",
       "Official prerequisite/eligibility text: MUSC 30A; concurrent"
     ]
+  },
+  "MUSC 180X": {
+    "concentrations": [],
+    "title": "Indian Music Workshop",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-180x",
+    "desc": "Provides a practical and theoretical immersion into Hindustani music. It complements Music 80X, Introduction to the Music and Cultures of India, allowing students to explore genres and concepts discussed in lecture through hands-on practice. As Hindustani music is a living oral tradition, students engage in oral pedagogy, practice, and performance. (Formerly MUSC 54, North Indian Music Workshop.)",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "MUSC 192": {
     "concentrations": [],
