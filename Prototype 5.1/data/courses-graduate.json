@@ -35650,6 +35650,76 @@
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "OCEA 200": {
+    "concentrations": [],
+    "title": "Physical Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
+    "desc": "Introduces the physics of the ocean. Topics include physical properties of seawater, atmospheric forcing, Ekman dynamics, Sverdrup dynamics, the wind-driven ocean circulation, ocean mixing, water masses, the meridional overturning circulation, surface gravity waves, Rossby waves, Kelvin waves, and ocean tides. Designed for beginning graduate students in ocean sciences and upper-division science majors. Calculus and physics recommended as preparation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 201": {
+    "concentrations": [],
+    "title": "Advanced Physical Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-201",
+    "desc": "Covers advanced topics and physical principles as they relate to the ocean circulation. Designed as a follow-on class for OCEA 200 , Physical Oceanography, and topics covered include: the dynamics of the subtropical gyres; potential vorticity dynamics; ventilated thermocline theory; the abyssal circulation; barotropic and baroclinic instability; and ocean eddies. Students use simple computer models to explore these important topics further, and review seminal papers.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "OCEA 200 , or a graduate geophysical fluid dynamics course or equivalent (e.g. EART 272 /OCEA 272, AM 217 , AM 227 ), or by",
+    "prereqNotes": [
+      "Official prerequisite text: OCEA 200 , or a graduate geophysical fluid dynamics course or equivalent (e.g. EART 272 /OCEA 272, AM 217 , AM 227 ), or by",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 211": {
+    "concentrations": [],
+    "title": "Climate Dynamics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-211",
+    "desc": "Introduction to the dynamics of the Earth climate system. Topics: climate system components, the global energy balance, radiative transfer, the hydrological cycle, general circulations of the atmosphere and ocean, El Nino, the North Atlantic Oscillation, and the Pacific Decadal Oscillation.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "OCEA 213": {
     "concentrations": [],
     "title": "Biogeochemical Cycles",
@@ -35660,6 +35730,150 @@
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-213",
     "desc": "Overview of biogeochemical cycles, present and past, and geochemical models. Topics include: marine, terrestrial, and global views of the carbon, nitrogen, phosphorus, silicon, sulfur, and oxygen cycles, and the evolution of these cycles and Earth's redox balance through geologic time.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 215": {
+    "concentrations": [],
+    "title": "Predicting the Atmosphere, Ocean, and Climate",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-215",
+    "desc": "Introduction to the theory and practice of operational prediction in meteorology, oceanography, and climate. Topics: observations and estimation theory, dynamic adjustment and initialization, estimation theory, data assimilation, forecast verification, predictability, ocean state estimation, seasonal forecasting.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 218": {
+    "concentrations": [],
+    "title": "Marine Microbial Ecology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-218",
+    "desc": "Recent developments in the study of marine bacteria and their role in the marine ecosystem. Emphasis on biochemistry and physiology in relation to metabolic activity and elemental cycles, trophic interactions and flows of material and energy in marine food webs. Exams and research paper required. Students cannot receive credit for this course and OCEA 118 and BIOL 171. BIOL 20C and CHEM 1C recommended.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: cannot receive credit for this course and OCEA 118 and BIOL 171.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "cannot receive credit for this course and OCEA 118 and BIOL 171.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 220": {
+    "concentrations": [],
+    "title": "Chemical Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220",
+    "desc": "A chemical description of the sea; emphasis on the chemical interactions of the oceans with the biosphere, atmosphere, and lithosphere. Topics include biogeochemical cycles and the use of chemical tracers to study oceanic and coastal processes. Course designed for graduate students. Students may not receive credit for this course and OCEA 122 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; upper-division undergraduates may enroll with instructor approval.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; upper-division undergraduates may enroll with instructor approval.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 224": {
+    "concentrations": [],
+    "title": "Aquatic Organic Geochemistry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-224",
+    "desc": "Introduction to organic geochemistry with emphasis on aquatic environments. Explores how non-living organic matter shapes biogeochemical cycles by carrying and sequestering reduced carbon and major nutrients and examines influence of chemical structure and environmental factors on transport and fate of organic molecules. Provides an introduction to organic biomarkers. Students cannot receive credit for this course and OCEA 124.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: cannot receive credit for this course and OCEA 124.",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "cannot receive credit for this course and OCEA 124.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 230": {
+    "concentrations": [],
+    "title": "Biological Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-230",
+    "desc": "Biological description of the sea, with emphasis on processes and patterns. Topics include microbial dynamics, phytoplankton and zooplankton production, and ecology of marine food webs. Emphasis placed on understanding how physical, chemical, and geological environment shapes biology and ecology of oceans, including such topics as harmful algal blooms, global estimates of productivity, and effects of humans on environment. Students cannot receive credit for this course and OCEA 130.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): previous course in ocean sciences recommended. Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): previous course in ocean sciences recommended. Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and OCEA 130.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and OCEA 130.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 241": {
+    "concentrations": [],
+    "title": "Dynamics of Marine Ecosystems",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-241",
+    "desc": "Covers physical-biogeochemical interactions in the ocean on marine ecosystems, with a special focus on the California Current region. Lectures introduce fundamental processes occurring at local, regional, and basin scales, and describe their complex interplay.",
     "section": [
       "GRADUATE_SEARCH_ONLY"
     ],
@@ -35695,6 +35909,106 @@
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
     ],
     "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and ESCI 150 .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 251": {
+    "concentrations": [],
+    "title": "Field and Lab Methods in Aquatic Biogeochemistry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-251",
+    "desc": "Introduction to aquatic biogeochemistry field and lab techniques used to investigate nutrient cycling. Students learn how to collect field samples for biogeochemistry including particulate organic matter, dissolved organic matter, and plankton counts at Younger Lagoon. Students collect water samples for surface particulate organic matter and stoichiometric ratios alongside environmental data to evaluate the patterns, variation, and controls of biotic and abiotic factors. In the lab students process samples to address thoughtful research questions. Students gain hands-on experience processing biogeochemical processes over seasonal and interannual cycles.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 252": {
+    "concentrations": [],
+    "title": "Field and Lab Methods in Aquatic Molecular Ecology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-252",
+    "desc": "Introduction to molecular and bioinformatic techniques used to investigate aquatic microbiomes. Students learn how to collect field samples for molecular analyses at the Younger Lagoon and Santa Cruz Wharf. Using fundamental techniques in modern molecular microbial ecology including metabarcoding, DNA sequencing (including real-time), quantitative PCR, fluorescent in situ hybridizations, and flow cytometry, students characterize microbial assemblages and investigate microbial activity in two very different field sites. Students gain hands-on experience processing sequence and imaging data and analyzing microbial community variability over seasonal and interannual cycles.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 255": {
+    "concentrations": [],
+    "title": "Visualizing Ocean Data",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-255",
+    "desc": "Ocean data collection has increased dramatically with much of this information available publicly for consumption and analysis by the scientific and broader community. Yet the format of available information differs often by platform, and useful visualization techniques depend on the type of data being considered. Class introduces different types of publicly available data, develops tools needed to access this information locally, and discusses broad methods for visualization appropriate for time-series, maps, sections, vector fields, and animations. Students develop their own capabilities through assignments using a scientific programming language of their choice (e.g., julia, python, matlab, or R), and lectures introduce necessary programming ideas and examples to support student-based tool development.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 265": {
+    "concentrations": [],
+    "title": "Marine Population Dynamics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-265",
+    "desc": "Examines classic ecological models of population dynamics and growth with case studies from the marine environment. Topics include exponential and logistic growth, density dependence, age and stage structure, discrete vs. continuous time, metapopulation models, coexistence, and the dynamics of interacting populations. Case studies are drawn from biological oceanography, fisheries stock assessments, endangered species management, and more. This course focuses on theory and mathematical underpinnings of these dynamical models; it does not go into detail on how to fit them to data.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
     "catalogLevel": "graduate",
     "searchOnly": true
   },
@@ -35747,6 +36061,723 @@
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "OCEA 285": {
+    "concentrations": [],
+    "title": "Past Climate Change",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-285",
+    "desc": "Reviews the fundamentals of climate dynamics and explores how Earth's environment is a product of the interaction of its components. Uses examples of climate change from historical and geologic records, and from predictions of the future. Recommended for junior, senior, and graduate students in the sciences.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 286": {
+    "concentrations": [],
+    "title": "Introduction to Ocean Modeling",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-286",
+    "desc": "Fundamental concepts and ideas that underpin numerical modeling of the ocean. Topics include numerical methods and solutions of partial differential equations (PDEs), ocean circulation, wave dynamics, ocean ecosystem model, and MATLAB programming.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students, or seniors by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students, or seniors by permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290A": {
+    "concentrations": [],
+    "title": "Topics in Chemical Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290a",
+    "desc": "A weekly seminar series covering recent developments in chemical oceanography. Different topics and approaches will be stressed from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290B": {
+    "concentrations": [],
+    "title": "Topics in Biological Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290b",
+    "desc": "Explores different problems of special interest in biological oceanography. Different topics and approaches will be stressed from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290C": {
+    "concentrations": [],
+    "title": "Topics in Marine Geochemistry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290c",
+    "desc": "Selected topics in geochemistry. Discussion of theoretical models, different approaches, and recent research. Topics vary from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290D": {
+    "concentrations": [],
+    "title": "Topics in Marine Microbiology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290d",
+    "desc": "A weekly seminar series covering topics in environmental microbiology. Topics vary from year to year, and will include research in ecology, methodology, biochemistry and physiology of bacteria. Emphasis on the role of bacteria in biogeochemical cycling from microzone to global scales, with particular focus in marine systems.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290E": {
+    "concentrations": [],
+    "title": "Topics in Climatic and Oceanic Change",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290e",
+    "desc": "Weekly seminar series covering recent developments in climatic and oceanic change. Different topics and approaches stressed from year to year. Prerequisite(s): interview with instructor prior to first class meeting.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "interview with",
+    "prereqNotes": [
+      "Official prerequisite text: interview with",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290G": {
+    "concentrations": [],
+    "title": "Topics in Physical Oceanography",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290g",
+    "desc": "Weekly seminar series covering topics in physical oceanography as well as biological-physical interactions in the oceans. Different topics and approaches stressed from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; undergraduates may enroll with permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290H": {
+    "concentrations": [],
+    "title": "Topics in Ocean Optics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290h",
+    "desc": "Examines recent developments and application of bio-optics to the marine environment, including theory, instrumentation, and remote sensing. Different topics and approaches emphasized from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "previous course in ocean sciences recommended. Enrollment is restricted to graduate students; senior undergraduates with permission of",
+    "prereqNotes": [
+      "Official prerequisite text: previous course in ocean sciences recommended. Enrollment is restricted to graduate students; senior undergraduates with permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; senior undergraduates with permission of instructor.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; senior undergraduates with permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 290J": {
+    "concentrations": [],
+    "title": "Topics in Marine Organic Geochemistry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290j",
+    "desc": "Examines recent developments in uses of organic geochemistry to trace oceanographic and biogeochemical processes. Focuses on introduction to organic biomarkers, current literature, and evolving applications. Different topics and approaches emphasized from year to year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "previous course in ocean sciences and organic chemistry are recommended. Enrollment is restricted to graduate students; upper-division undergraduates with",
+    "prereqNotes": [
+      "Official prerequisite text: previous course in ocean sciences and organic chemistry are recommended. Enrollment is restricted to graduate students; upper-division undergraduates with",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students; upper-division undergraduates with instructor's permission.",
+      "Needs review: contains-recommended-language",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students; upper-division undergraduates with instructor's permission.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 295": {
+    "concentrations": [],
+    "title": "How to Write a Scientific Article",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-295",
+    "desc": "Designed as a project-oriented writing-intensive course, focused on Earth, ocean, and environmental sciences. Intended for advanced graduate students who have completed some research and are ready to write an article for submission to a journal or other venue. The student is expected to have a dataset in hand, to have already mapped out most of their interpretation, and to be ready to spend most of the quarter preparing a manuscript for submission. The course consists of writing assignments, lectures, class discussions, in-class exercises and peer-review. Enrollment is restricted to graduate students and is by permission of the instructor. Instructor will get information from prospective students to assess whether they are ready to take this class.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students and is by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students and is by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 296": {
+    "concentrations": [],
+    "title": "Teaching in Ocean Sciences",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-296",
+    "desc": "For new and/or relatively inexperienced graduate students in pedagogy of ocean sciences. Role and responsibilities of teaching in ocean sciences described and developed. Includes discussions about effective teaching methods; hands-on issues for work in the laboratory; university expectations; and regulations regarding teaching, organizational strategies, time management, and working with instructors and staff.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "graduate standing or permission of",
+    "prereqNotes": [
+      "Official prerequisite text: graduate standing or permission of",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 297A": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297a",
+    "desc": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297b",
+    "desc": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 297C": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297c",
+    "desc": "Independent reading, research, and written reports not related to thesis research. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299a",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299b",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "OCEA 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299c",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 202": {
+    "concentrations": [],
+    "title": "Topics in Ancient Greek Philosophy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-202",
+    "desc": "Topics will vary each quarter and will focus on some major ancient Greek philosophical figure or work.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 203": {
+    "concentrations": [],
+    "title": "Autism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-203",
+    "desc": "Explores autism and its implications for various fields of inquiry, especially philosophy. Previous familiarity with autism is not presupposed. Some background in philosophy of mind, cognitive science, and psychology recommended.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 213": {
+    "concentrations": [],
+    "title": "Origins of Analytic Philosophy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-213",
+    "desc": "Analytic philosophy remains the dominant philosophical style worldwide. As a style of philosophy, analytic philosophy places emphasis on logical form and on the use of logical structure as the key element for evaluating the normative status (the logical merits) of a specific position. The history of analytic philosophy remains key since core debates turn on the status of logic as a supposedly value-neutral tool. This impacts philosophical understanding regarding logic, mathematics, and the relation of these areas to the natural and social sciences.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 214": {
+    "concentrations": [],
+    "title": "Probability and Confirmation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-214",
+    "desc": "Studies the philosophical foundations of probability, induction, and confirmation. Different interpretations of probability studied, and solutions to various problems and paradoxes investigated. Students cannot receive credit for this course and PHIL 114 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and PHIL 114 .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and PHIL 114 .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 222": {
+    "concentrations": [],
+    "title": "Metaphysics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-222",
+    "desc": "Advanced introduction to topics in 20th century and contemporary analytic metaphysics. Divided into five main parts dealing, respectively, with issues about the nature of existence, properties, time, change and persistence, and material constitution.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 224": {
+    "concentrations": [],
+    "title": "Philosophy of Language",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-224",
+    "desc": "Advanced introduction to issues in the philosophy of language—primarily concerning the nature of reference, meaning, and truth. Works from such 20th-century figures as Russell, Wittgenstein, Kripke, Lewis, and Putnam discussed. Topics include what it is for a sign or a bit of language to be meaningful, or for it to identify or represent something; what it is for a statement to be truthful; what it is to be a language; and how reference works when attributed to beliefs.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 225": {
+    "concentrations": [],
+    "title": "The Pittsburgh School",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-225",
+    "desc": "Surveys representative works by three iconic \"Pittsburgh School\" thinkers, Wilfrid Sellars, Robert Brandom, and John McDowell, and how the issues they pursue, and the way they approach them, forms a unique and important line of thought in contemporary philosophy. These constitute an important counterexample to any claim that the problems and approaches of continental and analytic philosophy cannot be fruitfully integrated, or that analytic philosophy remains fated to be ahistorical. Course examines how Kant and Hegel, and Heideggar as well, powerfully inform the philosophical writings of all three. Also investigates how Sellars articulates an original philosophical vision that his younger colleagues and intellectual heirs at Pittsburgh further develop and yet make their own.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 231": {
+    "concentrations": [],
+    "title": "Epistemology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-231",
+    "desc": "May focus on topics such as naturalized epistemology, probabilistic epistemology, theories of justification, a priori knowledge, memory, and virtue epistemology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 232": {
+    "concentrations": [],
+    "title": "Advanced Topics in Value Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-232",
+    "desc": "Considers topics central to philosophical questions about value: ethics, normativity, practical reason, relativism, skepticism, responsibility, motivation, emotion, and so forth. In some instances, the investigation will proceed through influential historical figures, ancient to modern.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 233": {
+    "concentrations": [],
+    "title": "Seminar in Philosophy of Mind",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-233",
+    "desc": "A study of one or more topics in contemporary philosophy of mind.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 235": {
+    "concentrations": [],
+    "title": "Philosophy of Psychology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-235",
+    "desc": "Looks at philosophical issues raised by current research on the nature of perception, cognition, and consciousness in psychology and cognitive science or neuroscience. Can there be a science of the mind? Could machines be conscious? Do animals have minds? How did the mind evolve? These and a host of related questions form the subject matter of this course.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): One course in philosophy, psychology, or linguistics. Enrollment is restricted to graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): One course in philosophy, psychology, or linguistics. Enrollment is restricted to graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 237": {
+    "concentrations": [],
+    "title": "Making Up the Mind",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-237",
+    "desc": "How does the mind come to be a thing which science can study? Readings focus on how diagnostic categories, for example, multiple personality disorder, attain scientific cachet and what issues surround the medicalization of the mind.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 239": {
+    "concentrations": [],
+    "title": "Philosophy of Religion",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-239",
+    "desc": "Investigation of various topics in philosophy of religion.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students or by permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students or by permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "PHIL 246": {
     "concentrations": [],
     "title": "Ethics, Nature, and Natural Selection",
@@ -35770,6 +36801,516 @@
     "searchOnly": true,
     "catalogLevel": "graduate",
     "sourceCatalogYear": "2026-2027"
+  },
+  "PHIL 270": {
+    "concentrations": [],
+    "title": "Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-270",
+    "desc": "A research seminar to develop the skills of the profession with special focus on critical reading, constructing feedback, and philosophical research and writing. Enrollment is restricted to third-year Ph.D. students, and students must complete it by the end of their third year.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students. Enrollment is restricted to third-year Ph.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students. Enrollment is restricted to third-year Ph.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 280": {
+    "concentrations": [],
+    "title": "Graduate Colloquia Course",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-280",
+    "desc": "This colloquia series sponsors speakers each quarter. Students must attend all colloquia and are encouraged to form discussion groups after each lecture.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 281": {
+    "concentrations": [],
+    "title": "The Pedagogy of Philosophy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-281",
+    "desc": "Provides training for graduate students in university-level pedagogy in general and in the pedagogy of philosophy specially, under the supervision of a faculty member.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290A": {
+    "concentrations": [],
+    "title": "Philosophy of History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290a",
+    "desc": "Examines issues that arise with respect to constructing histories. Inter alia, these include: the traditional philosophy of history (e.g., Hegel and Marx); modes of explanation (including narrative); the reality of the past; and underdetermination in history.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290C": {
+    "concentrations": [],
+    "title": "Advanced Topics in Ethics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290c",
+    "desc": "Topics vary but the course focuses on major questions in contemporary ethical theory, or figures influential on contemporary moral philosophy. Examines different foundational ethical principles and arguments for those principles, contrasting accounts of moral action and moral motivation, as well as the epistemological and motivational role of emotions in ethical theory.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290F": {
+    "concentrations": [],
+    "title": "Topics in Philosophy of Biology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290f",
+    "desc": "Philosophy of biology is one of the fastest-growing areas of philosophy of science. Course is designed to give seniors and graduate students an overview of many of the diverse topics currently under discussion in modern philosophy of biology and provide a foundation for further research, regardless of previous experience with the biological sciences.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290H": {
+    "concentrations": [],
+    "title": "Environmental Ethics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290h",
+    "desc": "What is our proper moral stance toward the natural environment? This question encompasses our ethical relations to individual non-human animals, to other species of living beings, and toward the biotic community as a whole. It leads us to consider the broader question: What makes anything at all worthy of our moral respect or even our moral consideration? How are we to understand the very idea of the environment, the distinction between the human world, and the natural world, and the relationships between them.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290J": {
+    "concentrations": [],
+    "title": "Advanced Topics in the History of Ethics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290j",
+    "desc": "Careful study of any one of the main moral theories in the history of philosophy, with some emphasis on the relation to contemporary moral philosophy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290K": {
+    "concentrations": [],
+    "title": "Philosophical Matters of Scientific Practice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290k",
+    "desc": "Considers the relevance of philosophical matters to the practice of science. Using quantum physics as a case study, explores historical and contemporary perspectives on issues such as those raised by the Schrodinger cat paradox, Bell's inequalities, and quantum erasers.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290O": {
+    "concentrations": [],
+    "title": "Majors Figures in the History of Philosophy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290o",
+    "desc": "Focuses on philosophical writings and significance of a single major figure in the history of philosophy, ancient, medieval, or modern.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290P": {
+    "concentrations": [],
+    "title": "Major Figures in Contemporary Philosophy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290p",
+    "desc": "Focuses on philosophical writings and significance of a single figure in contemporary (20th- and 21st-century) philosophy. May include, but not be limited to, Russell, Whitehead, Wittgenstein, Husserl, Carnap, Murdoch, Quine, Irigaray, Derrida, and Davidson.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to philosophy graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to philosophy graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290Q": {
+    "concentrations": [],
+    "title": "Philosophy of Mathematics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290q",
+    "desc": "Introduction to the problems of contemporary analytic philosophy of mathematics. Do mathematical objects exist? Are mathematical statements true? How can we know? We will examine the historical background to contemporary debates and the positions which have been taken within them.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290S": {
+    "concentrations": [],
+    "title": "Topics in the Philosophy of Science",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290s",
+    "desc": "An examination of a topic in current philosophy of science. The material for the course is chosen from topics such as realism and instrumentalism, scientific explanation, space and time, the confirmation of theories, laws of nature, and scientific abstraction.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 290W": {
+    "concentrations": [],
+    "title": "History of Consciousness",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290w",
+    "desc": "Historical study of philosophical theories of consciousness and self-consciousness. Problems include the relation of self and other, consciousness and body, and self-consciousness and ethical agency. Readings are from Kant, Hegel, Nietzsche, and Heidegger, followed by phenomenologists, poststructuralists, and analytic philosophy.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 294": {
+    "concentrations": [],
+    "title": "Teaching-Related Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-294",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 295": {
+    "concentrations": [],
+    "title": "Directed Reading",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295",
+    "desc": "Directed reading which does not involve a term paper.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 295F": {
+    "concentrations": [],
+    "title": "Readings in Philosophy",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295f",
+    "desc": "Focuses on selected philosophical areas and/or specific philosophers. Students meet with the instructor to discuss readings and deepen their knowledge on a particular subject. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 296": {
+    "concentrations": [],
+    "title": "Special Student Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-296",
+    "desc": "A seminar for graduate students arranged between students and a faculty member. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297f",
+    "desc": "Students submit petition to course sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 299": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "PHIL 299F": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299f",
+    "desc": "Students submit petition to sponsoring agency. Enrollment is by permission of the instructor.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
   },
   "PHYS 202": {
     "concentrations": [],
@@ -36841,6 +38382,606 @@
     "catalogLevel": "graduate",
     "sourceCatalogYear": "2026-2027"
   },
+  "POLI 200A": {
+    "concentrations": [],
+    "title": "Political and Social Thought Core Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200a",
+    "desc": "Draws on history of political thought, contemporary social and critical theory, and the contributions of legal and institutional analysis of various kinds to engage in critical study of political practices that are experienced or understood as in some way limiting, oppressive, or wrong; to transform our understanding of these practices; to see their contingent conditions; and to articulate possibilities of governing ourselves differently.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 200B": {
+    "concentrations": [],
+    "title": "Social Forces and Political Change Core Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200b",
+    "desc": "Concerns transformation of social forces into political ones. Focuses on formation, articulation, mobilization, and organization of political interests and identities, their mutual interaction, and their effects on state structures and practices and vice versa. Major themes are 1) social bases of political action: class, gender, race, and other determinants of social division and political identity and 2) relevant forms of political agency and action, including development of political consciousness and representation of interests and identities in the public sphere.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 200C": {
+    "concentrations": [],
+    "title": "States and Political Institutions Core Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200c",
+    "desc": "Introduces study of political institutions as instruments of collective decision making and action. Explores alternative theoretical approaches to development of political institutions, state and political economy, and security dilemmas.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 200D": {
+    "concentrations": [],
+    "title": "Political Economy Core Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200d",
+    "desc": "Introduction to the theories and methodologies of political economy. Focuses on the relationship between states and markets and considers the politics of economic choices and institutions germane to both national and global political institutions. Addresses origins and development of markets and capitalism; historical evolution of states and their economies; relationship between labor, capital, production, and consumption; regulation of production; macroeconomics and management of economies; and issues of national and global social welfare.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 201": {
+    "concentrations": [],
+    "title": "Logics of Inquiry",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-201",
+    "desc": "Investigates approaches to study of politics and to enterprise of social science in general. Works from positivist, interpretive, historical, and critical approaches provide examples held up to critical and epistemological reflection.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 202": {
+    "concentrations": [],
+    "title": "Fundamentals of Political Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-202",
+    "desc": "Gives students practical tools to transform research questions into viable and well-crafted research designs. Introduces conceptual development, various forms of data, and rules for case selection. The goal is to train students in a range of specific methods, including interviewing, ethnography, and archival work.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 203": {
+    "concentrations": [],
+    "title": "Making of the Modern",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-203",
+    "desc": "Introduces, at the graduate level, some of the central conceptual categories and material implications that underwrite the world of the modern. Explores concepts including the individual, historicism, contract, and objectivity.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 204": {
+    "concentrations": [],
+    "title": "Bodies in History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-204",
+    "desc": "The human body has been productive of a wide range of varied and competing discourses. Among the themes covered are sexuality, hygiene, the grotesque, and criminality.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 205": {
+    "concentrations": [],
+    "title": "Critical Perspectives on Classical Political Economy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-205",
+    "desc": "Explores seminal works in classical political economy, particularly its consolidation at the moment that industrial society emerged from commercial society, as demonstrated in the writings of Bernard Mandeville, Adam Smith, and Thomas Malthus.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 206": {
+    "concentrations": [],
+    "title": "Power and Pleasure",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-206",
+    "desc": "Graduate seminar exploring connections between the body politic and human bodies, particularly as they relate to the sensory dimension of political and personal experience. The myriad ways these connections have been drawn, from antiquity to the present, belie the aspiration of philosophy to organize political life around reason. These connections also offer us ways in to consider the materiality of social life, and commercial life in particular, generating perspectives on capitalism and late modernity. Engagements with these materials also provide opportunities to explore the relationship between sensual materialism and affect theory.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 207": {
+    "concentrations": [],
+    "title": "Political Economies of Affect",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-207",
+    "desc": "Explores the potential in philosophical precursors to recent affect theory, alongside classical political economy and its critics, to develop an alternative epistemology for political economy. Readings include: Aristotle, Spinoza, Deleuze, Hume, Negri, Hardt, Smith, Bergson, and Marx.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 208": {
+    "concentrations": [],
+    "title": "Race",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-208",
+    "desc": "Considers the subject of race and racism from a political and historical perspective appealing to literatures from history, anthropology, science, and literary studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 209": {
+    "concentrations": [],
+    "title": "Radical Political Thought",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-209",
+    "desc": "Focuses on early 19th- through early 20th-century socialist and anarchist thought, excluding Marx. Theorists studied include Saint-Simon, Fourier, Proudhon, Stirner, Bakunin, Kropotkin, Perkins Gilman, and Goldman. Some secondary literature and related contemporary theory is also treated.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 210": {
+    "concentrations": [],
+    "title": "Problems of Democracy in Comparative Perspective",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-210",
+    "desc": "Democracy is an essential political concept, and a fundamentally contested one. Since the 1980s, scholars of comparative politics have attempted to explain why and when countries transition from authoritarianism to democratic institutions. However, regime change at the national level only sets the stage, leaving deeper questions about what democracy means in practice--how it plays out (or is undermined) throughout the state and at subnational levels; whom it includes and excludes; what options it opens; and what possibilities it forecloses. Such questions relate debates about the potential and the limitations of democracy in general.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 211": {
+    "concentrations": [],
+    "title": "Making and Unmaking Sovereignty",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-211",
+    "desc": "Focuses on questions of sovereignty. Of what does sovereignty consist? How is it secured, proclaimed, and perpetuated? How is it insecure, contingent, and subject to contestation? How is the idea of individual sovereignty related to the idea of the sovereignty of the state? Our aim is less to answer these questions definitively than to explore them and understand how theorists (historical and contemporary) have explored them, and how different historical episodes illuminate them.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 213": {
+    "concentrations": [],
+    "title": "Who Governs the Globe? Exploring Agency and Authority in Contemporary World Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-213",
+    "desc": "Addresses the role of non- and sub-state actors in global governance. Explores the concept of agency in world politics, and the conditions under which these actors acquire global agency in contemporary world politics. Introduces various theoretical perspectives with which to identify and evaluate agency, with a focus on alternative sources of authority, identity, and power.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 214": {
+    "concentrations": [],
+    "title": "Thinking Green: Politics, Ethics, Political Economy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-214",
+    "desc": "Green political thought, philosophy, debates, and practices; history of ecological thought and comparative study of competing ideas and proposals. Critical examination of neo-liberal environmentalism.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 216": {
+    "concentrations": [],
+    "title": "Theorizing Politics Beyond the State",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-216",
+    "desc": "Explores some of the major ways the modern nation-state has been theorized by political theorists, political scientists, and sociologists before moving on to examine some alternate modalities of organizing collective life from Anglophone and Francophone Africa, the Caribbean, India, China, Indigenous Hawaii and North America, and the Muslim world.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 217": {
+    "concentrations": [],
+    "title": "Besieged Polities...",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-217",
+    "desc": "Introduction to the study of transnational security apparatuses and politically sensitive forms of mobility, with a focus on borders, their political significance, and those who monitor, cross and challenge them. Discussion includes recent monographs published in the fields of critical security studies, critical border studies, and new mobilities. Also studies these works in conversation with more traditional approaches in the field (notably realist, constructivist and neo-functionalist) that they aim to problematize. In addition, students reflect on the tools provided by different disciplinary approaches (international relations, cultural anthropology, critical theory, history) to think about these issues.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate studies.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate studies.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 218": {
+    "concentrations": [],
+    "title": "Law and/Vs. Justice: The Rule of Law and Problems of (In)Justice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-218",
+    "desc": "Explores major debates on the role and rule of law in society, with attention to efforts to use law to seek justice or respond to injustice. This includes engaging in three overlapping sets of conversations: What is law—its sources and functions—and how, where, and on whom does it operate? What is the \"rule of law\"—what is it for and whom does/can it serve and how? What are different ways that people and groups grapple with or respond to the role of law in injustice—including \"the Nazi problem,\" \"the slavery problem,\" the colonialism/imperialism problem, the Jim Crow/apartheid problem, etc—and what are the possibilities, challenges, and limits? Theoretical perspectives on the sources/origins and role of law in society will be considered as well as case studies and concrete examples that show how this tool is applied to particular challenges.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 220": {
+    "concentrations": [],
+    "title": "Un(Doing) History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-220",
+    "desc": "Engages the politics of history through multiple frames: subject matter, interpretation, and the epistemological precepts that underwrite history as a discipline. Introduces students to a wide range of interdisciplinary literatures that include different historical methodologies, feminist theory, political theory, queer studies, postcolonial theory, and critical race studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 222": {
+    "concentrations": [],
+    "title": "Conflict and Change in American Politics and Policy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-222",
+    "desc": "Explores the dynamic and contested interaction between politics and policy in the U.S. context, through examining the historical development of key contemporary policy debates and political conflicts. Introduces recent scholarship, drawing on history, sociology, and political economy that has challenged traditional behavioralist approaches to understanding American politics and policy development.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 223": {
+    "concentrations": [],
+    "title": "Topics in American Political Development",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-223",
+    "desc": "Explores several important topics that have emerged from the renewed interest in political development, and are visible within its scholarship in American Political Development; for example, state-building, institutional change, representation, culture, participation, political identity, and economic and social transformations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 232": {
+    "concentrations": [],
+    "title": "United States Political History",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-232",
+    "desc": "Covers several important themes and sets of readings from the literature on American political development. Topics include the origins and development of American political institutions, the evolution of democratic mechanisms, the rise and fall of social movements, and debates about the sources of policy regimes and political change.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 241": {
+    "concentrations": [],
+    "title": "Foundations and Frontiers in Comparative Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-241",
+    "desc": "Overview of the major theoretical approaches to the study of comparative politics. This includes diverse literatures such as institutions and political economy, authoritarianism and democracy, and civil society and social movements. Case material is drawn from Latin America, Africa, Europe, North America, Asia and the Pacific.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "POLI 243": {
     "concentrations": [],
     "title": "Comparative Methods",
@@ -36862,6 +39003,519 @@
       "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
     ],
     "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 245": {
+    "concentrations": [],
+    "title": "Latin American Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-245",
+    "desc": "Surveys the Latin American political literature by studying: 1) critical moments in political development (e.g., state formation, democratization); 2) important political institutions (e.g., presidentialism, party, and electoral systems); and 3) influential political actors (e.g., unions, business associations, social movements).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 247": {
+    "concentrations": [],
+    "title": "Comparative Urban Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-247",
+    "desc": "Focuses on local government structures and the relationships with other levels of government. Examines institutions and administration; urban political economy (fiscal strain, poverty, inequality, and the efforts to attract economic investment); political machines; race and ethnicity.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 248": {
+    "concentrations": [],
+    "title": "On Property",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-248",
+    "desc": "Reviews the literatures on property connected to the state, personhood, gender, and legal systems. These conversations take place at the intersection of sociology, jurisprudence, history, economics, and politics in comparative perspective. Course starts with a birds-eye view and progressively hones in on the relation between political economy and family law. Students explore in class discussions and in their research papers closely related issues, including but not limited to intersectionality with race and ethnicity, sexual orientations, different family/household types, in these and other cultural contexts and legal traditions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 249": {
+    "concentrations": [],
+    "title": "Politics of Protest",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-249",
+    "desc": "Explores topics related to protest and political participation from theoretical and empirical perspectives.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 255": {
+    "concentrations": [],
+    "title": "Comparative Anti-Colonialisms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-255",
+    "desc": "Political thought of anti-colonial movements in comparative, historical perspective, including 18th- to 20th-Century European colonies of America and Asia. Focuses both on the contemporary political thought of these movements as well as on historiographical approaches of secondary literature.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 257": {
+    "concentrations": [],
+    "title": "Women Interpret Islam",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-257",
+    "desc": "Examines how prominent female Muslim thinkers have interpreted the Islamic tradition since the early 20th century. It surveys how thinkers who belonged to different intellectual traditions (liberal, Marxist, Islamist, feminist, etc.) engaged Islamic exegetical, legal, philosophical, theological and mystical traditions to find answers to the questions raised by their historical and sociopolitical contexts. These questions included: What is/are the Islamic understanding(s) of the purpose of individual and collective lives? What does freewill mean in Islam, and what is its relationship to responsibility towards oneself and one's community? Is there an Islamic notion of justice, and how does it relate to the way justice is defined by other intellectual traditions? What are the legitimate ways of exercising social and political authority to establish the Islamic vision(s) of the good life? How is establishing that vision related to the notion of jihad (striving in the path of God)? What implications does that vision, and its concomitant notions of justice and freewill, have on developing an Islamic understanding of the relationship between different genders, classes, and human groups?",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 261": {
+    "concentrations": [],
+    "title": "Key Issues in Contemporary Chinese Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-261",
+    "desc": "Addresses topics ranging from the core institutions of the party-state to local politics, economic governance, and state-society interactions in multiple realms. Considers China in its own terms while evaluating the relevance of theoretical concepts from various fields in the social sciences. Aims to identify opportunities for new research projects.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 270": {
+    "concentrations": [],
+    "title": "Advanced Topics in Global Environmental Governance: Agency Beyond the State",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-270",
+    "desc": "Explores if, how, and under what conditions agency and power are diffusing away from the state to non-state actors such as, NGOs/civil society, corporations, and international organizations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 271": {
+    "concentrations": [],
+    "title": "Global Politics and Geo-Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-271",
+    "desc": "Explores global politics in relation to geo-political formations that are developing in concert with contemporary crises in capitalist globalization, but which are also shaped by a wide range of intersecting racial, sexual, environmental, national, and neocolonial politics as well.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 272": {
+    "concentrations": [],
+    "title": "Critical Interventions in IR Theory and Global Political Economy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-272",
+    "desc": "Seminar examines selections from the canonical literature in international relations theory and global political economy through a number of critical lenses, including constructivist, feminist, historical materialist, and subaltern approaches.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 275": {
+    "concentrations": [],
+    "title": "Contemporary Capitalism",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-275",
+    "desc": "Examines genesis of new institutions within the force of social ties and networks. Studies how social and organizational relationships achieve individual or group goals in political and economic life, and influence institutional design. Considers when and what ties contribute to governance and economic performance, and when informal and formal organizations constitute an obstacle.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 291": {
+    "concentrations": [],
+    "title": "Teaching Assistant Seminar",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-291",
+    "desc": "Two-hour weekly seminar required of teaching assistants in which pedagogic and substantive issues will be considered. The experience of performing teaching assistant duties constitutes subject matter for discussion. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 292": {
+    "concentrations": [],
+    "title": "Professional Development",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-292",
+    "desc": "Primarily for first- and second-year graduate students. Students learn the norms and expectations of graduate school and a variety of professional roles. Students develop a plan for their graduate career and for establishing a professional network of mentors and peer audiences for their work.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 293": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-293",
+    "desc": "Individual study undertaken off campus with direct faculty supervision. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 295A": {
+    "concentrations": [],
+    "title": "Research Colloquium",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295a",
+    "desc": "Weekly venue for Ph.D. students to present current research, exchange information on sources and resources, discuss and critique epistemologies and methods, and to formulate topics for QE field statements and the dissertation. There are no assigned readings. May be repeated for credit twice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 295B": {
+    "concentrations": [],
+    "title": "Advanced Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295b",
+    "desc": "Weekly seminar for Ph.D. students in which to develop and write extended research papers on selected topics, to present current work, to discuss methods, data sources, and fieldwork, and to receive critiques and assessments from fellow students. May be repeated for credit twice.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 297A": {
+    "concentrations": [],
+    "title": "Indep Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297a",
+    "desc": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 297B": {
+    "concentrations": [],
+    "title": "Indep Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297b",
+    "desc": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 297C": {
+    "concentrations": [],
+    "title": "Indep Study",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297c",
+    "desc": "A student approaches a member of the staff and proposes to take POLI 297 on a subject he or she has chosen that is not covered in other politics graduate courses or plans a graduate independent study that includes an undergraduate course. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 299A": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299a",
+    "desc": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students and permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 299B": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299b",
+    "desc": "Enrollment restricted to graduate students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students and permission of instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "POLI 299C": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 15,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299c",
+    "desc": "Enrollment restricted to gradaute students and permission of instructor. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to gradaute students and permission of instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to gradaute students and permission of instructor.",
     "catalogLevel": "graduate",
     "searchOnly": true
   },

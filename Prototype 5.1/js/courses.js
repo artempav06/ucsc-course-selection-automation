@@ -83061,6 +83061,27 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "OAKS 50": {
+    "concentrations": [],
+    "title": "Inner Verse: Exploring Identity Through Writing",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-50",
+    "desc": "Examines the work of contemporary American writers whose work explores identity and social justice, with a particular focus on women writers and writers of color. Students create a portfolio of their own writing in response to weekly creative exercises and critical analysis of the assigned texts. Fulfills the Creative Process GE requirement. The course assignments include generating and workshopping student work in response to weekly prompts as well as interpreting texts in a weekly analytical close reading assignment.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to college members.",
+      "Oakes College membership restriction is preserved as a note and is not engine-enforced as a course prerequisite."
+    ],
+    "enrollmentText": "Enrollment is restricted to college members."
+  },
   "OAKS 60": {
     "concentrations": [],
     "title": "Oakes Literary Journal: Further Reflections on a Diverse Society",
@@ -83397,6 +83418,40 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "OAKS 145A": {
+    "concentrations": [],
+    "title": "Early Black Histories of California",
+    "units": 2,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145a",
+    "desc": "Examines the early Black histories of California in order to prepare students for the community engaged archival and public history project in collaboration with the London Nelson Center and the London Nelson Legacy Initiative. Students are exposed to early Black California histories with particular emphasis on how those histories manifested themselves in the Central Coast of California. They also learn how to work collaboratively with community partners and learn best practices for community engaged scholarship. This course must be taken in conjunction with Oakes 145B, Community Engaged History Practicum: The London Nelson Legacy Initiative.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "OAKS 145B": {
+    "concentrations": [],
+    "title": "COMMUNITY ENGAGED HISTORY PRACTICUM THE LONDON NELSON LEGACY INSTITUTE",
+    "units": 3,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145b",
+    "desc": "Students learn the process of community archiving and public-facing history. Working alongside the archivists at the London Nelson Center, students work to develop the HighJohn-Bey Archives, a comprehensive, publicly accessible digital repository that documents Black Gold Rush-era history in Santa Cruz County, including Watsonville. This project will not only deepen historical understanding but will also provide UCSC students with hands-on experience in archival research, digitization, and community-centered historical documentation. This course must be taken in conjunction with Oakes 145A: Early Black Histories of California.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "OAKS 150": {
     "concentrations": [],
@@ -84224,6 +84279,50 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "ESCI 100A."
+  },
+  "OCEA 151": {
+    "concentrations": [],
+    "title": "Field and Lab Methods in Aquatic Biogeochemistry",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-E",
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-151",
+    "desc": "Introduction to aquatic biogeochemistry field and lab techniques used to investigate nutrient cycling. Students learn how to collect field samples for biogeochemistry including particulate organic matter, dissolved organic matter, and plankton counts at Younger Lagoon. Students collect water samples for surface particulate organic matter and stoichiometric ratios alongside environmental data to evaluate the patterns, variation, and controls of biotic and abiotic factors. In the lab students process samples to address thoughtful research questions. Students gain hands-on experience processing biogeochemical processes over seasonal and interannual cycles.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
+  "OCEA 152": {
+    "concentrations": [],
+    "title": "Field and Lab Methods in Aquatic Molecular Ecology",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [
+      [
+        "ESCI 150"
+      ]
+    ],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-152",
+    "desc": "Introduction to molecular and bioinformatic techniques used to investigate aquatic microbiomes. Students learn how to collect field samples for molecular analyses at the Younger Lagoon and Santa Cruz Wharf. Using fundamental techniques in modern molecular microbial ecology including metabarcoding, DNA sequencing (including real-time), quantitative PCR, fluorescent in situ hybridizations, and flow cytometry, students characterize microbial assemblages and investigate microbial activity in two very different field sites. Students gain hands-on experience processing sequence and imaging data and analyzing microbial community variability over seasonal and interannual cycles.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): ESCI 150 .",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): ESCI 150 ."
+    ]
   },
   "OCEA 158": {
     "concentrations": [],
@@ -91022,6 +91121,23 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "PRTR 27": {
+    "concentrations": [],
+    "title": "Time Management for College",
+    "units": 2,
+    "division": "lower",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-27",
+    "desc": "Seminar offering students different strategies to navigate the time demands of their course load in balance with their personal lives. Course begins by examining your own relationship to time management. Students tackle common time-management strategies and discuss how to overcome obstacles such as screen distraction, procrastination, and mental health. Course also discusses the dangers surrounding “grind culture” and students work together as a class to create realistic project management systems that balance mental wellness, job/family obligations, and college demands.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "PRTR 35M": {
     "concentrations": [],
     "title": "The Mockumentary Film",
@@ -91145,6 +91261,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "PRTR 47": {
+    "concentrations": [],
+    "title": "Zines and Community-Based Research",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-47",
+    "desc": "Experience immersive research strategies focused on critical social issues through the lens of book arts and self-publishing. Drawing on approaches to field research from the social sciences, students work on a collaborative project that explores local knowledge, organizing, and history in collaboration with community members and organizations. The class culminates in a DIY zine project showcasing research findings, allowing the work to extend beyond the class itself through circulation. Students gain important skills for managing short book-length projects, including design, layout, writing, illustration, printing, binding, and considerations for distribution.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "PRTR 47K": {
     "concentrations": [],

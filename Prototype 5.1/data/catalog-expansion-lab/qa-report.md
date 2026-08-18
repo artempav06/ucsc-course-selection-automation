@@ -1,13 +1,13 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-18T02:34:39.761Z
+Generated: 2026-08-18T02:45:57.026Z
 
 ## Summary
 
-- Candidate count: 224
-- Passed with no warnings: 56
-- Warnings only / human review needed: 165
-- Blocked by hard errors: 3
+- Candidate count: 126
+- Passed with no warnings: 32
+- Warnings only / human review needed: 88
+- Blocked by hard errors: 6
 
 ## Merge readiness
 
@@ -15,622 +15,355 @@ Not ready to merge: hard QA errors exist.
 
 ## Rows
 
-- LING 134 — Languages of Central Eurasia: Writing Systems, Policy, and Identity: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-134
-- LING 177 — Computational Cognitive Modeling—Building Minds with Code: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-177
-- LING 211 — Phonology A: warnings-only
+- OAKS 145A — Early Black Histories of California: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145a
+- OAKS 145B — COMMUNITY ENGAGED HISTORY PRACTICUM THE LONDON NELSON LEGACY INSTITUTE: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145b
+- OAKS 50 — Inner Verse: Exploring Identity Through Writing: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-211
-- LING 212 — Phonology B: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-212
-- LING 214 — Phonetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-214
-- LING 215 — Phonetics B: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-215
-- LING 216 — Phonology Proseminar: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-216
-- LING 219 — Phonology Seminar: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219
-- LING 219G — Phonology Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-50
+- OCEA 151 — Field and Lab Methods in Aquatic Biogeochemistry: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-151
+- OCEA 152 — Field and Lab Methods in Aquatic Molecular Ecology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-152
+- OCEA 200 — Physical Oceanography: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200
+- OCEA 201 — Advanced Physical Oceanography: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219g
-- LING 221 — Syntax A: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-221
-- LING 222 — Syntax B: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-222
-- LING 226 — Proseminar in Syntax: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226
-- LING 226G — Proseminar in Syntax: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226g
-- LING 229 — Syntax Seminar: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229
-- LING 229G — Syntax Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229g
-- LING 231 — Semantics A: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-231
-- LING 232 — Semantics B: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-232
-- LING 236 — Proseminar in Semantics: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236
-- LING 236G — Semantics Proseminar: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236g
-- LING 239 — Semantics Seminar: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239
-- LING 239G — Semantics Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239g
-- LING 240 — The Pedagogy of Linguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-240
-- LING 244 — Computational Methods for Linguists: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-244
-- LING 248 — Topics in Computational Methods and Models: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-248
-- LING 249 — Morphology Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249
-- LING 249G — Morphology Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249g
-- LING 257 — Psycholinguistics and Linguistic Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-257
-- LING 258 — Advanced Psycholinguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258
-- LING 258G — Advanced Psycholinguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258g
-- LING 259 — Phonetics Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259
-- LING 259G — Phonetics Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259g
-- LING 279 — Research Seminar in Psycholinguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-279
-- LING 280 — Proseminar in Experimental Linguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280
-- LING 280A — Linguistic Investigation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280a
-- LING 280B — Linguis Investigati: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280b
-- LING 280G — Proseminar in Experimental Linguistics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280g
-- LING 282 — Field Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-282
-- LING 290 — Research Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-290
-- LING 295 — Directed Reading: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-295
-- LING 296 — Linguistics Colloquium: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-296
-- LING 297A — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297a
-- LING 297B — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297b
-- LING 297C — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297c
-- LING 297F — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297f
-- LING 299A — Thesis Research: warnings-only
-  - Warnings: missing-description; review:missing-description
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299a
-- LING 299B — Thesis Research: warnings-only
-  - Warnings: missing-description; review:missing-description
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299b
-- LING 299C — Thesis Research: warnings-only
-  - Warnings: missing-description; review:missing-description
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299c
-- LIT 112S — Samuel Johnson: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-112s
-- LIT 116J — Religions of India: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-116j
-- LIT 126R — Race and Speculative Fiction: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-126r
-- LIT 130E — Nature and Myth: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130e
-- LIT 130M — Witchcraft & Magic: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130m
-- LIT 133L — Women Behaving Badly in East Asian Fiction: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-133l
-- LIT 139C — Diasporic Literature and Film of California: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-139c
-- LIT 148B — The Harlem Renaissance and its Afterlives: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-148b
-- LIT 149K — Literature and Social Movements: Writing on Rioting: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-149k
-- LIT 151M — German Drama: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-151m
-- LIT 155P — Gangsters and Destiny: French Film Noir: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-155p
-- LIT 167N — Looking for Life in Space, from 1000 BCE to the Present: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167n
-- LIT 167P — Literature and Social Movements for Health Justice: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167p
-- LIT 167W — Wildfire in the West: Literature, Art, Theory: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167w
-- LIT 188Y — C&#243;mics latinoamericanos: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-188y
-- LIT 190AA — The Afterlife: Visions, Prophecies, and Fiction: warnings-only
-  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190aa
-- LIT 190M — Women Novelists: warnings-only
-  - Warnings: review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190m
-- LIT 200 — Proseminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-200
-- LIT 201 — The Pedagogy of Literature: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-201
-- LIT 202 — Translation and Translingual Practice: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-202
-- LIT 204 — Readings in Literature: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-204
-- LIT 205 — Writing and Publication Practicum: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-205
-- LIT 206 — Critical Writing Practicum: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-206
-- LIT 207 — Colloquium: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-207
-- LIT 221 — Canons: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-221
-- LIT 222 — Topics in English Language Literature: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-222
-- LIT 223 — Periods and Movements: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-223
-- LIT 224 — Transnational Literatures: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-224
-- LIT 230A — Topics in Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230a
-- LIT 230B — Narrative Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230b
-- LIT 230C — Feminist Theories/Historical Perspectives: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230c
-- LIT 231A — Studies in Literary and Cultural History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-231a
-- LIT 233E — Reading Plants: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-233e
-- LIT 237A — Modernism: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-237a
-- LIT 240A — Studies in Antiquity: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-240a
-- LIT 240G — History and Tragedy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-240g
-- LIT 243A — Studies in Early Modernity: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-243a
-- LIT 243B — Early Modern Colonial Encounters: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-243b
-- LIT 246 — Individual Authors: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-246
-- LIT 250 — Theory and Methods: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-250
-- LIT 250B — Forms and Aesthetics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-250b
-- LIT 251 — Topics in Cultural Studies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-251
-- LIT 254 — Religion and Post-Secular: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-254
-- LIT 279A — Methods and Materials: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-279a
-- LIT 279B — Writing Studio: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-279b
-- LIT 282A — Studies in Literary Genres: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282a
-- LIT 282B — Studies in Literary and Cultural History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282b
-- LIT 282C — Texts and Contexts: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282c
-- LIT 282D — Topics in Theory: warnings-only
-  - Warnings: missing-description; review:missing-description; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282d
-- LIT 282F — French Literature Outside France: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282f
-- LIT 283A — Deutsche Literatur und Kultur: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-283a
-- LIT 285E — Boccaccio: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-285e
-- LIT 285H — Studies in Italian Literature and Culture: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-285h
-- LIT 288C — Don Quijote: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288c
-- LIT 288F — Writing and Re-Writing of the Conquest and Colonial Period in Spanish America: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288f
-- LIT 288M — Cuba: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288m
-- LIT 288O — The Conquest through the Eyes of Contemporary Writers: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288o
-- LIT 288P — The Avant Garde in Latin America: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288p
-- LIT 288S — Citiscapes: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288s
-- LIT 288U — Spain in the Eyes/Camera of Pedro Almodovar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288u
-- LIT 288W — Becoming European: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288w
-- LIT 288Y — Teoria Critica en America Latina: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288y
-- LIT 288Z — Literatura y sociedad: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288z
-- LIT 291F — Advising: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-291f
-- LIT 293 — Independent Study: Creative Writing: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-293
-- LIT 294 — Teaching-Related Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-294
-- LIT 295A — Directed Reading: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295a
-- LIT 295B — Directed Reading: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295b
-- LIT 295C — Directed Reading: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295c
-- LIT 296A — Special Student Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296a
-- LIT 296B — Special Student Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296b
-- LIT 296C — Special Student Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296c
-- LIT 297A — Independent Study: warnings-only
-  - Warnings: missing-description; review:missing-description
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297a
-- LIT 297B — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297b
-- LIT 297F — Independent Study: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297f
-- LIT 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-299a
-- LIT 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-299b
-- LIT 60B — Introduction to Anime Studies: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60b
-- LIT 60C — Banned Books: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60c
-- LIT 60X — Kamasutra, Tantra, and Sex in Ancient India: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60x
-- LIT 81L — The Lord of the Rings: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-81l
-- LIT 87B — One Great Book: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87b
-- LIT 87H — What Can I Do with My Degree? Humanities-Powered Jobs: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87h
-- MATH 292 — Seminar: blocked
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-201
+- OCEA 211 — Climate Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-211
+- OCEA 215 — Predicting the Atmosphere, Ocean, and Climate: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-215
+- OCEA 218 — Marine Microbial Ecology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-218
+- OCEA 220 — Chemical Oceanography: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220
+- OCEA 224 — Aquatic Organic Geochemistry: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-224
+- OCEA 230 — Biological Oceanography: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-230
+- OCEA 241 — Dynamics of Marine Ecosystems: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-241
+- OCEA 251 — Field and Lab Methods in Aquatic Biogeochemistry: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-251
+- OCEA 252 — Field and Lab Methods in Aquatic Molecular Ecology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-252
+- OCEA 255 — Visualizing Ocean Data: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-255
+- OCEA 265 — Marine Population Dynamics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-265
+- OCEA 285 — Past Climate Change: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-285
+- OCEA 286 — Introduction to Ocean Modeling: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-286
+- OCEA 290A — Topics in Chemical Oceanography: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290a
+- OCEA 290B — Topics in Biological Oceanography: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290b
+- OCEA 290C — Topics in Marine Geochemistry: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290c
+- OCEA 290D — Topics in Marine Microbiology: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290d
+- OCEA 290E — Topics in Climatic and Oceanic Change: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290e
+- OCEA 290G — Topics in Physical Oceanography: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290g
+- OCEA 290H — Topics in Ocean Optics: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290h
+- OCEA 290J — Topics in Marine Organic Geochemistry: warnings-only
+  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290j
+- OCEA 292 — Seminar: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-292
+- OCEA 295 — How to Write a Scientific Article: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-295
+- OCEA 296 — Teaching in Ocean Sciences: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-296
+- OCEA 297A — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297a
+- OCEA 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297b
+- OCEA 297C — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297c
+- OCEA 299A — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299a
+- OCEA 299B — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299b
+- OCEA 299C — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299c
+- PHIL 202 — Topics in Ancient Greek Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-202
+- PHIL 203 — Autism: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-203
+- PHIL 213 — Origins of Analytic Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-213
+- PHIL 214 — Probability and Confirmation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-214
+- PHIL 222 — Metaphysics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-222
+- PHIL 224 — Philosophy of Language: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-224
+- PHIL 225 — The Pittsburgh School: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-225
+- PHIL 231 — Epistemology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-231
+- PHIL 232 — Advanced Topics in Value Theory: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-232
+- PHIL 233 — Seminar in Philosophy of Mind: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-233
+- PHIL 235 — Philosophy of Psychology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-235
+- PHIL 237 — Making Up the Mind: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-237
+- PHIL 239 — Philosophy of Religion: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-239
+- PHIL 270 — Research Seminar: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-270
+- PHIL 280 — Graduate Colloquia Course: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-280
+- PHIL 281 — The Pedagogy of Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-281
+- PHIL 290A — Philosophy of History: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290a
+- PHIL 290C — Advanced Topics in Ethics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290c
+- PHIL 290F — Topics in Philosophy of Biology: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290f
+- PHIL 290H — Environmental Ethics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290h
+- PHIL 290J — Advanced Topics in the History of Ethics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290j
+- PHIL 290K — Philosophical Matters of Scientific Practice: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290k
+- PHIL 290O — Majors Figures in the History of Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290o
+- PHIL 290P — Major Figures in Contemporary Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290p
+- PHIL 290Q — Philosophy of Mathematics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290q
+- PHIL 290S — Topics in the Philosophy of Science: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290s
+- PHIL 290W — History of Consciousness: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290w
+- PHIL 294 — Teaching-Related Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-294
+- PHIL 295 — Directed Reading: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295
+- PHIL 295F — Readings in Philosophy: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295f
+- PHIL 296 — Special Student Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-296
+- PHIL 297 — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297
+- PHIL 297F — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297f
+- PHIL 299 — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299
+- PHIL 299F — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299f
+- PHYE 209B — Boating: Graduate Beginning Dinghy Sailing: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b
+- PHYE 209C — Boating: Graduate Intermediate Dinghy Sailing: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c
+- PHYE 209S — Boating: Grad Student Beginning Keelboat Sailing: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209s
+- PHYE 21A — Introduction to Golf: blocked
+  - Errors: invalid-units
+  - Warnings: review:missing-units
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/lower-division/phye-21a
+- PHYS 292 — Seminar: blocked
   - Errors: invalid-units
   - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-292
-- METX 131 — Food Microbiology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-131
-- METX 150L — Microbial Life in Extreme Environments: Field and Lab Methods: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-150l
-- METX 200B — Graduate Research Project Development: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-200b
-- METX 201 — Sources and Fates of Pollutants: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292
+- POLI 200A — Political and Social Thought Core Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-201
-- METX 202 — Advanced Topics in Environmental Health: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200a
+- POLI 200B — Social Forces and Political Change Core Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-202
-- METX 203 — Cellular and Molecular Toxicology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200b
+- POLI 200C — States and Political Institutions Core Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-203
-- METX 205 — Scientific Grant Writing: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200c
+- POLI 200D — Political Economy Core Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-205
-- METX 206A — Advanced Microbiology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200d
+- POLI 201 — Logics of Inquiry: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-206a
-- METX 210 — Molecular and Cellular Basis of Bacterial Pathogenesis: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-201
+- POLI 202 — Fundamentals of Political Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-210
-- METX 215 — Antibiotics: Actions and Resistance: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-215
-- METX 238 — Inflammation: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-202
+- POLI 203 — Making of the Modern: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-238
-- METX 240 — Molecular Biology of Prokaryotes: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-240
-- METX 245A — Scientific Communication in Microbiology and Environmental Toxicology A: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245a
-- METX 245B — Scientific Communication in Microbiology and Environmental Toxicology B: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245b
-- METX 250 — Environmental Microbiology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-203
+- POLI 204 — Bodies in History: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-250
-- METX 281A — Seminar in Global Health: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-204
+- POLI 205 — Critical Perspectives on Classical Political Economy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281a
-- METX 281C — Topics in Environmental Microbiology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-205
+- POLI 206 — Power and Pleasure: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281c
-- METX 281J — Mechanisms of Virulence and Resistance to Infectious Disease: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-206
+- POLI 207 — Political Economies of Affect: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281j
-- METX 281M — Topics in Molecular Toxicology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-207
+- POLI 208 — Race: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281m
-- METX 281O — Topics in Bacterial Pathogenesis: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-208
+- POLI 209 — Radical Political Thought: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281o
-- METX 281P — Origins and Applications of Human Gut Microbial Symbiosis: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-209
+- POLI 210 — Problems of Democracy in Comparative Perspective: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281p
-- METX 281R — Topics in Genome-Environment Interactions: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-210
+- POLI 211 — Making and Unmaking Sovereignty: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281r
-- METX 281S — Cellular and Organismal Responses to Toxicants: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-211
+- POLI 213 — Who Governs the Globe? Exploring Agency and Authority in Contemporary World Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281s
-- METX 281V — Topics in Bacterial Pathogenesis and Innate Immunity: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-213
+- POLI 214 — Thinking Green: Politics, Ethics, Political Economy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281v
-- METX 281Y — Biofilms: Processes and Regulation: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-214
+- POLI 216 — Theorizing Politics Beyond the State: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281y
-- METX 282 — Current Approaches to Molecular Pathogenesis: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-282
-- METX 290 — Proseminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-216
+- POLI 217 — Besieged Polities...: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-290
-- METX 290A — Epidemiology and Risk Assessment: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-290a
-- METX 292 — Introductory Graduate Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-292
-- METX 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297a
-- METX 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297b
-- METX 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297c
-- METX 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299a
-- METX 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299b
-- METX 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299c
-- METX 299Z — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299z
-- MUSC 105X — Music and Aural Diversity: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-105x
-- MUSC 180X — Indian Music Workshop: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-180x
-- MUSC 200 — Introduction to Research Methods: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-217
+- POLI 218 — Law and/Vs. Justice: The Rule of Law and Problems of (In)Justice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-200
-- MUSC 201 — History of Music Theory from the Greeks Through Rameau: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-218
+- POLI 220 — Un(Doing) History: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-201
-- MUSC 202 — Tonal and Posttonal Analysis: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-202
-- MUSC 203A — Performance Practice in the Middle Ages: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-220
+- POLI 222 — Conflict and Change in American Politics and Policy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203a
-- MUSC 203B — Performance Practice in the Renaissance: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-222
+- POLI 223 — Topics in American Political Development: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203b
-- MUSC 203C — Performance Practice in the Baroque: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-223
+- POLI 232 — United States Political History: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203c
-- MUSC 203D — Performance Practice in the Classic Period: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-232
+- POLI 241 — Foundations and Frontiers in Comparative Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203d
-- MUSC 203E — Performance Practice in the Romantic Period: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203e
-- MUSC 203F — Performance Practice in the 20th Century: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203f
-- MUSC 203G — Concepts, Issues, and the Practice of Ethnomusicology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203g
-- MUSC 203H — Area Studies in Performance Practice: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203h
-- MUSC 203I — Musics of Central Asia: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-241
+- POLI 245 — Latin American Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203i
-- MUSC 204 — Pedagogy of Music: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-245
+- POLI 247 — Comparative Urban Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-204
-- MUSC 204W — Graduate Writing Workshop: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-247
+- POLI 248 — On Property: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-204w
-- MUSC 205A — Conceptual Foundations in Western Music Analysis: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-248
+- POLI 249 — Politics of Protest: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-205a
-- MUSC 205B — Conceptual Foundations in Global Musics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-249
+- POLI 255 — Comparative Anti-Colonialisms: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-205b
-- MUSC 206A — Global Music Composition: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-255
+- POLI 257 — Women Interpret Islam: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206a
-- MUSC 206B — Computer-Assisted Composition: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-257
+- POLI 261 — Key Issues in Contemporary Chinese Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206b
-- MUSC 206C — Composing for Instruments and Live Electronics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-261
+- POLI 270 — Advanced Topics in Global Environmental Governance: Agency Beyond the State: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206c
-- MUSC 206D — Music Perception and Cognition: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-270
+- POLI 271 — Global Politics and Geo-Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206d
-- MUSC 206E — Experimental Sound Practices: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-271
+- POLI 272 — Critical Interventions in IR Theory and Global Political Economy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206e
-- MUSC 206I — Negotiating the Musical Work: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-272
+- POLI 275 — Contemporary Capitalism: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206i
-- MUSC 219 — Techniques in Composition: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-275
+- POLI 291 — Teaching Assistant Seminar: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-291
+- POLI 292 — Professional Development: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-219
-- MUSC 220 — Graduate Seminar in Music Composition: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-220
-- MUSC 252 — Current Issues Colloquium: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-252
-- MUSC 253A — Historical Perspectives in Musicology and Ethnomusicology: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-292
+- POLI 293 — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-293
+- POLI 295A — Research Colloquium: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253a
-- MUSC 253B — Rhythm, Time, and Form: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253b
-- MUSC 253C — Music and Discourse: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295a
+- POLI 295B — Advanced Research Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253c
-- MUSC 253D — Issues in the Ethnography of Music: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295b
+- POLI 297A — Indep Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297a
+- POLI 297B — Indep Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297b
+- POLI 297C — Indep Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297c
+- POLI 299A — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253d
-- MUSC 253S — The Politics of Aesthetics and Spirituality: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-placement-exam-or-writing-requirement; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253s
-- MUSC 254A — Music and Aural Diversity: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299a
+- POLI 299B — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254a
-- MUSC 254C — Performativity and Music: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299b
+- POLI 299C — Thesis Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254c
-- MUSC 254D — Organology and Acoustics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254d
-- MUSC 254E — Asian Resonances in 20th-Century American and European Music: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254e
-- MUSC 254F — Beethoven: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254f
-- MUSC 254G — Queen and British Popular Music of the 1970s and 80s: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254g
-- MUSC 254H — The Lauryn Hill Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254h
-- MUSC 254J — Jazz Historiography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254j
-- MUSC 254K — Music, Gender, and Sexuality: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254k
-- MUSC 254L — John Cage: Innovation, Collaboration, and Performance Technologies: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254l
-- MUSC 254M — Music in San Francisco, 1850-1950: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254m
-- MUSC 254N — Cruising the Postcolony: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254n
-- MUSC 254O — Historiography of American Music: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254o
-- MUSC 254R — Research Design and Grant Writing for Music Scholars: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254r
-- MUSC 254W — West-Coast Experimentalism in the Mid-20th Century United States: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254w
-- MUSC 254X — Minimalism: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254x
-- MUSC 254Z — Issues in Contemporary and Experimental Music: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254z
-- MUSC 261 — Graduate Applied Instruction: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-261
-- MUSC 265 — Graduate Ensemble Participation: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-265
-- MUSC 267 — Workshop in Computer Music and Visualization: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-267
-- MUSC 295 — Directed Reading: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-295
-- MUSC 297 — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-297
-- MUSC 297F — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-297f
-- MUSC 298 — Graduate Recital: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-298
-- MUSC 299 — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-299
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299c
+- PRTR 27 — Time Management for College: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-27
+- PRTR 47 — Zines and Community-Based Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-47

@@ -1,1953 +1,1137 @@
 {
-  "generatedAt": "2026-08-18T02:34:21.872Z",
+  "generatedAt": "2026-08-18T02:45:46.539Z",
   "batchDepartments": [
-    "LATN",
-    "LGST",
-    "LING",
-    "LIT",
-    "MATH",
-    "MERR",
-    "METX",
-    "MSE",
-    "MUSC",
-    "NLP"
+    "OAKS",
+    "OCEA",
+    "PBS",
+    "PHIL",
+    "PHYE",
+    "PHYS",
+    "POLI",
+    "PRTR",
+    "PSYC",
+    "PUNJ"
   ],
   "note": "Batch-only missing official records, excluding codes already present in js/courses.js or data/courses-graduate.json.",
-  "missingOfficialCourseCount": 224,
+  "missingOfficialCourseCount": 126,
   "departments": [
     {
-      "subject": "LING",
-      "departmentText": "LING - Linguistics",
-      "departmentSlug": "ling-linguistics",
-      "count": 47,
+      "subject": "OAKS",
+      "departmentText": "OAKS - Oakes College",
+      "departmentSlug": "oaks-oakes-college",
+      "count": 3,
       "courses": [
         {
-          "code": "LING 134",
-          "title": "Languages of Central Eurasia: Writing Systems, Policy, and Identity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-134",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OAKS 50",
+          "title": "Inner Verse: Exploring Identity Through Writing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-50",
+          "departmentSlug": "oaks-oakes-college",
+          "departmentText": "OAKS - Oakes College",
+          "divisionPath": "lower-division"
+        },
+        {
+          "code": "OAKS 145A",
+          "title": "Early Black Histories of California",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145a",
+          "departmentSlug": "oaks-oakes-college",
+          "departmentText": "OAKS - Oakes College",
           "divisionPath": "upper-division"
         },
         {
-          "code": "LING 177",
-          "title": "Computational Cognitive Modeling—Building Minds with Code",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/upper-division/ling-177",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OAKS 145B",
+          "title": "COMMUNITY ENGAGED HISTORY PRACTICUM THE LONDON NELSON LEGACY INSTITUTE",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145b",
+          "departmentSlug": "oaks-oakes-college",
+          "departmentText": "OAKS - Oakes College",
+          "divisionPath": "upper-division"
+        }
+      ]
+    },
+    {
+      "subject": "OCEA",
+      "departmentText": "OCEA - Ocean Sciences",
+      "departmentSlug": "ocea-ocean-sciences",
+      "count": 34,
+      "courses": [
+        {
+          "code": "OCEA 151",
+          "title": "Field and Lab Methods in Aquatic Biogeochemistry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-151",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "upper-division"
         },
         {
-          "code": "LING 211",
-          "title": "Phonology A",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-211",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
+          "code": "OCEA 152",
+          "title": "Field and Lab Methods in Aquatic Molecular Ecology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-152",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "upper-division"
         },
         {
-          "code": "LING 212",
-          "title": "Phonology B",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-212",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 214",
-          "title": "Phonetics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-214",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 215",
-          "title": "Phonetics B",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-215",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 216",
-          "title": "Phonology Proseminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-216",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 219",
-          "title": "Phonology Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 219G",
-          "title": "Phonology Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-219g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 221",
-          "title": "Syntax A",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-221",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 222",
-          "title": "Syntax B",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-222",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 226",
-          "title": "Proseminar in Syntax",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 226G",
-          "title": "Proseminar in Syntax",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-226g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 229",
-          "title": "Syntax Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 200",
+          "title": "Physical Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate",
           "alternatePages": [
             {
-              "code": "LING 229",
+              "code": "OCEA 200",
               "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229",
-              "departmentSlug": "ling-linguistics",
-              "departmentText": "LING - Linguistics",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
+              "departmentSlug": "ocea-ocean-sciences",
+              "departmentText": "OCEA - Ocean Sciences",
+              "divisionPath": "graduate"
+            },
+            {
+              "code": "OCEA 200",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
+              "departmentSlug": "ocea-ocean-sciences",
+              "departmentText": "OCEA - Ocean Sciences",
+              "divisionPath": "graduate"
+            },
+            {
+              "code": "OCEA 200",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
+              "departmentSlug": "ocea-ocean-sciences",
+              "departmentText": "OCEA - Ocean Sciences",
               "divisionPath": "graduate"
             }
           ]
         },
         {
-          "code": "LING 229G",
-          "title": "Syntax Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-229g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 201",
+          "title": "Advanced Physical Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-201",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 231",
-          "title": "Semantics A",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-231",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 211",
+          "title": "Climate Dynamics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-211",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 232",
-          "title": "Semantics B",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-232",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 215",
+          "title": "Predicting the Atmosphere, Ocean, and Climate",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-215",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 236",
-          "title": "Proseminar in Semantics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 218",
+          "title": "Marine Microbial Ecology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-218",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 236G",
-          "title": "Semantics Proseminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-236g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 220",
+          "title": "",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate",
+          "alternatePages": [
+            {
+              "code": "OCEA 220",
+              "title": "Chemical Oceanography",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220",
+              "departmentSlug": "ocea-ocean-sciences",
+              "departmentText": "OCEA - Ocean Sciences",
+              "divisionPath": "graduate"
+            }
+          ]
+        },
+        {
+          "code": "OCEA 224",
+          "title": "Aquatic Organic Geochemistry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-224",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 239",
-          "title": "Semantics Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 230",
+          "title": "Biological Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-230",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 239G",
-          "title": "Semantics Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-239g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 241",
+          "title": "Dynamics of Marine Ecosystems",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-241",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 240",
-          "title": "The Pedagogy of Linguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-240",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 251",
+          "title": "Field and Lab Methods in Aquatic Biogeochemistry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-251",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 244",
-          "title": "Computational Methods for Linguists",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-244",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 252",
+          "title": "Field and Lab Methods in Aquatic Molecular Ecology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-252",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 248",
-          "title": "Topics in Computational Methods and Models",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-248",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 255",
+          "title": "Visualizing Ocean Data",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-255",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 249",
-          "title": "Morphology Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 265",
+          "title": "Marine Population Dynamics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-265",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 249G",
-          "title": "Morphology Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-249g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 285",
+          "title": "Past Climate Change",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-285",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 257",
-          "title": "Psycholinguistics and Linguistic Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-257",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 286",
+          "title": "Introduction to Ocean Modeling",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-286",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 258",
-          "title": "Advanced Psycholinguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290A",
+          "title": "Topics in Chemical Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290a",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 258G",
-          "title": "Advanced Psycholinguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-258g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290B",
+          "title": "Topics in Biological Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290b",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 259",
-          "title": "Phonetics Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290C",
+          "title": "Topics in Marine Geochemistry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290c",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 259G",
-          "title": "Phonetics Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-259g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290D",
+          "title": "Topics in Marine Microbiology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290d",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 279",
-          "title": "Research Seminar in Psycholinguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-279",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290E",
+          "title": "Topics in Climatic and Oceanic Change",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290e",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 280",
-          "title": "Proseminar in Experimental Linguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290G",
+          "title": "Topics in Physical Oceanography",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290g",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 280A",
-          "title": "Linguistic Investigation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280a",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290H",
+          "title": "Topics in Ocean Optics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290h",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 280B",
-          "title": "Linguis Investigati",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280b",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 290J",
+          "title": "Topics in Marine Organic Geochemistry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290j",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 280G",
-          "title": "Proseminar in Experimental Linguistics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-280g",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 292",
+          "title": "Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-292",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 282",
-          "title": "Field Methods",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-282",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "OCEA 295",
+          "title": "How to Write a Scientific Article",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-295",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 290",
+          "code": "OCEA 296",
+          "title": "Teaching in Ocean Sciences",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-296",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 297A",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297a",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 297B",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297b",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 297C",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297c",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 299A",
+          "title": "Thesis Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299a",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 299B",
+          "title": "Thesis Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299b",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "OCEA 299C",
+          "title": "Thesis Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299c",
+          "departmentSlug": "ocea-ocean-sciences",
+          "departmentText": "OCEA - Ocean Sciences",
+          "divisionPath": "graduate"
+        }
+      ]
+    },
+    {
+      "subject": "PHIL",
+      "departmentText": "PHIL - Philosophy",
+      "departmentSlug": "phil-philosophy",
+      "count": 35,
+      "courses": [
+        {
+          "code": "PHIL 202",
+          "title": "Topics in Ancient Greek Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-202",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 203",
+          "title": "Autism",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-203",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 213",
+          "title": "Origins of Analytic Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-213",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 214",
+          "title": "Probability and Confirmation",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-214",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 222",
+          "title": "Metaphysics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-222",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 224",
+          "title": "Philosophy of Language",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-224",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 225",
+          "title": "The Pittsburgh School",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-225",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 231",
+          "title": "Epistemology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-231",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 232",
+          "title": "Advanced Topics in Value Theory",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-232",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 233",
+          "title": "Seminar in Philosophy of Mind",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-233",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 235",
+          "title": "Philosophy of Psychology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-235",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 237",
+          "title": "Making Up the Mind",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-237",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 239",
+          "title": "Philosophy of Religion",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-239",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 270",
           "title": "Research Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-290",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-270",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 295",
+          "code": "PHIL 280",
+          "title": "Graduate Colloquia Course",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-280",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 281",
+          "title": "The Pedagogy of Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-281",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290A",
+          "title": "Philosophy of History",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290a",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290C",
+          "title": "Advanced Topics in Ethics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290c",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290F",
+          "title": "Topics in Philosophy of Biology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290f",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290H",
+          "title": "Environmental Ethics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290h",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290J",
+          "title": "Advanced Topics in the History of Ethics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290j",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290K",
+          "title": "Philosophical Matters of Scientific Practice",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290k",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290O",
+          "title": "Majors Figures in the History of Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290o",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290P",
+          "title": "Major Figures in Contemporary Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290p",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290Q",
+          "title": "Philosophy of Mathematics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290q",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290S",
+          "title": "Topics in the Philosophy of Science",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290s",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 290W",
+          "title": "History of Consciousness",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290w",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 294",
+          "title": "Teaching-Related Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-294",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 295",
           "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-295",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 296",
-          "title": "Linguistics Colloquium",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-296",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "code": "PHIL 295F",
+          "title": "Readings in Philosophy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295f",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 297A",
+          "code": "PHIL 296",
+          "title": "Special Student Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-296",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "PHIL 297",
           "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297a",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 297B",
+          "code": "PHIL 297F",
           "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297b",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297f",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 297C",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297c",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 297F",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-297f",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 299A",
+          "code": "PHIL 299",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299a",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         },
         {
-          "code": "LING 299B",
+          "code": "PHIL 299F",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299b",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LING 299C",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ling-linguistics/graduate/ling-299c",
-          "departmentSlug": "ling-linguistics",
-          "departmentText": "LING - Linguistics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299f",
+          "departmentSlug": "phil-philosophy",
+          "departmentText": "PHIL - Philosophy",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "LIT",
-      "departmentText": "LIT - Literature",
-      "departmentSlug": "lit-literature",
-      "count": 83,
+      "subject": "PHYE",
+      "departmentText": "PHYE - Physical Education",
+      "departmentSlug": "phye-physical-education",
+      "count": 4,
       "courses": [
         {
-          "code": "LIT 60B",
-          "title": "Introduction to Anime Studies",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
+          "code": "PHYE 21A",
+          "title": "Introduction to Golf",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/lower-division/phye-21a",
+          "departmentSlug": "phye-physical-education",
+          "departmentText": "PHYE - Physical Education",
           "divisionPath": "lower-division"
         },
         {
-          "code": "LIT 60C",
-          "title": "Banned Books",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "LIT 60X",
-          "title": "Kamasutra, Tantra, and Sex in Ancient India",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-60x",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "LIT 81L",
-          "title": "The Lord of the Rings",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-81l",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "LIT 87B",
-          "title": "One Great Book",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "LIT 87H",
-          "title": "What Can I Do with My Degree? Humanities-Powered Jobs",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/lower-division/lit-87h",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "LIT 112S",
-          "title": "Samuel Johnson",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-112s",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 116J",
-          "title": "Religions of India",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-116j",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 126R",
-          "title": "Race and Speculative Fiction",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-126r",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 130E",
-          "title": "Nature and Myth",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130e",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 130M",
-          "title": "Witchcraft & Magic",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-130m",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 133L",
-          "title": "Women Behaving Badly in East Asian Fiction",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-133l",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 139C",
-          "title": "Diasporic Literature and Film of California",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-139c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 148B",
-          "title": "The Harlem Renaissance and its Afterlives",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-148b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 149K",
-          "title": "Literature and Social Movements: Writing on Rioting",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-149k",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 151M",
-          "title": "German Drama",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-151m",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 155P",
-          "title": "Gangsters and Destiny: French Film Noir",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-155p",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 167N",
-          "title": "Looking for Life in Space, from 1000 BCE to the Present",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167n",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 167P",
-          "title": "Literature and Social Movements for Health Justice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167p",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 167W",
-          "title": "Wildfire in the West: Literature, Art, Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-167w",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 188Y",
-          "title": "C&#243;mics latinoamericanos",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-188y",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 190AA",
-          "title": "The Afterlife: Visions, Prophecies, and Fiction",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190aa",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 190M",
-          "title": "Women Novelists",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/upper-division/lit-190m",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "LIT 200",
-          "title": "Proseminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-200",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 201",
-          "title": "The Pedagogy of Literature",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-201",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 202",
-          "title": "Translation and Translingual Practice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-202",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
+          "code": "PHYE 209B",
+          "title": "Boating: Graduate Beginning Dinghy Sailing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b",
+          "departmentSlug": "phye-physical-education",
+          "departmentText": "PHYE - Physical Education",
           "divisionPath": "graduate",
           "alternatePages": [
             {
-              "code": "LIT 202",
+              "code": "PHYE 209B",
               "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-202",
-              "departmentSlug": "lit-literature",
-              "departmentText": "LIT - Literature",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b",
+              "departmentSlug": "phye-physical-education",
+              "departmentText": "PHYE - Physical Education",
               "divisionPath": "graduate"
             }
           ]
         },
         {
-          "code": "LIT 204",
-          "title": "Readings in Literature",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-204",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
+          "code": "PHYE 209C",
+          "title": "Boating: Graduate Intermediate Dinghy Sailing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c",
+          "departmentSlug": "phye-physical-education",
+          "departmentText": "PHYE - Physical Education",
+          "divisionPath": "graduate",
+          "alternatePages": [
+            {
+              "code": "PHYE 209C",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c",
+              "departmentSlug": "phye-physical-education",
+              "departmentText": "PHYE - Physical Education",
+              "divisionPath": "graduate"
+            }
+          ]
         },
         {
-          "code": "LIT 205",
-          "title": "Writing and Publication Practicum",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-205",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 206",
-          "title": "Critical Writing Practicum",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-206",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 207",
-          "title": "Colloquium",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-207",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 221",
-          "title": "Canons",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-221",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 222",
-          "title": "Topics in English Language Literature",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-222",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 223",
-          "title": "Periods and Movements",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-223",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 224",
-          "title": "Transnational Literatures",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-224",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 230A",
-          "title": "Topics in Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 230B",
-          "title": "Narrative Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 230C",
-          "title": "Feminist Theories/Historical Perspectives",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-230c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 231A",
-          "title": "Studies in Literary and Cultural History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-231a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 233E",
-          "title": "Reading Plants",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-233e",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 237A",
-          "title": "Modernism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-237a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 240A",
-          "title": "Studies in Antiquity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-240a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 240G",
-          "title": "History and Tragedy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-240g",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 243A",
-          "title": "Studies in Early Modernity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-243a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 243B",
-          "title": "Early Modern Colonial Encounters",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-243b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 246",
-          "title": "Individual Authors",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-246",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 250",
-          "title": "Theory and Methods",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-250",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 250B",
-          "title": "Forms and Aesthetics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-250b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 251",
-          "title": "Topics in Cultural Studies",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-251",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 254",
-          "title": "Religion and Post-Secular",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-254",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 279A",
-          "title": "Methods and Materials",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-279a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 279B",
-          "title": "Writing Studio",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-279b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 282A",
-          "title": "Studies in Literary Genres",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 282B",
-          "title": "Studies in Literary and Cultural History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 282C",
-          "title": "Texts and Contexts",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 282D",
-          "title": "Topics in Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282d",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 282F",
-          "title": "French Literature Outside France",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-282f",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 283A",
-          "title": "Deutsche Literatur und Kultur",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-283a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 285E",
-          "title": "Boccaccio",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-285e",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 285H",
-          "title": "Studies in Italian Literature and Culture",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-285h",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288C",
-          "title": "Don Quijote",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288F",
-          "title": "Writing and Re-Writing of the Conquest and Colonial Period in Spanish America",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288f",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288M",
-          "title": "Cuba",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288m",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288O",
-          "title": "The Conquest through the Eyes of Contemporary Writers",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288o",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288P",
-          "title": "The Avant Garde in Latin America",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288p",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288S",
-          "title": "Citiscapes",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288s",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288U",
-          "title": "Spain in the Eyes/Camera of Pedro Almodovar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288u",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288W",
-          "title": "Becoming European",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288w",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288Y",
-          "title": "Teoria Critica en America Latina",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288y",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 288Z",
-          "title": "Literatura y sociedad",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-288z",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 291F",
-          "title": "Advising",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-291f",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 293",
-          "title": "Independent Study: Creative Writing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-293",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 294",
-          "title": "Teaching-Related Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-294",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 295A",
-          "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 295B",
-          "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 295C",
-          "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-295c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 296A",
-          "title": "Special Student Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 296B",
-          "title": "Special Student Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 296C",
-          "title": "Special Student Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-296c",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 297A",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 297B",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 297F",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-297f",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 299A",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-299a",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "LIT 299B",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/lit-literature/graduate/lit-299b",
-          "departmentSlug": "lit-literature",
-          "departmentText": "LIT - Literature",
+          "code": "PHYE 209S",
+          "title": "Boating: Grad Student Beginning Keelboat Sailing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209s",
+          "departmentSlug": "phye-physical-education",
+          "departmentText": "PHYE - Physical Education",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "MATH",
-      "departmentText": "MATH - Mathematics",
-      "departmentSlug": "math-mathematics",
+      "subject": "PHYS",
+      "departmentText": "PHYS - Physics",
+      "departmentSlug": "phys-physics",
       "count": 1,
       "courses": [
         {
-          "code": "MATH 292",
+          "code": "PHYS 292",
           "title": "Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/math-mathematics/graduate/math-292",
-          "departmentSlug": "math-mathematics",
-          "departmentText": "MATH - Mathematics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292",
+          "departmentSlug": "phys-physics",
+          "departmentText": "PHYS - Physics",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "METX",
-      "departmentText": "METX - Microbiology and Environmental Toxicology",
-      "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-      "count": 36,
+      "subject": "POLI",
+      "departmentText": "POLI - Politics",
+      "departmentSlug": "poli-politics",
+      "count": 47,
       "courses": [
         {
-          "code": "METX 131",
-          "title": "Food Microbiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-131",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "METX 150L",
-          "title": "Microbial Life in Extreme Environments: Field and Lab Methods",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/upper-division/metx-150l",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "METX 200B",
-          "title": "Graduate Research Project Development",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-200b",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 200A",
+          "title": "Political and Social Thought Core Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200a",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 201",
-          "title": "",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-201",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "METX 201",
-              "title": "Sources and Fates of Pollutants",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-201",
-              "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-              "departmentText": "METX - Microbiology and Environmental Toxicology",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "METX 202",
-          "title": "Advanced Topics in Environmental Health",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-202",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 200B",
+          "title": "Social Forces and Political Change Core Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200b",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 203",
-          "title": "Cellular and Molecular Toxicology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-203",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 200C",
+          "title": "States and Political Institutions Core Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200c",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 205",
-          "title": "Scientific Grant Writing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-205",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 200D",
+          "title": "Political Economy Core Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200d",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 206A",
-          "title": "Advanced Microbiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-206a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "METX 206A",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-206a",
-              "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-              "departmentText": "METX - Microbiology and Environmental Toxicology",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "METX 210",
-          "title": "Molecular and Cellular Basis of Bacterial Pathogenesis",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-210",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 201",
+          "title": "Logics of Inquiry",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-201",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 215",
-          "title": "Antibiotics: Actions and Resistance",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-215",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 202",
+          "title": "Fundamentals of Political Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-202",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 238",
-          "title": "Inflammation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-238",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 203",
+          "title": "Making of the Modern",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-203",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 240",
-          "title": "Molecular Biology of Prokaryotes",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-240",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 204",
+          "title": "Bodies in History",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-204",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 245A",
-          "title": "Scientific Communication in Microbiology and Environmental Toxicology A",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "METX 245A",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245a",
-              "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-              "departmentText": "METX - Microbiology and Environmental Toxicology",
-              "divisionPath": "graduate"
-            },
-            {
-              "code": "METX 245A",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245a",
-              "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-              "departmentText": "METX - Microbiology and Environmental Toxicology",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "METX 245B",
-          "title": "Scientific Communication in Microbiology and Environmental Toxicology B",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-245b",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 205",
+          "title": "Critical Perspectives on Classical Political Economy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-205",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 250",
-          "title": "Environmental Microbiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-250",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 206",
+          "title": "Power and Pleasure",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-206",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281A",
-          "title": "Seminar in Global Health",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 207",
+          "title": "Political Economies of Affect",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-207",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281C",
-          "title": "Topics in Environmental Microbiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281c",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 208",
+          "title": "Race",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-208",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281J",
-          "title": "Mechanisms of Virulence and Resistance to Infectious Disease",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281j",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 209",
+          "title": "Radical Political Thought",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-209",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281M",
-          "title": "Topics in Molecular Toxicology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281m",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 210",
+          "title": "Problems of Democracy in Comparative Perspective",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-210",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281O",
-          "title": "Topics in Bacterial Pathogenesis",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281o",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 211",
+          "title": "Making and Unmaking Sovereignty",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-211",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281P",
-          "title": "Origins and Applications of Human Gut Microbial Symbiosis",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281p",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 213",
+          "title": "Who Governs the Globe? Exploring Agency and Authority in Contemporary World Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-213",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281R",
-          "title": "Topics in Genome-Environment Interactions",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281r",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 214",
+          "title": "Thinking Green: Politics, Ethics, Political Economy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-214",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281S",
-          "title": "Cellular and Organismal Responses to Toxicants",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281s",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 216",
+          "title": "Theorizing Politics Beyond the State",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-216",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281V",
-          "title": "Topics in Bacterial Pathogenesis and Innate Immunity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281v",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 217",
+          "title": "Besieged Polities...",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-217",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 281Y",
-          "title": "Biofilms: Processes and Regulation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-281y",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 218",
+          "title": "Law and/Vs. Justice: The Rule of Law and Problems of (In)Justice",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-218",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 282",
-          "title": "Current Approaches to Molecular Pathogenesis",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-282",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 220",
+          "title": "Un(Doing) History",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-220",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 290",
-          "title": "Proseminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-290",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 222",
+          "title": "Conflict and Change in American Politics and Policy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-222",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 290A",
-          "title": "Epidemiology and Risk Assessment",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-290a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 223",
+          "title": "Topics in American Political Development",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-223",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 292",
-          "title": "Introductory Graduate Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-292",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 232",
+          "title": "United States Political History",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-232",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 297A",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 241",
+          "title": "Foundations and Frontiers in Comparative Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-241",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 297B",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297b",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 245",
+          "title": "Latin American Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-245",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 297C",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-297c",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "code": "POLI 247",
+          "title": "Comparative Urban Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-247",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 299A",
+          "code": "POLI 248",
+          "title": "On Property",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-248",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 249",
+          "title": "Politics of Protest",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-249",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 255",
+          "title": "Comparative Anti-Colonialisms",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-255",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 257",
+          "title": "Women Interpret Islam",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-257",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 261",
+          "title": "Key Issues in Contemporary Chinese Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-261",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 270",
+          "title": "Advanced Topics in Global Environmental Governance: Agency Beyond the State",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-270",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 271",
+          "title": "Global Politics and Geo-Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-271",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 272",
+          "title": "Critical Interventions in IR Theory and Global Political Economy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-272",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 275",
+          "title": "Contemporary Capitalism",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-275",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 291",
+          "title": "Teaching Assistant Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-291",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 292",
+          "title": "Professional Development",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-292",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 293",
+          "title": "Field Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-293",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 295A",
+          "title": "Research Colloquium",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295a",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 295B",
+          "title": "Advanced Research Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295b",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 297A",
+          "title": "Indep Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297a",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 297B",
+          "title": "Indep Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297b",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 297C",
+          "title": "Indep Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297c",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "POLI 299A",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299a",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299a",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 299B",
+          "code": "POLI 299B",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299b",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299b",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         },
         {
-          "code": "METX 299C",
+          "code": "POLI 299C",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299c",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "METX 299Z",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/metx-microbiology-and-environmental-toxicology/graduate/metx-299z",
-          "departmentSlug": "metx-microbiology-and-environmental-toxicology",
-          "departmentText": "METX - Microbiology and Environmental Toxicology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299c",
+          "departmentSlug": "poli-politics",
+          "departmentText": "POLI - Politics",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "MUSC",
-      "departmentText": "MUSC - Music",
-      "departmentSlug": "musc-music",
-      "count": 57,
+      "subject": "PRTR",
+      "departmentText": "PRTR - Porter College",
+      "departmentSlug": "prtr-porter-college",
+      "count": 2,
       "courses": [
         {
-          "code": "MUSC 105X",
-          "title": "Music and Aural Diversity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-105x",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "upper-division"
+          "code": "PRTR 27",
+          "title": "Time Management for College",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-27",
+          "departmentSlug": "prtr-porter-college",
+          "departmentText": "PRTR - Porter College",
+          "divisionPath": "lower-division"
         },
         {
-          "code": "MUSC 180X",
-          "title": "Indian Music Workshop",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/upper-division/musc-180x",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "MUSC 200",
-          "title": "Introduction to Research Methods",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-200",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "MUSC 200",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-200",
-              "departmentSlug": "musc-music",
-              "departmentText": "MUSC - Music",
-              "divisionPath": "graduate"
-            },
-            {
-              "code": "MUSC 200",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-200",
-              "departmentSlug": "musc-music",
-              "departmentText": "MUSC - Music",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "MUSC 201",
-          "title": "History of Music Theory from the Greeks Through Rameau",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-201",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 202",
-          "title": "",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-202",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "MUSC 202",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-202",
-              "departmentSlug": "musc-music",
-              "departmentText": "MUSC - Music",
-              "divisionPath": "graduate"
-            },
-            {
-              "code": "MUSC 202",
-              "title": "Tonal and Posttonal Analysis",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-202",
-              "departmentSlug": "musc-music",
-              "departmentText": "MUSC - Music",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "MUSC 203A",
-          "title": "Performance Practice in the Middle Ages",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203a",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203B",
-          "title": "Performance Practice in the Renaissance",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203b",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203C",
-          "title": "Performance Practice in the Baroque",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203c",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203D",
-          "title": "Performance Practice in the Classic Period",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203d",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203E",
-          "title": "Performance Practice in the Romantic Period",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203e",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203F",
-          "title": "Performance Practice in the 20th Century",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203f",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203G",
-          "title": "Concepts, Issues, and the Practice of Ethnomusicology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203g",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203H",
-          "title": "Area Studies in Performance Practice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203h",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 203I",
-          "title": "Musics of Central Asia",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-203i",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 204",
-          "title": "Pedagogy of Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-204",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 204W",
-          "title": "Graduate Writing Workshop",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-204w",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 205A",
-          "title": "Conceptual Foundations in Western Music Analysis",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-205a",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 205B",
-          "title": "Conceptual Foundations in Global Musics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-205b",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206A",
-          "title": "Global Music Composition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206a",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206B",
-          "title": "Computer-Assisted Composition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206b",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206C",
-          "title": "Composing for Instruments and Live Electronics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206c",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206D",
-          "title": "Music Perception and Cognition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206d",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206E",
-          "title": "Experimental Sound Practices",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206e",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 206I",
-          "title": "Negotiating the Musical Work",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-206i",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 219",
-          "title": "Techniques in Composition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-219",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "MUSC 219",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-219",
-              "departmentSlug": "musc-music",
-              "departmentText": "MUSC - Music",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "MUSC 220",
-          "title": "Graduate Seminar in Music Composition",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-220",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 252",
-          "title": "Current Issues Colloquium",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-252",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 253A",
-          "title": "Historical Perspectives in Musicology and Ethnomusicology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253a",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 253B",
-          "title": "Rhythm, Time, and Form",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253b",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 253C",
-          "title": "Music and Discourse",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253c",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 253D",
-          "title": "Issues in the Ethnography of Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253d",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 253S",
-          "title": "The Politics of Aesthetics and Spirituality",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-253s",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254A",
-          "title": "Music and Aural Diversity",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254a",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254C",
-          "title": "Performativity and Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254c",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254D",
-          "title": "Organology and Acoustics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254d",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254E",
-          "title": "Asian Resonances in 20th-Century American and European Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254e",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254F",
-          "title": "Beethoven",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254f",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254G",
-          "title": "Queen and British Popular Music of the 1970s and 80s",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254g",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254H",
-          "title": "The Lauryn Hill Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254h",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254J",
-          "title": "Jazz Historiography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254j",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254K",
-          "title": "Music, Gender, and Sexuality",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254k",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254L",
-          "title": "John Cage: Innovation, Collaboration, and Performance Technologies",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254l",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254M",
-          "title": "Music in San Francisco, 1850-1950",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254m",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254N",
-          "title": "Cruising the Postcolony",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254n",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254O",
-          "title": "Historiography of American Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254o",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254R",
-          "title": "Research Design and Grant Writing for Music Scholars",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254r",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254W",
-          "title": "West-Coast Experimentalism in the Mid-20th Century United States",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254w",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254X",
-          "title": "Minimalism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254x",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 254Z",
-          "title": "Issues in Contemporary and Experimental Music",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-254z",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 261",
-          "title": "Graduate Applied Instruction",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-261",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 265",
-          "title": "Graduate Ensemble Participation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-265",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 267",
-          "title": "Workshop in Computer Music and Visualization",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-267",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 295",
-          "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-295",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 297",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-297",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 297F",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-297f",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 298",
-          "title": "Graduate Recital",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-298",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "MUSC 299",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/musc-music/graduate/musc-299",
-          "departmentSlug": "musc-music",
-          "departmentText": "MUSC - Music",
-          "divisionPath": "graduate"
+          "code": "PRTR 47",
+          "title": "Zines and Community-Based Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-47",
+          "departmentSlug": "prtr-porter-college",
+          "departmentText": "PRTR - Porter College",
+          "divisionPath": "lower-division"
         }
       ]
     }

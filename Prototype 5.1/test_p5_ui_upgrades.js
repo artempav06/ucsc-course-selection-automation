@@ -680,7 +680,8 @@ function testNextDepartmentCleanUndergradCoursesAreSearchable() {
   const nextTenDUndergradCodes = ['FREN 115', 'GCH 198', 'HAVC 166', 'HAVC 175', 'HIS 3A', 'HIS 72A', 'HIS 125', 'HIS 137H', 'HIS 139N', 'HIS 190L', 'HIS 198S'];
   const nextTenEUndergradCodes = ['HISC 5', 'HISC 23', 'HISC 174', 'HISC 186', 'HISC 189', 'HTEC 10', 'KRSG 14', 'KRSG 16', 'LALS 134', 'LALS 146', 'LALS 194J'];
   const nextTenFUndergradCodes = ['LING 134', 'LING 177', 'LIT 60B', 'LIT 60C', 'LIT 60X', 'LIT 81L', 'LIT 87B', 'LIT 87H', 'LIT 112S', 'LIT 116J', 'LIT 126R', 'LIT 130E', 'LIT 130M', 'LIT 133L', 'LIT 139C', 'LIT 148B', 'LIT 149K', 'LIT 151M', 'LIT 155P', 'LIT 167N', 'LIT 167P', 'LIT 167W', 'LIT 188Y', 'LIT 190AA', 'LIT 190M', 'METX 131', 'METX 150L', 'MUSC 105X', 'MUSC 180X'];
-  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes, ...nextTenBUndergradCodes, ...nextTenCUndergradCodes, ...nextTenDUndergradCodes, ...nextTenEUndergradCodes, ...nextTenFUndergradCodes]) {
+  const nextTenGUndergradCodes = ['OAKS 50', 'OAKS 145A', 'OAKS 145B', 'OCEA 151', 'OCEA 152', 'PRTR 27', 'PRTR 47'];
+  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes, ...nextTenBUndergradCodes, ...nextTenCUndergradCodes, ...nextTenDUndergradCodes, ...nextTenEUndergradCodes, ...nextTenFUndergradCodes, ...nextTenGUndergradCodes]) {
     assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA or Hermes prerequisite review`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'undergraduate'), `${code} should be findable in manual academic-history search`);
   }
@@ -697,6 +698,9 @@ function testNextDepartmentCleanUndergradCoursesAreSearchable() {
   assert.strictEqual(JSON.stringify(__p5.COURSES['LIT 190AA'].prereqs), JSON.stringify([['LIT 101']]), 'LIT 190AA should enforce explicit LIT 101 but keep ELWR/composition and senior-major restriction as official review text');
   assert.strictEqual(JSON.stringify(__p5.COURSES['LIT 190M'].prereqs), JSON.stringify([['LIT 101']]), 'LIT 190M should enforce explicit LIT 101 but keep ELWR/composition and senior-major restriction as official review text');
   assert.strictEqual(JSON.stringify(__p5.COURSES['METX 150L'].prereqs), JSON.stringify([['BIOL 20A']]), 'METX 150L should enforce BIOL 20A while preserving instructor permission and recommended METX prep as notes');
+  assert.strictEqual(JSON.stringify(__p5.COURSES['OCEA 152'].prereqs), JSON.stringify([['ESCI 150']]), 'OCEA 152 should enforce official ESCI 150 prerequisite');
+  assert.strictEqual(JSON.stringify(__p5.COURSES['OAKS 50'].prereqs), JSON.stringify([]), 'OAKS 50 should not invent course prerequisites for college-membership restriction text');
+  assert(__p5.COURSES['OAKS 50'].prereqNotes.some(note => note.includes('college members')), 'OAKS 50 should preserve Oakes College membership restriction in notes');
 }
 
 function testNextDepartmentGraduateCoursesStaySearchOnly() {
@@ -709,13 +713,14 @@ function testNextDepartmentGraduateCoursesStaySearchOnly() {
   const nextTenDGradCodes = ['GAME 200', 'GAME 280A', 'HAVC 201A', 'HAVC 297A', 'HCI 200', 'HCI 291', 'GRAD 213', 'LIT 201A'];
   const nextTenEGradCodes = ['HISC 203A', 'HISC 297A', 'LALS 200', 'LALS 297A', 'POLI 243'];
   const nextTenFGradCodes = ['LING 211', 'LING 297A', 'LIT 201A', 'LIT 282D', 'METX 202', 'METX 297A', 'MUSC 203A', 'MUSC 297'];
-  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes]) {
+  const nextTenGGradCodes = ['OCEA 200', 'OCEA 297A', 'PHIL 202', 'PHIL 280', 'POLI 200A', 'POLI 297A'];
+  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes, ...nextTenGGradCodes]) {
     assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
     assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
     assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'graduate'), `${code} should be findable through manual typed search`);
   }
-  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292', 'BIOE 281M', 'BIOE 294', 'BIOL 292', 'PHYS 292', 'ASTR 292', 'EART 292', 'CRES 203', 'CSP 230', 'DANM 212', 'METX 292', 'MUSC 252']) {
+  for (const blocked of ['GRAD 200', 'GRAD 201', 'GRAD 202', 'MATH 292', 'BIOE 281M', 'BIOE 294', 'BIOL 292', 'PHYS 292', 'ASTR 292', 'EART 292', 'CRES 203', 'CSP 230', 'DANM 212', 'METX 292', 'MUSC 252', 'OCEA 292', 'PHYE 21A', 'PHYE 209B', 'PHYE 209C', 'PHYE 209S']) {
     assert(!__p5.COURSES[blocked], `${blocked} has invalid units and must not enter COURSES`);
     assert(!__p5.GRADUATE_COURSES[blocked], `${blocked} has invalid units and must not enter graduate search-only catalog`);
   }
@@ -727,7 +732,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('next10f-catalog'), `${asset} cache-buster should change for the next-10f catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('next10g-catalog'), `${asset} cache-buster should change for the next-10g catalog update so browsers do not reuse old JS`);
   }
 }
 
