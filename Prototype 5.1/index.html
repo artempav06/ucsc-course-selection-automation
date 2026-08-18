@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UCSC Course Selection Automation</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=prototype5-20260817-resume-file">
 
   <!-- Export Libraries (CDN) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -61,10 +61,16 @@
             <span class="mode-title">Plan for Me</span>
             <span class="mode-subtitle">Generate a smart first draft automatically.</span>
           </button>
-          <button id="btn-build-from-scratch" class="btn-start btn-mode-secondary" type="button">
+          <div class="btn-start btn-mode-secondary build-from-scratch-card" aria-label="Build from Scratch options">
             <span class="mode-title">Build from Scratch</span>
-            <span class="mode-subtitle">Start with blank quarters and construct your own plan.</span>
-          </button>
+            <span class="mode-subtitle">Create your own plan, or continue a plan file you downloaded earlier.</span>
+            <div class="scratch-subchoices">
+              <button id="btn-build-from-scratch-new" class="btn-scratch-choice" type="button">Start New Schedule</button>
+              <button id="btn-build-from-scratch-continue" class="btn-scratch-choice" type="button">Continue My Schedule</button>
+            </div>
+            <input type="file" id="resume-file-input" accept=".doc,.html,.htm,.txt,.json,.pdf" style="display:none">
+            <p class="resume-import-hint">Upload the Word-compatible resume file downloaded from this website to restore your classes and settings.</p>
+          </div>
         </div>
         <button id="btn-start" class="btn-start btn-start-legacy" type="button">Start Planning</button>
 
@@ -422,6 +428,7 @@
             <button class="btn-back-wizard" onclick="backToWizard()">Edit Preferences</button>
             <button class="btn-export" onclick="exportPDF()">Export PDF</button>
             <button class="btn-export" onclick="exportExcel()">Export Excel</button>
+            <button class="btn-export btn-resume-download" onclick="downloadScheduleResumeFile()">Download Resume File</button>
           </div>
         </div>
 
@@ -498,7 +505,7 @@
   <script src="js/engine/requirement-normalizer.js?v=prototype5-20260720-advising-core"></script>
   <script src="js/engine/requirement-collector.js?v=prototype5-20260720-advising-core"></script>
   <script src="js/engine.js?v=prototype5-20260720-advising-core"></script>
-  <script src="js/app.js?v=prototype5-20260817-final-catalog"></script>
+  <script src="js/app.js?v=prototype5-20260817-resume-file"></script>
   <script src="js/export.js?v=prototype5-20260720-advising-core"></script>
 
 </body>

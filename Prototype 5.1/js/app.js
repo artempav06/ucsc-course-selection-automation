@@ -331,9 +331,20 @@ function initLanding() {
     planForMeBtn.addEventListener("click", () => startPlanningWithMode("auto"));
   }
 
-  const buildFromScratchBtn = document.getElementById("btn-build-from-scratch");
-  if (buildFromScratchBtn) {
-    buildFromScratchBtn.addEventListener("click", () => startPlanningWithMode("blank"));
+  const buildFromScratchNewBtn = document.getElementById("btn-build-from-scratch-new");
+  if (buildFromScratchNewBtn) {
+    buildFromScratchNewBtn.addEventListener("click", () => startPlanningWithMode("blank"));
+  }
+
+  const legacyBuildFromScratchBtn = document.getElementById("btn-build-from-scratch");
+  if (legacyBuildFromScratchBtn) {
+    legacyBuildFromScratchBtn.addEventListener("click", () => startPlanningWithMode("blank"));
+  }
+
+  const continueScheduleBtn = document.getElementById("btn-build-from-scratch-continue");
+  const resumeInput = document.getElementById("resume-file-input");
+  if (continueScheduleBtn && resumeInput) {
+    continueScheduleBtn.addEventListener("click", () => resumeInput.click());
   }
 
   const startBtn = document.getElementById("btn-start");
@@ -506,6 +517,7 @@ function initWizard() {
 
   // Transcript upload (Step 2)
   initTranscriptUpload();
+  initResumeImportUI();
 
   // GAP period UI (Step 3)
   initGapUI();
@@ -1386,6 +1398,237 @@ function startBlankScheduleConstructor() {
   renderRequirements();
   showValidationAlerts();
   showBlankScheduleRules();
+}
+
+// ---------- FILE-BASED SCHEDULE RESUME ----------
+
+const SCHEDULE_RESUME_MAGIC = "UCSC_SCHEDULER_RESUME_FILE";
+const SCHEDULE_RESUME_VERSION = 1;
+const SCHEDULE_RESUME_START = "UCSC_SCHEDULER_RESUME_JSON_START";
+const SCHEDULE_RESUME_END = "UCSC_SCHEDULER_RESUME_JSON_END";
+
+function clonePlainObject(value) {
+  return JSON.parse(JSON.stringify(value || {}));
+}
+
+function serializeScheduleForResume(schedule = AppState.schedule) {
+  const years = Array.isArray(schedule) ? schedule.map(year => ({
+    label: year.label,
+    academicStart: year.academicStart,
+    levelNum: year.levelNum,
+    quarters: clonePlainObject(year.quarters || {}),
+    gapQuarters: year.gapQuarters && typeof year.gapQuarters[Symbol.iterator] === "function"
+      ? Array.from(year.gapQuarters)
+      : (Array.isArray(year.gapQuarters) ? [...year.gapQuarters] : [])
+  })) : [];
+  const courseTypeSource = schedule?.courseTypeMap;
+  const courseTypeMap = courseTypeSource && typeof courseTypeSource.entries === "function"
+    ? Array.from(courseTypeSource.entries())
+    : Array.isArray(courseTypeSource) ? courseTypeSource : [];
+  return {
+    years,
+    courseTypeMap,
+    isBlankConstructor: Boolean(schedule?.isBlankConstructor)
+  };
+}
+
+function deserializeScheduleFromResume(serialized) {
+  const years = Array.isArray(serialized?.years) ? serialized.years.map(year => ({
+    label: year.label,
+    academicStart: year.academicStart,
+    levelNum: year.levelNum,
+    quarters: clonePlainObject(year.quarters || {}),
+    gapQuarters: new Set(Array.isArray(year.gapQuarters) ? year.gapQuarters : [])
+  })) : [];
+  years.courseTypeMap = new Map(Array.isArray(serialized?.courseTypeMap) ? serialized.courseTypeMap : []);
+  years.isBlankConstructor = Boolean(serialized?.isBlankConstructor);
+  return years;
+}
+
+function buildScheduleResumePayload() {
+  if (!AppState.schedule) return null;
+  return {
+    magic: SCHEDULE_RESUME_MAGIC,
+    version: SCHEDULE_RESUME_VERSION,
+    exportedAt: new Date().toISOString(),
+    planningMode: AppState.planningMode || "auto",
+    profile: clonePlainObject(AppState.profile),
+    schedule: serializeScheduleForResume(AppState.schedule)
+  };
+}
+
+function courseTitleForResume(code) {
+  const course = typeof courseByCode === "function" ? courseByCode(code) : COURSES[code];
+  return course ? `${code} — ${course.title || "Untitled"} (${course.units || "?"} credits)` : code;
+}
+
+function resumeScheduleRowsHtml(payload) {
+  const years = payload?.schedule?.years || [];
+  return years.map(year => {
+    const quarters = Object.entries(year.quarters || {}).map(([term, codes]) => {
+      const listItems = (codes || []).map(code => `<li>${escHTML(code === "_GAP" ? "Gap / break quarter" : courseTitleForResume(code))}</li>`).join("");
+      return `<h3>${escHTML(QUARTER_LABELS[term] || term)}</h3><ul>${listItems || "<li>No classes planned yet.</li>"}</ul>`;
+    }).join("");
+    return `<section><h2>${escHTML(year.label || "Academic Year")} (${escHTML(String(year.academicStart || ""))}-${escHTML(String((year.academicStart || 0) + 1))})</h2>${quarters}</section>`;
+  }).join("");
+}
+
+function resumeDocumentHtml(payload) {
+  const json = JSON.stringify(payload);
+  const encoded = encodeURIComponent(json);
+  const profile = payload?.profile || {};
+  const majorName = MAJOR_REQUIREMENTS[profile.major]?.name || profile.major || "Selected major";
+  return `<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UCSC Scheduler Resume File</title>
+  <style>body{font-family:Arial,sans-serif;line-height:1.35;color:#1f2933}h1{color:#003c6c}code{background:#f3f4f6;padding:2px 4px}.resume-note{border:1px solid #cbd5e1;background:#f8fafc;padding:12px;margin:12px 0}</style>
+</head>
+<body>
+  <h1>UCSC Scheduler Resume File</h1>
+  <div class="resume-note">
+    <p><strong>Keep this file.</strong> Upload it on the scheduler landing page by choosing <em>Build from Scratch → Continue My Schedule</em>. It stores your planned classes and all scheduler settings needed to continue later.</p>
+    <p><strong>Do not edit the hidden resume data below.</strong> You can read or print this document, but changing the embedded data may prevent automatic restore.</p>
+  </div>
+  <h2>Saved Settings</h2>
+  <ul>
+    <li>Major: ${escHTML(majorName)}</li>
+    <li>Current term: ${escHTML(QUARTER_LABELS[profile.currentTerm] || profile.currentTerm || "")} ${escHTML(String(profile.currentYear || ""))}</li>
+    <li>Target graduation: ${escHTML(QUARTER_LABELS[profile.targetGradTerm] || profile.targetGradTerm || "")} ${escHTML(String(profile.targetGradYear || ""))}</li>
+    <li>Completed courses: ${escHTML((profile.completedCourses || []).join(", ") || "None entered")}</li>
+    <li>Prior credits: ${escHTML(String(profile.priorCredits || 0))}</li>
+    <li>Summer years: ${escHTML((profile.summerYears || []).join(", ") || "None selected")}</li>
+    <li>Gap: ${profile.gapEnabled ? `${escHTML(QUARTER_LABELS[profile.gapTerm] || profile.gapTerm)} ${escHTML(String(profile.gapYear))} (${escHTML(profile.gapType || "quarter")})` : "None"}</li>
+  </ul>
+  <h2>Saved Schedule</h2>
+  ${resumeScheduleRowsHtml(payload)}
+  <!-- ${SCHEDULE_RESUME_START}
+${encoded}
+${SCHEDULE_RESUME_END} -->
+</body>
+</html>`;
+}
+
+function extractScheduleResumePayload(text) {
+  const raw = String(text || "");
+  const trimmed = raw.trim();
+  if (trimmed.startsWith("{")) {
+    const payload = JSON.parse(trimmed);
+    if (payload.magic === SCHEDULE_RESUME_MAGIC) return payload;
+  }
+  const marker = new RegExp(`${SCHEDULE_RESUME_START}\\s*([\\s\\S]*?)\\s*${SCHEDULE_RESUME_END}`);
+  const match = raw.match(marker);
+  if (!match) throw new Error("Resume marker not found. Please upload the resume file downloaded from this scheduler.");
+  const payload = JSON.parse(decodeURIComponent(match[1].trim()));
+  if (!payload || payload.magic !== SCHEDULE_RESUME_MAGIC) throw new Error("This file is not a UCSC Scheduler resume file.");
+  return payload;
+}
+
+function restoreScheduleResumePayload(payload) {
+  if (!payload || payload.magic !== SCHEDULE_RESUME_MAGIC) {
+    throw new Error("This file is not a UCSC Scheduler resume file.");
+  }
+  AppState.profile = { ...clonePlainObject(AppState.profile), ...clonePlainObject(payload.profile || {}) };
+  AppState.planningMode = payload.planningMode === "blank" ? "blank" : "auto";
+  AppState.schedule = deserializeScheduleFromResume(payload.schedule || {});
+  AppState.validation = Validator.validateAll(AppState.schedule, AppState.profile);
+  syncProfileToWizardControls();
+  showView("schedule");
+  renderSchedule();
+  renderRequirements();
+  showValidationAlerts();
+  showScheduleEditWarning(
+    "Schedule restored",
+    `<div class="schedule-warning-card"><p>Your saved classes and planner settings were restored from the resume file. You can continue editing the schedule or choose <strong>Edit Preferences</strong> to adjust the restored settings.</p></div>`,
+    "success"
+  );
+  return true;
+}
+
+function downloadScheduleResumeFile() {
+  const payload = buildScheduleResumePayload();
+  if (!payload) return alert("No schedule to save yet.");
+  const html = resumeDocumentHtml(payload);
+  const blob = new Blob([html], { type: "application/msword;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `UCSC_Schedule_Resume_${new Date().toISOString().slice(0, 10)}.doc`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  if (typeof promptForReviewAfterDownload === "function") promptForReviewAfterDownload("download");
+}
+
+function initResumeImportUI() {
+  const input = document.getElementById("resume-file-input");
+  if (!input) return;
+  input.addEventListener("change", () => {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const payload = extractScheduleResumePayload(reader.result || "");
+        restoreScheduleResumePayload(payload);
+      } catch (err) {
+        console.error("Resume import error:", err);
+        alert(err.message || "Could not restore this schedule file. Please upload the resume file downloaded from this scheduler.");
+      } finally {
+        input.value = "";
+      }
+    };
+    reader.onerror = () => alert("Could not read this file. Please try again or choose the Word-compatible resume file downloaded from this scheduler.");
+    reader.readAsText(file);
+  });
+}
+
+function setControlValue(id, value) {
+  const el = document.getElementById(id);
+  if (el && value !== undefined && value !== null) el.value = String(value);
+}
+
+function setControlChecked(id, checked) {
+  const el = document.getElementById(id);
+  if (el) el.checked = Boolean(checked);
+}
+
+function syncProfileToWizardControls() {
+  const p = AppState.profile || {};
+  populateMajorDropdown();
+  setControlValue("select-major", p.major || "CS_BA");
+  setControlValue("select-level", `${p.studentType === "grad" ? "MS" : "UG"}_${p.currentLevel || 1}`);
+  setControlValue("select-current-term", p.currentTerm || "F");
+  setControlValue("select-current-year", p.currentYear || new Date().getFullYear());
+  setControlChecked("check-elwr", p.elwrSatisfied);
+  setControlValue("select-college-affiliation", p.collegeAffiliation || "");
+  setControlChecked("check-college-core-completed", p.collegeCoreCompleted);
+  setControlChecked("check-ahi", p.ahiFulfillment && Object.values(p.ahiFulfillment).some(Boolean));
+  setControlChecked("check-ahi-us-history-full-year", p.ahiFulfillment?.usHistoryFullYear);
+  setControlChecked("check-ahi-us-history-half-year", p.ahiFulfillment?.usHistoryHalfYear);
+  setControlChecked("check-ahi-american-government-half-year", p.ahiFulfillment?.americanGovernmentHalfYear);
+  setControlValue("input-prior-credits", p.priorCredits || 0);
+  setControlValue("select-grad-term", p.targetGradTerm || "S");
+  setControlValue("select-grad-year", p.targetGradYear || ((p.currentYear || new Date().getFullYear()) + 4));
+  setControlChecked("check-summer", p.includeSummer);
+  renderSummerQuarterChoices();
+  const selectedSummers = new Set((p.summerYears || []).map(String));
+  document.querySelectorAll?.(".summer-year-option").forEach(input => { input.checked = selectedSummers.has(input.value); });
+  setControlValue("input-max-units", p.maxUnits || 19);
+  setControlChecked("check-gap", p.gapEnabled);
+  setControlValue("select-gap-type", p.gapType || "quarter");
+  setControlValue("select-gap-term", p.gapTerm || "F");
+  setControlValue("select-gap-year", p.gapYear || ((p.currentYear || new Date().getFullYear()) + 1));
+  populateConcentrationGrids(p.major || "CS_BA");
+  const majorInterests = new Set(p.electiveInterests || (p.concentration ? [p.concentration] : []));
+  document.querySelectorAll?.('input[name="major-concentration"]').forEach(input => { input.checked = majorInterests.has(input.value); });
+  const geInterests = new Set(p.geConcentrations || (p.geConcentration ? [p.geConcentration] : []));
+  document.querySelectorAll?.('input[name="ge-concentration"]').forEach(input => { input.checked = geInterests.has(input.value); });
+  setControlChecked("check-auto-suggest", p.autoSuggest !== false);
+  syncCompletedCoursesUI();
+  updatePlanningModeCopy();
 }
 
 function generateAndShowSchedule() {

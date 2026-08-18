@@ -1455,10 +1455,8 @@ const Scheduler = {
     const lowerRequiredMajorCodes = new Set(
       sorted.filter(code => isRequiredMajorWork(code) && isLowerDivisionCourse(code) && !placed.has(code))
     );
-    const lowerFoundationGateApplies = !(profile && profile.gapEnabled)
-      && this.normalMaxUnits(profile) >= 18;
     const lowerRequiredMajorCompleteBefore = completedBefore =>
-      !lowerFoundationGateApplies || [...lowerRequiredMajorCodes].every(code => completedBefore.has(code));
+      [...lowerRequiredMajorCodes].every(code => completedBefore.has(code));
 
     const allQuarters = [];
     for (let yi = 0; yi < schedule.length; yi++) {
@@ -1478,7 +1476,7 @@ const Scheduler = {
     const canPlace = (code, q, completedBefore, unitsUsed, levelNum = 1) => {
       const course = COURSES[code];
       if (!course) return false;
-      if (isRequiredMajorWork(code) && isUpperDivisionCourse(code) && !lowerRequiredMajorCompleteBefore(completedBefore)) return false;
+      if (isUpperDivisionCourse(code) && !lowerRequiredMajorCompleteBefore(completedBefore)) return false;
       if (!this.isCourseAllowedForProfile(code, { ...profile, currentLevel: levelNum })) return false;
       if (/restricted to seniors/i.test(course.enrollmentRestrictions || "") && levelNum < 4) return false;
       if (!course.quarters.includes(q)) return false;
@@ -1803,9 +1801,6 @@ const Scheduler = {
       const course = COURSES[code];
       if (!course || !course.prereqs || freeCode(code)) return false;
       if (Validator.prereqsMet(course.prereqs, completedBefore)) return false;
-      const sameQuarter = new Set(quarterArr.filter(c => c !== code));
-      const labCoreq = course.labCoreq;
-      if (labCoreq && sameQuarter.has(labCoreq)) return false;
       return true;
     };
 
@@ -1820,17 +1815,49 @@ const Scheduler = {
           for (let ci = 0; ci < arr.length; ci++) {
             const code = arr[ci];
             if (!hasChronologyPrereqProblem(code, arr, completedAtSource)) continue;
+            const labPartner = COURSES[code]?.labCoreq;
+            const moveTogether = labPartner && arr.includes(labPartner) ? labPartner : null;
             arr.splice(ci, 1);
+            if (moveTogether) {
+              const partnerIdx = arr.indexOf(moveTogether);
+              if (partnerIdx >= 0) arr.splice(partnerIdx, 1);
+              placed.delete(moveTogether);
+            }
             placed.delete(code);
+            const canPlaceChronologyMove = (targetSlot, targetArr, completedAtTarget) => {
+              const qUnits = targetArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
+              if (!moveTogether) return canPlace(code, targetSlot.q, completedAtTarget, qUnits, schedule[targetSlot.yi].levelNum);
+              const course = COURSES[code];
+              const lab = COURSES[moveTogether];
+              if (!course || !lab) return false;
+              if (!course.quarters.includes(targetSlot.q) || !lab.quarters.includes(targetSlot.q)) return false;
+              if (!Validator.prereqsMet(course.prereqs, completedAtTarget)) return false;
+              const labPrereqContext = new Set(completedAtTarget);
+              labPrereqContext.add(code);
+              if (!Validator.prereqsMet(lab.prereqs, labPrereqContext)) return false;
+              if (!this.isCourseAllowedForProfile(code, { ...profile, currentLevel: schedule[targetSlot.yi].levelNum })) return false;
+              if (!this.isCourseAllowedForProfile(moveTogether, { ...profile, currentLevel: schedule[targetSlot.yi].levelNum })) return false;
+              if (isUpperDivisionCourse(code) && !lowerRequiredMajorCompleteBefore(completedAtTarget)) return false;
+              if (isUpperDivisionCourse(moveTogether) && !lowerRequiredMajorCompleteBefore(completedAtTarget)) return false;
+              return qUnits + (course.units || 0) + (lab.units || 0) <= maxUnits;
+            };
+            const placeChronologyMove = targetArr => {
+              targetArr.push(code);
+              placed.add(code);
+              if (moveTogether) {
+                targetArr.push(moveTogether);
+                placed.add(moveTogether);
+              }
+            };
             for (let ti = si + 1; ti < allQuarters.length; ti++) {
               const targetSlot = allQuarters[ti];
               const targetArr = schedule[targetSlot.yi].quarters[targetSlot.q];
               if (!targetArr || targetArr[0] === "_GAP") continue;
               const completedAtTarget = completedBeforeSlot(ti);
-              const qUnits = targetArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
-              if (!canPlace(code, targetSlot.q, completedAtTarget, qUnits, schedule[targetSlot.yi].levelNum)) continue;
-              targetArr.push(code);
-              placed.add(code);
+              const neededUnits = (COURSES[code]?.units || 0) + (moveTogether ? (COURSES[moveTogether]?.units || 0) : 0);
+              removeFreeUntilFits(targetArr, neededUnits);
+              if (!canPlaceChronologyMove(targetSlot, targetArr, completedAtTarget)) continue;
+              placeChronologyMove(targetArr);
               moved = true;
               break;
             }
@@ -1842,12 +1869,11 @@ const Scheduler = {
                 schedule.push(newYear);
                 allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
                 for (const q of ["F", "W", "S"]) {
+                  const targetSlot = { yi: schedule.length - 1, q };
                   const targetArr = newYear.quarters[q];
                   const completedAtTarget = completedBeforeSlot(allQuarters.length - (q === "F" ? 3 : q === "W" ? 2 : 1));
-                  const qUnits = targetArr.reduce((s, c) => s + (COURSES[c]?.units || 0), 0);
-                  if (!canPlace(code, q, completedAtTarget, qUnits, newYear.levelNum)) continue;
-                  targetArr.push(code);
-                  placed.add(code);
+                  if (!canPlaceChronologyMove(targetSlot, targetArr, completedAtTarget)) continue;
+                  placeChronologyMove(targetArr);
                   moved = true;
                   break;
                 }
@@ -1856,6 +1882,10 @@ const Scheduler = {
             if (!placed.has(code)) {
               arr.splice(ci, 0, code);
               placed.add(code);
+              if (moveTogether) {
+                arr.splice(ci + 1, 0, moveTogether);
+                placed.add(moveTogether);
+              }
             }
             break;
           }
@@ -2084,6 +2114,88 @@ const Scheduler = {
     };
     padActiveUnderMinQuartersWithFree();
 
+    // Final compaction: if a later real course can legally fit into an earlier
+    // active quarter by evicting optional FREE padding, do that before trimming.
+    // This restores the pre-expansion behavior where FREE placeholders never
+    // block required/elective coursework from finishing as early as possible,
+    // while still respecting prerequisites, lower-division foundation gating,
+    // gap quarters, unit caps, and explicit lab/corequisite pairs.
+    const compactLaterWorkOverFreePadding = () => {
+      const isLabPartner = code => Object.values(COURSES).some(course => course && course.labCoreq === code);
+      let movedAny = true;
+      let guard = 0;
+      while (movedAny && guard++ < 30) {
+        movedAny = false;
+        for (let sourceIdx = 1; sourceIdx < allQuarters.length; sourceIdx++) {
+          const sourceSlot = allQuarters[sourceIdx];
+          const sourceArr = schedule[sourceSlot.yi].quarters[sourceSlot.q];
+          if (!sourceArr || sourceArr[0] === "_GAP") continue;
+          for (let ci = 0; ci < sourceArr.length; ci++) {
+            const code = sourceArr[ci];
+            const course = COURSES[code];
+            if (!course || freeCode(code) || course.labCoreq || isLabPartner(code)) continue;
+            for (let targetIdx = 0; targetIdx < sourceIdx; targetIdx++) {
+              const targetSlot = allQuarters[targetIdx];
+              const targetArr = schedule[targetSlot.yi].quarters[targetSlot.q];
+              if (!targetArr || targetArr[0] === "_GAP") continue;
+              if (!targetArr.some(freeCode)) continue;
+              const completedAtTarget = completedBeforeSlot(targetIdx);
+              const snapshot = [...targetArr];
+              const qUnits = removeFreeUntilFits(targetArr, course.units || 0);
+              if (!canPlace(code, targetSlot.q, completedAtTarget, qUnits, schedule[targetSlot.yi].levelNum)) {
+                targetArr.splice(0, targetArr.length, ...snapshot);
+                continue;
+              }
+              sourceArr.splice(ci, 1);
+              targetArr.push(code);
+              movedAny = true;
+              ci--;
+              break;
+            }
+            if (movedAny) break;
+          }
+          if (movedAny) break;
+        }
+      }
+    };
+    compactLaterWorkOverFreePadding();
+    const repadDegreeUnitsAfterCompaction = () => {
+      const scheduledCoursesNow = schedule.flatMap(year => Object.values(year.quarters).flat()).filter(c => c && c !== "_GAP");
+      const scheduledSetNow = new Set(scheduledCoursesNow);
+      let unitsNow = scheduledCoursesNow.reduce((sum, code) => sum + (COURSES[code]?.units || 0), 0);
+      for (const code of completedCourses) if (COURSES[code] && !scheduledSetNow.has(code)) unitsNow += COURSES[code].units || 0;
+      unitsNow += (profile.priorCredits || 0);
+      const targetUnitsNow = (MAJOR_REQUIREMENTS[profile.major] || CS_BA_REQUIREMENTS).totalUnitsRequired || 180;
+      const usedNow = new Set([...scheduledCoursesNow, ...completedCourses]);
+      const freePoolNow = Object.keys(COURSES).filter(freeCode).filter(code => !usedNow.has(code));
+      for (const free of freePoolNow) {
+        if (unitsNow >= targetUnitsNow) break;
+        let placedFree = false;
+        for (const slot of allQuarters) {
+          const arr = schedule[slot.yi].quarters[slot.q];
+          if (!arr || arr[0] === "_GAP") continue;
+          const qUnits = this.quarterUnits(arr);
+          if (qUnits + (COURSES[free]?.units || 0) > maxUnits) continue;
+          arr.push(free);
+          unitsNow += COURSES[free]?.units || 0;
+          placedFree = true;
+          break;
+        }
+        if (!placedFree) {
+          const last = schedule[schedule.length - 1];
+          const nextAcad = last.academicStart + 1;
+          if (nextAcad > gradAcad + 4) break;
+          const newYear = this.makeYearObj(nextAcad, last.levelNum + 1, studentType, "F", "S", false);
+          schedule.push(newYear);
+          allQuarters.push({ yi: schedule.length - 1, q: "F" }, { yi: schedule.length - 1, q: "W" }, { yi: schedule.length - 1, q: "S" });
+          newYear.quarters.F.push(free);
+          unitsNow += COURSES[free]?.units || 0;
+        }
+      }
+    };
+    repadDegreeUnitsAfterCompaction();
+    padActiveUnderMinQuartersWithFree();
+
     // Do not synthesize additional future years beyond the minimum degree-unit
     // padding and no-implicit-gap safeguards above.
     // If all graduation requirements are satisfied before the requested target
@@ -2133,7 +2245,7 @@ const Scheduler = {
       return majorResults.every(result => result.fulfilled)
         && geResults.every(result => result.fulfilled)
         && ucResults.every(result => result.fulfilled)
-        && totalCandidateUnits >= (majorReqs.totalUnitsRequired || 180)
+        && totalCandidateUnits >= Math.max(180, majorReqs.totalUnitsRequired || 180)
         && upperCandidateUnits >= (majorReqs.minUpperDivUnits || 0);
     };
 

@@ -50,6 +50,7 @@ function buildContext() {
       return elements.get(id);
     },
     createElement(tag) { return new FakeElement(null, tag); },
+    createTextNode(text) { const node = new FakeElement(null, '#text'); node.textContent = String(text); return node; },
     querySelector() { return null; },
     querySelectorAll() { return []; },
     addEventListener() {}
@@ -127,6 +128,13 @@ function loadApp() {
       buildBlankScheduleForProfile: (typeof buildBlankScheduleForProfile === 'function' ? buildBlankScheduleForProfile : undefined),
       startBlankScheduleConstructor: (typeof startBlankScheduleConstructor === 'function' ? startBlankScheduleConstructor : undefined),
       showBlankScheduleRules: (typeof showBlankScheduleRules === 'function' ? showBlankScheduleRules : undefined),
+      buildScheduleResumePayload: (typeof buildScheduleResumePayload === 'function' ? buildScheduleResumePayload : undefined),
+      serializeScheduleForResume: (typeof serializeScheduleForResume === 'function' ? serializeScheduleForResume : undefined),
+      deserializeScheduleFromResume: (typeof deserializeScheduleFromResume === 'function' ? deserializeScheduleFromResume : undefined),
+      resumeDocumentHtml: (typeof resumeDocumentHtml === 'function' ? resumeDocumentHtml : undefined),
+      extractScheduleResumePayload: (typeof extractScheduleResumePayload === 'function' ? extractScheduleResumePayload : undefined),
+      restoreScheduleResumePayload: (typeof restoreScheduleResumePayload === 'function' ? restoreScheduleResumePayload : undefined),
+      syncProfileToWizardControls: (typeof syncProfileToWizardControls === 'function' ? syncProfileToWizardControls : undefined),
       refreshGradYearDefault,
       collectSelectedSummerYears: (typeof collectSelectedSummerYears === 'function' ? collectSelectedSummerYears : undefined),
       summerCalendarYearsInWindow: (typeof summerCalendarYearsInWindow === 'function' ? summerCalendarYearsInWindow : undefined),
@@ -275,13 +283,14 @@ function testNavbarIncludesUcscRateMyProfessorsResourceButton() {
   assert(!css.includes('.navbar-links a.nav-rmp-link,\n.navbar-links button.nav-review-link'), 'RMP link should not be grouped with highlighted review button styling');
 }
 
-function testWordExportOptionIsRemovedFromScheduleAndLanding() {
+function testWordResumeFileReplacesOldGenericWordExport() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
-  assert(!html.includes('Export Word'), 'schedule download actions should no longer offer Word export');
-  assert(!html.includes('exportDOCX()'), 'schedule UI should not wire a Word export button');
-  assert(!html.includes('docx@'), 'page should not load the Word/docx CDN once Word export is removed');
-  assert(!html.includes('PDF, Word, or Excel'), 'landing copy should not advertise Word download');
-  assert(html.includes('PDF or Excel'), 'landing copy should advertise only the remaining two download formats');
+  assert(!html.includes('exportDOCX()'), 'schedule UI should not wire the old generic Word export button');
+  assert(!html.includes('docx@'), 'page should not load the Word/docx CDN for resume files');
+  assert(!html.includes('PDF, Word, or Excel'), 'landing copy should not advertise generic Word download');
+  assert(html.includes('PDF or Excel'), 'landing copy should advertise display/share download formats separately');
+  assert(html.includes('Download Resume File'), 'schedule actions should offer a resume file for continuing later');
+  assert(html.includes('downloadScheduleResumeFile()'), 'resume-file button should call the dedicated continuation export helper');
 }
 
 function testLandingDoesNotClaimQuarterAvailabilityIsRespected() {
@@ -601,8 +610,11 @@ function testConfiguredReviewFormOpensSafelyInNewTab() {
 function testLandingOffersPlanForMeAndBuildFromScratchChoices() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   assert(html.includes('id="btn-plan-for-me"'), 'landing page should expose a Plan for Me choice');
-  assert(html.includes('id="btn-build-from-scratch"'), 'landing page should expose a Build from Scratch choice');
-  assert(html.includes('Build from Scratch'), 'landing copy should name the blank-schedule constructor option');
+  assert(html.includes('id="btn-build-from-scratch-new"'), 'landing page should expose a Start New Schedule choice under Build from Scratch');
+  assert(html.includes('id="btn-build-from-scratch-continue"'), 'landing page should expose a Continue My Schedule choice under Build from Scratch');
+  assert(html.includes('id="resume-file-input"'), 'landing page should include a hidden resume-file upload input');
+  assert(html.includes('Start New Schedule'), 'landing copy should name the fresh blank-constructor option');
+  assert(html.includes('Continue My Schedule'), 'landing copy should name the resume-import option');
   assert(html.includes('Plan for Me'), 'landing copy should name the automatic schedule option');
 }
 
@@ -643,6 +655,149 @@ function testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty() {
   assert(flat.some(q => q.term === 'SU' && q.academicStart === 2026), 'selected Summer 2027 should be present as an empty constructor quarter');
   assert(flat.some(q => q.term === 'W' && q.academicStart === 2026 && q.courses[0] === '_GAP'), 'selected Winter 2027 gap should be preserved');
   assert(flat.every(q => q.courses.length === 0 || q.courses[0] === '_GAP'), 'constructor schedule should contain no preplanned classes');
+}
+
+function testScheduleResumePayloadCapturesAllPlanningState() {
+  const context = loadApp();
+  const { __p5 } = context;
+  assert.strictEqual(typeof __p5.buildScheduleResumePayload, 'function', 'resume payload builder should exist');
+  __p5.AppState.planningMode = 'blank';
+  __p5.AppState.profile = {
+    ...__p5.AppState.profile,
+    major: 'EE_BS',
+    studentType: 'undergrad',
+    currentLevel: 3,
+    currentTerm: 'W',
+    currentYear: 2027,
+    targetGradTerm: 'S',
+    targetGradYear: 2029,
+    completedCourses: ['CSE 20', 'WRIT 2'],
+    priorCredits: 42,
+    elwrSatisfied: true,
+    collegeAffiliation: 'cowell',
+    collegeCoreCompleted: true,
+    ahiFulfillment: { usHistoryFullYear: true, usHistoryHalfYear: false, americanGovernmentHalfYear: true },
+    includeSummer: true,
+    summerYears: [2027, 2028],
+    maxUnits: 17,
+    minUnits: 12,
+    concentration: 'interest_embedded_systems',
+    electiveInterests: ['interest_embedded_systems', 'interest_ai_ml'],
+    geConcentration: 'ge_arts_humanities',
+    geConcentrations: ['ge_arts_humanities'],
+    autoSuggest: false,
+    gapEnabled: true,
+    gapType: 'quarter',
+    gapTerm: 'S',
+    gapYear: 2028
+  };
+  __p5.AppState.schedule = [
+    { label: 'Year 3 (Junior)', academicStart: 2026, levelNum: 3, quarters: { W: ['CSE 20'], S: ['_GAP'], SU: ['FREE 5'] }, gapQuarters: new Set(['S']) }
+  ];
+  __p5.AppState.schedule.courseTypeMap = new Map([['CSE 20', 'major_core'], ['FREE 5', 'filler']]);
+
+  const payload = __p5.buildScheduleResumePayload();
+
+  assert.strictEqual(payload.magic, 'UCSC_SCHEDULER_RESUME_FILE');
+  assert.strictEqual(payload.planningMode, 'blank');
+  assert.strictEqual(payload.profile.major, 'EE_BS');
+  assert.strictEqual(payload.profile.currentLevel, 3);
+  assert.strictEqual(payload.profile.targetGradYear, 2029);
+  assert.strictEqual(JSON.stringify(payload.profile.completedCourses), JSON.stringify(['CSE 20', 'WRIT 2']));
+  assert.strictEqual(payload.profile.priorCredits, 42);
+  assert.strictEqual(payload.profile.elwrSatisfied, true);
+  assert.strictEqual(payload.profile.collegeAffiliation, 'cowell');
+  assert.strictEqual(payload.profile.collegeCoreCompleted, true);
+  assert.strictEqual(payload.profile.ahiFulfillment.americanGovernmentHalfYear, true);
+  assert.strictEqual(JSON.stringify(payload.profile.summerYears), JSON.stringify([2027, 2028]));
+  assert.strictEqual(payload.profile.maxUnits, 17);
+  assert.strictEqual(JSON.stringify(payload.profile.electiveInterests), JSON.stringify(['interest_embedded_systems', 'interest_ai_ml']));
+  assert.strictEqual(JSON.stringify(payload.profile.geConcentrations), JSON.stringify(['ge_arts_humanities']));
+  assert.strictEqual(payload.profile.autoSuggest, false);
+  assert.strictEqual(payload.profile.gapEnabled, true);
+  assert.strictEqual(payload.schedule.years[0].quarters.S[0], '_GAP');
+  assert.strictEqual(JSON.stringify(payload.schedule.courseTypeMap), JSON.stringify([['CSE 20', 'major_core'], ['FREE 5', 'filler']]));
+}
+
+function testResumeDocumentEmbedsRecoverableWordCompatiblePayload() {
+  const { __p5 } = loadApp();
+  assert.strictEqual(typeof __p5.resumeDocumentHtml, 'function', 'resume document HTML helper should exist');
+  assert.strictEqual(typeof __p5.extractScheduleResumePayload, 'function', 'resume payload extraction helper should exist');
+  __p5.AppState.schedule = [{ label: 'Year 1', academicStart: 2026, quarters: { F: ['CSE 20'] } }];
+  __p5.AppState.schedule.courseTypeMap = new Map([['CSE 20', 'major_core']]);
+  const payload = __p5.buildScheduleResumePayload();
+  const docHtml = __p5.resumeDocumentHtml(payload);
+  assert(docHtml.includes('UCSC Scheduler Resume File'), 'Word-compatible resume file should have a visible title');
+  assert(docHtml.includes('UCSC_SCHEDULER_RESUME_JSON_START'), 'resume file should embed a machine-readable payload marker');
+  assert(docHtml.includes('CSE 20'), 'resume file should visibly include planned classes');
+  assert.strictEqual(JSON.stringify(__p5.extractScheduleResumePayload(docHtml)), JSON.stringify(payload), 'embedded payload should round-trip exactly');
+}
+
+function testRestoreScheduleResumePayloadRehydratesEnvironmentAndSyncsWizard() {
+  const context = loadApp();
+  const { __p5, document } = context;
+  assert.strictEqual(typeof __p5.restoreScheduleResumePayload, 'function', 'resume restore helper should exist');
+  let validateCalls = 0;
+  let rendered = [];
+  context.Validator = {
+    validateAll(schedule, profile) {
+      validateCalls += 1;
+      assert.strictEqual(profile.major, 'EE_BS', 'validation should use restored profile');
+      assert.strictEqual(schedule[0].quarters.F[0], 'CSE 20', 'validation should use restored schedule');
+      return { allMet: false, major: [], ge: [], uc: [], totalUnits: 5, totalUnitsMet: false, upperDivMet: false };
+    }
+  };
+  context.renderSchedule = () => rendered.push('schedule');
+  context.renderRequirements = () => rendered.push('requirements');
+  context.showValidationAlerts = () => rendered.push('alerts');
+  const payload = {
+    magic: 'UCSC_SCHEDULER_RESUME_FILE',
+    version: 1,
+    exportedAt: '2026-08-17T00:00:00.000Z',
+    planningMode: 'blank',
+    profile: {
+      ...__p5.AppState.profile,
+      major: 'EE_BS',
+      studentType: 'undergrad',
+      currentLevel: 2,
+      currentTerm: 'W',
+      currentYear: 2027,
+      targetGradTerm: 'S',
+      targetGradYear: 2029,
+      completedCourses: ['WRIT 2'],
+      priorCredits: 25,
+      elwrSatisfied: true,
+      collegeAffiliation: 'cowell',
+      collegeCoreCompleted: true,
+      includeSummer: true,
+      summerYears: [2028],
+      maxUnits: 17,
+      electiveInterests: ['interest_ai_ml'],
+      geConcentrations: ['ge_arts_humanities'],
+      gapEnabled: true,
+      gapType: 'quarter',
+      gapTerm: 'S',
+      gapYear: 2028
+    },
+    schedule: {
+      years: [{ label: 'Year 2 (Sophomore)', academicStart: 2026, levelNum: 2, quarters: { F: ['CSE 20'], S: ['_GAP'] }, gapQuarters: ['S'] }],
+      courseTypeMap: [['CSE 20', 'major_core']]
+    }
+  };
+
+  __p5.restoreScheduleResumePayload(payload);
+
+  assert.strictEqual(__p5.AppState.currentView, 'schedule', 'restore should bring student directly back to schedule view');
+  assert.strictEqual(__p5.AppState.planningMode, 'blank');
+  assert.strictEqual(__p5.AppState.profile.major, 'EE_BS');
+  assert.strictEqual(JSON.stringify(__p5.AppState.profile.completedCourses), JSON.stringify(['WRIT 2']));
+  assert.strictEqual(__p5.AppState.schedule.courseTypeMap.get('CSE 20'), 'major_core');
+  assert(__p5.AppState.schedule[0].gapQuarters.has('S'), 'gap-quarter metadata should restore as a Set');
+  assert.strictEqual(validateCalls, 1, 'restore should recalculate validation once');
+  assert.strictEqual(JSON.stringify(rendered), JSON.stringify(['schedule', 'requirements', 'alerts']), 'restore should re-render the full schedule environment');
+  assert.strictEqual(document.getElementById('select-major').value, 'EE_BS', 'wizard controls should be synced for later preference edits');
+  assert.strictEqual(document.getElementById('select-current-term').value, 'W', 'current term control should be restored');
+  assert.strictEqual(document.getElementById('input-prior-credits').value, '25', 'prior credits control should be restored');
 }
 
 function testBlankScheduleRulesPopupIsShortAndActionable() {
@@ -731,12 +886,15 @@ function testNextDepartmentGraduateCoursesStaySearchOnly() {
 
 function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
-  const changedAssets = ['js/courses.js', 'js/app.js', 'js/graduate-courses.js'];
-  for (const asset of changedAssets) {
+  const catalogAssets = ['js/courses.js', 'js/graduate-courses.js'];
+  for (const asset of catalogAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('final-catalog'), `${asset} cache-buster should change for the final catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('final-catalog'), `${asset} cache-buster should preserve the final catalog update marker so browsers do not reuse old catalog JS`);
   }
+  const appMatch = html.match(/<script src="js\/app\.js\?v=([^"]+)"/);
+  assert(appMatch && appMatch[1].includes('resume-file'), 'app.js cache-buster should change for the resume-file workflow');
+  assert(html.includes('css/style.css?v=prototype5-20260817-resume-file'), 'changed landing CSS should also be cache-busted');
 }
 
 function testGraduateRestrictionWarningsUseOfficialCatalogText() {
@@ -773,7 +931,7 @@ const tests = [
   testAllRealCoursesHaveDatabaseCatalogUrlsForDetailPopup,
   testProfessorPreferenceSectionRemovedFromHtml,
   testNavbarIncludesUcscRateMyProfessorsResourceButton,
-  testWordExportOptionIsRemovedFromScheduleAndLanding,
+  testWordResumeFileReplacesOldGenericWordExport,
   testLandingDoesNotClaimQuarterAvailabilityIsRespected,
   testGeneratedScheduleWarningUsesSelectedMajorCatalogLinkAndAvailabilityCaveat,
   testAcademicHistoryCheckboxSectionsAreProminentAndIncludeAhiOptions,
@@ -794,6 +952,9 @@ const tests = [
   testLandingOffersPlanForMeAndBuildFromScratchChoices,
   testPlanningModeButtonsSelectWizardMode,
   testBlankScheduleConstructorKeepsSelectedWindowAndGapQuartersEmpty,
+  testScheduleResumePayloadCapturesAllPlanningState,
+  testResumeDocumentEmbedsRecoverableWordCompatiblePayload,
+  testRestoreScheduleResumePayloadRehydratesEnvironmentAndSyncsWizard,
   testBlankScheduleRulesPopupIsShortAndActionable,
   testGraduateCatalogIsSeparateSearchOnlyAndVisibleInManualSearch,
   testNextDepartmentCleanUndergradCoursesAreSearchable,
