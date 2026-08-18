@@ -681,7 +681,8 @@ function testNextDepartmentCleanUndergradCoursesAreSearchable() {
   const nextTenEUndergradCodes = ['HISC 5', 'HISC 23', 'HISC 174', 'HISC 186', 'HISC 189', 'HTEC 10', 'KRSG 14', 'KRSG 16', 'LALS 134', 'LALS 146', 'LALS 194J'];
   const nextTenFUndergradCodes = ['LING 134', 'LING 177', 'LIT 60B', 'LIT 60C', 'LIT 60X', 'LIT 81L', 'LIT 87B', 'LIT 87H', 'LIT 112S', 'LIT 116J', 'LIT 126R', 'LIT 130E', 'LIT 130M', 'LIT 133L', 'LIT 139C', 'LIT 148B', 'LIT 149K', 'LIT 151M', 'LIT 155P', 'LIT 167N', 'LIT 167P', 'LIT 167W', 'LIT 188Y', 'LIT 190AA', 'LIT 190M', 'METX 131', 'METX 150L', 'MUSC 105X', 'MUSC 180X'];
   const nextTenGUndergradCodes = ['OAKS 50', 'OAKS 145A', 'OAKS 145B', 'OCEA 151', 'OCEA 152', 'PRTR 27', 'PRTR 47'];
-  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes, ...nextTenBUndergradCodes, ...nextTenCUndergradCodes, ...nextTenDUndergradCodes, ...nextTenEUndergradCodes, ...nextTenFUndergradCodes, ...nextTenGUndergradCodes]) {
+  const nextTenHUndergradCodes = ['SOCY 193L', 'SPAN 60', 'THEA 127'];
+  for (const code of [...fiveDepartmentCleanCodes, ...sevenDepartmentCleanCodes, ...reviewedWarningUndergradCodes, ...nextTenUndergradCodes, ...nextTenBUndergradCodes, ...nextTenCUndergradCodes, ...nextTenDUndergradCodes, ...nextTenEUndergradCodes, ...nextTenFUndergradCodes, ...nextTenGUndergradCodes, ...nextTenHUndergradCodes]) {
     assert(__p5.COURSES[code], `${code} should be merged into the undergraduate scheduler catalog after clean QA or Hermes prerequisite review`);
     assert(__p5.searchCourses(code).some(result => result.code === code && result.source === 'undergraduate'), `${code} should be findable in manual academic-history search`);
   }
@@ -714,7 +715,8 @@ function testNextDepartmentGraduateCoursesStaySearchOnly() {
   const nextTenEGradCodes = ['HISC 203A', 'HISC 297A', 'LALS 200', 'LALS 297A', 'POLI 243'];
   const nextTenFGradCodes = ['LING 211', 'LING 297A', 'LIT 201A', 'LIT 282D', 'METX 202', 'METX 297A', 'MUSC 203A', 'MUSC 297'];
   const nextTenGGradCodes = ['OCEA 200', 'OCEA 297A', 'PHIL 202', 'PHIL 280', 'POLI 200A', 'POLI 297A'];
-  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes, ...nextTenGGradCodes]) {
+  const nextTenHGradCodes = ['SCIC 200', 'SCIC 297', 'SOCD 200', 'SOCD 297', 'SOCY 200A', 'SOCY 200B', 'SOCY 297', 'THEA 297'];
+  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes, ...nextTenGGradCodes, ...nextTenHGradCodes]) {
     assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
     assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
     assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
@@ -732,7 +734,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('next10g-catalog'), `${asset} cache-buster should change for the next-10g catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('next10h-catalog'), `${asset} cache-buster should change for the next-10h catalog update so browsers do not reuse old JS`);
   }
 }
 

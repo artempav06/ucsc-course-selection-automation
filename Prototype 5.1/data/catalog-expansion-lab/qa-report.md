@@ -1,369 +1,252 @@
 # Catalog Expansion Candidate QA Report
 
-Generated: 2026-08-18T02:45:57.026Z
+Generated: 2026-08-18T03:14:17.642Z
 
 ## Summary
 
-- Candidate count: 126
-- Passed with no warnings: 32
-- Warnings only / human review needed: 88
-- Blocked by hard errors: 6
+- Candidate count: 82
+- Passed with no warnings: 11
+- Warnings only / human review needed: 71
+- Blocked by hard errors: 0
 
 ## Merge readiness
 
-Not ready to merge: hard QA errors exist.
+Not ready for automatic merge: no hard schema blockers, but human-review warnings remain.
 
 ## Rows
 
-- OAKS 145A — Early Black Histories of California: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145a
-- OAKS 145B — COMMUNITY ENGAGED HISTORY PRACTICUM THE LONDON NELSON LEGACY INSTITUTE: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145b
-- OAKS 50 — Inner Verse: Exploring Identity Through Writing: warnings-only
+- SCIC 200 — Introduction to Science Communication for Scientists: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-50
-- OCEA 151 — Field and Lab Methods in Aquatic Biogeochemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-151
-- OCEA 152 — Field and Lab Methods in Aquatic Molecular Ecology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-152
-- OCEA 200 — Physical Oceanography: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200
-- OCEA 201 — Advanced Physical Oceanography: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-200
+- SCIC 201A — Reporting and Writing Science News: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201a
+- SCIC 201B — The Science Feature: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201b
+- SCIC 201C — Profile and Essay Writing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201c
+- SCIC 201D — Policy and Investigative Reporting: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201d
+- SCIC 201E — Multimedia Science News: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201e
+- SCIC 202 — Writing and Editing Workshop: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-202
+- SCIC 203 — Science Communication Field Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-203
+- SCIC 210 — Data-Driven Animation for Science Communication: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-210
+- SCIC 297 — Independent Study: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297
+- SCIC 297B — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297b
+- SOCD 200 — Approaches to Social Documentation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-200
+- SOCD 201A — Introduction to Documentary Field Production and Editing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201a
+- SOCD 201B — Advanced Documentary Field Production and Editing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201b
+- SOCD 201C — Project Planning for the Social Documentary: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201c
+- SOCD 202 — Multiple-Platform Social Documentary Production: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-202
+- SOCD 203 — Documentary Research Methods and Social Science Representation: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-203
+- SOCD 292 — Special Topics: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-292
+- SOCD 294A — Production/Analysis/Editing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294a
+- SOCD 294B — Production/Analysis/Editing: warnings-only
+  - Warnings: review:contains-major-or-enrollment-condition
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294b
+- SOCD 294C — Production/Analysis/Editing: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-201
-- OCEA 211 — Climate Dynamics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-211
-- OCEA 215 — Predicting the Atmosphere, Ocean, and Climate: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-215
-- OCEA 218 — Marine Microbial Ecology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-218
-- OCEA 220 — Chemical Oceanography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220
-- OCEA 224 — Aquatic Organic Geochemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-224
-- OCEA 230 — Biological Oceanography: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-230
-- OCEA 241 — Dynamics of Marine Ecosystems: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-241
-- OCEA 251 — Field and Lab Methods in Aquatic Biogeochemistry: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-251
-- OCEA 252 — Field and Lab Methods in Aquatic Molecular Ecology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-252
-- OCEA 255 — Visualizing Ocean Data: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-255
-- OCEA 265 — Marine Population Dynamics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-265
-- OCEA 285 — Past Climate Change: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-285
-- OCEA 286 — Introduction to Ocean Modeling: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-286
-- OCEA 290A — Topics in Chemical Oceanography: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290a
-- OCEA 290B — Topics in Biological Oceanography: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290b
-- OCEA 290C — Topics in Marine Geochemistry: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290c
-- OCEA 290D — Topics in Marine Microbiology: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290d
-- OCEA 290E — Topics in Climatic and Oceanic Change: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290e
-- OCEA 290G — Topics in Physical Oceanography: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290g
-- OCEA 290H — Topics in Ocean Optics: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290h
-- OCEA 290J — Topics in Marine Organic Geochemistry: warnings-only
-  - Warnings: review:contains-recommended-language; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290j
-- OCEA 292 — Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-292
-- OCEA 295 — How to Write a Scientific Article: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-295
-- OCEA 296 — Teaching in Ocean Sciences: warnings-only
-  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-296
-- OCEA 297A — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297a
-- OCEA 297B — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297b
-- OCEA 297C — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297c
-- OCEA 299A — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299a
-- OCEA 299B — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299b
-- OCEA 299C — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299c
-- PHIL 202 — Topics in Ancient Greek Philosophy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-202
-- PHIL 203 — Autism: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-203
-- PHIL 213 — Origins of Analytic Philosophy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-213
-- PHIL 214 — Probability and Confirmation: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-214
-- PHIL 222 — Metaphysics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-222
-- PHIL 224 — Philosophy of Language: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-224
-- PHIL 225 — The Pittsburgh School: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-225
-- PHIL 231 — Epistemology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-231
-- PHIL 232 — Advanced Topics in Value Theory: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-232
-- PHIL 233 — Seminar in Philosophy of Mind: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-233
-- PHIL 235 — Philosophy of Psychology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-235
-- PHIL 237 — Making Up the Mind: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-237
-- PHIL 239 — Philosophy of Religion: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-239
-- PHIL 270 — Research Seminar: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-270
-- PHIL 280 — Graduate Colloquia Course: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-280
-- PHIL 281 — The Pedagogy of Philosophy: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-281
-- PHIL 290A — Philosophy of History: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290a
-- PHIL 290C — Advanced Topics in Ethics: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290c
-- PHIL 290F — Topics in Philosophy of Biology: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290f
-- PHIL 290H — Environmental Ethics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294c
+- SOCD 295 — Project Completion: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-295
+- SOCD 297 — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290h
-- PHIL 290J — Advanced Topics in the History of Ethics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297
+- SOCD 297F — Independent Study: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290j
-- PHIL 290K — Philosophical Matters of Scientific Practice: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297f
+- SOCY 193L — Labor Summer Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/upper-division/socy-193l
+- SOCY 200A — Social Theory 1: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290k
-- PHIL 290O — Majors Figures in the History of Philosophy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200a
+- SOCY 200B — Social Theory 2: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200b
+- SOCY 200C — Social Theory 3: warnings-only
+  - Warnings: review:contains-permission-or-consent-exception; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200c
+- SOCY 203 — Sociological Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290o
-- PHIL 290P — Major Figures in Contemporary Philosophy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-203
+- SOCY 204 — Methods of Quantitative Analysis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290p
-- PHIL 290Q — Philosophy of Mathematics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-204
+- SOCY 205 — Field Research Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290q
-- PHIL 290S — Topics in the Philosophy of Science: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-205
+- SOCY 206 — Comparative Historical Methods: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290s
-- PHIL 290W — History of Consciousness: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-206
+- SOCY 208 — Writing Practicum: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290w
-- PHIL 294 — Teaching-Related Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-294
-- PHIL 295 — Directed Reading: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295
-- PHIL 295F — Readings in Philosophy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-208
+- SOCY 209 — The Analysis of Cultural Forms: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295f
-- PHIL 296 — Special Student Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-296
-- PHIL 297 — Independent Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297
-- PHIL 297F — Independent Study: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-209
+- SOCY 220 — Global Transformation: Macrosociological Perspectives: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297f
-- PHIL 299 — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299
-- PHIL 299F — Thesis Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299f
-- PHYE 209B — Boating: Graduate Beginning Dinghy Sailing: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b
-- PHYE 209C — Boating: Graduate Intermediate Dinghy Sailing: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c
-- PHYE 209S — Boating: Grad Student Beginning Keelboat Sailing: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition; review:prerequisite-logic-not-auto-encoded; official-course-prereq-text-not-encoded
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209s
-- PHYE 21A — Introduction to Golf: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/lower-division/phye-21a
-- PHYS 292 — Seminar: blocked
-  - Errors: invalid-units
-  - Warnings: review:missing-units; review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292
-- POLI 200A — Political and Social Thought Core Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-220
+- SOCY 222 — Political Sociology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200a
-- POLI 200B — Social Forces and Political Change Core Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-222
+- SOCY 223 — Sociology of the Environment: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200b
-- POLI 200C — States and Political Institutions Core Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-223
+- SOCY 224 — Globalization: Theories and Social Movements: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200c
-- POLI 200D — Political Economy Core Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-224
+- SOCY 225 — Political Economy for Sociologists: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200d
-- POLI 201 — Logics of Inquiry: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-225
+- SOCY 227 — Learning from Environmental Historians: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-201
-- POLI 202 — Fundamentals of Political Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-227
+- SOCY 229 — Work and Labor Markets in the New Economy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-202
-- POLI 203 — Making of the Modern: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-229
+- SOCY 230 — Theory and Method in the Sociology of Marx: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-203
-- POLI 204 — Bodies in History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-230
+- SOCY 240 — Inequality and Identity: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-204
-- POLI 205 — Critical Perspectives on Classical Political Economy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-240
+- SOCY 241 — Cross-National and Cross-Cultural Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-205
-- POLI 206 — Power and Pleasure: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-241
+- SOCY 242 — Feminist Research Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-206
-- POLI 207 — Political Economies of Affect: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-242
+- SOCY 244 — Race and Ethnicity: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-207
-- POLI 208 — Race: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-244
+- SOCY 245 — Feminist Theory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-208
-- POLI 209 — Radical Political Thought: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-245
+- SOCY 246 — Class, Culture, and Movement: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-209
-- POLI 210 — Problems of Democracy in Comparative Perspective: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-246
+- SOCY 247 — Race and Class: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-210
-- POLI 211 — Making and Unmaking Sovereignty: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-247
+- SOCY 249 — Feminisms and Cultural Politics: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-211
-- POLI 213 — Who Governs the Globe? Exploring Agency and Authority in Contemporary World Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-249
+- SOCY 250 — Course Design and Grant-Writing Seminar: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-213
-- POLI 214 — Thinking Green: Politics, Ethics, Political Economy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-250
+- SOCY 252 — Symbolic Interactionism and Sociology of Emotions: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-214
-- POLI 216 — Theorizing Politics Beyond the State: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-252
+- SOCY 253 — Race, Crime, and Justice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-216
-- POLI 217 — Besieged Polities...: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-253
+- SOCY 255 — Engaging Cultural Studies: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-217
-- POLI 218 — Law and/Vs. Justice: The Rule of Law and Problems of (In)Justice: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-255
+- SOCY 256 — Urban Sociology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-218
-- POLI 220 — Un(Doing) History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-256
+- SOCY 257 — Colonialism, International Law, and Global Justice: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-220
-- POLI 222 — Conflict and Change in American Politics and Policy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-257
+- SOCY 258 — Global Lay Justice Systems and Direct Democracy: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-222
-- POLI 223 — Topics in American Political Development: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-258
+- SOCY 259 — Space and the Politics of Difference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-223
-- POLI 232 — United States Political History: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-259
+- SOCY 260 — Culture, Knowledge, Power: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-232
-- POLI 241 — Foundations and Frontiers in Comparative Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-260
+- SOCY 261 — Sociology of Knowledge: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-241
-- POLI 245 — Latin American Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-261
+- SOCY 262 — Cultural Practice and Everyday Life: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-245
-- POLI 247 — Comparative Urban Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-262
+- SOCY 263 — Cultural Politics of Difference: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-247
-- POLI 248 — On Property: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-263
+- SOCY 264 — Science, Technology, and Medicine: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-248
-- POLI 249 — Politics of Protest: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-264
+- SOCY 282 — Social Policy Research: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-249
-- POLI 255 — Comparative Anti-Colonialisms: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-282
+- SOCY 290 — Advanced Topics in Sociological Analysis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-255
-- POLI 257 — Women Interpret Islam: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290
+- SOCY 290W — Sociological Analysis Working Group: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-257
-- POLI 261 — Key Issues in Contemporary Chinese Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290w
+- SOCY 293 — Going on the Job Market: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-261
-- POLI 270 — Advanced Topics in Global Environmental Governance: Agency Beyond the State: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-293
+- SOCY 294 — Writing for Social Scientists: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-270
-- POLI 271 — Global Politics and Geo-Politics: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-294
+- SOCY 295 — The Pedagogy of Sociology: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-271
-- POLI 272 — Critical Interventions in IR Theory and Global Political Economy: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-295
+- SOCY 297 — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-297
+- SOCY 299 — Thesis Research: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-299
+- SPAN 60 — Soccer in Latin America and Spain: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/span-spanish/lower-division/span-60
+- THEA 127 — Broadcasting Imagination: American Radio Drama, 1935–1950: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/upper-division/thea-127
+- THEA 290B — Practice of Theory: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-272
-- POLI 275 — Contemporary Capitalism: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290b
+- THEA 290C — Performance Analysis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-275
-- POLI 291 — Teaching Assistant Seminar: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-291
-- POLI 292 — Professional Development: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290c
+- THEA 291 — Field Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-291
+- THEA 292 — Teaching-Related Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-292
+- THEA 293 — Performance Research Project: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-292
-- POLI 293 — Field Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-293
-- POLI 295A — Research Colloquium: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-293
+- THEA 295 — Group Critique: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295a
-- POLI 295B — Advanced Research Seminar: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-295
+- THEA 297 — Independent Study: passed
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297
+- THEA 297F — Independent Study/Graduate: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295b
-- POLI 297A — Indep Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297a
-- POLI 297B — Indep Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297b
-- POLI 297C — Indep Study: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297c
-- POLI 299A — Thesis Research: warnings-only
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297f
+- THEA 299 — Capstone Thesis: warnings-only
   - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299a
-- POLI 299B — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299b
-- POLI 299C — Thesis Research: warnings-only
-  - Warnings: review:contains-major-or-enrollment-condition
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299c
-- PRTR 27 — Time Management for College: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-27
-- PRTR 47 — Zines and Community-Based Research: passed
-  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-47
+  - URL: https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-299

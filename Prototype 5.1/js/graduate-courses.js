@@ -40843,6 +40843,438 @@ const GRADUATE_COURSES = {
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "SCIC 200": {
+    "concentrations": [],
+    "title": "Introduction to Science Communication for Scientists",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-200",
+    "desc": "Instructs science students in communicating about their work with the non-scientist public, including written, visual, and audio forms of communication.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students. cannot receive credit for this course and SCIC 100 .",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students. cannot receive credit for this course and SCIC 100 .",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 201A": {
+    "concentrations": [],
+    "title": "Reporting and Writing Science News",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201a",
+    "desc": "A survey of the conventions of newspaper journalism and the special application of those conventions to scientific and technological subjects.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 201B": {
+    "concentrations": [],
+    "title": "The Science Feature",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201b",
+    "desc": "A survey of selected feature articles in the current national science magazines, with attention to strategy, level of complexity, explanation technique, and style. Writing assignments include a publishable feature article.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 201C": {
+    "concentrations": [],
+    "title": "Profile and Essay Writing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201c",
+    "desc": "A survey of science and nature profiles and essays. Purpose, content, form, and style are considered. Writing assignments include original profiles and essays on current issues in science, technology, and society.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 201D": {
+    "concentrations": [],
+    "title": "Policy and Investigative Reporting",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201d",
+    "desc": "Rigorous examination of techniques for reporting topics where science and technology meet public policy and society. Covers essential skills of investigative reporting, including obtaining documents through Public Records Act requests, using online reporting resources, and writing about ethical and legal issues.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 201E": {
+    "concentrations": [],
+    "title": "Multimedia Science News",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201e",
+    "desc": "Introduces web-media tools for reporting science stories and enhancing coverage for broad audiences, including video packages, narrated slideshows, podcasts, blogs, and still photography. Laboratory sections address skills for handling equipment and online editing.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 202": {
+    "concentrations": [],
+    "title": "Writing and Editing Workshop",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-202",
+    "desc": "Theory and practice of writing and editing articles on scientific, medical, environmental, and technological subjects for newspapers, magazines, and special publications directed at non-technical readers.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 203": {
+    "concentrations": [],
+    "title": "Science Communication Field Study",
+    "units": 1,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-203",
+    "desc": "This five-day immersive field course trains science communication graduate students to translate complex environmental issues into compelling narratives. Through site visits, expert talks, and hands-on observation at a beautiful and environmentally rare nationally protected area, students examine tensions between conservation, agriculture, and community. Activities include interviewing practitioners, analyzing media (film and journalism), and reflecting on storytelling strategies. Emphasis is placed on understanding and communicating complex issues, framing and journalism ethics in real-world contexts.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to science communication M.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to science communication M.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 210": {
+    "concentrations": [],
+    "title": "Data-Driven Animation for Science Communication",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-210",
+    "desc": "Effective data visualizations have grown into global movements, such as the \"warming stripes,\" climate change visualization by Ed Hawkins, and have been used to guide policy, for instance, in the COVID-19 pandemic response. This course trains students in data-based storytelling that promotes research and science communication for the benefit of communities and policymakers on local and global scales. Students draft a science writing script, create custom raster and vector graphics, program data visualizations, learn to model and animate 3D models, and create animated compositions. For their final project, students assemble these data-driven assets into an animated video abstract for their own research or that of a collaborating researcher. Taught in conjunction with SCIC 110 .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297",
+    "desc": "A media internship is completed with faculty tutorial assistance, to satisfy a need for the student when a regular course is not available. Enrollment restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students formally accepted into the writing track of the Science Communication Program.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SCIC 297B": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297b",
+    "desc": "Independent Study",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 200": {
+    "concentrations": [],
+    "title": "Approaches to Social Documentation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-200",
+    "desc": "Comprehensive review and analysis of documentary strategies aimed at societal critique and social change, evaluating changes in argument, evidence, and process over development of the discipline.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 201A": {
+    "concentrations": [],
+    "title": "Introduction to Documentary Field Production and Editing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201a",
+    "desc": "Designed to provide supplemental instruction on specific topical and/or technical matters related to social documentation. Topics include technical standards and innovations within the field of social documentation, documentary subjects, location production, and/or the work of individual professional documentarians.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 201B": {
+    "concentrations": [],
+    "title": "Advanced Documentary Field Production and Editing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201b",
+    "desc": "Intensive directing and producing course that covers conceptualization, research, treatment and proposal writing, interview technique, camera, editing, production, and distribution.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 201C": {
+    "concentrations": [],
+    "title": "Project Planning for the Social Documentary",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201c",
+    "desc": "Workshop seminar in project planning focusing on the form and content of the documentary project; research and preproduction; technical, financial, and logistical plans; and coordination with subjects and resources.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 202": {
+    "concentrations": [],
+    "title": "Multiple-Platform Social Documentary Production",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-202",
+    "desc": "Introduction to social documentary genres including video, photography, new media and other mediums, which addresses social-scientific research and methodology in the context of these processes.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 203": {
+    "concentrations": [],
+    "title": "Documentary Research Methods and Social Science Representation",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-203",
+    "desc": "Designed to acquaint students with how social science research represents social reality and how social documentarians represent social reality. Designed to encourage comparison among different modes of social science research and between social science and different modes of social documentation representations of social life.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "SOCD 204": {
     "concentrations": [],
     "title": "Ethnographic Writing and Social Documentation",
@@ -40853,6 +41285,30 @@ const GRADUATE_COURSES = {
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-204",
     "desc": "Graduate-level advanced seminar explores ways that seeing, hearing, and knowing are influenced by culture, power, race, and other factors. Readings emphasize how documentary subjects are constituted and known, addressing questions of epistemology, social constructivism, objectivity, and method.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 292": {
+    "concentrations": [],
+    "title": "Special Topics",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-292",
+    "desc": "Provides supplemental instruction on specific topical and/or technical matters related to social documentation. Topics include technical standards, artistic strategies, and innovations within the field of social documentation, documentary subjects, and/or work of individual professional documentarians.",
     "section": [
       "GRADUATE_SEARCH_ONLY"
     ],
@@ -40889,6 +41345,1082 @@ const GRADUATE_COURSES = {
     "enrollmentText": "Enrollment is restricted to graduate students in social documentation. restricted to film and digital media graduate students.",
     "searchOnly": true,
     "sourceCatalogYear": "2026-2027"
+  },
+  "SOCD 294A": {
+    "concentrations": [],
+    "title": "Production/Analysis/Editing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294a",
+    "desc": "Workshop seminar oriented toward actual fieldwork, production, and preparation for editing of the thesis project in the student's chosen genre. Techniques of collection and recording, analysis, preparation, and editing taught.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 294B": {
+    "concentrations": [],
+    "title": "Production/Analysis/Editing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294b",
+    "desc": "Workshop seminar oriented toward the editing and creative assemblage of the thesis project in the student's chosen genre. Techniques of preparation, exhibition, and editing taught.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 294C": {
+    "concentrations": [],
+    "title": "Production/Analysis/Editing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294c",
+    "desc": "Social documentation students in the final phase of completing their master's thesis receive guidance in shaping their projects, receive feedback, and are taught key elements of structure and narrative at a time when the demand for clarity and social documentation exposition is crucial.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "Prerequisite(s): SOCD 294A and SOCD 294B . Enrollment is restricted to social documentation graduate students.",
+    "prereqNotes": [
+      "Official prerequisite text: Prerequisite(s): SOCD 294A and SOCD 294B . Enrollment is restricted to social documentation graduate students.",
+      "Official enrollment/restriction text: Enrollment is restricted to social documentation graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to social documentation graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 295": {
+    "concentrations": [],
+    "title": "Project Completion",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-295",
+    "desc": "Individualized study for second-year graduate students working on and completing their final projects. Limited to students enrolled in the social documentation program during their final quarter of study.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297",
+    "desc": "Study either related to a course being taken or a totally independent study. Enrollment restricted to graduate students. Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCD 297F": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297f",
+    "desc": "Students submit petition to course-sponsoring agency. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 200A": {
+    "concentrations": [],
+    "title": "Social Theory 1",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200a",
+    "desc": "The first in a three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 200B": {
+    "concentrations": [],
+    "title": "Social Theory 2",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200b",
+    "desc": "The second in the three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "SOCY 200A. Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: SOCY 200A. Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 200C": {
+    "concentrations": [],
+    "title": "Social Theory 3",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200c",
+    "desc": "The third in Sociology’s three-quarter theory sequence that surveys major schools of modern social and political thought, including political economy, structuralism, post-structuralism, phenomenology, global Marxisms, post-colonial theory, critical race theory, and queer and feminist theory. Each quarter covers three thematic modules from the following: the history of sociology and the social sciences; the Enlightenment and the social turn; modernity and its others; political economy; culture and cultural politics; identity, subjectivity, consciousness; the social production of difference; the human and its others; space, place, and power.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "SOCY 200A and SOCY 200B. Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+    "prereqNotes": [
+      "Official prerequisite text: SOCY 200A and SOCY 200B. Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+      "Needs review: contains-permission-or-consent-exception",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students or by permission of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 203": {
+    "concentrations": [],
+    "title": "Sociological Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-203",
+    "desc": "Approaches methods as a series of conscious and strategic choices for doing various kinds of research. Introduces students to the epistemological questions of method in social sciences; to key issues in technique, particularly control, reliability, and validity; and to good examples of social research.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students and by permission number.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students and by permission number.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 204": {
+    "concentrations": [],
+    "title": "Methods of Quantitative Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-204",
+    "desc": "Students are provided with intuitive explanation of fundamental concepts in statistics and learn how to use statistics to answer sociological questions. Experience and guidance in using computers to efficiently analyze data are provided.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students and by permission number.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students and by permission number.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 205": {
+    "concentrations": [],
+    "title": "Field Research Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-205",
+    "desc": "Gives students first-hand experience doing fieldwork with an emphasis on participant observation and some interviewing. Students submit weekly field notes and a final project analysis. At seminar meetings, field experiences and relevant literature are examined.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students and by permission number.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students and by permission number.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 206": {
+    "concentrations": [],
+    "title": "Comparative Historical Methods",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-206",
+    "desc": "Overview of research strategies and methods used in historical and social sciences. Students read works exemplifying a variety of analytical approaches. Written assignments cultivate critical skills, weighing of tradeoffs inherent in all methodological choices, and elaboration of hypothetical research designs.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 208": {
+    "concentrations": [],
+    "title": "Writing Practicum",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "W"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-208",
+    "desc": "Writing intensive course designed to facilitate the completion of the master's thesis, orals field statement, or the dissertation in sociology. The seminar is convened by a faculty member in conjunction with students and their adviser or appropriate committee chair. Students are expected to produce and present drafts of work completed in the seminar.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students and by permission number.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students and by permission number.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 209": {
+    "concentrations": [],
+    "title": "The Analysis of Cultural Forms",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-209",
+    "desc": "Examines material and symbolic forms such as media products, cultural artifacts, language, nonverbal communication and social practices using discourse, textual, content, interpretive, and conversation analyses as well as ethnography and different channels of communication. Theoretically, relies on cultural studies, communication studies, cultural sociology, film studies, and ethnomethodology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 220": {
+    "concentrations": [],
+    "title": "Global Transformation: Macrosociological Perspectives",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-220",
+    "desc": "Classical concepts and contemporary approaches in macrosociology, the study of large-scale, long term social change. Readings drawn primarily from the Marxian and Weberian traditions (new institutionalism, varieties of neo-Marxism, environmental history, state centrism) as they focus on agrarian and industrial structures and commodity chains; household, village, and neighborhood organization; social movements and revolutions; culture, ideology, and consciousness; policy analysis; comparative urban, national, and civilizational development.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 222": {
+    "concentrations": [],
+    "title": "Political Sociology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-222",
+    "desc": "A survey of major works and themes in the relationship of politics and society, with primary emphasis on the compatibilities and contradictions of pluralist, elite, and class perspectives on the state.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 223": {
+    "concentrations": [],
+    "title": "Sociology of the Environment",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-223",
+    "desc": "Advanced treatment of the dominant ideas of nature and the environment in the West and their relationship to the development of Western capitalism. Leading Western theories of environmental crisis and their relation with ideologies of environmentalism and environmental movements.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 224": {
+    "concentrations": [],
+    "title": "Globalization: Theories and Social Movements",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-224",
+    "desc": "Examines the structures, processes, and movements associated with globalization processes. Reviews political economy theories, cultural theories systems, state industrial policies, and popular responses to globalization. Also assesses contribution of resistance movements informed by class, ethno-nationalism, religion, or gender.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 225": {
+    "concentrations": [],
+    "title": "Political Economy for Sociologists",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-225",
+    "desc": "Examines rudiments of historical materialism in light of advances in cultural and ecological Marxism. Basic categories of Marxist political economy. Thematic focus on the first and second contradictions of capitalism in world economy today.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 227": {
+    "concentrations": [],
+    "title": "Learning from Environmental Historians",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-227",
+    "desc": "Looks at several major themes in the sociology of the environment and asks how the works of environmental history address those themes. Includes reflections on how history as a method interrogates social questions. Possible themes include: sustainability; social justice; universalism vs. particularity; city and country; and social movements.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 229": {
+    "concentrations": [],
+    "title": "Work and Labor Markets in the New Economy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-229",
+    "desc": "Focuses on the interaction of work restructuring and existing race/class/gender inequalities. Themes include: the labor process and theories of consent; labor market segmentation; job and occupational segregation; information technologies, flexible work, and post-industrialism; flexible employment relations; and low-wage service and labor markets.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 230": {
+    "concentrations": [],
+    "title": "Theory and Method in the Sociology of Marx",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-230",
+    "desc": "Examines theoretical and methodological implications of Marxist theory for empirical social research. Analyzes how historians and social scientists apply Marxist method in explaining society, social change, globalization, culture, and late capitalism. Goal is to assist students to employ Marxist theory and method creatively in their research projects.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 240": {
+    "concentrations": [],
+    "title": "Inequality and Identity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-240",
+    "desc": "Explores recent theoretical and empirical studies of race, class, gender, and sexuality with an emphasis on the production of identities and their relationship to processes and structures of power in a postcolonial context.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 241": {
+    "concentrations": [],
+    "title": "Cross-National and Cross-Cultural Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-241",
+    "desc": "Seminar examining theoretical and methodological issues in doing cross-national and cross-cultural research. In addition to a consideration of different research paradigms and approaches, representative works from each comparative tradition are examined.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 242": {
+    "concentrations": [],
+    "title": "Feminist Research Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-242",
+    "desc": "Provides scholarly support to students doing feminist research. Examines issues concerning conceptualization of feminism and feminist research. Explores relation of feminist research to intersections of gender, class, and race; to the self; to power; and to transformative social praxis. Students present and are given assistance with their work, as well as listen to, read, and assist with the work of others.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 244": {
+    "concentrations": [],
+    "title": "Race and Ethnicity",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-244",
+    "desc": "A critical survey of the theoretical issues of persistence and change, public policy, and recent empirical studies in the field of race and ethnic relations. Readings introduce comparative race relations and a historical background of major theoretical paradigms in the field which purport to explain race and ethnic relations in general and race relations in America specifically.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 245": {
+    "concentrations": [],
+    "title": "Feminist Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-245",
+    "desc": "Examination of shifts in 20th- and 21st-century feminist theory and epistemology. Explores the decentering of universalist feminist theories and asks what constitutes feminist theory after gender has been decentered. Considers various deconstructive challenges to second-wave feminist theory based on the politics of race, ethnicity, nation, sexuality, and class. Focus changes regularly.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 246": {
+    "concentrations": [],
+    "title": "Class, Culture, and Movement",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-246",
+    "desc": "Analyzes impact of ethnicity, gender, and religion on the class situation of laboring people in a globalized economy by intensive reading and critique of classic studies, explaining how social movements reflect combinations of social relations and cultural practices.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 247": {
+    "concentrations": [],
+    "title": "Race and Class",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-247",
+    "desc": "Introduces the student to the recent literature on race and class. Covers several different theoretical perspectives including internal colonialism, labor market segmentation theories, racial formation, and neo-gramscian cultural analyses. In addition to study of theory, also compares theoretical perspectives to the historical experience of minority groups, in particular, blacks, Hispanics, and Asians.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 249": {
+    "concentrations": [],
+    "title": "Feminisms and Cultural Politics",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-249",
+    "desc": "Focuses on the role feminist discourses play in contemporary cultural politics with the main focus on the politics of sex, sexuality, and sex work. Begins with considerations of (mis)representations of feminisms in popular cultures; considers the relationship between academic and popular feminisms; and interrogates the meaning of terms post-feminism and third-wave feminism .",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 250": {
+    "concentrations": [],
+    "title": "Course Design and Grant-Writing Seminar",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-250",
+    "desc": "A professional training seminar devoted to the philosophical, conceptual, and practical issues of course design, pedagogy, and grant writing. Topics covered: institutional contexts; curriculum (including syllabi, course content, assignments, evaluation); pedagogy; teaching as work/labor process; grant writing; budgets.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 252": {
+    "concentrations": [],
+    "title": "Symbolic Interactionism and Sociology of Emotions",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-252",
+    "desc": "Examines classic and contemporary theories and concepts that play a major role in sociological studies of identity, symbolic and social interaction, and the sociology of emotions. Examines how cultural forms, rules, and rituals define, structure, and mediate emotions and how identities are situated within social institutions.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 253": {
+    "concentrations": [],
+    "title": "Race, Crime, and Justice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-253",
+    "desc": "Covers empirical research on \"race, crime, and justice\" from multiple methodological and theoretical traditions in social science research. The course draws on historical examples of slavery, state violence, and crimes against humanity across the globe. Also covers research on the entanglement of race and crime in the United States, both historically and today.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 255": {
+    "concentrations": [],
+    "title": "Engaging Cultural Studies",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-255",
+    "desc": "Examines feminist and ethnic studies production, appropriation, and transformation of cultural studies theories and methodologies. Considers the utility of various theoretical apparatuses and methodological strategies employed in the interdisciplinary site that combines feminist, ethnic, and cultural studies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 256": {
+    "concentrations": [],
+    "title": "Urban Sociology",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-256",
+    "desc": "Introduction to core writings and key theoretical pardigms in urban sociology. Examines the history and contemporary conditions of cities in the U.S. and the urban experience. Urbanization, suburbanization, community, social inequality, urban politics, relationship between the built environment and human behavior.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 257": {
+    "concentrations": [],
+    "title": "Colonialism, International Law, and Global Justice",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-257",
+    "desc": "Examines colonialism, war crimes, crimes against humanity, and legal remedies, and the role of the International Criminal Court (ICC); traces the history of colonial expansionism, starting from the Roman Empire to the present American imperial dominance in global politics.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 258": {
+    "concentrations": [],
+    "title": "Global Lay Justice Systems and Direct Democracy",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-258",
+    "desc": "Introduces historical analysis of lay justice participation. Examines global exploration of the use of lay judge institutions in citizen's movements and the assumption that juries are a derivative institution of democratic ideals. Focuses on corporate media creation of anti-jury sentiment.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 259": {
+    "concentrations": [],
+    "title": "Space and the Politics of Difference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-259",
+    "desc": "Brings together the fields of sociology and geography to explore the complex and multiple ways of thinking together space and social difference. Course texts examine the co-constitution of space with bodies, subjectivities, and social formations.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 260": {
+    "concentrations": [],
+    "title": "Culture, Knowledge, Power",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-260",
+    "desc": "An introduction to theoretical approaches and exemplary studies of culture, knowledge, and power which critically interrogate the relationship between cultural formations and the production, circulation, and meaning of knowledges, materials, artifacts, and symbolic forms. Explores the concrete ways that power is organized and operates through different forms and sites, how it interpolates with other forms of power, and examines knowledges and culture as specific forms of power and sites of political struggle.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 261": {
+    "concentrations": [],
+    "title": "Sociology of Knowledge",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-261",
+    "desc": "Explores three main issues: the social determination of knowledge, including natural science; the character of intellectual labor and intellectuals as a social group; the role of organized knowledge and knowledge industries in contemporary social change. Texts examined include class-based theories (Lukacs, Mannheim, Gramsci), feminist standpoint analysis (Smith, Harding, etc.), and theories of postmodern culture (Lyotard, Harvey, etc.).",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 262": {
+    "concentrations": [],
+    "title": "Cultural Practice and Everyday Life",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-262",
+    "desc": "Examines contemporary debates about the role of mass produced expressive symbols in modern industrial societies, and the circumstances of cultural production for its impact on the creation, organization, and use of cultural artifacts. Concern with the use and experience of popular symbols for the ways that their use involves the creation of meanings and the role of such meanings in the social organization of society.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 263": {
+    "concentrations": [],
+    "title": "Cultural Politics of Difference",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-263",
+    "desc": "Considers the cultural turn and the turn to difference in understanding relations of power and struggles over representation in studies of race, media, and culture. Examines national identity, difference, subjectivity, and authenticity, especially as they bear on quests to create new identifications, alignments, and efforts to protect existing identities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 264": {
+    "concentrations": [],
+    "title": "Science, Technology, and Medicine",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-264",
+    "desc": "Explores social and cultural perspectives on science, technology, and medicine. Analyzes theoretical approaches that open up black boxes of scientific and biomedical knowledge, including the politics of bodies, objects, and health/illness. Links are made to medical sociology.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
   },
   "SOCY 268A": {
     "concentrations": [],
@@ -40935,6 +42467,196 @@ const GRADUATE_COURSES = {
       "Official enrollment/restriction text: Enrollment is restricted to graduate students and by permission of the instructor.",
       "Needs review: contains-major-or-enrollment-condition"
     ],
+    "searchOnly": true
+  },
+  "SOCY 282": {
+    "concentrations": [],
+    "title": "Social Policy Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-282",
+    "desc": "Policy research. Covers a variety of theoretical perspectives found in policy studies. Surveys various methodological approaches used in policy research. Theories and methods linked to research agendas on the various phases of the policy life cycle. Students are required to design a research proposal.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 290": {
+    "concentrations": [],
+    "title": "Advanced Topics in Sociological Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290",
+    "desc": "The topics to be analyzed each year vary with the instructor but focus upon a specific research area. Enrollment restricted to graduate students by consent of the instructor.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students by consent of the instructor.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students by consent of the instructor.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 290W": {
+    "concentrations": [],
+    "title": "Sociological Analysis Working Group",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "F",
+      "W",
+      "S"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290w",
+    "desc": "This two-credit course, repeatable for credit, brings together faculty and graduate students interested and actively engaged in a particular research area, and does so in a variety of ways. May include: close readings and discussion, invited speakers, sharing of student and faculty work, and field trips. Working group framework enhances one-on-one mentoring experiences by creating a scholarly community and support structure on campus for scholars in this area, and by introducing students to a range of faculty on our campus and beyond. Also fosters peer-to-peer learning and collegiality among graduate students researching similar topics. Enrollment is by permission of the instructor. Enrollment is restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 293": {
+    "concentrations": [],
+    "title": "Going on the Job Market",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-293",
+    "desc": "A seminar devoted to the practical problems of securing a job as a professional sociologist. Topics covered: researching colleges, universities, and public and private organizations that employ sociologists; designing a curriculum vitae; writing an application letter; preparing a job talk; handling questions during the interview process; the etiquette of visiting (and its aftermath); finding out about them; and the terms of employment: what is negotiable and what is not.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 294": {
+    "concentrations": [],
+    "title": "Writing for Social Scientists",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-294",
+    "desc": "Seminar on the genres of social science writing, and the problems of starting and finishing a publishable thesis, book, or article. For advanced graduate students working on the composition of their dissertations and journal articles.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 295": {
+    "concentrations": [],
+    "title": "The Pedagogy of Sociology",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-295",
+    "desc": "Graduate students develop, enhance, or deepen their pedagogical knowledge and skills in the field of sociology and other social sciences.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to sociology graduate students at all stages of their graduate careers.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to sociology graduate students at all stages of their graduate careers.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-297",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "SOCY 299": {
+    "concentrations": [],
+    "title": "Thesis Research",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-299",
+    "desc": "Students submit petition to sponsoring agency.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
     "searchOnly": true
   },
   "STAT 200": {
@@ -41936,6 +43658,120 @@ const GRADUATE_COURSES = {
     "catalogLevel": "graduate",
     "searchOnly": true
   },
+  "THEA 290B": {
+    "concentrations": [],
+    "title": "Practice of Theory",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290b",
+    "desc": "Contextualizes major movement in performance. Students are exposed to a wide range of historical and visual material pertinent to the creation of theater and dance. A final paper is required. (Formerly offered as Performance Histories.)",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in theater arts.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in theater arts.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 290C": {
+    "concentrations": [],
+    "title": "Performance Analysis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290c",
+    "desc": "Examines the production approaches of a range of performance practitioners, production companies, and performance traditions. Includes exercises in analysis and reconstruction of performance. A final reconstruction project is required.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students in theater arts.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students in theater arts.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 291": {
+    "concentrations": [],
+    "title": "Field Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-291",
+    "desc": "Student-designed and conducted research carried out in field settings. A brief prospectus must be filed with the department office before undertaking the research, and a brief final report of activities must be filed upon return. Course intended for students with graduate standing in theater arts. Petition required, approved by instructor and department.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 292": {
+    "concentrations": [],
+    "title": "Teaching-Related Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-292",
+    "desc": "Directed graduate research and writing coordinated with the teaching of undergraduates. Course intended for graduate students in theater arts. Petition required, approved by instructor and department.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 293": {
+    "concentrations": [],
+    "title": "Performance Research Project",
+    "units": 10,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-293",
+    "desc": "Internship with a professional theater company in the student's area of emphasis. This work will have a significant academic component supervised and assessed by a theater arts faculty member during the quarter it is taken. Enrollment restricted to graduate students.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
   "THEA 294": {
     "concentrations": [],
     "title": "Future Stages",
@@ -41946,6 +43782,99 @@ const GRADUATE_COURSES = {
     "quarters": [],
     "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-294",
     "desc": "Working in an experimental theater with access to new performance technologies, course explores how cross-media practice can expand on basic theatrical relationships in new and culturally relevant ways.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 295": {
+    "concentrations": [],
+    "title": "Group Critique",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-295",
+    "desc": "Peer review and constructive assessment of works in progress. Students are required to give individual presentations to the group at least once a quarter. Educational objectives are to develop the ability to articulate themes and ideas in student's body of work; to strengthen critical skills in making, evaluating, and discussing theater art; to explore the role of the audience in context and criticism; and to investigate the ways artists construct, use, and maintain support communities.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 297": {
+    "concentrations": [],
+    "title": "Independent Study",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297",
+    "desc": "Independent study or research for graduate students in theater arts. Petition required, approved by instructor and department.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 297F": {
+    "concentrations": [],
+    "title": "Independent Study/Graduate",
+    "units": 2,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297f",
+    "desc": "Independent study or research for graduate students in theater arts. Petition required, approved by instructor and department. Enrollment restricted to graduate students in theater arts.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: restricted to graduate students in theater arts.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "restricted to graduate students in theater arts.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "THEA 299": {
+    "concentrations": [],
+    "title": "Capstone Thesis",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-299",
+    "desc": "Involves participation in a major collaborative performance project (either faculty-directed or graduate student-directed with faculty supervision) or a research project group. Includes a written thesis, though the length will vary depending upon the student's particular emphasis.",
     "section": [
       "GRADUATE_SEARCH_ONLY"
     ],

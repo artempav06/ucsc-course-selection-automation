@@ -98293,6 +98293,25 @@ const COURSES = {
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
   },
+  "SOCY 193L": {
+    "concentrations": [],
+    "title": "Labor Summer Field Study",
+    "units": 10,
+    "division": "upper",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [
+      "SU"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/upper-division/socy-193l",
+    "desc": "Experiential learning course in which students intern with labor organizations to learn organizing and advocacy skills. Through supervised fieldwork, reflective assignments, and skill-building workshops, students gain practical experience in building the contemporary labor movement. Enrollment is by permission of the instructor.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
+  },
   "SOCY 194": {
     "concentrations": [],
     "title": "Group Tutorial",
@@ -98686,6 +98705,25 @@ const COURSES = {
       "Official catalog includes non-course eligibility language (placement/AP/test-out/writing/composition). It is preserved here as a note and is not engine-enforced as a course prerequisite.",
       "Official prerequisite/eligibility text: SPAN 5 or SPAN 5M or placement by assessment."
     ]
+  },
+  "SPAN 60": {
+    "concentrations": [],
+    "title": "Soccer in Latin America and Spain",
+    "units": 5,
+    "division": "lower",
+    "prereqs": [],
+    "ge": "IM",
+    "quarters": [
+      "F"
+    ],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/span-spanish/lower-division/span-60",
+    "desc": "Examines the central role of soccer (fútbol/futebol) in Latin America and Spain as a cultural, political, and economic force. Through texts, film, and media, this course explores how soccer intersects with questions of national and regional identity, language, race, gender, and immigration.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "SPAN 94": {
     "concentrations": [],
@@ -102477,6 +102515,23 @@ const COURSES = {
     ],
     "rmpScore": 0,
     "officialPrereqText": "(none found/ none listed)"
+  },
+  "THEA 127": {
+    "concentrations": [],
+    "title": "Broadcasting Imagination: American Radio Drama, 1935–1950",
+    "units": 5,
+    "division": "upper",
+    "prereqs": [],
+    "ge": "PR-C",
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/upper-division/thea-127",
+    "desc": "Immerses students in the performance practices of American radio drama during its Golden Age. Radio drama, also known as audio drama or radio theater, is a scripted, purely acoustic performance that relies on dialogue, music, and sound effects to create immersive stories without visual components. Emphasizing voice acting, live sound effects, ensemble work, and studio-style rehearsal, students recreate, adapt, and produce radio dramas using period-accurate techniques. Historical and cultural study supports hands-on experimentation, treating radio drama as a living performance art rather than a static artifact.",
+    "section": [
+      "FREE"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": []
   },
   "THEA 128": {
     "concentrations": [],

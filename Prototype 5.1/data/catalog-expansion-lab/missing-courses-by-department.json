@@ -1,1137 +1,779 @@
 {
-  "generatedAt": "2026-08-18T02:45:46.539Z",
+  "generatedAt": "2026-08-18T03:14:08.832Z",
   "batchDepartments": [
-    "OAKS",
-    "OCEA",
-    "PBS",
-    "PHIL",
-    "PHYE",
-    "PHYS",
-    "POLI",
-    "PRTR",
-    "PSYC",
-    "PUNJ"
+    "SCIC",
+    "SOCD",
+    "SOCY",
+    "SPAN",
+    "SPHS",
+    "STAT",
+    "STEV",
+    "THEA",
+    "TIM",
+    "UCDC"
   ],
   "note": "Batch-only missing official records, excluding codes already present in js/courses.js or data/courses-graduate.json.",
-  "missingOfficialCourseCount": 126,
+  "missingOfficialCourseCount": 82,
   "departments": [
     {
-      "subject": "OAKS",
-      "departmentText": "OAKS - Oakes College",
-      "departmentSlug": "oaks-oakes-college",
-      "count": 3,
+      "subject": "SCIC",
+      "departmentText": "SCIC - Science Communication",
+      "departmentSlug": "scic-science-communication",
+      "count": 11,
       "courses": [
         {
-          "code": "OAKS 50",
-          "title": "Inner Verse: Exploring Identity Through Writing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/lower-division/oaks-50",
-          "departmentSlug": "oaks-oakes-college",
-          "departmentText": "OAKS - Oakes College",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "OAKS 145A",
-          "title": "Early Black Histories of California",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145a",
-          "departmentSlug": "oaks-oakes-college",
-          "departmentText": "OAKS - Oakes College",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "OAKS 145B",
-          "title": "COMMUNITY ENGAGED HISTORY PRACTICUM THE LONDON NELSON LEGACY INSTITUTE",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/oaks-oakes-college/upper-division/oaks-145b",
-          "departmentSlug": "oaks-oakes-college",
-          "departmentText": "OAKS - Oakes College",
-          "divisionPath": "upper-division"
-        }
-      ]
-    },
-    {
-      "subject": "OCEA",
-      "departmentText": "OCEA - Ocean Sciences",
-      "departmentSlug": "ocea-ocean-sciences",
-      "count": 34,
-      "courses": [
-        {
-          "code": "OCEA 151",
-          "title": "Field and Lab Methods in Aquatic Biogeochemistry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-151",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "OCEA 152",
-          "title": "Field and Lab Methods in Aquatic Molecular Ecology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/upper-division/ocea-152",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "upper-division"
-        },
-        {
-          "code": "OCEA 200",
-          "title": "Physical Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "OCEA 200",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
-              "departmentSlug": "ocea-ocean-sciences",
-              "departmentText": "OCEA - Ocean Sciences",
-              "divisionPath": "graduate"
-            },
-            {
-              "code": "OCEA 200",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
-              "departmentSlug": "ocea-ocean-sciences",
-              "departmentText": "OCEA - Ocean Sciences",
-              "divisionPath": "graduate"
-            },
-            {
-              "code": "OCEA 200",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-200",
-              "departmentSlug": "ocea-ocean-sciences",
-              "departmentText": "OCEA - Ocean Sciences",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "OCEA 201",
-          "title": "Advanced Physical Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-201",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 211",
-          "title": "Climate Dynamics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-211",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 215",
-          "title": "Predicting the Atmosphere, Ocean, and Climate",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-215",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 218",
-          "title": "Marine Microbial Ecology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-218",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 220",
+          "code": "SCIC 200",
           "title": "",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-200",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
           "divisionPath": "graduate",
           "alternatePages": [
             {
-              "code": "OCEA 220",
-              "title": "Chemical Oceanography",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-220",
-              "departmentSlug": "ocea-ocean-sciences",
-              "departmentText": "OCEA - Ocean Sciences",
-              "divisionPath": "graduate"
-            }
-          ]
-        },
-        {
-          "code": "OCEA 224",
-          "title": "Aquatic Organic Geochemistry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-224",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 230",
-          "title": "Biological Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-230",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 241",
-          "title": "Dynamics of Marine Ecosystems",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-241",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 251",
-          "title": "Field and Lab Methods in Aquatic Biogeochemistry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-251",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 252",
-          "title": "Field and Lab Methods in Aquatic Molecular Ecology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-252",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 255",
-          "title": "Visualizing Ocean Data",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-255",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 265",
-          "title": "Marine Population Dynamics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-265",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 285",
-          "title": "Past Climate Change",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-285",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 286",
-          "title": "Introduction to Ocean Modeling",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-286",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290A",
-          "title": "Topics in Chemical Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290a",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290B",
-          "title": "Topics in Biological Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290b",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290C",
-          "title": "Topics in Marine Geochemistry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290c",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290D",
-          "title": "Topics in Marine Microbiology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290d",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290E",
-          "title": "Topics in Climatic and Oceanic Change",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290e",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290G",
-          "title": "Topics in Physical Oceanography",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290g",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290H",
-          "title": "Topics in Ocean Optics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290h",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 290J",
-          "title": "Topics in Marine Organic Geochemistry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-290j",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 292",
-          "title": "Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-292",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 295",
-          "title": "How to Write a Scientific Article",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-295",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 296",
-          "title": "Teaching in Ocean Sciences",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-296",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 297A",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297a",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 297B",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297b",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 297C",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-297c",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 299A",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299a",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 299B",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299b",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "OCEA 299C",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/ocea-ocean-sciences/graduate/ocea-299c",
-          "departmentSlug": "ocea-ocean-sciences",
-          "departmentText": "OCEA - Ocean Sciences",
-          "divisionPath": "graduate"
-        }
-      ]
-    },
-    {
-      "subject": "PHIL",
-      "departmentText": "PHIL - Philosophy",
-      "departmentSlug": "phil-philosophy",
-      "count": 35,
-      "courses": [
-        {
-          "code": "PHIL 202",
-          "title": "Topics in Ancient Greek Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-202",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 203",
-          "title": "Autism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-203",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 213",
-          "title": "Origins of Analytic Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-213",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 214",
-          "title": "Probability and Confirmation",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-214",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 222",
-          "title": "Metaphysics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-222",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 224",
-          "title": "Philosophy of Language",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-224",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 225",
-          "title": "The Pittsburgh School",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-225",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 231",
-          "title": "Epistemology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-231",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 232",
-          "title": "Advanced Topics in Value Theory",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-232",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 233",
-          "title": "Seminar in Philosophy of Mind",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-233",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 235",
-          "title": "Philosophy of Psychology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-235",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 237",
-          "title": "Making Up the Mind",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-237",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 239",
-          "title": "Philosophy of Religion",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-239",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 270",
-          "title": "Research Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-270",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 280",
-          "title": "Graduate Colloquia Course",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-280",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 281",
-          "title": "The Pedagogy of Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-281",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290A",
-          "title": "Philosophy of History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290a",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290C",
-          "title": "Advanced Topics in Ethics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290c",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290F",
-          "title": "Topics in Philosophy of Biology",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290f",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290H",
-          "title": "Environmental Ethics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290h",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290J",
-          "title": "Advanced Topics in the History of Ethics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290j",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290K",
-          "title": "Philosophical Matters of Scientific Practice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290k",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290O",
-          "title": "Majors Figures in the History of Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290o",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290P",
-          "title": "Major Figures in Contemporary Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290p",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290Q",
-          "title": "Philosophy of Mathematics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290q",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290S",
-          "title": "Topics in the Philosophy of Science",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290s",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 290W",
-          "title": "History of Consciousness",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-290w",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 294",
-          "title": "Teaching-Related Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-294",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 295",
-          "title": "Directed Reading",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 295F",
-          "title": "Readings in Philosophy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-295f",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 296",
-          "title": "Special Student Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-296",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 297",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 297F",
-          "title": "Independent Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-297f",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 299",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "PHIL 299F",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phil-philosophy/graduate/phil-299f",
-          "departmentSlug": "phil-philosophy",
-          "departmentText": "PHIL - Philosophy",
-          "divisionPath": "graduate"
-        }
-      ]
-    },
-    {
-      "subject": "PHYE",
-      "departmentText": "PHYE - Physical Education",
-      "departmentSlug": "phye-physical-education",
-      "count": 4,
-      "courses": [
-        {
-          "code": "PHYE 21A",
-          "title": "Introduction to Golf",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/lower-division/phye-21a",
-          "departmentSlug": "phye-physical-education",
-          "departmentText": "PHYE - Physical Education",
-          "divisionPath": "lower-division"
-        },
-        {
-          "code": "PHYE 209B",
-          "title": "Boating: Graduate Beginning Dinghy Sailing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b",
-          "departmentSlug": "phye-physical-education",
-          "departmentText": "PHYE - Physical Education",
-          "divisionPath": "graduate",
-          "alternatePages": [
-            {
-              "code": "PHYE 209B",
+              "code": "SCIC 200",
               "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209b",
-              "departmentSlug": "phye-physical-education",
-              "departmentText": "PHYE - Physical Education",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-200",
+              "departmentSlug": "scic-science-communication",
+              "departmentText": "SCIC - Science Communication",
+              "divisionPath": "graduate"
+            },
+            {
+              "code": "SCIC 200",
+              "title": "Introduction to Science Communication for Scientists",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-200",
+              "departmentSlug": "scic-science-communication",
+              "departmentText": "SCIC - Science Communication",
               "divisionPath": "graduate"
             }
           ]
         },
         {
-          "code": "PHYE 209C",
-          "title": "Boating: Graduate Intermediate Dinghy Sailing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c",
-          "departmentSlug": "phye-physical-education",
-          "departmentText": "PHYE - Physical Education",
+          "code": "SCIC 201A",
+          "title": "Reporting and Writing Science News",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201a",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 201B",
+          "title": "The Science Feature",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201b",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 201C",
+          "title": "Profile and Essay Writing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201c",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 201D",
+          "title": "Policy and Investigative Reporting",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201d",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 201E",
+          "title": "Multimedia Science News",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-201e",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 202",
+          "title": "Writing and Editing Workshop",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-202",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 203",
+          "title": "Science Communication Field Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-203",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 210",
+          "title": "",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-210",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
           "divisionPath": "graduate",
           "alternatePages": [
             {
-              "code": "PHYE 209C",
-              "title": "",
-              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209c",
-              "departmentSlug": "phye-physical-education",
-              "departmentText": "PHYE - Physical Education",
+              "code": "SCIC 210",
+              "title": "Data-Driven Animation for Science Communication",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-210",
+              "departmentSlug": "scic-science-communication",
+              "departmentText": "SCIC - Science Communication",
               "divisionPath": "graduate"
             }
           ]
         },
         {
-          "code": "PHYE 209S",
-          "title": "Boating: Grad Student Beginning Keelboat Sailing",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phye-physical-education/graduate/phye-209s",
-          "departmentSlug": "phye-physical-education",
-          "departmentText": "PHYE - Physical Education",
+          "code": "SCIC 297",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SCIC 297B",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/scic-science-communication/graduate/scic-297b",
+          "departmentSlug": "scic-science-communication",
+          "departmentText": "SCIC - Science Communication",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "PHYS",
-      "departmentText": "PHYS - Physics",
-      "departmentSlug": "phys-physics",
-      "count": 1,
+      "subject": "SOCD",
+      "departmentText": "SOCD - Social Documentation",
+      "departmentSlug": "socd-social-documentation",
+      "count": 13,
       "courses": [
         {
-          "code": "PHYS 292",
-          "title": "Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/phys-physics/graduate/phys-292",
-          "departmentSlug": "phys-physics",
-          "departmentText": "PHYS - Physics",
+          "code": "SOCD 200",
+          "title": "Approaches to Social Documentation",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-200",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 201A",
+          "title": "Introduction to Documentary Field Production and Editing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201a",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 201B",
+          "title": "Advanced Documentary Field Production and Editing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201b",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 201C",
+          "title": "Project Planning for the Social Documentary",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-201c",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 202",
+          "title": "Multiple-Platform Social Documentary Production",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-202",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 203",
+          "title": "Documentary Research Methods and Social Science Representation",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-203",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 292",
+          "title": "Special Topics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-292",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 294A",
+          "title": "Production/Analysis/Editing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294a",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate",
+          "alternatePages": [
+            {
+              "code": "SOCD 294A",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294a",
+              "departmentSlug": "socd-social-documentation",
+              "departmentText": "SOCD - Social Documentation",
+              "divisionPath": "graduate"
+            }
+          ]
+        },
+        {
+          "code": "SOCD 294B",
+          "title": "Production/Analysis/Editing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294b",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate",
+          "alternatePages": [
+            {
+              "code": "SOCD 294B",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294b",
+              "departmentSlug": "socd-social-documentation",
+              "departmentText": "SOCD - Social Documentation",
+              "divisionPath": "graduate"
+            }
+          ]
+        },
+        {
+          "code": "SOCD 294C",
+          "title": "Production/Analysis/Editing",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-294c",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 295",
+          "title": "Project Completion",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-295",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 297",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "SOCD 297F",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socd-social-documentation/graduate/socd-297f",
+          "departmentSlug": "socd-social-documentation",
+          "departmentText": "SOCD - Social Documentation",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "POLI",
-      "departmentText": "POLI - Politics",
-      "departmentSlug": "poli-politics",
+      "subject": "SOCY",
+      "departmentText": "SOCY - Sociology",
+      "departmentSlug": "socy-sociology",
       "count": 47,
       "courses": [
         {
-          "code": "POLI 200A",
-          "title": "Political and Social Thought Core Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200a",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 193L",
+          "title": "Labor Summer Field Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/upper-division/socy-193l",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
+          "divisionPath": "upper-division"
+        },
+        {
+          "code": "SOCY 200A",
+          "title": "Social Theory 1",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200a",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
+          "divisionPath": "graduate",
+          "alternatePages": [
+            {
+              "code": "SOCY 200A",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200a",
+              "departmentSlug": "socy-sociology",
+              "departmentText": "SOCY - Sociology",
+              "divisionPath": "graduate"
+            },
+            {
+              "code": "SOCY 200A",
+              "title": "",
+              "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200a",
+              "departmentSlug": "socy-sociology",
+              "departmentText": "SOCY - Sociology",
+              "divisionPath": "graduate"
+            }
+          ]
+        },
+        {
+          "code": "SOCY 200B",
+          "title": "Social Theory 2",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200b",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 200B",
-          "title": "Social Forces and Political Change Core Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200b",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 200C",
+          "title": "Social Theory 3",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-200c",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 200C",
-          "title": "States and Political Institutions Core Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200c",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 203",
+          "title": "Sociological Methods",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-203",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 200D",
-          "title": "Political Economy Core Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-200d",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 204",
+          "title": "Methods of Quantitative Analysis",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-204",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 201",
-          "title": "Logics of Inquiry",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-201",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 205",
+          "title": "Field Research Methods",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-205",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 202",
-          "title": "Fundamentals of Political Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-202",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 206",
+          "title": "Comparative Historical Methods",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-206",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 203",
-          "title": "Making of the Modern",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-203",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 208",
+          "title": "Writing Practicum",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-208",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 204",
-          "title": "Bodies in History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-204",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 209",
+          "title": "The Analysis of Cultural Forms",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-209",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 205",
-          "title": "Critical Perspectives on Classical Political Economy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-205",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 220",
+          "title": "Global Transformation: Macrosociological Perspectives",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-220",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 206",
-          "title": "Power and Pleasure",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-206",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 222",
+          "title": "Political Sociology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-222",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 207",
-          "title": "Political Economies of Affect",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-207",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 223",
+          "title": "Sociology of the Environment",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-223",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 208",
-          "title": "Race",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-208",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 224",
+          "title": "Globalization: Theories and Social Movements",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-224",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 209",
-          "title": "Radical Political Thought",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-209",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 225",
+          "title": "Political Economy for Sociologists",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-225",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 210",
-          "title": "Problems of Democracy in Comparative Perspective",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-210",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 227",
+          "title": "Learning from Environmental Historians",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-227",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 211",
-          "title": "Making and Unmaking Sovereignty",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-211",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 229",
+          "title": "Work and Labor Markets in the New Economy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-229",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 213",
-          "title": "Who Governs the Globe? Exploring Agency and Authority in Contemporary World Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-213",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 230",
+          "title": "Theory and Method in the Sociology of Marx",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-230",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 214",
-          "title": "Thinking Green: Politics, Ethics, Political Economy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-214",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 240",
+          "title": "Inequality and Identity",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-240",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 216",
-          "title": "Theorizing Politics Beyond the State",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-216",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 241",
+          "title": "Cross-National and Cross-Cultural Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-241",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 217",
-          "title": "Besieged Polities...",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-217",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 242",
+          "title": "Feminist Research Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-242",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 218",
-          "title": "Law and/Vs. Justice: The Rule of Law and Problems of (In)Justice",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-218",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 244",
+          "title": "Race and Ethnicity",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-244",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 220",
-          "title": "Un(Doing) History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-220",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 245",
+          "title": "Feminist Theory",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-245",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 222",
-          "title": "Conflict and Change in American Politics and Policy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-222",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 246",
+          "title": "Class, Culture, and Movement",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-246",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 223",
-          "title": "Topics in American Political Development",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-223",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 247",
+          "title": "Race and Class",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-247",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 232",
-          "title": "United States Political History",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-232",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 249",
+          "title": "Feminisms and Cultural Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-249",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 241",
-          "title": "Foundations and Frontiers in Comparative Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-241",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 250",
+          "title": "Course Design and Grant-Writing Seminar",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-250",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 245",
-          "title": "Latin American Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-245",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 252",
+          "title": "Symbolic Interactionism and Sociology of Emotions",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-252",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 247",
-          "title": "Comparative Urban Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-247",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 253",
+          "title": "Race, Crime, and Justice",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-253",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 248",
-          "title": "On Property",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-248",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 255",
+          "title": "Engaging Cultural Studies",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-255",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 249",
-          "title": "Politics of Protest",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-249",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 256",
+          "title": "Urban Sociology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-256",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 255",
-          "title": "Comparative Anti-Colonialisms",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-255",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 257",
+          "title": "Colonialism, International Law, and Global Justice",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-257",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 257",
-          "title": "Women Interpret Islam",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-257",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 258",
+          "title": "Global Lay Justice Systems and Direct Democracy",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-258",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 261",
-          "title": "Key Issues in Contemporary Chinese Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-261",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 259",
+          "title": "Space and the Politics of Difference",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-259",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 270",
-          "title": "Advanced Topics in Global Environmental Governance: Agency Beyond the State",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-270",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 260",
+          "title": "Culture, Knowledge, Power",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-260",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 271",
-          "title": "Global Politics and Geo-Politics",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-271",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 261",
+          "title": "Sociology of Knowledge",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-261",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 272",
-          "title": "Critical Interventions in IR Theory and Global Political Economy",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-272",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 262",
+          "title": "Cultural Practice and Everyday Life",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-262",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 275",
-          "title": "Contemporary Capitalism",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-275",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 263",
+          "title": "Cultural Politics of Difference",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-263",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 291",
-          "title": "Teaching Assistant Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-291",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 264",
+          "title": "Science, Technology, and Medicine",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-264",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 292",
-          "title": "Professional Development",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-292",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 282",
+          "title": "Social Policy Research",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-282",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 293",
-          "title": "Field Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-293",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 290",
+          "title": "Advanced Topics in Sociological Analysis",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 295A",
-          "title": "Research Colloquium",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295a",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 290W",
+          "title": "Sociological Analysis Working Group",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-290w",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 295B",
-          "title": "Advanced Research Seminar",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-295b",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 293",
+          "title": "Going on the Job Market",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-293",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 297A",
-          "title": "Indep Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297a",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 294",
+          "title": "Writing for Social Scientists",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-294",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 297B",
-          "title": "Indep Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297b",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 295",
+          "title": "The Pedagogy of Sociology",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-295",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 297C",
-          "title": "Indep Study",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-297c",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "code": "SOCY 297",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-297",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         },
         {
-          "code": "POLI 299A",
+          "code": "SOCY 299",
           "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299a",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "POLI 299B",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299b",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
-          "divisionPath": "graduate"
-        },
-        {
-          "code": "POLI 299C",
-          "title": "Thesis Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/poli-politics/graduate/poli-299c",
-          "departmentSlug": "poli-politics",
-          "departmentText": "POLI - Politics",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/socy-sociology/graduate/socy-299",
+          "departmentSlug": "socy-sociology",
+          "departmentText": "SOCY - Sociology",
           "divisionPath": "graduate"
         }
       ]
     },
     {
-      "subject": "PRTR",
-      "departmentText": "PRTR - Porter College",
-      "departmentSlug": "prtr-porter-college",
-      "count": 2,
+      "subject": "SPAN",
+      "departmentText": "SPAN - Spanish",
+      "departmentSlug": "span-spanish",
+      "count": 1,
       "courses": [
         {
-          "code": "PRTR 27",
-          "title": "Time Management for College",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-27",
-          "departmentSlug": "prtr-porter-college",
-          "departmentText": "PRTR - Porter College",
+          "code": "SPAN 60",
+          "title": "Soccer in Latin America and Spain",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/span-spanish/lower-division/span-60",
+          "departmentSlug": "span-spanish",
+          "departmentText": "SPAN - Spanish",
           "divisionPath": "lower-division"
+        }
+      ]
+    },
+    {
+      "subject": "THEA",
+      "departmentText": "THEA - Theater Arts",
+      "departmentSlug": "thea-theater-arts",
+      "count": 10,
+      "courses": [
+        {
+          "code": "THEA 127",
+          "title": "Broadcasting Imagination: American Radio Drama, 1935–1950",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/upper-division/thea-127",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "upper-division"
         },
         {
-          "code": "PRTR 47",
-          "title": "Zines and Community-Based Research",
-          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/prtr-porter-college/lower-division/prtr-47",
-          "departmentSlug": "prtr-porter-college",
-          "departmentText": "PRTR - Porter College",
-          "divisionPath": "lower-division"
+          "code": "THEA 290B",
+          "title": "Practice of Theory",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290b",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 290C",
+          "title": "Performance Analysis",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-290c",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 291",
+          "title": "Field Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-291",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 292",
+          "title": "Teaching-Related Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-292",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 293",
+          "title": "Performance Research Project",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-293",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 295",
+          "title": "Group Critique",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-295",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 297",
+          "title": "Independent Study",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 297F",
+          "title": "Independent Study/Graduate",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-297f",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
+        },
+        {
+          "code": "THEA 299",
+          "title": "Capstone Thesis",
+          "url": "https://catalog.ucsc.edu/en/current/general-catalog/courses/thea-theater-arts/graduate/thea-299",
+          "departmentSlug": "thea-theater-arts",
+          "departmentText": "THEA - Theater Arts",
+          "divisionPath": "graduate"
         }
       ]
     }
