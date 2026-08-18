@@ -43887,5 +43887,53 @@
     "enrollmentText": "Enrollment is restricted to graduate students.",
     "catalogLevel": "graduate",
     "searchOnly": true
+  },
+  "WRIT 202": {
+    "concentrations": [],
+    "title": "Writing and Learning Seminar",
+    "units": 3,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/graduate/writ-202",
+    "desc": "Strategies for teaching assistants to help undergraduates become better learners and writers in disciplinary courses. Topics include using writing to improve reading and thinking, analysis of assignments, avoiding plagiarism, responding to and evaluating papers, ESL writers, peer response, and technological aids.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
+  },
+  "WRIT 203": {
+    "concentrations": [],
+    "title": "Teaching Writing",
+    "units": 5,
+    "division": "graduate",
+    "prereqs": [],
+    "ge": null,
+    "quarters": [],
+    "catalogUrl": "https://catalog.ucsc.edu/en/current/general-catalog/courses/writ-writing/graduate/writ-203",
+    "desc": "Prepares graduate students to teach first-year composition at UCSC and elsewhere. Development of a syllabus, teaching strategy, and class plans based on study of composition and rhetorical theories, research on students' writing development, and effective writing pedagogies.",
+    "section": [
+      "GRADUATE_SEARCH_ONLY"
+    ],
+    "rmpScore": 0,
+    "officialPrereqText": "",
+    "prereqNotes": [
+      "Official enrollment/restriction text: Enrollment is restricted to graduate students.",
+      "Needs review: contains-major-or-enrollment-condition",
+      "Graduate/search-only course: available for manual lookup/add only; not used by the undergraduate automatic scheduler."
+    ],
+    "enrollmentText": "Enrollment is restricted to graduate students.",
+    "catalogLevel": "graduate",
+    "searchOnly": true
   }
 }

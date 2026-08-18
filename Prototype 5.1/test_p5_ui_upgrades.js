@@ -716,7 +716,8 @@ function testNextDepartmentGraduateCoursesStaySearchOnly() {
   const nextTenFGradCodes = ['LING 211', 'LING 297A', 'LIT 201A', 'LIT 282D', 'METX 202', 'METX 297A', 'MUSC 203A', 'MUSC 297'];
   const nextTenGGradCodes = ['OCEA 200', 'OCEA 297A', 'PHIL 202', 'PHIL 280', 'POLI 200A', 'POLI 297A'];
   const nextTenHGradCodes = ['SCIC 200', 'SCIC 297', 'SOCD 200', 'SOCD 297', 'SOCY 200A', 'SOCY 200B', 'SOCY 297', 'THEA 297'];
-  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes, ...nextTenGGradCodes, ...nextTenHGradCodes]) {
+  const finalBatchGradCodes = ['WRIT 202', 'WRIT 203'];
+  for (const code of [...fiveDepartmentGradCodes, ...sevenDepartmentGradCodes, ...nextTenGradCodes, ...nextTenBGradCodes, ...nextTenCGradCodes, ...nextTenDGradCodes, ...nextTenEGradCodes, ...nextTenFGradCodes, ...nextTenGGradCodes, ...nextTenHGradCodes, ...finalBatchGradCodes]) {
     assert(!__p5.COURSES[code], `${code} should not enter automatic undergraduate COURSES`);
     assert(__p5.GRADUATE_COURSES[code], `${code} should be available in the separate graduate/search-only catalog`);
     assert.strictEqual(__p5.GRADUATE_COURSES[code].searchOnly, true, `${code} should be marked searchOnly`);
@@ -734,7 +735,7 @@ function testChangedSearchCatalogScriptsHaveFreshCacheBusters() {
   for (const asset of changedAssets) {
     const match = html.match(new RegExp(`<script src="${asset.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\?v=([^"]+)"`));
     assert(match, `${asset} should be loaded with an explicit cache-busting version`);
-    assert(match[1].includes('next10h-catalog'), `${asset} cache-buster should change for the next-10h catalog update so browsers do not reuse old JS`);
+    assert(match[1].includes('final-catalog'), `${asset} cache-buster should change for the final catalog update so browsers do not reuse old JS`);
   }
 }
 
